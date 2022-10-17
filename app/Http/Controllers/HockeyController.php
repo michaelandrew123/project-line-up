@@ -8,7 +8,10 @@ class HockeyController extends Controller
 {
     //
 
-    public function index(){
-        return view('app');
+    public function lineCombos(){
+        return view('line-combos');
+    }
+    public function startingGoalies(){
+        return view('starting-goalies');
     }
 }
