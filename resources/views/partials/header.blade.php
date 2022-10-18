@@ -10,7 +10,7 @@
     <div class="md:flex md:flex-col sm:block">
 
 
-        <div class="sm:relative md:flex md:justify-center  bg-current">
+        <div class="sm:relative md:flex md:justify-center  bg-current z-30">
 
             <div class="md:flex xl:flex-row lg:flex-col-reverse lg:pt-6 md:flex-col-reverse md:pt-6 sm:block sm:py-1 items-center justify-between sm:flex-wrap bg-current px-3 sm:px-3">
 
