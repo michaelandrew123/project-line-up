@@ -27,9 +27,21 @@
         border-color: white white #f7f7f700 transparent;
         transform: rotate(-45deg);
     }
+    .arrow-next {
+        height: 0px; width: 0px;
+        border: 8px solid;
+        border-color: white white #f7f7f700 transparent;
+        
+        
+    }
 
 
-
+    .arrow-prev {
+        height: 0px; width: 0px;
+        border: 8px solid;
+        border-color: white white #f7f7f700 transparent;
+        
+    }
 
     .leading-12{
         line-height: 3rem;
