@@ -9,7 +9,7 @@
             <div class="w-1/7 hidden">
                 <img src="/admin.png" />
             </div>
-            <div class="flex flex-col gap-y-3 py-2 md:w-1/3 sm:w-10/12 smm-w-10-12">
+            <div class="flex flex-col gap-y-3 py-2 md:w-1/3  smm-w-10-12">
                 <div>
                     <h1 class="font-black text-3xl">Toronto Maple Leafs</h1>
                     <p>3rd In Atlantic, Division, 4th in Eastern Conference</p>

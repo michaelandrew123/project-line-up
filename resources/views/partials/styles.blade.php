@@ -135,5 +135,10 @@
         .smm-w-full	{width: 100%;}
         .smm-p-0{padding: 0px;}
         .smm-m-auto{ margin: auto}
+
+
+
+
+        .smm-right-10{	right: 2.5rem; /* 40px */}
     }
 </style>
