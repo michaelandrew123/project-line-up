@@ -43,52 +43,22 @@
 
 
 
-            <div class="flex justify-center flex-col items-center ">
-                <div class="flex flex-col w-full bg-sky-600 justify-center items-center text-white font-bold py-2">
-                    <h1 class="text-2xl text-center">NASHVILLE PREDATOR @ CAROLINA HURRICANES</h1>
-                    <h2 class="text-xl text-center">FEB 18TH, 2022 7:00PM EST</h2>
-                </div>
+        <div class="flex justify-center flex-col items-center ">
+            <div class="flex flex-col w-full bg-sky-600 justify-center items-center text-white font-bold py-2">
+                <h1 class="text-2xl text-center">NASHVILLE PREDATOR @ CAROLINA HURRICANES</h1>
+                <h2 class="text-xl text-center">FEB 18TH, 2022 7:00PM EST</h2>
+            </div>
 
-                <div class="flex md:flex-row sm:flex-col flew-col  sm:w-full smm-flex-col smm-w-full">
+            <div class="flex md:flex-row sm:flex-col flew-col  sm:w-full smm-flex-col smm-w-full">
 
-                    <div class="flex md:flex-row sm:flex-col md:w-full md:justify-center md:items-center w-full" >
+                <div class="flex md:flex-row sm:flex-col md:w-full md:justify-center md:items-center w-full" >
 
-                        <div class="flex flex-col justify-center items-center w-full">
-                            <h3 class="text-center bg-green-400 w-full font-bold text-base">CONFIRMD</h3>
-                            <h3 class="font-bold text-base">JUUSE SAROS</h3>
-
-
-
-                            <img class="w-5/12" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" />
-
-
-                            <div class="flex flex-row justify-between w-full py-2 relative mb-1">
-                                <div class="flex flex-row justify-center w-full relative">
-                                    <img  class="h-8 w-10 absolute  top-2 left-5 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
-                                    <div class=" relative top-4 lg:right-15 md:right-1 sm:right-10 text-xl font-bold ">$8,700</div>
-                                </div>
-                                <div class="flex flex-row justify-center w-full">
-
-                                         <img class="h-9 w-12 relative top-2 lg:right-20 " src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" />
-
-                                    <div class="font-bold text-xl relative top-4 lg:right-7 md:left-2 sm:left-12">$8,500</div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 smm-w-full">
-                                <div>LINE</div>
-                                <div>COMBINATIONS</div>
-                                <div>MATCHUP</div>
-                                <div>ODDS</div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="flex flex-col justify-center items-center w-full">
+                        <h3 class="text-center bg-green-400 w-full font-bold text-base">CONFIRMD</h3>
+                        <h3 class="font-bold text-base">JUUSE SAROS</h3>
 
 
 
-                    <div class="flex flex-col w-full justify-center items-center" >
-                        <h3 class="text-center bg-orange-400 w-full font-bold text-base">PROJECTED</h3>
-                        <h3 class="font-bold text-base">PREDRIK ANDERSON</h3>
                         <img class="w-5/12" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" />
 
 
@@ -105,17 +75,127 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 smm-w-full">
+                        <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
                             <div>LINE</div>
                             <div>COMBINATIONS</div>
                             <div>MATCHUP</div>
                             <div>ODDS</div>
                         </div>
                     </div>
-
-
                 </div>
+
+
+
+                <div class="flex flex-col w-full justify-center items-center" >
+                    <h3 class="text-center bg-orange-400 w-full font-bold text-base">PROJECTED</h3>
+                    <h3 class="font-bold text-base">PREDRIK ANDERSON</h3>
+                    <img class="w-5/12" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" />
+
+
+                    <div class="flex flex-row justify-between w-full py-2 relative mb-1">
+                        <div class="flex flex-row justify-center w-full relative">
+                            <img  class="h-8 w-10 absolute  top-2 left-5 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
+                            <div class=" relative top-4 lg:right-15 md:right-1 sm:right-10 text-xl font-bold ">$8,700</div>
+                        </div>
+                        <div class="flex flex-row justify-center w-full">
+
+                            <img class="h-9 w-12 relative top-2 lg:right-20 " src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" />
+
+                            <div class="font-bold text-xl relative top-4 lg:right-7 md:left-2 sm:left-12">$8,500</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
+                        <div>LINE</div>
+                        <div>COMBINATIONS</div>
+                        <div>MATCHUP</div>
+                        <div>ODDS</div>
+                    </div>
+                </div>
+
+
             </div>
+
+
+
+
+
+            <div class="flex md:flex-row sm:flex-col flew-col  sm:w-full smm-flex-col smm-w-full">
+
+                <div class="flex md:flex-row sm:flex-col md:w-full md:justify-center md:items-center w-full" >
+
+                    <div class="flex flex-col justify-center items-center w-full">
+                        <h3 class="text-center bg-green-400 w-full font-bold text-base">CONFIRMD</h3>
+                        <h3 class="font-bold text-base">JUUSE SAROS</h3>
+
+
+
+                        <img class="w-5/12" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" />
+
+
+                        <div class="flex flex-row justify-between w-full py-2 relative mb-1">
+                            <div class="flex flex-row justify-center w-full relative">
+                                <img  class="h-8 w-10 absolute  top-2 left-5 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
+                                <div class=" relative top-4 lg:right-15 md:right-1 sm:right-10 text-xl font-bold ">$8,700</div>
+                            </div>
+                            <div class="flex flex-row justify-center w-full">
+
+                                <img class="h-9 w-12 relative top-2 lg:right-20 " src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" />
+
+                                <div class="font-bold text-xl relative top-4 lg:right-7 md:left-2 sm:left-12">$8,500</div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
+                            <div>LINE</div>
+                            <div>COMBINATIONS</div>
+                            <div>MATCHUP</div>
+                            <div>ODDS</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-col w-full justify-center items-center" >
+                    <h3 class="text-center bg-orange-400 w-full font-bold text-base">PROJECTED</h3>
+                    <h3 class="font-bold text-base">PREDRIK ANDERSON</h3>
+                    <img class="w-5/12" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" />
+
+
+                    <div class="flex flex-row justify-between w-full py-2 relative mb-1">
+                        <div class="flex flex-row justify-center w-full relative">
+                            <img  class="h-8 w-10 absolute  top-2 left-5 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
+                            <div class=" relative top-4 lg:right-15 md:right-1 sm:right-10 text-xl font-bold ">$8,700</div>
+                        </div>
+                        <div class="flex flex-row justify-center w-full">
+
+                            <img class="h-9 w-12 relative top-2 lg:right-20 " src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" />
+
+                            <div class="font-bold text-xl relative top-4 lg:right-7 md:left-2 sm:left-12">$8,500</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
+                        <div>LINE</div>
+                        <div>COMBINATIONS</div>
+                        <div>MATCHUP</div>
+                        <div>ODDS</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
 
 
 
