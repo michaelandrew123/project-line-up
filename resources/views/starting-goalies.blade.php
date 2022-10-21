@@ -10,34 +10,34 @@
 
 
         <div class="bg-slate-700 text-white flex flex-row  justify-evenly  py-5 lg:w-full flex md:flex-row sm:flex=col" >
-            <div class="bg-gray-500  xl:right-40 lg:right-20  md:right-10  relative z-20 ">
+            <div class="bg-gray-500  xl:right-40 lg:right-20  md:right-10  relative z-20">
                 <div>
-                    <button class="bg-red-500 p-7 lg:px-5 lg:py-5 ">
-                    <div class="transform rotate-6 absolute left-2 lg:top-8 sm:top-10">
+                    <button class="bg-red-500 p-7 lg:px-2 lg:py-5 px-0.5 py-4">
+                    <div class="transform rotate-6 absolute left-2 sm:left-1 lg:top-8 lg:left-2 sm:top-7 top-10">
                                     <div class="arrowed">
                                         <div class="arrow-prev" style="transform: rotate(222deg);"></div>
                                     </div>
                     </div>
                     
-                    <p><b>PREVIOUS</b> SEP 4, 2022</p></button>
+                    <p class="ml-4 text-[14px] "><b>PREVIOUS</b> SEP 4, 2022</p></button>
                  
                     
                 </div>
             </div>
-            <div class="sm:text-center ">
+            <div class="text-center ">
 
-                TODAY SEP 5, 2022
+                <p class="text-[12px] sm:text-lg lg:text-lg">TODAY SEP 5, 2022</p>
             </div>
-            <div class="bg-gray-500 xl:left-40 lg:left-20 md:left-10 relative z-10 ">
+            <div class="bg-gray-500 xl:left-40 lg:left-20 md:left-10 relative z-10 h-12">
                 <div>
-                    <button class="bg-red-500 p-7 lg:px-5 lg:py-5 ">
-                    <div class="transform rotate-45 absolute lg:right-6 lg:top-7  sm:right-6 sm:top-9 ">
+                    <button class="bg-red-500 p-7 lg:px-5 lg:py-5 px-2 py-4">
+                    <div class="transform rotate-45 absolute lg:right-7 lg:top-6  sm:right-6 sm:top-5 right-6 bottom-3">
                                     <div class="arrowed">
                                         <div class="arrow-next"></div>
                                     </div>
                             
                     </div>
-                    <p class="mr-1"><b>NEXT</b> SEP 6, 2022</p></button>
+                    <p class="lg:mr-1 mr-4 text-[14px]"><b>NEXT</b> SEP 6, 2022</p></button>
                 </div>
             </div>
         </div>
@@ -45,12 +45,12 @@
         <div>
             <div class="flex justify-center flex-col m-auto items-center ">
                 <div class="flex flex-col w-full bg-sky-600 justify-center items-center text-white font-bold py-2">
-                    <h1 class="text-2xl">NASHVILLE PREDATOR @ CAROLINA HURRICANES</h1>
+                    <h1 class="text-2xl text-center">NASHVILLE PREDATOR @ CAROLINA HURRICANES</h1>
                     <h2 class="text-xl">FEB 18TH, 2022 7:00PM EST</h2>
                 </div>
               
                 
-                <div class="flex md:flex-row sm:flex-col w-full justify-center items-center" >
+                <div class="flex flex-col md:flex-row sm:flex-col w-full justify-center items-center" >
                 
                     <div class="flex flex-col w-full justify-center items-center">
                     <h3 class="text-center bg-green-400 w-full font-bold text-base">CONFIRMD</h3>
@@ -58,7 +58,7 @@
                         <img class="w-5/12" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" />
                         <div class="flex flex-row justify-between w-full py-2 relative mb-1">
                             <div class="flex flex-row justify-center w-full relative">
-                                <img  class="h-8 w-10 absolute  top-2 left-5 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
+                                <img  class="h-8 w-10 absolute top-2 left-1 " src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
                                 <div class=" relative top-4 lg:right-15 md:right-1 sm:right-10 text-xl font-bold ">$8,700</div>
                             </div>
                             <div class="flex flex-row justify-center w-full">
@@ -114,7 +114,7 @@
                     <h2 class="text-xl">FEB 18TH, 2022 7:00PM EST</h2>
                 </div>
                
-                <div class="flex md:flex-row sm:flex-col w-full justify-center items-center" >
+                <div class="flex flex-col md:flex-row sm:flex-col w-full justify-center items-center" >
 
                     <div class="flex flex-col w-full justify-center items-center">
                     <h3 class="text-center bg-green-400 w-full font-bold text-base">CONFIRMD</h3>
@@ -122,7 +122,7 @@
                         <img class="w-5/12" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" />
                         <div class="flex flex-row justify-between w-full  py-2 mb-1">
                             <div class="flex flex-row justify-center w-full relative ">
-                                <img class="h-8 w-10 absolute lg:left-5 sm:left-3 top-2" src="{{ asset('/images/starting-goalies/pinpng.png') }}"/>
+                                <img class="h-8 w-10 absolute top-2 left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}"/>
                                 <div class="font-bold text-xl relative top-4 left-2">$8,700</div>
                             </div>
                             <div class="flex flex-row justify-center w-full ">
