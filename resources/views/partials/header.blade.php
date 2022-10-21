@@ -124,7 +124,7 @@
 
 
 
-            <div style="background-color: white;" class="md:block md:flex sm:flex sm:flex-row sm:absolute smm-absolute sm:bg-white w-full border-b-2 border-gray-200 smm-flex smm-flex-row pb-2"  id="list-menu">
+            <div style="background-color: white;" class="md:block md:flex sm:flex sm:flex-row sm:absolute smm-absolute sm:bg-white w-full border-b-2 border-gray-200 smm-flex smm-flex-row pb-2 smm-z-20"  id="list-menu">
 
 
                 <div class="md:hidden sm:block px-2  border-r-2 border-gray-200" id="mobile-smm-menu">
