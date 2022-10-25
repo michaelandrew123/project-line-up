@@ -3,20 +3,20 @@
 @section('content')
 <!-- first group shirt -->
  <div class="mb-8">
-      <div class="bg-[#202e5b] text-center p-2 rounded-t-xl ">
-            <h1 class="text-[#fefcfd] text-4xl">Nashville Predator a Carolina Hurricanes </h1>
-            <p class="text-[#fefcfd] ">Feb. 18,2022 | 7:00 EST</p>
+      <div class="bg-[#001628] text-center p-2 rounded-t-xl ">
+            <h1 class="text-[#355464] lg:text-4xl md:text-3xl text-2xl">Nashville Predator a Carolina Hurricanes </h1>
+            <p class="text-[#355464] ">Feb. 18,2022 | 7:00 EST</p>
       </div>
       <div class="">
             <div class=" flex  xl:flex-non-wrap lg:flex-nowrap flex-wrap gap-0.5">
                 <div class=" flex-auto">
-                        <p class="text-center bg-[#eab308] text-[#fefcfd] p-3 lg:rounded-br-xl rounded-b-xl"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                        <p class="text-center bg-[#99D9D9] text-[#355464] p-3 lg:rounded-br-xl  rounded-b-xl lg:text-base md:text-base text-sm"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div class=" mt-4">
                             <div class="flex flex-row justify-center items-center font-bold">
                                 <p>FORWARD</p>
                             </div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -36,7 +36,7 @@
                             <div class="text-center font-bold">
                                 <p>DEFENCE</p>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -50,9 +50,9 @@
                         </div>
                         
                     </div> 
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -80,9 +80,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -110,9 +110,9 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -132,7 +132,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -146,13 +146,13 @@
                     </div> 
                </div>
                <div class="flex-auto">
-                        <p class="text-center bg-[#eab308] text-[#fefcfd] p-3 lg:rounded-br-xl  rounded-b-xl"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                        <p class="text-center bg-[#99D9D9] text-[#355464] p-3 lg:rounded-br-xl  rounded-b-xl lg:text-base md:text-base text-sm"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div class=" mt-4">
                             <div class="flex flex-row justify-center items-center font-bold">
                                 <p>FORWARD</p>
                             </div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -172,7 +172,7 @@
                             <div class="text-center font-bold">
                                 <p>DEFENCE</p>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -184,9 +184,9 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -202,7 +202,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -214,9 +214,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -232,7 +232,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -244,9 +244,9 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -262,7 +262,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -276,28 +276,28 @@
                     </div> 
                </div> 
             </div>
-            <div class="bg-[#1155cc] text-center p-3">
-                  <h2 class="text-[#ffffff] text-[#ffffff] text-xl">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
+            <div class="bg-[#355464] text-center p-3">
+                  <h2 class="text-[#ffffff] text-[#ffffff] lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
                </div>
       </div>
  </div>
  <!-- end of first shirt group -->
  <!-- second group shirt -->
  <div class="mb-8">
-      <div class="bg-[#202e5b] text-center p-2 rounded-t-xl ">
-            <h1 class="text-[#fefcfd] text-4xl">Nashville Predator a Carolina Hurricanes </h1>
+      <div class="bg-[#001628] text-center p-2 rounded-t-xl ">
+            <h1 class="text-[#fefcfd] lg:text-4xl md:text-3xl text-2xl">Nashville Predator a Carolina Hurricanes </h1>
             <p class="text-[#fefcfd] ">Feb. 18,2022 | 7:00 EST</p>
       </div>
       <div class="">
             <div class=" flex xl:flex-non-wrap lg:flex-nowrap flex-wrap gap-0.5">
                 <div class=" flex-auto">
-                        <p class="text-center bg-[#eab308] text-[#fefcfd] p-3 lg:rounded-br-xl rounded-b-xl"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                        <p class="text-center bg-[#99D9D9] text-[#fefcfd] p-3 lg:rounded-br-xl rounded-b-xl lg:text-base md:text-base text-sm"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div class=" mt-4">
                             <div class="flex flex-row justify-center items-center font-bold">
                                 <p>FORWARD</p>
                             </div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -317,7 +317,7 @@
                             <div class="text-center font-bold">
                                 <p>DEFENCE</p>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -331,9 +331,9 @@
                         </div>
                         
                     </div> 
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -349,7 +349,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -361,9 +361,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -379,7 +379,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -391,9 +391,9 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -413,7 +413,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -430,13 +430,13 @@
                     </div> 
                </div>
                <div class="flex-auto">
-                        <p class="text-center bg-[#eab308] text-[#fefcfd] p-3 lg:rounded-br-xl  rounded-b-xl"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                        <p class="text-center bg-[#99D9D9] text-[#fefcfd] p-3 lg:rounded-br-xl rounded-b-xl lg:text-base md:text-base text-sm"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div class=" mt-4">
                             <div class="flex flex-row justify-center items-center font-bold">
                                 <p>FORWARD</p>
                             </div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -456,7 +456,7 @@
                             <div class="text-center font-bold">
                                 <p>DEFENCE</p>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -468,9 +468,9 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -486,7 +486,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -498,9 +498,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -516,7 +516,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -528,9 +528,9 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                    <div class="pb-2 flex flex-row gap-1 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -546,7 +546,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-1 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -560,28 +560,28 @@
                     </div> 
                </div> 
             </div>
-            <div class="bg-[#1155cc] text-center p-3">
-                  <h2 class="text-[#ffffff] text-[#ffffff] text-xl">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
+            <div class="bg-[#355464] text-center p-3">
+                  <h2 class="text-[#ffffff] text-[#ffffff] lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
                </div>
       </div>
  </div>
  <!-- end of second shirt group -->
  <!-- third group shirt -->
  <div>
-      <div class="bg-[#202e5b] text-center p-2 rounded-t-xl ">
-            <h1 class="text-[#fefcfd] text-4xl">Nashville Predator a Carolina Hurricanes </h1>
+      <div class="bg-[#001628] text-center p-2 rounded-t-xl ">
+            <h1 class="text-[#fefcfd] lg:text-4xl md:text-3xl text-2xl">Nashville Predator a Carolina Hurricanes </h1>
             <p class="text-[#fefcfd] ">Feb. 18,2022 | 7:00 EST</p>
       </div>
       <div class="">
             <div class=" flex xl:flex-non-wrap lg:flex-nowrap flex-wrap gap-0.5">
                 <div class=" flex-auto">
-                        <p class="text-center bg-[#eab308] text-[#fefcfd] p-3 lg:rounded-br-xl rounded-b-xl"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
+                        <p class="text-center bg-[#99D9D9] text-[#fefcfd] p-3 lg:rounded-br-xl rounded-b-xl lg:text-base md:text-base text-sm"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
                     <div class="pb-2 flex flex-row gap-4 justify-center">
                         <div class=" mt-4">
                             <div class="flex flex-row justify-center items-center font-bold">
                                 <p>FORWARD</p>
                             </div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -601,7 +601,7 @@
                             <div class="text-center font-bold">
                                 <p>DEFENCE</p>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -617,7 +617,7 @@
                     </div> 
                     <div class="pb-2 flex flex-row gap-4 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -633,7 +633,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-3 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -647,7 +647,7 @@
                     </div>
                     <div class="pb-2 flex flex-row gap-4 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -663,7 +663,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -677,7 +677,7 @@
                     </div> 
                     <div class="pb-2 flex flex-row gap-4 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -697,7 +697,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -714,13 +714,13 @@
                     </div> 
                </div>
                <div class="flex-auto">
-                        <p class="text-center bg-[#eab308] text-[#fefcfd] p-3 lg:rounded-br-xl  rounded-b-xl"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
+                        <p class="text-center bg-[#99D9D9] text-[#fefcfd] p-3 lg:rounded-br-xl  rounded-b-xl lg:text-base md:text-base text-sm"><b>MORNING SKATE (Update July 25, 6:18am) </b>Source:</p>
                     <div class="pb-2 flex flex-row gap-4 justify-center">
                         <div class=" mt-4">
                             <div class="flex flex-row justify-center items-center font-bold">
                                 <p>FORWARD</p>
                             </div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -740,7 +740,7 @@
                             <div class="text-center font-bold">
                                 <p>DEFENCE</p>
                             </div>
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -754,7 +754,7 @@
                     </div> 
                     <div class="pb-2 flex flex-row gap-4 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -770,7 +770,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -784,7 +784,7 @@
                     </div>
                     <div class="pb-2 flex flex-row gap-4 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -800,7 +800,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -814,7 +814,7 @@
                     </div> 
                     <div class="pb-2 flex flex-row gap-4 justify-center">
                         <div>
-                            <div class="grid grid-cols-3 gap-4">
+                            <div class="grid grid-cols-3 gap-3">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -830,7 +830,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
+                            <div class="grid grid-cols-2 gap-3 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
                                     <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
@@ -844,8 +844,8 @@
                     </div> 
                </div> 
             </div>
-            <div class="bg-[#1155cc] text-center p-3">
-                  <h2 class="text-[#ffffff] text-[#ffffff] text-xl">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
+            <div class="bg-[#355464] text-center p-3">
+                  <h2 class="text-[#ffffff] text-[#ffffff] lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
                </div>
       </div>
  </div>
