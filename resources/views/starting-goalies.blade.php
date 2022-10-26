@@ -38,7 +38,7 @@
         </div>
  
         <div class="flex justify-center flex-col items-center ">
-            <div class="flex flex-col w-full bg-sky-600 justify-center items-center text-white font-bold py-2">
+            <div class="flex flex-col w-full bg-[#001628] justify-center items-center text-[#99D9D9] font-bold py-2">
                 <h1 class="text-2xl text-center">NASHVILLE PREDATOR @ CAROLINA HURRICANES</h1>
                 <h2 class="text-xl text-center">FEB 18TH, 2022 7:00PM EST</h2>
             </div>
@@ -69,7 +69,7 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
+                        <div class="flex flex-row bg-[#99D9D9] text-[#001628] justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
                             <div>LINE</div>
                             <div>COMBINATIONS</div>
                             <div>MATCHUP</div>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
+                    <div class="flex flex-row bg-[#99D9D9] text-[#001628] justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
                         <div>LINE</div>
                         <div>COMBINATIONS</div>
                         <div>MATCHUP</div>
@@ -140,7 +140,7 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
+                        <div class="flex flex-row bg-[#99D9D9] text-[#001628] justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
                             <div>LINE</div>
                             <div>COMBINATIONS</div>
                             <div>MATCHUP</div>
@@ -170,7 +170,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-row bg-slate-700 text-white justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
+                    <div class="flex flex-row bg-[#99D9D9] text-[#001628] justify-center items-center md:py-4 sm:py-2 py-2 md:gap-4 sm:gap-2 gap-2 w-full">
                         <div>LINE</div>
                         <div>COMBINATIONS</div>
                         <div>MATCHUP</div>
