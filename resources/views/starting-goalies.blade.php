@@ -9,10 +9,10 @@
     <div class="flex flex-col  m-auto ">
 
 
-        <div class="bg-slate-700 text-white flex flex-row  justify-evenly  py-5 lg:w-full flex md:flex-row sm:flex=col" >
-            <div class="bg-gray-500  xl:right-40 lg:right-20  md:right-10  relative sm:z-20 smm-x-0 ">
+        <div class=" text-white flex flex-row  justify-evenly  py-5 lg:w-full flex md:flex-row sm:flex=col" >
+            <div class=" xl:right-40 lg:right-20  md:right-10  relative sm:z-20 smm-x-0 ">
                 <div>
-                    <button class="bg-red-500 p-7 lg:px-5 lg:py-5 ">
+                    <button class="bg-red-500  p-7 lg:p-5 md:p-5 sm:p-5">
                     <div class="transform rotate-6 absolute left-2 lg:top-8 sm:top-10 smm-top-10 ">
                         <div class="arrowed">
                             <div class="arrow-prev" style="transform: rotate(222deg);"></div>
@@ -24,7 +24,7 @@
             <div class="sm:text-center flex items-center text-center">
                 TODAY SEP 5, 2022
             </div>
-            <div class="bg-gray-500 xl:left-40 lg:left-20 md:left-10 relative z-10 ">
+            <div class=" xl:left-40 lg:left-20 md:left-10 relative z-10 ">
                 <div>
                     <button class="bg-red-500 p-7 lg:px-5 lg:py-5 ">
                     <div class="transform rotate-45 absolute md:right-6 md:top-7  sm:right-6 sm:top-9 smm-inset-9 smm-right-8 ">
@@ -36,13 +36,7 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
+ 
         <div class="flex justify-center flex-col items-center ">
             <div class="flex flex-col w-full bg-sky-600 justify-center items-center text-white font-bold py-2">
                 <h1 class="text-2xl text-center">NASHVILLE PREDATOR @ CAROLINA HURRICANES</h1>
@@ -64,7 +58,7 @@
 
                         <div class="flex flex-row justify-between w-full py-2 relative mb-1">
                             <div class="flex flex-row justify-center w-full relative">
-                                <img  class="h-8 w-10 absolute  top-2 left-5 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
+                                <img  class="h-8 w-10 absolute  top-2 left-1 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
                                 <div class=" relative top-4 lg:right-15 md:right-1 sm:right-10 text-xl font-bold ">$8,700</div>
                             </div>
                             <div class="flex flex-row justify-center w-full">
@@ -94,7 +88,7 @@
 
                     <div class="flex flex-row justify-between w-full py-2 relative mb-1">
                         <div class="flex flex-row justify-center w-full relative">
-                            <img  class="h-8 w-10 absolute  top-2 left-5 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
+                            <img  class="h-8 w-10 absolute  top-2 left-1 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
                             <div class=" relative top-4 lg:right-15 md:right-1 sm:right-10 text-xl font-bold ">$8,700</div>
                         </div>
                         <div class="flex flex-row justify-center w-full">
@@ -135,7 +129,7 @@
 
                         <div class="flex flex-row justify-between w-full py-2 relative mb-1">
                             <div class="flex flex-row justify-center w-full relative">
-                                <img  class="h-8 w-10 absolute  top-2 left-5 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
+                                <img  class="h-8 w-10 absolute  top-2 left-1 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
                                 <div class=" relative top-4 lg:right-15 md:right-1 sm:right-10 text-xl font-bold ">$8,700</div>
                             </div>
                             <div class="flex flex-row justify-center w-full">
@@ -165,7 +159,7 @@
 
                     <div class="flex flex-row justify-between w-full py-2 relative mb-1">
                         <div class="flex flex-row justify-center w-full relative">
-                            <img  class="h-8 w-10 absolute  top-2 left-5 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
+                            <img  class="h-8 w-10 absolute  top-2 left-1 lg:left-4 sm:left-1" src="{{ asset('/images/starting-goalies/pinpng.png') }}" />
                             <div class=" relative top-4 lg:right-15 md:right-1 sm:right-10 text-xl font-bold ">$8,700</div>
                         </div>
                         <div class="flex flex-row justify-center w-full">

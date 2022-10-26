@@ -112,12 +112,7 @@
 
         .smm-gap-2 { gap: 0.5rem; }
 
-
-
-
-
-
-
+ 
         .smm-w-1-12	{ width: 8.333333%;}
         .smm-w-2-12	{ width: 16.666667%;}
         .smm-w-3-12	{ width: 25%;}
@@ -357,7 +352,7 @@
         /*.smm-left: 3rem; !* 48px *!*/
         /*.smm-inset-x-12	left: 3rem; !* 48px *!*/
         /*.smm-right: 3rem; !* 48px *!*/
-        /*.smm-inset-y-12	top: 3rem; !* 48px *!*/
+        .smm-inset-y-12	{top: 3rem;}
         /*.smm-bottom: 3rem; !* 48px *!*/
         /*.smm-top-12	top: 3rem; !* 48px *!*/
         /*.smm-right-12	right: 3rem; !* 48px *!*/
