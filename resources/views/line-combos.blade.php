@@ -5,7 +5,7 @@
 
     <div class="flex flex-col">
 
-        <div class="text-white bg-slate-700 flex  justify-evenly py-5">
+        <div class="text-[#99D9D9] bg-[#001628] flex  justify-evenly py-5">
             <div class="w-1/7 hidden">
                 <img src="/admin.png" />
             </div>
@@ -70,19 +70,19 @@
             </div>
             <div class="md:w-5/12 sm:w-10/12 smm-w-10-12 md:m-0 sm:m-auto smm-m-auto">
                 <div class="divide-y divide-slate-200 my-4">
-                    <div class="flex flex-col items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                    <div class="flex flex-col items-center justify-center p-lg-3 bg-[#001628] text-[#99D9D9] py-4 rounded-t-lg">
                         <div class="flex items-center ">
                             <h1 class="font-bold">LINE COMBINATIONS</h1> &nbsp;
                         </div>
                     </div>
-                    <div class="flex flex-row items-center p-4 rounded-b-lg bg-yellow-500 justify-center ">
+                    <div class="flex flex-row items-center p-4 rounded-b-lg bg-[#355464] justify-center ">
                         <div class="flex flex-row gap-1 items-center justify-center ">
                             <div class="flex flex-row gap-1 items-center justify-center">
-                                <h1 class="font-bold text-white text-center">MORNING SKATE</h1>
-                                <p class="font-bold text-white text-center">(Updated July 25, 6:18am) </p>
+                                <h1 class="font-bold text-[#99D9D9] text-center">MORNING SKATE</h1>
+                                <p class="font-bold text-[#99D9D9] text-center">(Updated July 25, 6:18am) </p>
                             </div>
                             <div>
-                                <p class="text-white">Source:</p>
+                                <p class="text-[#99D9D9]">Source:</p>
                             </div>
                         </div>
                         <div class="hidden">
@@ -260,7 +260,7 @@
                     {{----}}
                 </div>
                 <div > <!-- Start POWER PLAY 1 -->
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                    <div class="flex flex-row items-center justify-center p-lg-3 bg-[#001628] text-[#99D9D9] py-4 rounded-t-lg">
                         <h1 class="font-bold">POWER PLAY 1</h1> &nbsp;
                     </div>
                     <!-- Start First row -->
@@ -302,7 +302,7 @@
                     </div>  <!-- End First row -->
                 </div><!-- End POWER PLAY 1 -->
                 <div> <!-- Start POWER PLAY 2 -->
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                    <div class="flex flex-row items-center justify-center p-lg-3 bg-[#001628] text-[#99D9D9] py-4 rounded-t-lg">
                         <h1 class="font-bold">POWER PLAY 2</h1> &nbsp;
                     </div>
                     <!-- Start First row -->
@@ -350,7 +350,7 @@
                     {{----}}
                 </div>
                 <div> <!-- Start PRESS BOX -->
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                    <div class="flex flex-row items-center justify-center p-lg-3 bg-[#001628] text-[#99D9D9] py-4 rounded-t-lg">
                         <h1 class="font-bold">PRESS BOX</h1> &nbsp;
                     </div>
                     <!-- Start First row -->
@@ -394,7 +394,7 @@
             </div>
             <div class="md:w-3/12 sm:w-10/12 smm-w-10-12 md:m-0 sm:m-auto smm-m-auto">
                 <div class="my-4">
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                    <div class="flex flex-row items-center justify-center p-lg-3 bg-[#001628] text-[#99D9D9] py-4 rounded-t-lg">
                         <h1 class="font-bold">INJURY REPORT</h1> &nbsp;
                     </div>
                     <div class="flex flex-col divide-y divide-slate-200 gap-y-3 mt-2">
@@ -440,7 +440,7 @@
                     </div>
                 </div>
                 <div class="my-4">
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                    <div class="flex flex-row items-center justify-center p-lg-3 bg-[#001628] text-[#99D9D9] py-4 rounded-t-lg">
                         <h1 class="font-bold">TRANSACTIONS</h1> &nbsp;
                     </div>
                     <div class="flex flex-col divide-y divide-slate-200 gap-y-3 mt-2">
