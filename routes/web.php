@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'lineCombos']);
 Route::get('/todays-games',  [App\Http\Controllers\HockeyController::class, 'todaysGame']);
+Route::get('/news-feed',  [App\Http\Controllers\HockeyController::class, 'newsFeed']);
 Route::get('/starting-goalies', [App\Http\Controllers\HockeyController::class, 'startingGoalies'])->name('starting-goalies');
 // Route::get('/hockey',  'HockeyController@index');
 
