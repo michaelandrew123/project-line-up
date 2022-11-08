@@ -17,7 +17,9 @@ class HockeyController extends Controller
     public function newsFeed(){
         return view('news-feed');
     }
-
+    public function startingGoaliesv1(){
+        return view('starting-goaliesv1');
+    }
     public function startingGoalies(){
         return view('starting-goalies');
     }
