@@ -7,7 +7,9 @@ use Illuminate\Http\Request;
 class HockeyController extends Controller
 {
     //
-
+    public function homePage(){
+        return view('home-page');
+    }
     public function lineCombos(){
         return view('line-combos');
     }
