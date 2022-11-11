@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home-page',  [App\Http\Controllers\HockeyController::class, 'homepage']);
+Route::get('/home',  [App\Http\Controllers\HockeyController::class, 'homepage']);
 Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'lineCombos']);
 Route::get('/todays-games',  [App\Http\Controllers\HockeyController::class, 'todaysGame']);
 Route::get('/news-feed',  [App\Http\Controllers\HockeyController::class, 'newsFeed']);
@@ -26,6 +26,6 @@ Route::get('/starting-goalies', [App\Http\Controllers\HockeyController::class, '
 // Route::get('/hockey',  'HockeyController@index');
 
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Auth::routes();
+//
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
