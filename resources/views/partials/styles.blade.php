@@ -32,10 +32,49 @@
         border: 8px solid;
         border-color: white white #f7f7f700 transparent;
         
-        
+      
     }
+    /**
+    start projection table 
+    */
+     .tbl th, td{
+        border:1px solid black;
+        text-align:left; 
+     }
 
-
+     .tblWin {
+        text-align:center;
+     }
+     .tblGoals{
+        text-align:center;
+     }
+     .tblSalary{
+        background-color: #fc9701;
+        text-align:center;
+     }
+     .tblProj{
+        background-color:#fc9701;
+        text-align:center;
+     }
+     .tblSalary2{
+        text-align:center;
+        background-color:#6fa8dc;
+     }
+     .tblProj2{
+        text-align:center;
+        background-color:#6d9eeb;
+     }
+     .tblUnit{
+        background-color:#00ff00;
+        text-align:center;
+     }
+     .tblsLine{
+        background-color:#b7e1cd;
+        text-align:center;
+     }
+       /**
+    end projection table 
+    */
     .arrow-prev {
         height: 0px; width: 0px;
         border: 8px solid;
@@ -76,6 +115,7 @@
     .menu-white-text{
         color: white !important;
     }
+
     @media (max-width: 639px) {
         .smm-flex{
             display: flex;
