@@ -12,10 +12,12 @@
 
         <div class="sm:relative md:flex md:justify-center  bg-current z-30 ">
 
+
+
+
+        
+            <!--Desktop menu --> 
             <div class="md:flex xl:flex-row lg:flex-col-reverse lg:pt-6 md:flex-col-reverse md:pt-6 sm:block sm:py-1 items-center justify-between sm:flex-wrap bg-current px-3 sm:px-3">
-
-
-
                 <div class="flex sm:flex-row-reverse  md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
 
                     <div>
@@ -27,67 +29,67 @@
                     </div>
 
 
-                    <div class="md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative main-menu  md:block">
+                    <div id="main-menu" class="md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative   md:block">
 
 
-                        <div class="block lg:hidden md:hidden">
-                            <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                            </button>
-                        </div>
+                            <div class="block lg:hidden md:hidden">
+                                <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                                </button>
+                            </div>
 
 
 
-                        <div class="  md:block  sm:hidden smm-hidden">
+                        <div class=" md:block  sm:hidden smm-hidden">
 
-                            <a href="#responsive-header" rel="menu-nhl"  class="  sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0  pr-4  md:text-slate-300  hover:text-white  font-bold">
+                            <a href="#responsive-header" rel="menu-nhl"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0  pr-4  md:text-slate-300  hover:text-white  font-bold">
                                 NHL
-                                <div class="relative bottom--4 hidden"  >
+                                <div class="relative bottom--4 hidden menu-nhl" >
                                     <div class="arrowed">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0  pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="starting-goalies-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0  pr-4 relative md:text-slate-300  hover:text-white font-bold">
                                 STARTING GOALIES
 
-                                <div class="relative bottom--4 hidden">
+                                <div class="relative bottom--4 hidden starting-goalies-menu">
                                     <div class="arrowed">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="line-combinations-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
                                 LINE COMBINATIONS
 
-                                <div class="relative bottom--4  hidden">
+                                <div class="relative bottom--4  hidden line-combinations-menu">
                                     <div class="arrowed">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header " class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header " rel="projections-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
                                 DFS PROJECTIONS
 
-                                <div class="relative bottom--4  hidden">
+                                <div class="relative bottom--4  hidden projections-menu">
                                     <div class="arrowed">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
                                 ODDS
 
-                                <div class="relative bottom--4 hidden">
+                                <div class="relative bottom--4 hidden odds-menu">
                                     <div class="arrowed">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold pr-4">
+                            <a href="#responsive-header" rel="shop-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold pr-4">
                                 SHOP
 
-                                <div class="relative bottom--4 hidden">
+                                <div class="relative bottom--4 hidden shop-menu">
                                     <div class="arrowed">
                                         <div class="arrow-3"></div>
                                     </div>
@@ -118,12 +120,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
+            <!--End Desktop menu --> 
 
-            <!--Mobile menu -->
-
-
-
+            <!--Mobile menu -->  
             <div style="background-color: white;" class="md:block md:flex sm:flex sm:flex-row sm:absolute smm-absolute sm:bg-white w-full border-b-2 border-gray-200 smm-flex smm-flex-row pb-2 smm-z-20"  id="list-menu">
 
 
@@ -246,7 +246,6 @@
 
 
             </div>
-
             <!--End Mobile menu -->
 
         </div>
