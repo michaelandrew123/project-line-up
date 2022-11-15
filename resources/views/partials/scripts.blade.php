@@ -19,37 +19,45 @@
     //     .then((response) => response.json())
     // .then((data) => console.log(data));
     //
+  
+    $( "div#main-menu > div > a" ).hover(function() { 
+        var data = $(this).attr('rel');
+        $("."+data).toggleClass('hidden');
+    });
+ 
 
+    $( "div#main-menu > div > a" ).on('click', function() {
 
-    $( "div.main-menu > div > a" ).on('touchstart click', function() {
-        $("div.main-menu > div > a > div").addClass('md:hidden');
-        $('.menu-white-text').removeClass('menu-white-text');
-        $(this).addClass('menu-white-text');
-        $( this ).find('div').removeClass('md:hidden');
+ 
 
-        var data = $(this).text();
+        // $("div#main-menu > div > a > div").addClass('md:hidden');
+        // $('.menu-white-text').removeClass('menu-white-text');
+        // $(this).addClass('menu-white-text');
+        // $( this ).find('div').removeClass('md:hidden');
 
-        var arrayData = data.replace(/\s{2,}/g, ' ').split(' ');
+        // var data = $(this).text();
 
-        var arrayDataCombine='';
-        var j = 0;
+        // var arrayData = data.replace(/\s{2,}/g, ' ').split(' ');
 
-        for(var i = 0; i < arrayData.length; i++){
-            if(arrayData[i] != '' && arrayData[i] != ' '){
-                if(arrayData[i] != undefined){
+        // var arrayDataCombine='';
+        // var j = 0;
 
-                    if(i == 1){
-                        arrayDataCombine = arrayData[i].toLowerCase();
-                    }else{
-                        arrayDataCombine += "-" + arrayData[i].toLowerCase();
-                    }
-                }
-            }
+        // for(var i = 0; i < arrayData.length; i++){
+        //     if(arrayData[i] != '' && arrayData[i] != ' '){
+        //         if(arrayData[i] != undefined){
 
-        }
+        //             if(i == 1){
+        //                 arrayDataCombine = arrayData[i].toLowerCase();
+        //             }else{
+        //                 arrayDataCombine += "-" + arrayData[i].toLowerCase();
+        //             }
+        //         }
+        //     }
 
-        $('#sub-menu > ul.active').removeClass('active');
-        $('.'+arrayDataCombine).addClass('active');
+        // }
+
+        // $('#sub-menu > ul.active').removeClass('active');
+        // $('.'+arrayDataCombine).addClass('active');
 
     });
 
