@@ -21,8 +21,10 @@
     //
   
     $( "div#main-menu > div > a" ).hover(function() { 
-        var data = $(this).attr('rel');
-        $("."+data).toggleClass('hidden');
+        var data = $(this).attr('rel'); 
+        $("a > div."+data).toggleClass('hidden'); 
+        $("#sub-menu > ul.active").removeClass('active');
+        $("#sub-menu > ul."+data).addClass('active'); 
     });
  
 

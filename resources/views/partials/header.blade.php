@@ -17,7 +17,7 @@
 
         
             <!--Desktop menu --> 
-            <div class="md:flex xl:flex-row lg:flex-col-reverse lg:pt-6 md:flex-col-reverse md:pt-6 sm:block sm:py-1 items-center justify-between sm:flex-wrap bg-current px-3 sm:px-3">
+            <div class="md:flex xl:flex-row lg:flex-col-reverse lg:pt-2  md:flex-col-reverse md:pt-2 sm:block sm:py-1 items-center justify-between sm:flex-wrap bg-current px-3 sm:px-3">
                 <div class="flex sm:flex-row-reverse  md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
 
                     <div>
@@ -42,37 +42,36 @@
 
                         <div class=" md:block  sm:hidden smm-hidden">
 
-                            <a href="#responsive-header" rel="menu-nhl"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0  pr-4  md:text-slate-300  hover:text-white  font-bold">
-                                NHL
-                                <div class="relative bottom--4 hidden menu-nhl" >
-                                    <div class="arrowed">
+                            <a href="#responsive-header" rel="daily-menu"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0  pr-4  md:text-slate-300  hover:text-white  font-bold">
+                                DAILY FANTASY
+                                <div class="relative hidden daily-menu" >
+                                    <div class="arrowed absolute top-5 ">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="starting-goalies-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0  pr-4 relative md:text-slate-300  hover:text-white font-bold">
-                                STARTING GOALIES
-
-                                <div class="relative bottom--4 hidden starting-goalies-menu">
-                                    <div class="arrowed">
+                            <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0  pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                                PROJECTIONS
+                                <div class="relative  hidden projections-menu">
+                                    <div class="arrowed absolute top-5">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="line-combinations-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
-                                LINE COMBINATIONS
+                            <a href="#responsive-header" rel="news-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                                NEWS
 
-                                <div class="relative bottom--4  hidden line-combinations-menu">
-                                    <div class="arrowed">
+                                <div class="relative  hidden news-menu">
+                                    <div class="arrowed absolute top-5">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header " rel="projections-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
-                                DFS PROJECTIONS
+                            <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                                BETTING
 
-                                <div class="relative bottom--4  hidden projections-menu">
-                                    <div class="arrowed">
+                                <div class="relative  hidden betting-menu">
+                                    <div class="arrowed absolute top-5">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
@@ -80,17 +79,26 @@
                             <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
                                 ODDS
 
-                                <div class="relative bottom--4 hidden odds-menu">
-                                    <div class="arrowed">
+                                <div class="relative  hidden odds-menu">
+                                    <div class="arrowed absolute top-5">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="shop-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold pr-4">
-                                SHOP
+                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold pr-4">
+                                STARTING GOALIES
 
-                                <div class="relative bottom--4 hidden shop-menu">
-                                    <div class="arrowed">
+                                <div class="relative hidden goalies-menu">
+                                    <div class="arrowed absolute top-5">
+                                        <div class="arrow-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold pr-4">
+                                LINE COMBINATIONS
+
+                                <div class="relative hidden line-menu">
+                                    <div class="arrowed absolute top-5">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
@@ -201,7 +209,7 @@
                 <div class="md:hidden sm:block md:relative" id="sub-menu">
                     <ul class="justify-start md:absolute list-none  flex-col sm:items-start items-center gap-2 py-2 nhl hidden active sm:flex-wrap smm-flex-wrap smm-items-start px-2">
 
-                        <li><a  class="hover:font-bold"  href="#">STARTING GOALIES</a></li>
+                        <li ><a  class="hover:font-bold"  href="#">STARTING GOALIES </a></li>
                         <li><a  class="hover:font-bold" >LINE COMBINATIONS</a></li>
                         <li><a  class="hover:font-bold" >DFS PROJECTIONS</a></li>
                         <li><a  class="hover:font-bold" >TODAYS GAMES</a></li>
@@ -225,7 +233,7 @@
                         <li><a class="hover:font-bold" href="#">FANDUEL</a></li>
                     </ul>
 
-                    <ul class="justify-start list-none flex-col gap-2 py-2 odds hidden sm:flex-wrap smm-flex-wrap smm-items-start p-2">
+                    <ul class="justify-start list-none flex-col gap-2 py-2 odds hidden sm:flex-wrap smm-flex-wrap smm-items-start p-2 ">
                         <li ><a  class="hover:font-bold" href="#">NHL</a></li>
                         <li ><a  class="hover:font-bold" href="#">NBA</a></li>
                         <li ><a  class="hover:font-bold" href="#">NFL</a></li>
@@ -251,42 +259,53 @@
         </div>
 
 
+     <!-- Desktop -->
 
+        <div class="w-4/5 m-auto lg:block md:hidden sm:hidden smm-hidden p-2" id="sub-menu">
+            <ul class="list-none flex-row items-center gap-2 py-2 daily-fantasy hidden active sm:flex-wrap smm-flex-wrap daily-menu">
+                <li ><a  class="font-semibold hover:font-bold"  href="#">STARTING GOALIES</a></li>
+                <li><a  class="font-semibold hover:font-bold" href="#" >LINE COMBINATIONS</a></li>
+                <li><a  class="font-semibold hover:font-bold" href="#">PROJECTIONS</a></li>
 
-        <div class="w-4/5 m-auto lg:block md:hidden sm:hidden smm-hidden" id="sub-menu">
-            <ul class="list-none flex-row justify-center items-center gap-2 py-2 nhl hidden active sm:flex-wrap smm-flex-wrap">
-
-                <li><a  class="hover:font-bold"  href="#">STARTING GOALIES</a></li>
-                <li><a  class="hover:font-bold" >LINE COMBINATIONS</a></li>
-                <li><a  class="hover:font-bold" >DFS PROJECTIONS</a></li>
-                <li><a  class="hover:font-bold" >TODAYS GAMES</a></li>
-                <li><a  class="hover:font-bold" >TEAM STANDINGS</a></li>
-                <li><a  class="hover:font-bold" >PLAYER STATS</a></li>
-                <li><a  class="hover:font-bold" >ODDS</a></li>
-                <li><a  class="hover:font-bold" >NEWS FEED</a></li>
-                <li><a  class="hover:font-bold" >SCHEDULE</a></li>
             </ul>
 
-            <ul class="list-none flex-row gap-2 py-2 starting-goalies hidden  smm-flex-wrap">
+            <ul class="list-none flex-row gap-2 py-2 projections-menu hidden active  smm-flex-wrap">
+                <li class="flex items-center">
+                    <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                    <a  class="font-semibold font-semibold hover:font-bold" href="#" >DRAFTKINGS</a>
+                </li>
+                <li class="flex itmes-center">
+                    <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                    <a  class="font-semibold hover:font-bold"   href="#">FANDUEL</a>
+                </li>
+                
             </ul>
-            <ul class="list-none flex-row gap-2 py-2 line-combinations hidden smm-flex-wrap">
-
-                <li ><a class="hover:font-bold" href="#">(DISPLAY TEAM LOGOS)</a></li>
+            <ul class="list-none flex-row gap-2 py-2  hidden smm-flex-wrap news-menu">
+                <li ><a class=" font-semibold hover:font-bold" href="#">TEAM NEWS</a></li>
+                <li ><a class="font-semibold hover:font-bold" href="#">PLAYER NEWS</a></li>
+                <li ><a class="font-semibold hover:font-bold" href="#">SCHEDULE</a></li>
             </ul>
 
-            <ul class="list-none flex-row gap-2 py-2 dfs-projections hidden smm-flex-wrap">
-
-                <li><a class="hover:font-bold" href="#">DRAFTKINGS</a></li>
-                <li><a class="hover:font-bold" href="#">FANDUEL</a></li>
+            <ul class="list-none flex-row gap-2 py-2 dfs-projections hidden active smm-flex-wrap hidden betting-menu">
+                <li class="flex"><a class="font-semibold hover:font-bold" href="#">SPORTSBOOKS</a></li>
+                <li class="flex"><a class="font-semibold hover:font-bold" href="#">BONUSES</a></li>
+                <li class="flex"><a class="font-semibold hover:font-bold" href="#">NEWS</a></li>
+                <li class="flex"><a class="font-semibold hover:font-bold" href="#">ODDS</a></li>
+                <li class="flex"><a class="font-semibold hover:font-bold" href="#">PROPS</a></li>
+                <li class="flex"><a class="font-semibold hover:font-bold" href="#">BETTING GUIDE</a></li>
+                <li class="flex"><a class="font-semibold hover:font-bold" href="#">GLOSSARY</a></li>
+                
             </ul>
 
-            <ul class="list-none flex-row gap-2 py-2 odds hidden sm:flex-wrap smm-flex-wrap">
-                <li ><a  class="hover:font-bold" href="#">NHL</a></li>
-                <li ><a  class="hover:font-bold" href="#">NBA</a></li>
-                <li ><a  class="hover:font-bold" href="#">NFL</a></li>
-                <li ><a  class="hover:font-bold" href="#">MLB</a></li>
-                <li ><a  class="hover:font-bold" href="#">SOCCER</a></li>
-                <li ><a  class="hover:font-bold" href="#">SPORTSBOOKS</a></li>
+            <ul class="list-none flex-row gap-2 py-2 odds hidden active sm:flex-wrap smm-flex-wrap  hidden odds-menu ">
+                <li ><a  class="font-semibold hover:font-bold" href="#">GAME ODDS</a></li>
+                <li ><a  class="font-semibold hover:font-bold" href="#">PLAYER PROPS</a></li>
+      
+            </ul>
+
+            <ul class="list-none flex-row gap-2 py-2 line-menu hidden active  smm-flex-wrap">
+                <li><a ><img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}"></a></li>
+                <li><a ><img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}"></a></li>
             </ul>
 
 
@@ -294,6 +313,7 @@
 
             </ul>
         </div>
+    <!-- End Desktop -->
 
 
     </div>
