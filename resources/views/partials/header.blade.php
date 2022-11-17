@@ -17,11 +17,11 @@
 
         
             <!--Desktop menu --> 
-            <div class="w-full flex-row  md:flex xl:flex-row lg:flex-col-reverse  md:flex-col-reverse md:pt-2 sm:block sm:py-1 items-center  sm:flex-wrap sm:px-0">
+            <div class="w-full flex-row  md:flex xl:flex-row lg:flex-col-reverse md:flex-col-reverse md:pt-2 sm:block sm:py-1 items-center  sm:flex-wrap sm:px-0">
               
             
             
-                <div class="w-6/12 bg-current lg:gap-10 flex sm:flex-row-reverse  md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
+                <div class="w-7/12 bg-current lg:gap-20 flex sm:flex-row-reverse md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
 
                     <div>
                         <div class="flex items-center flex-shrink-0 text-white ">
@@ -38,7 +38,7 @@
                             </button>
                         </div>
  
-                        <div class=" flex flex-row gap-8"> 
+                        <div class=" flex flex-row gap-12"> 
                             <a href="#responsive-header" rel="daily-menu"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0    md:text-slate-300  hover:text-white  font-bold">
                                 DAILY FANTASY
                                 <div class="relative hidden daily-menu active" >
@@ -90,9 +90,9 @@
                 </div>
  
 
-                <div   class="w-6/12 bg-[#1d9bf0] flex sm:flex-row-reverse  md:flex-row md:items-center lg:justify-start sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
-                    <div id="main-menu2" class="p-4 w-full flex flex-row gap-16 ">
-                        <div class="gap-14 flex flex-row">
+                <div class="w-5/12 bg-[#1d9bf0] flex sm:flex-row-reverse md:flex-row md:items-center lg:justify-start sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
+                    <div id="main-menu2" class="p-4 w-full flex flex-row gap-10 ">
+                        <div class="gap-6 flex flex-row">
                             <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
                                 STARTING GOALIES
 
@@ -119,7 +119,7 @@
                         
                             <div class="flex flex-row justify-center items-center relative">
                                 <div>
-                                    <input type="text" name="search" id="search" class="px-2  w-40 border-1  rounded-md "/>
+                                    <input type="text" name="search" id="search" class="px-2  w-32 border-1  rounded-md "/>
                                 </div>
                                 <div class="absolute right-px top-2.5">
                                     <img src = "{{ asset('/images/search.png') }}" class=" text-white w-4" />
@@ -314,9 +314,9 @@
       
             </ul>
             
-            <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap relative">
-                <div class="absolute right-0 bottom-0 flex flex-row gap-3">
-                    <li><a href="#" ><img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}"></a></li>
+            <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap justify-end">
+                <div class="flex flex-row gap-3">
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}"></a></li>
                     <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}"></a></li>
                     <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/goalie icon.png') }}"></a></li>
                     <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/gtd icon.png') }}"></a></li>
