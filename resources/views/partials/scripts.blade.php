@@ -20,11 +20,12 @@
     // .then((data) => console.log(data));
     //
   
-    $( "div#main-menu > div > a" ).hover(function() { 
+    $( "div#main-menu1 > div > a, div#main-menu2 > div > a" ).hover(function() {  
         var data = $(this).attr('rel'); 
-        $("a > div."+data).toggleClass('hidden'); 
+        $("a > div.active").removeClass('active'); 
+        $("a > div."+data).addClass('active'); 
         $("#sub-menu > ul.active").removeClass('active');
-        $("#sub-menu > ul."+data).addClass('active'); 
+        $("#sub-menu > ul."+data).addClass('active');  
     });
  
 
