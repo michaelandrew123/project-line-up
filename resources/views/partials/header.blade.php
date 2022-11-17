@@ -10,130 +10,141 @@
     <div class="md:flex md:flex-col sm:block ">
 
 
-        <div class="sm:relative md:flex md:justify-center  bg-current z-30 ">
+        <div class="sm:relative md:flex md:justify-center   z-30">
 
 
 
 
         
             <!--Desktop menu --> 
-            <div class="md:flex xl:flex-row lg:flex-col-reverse lg:pt-2  md:flex-col-reverse md:pt-2 sm:block sm:py-1 items-center justify-between sm:flex-wrap bg-current px-3 sm:px-3">
-                <div class="flex sm:flex-row-reverse  md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
+            <div class="w-full flex-row  md:flex xl:flex-row lg:flex-col-reverse  md:flex-col-reverse md:pt-2 sm:block sm:py-1 items-center  sm:flex-wrap sm:px-0">
+              
+            
+            
+                <div class="w-6/12 bg-current lg:gap-10 flex sm:flex-row-reverse  md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
 
                     <div>
-
-                        <div class="flex items-center flex-shrink-0 text-white mr-6">
+                        <div class="flex items-center flex-shrink-0 text-white ">
                             <img src = "{{ asset('/images/logo.png') }}" class="w-16" />
                             <span class="font-semibold text-xl tracking-tight hidden">Line Ups</span>
                         </div>
                     </div>
+                    <div id="main-menu1" class="pr-4 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative   md:block">
 
 
-                    <div id="main-menu" class="md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative   md:block">
-
-
-                            <div class="block lg:hidden md:hidden">
-                                <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                                </button>
-                            </div>
-
-
-
-                        <div class=" md:block  sm:hidden smm-hidden">
-
-                            <a href="#responsive-header" rel="daily-menu"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0  pr-4  md:text-slate-300  hover:text-white  font-bold">
+                        <div class="block lg:hidden md:hidden">
+                            <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                            </button>
+                        </div>
+ 
+                        <div class=" flex flex-row gap-8"> 
+                            <a href="#responsive-header" rel="daily-menu"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0    md:text-slate-300  hover:text-white  font-bold">
                                 DAILY FANTASY
-                                <div class="relative hidden daily-menu" >
-                                    <div class="arrowed absolute top-5 ">
+                                <div class="relative hidden daily-menu active" >
+                                    <div class="arrowed absolute top-5 left-10 ">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0  pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0   relative md:text-slate-300  hover:text-white font-bold">
                                 PROJECTIONS
-                                <div class="relative  hidden projections-menu">
-                                    <div class="arrowed absolute top-5">
+                                <div class="relative  hidden projections-menu ">
+                                    <div class="arrowed absolute top-5 left-10">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="news-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="news-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 NEWS
 
                                 <div class="relative  hidden news-menu">
-                                    <div class="arrowed absolute top-5">
+                                    <div class="arrowed absolute top-5 left-5">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 BETTING
 
                                 <div class="relative  hidden betting-menu">
-                                    <div class="arrowed absolute top-5">
+                                    <div class="arrowed absolute top-5 left-5">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 pr-4 relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 ODDS
 
                                 <div class="relative  hidden odds-menu">
-                                    <div class="arrowed absolute top-5">
+                                    <div class="arrowed absolute top-5 left-3">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold pr-4">
+                       </div> 
+
+
+                    </div>
+
+                </div>
+ 
+
+                <div   class="w-6/12 bg-[#1d9bf0] flex sm:flex-row-reverse  md:flex-row md:items-center lg:justify-start sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
+                    <div id="main-menu2" class="p-4 w-full flex flex-row gap-16 ">
+                        <div class="gap-14 flex flex-row">
+                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
                                 STARTING GOALIES
 
                                 <div class="relative hidden goalies-menu">
-                                    <div class="arrowed absolute top-5">
+                                    <div class="arrowed absolute top-5 left-16">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold pr-4">
+                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 LINE COMBINATIONS
 
                                 <div class="relative hidden line-menu">
-                                    <div class="arrowed absolute top-5">
+                                    <div class="arrowed absolute top-5 left-16">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
                             </a>
-
                         </div>
 
 
-                    </div>
+                        <div class="flex flex-row gap-3">
 
-                </div>
-
-                <div class="w-full md:block sm:hidden smm-hidden flex-grow md:items-center  lg:items-center lg:w-auto">
-                    <div class="flex flex-row justify-end md:justify-center items-center gap-2">
-                        <div class="flex flex-row justify-center items-center relative">
+                        
+                            <div class="flex flex-row justify-center items-center relative">
+                                <div>
+                                    <input type="text" name="search" id="search" class="px-2  w-40 border-1  rounded-md "/>
+                                </div>
+                                <div class="absolute right-px top-2.5">
+                                    <img src = "{{ asset('/images/search.png') }}" class=" text-white w-4" />
+                                </div>
+                            </div>
                             <div>
-                                <input type="text" name="search" id="search" class="px-3 py-1 border-1 rounded-md"/>
+                                <a href="#">
+                                    <svg class=" w-8 h-8 text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="absolute right-0 top-0">
-                                <img src = "{{ asset('/images/search.png') }}" class=" text-white w-8" />
-                            </div>
+
                         </div>
-                        <div>
-                            <a href="#" class="uppercase inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 md:mt-0 lg:mt-0">
-                                SIGN UP FOR FREE
-                            </a>
-                        </div>
-                    </div>
+                    </div>  
                 </div>
+             
+
+
+
             </div> 
             <!--End Desktop menu --> 
 
             <!--Mobile menu -->  
             <div style="background-color: white;" class="md:block md:flex sm:flex sm:flex-row sm:absolute smm-absolute sm:bg-white w-full border-b-2 border-gray-200 smm-flex smm-flex-row pb-2 smm-z-20"  id="list-menu">
-
 
                 <div class="md:hidden sm:block px-2  border-r-2 border-gray-200" id="mobile-smm-menu">
 
@@ -143,7 +154,7 @@
                     <a href="#responsive-header" rel="search-bar"  class="  sm:leading-loose md:leading-13 sm:block sm:mt-4 no-underline block mt-4 md:mt-0 md:inline-block lg:mt-0  md:text-slate-300  ">
 
                         <img src = "{{ asset('/images/search.png') }}" class="w-5 m-auto" />
-                        <div class="relative bottom--4 hidden"  >
+                        <div class="relative bottom--4  hidden active"  >
                             <div class="arrowed">
                                 <div class="arrow-3"></div>
                             </div>
@@ -261,15 +272,15 @@
 
      <!-- Desktop -->
 
-        <div class="w-4/5 m-auto lg:block md:hidden sm:hidden smm-hidden p-2" id="sub-menu">
-            <ul class="list-none flex-row items-center gap-2 py-2 daily-fantasy hidden active sm:flex-wrap smm-flex-wrap daily-menu">
+        <div class="w-4/5 m-auto lg:block md:hidden sm:hidden smm-hidden p-4" id="sub-menu">
+            <ul class="list-none flex-row items-center gap-2 py-2 daily-fantasy hidden sm:flex-wrap smm-flex-wrap daily-menu active">
                 <li ><a  class="font-semibold hover:font-bold"  href="#">STARTING GOALIES</a></li>
                 <li><a  class="font-semibold hover:font-bold" href="#" >LINE COMBINATIONS</a></li>
                 <li><a  class="font-semibold hover:font-bold" href="#">PROJECTIONS</a></li>
 
             </ul>
 
-            <ul class="list-none flex-row gap-2 py-2 projections-menu hidden active  smm-flex-wrap">
+            <ul class="list-none flex-row gap-2 py-2 projections-menu hidden  smm-flex-wrap">
                 <li class="flex items-center">
                     <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
                     <a  class="font-semibold font-semibold hover:font-bold" href="#" >DRAFTKINGS</a>
@@ -286,7 +297,7 @@
                 <li ><a class="font-semibold hover:font-bold" href="#">SCHEDULE</a></li>
             </ul>
 
-            <ul class="list-none flex-row gap-2 py-2 dfs-projections hidden active smm-flex-wrap hidden betting-menu">
+            <ul class="list-none flex-row gap-2 py-2 dfs-projections hidden smm-flex-wrap hidden betting-menu">
                 <li class="flex"><a class="font-semibold hover:font-bold" href="#">SPORTSBOOKS</a></li>
                 <li class="flex"><a class="font-semibold hover:font-bold" href="#">BONUSES</a></li>
                 <li class="flex"><a class="font-semibold hover:font-bold" href="#">NEWS</a></li>
@@ -297,15 +308,30 @@
                 
             </ul>
 
-            <ul class="list-none flex-row gap-2 py-2 odds hidden active sm:flex-wrap smm-flex-wrap  hidden odds-menu ">
+            <ul class="list-none flex-row gap-2 py-2 odds hidden sm:flex-wrap smm-flex-wrap  hidden odds-menu ">
                 <li ><a  class="font-semibold hover:font-bold" href="#">GAME ODDS</a></li>
                 <li ><a  class="font-semibold hover:font-bold" href="#">PLAYER PROPS</a></li>
       
             </ul>
-
-            <ul class="list-none flex-row gap-2 py-2 line-menu hidden active  smm-flex-wrap">
-                <li><a ><img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}"></a></li>
-                <li><a ><img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}"></a></li>
+            
+            <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap relative">
+                <div class="absolute right-0 bottom-0 flex flex-row gap-3">
+                    <li><a href="#" ><img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/goalie icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/gtd icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/hot icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/injury icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/instagram icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/player icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/projections icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/tiktok icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/twitter icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/menu icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/value icon.png') }}"></a></li>
+                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/website icon.png') }}"></a></li>
+                </div>
+                
             </ul>
 
 
