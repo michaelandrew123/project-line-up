@@ -72,6 +72,16 @@
         background-color:#b7e1cd;
         text-align:center;
      }
+     .tbl th{
+        font-weight:medium;
+        font-size:14px;
+        width:80px;
+        margin-right:1px;
+
+     }
+     .tbl td{
+        text-align:center;
+     }
        /**
     end projection table 
     */
