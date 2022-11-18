@@ -8,21 +8,21 @@ class HockeyController extends Controller
 {
     //
     public function homePage(){
-        return view('home-page');
+        return view('pages/home-page');
     }
     public function lineCombos(){
-        return view('line-combos');
+        return view('old-page/line-combos');
     }
     public function todaysGame(){
-        return view('todays-game');
+        return view('pages/todays-game');
     }
     public function newsFeed(){
-        return view('news-feed');
+        return view('pages/news-feed');
     }
     public function startingGoaliesv1(){
-        return view('starting-goaliesv1');
+        return view('pages/starting-goaliesv1');
     }
     public function startingGoalies(){
-        return view('starting-goalies');
+        return view('old-page/starting-goalies');
     }
 }

@@ -332,7 +332,7 @@
             </div>
 
             <div class="flex flex-col  ">
-            <div class="flex items-center">
+            <div class="flex items-center ">
                     <img class="w-14 h-14" src="{{ asset('/images/home-page/graph-logo.png') }}">
                     <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
                         Projections
@@ -340,22 +340,91 @@
                 </div>
                 <div class="flex md:flex-row">
                 </div> 
-                <div class="flex justify-center" >
-                        <table  class= "tbl w-full">
+                <div class="flex justify-center " >
+                        <table class="tbl table-fixed">
                             <tr>
-                                <th>First </th >
-                                <th>Last</th>
-                                <th>Pos</th >
-                                <th>Team</th>
-                                <th>Opp</th>
-                                <th>Start/line</th>
-                                <th>PP Unit</th>
-                                <th class="tblGoals">Goals</th>
-                                <th class="tblWin">Win%</th>
-                                <th class="tblSalary">DK Salary</th>
-                                <th class="tblProj">DK PROJ</th>
-                                <th class="tblSalary2">FD Salary</th>
-                                <th class="tblProj2">FD PROJ</th>
+                                <th class="relative ">First
+                                  <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1 text-[#8bbf9b]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th >
+                                <th class="relative">Last
+                                   <div class="absolute right-0 bottom-1  ">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="relative">Pos
+                                   <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th >
+                                <th class="relative">Team
+                                   <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="relative">Opp
+                                 <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="relative" style="width:9%;">Start/line
+                                <div class="absolute right-px bottom-1">
+				                        <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-4 h-4 relative bottom-px right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="relative" style="width:8%;">PP Unit 
+                                   <!-- <div class="absolute right-0 bottom-1">
+				                        <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-4 h-4 relative bottom-1 right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div> -->
+                                  <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="tblGoals relative">Goals
+                                    <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="tblWin relative">Win%
+                                    <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="tblSalary relative" style=" width:9%; font-size:14px;">DK Salary
+                                   <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="tblProj relative" style=" width:9%; font-size:14px;">DK PROJ
+                                   <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="tblSalary2 relative" style=" width:9%; font-size:14px;">FD Salary
+                                   <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
+                                <th class="tblProj2 relative" style=" width:9%; font-size:14px;">FD PROJ
+                                   <div class="absolute right-0 bottom-1">
+				                        <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+		                                 <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+		                          </div>
+                                </th>
                                 
                             </tr>
                             <tr>
