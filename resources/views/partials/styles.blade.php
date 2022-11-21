@@ -85,6 +85,7 @@
        /**
     end projection table 
     */
+    
     .arrow-prev {
         height: 0px; width: 0px;
         border: 8px solid;
