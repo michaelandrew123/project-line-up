@@ -42,18 +42,18 @@
 
         </div>
 
-        <div class="md:w-6/12 sm:w-10/12 smm-w-10-12 smm-flex smm-justify-center text-center m-auto text-black">
-            <ul class="list-none flex gap-2  py-2 justify-center  ">
-                <li><a href="#"> NHL</a></li>
-                <li><a>Toronto Maple Leafs*</a></li>
-                <li><a>Home</a></li>
-                <li><a>News</a></li>
-                <li><a>Stats</a></li>
-                <li><a>Schedule</a></li>
-            </ul>
-        </div>
+        
 
     </div>
+    <div class="md:w-full  smm-flex smm-justify-center text-center m-auto text-black">
+            <ul class="list-none flex gap-2  justify-center  ">
+                <img class="w-7 h-6" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                <h1 class="text-base font-bold">Toronto Maple Leafs</h1>
+                <li><a class="text-sm font-bold">News</a></li>
+                <li><a class="text-sm font-bold">Schedule</a></li>
+                <li><a class="text-sm font-bold">Odds</a></li>
+            </ul>
+        </div>
 
     <div class=" text-center flex flex-row items-center justify-center  m-auto md:block sm:hidden">
         <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto"/>
@@ -68,6 +68,7 @@
                 {{--ads--}}
                 {{----}}
             </div>
+    
             <div class="md:w-5/12 sm:w-10/12 smm-w-10-12 md:m-0 sm:m-auto smm-m-auto">
                 <div class="divide-y divide-slate-200 my-4">
                     <div class="flex flex-col items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
@@ -75,7 +76,7 @@
                             <h1 class="font-bold">LINE COMBINATIONS</h1> &nbsp;
                         </div>
                     </div>
-                    <div class="flex flex-row items-center p-4 rounded-b-lg bg-[#eab308] justify-center ">
+                    <!-- <div class="flex flex-row items-center p-4 rounded-b-lg bg-[#eab308] justify-center ">
                         <div class="flex flex-row gap-1 items-center justify-center ">
                             <div class="flex flex-row gap-1 items-center justify-center">
                                 <h1 class="font-bold text-white text-center">MORNING SKATE</h1>
@@ -96,9 +97,20 @@
                                 Starting Goalie
                             </div>
                         </div>
+                    </div> -->
+                    <div class="flex flex-row gap-3 items-center justify-between">
+                        <div class="flex flex-row items-center">
+                            <img  class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt="">
+                            <div >
+                                <p class="text-xs">David Alter</p>
+                                <p class="text-xs">09/22/2022 | 4:21pm EST</p>
+                            </div>
+                        </div>
+                        
+                        <h1 class="text-sm font-bold border border-gray p-2 bg-slate-300 rounded-full">MORNING SKATE</h1>
                     </div>
                     <!-- Start First row -->
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
+                     <div class="pb-2 flex lg:flex-row md:flex-row  justify-center smm-hidden">
                         <div class=" mt-4">
                             <div class="flex flex-row justify-center items-center font-bold">
                                 <p>FORWARD</p>
@@ -139,7 +151,153 @@
                                 <p>Pairing 1</p>
                             </div>
                         </div>
-                    </div>  <!-- End First row -->
+                    </div> 
+                   <!--  End First row -->
+                     <div class="hidden smm-block">
+ 
+                         <h1>FORWARD</h1>
+                        <div class="flex flex-row">
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                        </div>
+                        <div class="flex flex-row">
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                        </div>
+                        <div class="flex flex-row">
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                        </div>
+                        <div class="flex flex-row">
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                            <ul class="bg-slate-100 p-2 rounded">
+                               <p>KERFOT</p>
+                               <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                               <div class="flex flex-row items-center">
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}" alt="">
+                                  <p>8500</p>
+                                  <img class="w-7 h-7" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
+                               </div>
+                            </ul>
+                        </div>
+
+                     </div>
                     <!-- Start Second row -->
                     <div class="pb-2 flex flex-row gap-4 justify-center">
                         <div>
