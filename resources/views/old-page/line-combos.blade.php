@@ -5,7 +5,7 @@
 
     <div class="flex flex-col smm-hidden">
 
-        <div class="text-white bg-[#202e5b] flex  justify-evenly py-5">
+        <div class="text-white bg-[#202e5b] flex  justify-evenly py-4">
             <div class="w-1/7 hidden">
                 <img src="/admin.png" />
             </div>
@@ -17,7 +17,7 @@
                 <hr>
                 <p>Playoff Odds: 100.00% | Stanley Cup Odds: 0.00%</p>
             </div>
-            <div class="text-center flex flex-col gap-y-3 px-5 py-2 bg-slate-800 w-1/3 hidden">
+            <div class="text-center flex flex-col gap-y-3 px-4 py-2 bg-slate-800 w-1/3 hidden">
                 <p>2022-23 Season</p>
                 <div class="flex flex-row justify-center gap-x-3 ">
                     <div class="flex flex-col gap-y-3">
@@ -69,7 +69,7 @@
                 {{----}}
             </div>
     
-            <div class="md:w-5/12 sm:w-10/12 smm-w-10-12 md:m-0 sm:m-auto smm-m-auto">
+            <div class="md:w-4/12 sm:w-10/12 smm-w-10-12 md:m-0 sm:m-auto smm-m-auto">
                 <div class="divide-y divide-slate-200 my-4">
                     <div class="flex flex-col items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
                         <div class="flex items-center ">
@@ -402,7 +402,7 @@
                         <h1 class="font-bold">INJURY REPORT</h1> &nbsp;
                     </div>
                     <div class="flex flex-col divide-y divide-slate-200 gap-y-3 mt-2">
-                        <div class="flex flex-row space-x-5">
+                        <div class="flex flex-row space-x-4">
                             <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
                             <div class="flex flex-col">
                                 <div class="flex flex-col">
@@ -415,7 +415,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-row space-x-5">
+                        <div class="flex flex-row space-x-4">
                             <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
                             <div class="flex flex-col">
                                 <div class="flex flex-col">
@@ -428,7 +428,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-row space-x-5">
+                        <div class="flex flex-row space-x-4">
                             <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
                             <div class="flex flex-col">
                                 <div class="flex flex-col">
@@ -448,7 +448,7 @@
                         <h1 class="font-bold">TRANSACTIONS</h1> &nbsp;
                     </div>
                     <div class="flex flex-col divide-y divide-slate-200 gap-y-3 mt-2">
-                        <div class="flex flex-row space-x-5">
+                        <div class="flex flex-row space-x-4">
                             <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
                             <div class="flex flex-col">
                                 <div class="flex flex-col">
@@ -461,7 +461,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-row space-x-5">
+                        <div class="flex flex-row space-x-4">
                             <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
                             <div class="flex flex-col">
                                 <div class="flex flex-col">
@@ -474,7 +474,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-row space-x-5">
+                        <div class="flex flex-row space-x-4">
                             <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
                             <div class="flex flex-col">
                                 <div class="flex flex-col">
@@ -504,35 +504,33 @@
     </div>
     <!-- Mobile Design -->
     <div class="hidden smm-block">
-        <div class="flex flex-col justify-center">
-            <div class="md:w-full  smm-flex smm-justify-center text-center m-auto text-black">
-                <div class="list-none flex flex-row gap-2 items-center">
-                    <div>
+        <div class="flex flex-col justify-center w-full">
+                <div class="list-none flex flex-row justify-between items-center mx-3">
+                    <div class="flex items-center gap-2">
                         <img class="w-12 h-10 border border-white rounded-lg" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
+                        <p class="text-md font-bold">Toronto Maple Leafs</p>
                     </div>
-                    <div>
-                        <p class="text-sm font-bold">Toronto Maple Leafs</p>
-                    </div>
-                    <div class="flex flex-row gap-1">
-                        <li><a class="text-xs font-bold">News</a></li>
-                        <li><a class="text-xs font-bold">Schedule</a></li>
-                        <li><a class="text-xs font-bold">Odds</a></li>
+                    <div class="flex flex-row gap-4">
+                        <li><a class="text-sm font-bold">News</a></li>
+                        <li><a class="text-sm font-bold">Schedule</a></li>
+                        <li><a class="text-sm font-bold">Odds</a></li>
                     </div>
                 </div>
-            </div>
-           
-            <div class="smm-block hidden mt-2">
-                <div class="flex flex-row items-center justify-center gap-2">
-                    <img  class="w-9 h-9" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt="">
-                    <div>
-                        <p class="text-xs">David Alter</p>
-                        <p class="text-xs">09/22/2022 | 4:21pm EST</p>
+                <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
+            <div class="smm-block hidden mx-3  mt-2">
+                <div class="flex flex-row items-center justify-between ">
+                    <div class="flex flex-row gap-2">
+                        <img  class="w-9 h-9" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt="">
+                        <div>
+                            <p class="text-xs">David Alter</p>
+                            <p class="text-xs">09/22/2022 | 4:21pm EST</p>
+                        </div>
                     </div>
-                    <h1 class="text-[10px] font-extrabold border border-gray p-3 ml-2 bg-slate-300 rounded-full">MORNING SKATE</h1>
+                    <h1 class="text-[10px] font-extrabold border border-gray px-7 p-3 ml-2 bg-slate-300 rounded-full">MORNING SKATE</h1>
                 </div>
             </div>
         </div>
-        <div class="flex flex-row justify-center text-center mt-2">
+        <div class="flex flex-row justify-center text-center mx-px mt-2">
             <div class="w-6/12 bg-black">
                 <p class="text-white font-bold text-xs  p-3 ">FANTASY</p>
             </div>
@@ -540,11 +538,12 @@
                 <p class="text-white font-bold text-xs p-3 ">DFS SALARIES</p>
             </div>
         </div>
+        <div class="bg-slate-300 w-12/12 h-px mx-1 mt-px"></div>
         
         
        
        <!-- Start First Row -->
-        <div class="hidden smm-block">
+        <div class="flex flex-col justify-center items-center mt-2">
                 <h1 class="text-center text-sm font-bold">FORWARDS</h1>
             <div class="flex flex-row gap-1">
                 <div class="bg-slate-100 p-2 rounded-xl">
@@ -552,9 +551,9 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3 my-0">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5 mr-px" src="{{ asset('/images/menu-icon/cold icon.png') }}"alt="">
                     </div>
                 </div>
@@ -563,9 +562,9 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5 ml-1" src="{{ asset('/images/menu-icon/gtd icon.png') }}"alt="">
                     </div>
                 </div>
@@ -574,22 +573,22 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5 ml-1" src="{{ asset('/images/menu-icon/hot icon.png') }}"alt="">
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row gap-1 mt-px">
+            <div class="flex flex-row gap-1 mt-1">
                 <div class="bg-slate-100 p-2 rounded-xl">
                     <p class="text-center">KERFOT</p>
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5 ml-1" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
                     </div>
                 </div>
@@ -598,9 +597,9 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5 ml-1" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
                     </div>
                 </div>
@@ -609,22 +608,22 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5 ml-1" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}"alt="">
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row gap-1 mt-px">
+            <div class="flex flex-row gap-1 mt-1">
                 <div class="bg-slate-100 p-2 rounded-xl">
                     <p class="text-center">KERFOT</p>
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p> 
+                        <p class="text-[14px]">8500</p> 
                     </div>
                 </div>
                 <div class="bg-slate-100 p-2 rounded-xl">
@@ -632,9 +631,9 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p> 
+                        <p class="text-[14px]">8500</p> 
                     </div>
                 </div>
                 <div class="bg-slate-100 p-2 rounded-xl">
@@ -642,23 +641,22 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         
                     </div>
                 </div>
             </div>
-            <div class="flex flex-row gap-1 mt-px">
+            <div class="flex flex-row gap-1 mt-1">
                 <div class="bg-slate-100 p-2 rounded-xl">
                     <p class="text-center">KERFOT</p>
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
-                       
+                        <p class="text-[14px]">8500</p>
                     </div>
                 </div>
                 <div class="bg-slate-100 p-2 rounded-xl">
@@ -666,10 +664,9 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
-                       
+                        <p class="text-[14px]">8500</p>
                     </div>
                 </div>
                 <div class="bg-slate-100 p-2 rounded-xl">
@@ -677,10 +674,9 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                     <div class="flex flex-row items-center justify-evenly mt-3">
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
+                        <p class="text-[14px]">8500</p>
                         <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                        <p class="text-sm">8500</p>
-                        
+                        <p class="text-[14px]">8500</p>
                     </div>
                 </div>
             </div>
@@ -691,102 +687,101 @@
             {{--ads--}}
             {{----}}
         </div>
-        <!-- First Second Row -->
-        <div class="flex flex-col justify-center ">
+        <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
+        <!-- Second Row -->
+        <div class="flex flex-col items-center mt-5 mb-5">
           <h1 class="text-center text-sm font-bold">DEFENCE</h1>
-            <div class="flex justify-center">
-                <div class="flex flex-row gap-1 mt-px w-9/12">
-                    <div class="bg-slate-100 p-2 rounded-xl">
-                        <p class="text-center">MATTHEWS</p>
-                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                        <div class="flex flex-row items-center justify-evenly mt-3">
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                        
-                        </div>
-                    </div>
-                    <div class="bg-slate-100 p-2 rounded-xl">
-                        <p class="text-center">MARNER</p>
-                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                        <div class="flex flex-row items-center justify-evenly mt-3">
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-center mt-2">
-                <div class="flex flex-row gap-1 mt-px w-9/12">
-                    <div class="bg-slate-100 p-2 rounded-xl">
-                        <p class="text-center">MATTHEWS</p>
-                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                        <div class="flex flex-row items-center justify-evenly mt-3">
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                        
-                        </div>
-                    </div>
-                    <div class="bg-slate-100 p-2 rounded-xl">
-                        <p class="text-center">MARNER</p>
-                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                        <div class="flex flex-row items-center justify-evenly mt-3">
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-center mt-2">
-                <div class="flex flex-row gap-1 mt-px w-9/12">
-                    <div class="bg-slate-100 p-2 rounded-xl">
-                        <p class="text-center">MATTHEWS</p>
-                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                        <div class="flex flex-row items-center justify-evenly mt-3">
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                        
-                        </div>
-                    </div>
-                    <div class="bg-slate-100 p-2 rounded-xl">
-                        <p class="text-center">MARNER</p>
-                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                        <div class="flex flex-row items-center justify-evenly mt-3">
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
            
+                <div class="flex flex-row justify-center gap-1 mt-1 w-9/12">
+                    <div class="bg-slate-100 p-2 rounded-xl">
+                        <p class="text-center">MATTHEWS</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                        <div class="flex flex-row items-center justify-evenly mt-3">
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl">
+                        <p class="text-center">MARNER</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                        <div class="flex flex-row items-center justify-evenly mt-3">
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="flex flex-row justify-center gap-1 mt-1 w-9/12">
+                    <div class="bg-slate-100 p-2 rounded-xl">
+                        <p class="text-center">MATTHEWS</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                        <div class="flex flex-row items-center justify-evenly mt-3">
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                        
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl">
+                        <p class="text-center">MARNER</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                        <div class="flex flex-row items-center justify-evenly mt-3">
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            <div class="flex flex-row justify-center gap-1 mt-1 w-9/12">
+                <div class="bg-slate-100 p-2 rounded-xl">
+                    <p class="text-center">MATTHEWS</p>
+                    <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                    <div class="flex flex-row items-center justify-evenly mt-3">
+                        <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                        <p class="text-[14px]">8500</p>
+                        <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                        <p class="text-[14px]">8500</p>
+                    
+                    </div>
+                </div>
+                <div class="bg-slate-100 p-2 rounded-xl">
+                    <p class="text-center">MARNER</p>
+                    <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                    <div class="flex flex-row items-center justify-evenly mt-3">
+                        <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                        <p class="text-[14px]">8500</p>
+                        <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                        <p class="text-[14px]">8500</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End of Second Row -->
         <div>
             <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto">
         </div>
-            <!-- First Third Row  -->
-            <div>
+           <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
+            <!--  Third Row  -->
+            <div class="flex flex-col items-center mt-5 mb-5">
                 <h1 class="text-center text-sm font-bold">POWERPLAY 1</h1>
-                <div class="flex flex-row gap-1 mt-px">
+                <div class="flex flex-row gap-1 mt-px ">
                     <div class="bg-slate-100 p-2 rounded-xl">
                         <p class="text-center">KERFOT</p>
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                         
                         </div>
                     </div>
@@ -795,9 +790,9 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                         
                         </div>
                     </div>
@@ -806,35 +801,32 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                <div class="flex flex-row gap-1 mt- w-9/12">
-                        <div class="bg-slate-100 p-2 rounded-xl">
-                            <p class="text-center">MATTHEWS</p>
-                            <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                            <div class="flex flex-row items-center justify-evenly mt-3">
-                                <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
-                                <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
-                            
-                            </div>
+                <div class="flex flex-row justify-center gap-1 w-9/12 mt-2">
+                    <div class="bg-slate-100 p-2 rounded-xl">
+                        <p class="text-center">MATTHEWS</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                        <div class="flex flex-row items-center justify-evenly mt-3">
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
                         </div>
-                        <div class="bg-slate-100 p-2 rounded-xl">
-                            <p class="text-center">MARNER</p>
-                            <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                            <div class="flex flex-row items-center justify-evenly mt-3">
-                                <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
-                                <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
-                            </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl">
+                        <p class="text-center">MARNER</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                        <div class="flex flex-row items-center justify-evenly mt-3">
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
                         </div>
                     </div>
                 </div>
@@ -845,18 +837,19 @@
             {{--ads--}}
             {{----}}
         </div>
+        <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
            <!--  third row -->
-            <div>
+            <div class="flex flex-col items-center mt-5 mb-5">
                 <h1 class="text-center text-sm font-bold">POWERPLAY 2</h1>
-                <div class="flex flex-row gap-1 mt-px">
+                <div class="flex flex-row justify-center gap-1 mt-px">
                     <div class="bg-slate-100 p-2 rounded-xl">
                         <p class="text-center">KERFOT</p>
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                         
                         </div>
                     </div>
@@ -865,9 +858,9 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                         
                         </div>
                     </div>
@@ -876,53 +869,53 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                <div class="flex flex-row gap-1 mt- w-9/12">
-                        <div class="bg-slate-100 p-2 rounded-xl">
-                            <p class="text-center">MATTHEWS</p>
-                            <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                            <div class="flex flex-row items-center justify-evenly mt-3">
-                                <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
-                                <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
-                            
-                            </div>
+                
+                <div class="flex flex-row justify-center gap-1 mt-1 w-9/12">
+                    <div class="bg-slate-100 p-2 rounded-xl">
+                        <p class="text-center">MATTHEWS</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                        <div class="flex flex-row items-center justify-evenly mt-3">
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                        
                         </div>
-                        <div class="bg-slate-100 p-2 rounded-xl">
-                            <p class="text-center">MARNER</p>
-                            <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
-                            <div class="flex flex-row items-center justify-evenly mt-3">
-                                <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
-                                <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
-                            </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl">
+                        <p class="text-center">MARNER</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
+                        <div class="flex flex-row items-center justify-evenly mt-3">
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                            <p class="text-[14px]">8500</p>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <!-- End third row -->
+            <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
             <!-- Fourth row -->
-            <div>
+            <div class="flex flex-col items-center mt-5 mb-5">
                  <h1 class="text-center text-sm font-bold">GOALIES</h1>
-                <div class="flex justify-center mt-2">
-                    <div class="flex flex-row gap-1 mt-px w-9/12">
+                    <div class="flex flex-row justify-center  gap-1 mt-px w-9/12">
                         <div class="bg-slate-100 p-2 rounded-xl">
                             <p class="text-center">MATTHEWS</p>
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                             <div class="flex flex-row items-center justify-evenly mt-3">
                                 <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
+                                <p class="text-[14px]">8500</p>
                                 <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
+                                <p class="text-[14px]">8500</p>
                             
                             </div>
                         </div>
@@ -931,20 +924,20 @@
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                             <div class="flex flex-row items-center justify-evenly mt-3">
                                 <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
+                                <p class="text-[14px]">8500</p>
                                 <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                <p class="text-sm">8500</p>
+                                <p class="text-[14px]">8500</p>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
             <!-- End fourth row -->
             <div>
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto">
             </div>
+            <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
             <!-- Fifth row -->
-            <div>
+            <div class="flex flex-col items-center mt-5 mb-5">
               <h1 class="text-center text-sm font-bold">PRESSBOX</h1>
                 <div class="flex flex-row gap-1">
                     <div class="bg-slate-100 p-2 rounded-xl">
@@ -952,10 +945,10 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3 my-0">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-4 h-4 mr-px" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5 mr-px" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
                         </div>
                     </div>
                     <div class="bg-slate-100 p-2 rounded-xl">
@@ -963,10 +956,10 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-4 h-4 mr-px" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5 mr-px" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
                         </div>
                     </div>
                     <div class="bg-slate-100 p-2 rounded-xl">
@@ -974,34 +967,34 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-4 h-4 mr-px" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5 mr-px" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-row gap-1">
+                <div class="flex flex-row gap-1 mt-2">
                     <div class="bg-slate-100 p-2 rounded-xl">
                         <p class="text-center">KERFOT</p>
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3 my-0">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-4 h-4 mr-px" src="{{ asset('/images/menu-icon/gtd icon.png') }}"alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5 mr-px" src="{{ asset('/images/menu-icon/gtd icon.png') }}"alt="">
                         </div>
                     </div>
-                    <div class="bg-slate-100 p-2 rounded-xl">
+                    <div class="bg-slate-100 p-2 rounded-xl ">
                         <p class="text-center">MATTHEWS</p>
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-4 h-4 mr-px" src="{{ asset('/images/menu-icon/gtd icon.png') }}"alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5 mr-px" src="{{ asset('/images/menu-icon/gtd icon.png') }}"alt="">
                         </div>
                     </div>
                     <div class="bg-slate-100 p-2 rounded-xl">
@@ -1009,31 +1002,41 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-40" alt="">
                         <div class="flex flex-row items-center justify-evenly mt-3">
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
+                            <p class="text-[14px]">8500</p>
                             <img class="w-5 h-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                            <p class="text-sm">8500</p>
-                            <img class="w-4 h-4 mr-px" src="{{ asset('/images/menu-icon/gtd icon.png') }}"alt="">
+                            <p class="text-[14px]">8500</p>
+                            <img class="w-5 h-5 mr-px" src="{{ asset('/images/menu-icon/gtd icon.png') }}"alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- End of Fifth row -->
-            <div class="flex flex-col justify-center ">
-                <div class="flex flex-row gap-4">
-                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/gtd icon.png') }}"  alt="">
-                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">                       
-                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/hot icon.png') }}" alt="">                       
-                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/cold icon.png') }}" alt="">                      
-                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/value icon.png') }}"alt="">                       
-                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">                       
-                </div>
-                <div class="flex flex-row">
-                    <p class="text-sm font-bold"> Game Time Decision </p>
-                    <p> Injured </p>
-                    <p> Hot Streak </p>
-                    <p> Cold player </p>
-                    <p> Value Player </p>
-                    <p> Top slack </p>
+            <div class="flex flex-col items-center ">
+                <div class="flex flex-row justify-center items-center list-none gap-4 bg-slate-200 p-5 w-10/12 border rounded-3xl">
+                    <li class="">
+                        <img class="w-14 h-14 items" src="{{ asset('/images/menu-icon/gtd icon.png') }}"  alt="">
+                        <p class="text-[12px] font-extrabold "> Game Time <br> Decision</p>
+                    </li>
+                    <li class="text-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
+                        <p class="text-[12px] font-extrabold"> Injured </p> 
+                    </li>
+                    <li class="text-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/menu-icon/hot icon.png') }}" alt=""> 
+                        <p class="text-[12px] font-extrabold"> Hot Streak </p>
+                    </li>
+                    <li class="text-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/menu-icon/cold icon.png') }}" alt="">
+                        <p class="text-[12px] font-extrabold"> Cold player </p> 
+                    </li>
+                    <li>
+                      <img class="ww-14 h-14" src="{{ asset('/images/menu-icon/value icon.png') }}"alt="">
+                      <p class="text-[12px] font-extrabold"> Value Player </p>
+                    </li>
+                    <li>
+                       <img class="w-14 h-14" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
+                       <p class="text-[12px] font-extrabold"> Top slack </p>
+                    </li>                             
                 </div>
             </div>
     </div>
