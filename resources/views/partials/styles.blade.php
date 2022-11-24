@@ -128,6 +128,37 @@
     }
 
     @media (max-width: 639px) {
+
+        ul#mobile-2nd-mnav li:first-child{
+            /* border-left: none !important;     */
+        }    
+        
+        ul#mobile-2nd-mnav li:last-child{
+            /* border-right: none !important;     */
+
+
+        }    
+        
+        ul#mobile-2nd-mnav li{
+            /* border-right: 1px solid white;   */
+            position: relative;  
+        }      
+
+        ul#mobile-2nd-mnav > #nav-active:after{ 
+            content: '';
+            display: block;
+            border-top: 4px solid rgb(14 165 233);  
+        } 
+
+
+        ul#mobile-2nd-mnav li > a{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }    
+
+        
         .smm-flex{
             display: flex;
 

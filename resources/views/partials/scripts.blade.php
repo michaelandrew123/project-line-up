@@ -27,7 +27,8 @@
         $("#sub-menu > ul.active").removeClass('active');
         $("#sub-menu > ul."+data).addClass('active');  
     });
- 
+     
+
 
     $( "div#main-menu > div > a" ).on('click', function() {
 
@@ -92,4 +93,15 @@
         $('#sub-menu > ul.active').removeClass('active');
         $('.'+data).addClass('active');
     })
+
+
+    //Mobile navigation
+
+    $('ul#mobile-2nd-mnav > li').on('touchstart', function(e){
+        e.preventDefault();
+        $('#nav-active').removeAttr('id');
+          $(this).attr("id","nav-active");
+        //  $(this).addAttr('nav-active');
+    })
+
 </script>
