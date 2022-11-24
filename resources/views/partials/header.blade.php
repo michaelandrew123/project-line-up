@@ -11,7 +11,7 @@
                     <div>
                         <div class="flex items-center flex-shrink-0 text-white ">
                             <img src = "{{ asset('/images/logo.png') }}" class="w-16" />
-                            <span class="font-semibold text-xl tracking-tight hidden">Line Ups</span>
+                            <span class="font-semibold text-xl tracking-tight hidden"></span>
                         </div>
                     </div>
                     <div id="main-menu1" class="pr-4 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative   md:block">
@@ -124,10 +124,12 @@
 
 
 
-                        <div class="flex flex-row items-center justify-between bg-black w-full">
+                        <div class="flex flex-row items-center h-14 justify-between bg-black w-full">
                             <div class="flex items-center flex-shrink-0 text-white pl-2 ">
-                                <img src = "{{ asset('/images/logo.png') }}" class="w-16 " />
-                                <span class="font-semibold text-xl tracking-tight hidden">Line Ups</span>
+                                    <div class=" w-32 p-px bg-sky-600 rounded-full flex flex-row gap-1">
+                                        <img class="w-8 justify-start ml-2" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                        <p class="text-[10px] font-bold text-center">PROJECTED<br>LINEUPS</p>
+                                    </div>
                             </div>
 
                             <div class="flex gap-4 ">
@@ -199,9 +201,7 @@
                             </div>     
                         </div>
  
-                        <div class="sm:mt-4 flex  flex-row-reverse gap-y-4"   id="list-menu"> 
-
-
+                        <div class="sm:mt-4 flex flex-row-reverse gap-y-4"   id="list-menu"> 
                             <div> 
                                 <a href="#responsive-header" rel="search-bar"  class=" mt-4 sm:leading-loose  sm:block  no-underline block md:mt-0 md:inline-block lg:mt-0  md:text-slate-300 ">
                                     <img src = "{{ asset('/images/search.png') }}" class="w-5 m-auto " />
