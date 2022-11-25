@@ -68,8 +68,6 @@
                                 </div>
                             </a>
                        </div> 
-
-
                     </div>
                 </div>
 
@@ -339,7 +337,6 @@
                 <li ><a  class="font-semibold hover:font-bold"  href="#">STARTING GOALIES</a></li>
                 <li><a  class="font-semibold hover:font-bold" href="#" >LINE COMBINATIONS</a></li>
                 <li><a  class="font-semibold hover:font-bold" href="#">PROJECTIONS</a></li>
-
             </ul>
 
             <ul class="list-none flex-row gap-2 py-2 projections-menu hidden  smm-flex-wrap">
@@ -373,7 +370,6 @@
             <ul class="list-none flex-row gap-2 py-2 odds hidden sm:flex-wrap smm-flex-wrap  hidden odds-menu ">
                 <li ><a  class="font-semibold hover:font-bold" href="#">GAME ODDS</a></li>
                 <li ><a  class="font-semibold hover:font-bold" href="#">PLAYER PROPS</a></li>
-      
             </ul>
             
             <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap justify-end">
