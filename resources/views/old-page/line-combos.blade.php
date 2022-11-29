@@ -3,7 +3,7 @@
 @section('content')
 
 
-    <div class="flex flex-col smm-hidden">
+    <div class="flex flex-col lg:block md:hidden sm:hidden smm-hidden ">
 
         <div class="text-white bg-[#202e5b] flex  justify-evenly py-4">
             <div class="w-1/7 hidden">
@@ -45,7 +45,7 @@
         
 
     </div>
-    <div class="md:w-full  smm-flex smm-justify-center text-center m-auto text-black smm-hidden">
+    <div class="md:w-full  smm-flex smm-justify-center text-center m-auto text-black lg:block md:hidden sm:hidden smm-hidden">
             <ul class="list-none flex gap-2  justify-center  ">
                 <img class="w-7 h-6" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
                 <h1 class="text-base font-bold">Toronto Maple Leafs</h1>
@@ -53,7 +53,7 @@
                 <li><a class="text-sm font-bold">Schedule</a></li>
                 <li><a class="text-sm font-bold">Odds</a></li>
             </ul>
-        </div>
+    </div>
 
     <div class=" text-center flex flex-row items-center justify-center  m-auto md:block sm:hidden">
         <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto"/>
@@ -61,7 +61,7 @@
         {{----}}
     </div>
 
-    <div class="flex justify-center smm-hidden">
+    <div class="flex justify-center lg:block md:hidden sm:hidden smm-hidden">
         <div class="md:inline-flex gap-4">
             <div class="md:w-3/12 sm:w-11/12 smm-w-11-12 flex flex-row items-center justify-center smm-hidden  sm:m-auto">
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
@@ -502,8 +502,9 @@
             </div>
         </div>
     </div>
+
     <!-- Mobile Design -->
-    <div class="hidden smm-block">
+    <div class="xl:hidden lg:hidden md:block sm:block smm-block">
         <div class="flex flex-col justify-center w-full">
                 <div class="list-none flex flex-row justify-between items-center mx-3">
                     <div class="flex items-center gap-4">
@@ -519,7 +520,7 @@
                     
                 </div>
                 <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
-            <div class="smm-block hidden mx-3  mt-2">
+            <div class="md:block sm:block smm-block hidden mx-3  mt-2">
                 <div class="flex flex-row items-center justify-between ">
                     <div class="flex flex-row gap-2 items-center">
                         <img  class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt="">
@@ -532,28 +533,22 @@
                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4  rounded-full ml-2">
                         <h1 class="text-[11px] font-bold ">MORNING SKATE</h1>
                     </div>
-                    
                     <!-- <h1 class="text-[10px] font-extrabold border border-gray px-7 p-3 ml-2 bg-slate-300 rounded-full">MORNING SKATE</h1> -->
                 </div>
             </div>
         </div>
 
-        
-
-
-        <ul class="flex flex-row justify-center items-center mx-px bg-black h-9 w-full justify-evenly mt-3" id="mobile-2nd-mnav">
-            <li class="list-none w-full h-full text-center  " id="nav-active" ><a href="#" class=" font-bold text-[11px] text-white">LINEUPS</a></li>
-            <li class="list-none w-full h-full text-center mr-3 ml-2"><a href="#" class=" text-white font-bold text-[11px] ">DRAFTKINGS</a></li>  
-            <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px]  ">FANDUEL</a></li>
-            <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px] ">ODDS</a></li>
-            <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px]  ">NEWS</a></li>
-        </ul>
+            <ul class="flex flex-row justify-center items-center mx-px bg-black h-9 w-full justify-evenly mt-3" id="mobile-2nd-mnav">
+                <li class="list-none w-full h-full text-center  " id="nav-active" ><a href="#" class=" font-bold text-[11px] text-white">LINEUPS</a></li>
+                <li class="list-none w-full h-full text-center mr-3 ml-2"><a href="#" class=" text-white font-bold text-[11px] ">DRAFTKINGS</a></li>  
+                <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px]  ">FANDUEL</a></li>
+                <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px] ">ODDS</a></li>
+                <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px]  ">NEWS</a></li>
+            </ul>
         <div class="bg-slate-300 w-12/12 h-px mx-1 mt-px">
 
         </div>
         
-        
-       
        <!-- Start First Row -->
         <div class="flex flex-col justify-center items-center mt-2 mx-1">
                 <h1 class="text-center text-sm font-bold">FORWARDS</h1>
@@ -563,7 +558,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 text-center h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -580,7 +575,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                         <div class="flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -595,7 +590,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                           <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                           <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                           <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -612,7 +607,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 text-center h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -629,7 +624,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                         <div class="flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -644,7 +639,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                           <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                           <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                           <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -661,7 +656,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 text-center h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -677,7 +672,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                         <div class="flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -691,7 +686,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                           <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                           <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                           <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -707,7 +702,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 text-center h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -723,7 +718,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                         <div class="flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -737,7 +732,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                           <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                           <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                           <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -753,6 +748,9 @@
         <div class=" flex flex-row items-center justify-center my-4">
             <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
             {{--ads--}}
+            <div class=" bg-lime-400 mr-10 lg:mr-5 flex w-3/5 h-48 justify-center items-center">
+                <h1 class="text-lg font-semibold text-center">ADDS</h1>
+            </div>
             {{----}}
         </div>
         <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
@@ -765,7 +763,7 @@
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                             <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                                 <div class="flex flex-row forward-icon-draftking hidden">
-                                    <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                    <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                     <p class="text-md text-center">$8500</p>
                                 </div>
                                 <div class="flex flex-row forward-icon-fanduel hidden">
@@ -779,7 +777,7 @@
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                             <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                                 <div class=" flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                                 </div>
                                 <div class="flex flex-row forward-icon-fanduel hidden">
@@ -795,7 +793,7 @@
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                             <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                                 <div class="flex flex-row forward-icon-draftking hidden">
-                                    <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                    <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                     <p class="text-md">$8500</p>
                                 </div>
                                 <div class="flex flex-row forward-icon-fanduel hidden">
@@ -809,7 +807,7 @@
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                             <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                                 <div class=" flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                                 </div>
                                 <div class="flex flex-row forward-icon-fanduel hidden">
@@ -825,7 +823,7 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                         <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                             <div class="flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                             </div>
                             <div class="flex flex-row forward-icon-fanduel hidden">
@@ -839,7 +837,7 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                         <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                             <div class=" flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                             </div>
                             <div class="flex flex-row forward-icon-fanduel hidden">
@@ -853,6 +851,9 @@
         <!-- End of Second Row -->
         <div>
             <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto">
+            <div class=" bg-lime-400 w-10/12 m-auto h-20 flex justify-center items-center  mt-5 mb-5">
+                <h1 class="text-lg font-semibold text-center">ADDS</h1>
+            </div>
         </div>
            <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
             <!--  Third Row  -->
@@ -864,7 +865,7 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                         <div class="flex flex-row items-center justify-center mt-3 text-center h-[15px]">
                             <div class=" flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                             </div>
                             <div class="flex flex-row forward-icon-fanduel hidden">
@@ -878,7 +879,7 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                         <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                             <div class="flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                             </div>
                             <div class="flex flex-row forward-icon-fanduel hidden">
@@ -892,11 +893,11 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                         <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                             <div class=" flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                             </div>
                             <div class="flex flex-row forward-icon-fanduel hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                             </div>
                         </div>
@@ -908,7 +909,7 @@
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                             <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                                 <div class="flex flex-row forward-icon-draftking hidden">
-                                    <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                    <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                     <p class="text-md">$8500</p>
                                 </div>
                                 <div class="flex flex-row forward-icon-fanduel hidden">
@@ -922,7 +923,7 @@
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                             <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                                 <div class=" flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                                 </div>
                                 <div class="flex flex-row forward-icon-fanduel hidden">
@@ -937,6 +938,9 @@
         <div class=" flex flex-row items-center justify-center my-4">
             <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
             {{--ads--}}
+            <div class=" bg-lime-400 mr-10 lg:mr-5 flex w-3/5 h-48 justify-center items-center">
+                <h1 class="text-lg font-semibold text-center">ADDS</h1>
+            </div>
             {{----}}
         </div>
         <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
@@ -949,7 +953,7 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                         <div class="flex flex-row items-center justify-center mt-3 text-center h-[15px]">
                             <div class=" flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                             </div>
                             <div class="flex flex-row forward-icon-fanduel hidden">
@@ -963,7 +967,7 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                         <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                             <div class="flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                             </div>
                             <div class="flex flex-row forward-icon-fanduel hidden">
@@ -977,7 +981,7 @@
                         <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                         <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                             <div class=" flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                             </div>
                             <div class="flex flex-row forward-icon-fanduel hidden">
@@ -993,7 +997,7 @@
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                             <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                                 <div class="flex flex-row forward-icon-draftking hidden">
-                                    <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                    <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                     <p class="text-md">$8500</p>
                                 </div>
                                 <div class="flex flex-row forward-icon-fanduel hidden">
@@ -1007,7 +1011,7 @@
                             <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                             <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                                 <div class=" flex flex-row forward-icon-draftking hidden">
-                                <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                                 <p class="text-md">$8500</p>
                                 </div>
                                 <div class="flex flex-row forward-icon-fanduel hidden">
@@ -1023,7 +1027,44 @@
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto">
             </div>
             <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
+            <div class="flex flex-col items-center mt-5 mb-5">
+                <h1 class="text-center text-sm font-bold">GOALIES</h1>
+                        <div class="flex flex-row justify-center gap-1 mt-1 w-2/3">
+                            <div class="bg-slate-100 p-2 rounded-xl relative ">
+                                <p class="text-center">MATTHEWS</p>
+                                <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                                <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
+                                    <div class="flex flex-row forward-icon-draftking hidden">
+                                        <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                        <p class="text-md text-center">$8500</p>
+                                    </div>
+                                    <div class="flex flex-row forward-icon-fanduel hidden">
+                                        <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                                        <p class="text-md">$8500</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-100 p-2 rounded-xl relative ">
+                                <p class="text-center">MARNER</p>
+                                <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                                <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
+                                    <div class=" flex flex-row forward-icon-draftking hidden">
+                                    <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                    <p class="text-md">$8500</p>
+                                    </div>
+                                    <div class="flex flex-row forward-icon-fanduel hidden">
+                                    <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                                    <p class="text-md">$8500</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <div class=" bg-lime-400 w-10/12 m-auto h-20 flex justify-center items-center  mt-5 mb-5">
+                <h1 class="text-lg font-semibold text-center">ADDS</h1>
+            </div>
             <!-- Fifth row -->
+            <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
             <div class="flex flex-col items-center mt-5 mb-5">
               <h1 class="text-center text-sm font-bold">PRESSBOX</h1>
             <div class="flex flex-row gap-1 mt-1 justify-center ">
@@ -1032,7 +1073,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 text-center h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -1049,7 +1090,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                         <div class="flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -1064,7 +1105,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                           <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                           <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                           <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -1081,7 +1122,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 text-center h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -1098,7 +1139,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row items-center justify-center mt-3 h-[15px]">
                         <div class="flex flex-row forward-icon-draftking hidden">
-                            <img class="w-6 h-6 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                            <img class="w-7 h-7 absolute left-0 bottom-1 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                             <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -1113,7 +1154,7 @@
                     <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
                     <div class="flex flex-row justify-center items-center  mt-3 h-[15px]">
                         <div class=" flex flex-row forward-icon-draftking hidden">
-                           <img class="w-6 h-6 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                           <img class="w-7 h-7 absolute left-0 bottom-1" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
                           <p class="text-md">$8500</p>
                         </div>
                         <div class="flex flex-row forward-icon-fanduel hidden">
@@ -1126,34 +1167,34 @@
             </div>
             </div>
             <!-- End of Fifth row -->
-            <div class="flex flex-col items-center ">
-                <div class="flex flex-row justify-center items-center list-none gap-2 bg-slate-200 p-5 border rounded-3xl">
-                    <li class=" text-center">
-                        <img class="w-14  items" src="{{ asset('/images/menu-icon/gtd icon.png') }}"  alt="">
-                        <!-- <p class="text-[10px] font-extrabold "> Game Time <br> Decision</p> -->
+            <div class="flex flex-col items-center relative">
+                <div class="flex flex-row justify-evenly  list-none w-[71%] bg-slate-200 p-5 border rounded-3xl">
+                    <li class=" flex flex-col items-center text-center mt-2">
+                        <img class="w-8 h-8" src="{{ asset('/images/menu-icon/gtd icon.png') }}"  alt="">
+                        <p class="text-[10px] font-extrabold "> Game Time <br> Decision</p>
                     </li>
-                    <li class=" text-center">
-                        <img class="w-14" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
-                        <!-- <p class="text-[10px] font-extrabold"> Injured </p>  -->
+                    <li class=" flex flex-col items-center text-center mt-2">
+                        <img class="w-8 h-8" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
+                        <p class="text-[10px] font-extrabold"> Injured </p> 
                     </li>
-                    <li class=" text-center">
-                        <img class="w-14" src="{{ asset('/images/menu-icon/hot icon.png') }}" alt=""> 
-                        <!-- <p class="text-[10px] font-extrabold"> Hot Streak </p> -->
+                    <li class=" flex flex-col items-center text-center mt-2">
+                        <img class="w-8 h-8" src="{{ asset('/images/menu-icon/hot icon.png') }}" alt=""> 
+                        <p class="text-[10px] font-extrabold"> Hot Streak </p>
                     </li>
-                    <li class=" text-center">
-                        <img class="w-14" src="{{ asset('/images/menu-icon/cold icon.png') }}" alt="">
-                        <!-- <p class="text-[10px] font-extrabold"> Cold player </p>  -->
+                    <li class=" flex flex-col items-center text-center mt-2">
+                        <img class="w-8 h-8" src="{{ asset('/images/menu-icon/cold icon.png') }}" alt="">
+                        <p class="text-[10px] font-extrabold"> Cold player </p> 
                     </li>
-                    <li classs=" text-center">
-                      <img class="w-14" src="{{ asset('/images/menu-icon/value icon.png') }}"alt="">
-                      <!-- <p class="text-[10px] font-extrabold"> Value Player </p> -->
+                    <li class=" flex flex-col items-center text-center mt-2">
+                      <img class="w-8 h-8" src="{{ asset('/images/menu-icon/value icon.png') }}"alt="">
+                      <p class="text-[10px] font-extrabold"> Value Player </p>
                     </li>
-                    <li class=" text-center">
-                       <img class="w-14" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
-                       <!-- <p class="text-[10px] font-extrabold"> Top slack </p> -->
+                    <li class=" flex flex-col items-center text-center mt-2">
+                       <img class="w-8 h-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
+                       <p class="text-[10px] font-extrabold"> Top slack </p>
                     </li>                             
                 </div>
-                <div class="flex flex-row gap-1">
+                <div class="flex flex-row absolute bottom-0 gap-3 hidden">
                     <p class="text-[10px] font-extrabold "> Game Time <br> Decision</p>
                     <p class="text-[10px] font-extrabold"> Injured </p>
                     <p class="text-[10px] font-extrabold"> Hot Streak </p> 
@@ -1162,6 +1203,65 @@
                     <p class="text-[10px] font-extrabold"> Top slack </p>
                 </div>
             </div>
+    </div>
+    <div class="footer bg-sky-500 mt-5 xl:hidden lg:hidden md:block sm:block smm-block">
+        <div class=" flex justify-center gap-7">
+            <div class="flex flex-col mt-5">
+                <div>
+                    <p class="font-bold text-blue-50 text-[14px]">DAILY FANTASY</p>
+                            <p class="text-[13px] font-bold mt-2">Team News</p>
+                            <p class="text-[13px] font-bold mt-0.5">Players News</p>
+                            <p class="text-[13px] font-bold mt-0.5">Starting Goalies</p>
+                            <p class="text-[13px] font-bold mt-0.5">Line Combination</p>
+                            <p class="text-[13px] font-bold mt-0.5">DFS Projections</p>
+                            <p class="text-[13px] font-bold mt-0.5">Articles</p>
+                            <p class="text-[13px] font-bold mt-0.5">DFS Projection</p>
+                </div>
+                
+                <div>
+                    <p class="font-bold text-blue-50 text-[14px] mt-7">LEARN</p>
+                            <p class="text-[13px] font-bold mt-2">Betting Strategy</p>
+                            <p class="text-[13px] font-bold mt-0.5">DFS Strategy</p>
+                            <p class="text-[13px] font-bold mt-0.5">Optimizing Sites</p>
+                            <p class="text-[13px] font-bold mt-0.5">Your paragraph text</p>
+                            <p class="text-[13px] font-bold mt-0.5">Your paragraph text</p>
+                            <p class="text-[13px] font-bold mt-0.5">Your paragraph text</p>
+                            <p class="text-[13px] font-bold mt-0.5">Your paragraph text</p>
+                </div>
+            </div>
+            <div class="flex flex-col mt-5">
+               
+                <div>
+                    <p class="font-bold text-blue-50 text-[14px]">BETTING</p>
+                            <p class="text-[13px] font-bold mt-2">Odds</p>
+                            <p class="text-[13px] font-bold mt-0.5">Players Props</p>
+                            <p class="text-[13px] font-bold mt-0.5">Sports Books</p>
+                            <p class="text-[13px] font-bold mt-0.5">Betting Guide</p>
+                            <p class="text-[13px] font-bold mt-0.5">Betting Terms</p>
+                            <p class="text-[13px] font-bold mt-0.5">Bonuses</p>
+                            <p class="text-[13px] font-bold mt-0.5">Your paragraph text</p>
+                </div>
+                <div>
+                    <p class="font-bold text-blue-50 text-[14px] mt-7">ABOUT</p>
+                            <p class="text-[13px] font-bold mt-2">Advertise with Us</p>
+                            <p class="text-[13px] font-bold mt-0.5">Privacy Policy</p>
+                            <p class="text-[13px] font-bold mt-0.5">Terms of Service</p>
+                            <p class="text-[13px] font-bold mt-0.5">Contact</p>
+                            <p class="text-[13px] font-bold mt-0.5">Your paragraph text</p>
+                            <p class="text-[13px] font-bold mt-0.5">Your paragraph text</p>
+                            <p class="text-[13px] font-bold mt-0.5">Your paragraph text</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center mt-3">
+            <ul class="flex flex-row gap-2">
+                <li class="list-none"><a href="#"><img class="w-9 h-9" src="{{ asset('/images/menu-icon/instagram icon.png') }}"></a></li>
+                <li class="list-none"><a href="#"><img class="w-9 h-9" src="{{ asset('/images/menu-icon/tiktok icon.png') }}"></a></li>
+                <li class="list-none"><a href="#"><img class="w-9 h-9" src="{{ asset('/images/menu-icon/twitter icon.png') }}"></a></li>
+                <li class="list-none"><a href="#"><img class="w-9 h-9" src="{{ asset('/images/menu-icon/facebook.jpg') }}"></a></li>
+            </ul>
+        </div>
+        <p class="text-center text-[10px] py-5">© 2022 Project Lineup- All Right Reserved</p>
     </div>
 
 @endsection
