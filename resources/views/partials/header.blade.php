@@ -2,12 +2,12 @@
 
 
 <nav class="bg-white shadow-lg shadow-[#ececec] w-full">
-    <div class="md:flex md:flex-col sm:block ">
+    <div class="md:flex md:flex-col sm:block">
         <div class="sm:relative md:flex md:justify-center z-30">
             <!--Desktop menu and Tablet--> 
-            <div class="w-full flex-row  md:flex xl:flex-row lg:flex-col-reverse md:flex-col-reverse md:pt-2 sm:block sm:py-1 items-center  sm:flex-wrap sm:px-0 smm-hidden">
-            
-                <div class="lg:w-7/12  w-full bg-current lg:gap-20 flex sm:flex-row-reverse md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2 ">
+            <div class="w-full flex-row lg:flex lg:flex-row   md:pt-2 sm:py-1 items-center  sm:flex-wrap sm:px-0 md:hidden sm:hidden smm-hidden">
+
+                <div class="lg:w-7/12 w-full bg-current lg:gap-20 flex sm:flex-row-reverse md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2 ">
                     <div>
                         <div class="flex items-center flex-shrink-0 text-white ">
                             <img src = "{{ asset('/images/logo.png') }}" class="w-16" />
@@ -71,7 +71,7 @@
                     </div>
                 </div>
 
-                <div class="w-5/12 bg-[#1d9bf0] flex sm:flex-row-reverse md:flex-row md:items-center lg:justify-start sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
+                <div class="w-5/12 bg-[#1d9bf0] flex sm:flex-row-reverse md:flex-row md:items-center  lg:justify-start sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2">
                     <div id="main-menu2" class=" p-4 w-full flex flex-row gap-10 navbar">
                         <div class="gap-6 flex flex-row">
                             <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
@@ -110,96 +110,87 @@
                         </div>
                     </div>  
                 </div>
-             
-
-
-
             </div> 
             <!--End Desktop menu and Tablet --> 
             <!--Start Mobile menu -->  
             <div style="background-color: white;" class="smm-z-20 ">
-                <div class="md:hidden sm:block border-r-2 border-gray-200" id="mobile-smm-menu ">
-
-
-
+                <div class="xl:hidden lg:hidden md:block sm:block border-r-2 border-gray-200" id="mobile-smm-menu ">
                         <div class="flex flex-row items-center h-14 justify-between bg-black w-full">
                             <div class="flex items-center flex-shrink-0 text-white pl-2 ">
-                                    <div class=" w-32 p-px bg-sky-600 rounded-full flex flex-row gap-1">
+                                    <!-- <div class=" w-32 p-px bg-sky-600 rounded-full flex flex-row gap-1">
                                         <img class="w-8 justify-start ml-2" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[10px] font-bold text-center">PROJECTED<br>LINEUPS</p>
+                                    </div> -->
+                                    <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
+                                        <div class="block lg:hidden  ">
+                                            <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
+                                                <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                                            </button>
+                                        </div>
+
+                                        <div class=" flex flex-row gap-12 navbar smm-hidden md:hidden sm:hidden"> 
+                                            <a href="#responsive-header" rel="daily-menu"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0    md:text-slate-300  hover:text-white  font-bold">
+                                                DAILY FANTASY
+                                                <div class="relative hidden daily-menu active" >
+                                                    <div class="arrowed absolute top-5 left-10 ">
+                                                        <div class="arrow-3"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0   relative md:text-slate-300  hover:text-white font-bold">
+                                                PROJECTIONS
+                                                <div class="relative  hidden projections-menu ">
+                                                    <div class="arrowed absolute top-5 left-10">
+                                                        <div class="arrow-3"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#responsive-header" rel="news-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                                                NEWS 
+                                                <div class="relative  hidden news-menu">
+                                                    <div class="arrowed absolute top-5 left-5">
+                                                        <div class="arrow-3"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                                                BETTING 
+                                                <div class="relative  hidden betting-menu">
+                                                    <div class="arrowed absolute top-5 left-5">
+                                                        <div class="arrow-3"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                                                ODDS 
+                                                <div class="relative  hidden odds-menu">
+                                                    <div class="arrowed absolute top-5 left-3">
+                                                        <div class="arrow-3"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div> 
+                                 </div> 
+                            </div> 
+                            <div class="flex flex-row justify-between w-10/12 mx-2">
+                                    <div>
+                                        <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
                                     </div>
-                            </div>
-
-                            <div class="flex gap-4 ">
-                                <div class="flex flex-row gap-4">
-                                    <a href=""><img class="w-8 h-8" src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
-                                    <a href=""><img class="w-8 h-8" src="{{ asset('/images/menu-icon/player_icon-removebg-preview.png') }}" alt=""></a>
-                                </div> 
-                                <div>
-                                    <a href="#">
-                                        <svg class=" w-8 h-8 text-black border border-black rounded-full bg-sky-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
-                                        </svg>
-                                    </a>
-                                </div> 
-
-
-                                <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
-                                    
-                                
-                                    <div class="block lg:hidden md:hidden  ">
-                                        <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
-                                            <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                                        </button>
-                                    </div>
-
-                                    <div class=" flex flex-row gap-12 navbar smm-hidden"> 
-                                        <a href="#responsive-header" rel="daily-menu"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0    md:text-slate-300  hover:text-white  font-bold">
-                                            DAILY FANTASY
-                                            <div class="relative hidden daily-menu active" >
-                                                <div class="arrowed absolute top-5 left-10 ">
-                                                    <div class="arrow-3"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0   relative md:text-slate-300  hover:text-white font-bold">
-                                            PROJECTIONS
-                                            <div class="relative  hidden projections-menu ">
-                                                <div class="arrowed absolute top-5 left-10">
-                                                    <div class="arrow-3"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#responsive-header" rel="news-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
-                                            NEWS 
-                                            <div class="relative  hidden news-menu">
-                                                <div class="arrowed absolute top-5 left-5">
-                                                    <div class="arrow-3"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
-                                            BETTING 
-                                            <div class="relative  hidden betting-menu">
-                                                <div class="arrowed absolute top-5 left-5">
-                                                    <div class="arrow-3"></div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
-                                            ODDS 
-                                            <div class="relative  hidden odds-menu">
-                                                <div class="arrowed absolute top-5 left-3">
-                                                    <div class="arrow-3"></div>
-                                                </div>
-                                            </div>
+                                    <div class="flex flex-row justify-evenly w-8/12">
+                                        <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
+                                        <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/player_icon-removebg-preview.png') }}" alt=""></a>
+                                    </div> 
+                                    <div>
+                                        <a href="#">
+                                            <svg class=" w-9 h-9 text-black border border-black rounded-full bg-sky-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                                            </svg>
                                         </a>
                                     </div> 
-                                </div> 
-                            </div>     
+                             </div>
                         </div>
  
-                        <div class="sm:mt-4 flex flex-row-reverse gap-y-4"   id="list-menu"> 
+                        <div class="sm:mt-4 flex flex-row gap-y-4"   id="list-menu"> 
                             <div> 
                                 <a href="#responsive-header" rel="search-bar"  class=" mt-4 sm:leading-loose  sm:block  no-underline block md:mt-0 md:inline-block lg:mt-0  md:text-slate-300 ">
                                     <img src = "{{ asset('/images/search.png') }}" class="w-5 m-auto " />
@@ -265,8 +256,8 @@
                             </div>
 
 
-                            <div class="md:hidden sm:block md:relative flex flex-row-reverse  w-full" id="sub-menu">
-                                <ul class="justify-start md:absolute list-none  flex-col sm:items-start items-end gap-2 py-2 nhl hidden active sm:flex-wrap smm-flex-wrap smm-items-end px-2">
+                            <div class="md:hidden sm:block md:relative flex flex-row w-full" id="sub-menu">
+                                <ul class="justify-start md:absolute list-none  flex-col sm:items-start gap-2 py-2 nhl hidden active sm:flex-wrap smm-flex-wrap smm-items-end px-2">
 
                                     <li ><a  class="hover:font-bold"  href="#">STARTING GOALIES </a></li>
                                     <li><a  class="hover:font-bold" >LINE COMBINATIONS</a></li>
@@ -306,15 +297,6 @@
 
                                 </ul>
                             </div>
-
-
-
-
-
-
-
-
-
                         </div>
                 </div>
 

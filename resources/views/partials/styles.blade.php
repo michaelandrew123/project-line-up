@@ -123,12 +123,10 @@
     .deactive{
         display:none;
     }
-    .menu-white-text{
-        color: white !important;
-    }
-
+  
     @media (max-width: 639px) {
 
+        
         ul#mobile-2nd-mnav li:first-child{
             /* border-left: none !important;     */
         }    
