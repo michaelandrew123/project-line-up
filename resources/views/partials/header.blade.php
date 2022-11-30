@@ -172,11 +172,11 @@
                                         </div> 
                                  </div> 
                             </div> 
-                            <div class="flex flex-row justify-between w-10/12 mx-2">
+                            <div class="flex flex-row justify-between w-11/12 mx-2">
                                     <div>
                                         <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
                                     </div>
-                                    <div class="flex flex-row justify-evenly w-8/12">
+                                    <div class="flex flex-row justify-center gap-4 w-5/12 ">
                                         <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
                                         <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/player_icon-removebg-preview.png') }}" alt=""></a>
                                     </div> 
@@ -187,7 +187,7 @@
                                             </svg>
                                         </a>
                                     </div> 
-                             </div>
+                            </div>
                         </div>
  
                         <div class="sm:mt-4 flex flex-row gap-y-4"   id="list-menu"> 

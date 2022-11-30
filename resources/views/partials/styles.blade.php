@@ -124,7 +124,7 @@
         display:none;
     }
   
-    @media (max-width: 639px) {
+    @media (max-width: 768px) {
 
         
         ul#mobile-2nd-mnav li:first-child{
@@ -173,6 +173,7 @@
         .smm-justify-start	{
             justify-content: flex-start
         }
+        
         .smm-justify-end	{justify-content: flex-end}
         .smm-justify-center	{justify-content: center}
         .smm-justify-between	{justify-content: space-between}

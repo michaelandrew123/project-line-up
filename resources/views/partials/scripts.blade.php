@@ -69,7 +69,7 @@
   
 
     $('#main-menu-mobile').on('touchstart', function(){
-        $('#list-menu').toggleClass('sm:hidden smm-hidden');
+        $('#list-menu').toggleClass(' sm:hidden smm-hidden');
     })
     
    
