@@ -172,9 +172,10 @@
                                         </div> 
                                  </div> 
                             </div> 
-                            <div class="flex flex-row justify-between w-11/12 mx-2">
-                                    <div>
-                                        <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
+                            <div class="flex flex-row justify-between w-11/12 mx-1.5">
+                                    <div class="w-[7rem] border border-1 border-[#39b9ff] rounded-full flex items-center bg-black">
+                                        <a href=""><img class="w-[37px] h-9 border border-3 border-[#39b9ff] rounded-full bg-[#39b9ff]" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
+                                        <p class="text-[#39b9ff] text-[10px] font-bold ml-1.5 hover:text-slate-50">PROJECTED<br>LINEUPS</p>
                                     </div>
                                     <div class="flex flex-row justify-center gap-4 w-5/12 ">
                                         <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
@@ -189,7 +190,6 @@
                                     </div> 
                             </div>
                         </div>
- 
                         <div class="sm:mt-4 flex flex-row gap-y-4"   id="list-menu"> 
                             <div> 
                                 <a href="#responsive-header" rel="search-bar"  class=" mt-4 sm:leading-loose  sm:block  no-underline block md:mt-0 md:inline-block lg:mt-0  md:text-slate-300 ">
@@ -299,13 +299,6 @@
                             </div>
                         </div>
                 </div>
-
-              
-
-
-
-
-
             </div>
             <!--End Mobile menu -->
 
@@ -328,7 +321,7 @@
                 </li>
                 <li class="flex itmes-center">
                     <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
-                    <a  class="font-semibold hover:font-bold"   href="#">FANDUEL</a>
+                    <a  class="font-semibold hover:font-bold" href="#">FANDUEL</a>
                 </li>
                 
             </ul>
