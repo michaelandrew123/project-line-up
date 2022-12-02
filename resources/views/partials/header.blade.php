@@ -10,8 +10,10 @@
                 <div class="lg:w-7/12 w-full bg-current lg:gap-20 flex sm:flex-row-reverse md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2 ">
                     <div>
                         <div class="flex items-center flex-shrink-0 text-white ">
-                            <img src = "{{ asset('/images/logo.png') }}" class="w-16" />
-                            <span class="font-semibold text-xl tracking-tight hidden"></span>
+                            <div class="w-[7rem] border border-1 border-[#39b9ff] rounded-full flex items-center bg-black">
+                                <a href=""><img class="w-[37px] h-9 border border-3 border-[#39b9ff] rounded-full bg-[#39b9ff]" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
+                                <p class="text-[#39b9ff] text-[10px] font-bold ml-1.5 hover:text-slate-50">PROJECTED<br>LINEUPS</p>
+                            </div>
                         </div>
                     </div>
                     <div id="main-menu1" class="pr-4 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative   md:block">
