@@ -97,15 +97,18 @@
 <div class="flex flex-col pt-10 pb-10 bg-sky-500 mt-8 xl:block lg:block hidden">
     <div class="flex flex-row justify-evenly ">
         <div>
-                <div class="w-[8rem] border border-[#39b9ff] rounded-full flex items-center bg-black">
-                    <a href=""><img class="w-12 h-12 border border-3 border-[#39b9ff] rounded-full bg-[#39b9ff]" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
-                    <p class="text-[#39b9ff] text-[10px] font-bold ml-1.5 hover:text-slate-50">PROJECTED<br>LINEUPS</p>
-                </div>
+                
                 <!-- <div><img class="w-10 h-10 hover:bg-[url('/images/menu-icon/PROJECTED LINEUPS (1) (1).png')]" src="{{ asset('/images/menu-icon/PROJECTED LINEUPS (1) (1).png') }}" alt=""></div> -->
                 <!-- <div class="relative">
                     <img src="{{ asset('/images/menu-icon/PROJECTED LINEUPS (1) (1).png') }}" class="w-36 h-16" alt="">
                     <img src="{{ asset('/images/menu-icon/PROJECTED LINEUPS=BLUE (1).png') }}" class="absolute top-0 left-0 w-36 h-16 hidden" alt="">
                 </div> -->
+                <div class="relative border rounded-full bg-black w-32">
+                    <a href="">
+                        <img src="{{ asset('/images/menu-icon/PROJECTED_LINEUPS_LOGO_NEW (1).png') }}" alt="" class="w-32 ">
+                    </a>
+                    <a href=""><p class="text-[#35b6fe] text-[11px] font-extrabold ml-1.5 hover:text-slate-50 absolute bottom-1.5 left-11">PROJECTED<br>LINEUPS</p></a>
+                </div>
                 <p class="text-sm mt-7">Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Voluptas, accusantium.</p>
                 <ul class="flex flex-row mt-7">
                     <li class="list-none"><a href="#"><img class="w-6 h-6 " src="{{ asset('/images/menu-icon/instagram icon.png') }}"></a></li>
