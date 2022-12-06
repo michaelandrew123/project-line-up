@@ -601,6 +601,7 @@
                     </div>
                 </div>
             </div>
+            <div class="bg-slate-300 w-12/12 h-px mx-1"></div>
             <div class="flex flex-row gap-1 mt-1 justify-center ">
                 <div class="bg-slate-100 p-2 rounded-xl text-center relative ">
                     <p class="text-center">KERFOT</p>
