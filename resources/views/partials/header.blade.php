@@ -6,7 +6,7 @@
         <div class="sm:relative md:flex md:justify-center z-30">
             <!--Desktop menu and Tablet--> 
             <div class="w-full flex-row lg:flex lg:flex-row   md:pt-2 sm:py-1 items-center  sm:flex-wrap sm:px-0 md:hidden sm:hidden smm-hidden">
-                <div class="lg:w-7/12 w-full bg-current lg:gap-20 flex sm:flex-row-reverse md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2 ">
+                <div class="lg:w-7/12 w-full bg-current lg:gap-3 flex sm:flex-row-reverse md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2 ">
                     <div>
                         <div class="flex items-center flex-shrink-0 text-white ">
                             <!-- <div class="w-[7rem] border border-1 border-[#39b9ff] rounded-full flex items-center bg-black">
@@ -19,8 +19,12 @@
                                 </a>
                                <a href=""><p class="text-[#35b6fe] text-[11px] font-extrabold ml-1.5 hover:text-slate-50 absolute bottom-1.5 left-11">PROJECTED<br>LINEUPS</p></a>
                             </div> -->
-                            <div>
-                              
+                            <!-- <div class="flex flex-row items-center gap-1">
+                                <a href=""><img class="w-[37px] h-9 border border-3 border-[#39b9ff] rounded-full bg-[#39b9ff]" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
+                                <p class="text-xl font-extrabold font-sans italic">projected<p class="text-xl font-extrabold font-sans italic text-sky-500">lineups</p></p>
+                            </div> -->
+                            <div class="ml-1">
+                                <img class="w-[200px]" src="{{ asset('/images/menu-icon/logo.png') }}" alt="">
                             </div>
 
                         </div>
@@ -127,12 +131,15 @@
             <div style="background-color: white;" class="smm-z-20 ">
                 <div class="xl:hidden lg:hidden md:block sm:block border-r-2 border-gray-200" id="mobile-smm-menu ">
                         <div class="flex flex-row items-center h-14 justify-between bg-black w-full">
-                            <div class="flex items-center flex-shrink-0 text-white pl-2 ">
+                            <div class="flex items-center flex-shrink-0 text-white pl-2">
                                     <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
-                                        <div class=" block lg:hidden ">
+                                        <div class=" block lg:hidden flex flex-row gap-1.5">
                                             <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
                                                 <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                                             </button>
+                                            <div class="w-[12rem] flex items-center">
+                                               <img class="" src="{{ asset('/images/menu-icon/logo.png') }}" alt="">
+                                            </div>
                                         </div>
 
                                         <div class=" flex flex-row gap-12 navbar smm-hidden md:hidden sm:hidden"> 
@@ -179,16 +186,8 @@
                                         </div> 
                                  </div> 
                             </div> 
-                            <div class="flex flex-row justify-between w-11/12 mx-1.5">
-                                    <div class="w-[7rem] border border-1 border-[#39b9ff] rounded-full flex items-center bg-black">
-                                        
-                                        <div class="relative border rounded-full bg-black">
-                                            <a href="">
-                                                <img src="{{ asset('/images/menu-icon/PROJECTED_LINEUPS_LOGO_NEW (1).png') }}" alt="" class="w-32 ">
-                                            </a>
-                                            <a href=""><p class="text-[#35b6fe] text-[10px] font-extrabold ml-[10%] hover:text-slate-50 absolute bottom-0.5 left-7">PROJECTED<br>LINEUPS</p></a>
-                                        </div>
-                                    </div>
+                            <div class="flex flex-row justify-between w-11/12 mx-1">
+                                    
                                     <div class="flex flex-row justify-center gap-4 w-5/12 ">
                                         <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
                                         <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/player_icon-removebg-preview.png') }}" alt=""></a>

@@ -114,17 +114,24 @@
 
         // var data = $(this).attr('rel');
         // $('.'+data).addClass('active');
+        if($(this).text() == 'LINEUPS' || $(this).text() == 'DRAFTKINGS' || $(this).text() == 'FANDUEL'){
+                
+            $('#carouselExampleControls').addClass('hidden'); 
+            $('#ldf').removeClass('hidden');
 
-
-        if($(this).text() == 'DRAFTKINGS'){
-            $('.forward-icon-fanduel').addClass('hidden');
-            $('.forward-icon-draftking').removeClass('hidden'); 
-        }else if($(this).text() == 'FANDUEL'){
-            $('.forward-icon-fanduel').removeClass('hidden');
-            $('.forward-icon-draftking').addClass('hidden'); 
-        } else if($(this).text() == 'LINEUPS'){
-            $('.forward-icon-fanduel').addClass('hidden');
-            $('.forward-icon-draftking').addClass('hidden'); 
+            if($(this).text() == 'DRAFTKINGS'){ 
+                $('.forward-icon-fanduel').addClass('hidden');
+                $('.forward-icon-draftking').removeClass('hidden'); 
+            }else if($(this).text() == 'FANDUEL'){ 
+                $('.forward-icon-fanduel').removeClass('hidden');
+                $('.forward-icon-draftking').addClass('hidden'); 
+            }else if($(this).text() == 'LINEUPS'){ 
+                $('.forward-icon-fanduel').addClass('hidden');
+                $('.forward-icon-draftking').addClass('hidden'); 
+            } 
+        }else if($(this).text() == 'NEWS'){
+            $('#carouselExampleControls').removeClass('hidden'); 
+            $('#ldf').addClass('hidden');
         }else{
 
         }
