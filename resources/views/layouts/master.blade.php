@@ -27,7 +27,7 @@
 <body>
 
 @include('partials.header')
-<main class="container m-auto">
+<main class="container-none ">
     @yield('content')
 </main>
 

@@ -6,7 +6,6 @@
         <div class="sm:relative md:flex md:justify-center z-30">
             <!--Desktop menu and Tablet--> 
             <div class="w-full flex-row lg:flex lg:flex-row   md:pt-2 sm:py-1 items-center  sm:flex-wrap sm:px-0 md:hidden sm:hidden smm-hidden">
-
                 <div class="lg:w-7/12 w-full bg-current lg:gap-20 flex sm:flex-row-reverse md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2 ">
                     <div>
                         <div class="flex items-center flex-shrink-0 text-white ">
@@ -14,12 +13,16 @@
                                 <a href=""><img class="w-[37px] h-9 border border-3 border-[#39b9ff] rounded-full bg-[#39b9ff]" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
                                 <p class="text-[#39b9ff] text-[10px] font-bold ml-1.5 hover:text-slate-50">PROJECTED<br>LINEUPS</p>
                             </div> -->
-                            <div class="relative border rounded-full bg-black">
+                            <!-- <div class="relative border rounded-full bg-black">
                                 <a href="">
                                     <img src="{{ asset('/images/menu-icon/PROJECTED_LINEUPS_LOGO_NEW (1).png') }}" alt="" class="w-32 ">
                                 </a>
                                <a href=""><p class="text-[#35b6fe] text-[11px] font-extrabold ml-1.5 hover:text-slate-50 absolute bottom-1.5 left-11">PROJECTED<br>LINEUPS</p></a>
+                            </div> -->
+                            <div>
+                              
                             </div>
+
                         </div>
                     </div>
                     <div id="main-menu1" class="pr-4 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative   md:block">

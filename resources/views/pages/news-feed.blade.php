@@ -1391,6 +1391,7 @@
 	               </div>         
 	        </div>
 	    </div>
+        
         <div class="flex flex-col block overflow-x-visible md:overflow-x-auto sm:overflow-y-hidden block smm-hidden">
             <div class="bg-lime-400 w-36 h-full text-center"><h1>ADDS</h1>
             </div>

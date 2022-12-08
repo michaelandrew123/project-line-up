@@ -129,6 +129,21 @@
 
         }
 
+        $('#nav2').onclick(function(){
+            $('#nav-body').removeClass('active');
+            $('#nav-body').addClass('hidden');
+            $('#carouselExampleControls').removeClass('hidden');
+            $('#carouselExampleControls').addClass('active');
+        });
+        // $("#nav2").click(function(){
+        // $("#body1").hide();
+        // });
+        // $("#nav2").click(function(){
+        //     $("#carouselExampleControls").show();
+        // });
+        
+       
+
     });
 
 </script>
