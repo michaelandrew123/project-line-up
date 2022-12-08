@@ -792,32 +792,34 @@
 </div>
 <!-- Tablet and mobile responsive design -->
 <div class="flex flex-col smm-block">
-<div id="carouselExampleControls" class="carousel slide relative mt-4 w-full border border-sky-100" data-bs-ride="carousel">
-               <div class="carousel-inner relative overflow-hidden border border-sky-100">
-                    <div class="carousel-item active relative float-left w-full">
+       <div id="carouselExampleControls3" class="carousel slide relative mt-4 nav-corsl " data-bs-ride="carousel">
+               <div class="carousel-inner relative w-full overflow-hidden">
+                    <div class="carousel-item active relative float-left w-full"> 
                         <div class=" flex justify-center">
-                            <div class=" relative w-6/12 smm-w-[75%] ">
+                            <div class="w-[70%] h-[23rem]  relative  ">
                                 <div class=" m-1 mt-5 ">
                                     <div class="bg-orange-400 rounded-full w-40 flex items-center p-1 mb-3">
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
                                         <h1 class="text-sm ml-4 text-black font-semibold">Morning Skates</h1>
                                     </div>
                                     <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-full">
+
                                 </div>
-                                <div class="ml-1 mb-10 pb-9">
+                                <div class=" ml-1 mb-5 pb-9">
                                     <p class="text-xs font-bold mb-5">Sharks look to put together some extra wins</p>
                                     <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
                                 </div>
-                                <div class="w-20 overflow-hidden inline-block absolute bottom-0 right-0 ">
-                                    <div class=" h-28 bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+
+                                    <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
-                    <div class="carousel-item relative float-left w-full ">
+                    <div class="carousel-item relative float-left w-full">
                         <div class="flex justify-center align-center">
-                            <div class="relative w-6/12  ml-5 mr-5 ">
+                            <div class="w-[70%] h-[23rem]  relative ml-5 mr-5 ">
                                 <div class=" m-1 mt-5 ">
                                     <div class="bg-[#15d869] rounded-full w-40 flex items-center p-1 mb-3">
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
@@ -835,12 +837,12 @@
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item relative float-left w-full">
                         <div class="flex justify-center align-center">
-                            <div class="w-6/12  relative  ">
+                           <div class="w-[70%] h-[23rem]  relative  ">
                                 <div class=" m-1 mt-5 ">
                                     <div class="bg-orange-400  rounded-full w-40 flex items-center p-1 mb-3">
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
@@ -860,23 +862,27 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-               </div>
+                    </div> 
+                </div>
+
+
             <button
-                class="carousel-control-prev absolute top-0 bottom-0 flex items-center w-1/12 justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
                 type="button"
-                data-bs-target="#carouselExampleControls"
+                data-bs-target="#carouselExampleControls3"
                 data-bs-slide="prev"
-            > 
+            >
                 <img class="color-red border border-sky-100 rounded-full w-12 rotate-180 " src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
             </button>
+
             <button
-                class="carousel-control-next absolute top-0 bottom-0 flex items-center w-1/12  justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
                 type="button"
-                data-bs-target="#carouselExampleControls"
+                data-bs-target="#carouselExampleControls3"
                 data-bs-slide="next"
-            >
-                <img class="color-red border border-sky-100 rounded-full w-12" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
+            >     
+             <img class="color-red border border-sky-100 rounded-full w-12" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
+           
             </button>
         </div>
         
@@ -887,11 +893,11 @@
                         Starting Goalies
                      </h1>
                 </div>
-        <div id="carouselExampleControls" class="carousel slide relative mt-1 " data-bs-ride="carousel">
-            <div class="carousel-inner relative w-full overflow-hidden">
-                    <div class="carousel-item active relative float-left w-full">
+        <div id="carouselExampleControls" class="carousel slide relative mt-4 nav-corsl " data-bs-ride="carousel">
+               <div class="carousel-inner relative w-full overflow-hidden">
+                    <div class="carousel-item active relative float-left w-full"> 
                         <div class=" flex justify-center">
-                            <div class="w-[18rem] h-80 border border-black relative  ">
+                            <div class="w-[70%] h-80 border border-black relative  ">
                                 <div class="flex m-1 mt-5">
                                     <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
@@ -925,11 +931,11 @@
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
-                    <!-- <div class="carousel-item relative float-left w-full">
+                    <div class="carousel-item relative float-left w-full">
                         <div class="flex justify-center align-center">
-                            <div class="w-[18rem] h-80 border border-black relative ml-5 mr-5">
+                            <div class="w-[70%] h-80 border border-black relative ml-5 mr-5">
                                 <div class="flex m-1 mt-5 ">
                                     <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
@@ -969,7 +975,7 @@
                     </div>
                     <div class="carousel-item relative float-left w-full">
                         <div class="flex justify-center align-center">
-                                <div class="w-[18rem] h-80 border border-black relative smm-overflow-x-hidden ">
+                                <div class="w-[70%] h-80 border border-black relative smm-overflow-x-hidden ">
                                     <div class="flex m-1 mt-5 ">
                                         <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                         <div class="ml-2">
@@ -1005,23 +1011,27 @@
                                     </div>       
                                 </div> 
                             </div>
-                    </div> -->
+                    </div> 
             </div>
+
+
             <button
-                class="carousel-control-prev absolute top-0 bottom-0 flex items-center  w-1/12 justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
                 type="button"
                 data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev"
             >
                 <img class="color-red border border-sky-100 rounded-full w-12 rotate-180 " src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
             </button>
+
             <button
-                class="carousel-control-next absolute top-0 bottom-0 flex items-center  w-1/12justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
                 type="button"
                 data-bs-target="#carouselExampleControls"
                 data-bs-slide="next"
-            >  
-                <img class="color-red border border-sky-100 rounded-full w-12" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
+            >     
+             <img class="color-red border border-sky-100 rounded-full w-12" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
+           
             </button>
         </div>
                <div class="flex justify-center items-center mt-4 ">
@@ -1030,11 +1040,11 @@
                         Players News
                     </h1>
                 </div>
-        <!-- <div id="carouselExampleControls" class="carousel slide relative mt-1" data-bs-ride="carousel">
-            <div class="carousel-inner relative w-full overflow-hidden">
-                    <div class="carousel-item active relative float-left w-full">
+    <div id="carouselExampleControls2" class="carousel slide relative mt-4 nav-corsl " data-bs-ride="carousel">
+               <div class="carousel-inner relative w-full overflow-hidden">
+                    <div class="carousel-item active relative float-left w-full"> 
                         <div class=" flex justify-center">
-                            <div class="w-[18rem] h-80 border border-black relative  ">
+                            <div class="w-[70%] h-80 border border-black relative  ">
                                 <div class="flex m-1 mt-5">
                                     <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
@@ -1068,11 +1078,11 @@
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div class="carousel-item relative float-left w-full">
                         <div class="flex justify-center align-center">
-                            <div class="w-[18rem] h-80 border border-black relative ml-5 mr-5">
+                            <div class="w-[70%] h-80 border border-black relative ml-5 mr-5">
                                 <div class="flex m-1 mt-5 ">
                                     <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
@@ -1112,7 +1122,7 @@
                     </div>
                     <div class="carousel-item relative float-left w-full">
                         <div class="flex justify-center align-center">
-                                <div class="w-[18rem] h-80 border border-black relative smm-overflow-x-hidden ">
+                                <div class="w-[70%] h-80 border border-black relative smm-overflow-x-hidden ">
                                     <div class="flex m-1 mt-5 ">
                                         <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                         <div class="ml-2">
@@ -1148,27 +1158,31 @@
                                     </div>       
                                 </div> 
                             </div>
-                    </div>
+                    </div> 
             </div>
+
+
             <button
                 class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
                 type="button"
-                data-bs-target="#carouselExampleControls"
+                data-bs-target="#carouselExampleControls2"
                 data-bs-slide="prev"
             >
-                <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
                 <img class="color-red border border-sky-100 rounded-full w-12 rotate-180 " src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
             </button>
+
             <button
                 class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
                 type="button"
-                data-bs-target="#carouselExampleControls"
+                data-bs-target="#carouselExampleControls2"
                 data-bs-slide="next"
-            >
-                <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                <img class="color-red border border-sky-100 rounded-full w-12" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
+            >     
+             <img class="color-red border border-sky-100 rounded-full w-12" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
+           
             </button>
-        </div> -->
+        </div>
+                
+        
 </div>
 <!-- End of tablet and mobile  -->
 
