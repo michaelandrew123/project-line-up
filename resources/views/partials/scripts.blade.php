@@ -116,7 +116,10 @@
         // $('.'+data).addClass('active');
         if($(this).text() == 'LINEUPS' || $(this).text() == 'DRAFTKINGS' || $(this).text() == 'FANDUEL'){
                 
-            $('#carouselExampleControls').addClass('hidden'); 
+            $('#scrollbar').addClass('hidden'); 
+            $('#ldf').removeClass('hidden');
+
+            $('#img').addClass('hidden'); 
             $('#ldf').removeClass('hidden');
 
             if($(this).text() == 'DRAFTKINGS'){ 
@@ -129,18 +132,26 @@
                 $('.forward-icon-fanduel').addClass('hidden');
                 $('.forward-icon-draftking').addClass('hidden'); 
             } 
-        }else if($(this).text() == 'NEWS'){
-            $('#carouselExampleControls').removeClass('hidden'); 
-            $('#ldf').addClass('hidden');
-        }else{
+            }else if($(this).text() == 'NEWS'){
+                $('#scrollbar').removeClass('hidden'); 
+                $('#ldf, #img').addClass('hidden');
+            }else if($(this).text() == 'ODDS'){
+                $('#img').removeClass('hidden'); 
+                $('#ldf, #scrollbar').addClass('hidden');
+            }else{
 
-        }
-
+            }
         $('#nav2').onclick(function(){
             $('#nav-body').removeClass('active');
             $('#nav-body').addClass('hidden');
-            $('#carouselExampleControls').removeClass('hidden');
-            $('#carouselExampleControls').addClass('active');
+            $('#img').removeClass('hidden');
+            $('#img').addClass('active');
+        });
+        $('#nav2').onclick(function(){
+            $('#nav-body').removeClass('active');
+            $('#nav-body').addClass('hidden');
+            $('#scrollbar').removeClass('hidden');
+            $('#scrollbar').addClass('active');
         });
         // $("#nav2").click(function(){
         // $("#body1").hide();

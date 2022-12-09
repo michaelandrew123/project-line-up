@@ -5,26 +5,12 @@
     <div class="md:flex md:flex-col sm:block">
         <div class="sm:relative md:flex md:justify-center z-30">
             <!--Desktop menu and Tablet--> 
-            <div class="w-full flex-row lg:flex lg:flex-row   md:pt-2 sm:py-1 items-center  sm:flex-wrap sm:px-0 md:hidden sm:hidden smm-hidden">
-                <div class="lg:w-7/12 w-full bg-current lg:gap-3 flex sm:flex-row-reverse md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2 ">
+            <div class="w-full flex-row lg:flex lg:flex-row md:pt-2 sm:py-1 items-center sm:flex-wrap sm:px-0 sm:hidden smm-hidden">
+                <div class="lg:w-7/12 w-full bg-current lg:gap-3  flex sm:flex-row-reverse md:flex-row md:items-center sm:items-center sm:justify-end sm:gap-2 smm-flex-row-reverse smm-flex-row-reverse smm-justify-end  smm-items-center smm-gap-2 ">
                     <div>
                         <div class="flex items-center flex-shrink-0 text-white ">
-                            <!-- <div class="w-[7rem] border border-1 border-[#39b9ff] rounded-full flex items-center bg-black">
-                                <a href=""><img class="w-[37px] h-9 border border-3 border-[#39b9ff] rounded-full bg-[#39b9ff]" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
-                                <p class="text-[#39b9ff] text-[10px] font-bold ml-1.5 hover:text-slate-50">PROJECTED<br>LINEUPS</p>
-                            </div> -->
-                            <!-- <div class="relative border rounded-full bg-black">
-                                <a href="">
-                                    <img src="{{ asset('/images/menu-icon/PROJECTED_LINEUPS_LOGO_NEW (1).png') }}" alt="" class="w-32 ">
-                                </a>
-                               <a href=""><p class="text-[#35b6fe] text-[11px] font-extrabold ml-1.5 hover:text-slate-50 absolute bottom-1.5 left-11">PROJECTED<br>LINEUPS</p></a>
-                            </div> -->
-                            <!-- <div class="flex flex-row items-center gap-1">
-                                <a href=""><img class="w-[37px] h-9 border border-3 border-[#39b9ff] rounded-full bg-[#39b9ff]" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt=""></a>
-                                <p class="text-xl font-extrabold font-sans italic">projected<p class="text-xl font-extrabold font-sans italic text-sky-500">lineups</p></p>
-                            </div> -->
                             <div class="ml-1">
-                                <img class="w-[200px]" src="{{ asset('/images/menu-icon/logo.png') }}" alt="">
+                                <img class="xl:w-[200px] lg:w-[150px]" src="{{ asset('/images/menu-icon/logo.png') }}" alt="">
                             </div>
 
                         </div>
@@ -38,7 +24,7 @@
                             </button>
                         </div>
  
-                        <div class=" flex flex-row gap-12 navbar"> 
+                        <div class=" flex flex-row xl:gap-12 lg:gap-2 navbar"> 
                             <a href="#responsive-header" rel="daily-menu"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0    md:text-slate-300  hover:text-white  font-bold">
                                 DAILY FANTASY
                                 <div class="relative hidden daily-menu active" >
@@ -129,7 +115,7 @@
             <!--End Desktop menu and Tablet --> 
             <!--Start Mobile menu -->  
             <div style="background-color: white;" class="smm-z-20 ">
-                <div class="xl:hidden lg:hidden md:block sm:block border-r-2 border-gray-200" id="mobile-smm-menu ">
+                <div class="xl:hidden lg:hidden block border-r-2 border-gray-200" id="mobile-smm-menu ">
                         <div class="flex flex-row items-center h-14 justify-between bg-black w-full">
                             <div class="flex items-center flex-shrink-0 text-white pl-2">
                                     <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
