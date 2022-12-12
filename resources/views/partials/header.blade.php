@@ -187,7 +187,7 @@
                                     </div> 
                             </div>
                         </div>
-                        <div class="sm:mt-4 flex flex-row gap-y-4"   id="list-menu"> 
+                        <!-- <div class="sm:mt-4 flex flex-row gap-y-4"   id="list-menu"> 
                             <div> 
                                 <a href="#responsive-header" rel="search-bar"  class=" mt-4 sm:leading-loose  sm:block  no-underline block md:mt-0 md:inline-block lg:mt-0  md:text-slate-300 ">
                                     <img src = "{{ asset('/images/search.png') }}" class="w-5 m-auto " />
@@ -294,6 +294,22 @@
 
                                 </ul>
                             </div>
+                        </div> -->
+                        <div class="hidden" id="new-menu">
+                            <div class="mt-4 flex flex-row justify-evenly">
+                                <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">JOIN</button>
+                                <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">SIGN IN</button>
+                            </div>
+                            <div class="my-4">
+                                <div class="flex flex-row bg-[#38b6ff] border border-black"><a class="text-white font-bold text-sm ml-9 p-1" href="">STARTING GOALIES</a></div>
+                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">LINE COMBINATIONS</a></div>
+                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">PROJECTIONS</a></div>
+                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">News</a></div>
+                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">BETTING</a></div>
+                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">NEWS</a></div>
+                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">SCHEDULE</a></div>
+                            </div>
+
                         </div>
                 </div>
             </div>

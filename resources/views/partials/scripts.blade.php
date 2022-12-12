@@ -67,11 +67,15 @@
 
 
   
-
-    $('#main-menu-mobile').on('touchstart', function(){
-        $('#list-menu').toggleClass(' sm:hidden smm-hidden');
-    })
+    // old toggle menu
+    // $('#main-menu-mobile').on('touchstart', function(){
+    //     $('#list-menu').toggleClass(' sm:hidden smm-hidden');
+    // })
     
+    $('#main-menu-mobile').on('touchstart', function(){
+        $('#new-menu').toggleClass();
+        
+    });
    
 
  
