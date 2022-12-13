@@ -114,17 +114,17 @@
             </div> 
             <!--End Desktop menu and Tablet --> 
             <!--Start Mobile menu -->  
-            <div style="background-color: white;" class="smm-z-20 ">
+            <div class="smm-z-20 ">
                 <div class="xl:hidden lg:hidden block border-r-2 border-gray-200" id="mobile-smm-menu ">
-                        <div class="flex flex-row items-center h-14 justify-between bg-black w-full">
+                        <div class="flex flex-row items-center h-14 bg-black w-full">
                             <div class="flex items-center flex-shrink-0 text-white pl-2">
                                     <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
-                                        <div class=" block lg:hidden flex flex-row gap-1.5">
+                                        <div class=" block flex flex-row gap-1">
                                             <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
                                                 <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                                             </button>
-                                            <div class="w-[12rem] flex items-center">
-                                               <img class="" src="{{ asset('/images/menu-icon/logo.png') }}" alt="">
+                                            <div class="flex items-center">
+                                               <img class=" w-[10rem]" src="{{ asset('/images/menu-icon/logo.png') }}" alt="">
                                             </div>
                                         </div>
 
@@ -174,7 +174,7 @@
                             </div> 
                             <div class="flex flex-row justify-between w-11/12 mx-1">
                                     
-                                    <div class="flex flex-row justify-center gap-4 w-5/12 ">
+                                    <div class="flex flex-row justify-center w-[58%] sm:gap-2 smm-gap-0">
                                         <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
                                         <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/player_icon-removebg-preview.png') }}" alt=""></a>
                                     </div> 
