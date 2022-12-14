@@ -77,7 +77,32 @@
         
     });
    
+    // $('#text').on('touchstart', function(){
+    //     $('.img1').addClass('hidden');
+    //     $('.img2').removeClass('hidden');
+        
+    // });
+    var clickedTwice = 1; 
+    $('#header-mobile-menu > div > a').on('touchstart', function(){
+        
+        
+        // $('.active-menu').removeClass('active-menu'); 
+        $val = $(this).attr('rel'); 
+        
 
+        if(clickedTwice == 1){
+            clickedTwice++;
+            $('.'+$val).addClass('active-menu');  
+        }else{
+            $('.'+$val).removeClass('active-menu');
+            clickedTwice = 1;
+        }
+     
+    });
+
+
+    
+    
  
 
 
@@ -157,12 +182,8 @@
             $('#scrollbar').removeClass('hidden');
             $('#scrollbar').addClass('active');
         });
-        // $("#nav2").click(function(){
-        // $("#body1").hide();
-        // });
-        // $("#nav2").click(function(){
-        //     $("#carouselExampleControls").show();
-        // });
+
+        
         
        
 

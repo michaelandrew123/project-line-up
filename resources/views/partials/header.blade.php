@@ -116,77 +116,75 @@
             <!--Start Mobile menu -->  
             <div class="smm-z-20 ">
                 <div class="xl:hidden lg:hidden block border-r-2 border-gray-200" id="mobile-smm-menu ">
-                        <div class="flex flex-row items-center h-14 bg-black w-full">
-                            <div class="flex items-center flex-shrink-0 text-white pl-2">
-                                    <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
-                                        <div class=" block flex flex-row gap-1">
-                                            <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
-                                                <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                                            </button>
-                                            <div class="flex items-center">
-                                               <img class=" w-[10rem]" src="{{ asset('/images/menu-icon/logo.png') }}" alt="">
+                    <div class="flex flex-row items-center h-14 bg-black w-full">
+                        <div class="flex items-center flex-shrink-0 text-white pl-2">
+                            <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
+                                <div class=" block flex flex-row gap-1">
+                                    <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
+                                        <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                                    </button>
+                                    <div class="flex items-center">
+                                        <img class=" w-[10rem]" src="{{ asset('/images/menu-icon/logo.png') }}" alt="">
+                                    </div>
+                                </div>
+                                <div class=" flex flex-row gap-12 navbar smm-hidden md:hidden sm:hidden"> 
+                                    <a href="#responsive-header" rel="daily-menu"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0    md:text-slate-300  hover:text-white  font-bold">
+                                        DAILY FANTASY
+                                        <div class="relative hidden daily-menu active" >
+                                            <div class="arrowed absolute top-5 left-10 ">
+                                                <div class="arrow-3"></div>
                                             </div>
                                         </div>
-
-                                        <div class=" flex flex-row gap-12 navbar smm-hidden md:hidden sm:hidden"> 
-                                            <a href="#responsive-header" rel="daily-menu"  class="sm:leading-loose md:leading-13 sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0    md:text-slate-300  hover:text-white  font-bold">
-                                                DAILY FANTASY
-                                                <div class="relative hidden daily-menu active" >
-                                                    <div class="arrowed absolute top-5 left-10 ">
-                                                        <div class="arrow-3"></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0   relative md:text-slate-300  hover:text-white font-bold">
-                                                PROJECTIONS
-                                                <div class="relative  hidden projections-menu ">
-                                                    <div class="arrowed absolute top-5 left-10">
-                                                        <div class="arrow-3"></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="#responsive-header" rel="news-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
-                                                NEWS 
-                                                <div class="relative  hidden news-menu">
-                                                    <div class="arrowed absolute top-5 left-5">
-                                                        <div class="arrow-3"></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
-                                                BETTING 
-                                                <div class="relative  hidden betting-menu">
-                                                    <div class="arrowed absolute top-5 left-5">
-                                                        <div class="arrow-3"></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
-                                                ODDS 
-                                                <div class="relative  hidden odds-menu">
-                                                    <div class="arrowed absolute top-5 left-3">
-                                                        <div class="arrow-3"></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div> 
-                                 </div> 
+                                    </a>
+                                    <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0   relative md:text-slate-300  hover:text-white font-bold">
+                                        PROJECTIONS
+                                        <div class="relative  hidden projections-menu ">
+                                            <div class="arrowed absolute top-5 left-10">
+                                                <div class="arrow-3"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#responsive-header" rel="news-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                                        NEWS 
+                                        <div class="relative  hidden news-menu">
+                                            <div class="arrowed absolute top-5 left-5">
+                                                <div class="arrow-3"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                                        BETTING 
+                                        <div class="relative  hidden betting-menu">
+                                            <div class="arrowed absolute top-5 left-5">
+                                                <div class="arrow-3"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                                        ODDS 
+                                        <div class="relative  hidden odds-menu">
+                                            <div class="arrowed absolute top-5 left-3">
+                                                <div class="arrow-3"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> 
                             </div> 
-                            <div class="flex flex-row justify-between w-11/12 mx-1">
-                                    
-                                    <div class="flex flex-row justify-center w-[58%] sm:gap-2 smm-gap-0">
-                                        <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
-                                        <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/player_icon-removebg-preview.png') }}" alt=""></a>
-                                    </div> 
-                                    <div>
-                                        <a href="#">
-                                            <svg class=" w-9 h-9 text-black border border-black rounded-full bg-sky-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
-                                            </svg>
-                                        </a>
-                                    </div> 
-                            </div>
+                        </div> 
+                        <div class="flex flex-row justify-between w-11/12 mx-1">                                   
+                            <div class="flex flex-row justify-center w-[58%] sm:gap-2 smm-gap-0">
+                                <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
+                                <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/player_icon-removebg-preview.png') }}" alt=""></a>
+                            </div> 
+                            <div>
+                                <a href="#">
+                                    <svg class=" w-9 h-9 text-black border border-black rounded-full bg-sky-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div> 
                         </div>
+                    </div>
                         <!-- <div class="sm:mt-4 flex flex-row gap-y-4"   id="list-menu"> 
                             <div> 
                                 <a href="#responsive-header" rel="search-bar"  class=" mt-4 sm:leading-loose  sm:block  no-underline block md:mt-0 md:inline-block lg:mt-0  md:text-slate-300 ">
@@ -295,31 +293,149 @@
                                 </ul>
                             </div>
                         </div> -->
-                        <div class="hidden" id="new-menu">
-                            <div class="mt-4 flex flex-row justify-evenly">
-                                <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">JOIN</button>
-                                <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">SIGN IN</button>
+                    <div class="hidden" id="new-menu">
+                        <div class="mt-4 flex flex-row justify-evenly">
+                            <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">JOIN</button>
+                            <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">SIGN IN</button>
+                        </div>
+                        <div class="my-4" id="header-mobile-menu">
+                            <div class="flex flex-row bg-[#38b6ff] border border-black">
+                                <a class="text-white font-bold text-sm ml-9 p-1" href="">STARTING GOALIES</a>
                             </div>
-                            <div class="my-4">
-                                <div class="flex flex-row bg-[#38b6ff] border border-black"><a class="text-white font-bold text-sm ml-9 p-1" href="">STARTING GOALIES</a></div>
-                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">LINE COMBINATIONS</a></div>
-                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">PROJECTIONS</a></div>
-                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">News</a></div>
-                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">BETTING</a></div>
-                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">NEWS</a></div>
-                                <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2"><img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt=""><a class="text-white font-bold text-sm p-1" href="">SCHEDULE</a></div>
+                            <div class="flex flex-row bg-[#38b6ff] border border-black flex items-center gap-2 relative " >
+                                <img class="w-[20px] h-[20px] ml-2.5 img1" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden img2" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 " rel="menu-line-combonation" href="#">LINE COMBINATIONS</a>
+                            </div>
+                                <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-line-combonation hidden" style>
+                                    <li><a href=""><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/chicago-blackhawks.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/columbus-blue-jackets.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/dallas-stars.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/detroit-red-wings.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/montreal-canadiens.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-jersey-devils.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-york-islanders.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-york-rangers.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/ottawa-senators.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/philadelphia-flyers.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/san-jose-sharks.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/seattle-kraken.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/tampa-bay-lightning.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/vancouver-canucks.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/washington-capitals.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a></li>
+                                </ul>
+                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5 " src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 " rel="menu-projections" href="#">PROJECTIONS</a>
+                            </div>
+                                <ul id="team-logo" class="bg-white flex flex-col justify-center menu-projections hidden">
+                                    <li class="p-1  border border-black w-full">
+                                        <a class="flex flex-row items-center ml-[27px]" href="#">
+                                            <img class="w-[7%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                            <p class="ml-2 text-md font-semibold">DRAFTKINGS</p>
+                                        </a> 
+                                    </li>
+                                    <li class=" p-1  border border-black w-full">
+                                        <a class="flex flex-row items-center ml-[27px]" href="#">
+                                            <img class="w-[7%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                                            <p class="ml-2 text-md font-semibold">FANDUEL</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1" rel="menu-news" href="#">News</a>
+                            </div>
+                                  <ul id="team-logo" class="bg-white flex flex-col  menu-news hidden">
+                                    <li class=" border border-black w-full p-1">
+                                            <a class="flex flex-row items-center ml-[27px]" href="#">
+                                                <p class="ml-2 text-md font-semibold">PLAYER NEWS</p>
+                                            </a> 
+                                        </li>
+                                        <li class=" border border-black w-full p-1">
+                                            <a class="flex flex-row items-center ml-[27px]" href="#">
+                                                <p class="ml-2 text-md font-semibold">TEAM NEWS</p>
+                                            </a>
+                                        </li>
+                                  </ul>
+                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1" rel="menu-betting" href="#">BETTING</a>
                             </div>
 
+                                <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-betting hidden">
+                                    <li class="h-24"></li>
+                                </ul>
+                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5 " src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1" rel="menu-odds" href="#">ODDS</a>
+                            </div>
+                                  <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center  my-5 menu-odds hidden">
+                                     <li><a href="#"><img class="w-[12rem]" src="{{ asset('/images/menu-icon/coming_soon.png') }}" alt=""></a></li>
+                                  </ul>
+                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1"  href="#">SCHEDULE</a>
+                            </div>
+                                <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 hidden">
+                                    <li><a href=""><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/chicago-blackhawks.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/columbus-blue-jackets.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/dallas-stars.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/detroit-red-wings.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/montreal-canadiens.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-jersey-devils.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-york-islanders.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-york-rangers.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/ottawa-senators.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/philadelphia-flyers.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/san-jose-sharks.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/seattle-kraken.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/tampa-bay-lightning.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/vancouver-canucks.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/washington-capitals.svg') }}" alt=""></a></li>
+                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a></li>
+                                </ul>
                         </div>
+                    </div>
                 </div>
             </div>
             <!--End Mobile menu -->
-
         </div>
-
-
      <!-- Desktop -->
-
         <div class="w-4/5 m-auto lg:block md:hidden sm:hidden smm-hidden p-4" id="sub-menu">
             <ul class="list-none flex-row items-center gap-2 py-2 daily-fantasy hidden sm:flex-wrap smm-flex-wrap daily-menu active">
                 <li ><a  class="font-semibold hover:font-bold"  href="#">STARTING GOALIES</a></li>
@@ -351,15 +467,12 @@
                 <li class="flex"><a class="font-semibold hover:font-bold" href="#">ODDS</a></li>
                 <li class="flex"><a class="font-semibold hover:font-bold" href="#">PROPS</a></li>
                 <li class="flex"><a class="font-semibold hover:font-bold" href="#">BETTING GUIDE</a></li>
-                <li class="flex"><a class="font-semibold hover:font-bold" href="#">GLOSSARY</a></li>
-                
+                <li class="flex"><a class="font-semibold hover:font-bold" href="#">GLOSSARY</a></li>  
             </ul>
-
             <ul class="list-none flex-row gap-2 py-2 odds hidden sm:flex-wrap smm-flex-wrap  hidden odds-menu ">
                 <li ><a  class="font-semibold hover:font-bold" href="#">GAME ODDS</a></li>
                 <li ><a  class="font-semibold hover:font-bold" href="#">PLAYER PROPS</a></li>
-            </ul>
-            
+            </ul> 
             <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap justify-end">
                 <div class="flex flex-row gap-3">
                     <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}"></a></li>
@@ -377,16 +490,10 @@
                     <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/value icon.png') }}"></a></li>
                     <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/website icon.png') }}"></a></li>
                 </div>
-                
             </ul>
-
-
             <ul class="list-none flex gap-2 py-2 shop hidden sm:flex-wrap ">
-
             </ul>
         </div>
-    <!-- End Desktop -->
-
-
+      <!-- End Desktop -->
     </div>
 </nav>
