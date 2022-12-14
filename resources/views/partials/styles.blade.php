@@ -117,6 +117,11 @@
     }
     }
 
+
+
+    .active-menu{
+        display:flex !important;
+    }
     .active{
         display: flex;
     }
