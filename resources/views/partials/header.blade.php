@@ -300,12 +300,12 @@
                         </div>
                         <div class="my-4" id="header-mobile-menu">
                             <div class="flex flex-row bg-[#38b6ff] border border-black">
-                                <a class="text-white font-bold text-sm ml-9 p-1" href="">STARTING GOALIES</a>
+                                <a class="text-white font-bold text-sm ml-9 p-1" href="#">STARTING GOALIES</a>
                             </div>
                             <div class="flex flex-row bg-[#38b6ff] border border-black flex items-center gap-2 relative " >
-                                <img class="w-[20px] h-[20px] ml-2.5 img1" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden img2" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1 " rel="menu-line-combonation" href="#">LINE COMBINATIONS</a>
+                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus menu-line-combonation-icon-1" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden icon-negative menu-line-combonation-icon-2" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 link-text " rel="menu-line-combonation" href="#">LINE COMBINATIONS</a>
                             </div>
                                 <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-line-combonation hidden" style>
                                     <li><a href=""><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
@@ -340,9 +340,9 @@
                                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a></li>
                                 </ul>
                             <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5 " src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1 " rel="menu-projections" href="#">PROJECTIONS</a>
+                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus menu-projections-icon-1" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden icon-negative menu-projections-icon-2" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 link-text" rel="menu-projections" href="#">PROJECTIONS</a>
                             </div>
                                 <ul id="team-logo" class="bg-white flex flex-col justify-center menu-projections hidden">
                                     <li class="p-1  border border-black w-full">
@@ -359,9 +359,9 @@
                                     </li>
                                 </ul>
                             <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1" rel="menu-news" href="#">News</a>
+                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden icon-negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 link-text" rel="menu-news" href="#">News</a>
                             </div>
                                   <ul id="team-logo" class="bg-white flex flex-col  menu-news hidden">
                                     <li class=" border border-black w-full p-1">
@@ -376,58 +376,29 @@
                                         </li>
                                   </ul>
                             <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1" rel="menu-betting" href="#">BETTING</a>
+                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden icon-negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 link-text" rel="menu-betting" href="#">BETTING</a>
                             </div>
 
                                 <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-betting hidden">
                                     <li class="h-24"></li>
                                 </ul>
                             <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5 " src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden icon-negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
                                 <a class="text-white font-bold text-sm p-1" rel="menu-odds" href="#">ODDS</a>
                             </div>
                                   <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center  my-5 menu-odds hidden">
-                                     <li><a href="#"><img class="w-[12rem]" src="{{ asset('/images/menu-icon/coming_soon.png') }}" alt=""></a></li>
+                                     <li><a href="#"><img class="w-[12rem] link-text" src="{{ asset('/images/menu-icon/coming_soon.png') }}" alt=""></a></li>
                                   </ul>
                             <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1"  href="#">SCHEDULE</a>
+                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden icon-negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 link-text" rel="menu-schedule"  href="#">SCHEDULE</a>
                             </div>
-                                <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 hidden">
-                                    <li><a href=""><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/chicago-blackhawks.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/columbus-blue-jackets.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/dallas-stars.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/detroit-red-wings.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/montreal-canadiens.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-jersey-devils.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-york-islanders.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-york-rangers.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/ottawa-senators.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/philadelphia-flyers.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/san-jose-sharks.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/seattle-kraken.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/tampa-bay-lightning.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/vancouver-canucks.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/washington-capitals.svg') }}" alt=""></a></li>
-                                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a></li>
+                                <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-schedule hidden">
+                                    <li class="h-24"></li>
                                 </ul>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
 
 
 
-
+<!-- Desktop design -->
 <div class="flex xl:block lg:block hidden">
 
     <div class="flex justify-evenly relative ">
@@ -790,6 +790,7 @@
         </div>
     </div>
 </div>
+<!-- End Desktop -->
 <!-- Tablet and mobile responsive design -->
 <div class="flex flex-col xl:hidden lg:hidden md:block smm-block ">
        <!-- <div id="carouselExampleControls3" class="carousel slide relative mt-4  hidden md:block smm-block" data-bs-ride="carousel">
@@ -883,74 +884,277 @@
            
             </button>
       </div>      -->
-
-        <div class="mx-1 mt-2">
-            <div class="flex justify-center">
-                <div>
-                    <div class="flex felx-row items-center mb-0.5">
-                        <img class="w-7" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
-                        <p class="text-sm font-bold ml-2">Morning Skate</p>  
-                    </div>
-                    <div class="max-w-[29rem] max-h-[23rem] relative  ">
-                        <div class=" ">
-                            <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-full">
-                        </div>
-                        <div class=" ml-1 mb-5 pb-9">
-                            <p class="text-xs font-bold mb-5">Sharks look to put together some extra wins</p>
-                            <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
-                        </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
-                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-            <div class="flex justify-center">
-                <div>
-                    <div class="flex felx-row items-center mb-0.5">
-                        <img class="w-7" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
-                        <p class="text-sm font-bold ml-2">Top Tracks</p>  
-                    </div>
-                    <div class="max-w-[29rem] max-h-[23rem]  relative ">
-                        <div class="">
-                            <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-full">
-                        </div>
-                        <div class=" ml-1 mb-5 pb-9">
-                            <p class="text-xs font-bold mb-5">Edmonton in a great spot tonight against the Predators</p>
-                            <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
-                        </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
-                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                        </div>
-                    </div>
-                </div> 
-            </div>      
-            <div class="flex justify-center">
-                <div> 
-                    <div class="flex felx-row items-center mb-0.5">
-                        <img class="w-7" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
-                        <p class="text-sm font-bold ml-2">Best Sets</p>  
-                    </div>
-                    <div class="max-w-[29rem] max-h-[23rem]  relative  ">
-                        <div class=" ">
-                            <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-full">
-                        </div>
-                        <div class=" ml-1 mb-5 pb-9">
-                            <p class="text-xs font-bold mb-5">Sharks look to put together some extra wins</p>
-                            <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
-                        </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
-
-                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                        </div>
-                    </div>
+      <div>
+            <div class="w-full flex justify-center my-8">
+                <div class="w-3/4 h-14 bg-lime-400 ">                
                 </div>
-            </div>           
-        </div>
-        <div id="carouselExampleControls" class="carousel slide relative mt-4" data-bs-ride="carousel">
+            </div>
+            <div class="flex flex-col gap-1.5">
+                <div class="flex justify-center">
+                    <div>
+                        <div class="flex felx-row items-center ml-2 mb-0.5">
+                            <img class="w-7" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
+                            <p class="text-sm font-bold ml-2">Morning Skate</p>  
+                        </div>
+                        <div class="w-full max-h-[23rem] relative  ">
+                            <div class=" ">
+                                <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-full">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <div class="flex felx-row items-center ml-2  mb-0.5">
+                            <img class="w-7" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
+                            <p class="text-sm font-bold ml-2">Top Tracks</p>  
+                        </div>
+                        <div class="w-full max-h-[23rem]  relative ">
+                            <div class="">
+                                <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-full">
+                            </div>
+                        </div>
+                    </div> 
+                </div>      
+                <div class="flex justify-center">
+                    <div> 
+                        <div class="flex felx-row items-center ml-2  mb-0.5">
+                            <img class="w-7" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
+                            <p class="text-sm font-bold ml-2">Best Sets</p>  
+                        </div>
+                        <div class="w-full max-h-[23rem]  relative  ">
+                            <div class=" ">
+                                <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div class="w-full mt-4">    
+                <div class=" bg-[#8e99a2] w-full flex justify-center items-center p-3">
+                    <img class="w-7 mr-2" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
+                    <p class="text-sm font-bold ml-2">Recently Updated</p> 
+                </div>
+                <div class="ml-2">
+                    <table class="w-full ">
+                        <tr class="">
+                            <td class="border-none text-sm font-bold">Team</td>
+                            <td class="border-none text-sm font-bold">Update</td>
+                            <td class="border-none text-sm font-bold">Status</td>
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px] " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                <p class="text-sm ml-2">Toronto Maple Leafs</p> 
+                            </td>
+                            <td class="border-none text-sm">Line Combinations</td>
+                            <td class="border-none text-sm">Morning Skate</td>
+                            
+                            
+                        </tr>
+                        <tr class="">
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                <p class="text-sm ml-2">Toronto Maple Leafs</p>
+                            </td>
+                            <td class="border-none text-sm">Starting Goalie</td>
+                            <td class="border-none text-sm">Morning Skate</td>
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px] " src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                                <p class="text-sm ml-2">Calgary Flames</p>
+                            </td>
+                            <td class="border-none text-sm">Starting Goalie</td>
+                            <td class="border-none text-sm">Morning Skate</td> 
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px] " src="{{ asset('/images/teamlogo-svg/vancouver-canucks.svg') }}" alt="">
+                                <p class="text-sm ml-2">Vancouver Canucks</p>
+                            </td>
+                            <td class="border-none text-sm">Line Combinations</td>
+                            <td class="border-none text-sm">Morning Skate</td> 
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px] " src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                <p class="text-sm ml-2">Pittburgh Penguins</p>
+                            </td>
+                            <td class="border-none text-sm">Starting Goalie</td>
+                            <td class="border-none text-sm">Morning Skate</td> 
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px] " src="{{ asset('/images/teamlogo-svg/montreal-canadiens.svg') }}" alt="">
+                                <p class="text-sm ml-2">Montreal Canadiens</p>
+                            </td>
+                            <td class="border-none text-sm">Line Combinations</td>
+                            <td class="border-none text-sm">Morning Skate</td> 
+                        </tr>
+                        <tr class="">
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                <p class="text-sm ml-2">Toronto Maple Leafs</p>
+                            </td>
+                            <td class="border-none text-sm">Starting Goalie</td>
+                            <td class="border-none text-sm">Morning Skate</td>
+                        </tr>
+                        <tr class="">
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                <p class="text-sm ml-2">Toronto Maple Leafs</p>
+                            </td>
+                            <td class="border-none text-sm">Starting Goalie</td>
+                            <td class="border-none text-sm">Morning Skate</td>
+                        </tr>
+                        <tr class="">
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                <p class="text-sm ml-2">Toronto Maple Leafs</p>
+                            </td>
+                            <td class="border-none text-sm">Starting Goalie</td>
+                            <td class="border-none text-sm">Morning Skate</td>
+                        </tr>
+                        <tr class="">
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                <p class="text-sm ml-2">Toronto Maple Leafs</p>
+                            </td>
+                            <td class="border-none text-sm">Starting Goalie</td>
+                            <td class="border-none text-sm">Morning Skate</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <img class="w-full" src="{{ asset('/images/menu-icon/playing-hockey.png') }}" alt="">
+            </div>
+            <div class="w-full mt-4">    
+                <div class=" bg-[#8e99a2] w-full flex justify-center items-center p-3">
+                    <img class="w-7 mr-2" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
+                    <p class="text-sm font-bold ml-2">Player News</p> 
+                </div>
+                <div class="ml-2">
+                    <table class="w-full ">
+                        <tr class="">
+                            <td class="border-none text-sm font-bold">Player</td>
+                            <td class="border-none text-sm font-bold">Status</td>
+                            <td class="border-none text-sm font-bold">Source</td>
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                <p class="text-sm ml-2">John Tavares</p> 
+                            </td>
+                            <td class="border-none text-sm">Line Change</td>
+                            <td class="border-none flex">
+                              <img class="w-[20px] fill-sky-500" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                              <p class="text-sm ml-1">David Alter</p>
+                            </td> 
+                        </tr>
+                        <tr class="">
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                <p class="text-sm ml-1">Auston Matthews</p>
+                            </td>
+                            <td class="border-none text-sm">Injury</td>
+                            <td class="border-none text-sm flex flex-row">
+                              <img class="w-[20px]" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                              <p class="text-sm ml-1">David Alter</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px] " src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                                <p class="text-sm ml-2">Nazim Kadri</p>
+                            </td>
+                            <td class="border-none text-sm">Suspended</td>
+                            <td class="border-none text-sm flex flex-row">
+                              <img class="w-[20px]" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                              <p class="text-sm ml-1">David Alter</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px] " src="{{ asset('/images/teamlogo-svg/vancouver-canucks.svg') }}" alt="">
+                                <p class="text-sm ml-2">Bo Horvart</p>
+                            </td>
+                            <td class="border-none text-sm">Traded</td>
+                            <td class="border-none text-sm flex flex-row">
+                              <img class="w-[20px]" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                              <p class="text-sm ml-1">David Alter</p>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px] " src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                <p class="text-sm ml-2">Sidney Crosby</p>
+                            </td>
+                            <td class="border-none text-sm">Line Change</td>
+                            <td class="border-none text-sm flex flex-row">
+                              <img class="w-[20px]" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                              <p class="text-sm ml-1">David Alter</p>
+                            </td>  
+                        </tr>
+                        <tr>
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px] " src="{{ asset('/images/teamlogo-svg/montreal-canadiens.svg') }}" alt="">
+                                <p class="text-sm ml-2">Sidney Crosby</p>
+                            </td>
+                            <td class="border-none text-sm">Line Change</td>
+                            <td class="border-none text-sm flex flex-row">
+                              <img class="w-[20px]" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                              <p class="text-sm ml-1">David Alter</p>
+                            </td>  
+                        </tr>
+                        <tr class="">
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                <p class="text-sm ml-2">Mitch Marner</p>
+                            </td>
+                            <td class="border-none text-sm">Injury</td>
+                            <td class="border-none text-sm flex flex-row">
+                              <img class="w-[20px]" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                              <p class="text-sm ml-1">David Alter</p>
+                            </td> 
+                        </tr>
+                        <tr class="">
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt="">
+                                <p class="text-sm ml-2">Jack Eichel</p>
+                            </td>
+                            <td class="border-none text-sm">Injured Reserve</td>
+                            <td class="border-none text-sm flex flex-row">
+                              <img class="w-[20px]" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                              <p class="text-sm ml-1">David Alter</p>
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td class="border-none flex flex-row">
+                                <img class="w-[18px]" src="{{ asset('/images/teamlogo-svg/tampa-bay-lightning.svg') }}" alt="">
+                                <p class="text-sm ml-2">Steven Stamkos</p>
+                            </td>
+                            <td class="border-none text-sm">Line Change</td>
+                            <td class="border-none text-sm flex flex-row">
+                              <img class="w-[20px]" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                              <p class="text-sm ml-1">David Alter</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+      </div>
+        
+
+
+
+
+
+
+
+        <!-- Old Design of Mobile -->
+        <!-- <div id="carouselExampleControls" class="carousel slide relative mt-4" data-bs-ride="carousel">
             <div class="flex justify-center items-center mt-4">
                 <img class="w-14 h-14" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                 <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
@@ -1139,7 +1343,7 @@
                 <img class="color-red border border-sky-100 rounded-full w-12 absolute top-[8px]" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
             
             </button>
-        </div>
+        </div> -->
         <!-- player news carousel -->
         <!-- <div class="flex justify-center items-center mt-4 ">
             <img class="w-14 h-14" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
@@ -1288,14 +1492,8 @@
             
                 </button>
         </div> -->
-        <div>
+        <!-- <div>
            <div class="flex flex-col items-center my-5">
-                <!-- <div class="relative flex justify-center border border-black">
-                   <img class="w-2/5" src="{{ asset('/images/menu-icon/box.png') }}" alt="">
-                   <a href="">
-                      <img class="w-9 h-9 border border-black absolute top-0 right-0" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
-                    </a>
-                </div> -->
                 <div class="border-2 border-black rounded-md w-10/12 h-[57px] overflow-hidden mt-3 flex flex-row items-center justify-between">
                    <input class="border-2 border-black h-[110%] w-[319%]" type="text">
                    <a class="w-full flex justify-center" href="">
@@ -1310,46 +1508,6 @@
                 <p class=" font-bold ">PLAYER NEWS</p>
             </div>
             <div class="flex flex-col items-center gap-5">
-                <!-- <div class="w-[70%] h-[21rem] border border-black relative  ">
-                    <div class="flex m-1 mt-5">
-                        <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
-                        <div class="ml-2">
-                                <div class="bg-[#e7e9ec] rounded-full sm:w-40 smm:w-10% flex items-center p-1">
-                                    <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
-                                    <h1 class="text-sm ml-4 text-[#637a92]">Line Changes</h1>
-                                </div>
-                            <h1 class=" text-lg font-extrabold">JOHN TAVORES</h1>
-                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
-                            <div class="flex mt-1">
-                                <div class="flex">
-                                    <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
-                                    <p class="text-[14px] font-bold ml-1">$8,700</p>
-                                </div>
-                                <div class="flex">
-                                    <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
-                                    <p class="text-[14px] font-bold ml-1">$8,500</p>
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" ml-1 mb-2 pb-9">
-                        <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
-                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
-                    </div>
-                    <div class="flex items-center">
-                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                        <div>
-                            <h3 class="font-bold">David Alter</h3>
-                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
-                        </div>
-                    </div>     
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
-                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                    </div>
-                </div> -->
                 <div class="parent border border-black w-[85%] relative">
                     <div class="flex flex-row gap-3 ml-2 mt-5">
                         <div class="">
@@ -1498,7 +1656,7 @@
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>    -->
 
 </div>
 <!-- End of tablet and mobile  -->
