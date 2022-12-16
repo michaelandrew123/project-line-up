@@ -116,10 +116,10 @@
             <!--Start Mobile menu -->  
             <div class="smm-z-20 ">
                 <div class="xl:hidden lg:hidden block border-r-2 border-gray-200" id="mobile-smm-menu ">
-                    <div class="flex flex-row items-center h-14 bg-black w-full">
-                        <div class="flex items-center flex-shrink-0 text-white pl-2">
+                    <div class="flex flex-row justify-between items-center h-16 bg-black w-full pb-2">
+                        <div class="flex items-center flex-shrink-0 text-white pl-[9px]">
                             <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
-                                <div class=" block flex flex-row gap-1">
+                                <div class=" block flex flex-row items-center gap-[7px]">
                                     <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
                                         <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                                     </button>
@@ -171,14 +171,12 @@
                                 </div> 
                             </div> 
                         </div> 
-                        <div class="flex flex-row justify-between w-11/12 mx-1">                                   
-                            <div class="flex flex-row justify-center w-[58%] sm:gap-2 smm-gap-0">
-                                <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
-                                <a href=""><img class="w-9 h-9" src="{{ asset('/images/menu-icon/player_icon-removebg-preview.png') }}" alt=""></a>
-                            </div> 
-                            <div>
+                        <div class="flex flex-row justify-between ">                                   
+                            <div class="flex flex-row mr-0.5 sm:gap-2 smm-gap-2 items-end">
+                                <a href=""><img class="w-[47px] " src="{{ asset('/images/menu-icon/player_icon-removebg-preview.png') }}" alt=""></a>
+                                <a href=""><img class="w-[47px] " src="{{ asset('/images/menu-icon/goalie_icon-removebg-preview.png') }}" alt=""></a>
                                 <a href="#">
-                                    <svg class=" w-9 h-9 text-black border border-black rounded-full bg-sky-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <svg class=" w-[3rem]  text-black border border-black rounded-full bg-sky-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
                                     </svg>
                                 </a>
@@ -293,7 +291,7 @@
                                 </ul>
                             </div>
                         </div> -->
-                    <div class="hidden" id="new-menu">
+                    <div class="" id="new-menu">
                         <div class="mt-4 flex flex-row justify-evenly">
                             <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">JOIN</button>
                             <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">SIGN IN</button>
@@ -303,8 +301,8 @@
                                 <a class="text-white font-bold text-sm ml-9 p-1" href="#">STARTING GOALIES</a>
                             </div>
                             <div class="flex flex-row bg-[#38b6ff] border border-black flex items-center gap-2 relative " >
-                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus menu-line-combonation-icon-1" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden icon-negative menu-line-combonation-icon-2" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus menu-line-combonation" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden icon-negative menu-line-combonation" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
                                 <a class="text-white font-bold text-sm p-1 link-text " rel="menu-line-combonation" href="#">LINE COMBINATIONS</a>
                             </div>
                                 <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-line-combonation hidden" style>
@@ -340,8 +338,8 @@
                                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a></li>
                                 </ul>
                             <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus menu-projections-icon-1" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden icon-negative menu-projections-icon-2" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus menu-projections-icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden icon-negative menu-projections-icon" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
                                 <a class="text-white font-bold text-sm p-1 link-text" rel="menu-projections" href="#">PROJECTIONS</a>
                             </div>
                                 <ul id="team-logo" class="bg-white flex flex-col justify-center menu-projections hidden">

@@ -87,40 +87,33 @@
 
     //     console.log("Clicked me anytime: " + clickedTwice)
         
-    //     $('.active-menu').removeClass('active-menu'); 
+    //     // $('.active-menu').removeClass('active-menu'); 
     //     var val = $(this).attr('rel'); 
         
         
     //     if(currentRelAttr != val){ 
-    //           clickedTwice++;
-    //             if(clickedTwice == 1){   
-    //             if($('ul.'+val).hasClass('hidden')){ 
-    //                 $('.active-menu').removeClass("hidden");
-    //                 console.log('version1'+ clickedTwice);     
-    //             }else{  
-    //                 // $('.active-menu').addClass("hidden");
-    //                 // console.log('version1'+ clickedTwice); 
-    //                 // // $('.-icon-1').addClass("hidden"); 
-    //                 // // $('.-icon-2').removeClass("hidden"); 
-    //                 // clickedTwice = 1; 
-    //             } 
-    //             // $('.ul'+val).addClass('hidden');
-    //             // $('.ul'+val).removeClass('hidden'); 
-    //             // clickedTwice = 1; 
-                
-    //         }else{  
-    //             console.log('version2'+ clickedTwice);
-    //             if($('ul.'+val).hasClass('active-menu')){    
+    //         if(clickedTwice == 1){ 
+    //             clickedTwice++;
+    //             if($('ul.'+val).hasClass('active-menu')){   
+    //                 console.log("has class active")
     //                 $('.active-menu').removeClass("active-menu");
-    //                 clickedTwice = 1; 
-    //                 $('.'+val+'-icon-1').removeClass('hidden');
-    //                 $('.'+val+'-icon-2').addClass('hidden'); 
+    //             }else{
+                    
+    //                 $('.'+val).addClass("active-menu");  
+    //             } 
+    //             currentRelAttr = val; //new record for currebt rel attribute  
+    //             $('.'+val+'-icon-1').removeClass('hidden');
+    //             $('.'+val+'-icon-2').addClass('hidden');  
+    //         }else{  
+  
+    //             if($('ul.'+val).hasClass('active-menu')){    
+    //                 $('.active-menu').removeClass("active-menu"); 
     //             }else{ 
     //                 $('.'+val).addClass("active-menu");  
     //             }
-    //             // $('.'+val+'-icon-1').removeClass('hidden');
-    //             // $('.'+val+'-icon-2').addClass('hidden');  
-    //             // clickedTwice = 1;
+    //             $('.'+val+'-icon-1').removeClass('hidden');
+    //             $('.'+val+'-icon-2').addClass('hidden');  
+    //             clickedTwice = 1;
 
 
     //             currentRelAttr = val; //new record for currebt rel attribute
@@ -142,7 +135,7 @@
     //             if($('ul.'+val).hasClass('active-menu')){
     //                 $('.active-menu').removeClass("active-menu");
     //             }else{
-    //                 $('.'+val).addClass("hidden");    
+    //                 $('.'+val).addClass("active-menu");    
     //             } 
     //             $('.'+val+'-icon-1').removeClass('hidden');
     //             $('.'+val+'-icon-2').addClass('hidden');  
@@ -151,75 +144,6 @@
     //     }
          
     // });
-    // $('div > a').on('touchstart', function(){
-    //     $('.icon-plus').addClass('hidden');
-    // });
-    var clickedTwice = 1; 
-    var currentRelAttr=""; 
-    $('#header-mobile-menu > div > a').on('touchstart', function(){
-        
-
-
-        console.log("Clicked me anytime: " + clickedTwice)
-        
-        $('.active-menu').removeClass('active-menu'); 
-        var val = $(this).attr('rel'); 
-        
-        
-        if(currentRelAttr != val){ 
-            if(clickedTwice == 1){ 
-                clickedTwice++;
-                if($('ul.'+val).hasClass('active-menu')){   
-                    console.log("has class active")
-                    $('.icon-plus').addClass("hidden");
-                    $('.icon-negative').Class("hidden");
-                }else{
-                    
-                    $('.'+val).addClass("active-menu");  
-                } 
-                currentRelAttr = val; //new record for currebt rel attribute  
-                $('.'+val+'-icon-1').removeClass('hidden');
-                $('.'+val+'-icon-2').addClass('hidden');  
-            }else{  
-  
-                if($('ul.'+val).hasClass('active-menu')){    
-                    $('.active-menu').removeClass("active-menu"); 
-                }else{ 
-                    $('.'+val).addClass("active-menu");  
-                }
-                $('.'+val+'-icon-1').removeClass('hidden');
-                $('.'+val+'-icon-2').addClass('hidden');  
-                clickedTwice = 1;
-
-
-                currentRelAttr = val; //new record for currebt rel attribute
-                // clickedTwice=1; 
-                //clickedTiceFunc(clickedTwice, val);
-            } 
-        }else{ 
-            currentRelAttr = val;  
-            if(clickedTwice == 1){   
-                if($('ul.'+val).hasClass('active-menu')){  
-                      $('.active-menu').removeClass("active-menu");
-                }else{  
-                    $('.'+val).addClass("active-menu"); 
-                } 
-                $('.'+val+'-icon-1').addClass('hidden');
-                $('.'+val+'-icon-2').removeClass('hidden');  
-                clickedTwice++; 
-            }else{  
-                if($('ul.'+val).hasClass('active-menu')){
-                    $('.active-menu').removeClass("active-menu");
-                }else{
-                    $('.'+val).addClass("active-menu");    
-                } 
-                $('.'+val+'-icon-1').removeClass('hidden');
-                $('.'+val+'-icon-2').addClass('hidden');  
-                clickedTwice = 1;
-            } 
-        }
-         
-    });
 
     
     $('.text-link').on('touchstart', function(){
