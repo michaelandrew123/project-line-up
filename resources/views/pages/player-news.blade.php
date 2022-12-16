@@ -3,14 +3,14 @@
 @section('content')
 
        <div class="hidden smm-block">
-           <div class="flex flex-col items-center my-5">
+           <div class="flex flex-col items-center my-1 mx-1.5">
                 <!-- <div class="relative flex justify-center border border-black">
                    <img class="w-2/5" src="{{ asset('/images/menu-icon/box.png') }}" alt="">
                    <a href="">
                       <img class="w-9 h-9 border border-black absolute top-0 right-0" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
                     </a>
                 </div> -->
-                <div class="border-2 border-black rounded-md w-10/12 h-[57px] overflow-hidden mt-3 flex flex-row items-center justify-between">
+                <div class="border-2 border-black rounded-md w-full h-[57px] overflow-hidden mt-1 flex flex-row items-center justify-between">
                    <input class="border-2 border-black h-[110%] w-[319%]" type="text">
                    <a class="w-full flex justify-center" href="">
                       <img class="w-[73px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
