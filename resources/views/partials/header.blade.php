@@ -120,8 +120,11 @@
                         <div class="flex items-center flex-shrink-0 text-white pl-[9px]">
                             <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
                                 <div class=" block flex flex-row items-center gap-[7px]">
-                                    <button id="main-menu-mobile" class="flex items-center px-3 py-2 border rounded text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
-                                        <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                                    <button id="main-menu-mobile" class="flex flex-col items-center gap-2 py-2  text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
+                                        <!-- <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg> -->
+                                        <div class="w-10 h-1 bg-[#0284c7] border border-[#0284c7] rounded"></div>
+                                        <div class="w-10 h-1 bg-[#0284c7] border border-[#0284c7] rounded"></div>
+                                        <div class="w-10 h-1 bg-[#0284c7] border border-[#0284c7] rounded"></div>
                                     </button>
                                     <div class="flex items-center">
                                         <img class=" w-[10rem]" src="{{ asset('/images/menu-icon/logo.png') }}" alt="">
@@ -291,7 +294,7 @@
                                 </ul>
                             </div>
                         </div> -->
-                    <div class="" id="new-menu">
+                    <div class="hidden" id="new-menu">
                         <div class="mt-4 flex flex-row justify-evenly">
                             <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">JOIN</button>
                             <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">SIGN IN</button>
@@ -300,12 +303,12 @@
                             <div class="flex flex-row bg-[#38b6ff] border border-black">
                                 <a class="text-white font-bold text-sm ml-9 p-1" href="#">STARTING GOALIES</a>
                             </div>
-                            <div class="flex flex-row bg-[#38b6ff] border border-black flex items-center gap-2 relative " >
-                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus menu-line-combonation" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden icon-negative menu-line-combonation" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1 link-text " rel="menu-line-combonation" href="#">LINE COMBINATIONS</a>
+                            <div id="header1" class="flex flex-row bg-[#38b6ff] border border-black flex items-center gap-2 relative " >
+                                <img class="w-[20px] h-[20px] ml-2.5 plus menu-line-combonation-icon-1" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden  negative menu-line-combanation-icon-2" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1" menu="header1" rel="menu-line-combanation" href="#">LINE COMBINATIONS</a>
                             </div>
-                                <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-line-combonation hidden" style>
+                                <ul class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-line-combanation hidden" style>
                                     <li><a href=""><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
                                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>
                                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt=""></a></li>
@@ -337,12 +340,12 @@
                                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/washington-capitals.svg') }}" alt=""></a></li>
                                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a></li>
                                 </ul>
-                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus menu-projections-icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden icon-negative menu-projections-icon" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1 link-text" rel="menu-projections" href="#">PROJECTIONS</a>
+                            <div id="header2" class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5  plus menu-projections-icon-1" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden  negative menu-projections-icon-2" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 text" menu="header2" rel="menu-projections" href="#">PROJECTIONS</a>
                             </div>
-                                <ul id="team-logo" class="bg-white flex flex-col justify-center menu-projections hidden">
+                                <ul class="bg-white flex flex-col justify-center menu-projections hidden">
                                     <li class="p-1  border border-black w-full">
                                         <a class="flex flex-row items-center ml-[27px]" href="#">
                                             <img class="w-[7%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
@@ -356,12 +359,12 @@
                                         </a>
                                     </li>
                                 </ul>
-                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden icon-negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1 link-text" rel="menu-news" href="#">News</a>
+                            <div id="header3" class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5 plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 link-text" menu="header3" rel="menu-news" href="#">News</a>
                             </div>
-                                  <ul id="team-logo" class="bg-white flex flex-col  menu-news hidden">
+                                  <ul class="bg-white flex flex-col  menu-news hidden">
                                     <li class=" border border-black w-full p-1">
                                             <a class="flex flex-row items-center ml-[27px]" href="#">
                                                 <p class="ml-2 text-md font-semibold">PLAYER NEWS</p>
@@ -373,29 +376,29 @@
                                             </a>
                                         </li>
                                   </ul>
-                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden icon-negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1 link-text" rel="menu-betting" href="#">BETTING</a>
+                            <div id="header4" class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5 plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 link-text" menu="header4" rel="menu-betting" href="#">BETTING</a>
                             </div>
 
-                                <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-betting hidden">
+                                <ul class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-betting hidden">
                                     <li class="h-24"></li>
                                 </ul>
-                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden icon-negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1" rel="menu-odds" href="#">ODDS</a>
+                            <div id="header5" class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5 plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1" rel="menu-odds" menu="header5" href="#">ODDS</a>
                             </div>
-                                  <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center  my-5 menu-odds hidden">
+                                  <ul class="w-full bg-white flex flex-wrap justify-center  my-5 menu-odds hidden">
                                      <li><a href="#"><img class="w-[12rem] link-text" src="{{ asset('/images/menu-icon/coming_soon.png') }}" alt=""></a></li>
                                   </ul>
-                            <div class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
-                                <img class="w-[20px] h-[20px] ml-2.5 icon-plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
-                                <img class="w-[20px] ml-2.5 hidden icon-negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
-                                <a class="text-white font-bold text-sm p-1 link-text" rel="menu-schedule"  href="#">SCHEDULE</a>
+                            <div id="header6" class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
+                                <img class="w-[20px] h-[20px] ml-2.5 plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
+                                <img class="w-[20px] ml-2.5 hidden negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
+                                <a class="text-white font-bold text-sm p-1 link-text" menu="header6" rel="menu-schedule"  href="#">SCHEDULE</a>
                             </div>
-                                <ul id="team-logo" class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-schedule hidden">
+                                <ul class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-schedule hidden">
                                     <li class="h-24"></li>
                                 </ul>
                         </div>

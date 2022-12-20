@@ -154,77 +154,141 @@
     // $('div > a').on('touchstart', function(){
     //     $('.icon-plus').addClass('hidden');
     // });
+    // $('a ' > ('rel')).on('touchstart', function(){
+    //     $('.'+'-icon-2').removeClass('hidden');
+    //     $('.'+'-icon-1').addClass('hidden');
+    // });
+
+
+   
+
     var clickedTwice = 1; 
     var currentRelAttr=""; 
     $('#header-mobile-menu > div > a').on('touchstart', function(){
         
+     $('.'+val).toggleClass('active-menu', function(){
+       if($('.'+val).hasClass('hidden')){
+        $('.'+'-icon-1').addClass('hidden');
+        $('.'+val+'-icon-2').removeClass('hidden');
+
+       }
+     });
+         
+        console.log(" Clicked me anytime: " + clickedTwice)
+        console.log('image', $(this).attr('boss'))
+        $(' .active-menu ').removeClass(' active-menu '); 
+        var val = $(this).attr('rel');
+        
 
 
-        console.log("Clicked me anytime: " + clickedTwice)
-        
-        $('.active-menu').removeClass('active-menu'); 
-        var val = $(this).attr('rel'); 
-        
-        
-        if(currentRelAttr != val){ 
-            if(clickedTwice == 1){ 
-                clickedTwice++;
-                if($('ul.'+val).hasClass('active-menu')){   
-                    console.log("has class active")
-                    $('.icon-plus').addClass("hidden");
-                    $('.icon-negative').Class("hidden");
-                }else{
-                    
-                    $('.'+val).addClass("active-menu");  
-                } 
-                currentRelAttr = val; //new record for currebt rel attribute  
-                $('.'+val+'-icon-1').removeClass('hidden');
-                $('.'+val+'-icon-2').addClass('hidden');  
-            }else{  
+
+        // reset negative to plus
+        $( ".plus" ).each(function() {
+           $( this ).css( "display", "block" );
+         });
+         $( ".negative" ).each(function() {
+           $( this ).css( "display", "none" );
+         });
+     
+        // show  and hide icon plus and negative
+        var menu = $(this).attr('menu'); 
+        $('#'+menu+' img:nth-child(1)').css('display','none')
+        $('#'+menu+' img:nth-child(2)').css('display','block')
+       
+
+
+
+
+
+        $('ul.'+val).toggleClass('active-menu', function(){
+            alert('this is alert')
+            if($('.'+val).hasClass('active-menu')){    
+            
+                // $('.'+val+'-icon-1').removeClass("active-menu");
+                // $('.'+val+'-icon-2').addClass("active-menu");   
+            //     $('.icon-2').addClass("active-menu");
+            //    $('.active-menu').removeClass("active-menu"); 
+            }else{ 
+               $('.'+val).addClass("active-menu"); 
+               
+               $('.'+val+'-icon-1').addClass("active-menu");
+               $('.'+val+'-icon-2').removeClass("active-menu");   
+            }
+        })
+ 
+
+
+
+        // if(currentRelAttr != val){ 
+        //     // if(clickedTwice == 1){ 
+        //     //     clickedTwice++;
+        //         if($('.'+val).hasClass('hidden')){   
+        //             console.log("has class hidden")
+        //             $('.' + val + '-icon-1').addClass("hidden");
+        //             $('.' + val + '-icon-2').removeClass("hidden");
+        //             clickedTwice = 1;
+        //         }else{
+        //             $('.' + val + '-icon-2').removeClass("active-menu");
+        //             $('.' + val + '-icon-1').addClass("active-menu");
+                   
+        //     //         // $('a.'+val).addClass("active-menu");  
+
+        //     //         // $('.icon-1').addClass("acive-menu");
+        //     //         // $('.icon-2').removeClass("active-menu");
+        //     //         // clickedTwice = 1;
+        //     //         // $('.'+val).addClass("active-menu"); 
+        //     //         // $('.'+val).removeClass("active-menu");  
+        //     //     } 
+        //     //     currentRelAttr = val; //new record for currebt rel attribute  
+        //     //     // $('img'+ '-icon-1').removeClass('hidden');
+        //     //     // $('img'+'-icon-2').addClass('hidden');  
+        //     //     // clickedTwice = 1;
+                
+        //     // }else{  
   
-                if($('ul.'+val).hasClass('active-menu')){    
-                    $('.active-menu').removeClass("active-menu"); 
-                }else{ 
-                    $('.'+val).addClass("active-menu");  
-                }
-                $('.'+val+'-icon-1').removeClass('hidden');
-                $('.'+val+'-icon-2').addClass('hidden');  
-                clickedTwice = 1;
+        //     //     if($('img'+val).hasClass('hidden')){    
+        //     //         $('.active-menu').removeClass("active-menu"); 
+        //     //     }else{ 
+        //     //         $('.'+val).addClass("active-menu");  
+        //     //     }
+        //     //     // $('.'+val+'-icon-1').removeClass('hidden');
+        //     //     // $('.'+val+'-icon-2').addClass('hidden');  
+        //     //     // clickedTwice = 1;
 
 
-                currentRelAttr = val; //new record for currebt rel attribute
-                // clickedTwice=1; 
-                //clickedTiceFunc(clickedTwice, val);
-            } 
-        }else{ 
-            currentRelAttr = val;  
-            if(clickedTwice == 1){   
-                if($('ul.'+val).hasClass('active-menu')){  
-                      $('.active-menu').removeClass("active-menu");
-                }else{  
-                    $('.'+val).addClass("active-menu"); 
-                } 
-                $('.'+val+'-icon-1').addClass('hidden');
-                $('.'+val+'-icon-2').removeClass('hidden');  
-                clickedTwice++; 
-            }else{  
-                if($('ul.'+val).hasClass('active-menu')){
-                    $('.active-menu').removeClass("active-menu");
-                }else{
-                    $('.'+val).addClass("active-menu");    
-                } 
-                $('.'+val+'-icon-1').removeClass('hidden');
-                $('.'+val+'-icon-2').addClass('hidden');  
-                clickedTwice = 1;
-            } 
-        }
+        //     //     currentRelAttr = val; //new record for currebt rel attribute
+        //     //     // clickedTwice=1; 
+        //     //     //clickedTiceFunc(clickedTwice, val);
+        //     } 
+        // }else{ 
+        //     currentRelAttr = val;  
+        //     if(clickedTwice == 1){   
+        //         if($('ul.'+val).hasClass('active-menu')){  
+        //               $('.active-menu').removeClass("active-menu");
+        //         }else{  
+        //             $('.'+val).addClass("active-menu"); 
+        //         } 
+        //         $('.'+val+'-icon-1').addClass('hidden');
+        //         $('.'+val+'-icon-2').removeClass('hidden');  
+        //         clickedTwice++; 
+        //     }else{  
+        //         if($('ul.'+val).hasClass('active-menu')){
+        //             $('.active-menu').removeClass("active-menu");
+        //         }else{
+        //             $('.'+val).addClass("active-menu");    
+        //         } 
+        //         $('.'+val+'-icon-1').removeClass('hidden');
+        //         $('.'+val+'-icon-2').addClass('hidden');  
+        //         clickedTwice = 1;
+        //     } 
+        // }
          
     });
 
     
-    $('.text-link').on('touchstart', function(){
-        $('.img-plus, .img-negative').toggle();
-    });
+    // $('.text').on('touchstart', function(){
+    //    $('.-icon-plus, .-icon-negative').toggle();
+    // });
    
 
 
