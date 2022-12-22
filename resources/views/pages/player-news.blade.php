@@ -1,12 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
+<!-- Desktop Design -->
+<div class="block smm-hidden ">
     <div class="flex flex-row mb-5">
-        <div class="flex flex-col gap-10 mr-5">
+        <div class="flex flex-col gap-10 mr-5 ">
             <img class="w-48 h-[70%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
             <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
         </div>
-        <div class="flex flex-col ">
+        <div class="flex flex-col items-center">
             <div class="flex justify-center mb-5">
                 <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div>
@@ -764,6 +766,8 @@
             <img class="w-48 h-1/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div> 
     </div>
+</div>
+<!-- End of desktop -->
         <!-- Mobile Design -->
        <div class="hidden smm-block">
             <div class="flex flex-col items-center my-1 mx-1.5">
@@ -903,9 +907,12 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
-                <div class="flex flex-col items-center gap-8">
+                <div  class="font-semibold text-md">
+                    <button id="main-tile" >Next</button>
+                </div> 
+                <div id="tile" class="flex flex-col items-center gap-8 hidden">
                     <div class="parent border border-black w-[85%] relative">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
@@ -1024,7 +1031,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col items-center gap-8">
+                <div class="font-semibold text-md">
+                    <button id="main-tile2" class="hidden">Next</button>
+                </div> 
+                <div id="tile2" class="flex flex-col items-center gap-8 hidden">
                     <div class="parent border border-black w-[85%] relative">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
