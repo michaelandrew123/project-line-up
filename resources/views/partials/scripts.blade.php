@@ -215,8 +215,8 @@
                $('.'+val+'-icon-2').removeClass("active-menu");   
             }
         })
- 
 
+        
 
 
         // if(currentRelAttr != val){ 
@@ -294,7 +294,16 @@
 
     
     
- 
+         $('#main-tile').on('touchstart', function(){
+                $("#main-tile").addClass('hidden');
+                $("#tile").toggleClass('hidden');
+                $('#main-tile2').removeClass('hidden');          
+        });
+        $('#main-tile2').on('touchstart', function(){
+                $("#main-tile2").addClass('hidden');
+                $("#tile2").removeClass('hidden');
+                
+            });
 
 
     $('#mobile-smm-menu > a').on('touchstart', function(){
