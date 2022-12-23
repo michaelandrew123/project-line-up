@@ -6,20 +6,19 @@
 
 
 <!-- Desktop design -->
-<div class="flex xl:block lg:block hidden">
-
-    <div class="flex flex-col items-center">
+<div class="flex xl:block lg:block hidden w-full mx-2">
+    <div class="flex flex-col ">
         <div class="flex flex-row">
             <div class="flex flex-col gap-10 mr-5 ">
                 <img class="w-48 h-[70%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
                 <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
             </div>
-           <div class="flex flex-col items-center">
+           <div class="flex flex-col">
                 <div class="flex justify-center mb-5">
                     <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
                 <div class="flex md:flex-row  ">
-                    <div class="w-[18rem] h-80  relative  ">
+                    <div class="w-[308px] h-80  relative  ">
                         <div class=" m-1 mt-5 ">
                             <div class="bg-orange-400 rounded-full w-40 flex items-center p-1 mb-3">
                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
@@ -38,7 +37,7 @@
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[18rem] h-80  relative ml-5 mr-5 ">
+                    <div class="w-[308px] h-80  relative ml-5 mr-5 ">
                         <div class=" m-1 mt-5 ">
                             <div class="bg-[#15d869] rounded-full w-40 flex items-center p-1 mb-3">
                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
@@ -57,7 +56,7 @@
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[18rem] h-80  relative  ">
+                    <div class="w-[308px] h-80  relative  ">
                         <div class=" m-1 mt-5 ">
                             <div class="bg-orange-400  rounded-full w-40 flex items-center p-1 mb-3">
                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
@@ -85,7 +84,7 @@
                         </h1>
                     </div>
                     <div class="flex md:flex-row">
-                        <div class="w-[18rem] h-80 border border-black relative  ">
+                        <div class="w-[308px] h-80 border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -121,7 +120,7 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[18rem] h-80 border border-black relative ml-5 mr-5">
+                        <div class="w-[308px] h-80 border border-black relative ml-5 mr-5">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -157,7 +156,7 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[18rem] h-80 border border-black relative  ">
+                        <div class="w-[308px] h-80 border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -201,12 +200,12 @@
             </div>
             <div class="flex flex-col  items-center ml-1">
                 <img class="w-64 h-52" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                <img class="w-48 h-4/5" src="{{ asset('/images/menu-icon/adds4.png') }}">
+                <img class="w-48 h-4/5" src="{{ asset('/images/menu-icon/adds6.png') }}">
             </div>  
         </div>
-        <div class="flex flex-row">  
+        <div class="flex flex-row relative ">  
             <div class="mr-5">
-                <img class="w-48 h-1/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
+                <img class="w-48 h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>       
             <div class="flex flex-col">        
                 <div class="flex flex-col relative">
@@ -217,7 +216,7 @@
                         </h1>
                     </div>
                     <div class="flex md:flex-row ">
-                        <div class="w-[18rem] h-80 border border-black relative  ">
+                        <div class="w-[308px] h-80 border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -253,7 +252,7 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[18rem] h-80 border border-black relative ml-5 mr-5">
+                        <div class="w-[308px] h-80 border border-black relative ml-5 mr-5">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -289,7 +288,7 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[18rem] h-80 border border-black relative  ">
+                        <div class="w-[308px] h-80 border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -774,8 +773,8 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-5">
-                <img class="w-48 h-1/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
+            <div class="ml-5 flex items-end">
+                <img class="w-48 h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
             </div> 
         </div>
     </div>
@@ -875,10 +874,9 @@
             </button>
       </div>      -->
       <div>
-            <div class="w-full flex justify-center my-8">
-                <div class="w-3/4 h-14 bg-lime-400 ">                
-                </div>
-            </div>
+            <div class="flex justify-center  mt-5 mb-5">
+                <img class="w-3/4 h-14" src="{{ asset('/images/menu-icon/adds_header.png') }}">
+            </div> 
             <div class="flex flex-col gap-1.5">
                 <div class="flex justify-center">
                     <div>

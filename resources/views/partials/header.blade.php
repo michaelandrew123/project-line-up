@@ -308,7 +308,7 @@
                                 <img class="w-[20px] ml-2.5 hidden  negative menu-line-combanation-icon-2" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
                                 <a class="text-white font-bold text-sm p-1" menu="header1" rel="menu-line-combanation" href="#">LINE COMBINATIONS</a>
                             </div>
-                                <ul class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-line-combanation hidden" style>
+                                <ul class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-line-combanation hidden">
                                     <li><a href=""><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
                                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>
                                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt=""></a></li>
@@ -408,7 +408,7 @@
             <!--End Mobile menu -->
         </div>
      <!-- Desktop -->
-        <div class="w-4/5 m-auto lg:block md:hidden sm:hidden smm-hidden p-4" id="sub-menu">
+        <div class="w-4/5 m-auto lg:block md:hidden sm:hidden smm-hidden p-4 relative" id="sub-menu">
             <ul class="list-none flex-row items-center gap-2 py-2 daily-fantasy hidden sm:flex-wrap smm-flex-wrap daily-menu active">
                 <li ><a  class="font-semibold hover:font-bold"  href="#">STARTING GOALIES</a></li>
                 <li><a  class="font-semibold hover:font-bold" href="#" >LINE COMBINATIONS</a></li>
@@ -445,23 +445,39 @@
                 <li ><a  class="font-semibold hover:font-bold" href="#">GAME ODDS</a></li>
                 <li ><a  class="font-semibold hover:font-bold" href="#">PLAYER PROPS</a></li>
             </ul> 
-            <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap justify-end">
-                <div class="flex flex-row gap-3">
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/starting-goalies/pinpng.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/goalie icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/gtd icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/hot icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/injury icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/instagram icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/player icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/projections icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/tiktok icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/twitter icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/menu icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/value icon.png') }}"></a></li>
-                    <li><a href="#"><img class="w-7 h-7" src="{{ asset('/images/menu-icon/website icon.png') }}"></a></li>
-                </div>
+            <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap justify-center relative left-[44rem] w-[53%]">
+                <ul class="w-full bg-white flex flex-wrap gap-2 m-1">
+                    <li><a href=""><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/chicago-blackhawks.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/columbus-blue-jackets.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/dallas-stars.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/detroit-red-wings.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/montreal-canadiens.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-jersey-devils.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-york-islanders.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/new-york-rangers.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/ottawa-senators.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/philadelphia-flyers.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/san-jose-sharks.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/seattle-kraken.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/tampa-bay-lightning.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/vancouver-canucks.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/washington-capitals.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a></li>
+                </ul>
             </ul>
             <ul class="list-none flex gap-2 py-2 shop hidden sm:flex-wrap ">
             </ul>

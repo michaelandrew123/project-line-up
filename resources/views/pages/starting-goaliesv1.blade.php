@@ -6,17 +6,15 @@
     <!-- Desktop Design -->
     <div class="flex justify-evenly lg:flex-row md:flex-col sm:flex-col smm-hidden">
             <div class="flex flex-col ">
-                <div class="bg-lime-400 w-44 h-full">
-                </div>
-                <div class="bg-lime-400 w-44 h-full mb-10 mt-10">
-                </div>
-                <div class="bg-lime-400 w-44 h-full">
-                </div>
+                <img class="w-[17rem] h-[35rem] mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
+                <img class="w-[17rem] h-[185px] mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
+                <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>
         <div class=" flex flex-col">  
-            <div class=" bg-lime-400 w-7/12 m-auto h-28 flex justify-center items-center  mt-5 mb-5">
-                <h1 class="text-lg font-semibold text-center">ADDS</h1>
-            </div>    
+            <div class="flex justify-center mb-5">
+                <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
+            </div>  
+            <h1 class="text-black text-3xl font-bold">Starting Goalies</h1>
             <div class="flex justify-center  mb-3 w-">
                 <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex justify-between">
                     <img class="w-16" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
@@ -102,15 +100,20 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="flex flex-col">  
-                                    <div class=" bg-lime-400 w-7/12 m-auto h-28 flex justify-center items-center  mt-5 mb-5">
-                                        <h1 class="text-lg font-semibold text-center">ADDS</h1>
-                                    </div>    
-                        <div class="flex justify-center mb-3 w-">
-                                    <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex ">
-                                    <h1 class="text-white text-3xl sm:text-1xl font-bold ">NASHILLE <br> PREDATOR </h1>
-                                        <h1 class="text-white text-3xl sm:text-1xl font-bold xl:ml-60 lg:ml-60 md:ml-64 sm:ml-40  ">CAROLINA <br>HURRICANES</h1>
-                                        <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold xl:ml-20 lg:ml-20 md:ml-20 sm:ml-10 lg:mt-0 md:mt-0 sm:mt-2 ">FEB 18TH, 2022 7:00PM EST</p>
+                    <div class="flex flex-col">    
+                        <div class="flex justify-center mb-3 ">
+                                    <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex gap-16 items-center">
+                                        <div class="flex gap-32">
+                                            <div class="flex">
+                                                <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                                <h1 class="text-white text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
+                                            </div>
+                                            <div class="flex">
+                                                <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                                                <h1 class="text-white text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
+                                            </div> 
+                                        </div>                                                               
+                                        <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
                                     </div>
                                 </div>
                         <div class=" ">
@@ -187,10 +190,7 @@
                         </div>
                     </div>  
                 </div>
-                <div class="flex flex-col">  
-                    <div class=" bg-lime-400 w-7/12 m-auto h-28 flex justify-center items-center  mt-5 mb-5">
-                        <h1 class="text-lg font-semibold text-center">ADDS</h1>
-                    </div>    
+                <div class="flex flex-col">   
                     <div class="flex justify-center mb-3 w-">
                         <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex ">
                         <h1 class="text-white text-3xl sm:text-1xl font-bold ">NASHILLE <br> PREDATOR </h1>
@@ -272,13 +272,10 @@
                 </div>  
             </div> 
         </div>
-        <div class="flex flex-col ">
-            <div class="bg-lime-400 w-44 h-full">
-            </div>
-            <div class="bg-lime-400 w-44 h-full mb-10 mt-10">
-            </div>
-            <div class="bg-lime-400 w-44 h-full">
-            </div>
+        <div class="flex flex-col gap-2 items-center">
+            <img class="w-72 h-[263px]" src="{{ asset('/images/menu-icon/adds3.png') }}">
+            <img class="w-[17rem] h-[499px] mb-[31px]" src="{{ asset('/images/menu-icon/adds6.png') }}">
+            <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds5.png') }}">
         </div>
     </div>
     <!-- End of Desktop -->
@@ -315,7 +312,7 @@
                         data-bs-target="#carouselExampleControls"
                         data-bs-slide="next"
                     >     
-                        <img class="color-red border border-sky-100 rounded-full w-[51px] absolute top-[8px]" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
+                       <img class="color-red border border-sky-100 rounded-full w-[51px] absolute top-[8px]" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
                     </button>
                 </div>
             </div>
