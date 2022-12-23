@@ -909,7 +909,7 @@
                         </div>
                     </div> 
                 </div>
-                <div  class="font-semibold text-md">
+                <div class="font-semibold text-md ">
                     <button id="main-tile" >Next</button>
                 </div> 
                 <div id="tile" class="flex flex-col items-center gap-8 hidden">
