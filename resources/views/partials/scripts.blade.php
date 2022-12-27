@@ -161,10 +161,10 @@
 
 
    
-
+    // header humberger button
     var clickedTwice = 1; 
     var currentRelAttr=""; 
-    $('#header-mobile-menu > div > a').on('touchstart', function(){
+    $('#header-mobile-menu > ul > a').on('touchstart', function(){
         
      $('.'+val).toggleClass('active-menu', function(){
        if($('.'+val).hasClass('hidden')){
@@ -209,8 +209,7 @@
             //     $('.icon-2').addClass("active-menu");
             //    $('.active-menu').removeClass("active-menu"); 
             }else{ 
-               $('.'+val).addClass("active-menu"); 
-               
+               $('.'+val).addClass("active-menu");   
                $('.'+val+'-icon-1').addClass("active-menu");
                $('.'+val+'-icon-2').removeClass("active-menu");   
             }
@@ -292,8 +291,8 @@
    
 
 
-    
-    
+       
+        // Player news mobile next
          $('#main-tile').on('touchstart', function(){
                 $("#main-tile").addClass('hidden');
                 $("#tile").toggleClass('hidden');

@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Desktop Design -->
-<div class="block smm-hidden ">
+<div class="xl:block lg:block md:hidden smm-hidden ">
     <div class="flex flex-row mb-5">
         <div class="flex flex-col gap-10 mr-5 ">
             <img class="w-48 h-[70%]" src="{{ asset('/images/menu-icon/adds1.png') }}">

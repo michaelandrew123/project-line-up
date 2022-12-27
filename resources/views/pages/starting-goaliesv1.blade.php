@@ -41,9 +41,9 @@
                                     <h1 class="xl:text-2xl text-1xl font-extrabold">JUUSE SAROS</h1>
                                     <p class="text-[14px] font-extrabold">Toronto Maple Leafs</p>
                                     <div class="flex mt-4">
-                                        <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                        <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                         <p class="text-[14px] font-bold ml-1">$8,700</p>
-                                        <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                        <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                         <p class="text-[14px] font-bold ml-1">$8,500</p>
                                     </div>
                                 </div>
@@ -75,9 +75,9 @@
                                         <h1 class="xl:text-2xl text-1xl font-extrabold">PREDRIK ANDERSON</h1>
                                         <p class="text-[14px] font-extrabold">Toronto Maple Leafs</p>
                                         <div class="flex mt-4">
-                                            <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                            <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                             <p class="text-[14px] font-bold ml-1">$8,700</p>
-                                            <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                            <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                             <p class="text-[14px] font-bold ml-1">$8,500</p>
                                         </div>
                                     </div>
@@ -129,9 +129,9 @@
                                         <h1 class="xl:text-2xl text-1xl font-extrabold">JUUSE SAROS</h1>
                                         <p class="text-[14px] font-extrabold">Toronto Maple Leafs</p>
                                         <div class="flex mt-4">
-                                            <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                            <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                             <p class="text-[14px] font-bold ml-1">$8,700</p>
-                                            <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                            <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                             <p class="text-[14px] font-bold ml-1">$8,500</p>
                                         </div>
                                     </div>
@@ -164,9 +164,9 @@
                                         <h1 class="xl:text-2xl text-1xl font-extrabold">PREDRIK ANDERSON</h1>
                                         <p class="text-[14px] font-extrabold">Toronto Maple Leafs</p>
                                         <div class="flex mt-4">
-                                            <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                            <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                             <p class="text-[14px] font-bold ml-1">$8,700</p>
-                                            <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                            <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                             <p class="text-[14px] font-bold ml-1">$8,500</p>
                                         </div>
                                     </div>
@@ -211,9 +211,9 @@
                                     <h1 class="xl:text-2xl text-1xl font-extrabold">JUUSE SAROS</h1>
                                     <p class="text-[14px] font-extrabold">Toronto Maple Leafs</p>
                                     <div class="flex mt-4">
-                                        <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                        <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                         <p class="text-[14px] font-bold ml-1">$8,700</p>
-                                        <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                        <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                         <p class="text-[14px] font-bold ml-1">$8,500</p>
                                     </div>
                                 </div>
@@ -245,9 +245,9 @@
                                     <h1 class="xl:text-2xl text-1xl font-extrabold">PREDRIK ANDERSON</h1>
                                     <p class="text-[14px] font-extrabold">Toronto Maple Leafs</p>
                                     <div class="flex mt-4">
-                                        <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                        <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                         <p class="text-[14px] font-bold ml-1">$8,700</p>
-                                        <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                        <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                         <p class="text-[14px] font-bold ml-1">$8,500</p>
                                     </div>
                                 </div>
