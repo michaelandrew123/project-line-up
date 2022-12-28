@@ -281,7 +281,6 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
-
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
