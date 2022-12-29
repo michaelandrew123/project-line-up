@@ -893,11 +893,10 @@
 
   <div class="flex justify-between smm:flex-col block smm:hidden">
         <div class="flex flex-col md:overflow-x-auto sm:overflow-x-auto block smm-hidden">
-            <div class="bg-lime-400 w-36 h-full text-center "><h1>ADDS</h1>
-            </div>
-            <div class="bg-lime-400 w-36 h-full mb-10 mt-10 text-center "><h1>ADDS</h1>
-            </div>
-            <div class="bg-lime-400 w-36 h-full text-center "><h1>ADDS</h1>
+            <div class="flex flex-col gap-10 mr-5 ">
+                <img class="w-48 h-[70%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
+                <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
+                <img class="w-48 h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>
         </div>
         <div class="">    
@@ -1219,12 +1218,12 @@
 	    </div>
         
         <div class="flex flex-col block overflow-x-visible md:overflow-x-auto sm:overflow-y-hidden block smm-hidden">
-            <div class="bg-lime-400 w-36 h-full text-center"><h1>ADDS</h1>
-            </div>
-            <div class="bg-lime-400 w-36 h-full mb-10 mt-10 text-center"><h1>ADDS</h1>
-            </div>
-            <div class="bg-lime-400 w-36 h-full text-center"><h1>ADDS</h1>
-            </div>
+            <div class="flex flex-col  items-center ml-1 gap-6">
+                <img class="w-64 h-52" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                <img class="w-48 h-4/5" src="{{ asset('/images/menu-icon/adds6.png') }}">
+                <img class="w-48 h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
+            </div>  
+            
         </div>    
    </div>
 
@@ -1251,11 +1250,11 @@
                                     <div class="two_icons">
                                         <div class="flex mt-1">
                                             <div class="flex">
-                                                <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                                 <p class="text-[14px] font-bold ml-1">$8,700</p>
                                             </div>
                                             <div class="flex">
-                                                <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                                 <p class="text-[14px] font-bold ml-1">$8,500</p>
                                             </div>   
                                         </div>
@@ -1304,11 +1303,11 @@
                                     <div class="two_icons">
                                         <div class="flex mt-1">
                                             <div class="flex">
-                                                <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                                 <p class="text-[14px] font-bold ml-1">$8,700</p>
                                             </div>
                                             <div class="flex">
-                                                <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                                 <p class="text-[14px] font-bold ml-1">$8,500</p>
                                             </div>   
                                         </div>
@@ -1358,11 +1357,11 @@
                                     <div class="two_icons">
                                         <div class="flex mt-1">
                                             <div class="flex">
-                                                <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                             <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                                 <p class="text-[14px] font-bold ml-1">$8,700</p>
                                             </div>
                                             <div class="flex">
-                                                <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                                 <p class="text-[14px] font-bold ml-1">$8,500</p>
                                             </div>   
                                         </div>
@@ -1538,11 +1537,11 @@
                                     <div class="two_icons">
                                         <div class="flex mt-1">
                                             <div class="flex">
-                                                <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                                 <p class="text-[14px] font-bold ml-1">$8,700</p>
                                             </div>
                                             <div class="flex">
-                                                <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                                 <p class="text-[14px] font-bold ml-1">$8,500</p>
                                             </div>   
                                         </div>
@@ -1612,11 +1611,11 @@
                                             <div class="two_icons">
                                                 <div class="flex mt-1">
                                                     <div class="flex">
-                                                        <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                                        <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                                         <p class="text-[14px] font-bold ml-1">$8,700</p>
                                                     </div>
                                                     <div class="flex">
-                                                        <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                                        <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                                         <p class="text-[14px] font-bold ml-1">$8,500</p>
                                                     </div>   
                                                 </div>
@@ -1665,11 +1664,11 @@
                                             <div class="two_icons">
                                                 <div class="flex mt-1">
                                                     <div class="flex">
-                                                        <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                                        <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                                         <p class="text-[14px] font-bold ml-1">$8,700</p>
                                                     </div>
                                                     <div class="flex">
-                                                        <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                                        <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                                         <p class="text-[14px] font-bold ml-1">$8,500</p>
                                                     </div>   
                                                 </div>
@@ -1719,11 +1718,11 @@
                                             <div class="two_icons">
                                                 <div class="flex mt-1">
                                                     <div class="flex">
-                                                        <img class="w-6 h-5" src="{{ asset('/images/starting-goalies/pinpng.png') }}">
+                                                        <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
                                                         <p class="text-[14px] font-bold ml-1">$8,700</p>
                                                     </div>
                                                     <div class="flex">
-                                                        <img class="w-6 h-5 ml-3" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+                                                    <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
                                                         <p class="text-[14px] font-bold ml-1">$8,500</p>
                                                     </div>   
                                                 </div>

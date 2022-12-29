@@ -161,7 +161,7 @@
 
 
    
-    // header humberger button
+    // header humberger button drop-down navbar
     var clickedTwice = 1; 
     var currentRelAttr=""; 
     $('#header-mobile-menu > ul > a').on('touchstart', function(){
@@ -181,7 +181,7 @@
         
 
 
-
+         
         // reset negative to plus
         $( ".plus" ).each(function() {
            $( this ).css( "display", "block" );
