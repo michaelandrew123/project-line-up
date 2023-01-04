@@ -331,7 +331,7 @@
                 <div class="flex flex-row">
                     <div class="flex flex-col ">
                         <div class="flex items-center ">
-                            <img class="w-14 h-14" src="{{ asset('/images/home-page/graph-logo.png') }}">
+                            <img class="w-14 h-14" src="{{ asset('/images/menu-icon/projection_logo.png') }}">
                             <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
                                 Projections
                             </h1>
