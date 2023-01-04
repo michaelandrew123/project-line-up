@@ -520,9 +520,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full flex justify-center my-3">
-                <div class="w-2/4 h-32 bg-lime-400 ">                
-                </div>
+            <div class="w-full flex justify-center my-3"> 
+                   <img class="w-2/4 h-32" src="{{ asset('/images/menu-icon/adds7.png') }}">            
             </div>
             <div class="flex flex-col items-center gap-1 mt-3">
                 <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
@@ -729,8 +728,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-center my-3">
-                <div class="w-2/4 h-32 bg-lime-400 ">                
-                </div>
+                <img class="w-2/4 h-40" src="{{ asset('/images/menu-icon/adds3.png') }}">
             </div>
             <div class="flex flex-col items-center gap-1 mt-3">
                 <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
@@ -835,8 +833,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-center my-3">
-                <div class="w-full h-16 bg-lime-400 ">                
-                </div>
+              <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div>
         </div>
     <!-- End of Mobile -->
