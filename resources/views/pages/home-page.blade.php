@@ -6,11 +6,11 @@
 
 
 <!-- Desktop design -->
-<div class="flex xl:block lg:block hidden w-full mx-2">
+<div class="flex xl:block lg:block md:block hidden w-full mx-2">
     <div class="flex flex-col ">
         <div class="flex flex-row">
-            <div class="flex flex-col gap-10 mr-5 ">
-                <img class="w-48 h-[70%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
+            <div class="flex flex-col gap-16 mr-6 xl:block lg:hidden md:hidden">
+                <img class="w-48 h-[50%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
                 <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
             </div>
            <div class="flex flex-col">
@@ -76,9 +76,52 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                        <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
+                            Hightlights
+                        </h1>
+                    </div>
+                    <div class="bg-[#045473] w-full mb-2">
+                        <p class="text-white text-[15px] font-semibold p-0.5 mx-1">NHL Highlights: Blues 6, Maple Leafs 5 (SO)</p>
+                    </div>
+                    <div class="flex flex-row justify-between">
+                        <div >
+                            <img class="w-[25rem] h-64" src="{{ asset('/images/menu-icon/high_lights.png') }}" alt="">
+                        </div>
+                        <div class="w-[57%] bg-slate-50">
+                            <ul id="parent" class="flex flex-col">
+                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                    <p class="text-[13px] opacity-50 ml-2">NHL | 5:37</p>
+                                </li>
+                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                    <a class="text-sm font-semibold ml-2" href="#">NHL Highlight: Jet 3, Flames 2</a>
+                                    <p class="text-[13px] opacity-50 ml-2">NHL | 5:35</p>
+                                </li>
+                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                    <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Predator 6, Canadiens 3</a>
+                                    <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
+                                </li>
+                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                    <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Blues 6, Maple Leafs 5 (SO)</a>
+                                    <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
+                                </li>
+                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                    <a class="text-sm font-semibold ml-2" href="#">NHL HIghtlights: Sabres 5, Capital 4 (OT)</a>
+                                    <p class="text-[13px] opacity-50 ml-2">NHL | 5:39</p>
+                                </li>
+                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                    <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Panthers 5, Coyotes 3</a>
+                                    <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="flex flex-col">
                     <div class="flex items-center">
-                        <img class="w-14 h-14" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                    <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
                             Starting Goalies
                         </h1>
@@ -198,19 +241,19 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col  items-center ml-1">
+            <div class="flex flex-col  items-center ml-4 xl:block lg:hidden md:hidden">
                 <img class="w-64 h-52" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                <img class="w-48 h-4/5" src="{{ asset('/images/menu-icon/adds6.png') }}">
+                <img class="w-48 h-4/5 ml-2" src="{{ asset('/images/menu-icon/adds6.png') }}">
             </div>  
         </div>
         <div class="flex flex-row relative ">  
-            <div class="mr-5">
+            <div class="mr-5 xl:block lg:hidden md:hidden">
                 <img class="w-48 h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>       
             <div class="flex flex-col">        
                 <div class="flex flex-col relative">
                     <div class="flex items-center">
-                        <img class="w-14 h-14" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                    <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
                             Players News
                         </h1>
@@ -772,7 +815,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-5 flex items-end">
+            <div class="ml-5 flex items-end xl:block lg:hidden md:hidden">
                 <img class="w-48 h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
             </div> 
         </div>
@@ -780,7 +823,7 @@
 </div>
 <!-- End Desktop -->
 <!-- Tablet and mobile responsive design -->
-<div class="flex flex-col xl:hidden lg:hidden md:block smm-block ">
+<div class="flex flex-col xl:hidden lg:hidden md:hidden smm-block ">
        <!-- <div id="carouselExampleControls3" class="carousel slide relative mt-4  hidden md:block smm-block" data-bs-ride="carousel">
             <div class="carousel-inner relative w-full overflow-hidden">
                 <div class="carousel-item active relative float-left w-full"> 

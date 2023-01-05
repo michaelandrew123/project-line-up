@@ -91,7 +91,7 @@
                         <div class="flex flex-row xl:gap-3 lg:gap-[3px] md:gap-1 ">
                             <div class="flex flex-row justify-center items-center relative ">
                                 <div>
-                                    <input type="text" name="search" id="search" class="px-2 xl:w-32 lg:w-[7rem] md:w-[5rem] border-1 rounded-md "/>
+                                    <input type="text" name="text" id="search" class="px-2 xl:w-32 lg:w-[7rem] md:w-[5rem] border-1 rounded-md "/>
                                 </div>
                                 <div class="absolute right-px xl:top-2.5 lg:top-2.5 md:top-1.5">
                                     <img src = "{{ asset('/images/search.png') }}" class="text-white w-4" />

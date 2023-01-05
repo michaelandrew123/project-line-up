@@ -3,7 +3,7 @@
 @section('content')
 
 
-    <div class="flex flex-col lg:block md:hidden sm:hidden smm-hidden ">
+    <div class="flex flex-col lg:block md:block sm:hidden smm-hidden ">
 
         <div class="text-white bg-[#202e5b] flex  justify-evenly py-4">
             <div class="w-1/7 hidden">
@@ -61,7 +61,7 @@
         {{----}}
     </div>
 
-    <div class="flex justify-center lg:block md:hidden sm:hidden smm-hidden">
+    <div class="flex justify-center lg:block md:block sm:hidden smm-hidden">
         <div class="md:inline-flex gap-4">
             <div class="md:w-3/12 sm:w-11/12 smm-w-11-12 flex flex-row items-center justify-center smm-hidden  sm:m-auto">
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
@@ -108,15 +108,15 @@
                             <div class="grid grid-cols-3 gap-4">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="flex flex-row justify-center items-center invisible">
@@ -130,11 +130,11 @@
                             <div class="grid grid-cols-2 gap-4 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="text-center invisible">
@@ -150,15 +150,15 @@
                             <div class="grid grid-cols-3 gap-4">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
 
@@ -170,11 +170,11 @@
                             <div class="grid grid-cols-2 gap-4 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="text-center invisible font-bold">
@@ -188,15 +188,15 @@
                             <div class="grid grid-cols-3 gap-4">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="flex flex-row justify-center items-center invisible font-bold">
@@ -207,11 +207,11 @@
                             <div class="grid grid-cols-2 gap-4 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="text-center invisible">
@@ -225,15 +225,15 @@
                             <div class="grid grid-cols-3 gap-4">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
 
@@ -245,11 +245,11 @@
                             <div class="grid grid-cols-2 gap-4 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="text-center invisible">
@@ -273,15 +273,15 @@
                             <div class="grid grid-cols-3 gap-4">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="flex flex-row justify-center items-center font-bold">
@@ -292,11 +292,11 @@
                             <div class="grid grid-cols-2 gap-4 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="text-center font-bold">
@@ -315,15 +315,15 @@
                             <div class="grid grid-cols-3 gap-4">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
 
@@ -335,11 +335,11 @@
                             <div class="grid grid-cols-2 gap-4 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="text-center font-bold">
@@ -363,15 +363,15 @@
                             <div class="grid grid-cols-3 gap-4">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="flex flex-row justify-center items-center font-bold">
@@ -382,11 +382,11 @@
                             <div class="grid grid-cols-2 gap-4 ">
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                                 <div class="p-4 smm-p-0">
                                     <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-16"/>
+                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
                                 </div>
                             </div>
                             <div class="text-center font-bold">
@@ -504,7 +504,7 @@
     </div>
 
     <!-- Mobile Design -->
-    <div class="xl:hidden lg:hidden md:block sm:block smm-block">
+    <div class="xl:hidden lg:hidden md:hidden sm:block smm-block">
         <div class="flex flex-col justify-center w-full">
             <div class="list-none flex flex-row justify-between items-center mx-3">
                 <div class="flex items-center gap-4">
@@ -1332,8 +1332,8 @@
             <section class=" flex flex-row items-center justify-center my-4">
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
                 {{--ads--}}
-                <div class=" bg-lime-400 mr-10 lg:mr-5 flex w-3/5 h-48 justify-center items-center">
-                    <h1 class="text-lg font-semibold text-center">ADDS</h1>
+                <div class=" flex w-3/5 h-48 justify-center items-center">
+                   <img class="" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div>
                 {{----}}
             </section> 
@@ -1438,8 +1438,8 @@
             <!-- End of Second Row -->
             <div>
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto">
-                <div class=" bg-lime-400 w-10/12 m-auto h-20 flex justify-center items-center  mt-5 mb-5">
-                    <h1 class="text-lg font-semibold text-center">ADDS</h1>
+                <div class="  w-10/12 m-auto h-20 flex justify-center items-center  mt-5 mb-5">
+                   <img  src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
             </div> 
             <hr />
@@ -1527,8 +1527,8 @@
             <div class=" flex flex-row items-center justify-center my-4">
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
                 {{--ads--}}
-                <div class=" bg-lime-400 mr-10 lg:mr-5 flex w-3/5 h-48 justify-center items-center">
-                    <h1 class="text-lg font-semibold text-center">ADDS</h1>
+                <div class=" flex w-3/5 h-48 justify-center items-center">
+                   <img class="" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div>
                 {{----}}
             </div>
@@ -1653,8 +1653,8 @@
                         </div>
             </section> 
 
-            <div class=" bg-lime-400 w-10/12 m-auto h-20 flex justify-center items-center  mt-5 mb-5">
-                <h1 class="text-lg font-semibold text-center">ADDS</h1>
+            <div class="  w-10/12 m-auto h-20 flex justify-center items-center  mt-5 mb-5">
+               <img  src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div>
 
             <!-- Fifth row -->

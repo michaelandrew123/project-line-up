@@ -19,7 +19,16 @@
     //     .then((response) => response.json())
     // .then((data) => console.log(data));
     //
-  
+    // Home/Highlights-function
+     $(".link").hover(function(){
+        $(this).css("border-left", "3px solid #045473");
+        }, function(){
+        $(this).css("border-left", "none");
+    });
+
+
+
+    
     $( "div#main-menu1 > div > a, div#main-menu2 > div > a" ).hover(function() {  
         var data = $(this).attr('rel'); 
         $("a > div.active").removeClass('active'); 
@@ -288,7 +297,7 @@
     // $('.text').on('touchstart', function(){
     //    $('.-icon-plus, .-icon-negative').toggle();
     // });
-   
+    
 
 
        
