@@ -4,7 +4,6 @@
 
 
     <div class="flex flex-col lg:block md:block sm:hidden smm-hidden ">
-
         <div class="text-white bg-[#202e5b] flex  justify-evenly py-4">
             <div class="w-1/7 hidden">
                 <img src="/admin.png" />
@@ -28,39 +27,31 @@
 
                     </div>
                     <div class="flex flex-col gap-y-3">
-
                         <h1>54-21-7</h1>
                         <hr />
                         <p>RECORD</p>
-
                     </div>
                 </div>
                 <div>
                     <a href="#" class="uppercase inline-block text-sm px-4 py-2 leading-none border rounded tex hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">SIGN UP FOR FREE</a>
                 </div>
             </div>
-
         </div>
-
-        
-
     </div>
     <div class="md:w-full  smm-flex smm-justify-center text-center m-auto text-black lg:block md:hidden sm:hidden smm-hidden">
-            <ul class="list-none flex gap-2  justify-center  ">
-                <img class="w-7 h-6" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
-                <h1 class="text-base font-bold">Toronto Maple Leafs</h1>
-                <li><a class="text-sm font-bold">News</a></li>
-                <li><a class="text-sm font-bold">Schedule</a></li>
-                <li><a class="text-sm font-bold">Odds</a></li>
-            </ul>
+        <ul class="list-none flex gap-2  justify-center  ">
+            <img class="w-7 h-6" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
+            <h1 class="text-base font-bold">Toronto Maple Leafs</h1>
+            <li><a class="text-sm font-bold">News</a></li>
+            <li><a class="text-sm font-bold">Schedule</a></li>
+            <li><a class="text-sm font-bold">Odds</a></li>
+        </ul>
     </div>
-
     <div class=" text-center flex flex-row items-center justify-center  m-auto md:block sm:hidden">
         <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto"/>
         {{--ads--}}
         {{----}}
     </div>
-
     <div class="flex justify-center lg:block md:block sm:hidden smm-hidden">
         <div class="md:inline-flex gap-4">
             <div class="md:w-3/12 sm:w-11/12 smm-w-11-12 flex flex-row items-center justify-center smm-hidden  sm:m-auto">
@@ -502,7 +493,6 @@
             </div>
         </div>
     </div>
-
     <!-- Mobile Design -->
     <div class="xl:hidden lg:hidden md:hidden sm:block smm-block">
         <div class="flex flex-col justify-center w-full">
@@ -517,15 +507,12 @@
                             <h1 class="text-[11px] font-bold">MORNING SKATE</h1>              
                         </div>
                     </div>
-                </div>
-                
-                
+                </div>     
                 <!-- <div class="flex flex-row gap-4">
                     <li><a class="text-sm font-bold">News</a></li>
                     <li><a class="text-sm font-bold">Schedule</a></li>
                     <li><a class="text-sm font-bold">Odds</a></li>
-                </div> -->
-                
+                </div>  -->
             </div>
             <hr />
             <div class="md:block sm:block smm-block hidden mx-3  mt-2">
@@ -536,18 +523,17 @@
                             <p class="text-[11px]">David Alter</p>
                             <p class="text-[11px]">09/22/2022 | 4:21pm EST</p>
                         </div>
-                        
                     </div>
                     <div class="relative">
                         <button id="tml_btn" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
                             <p class="text-[13px]">TORONTO MAPLE LEAFS</p>
                             <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow">
                         </button> 
-                            <ul id="drop_down" class="absolute bg-white w-[11rem] bg-slate-300 py-2 hidden top-[30px] left-[4px] z-20">
-                                <li class="hover:bg-slate-100 active:bg-slate-200 p-2">TEAM-01</li>
-                                <li class="hover:bg-slate-100 active:bg-slate-200 p-2">TEAM-02</li>
-                                <li class="hover:bg-slate-100 active:bg-slate-200 p-2">TEAM-03</li>
-                            </ul>
+                        <ul id="drop_down" class="absolute bg-white w-[11rem] bg-slate-300 py-2 hidden top-[30px] left-[4px] z-20">
+                            <li class="hover:bg-slate-100 active:bg-slate-200 p-2">TEAM-01</li>
+                            <li class="hover:bg-slate-100 active:bg-slate-200 p-2">TEAM-02</li>
+                            <li class="hover:bg-slate-100 active:bg-slate-200 p-2">TEAM-03</li>
+                        </ul>
                     </div>
                     <!-- <h1 class="text-[10px] font-extrabold border border-gray px-7 p-3 ml-2 bg-slate-300 rounded-full">MORNING SKATE</h1> -->
                 </div>
@@ -566,6 +552,94 @@
          <!-- <img class="w-4/5" src="{{ asset('/images/menu-icon/coming_soon.png') }}" alt=""> -->
            <div class="flex flex-col justify-center items-center mt-2 mx-1 " id="nav-body">
                     <h1 class="text-center text-sm font-bold">FORWARDS</h1>
+                <div class="flex flex-row gap-1 mt-1 justify-center ">
+                    <div class="bg-slate-100 p-2 rounded-xl text-center relative ">
+                        <p class="text-center">KERFOT</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                        <div class="flex flex-row items-center justify-between mt-3 text-center h-[15px]">
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">GOALS:13</p>
+                                <p class="text-[11px] text-sm">ASSISTS:16</p>
+                            </div>
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">TOI:16.1</p>
+                                <p class="text-[11px] text-sm">SHOTS:85</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl relative ">
+                        <p class="text-center">MATTHEWS</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                        <div class="flex flex-row items-center justify-between mt-3 text-center h-[15px]">
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">GOALS:13</p>
+                                <p class="text-[11px] text-sm">ASSISTS:16</p>
+                            </div>
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">TOI:16.1</p>
+                                <p class="text-[11px] text-sm">SHOTS:85</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl relative ">
+                        <p class="text-center">MARNER</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                        <div class="flex flex-row items-center justify-between mt-3 text-center h-[15px]">
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">GOALS:13</p>
+                                <p class="text-[11px] text-sm">ASSISTS:16</p>
+                            </div>
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">TOI:16.1</p>
+                                <p class="text-[11px] text-sm">SHOTS:85</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-1 mt-1 justify-center ">
+                    <div class="bg-slate-100 p-2 rounded-xl text-center relative ">
+                        <p class="text-center">KERFOT</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                        <div class="flex flex-row items-center justify-between mt-3 text-center h-[15px]">
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">GOALS:13</p>
+                                <p class="text-[11px] text-sm">ASSISTS:16</p>
+                            </div>
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">TOI:16.1</p>
+                                <p class="text-[11px] text-sm">SHOTS:85</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl relative ">
+                        <p class="text-center">MATTHEWS</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                        <div class="flex flex-row items-center justify-between mt-3 text-center h-[15px]">
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">GOALS:13</p>
+                                <p class="text-[11px] text-sm">ASSISTS:16</p>
+                            </div>
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">TOI:16.1</p>
+                                <p class="text-[11px] text-sm">SHOTS:85</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl relative ">
+                        <p class="text-center">MARNER</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                        <div class="flex flex-row items-center justify-between mt-3 text-center h-[15px]">
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">GOALS:13</p>
+                                <p class="text-[11px] text-sm">ASSISTS:16</p>
+                            </div>
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">TOI:16.1</p>
+                                <p class="text-[11px] text-sm">SHOTS:85</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="flex flex-row gap-1 mt-1 justify-center ">
                     <div class="bg-slate-100 p-2 rounded-xl text-center relative ">
                         <p class="text-center">KERFOT</p>
@@ -1387,9 +1461,7 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
- 
             <!-- End of First Row -->
             <section class=" flex flex-row items-center justify-center my-4">
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
@@ -1399,9 +1471,7 @@
                 </div>
                 {{----}}
             </section> 
-
             <div class="bg-slate-300 w-12/12 h-px mx-1"></div> 
-
             <!-- Second Row  -->
             <section class="flex flex-col items-center mt-5 mb-5">
             <h1 class="text-center text-sm font-bold">DEFENCE</h1>
@@ -1496,7 +1566,6 @@
                         </div>
                     </div>
             </section> 
-
             <!-- End of Second Row -->
             <div>
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto">
@@ -1505,7 +1574,6 @@
                 </div>
             </div> 
             <hr />
-
             <!--  Third Row  -->
             <section class="flex flex-col items-center mt-5 mb-5 mx-1">
                 <h1 class="text-center text-sm font-bold">POWERPLAY 1</h1>
@@ -1582,9 +1650,8 @@
                                 </div>
                             </div>
                         </div>
-                 </div>                
+                   </div>                
             </section>
-
             <!-- End of Third Row -->
             <div class=" flex flex-row items-center justify-center my-4">
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
@@ -1595,7 +1662,6 @@
                 {{----}}
             </div>
             <hr />
-
            <!--  third row -->
             <section class="flex flex-col items-center mt-5 mb-5">
                 <h1 class="text-center text-sm font-bold">POWERPLAY 2</h1>
@@ -1674,13 +1740,11 @@
                         </div>
                  </div>
             </section>        
-
             <!-- End fourth row -->
             <div>
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto">
             </div>
             <hr />
-
             <section class="flex flex-col items-center mt-5 mb-5">
                 <h1 class="text-center text-sm font-bold">GOALIES</h1>
                         <div class="flex flex-row justify-center gap-1 mt-1 w-2/3">
@@ -1718,7 +1782,6 @@
             <div class="  w-10/12 m-auto h-20 flex justify-center items-center  mt-5 mb-5">
                <img  src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div>
-
             <!-- Fifth row -->
             <hr />
             <div class="flex flex-col items-center mt-5 mb-5">
@@ -1822,7 +1885,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- End of Fifth row -->
             <div class="flex flex-col items-center relative">
                 <div class="flex flex-row justify-evenly  list-none w-[71%] bg-slate-200 p-5 border rounded-3xl">
@@ -1860,10 +1922,7 @@
                     <p class="text-[10px] font-extrabold"> Top slack </p>
                 </div>
             </div> 
-
          </div>
-
-
     </div>
     
 

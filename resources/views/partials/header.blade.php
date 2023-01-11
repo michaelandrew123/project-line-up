@@ -22,7 +22,7 @@
                         </div>
  
                         <div class=" flex flex-row 2xl:gap-12 xl:gap-[rem] lg:gap-[1.5rem] md:gap-5 navbar"> 
-                            <a href="#responsive-header" rel="daily-menu" class="sm:leading-loose md:leading-13 xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0 text-[16px]  md:text-slate-300  hover:text-white  font-bold">
+                            <a href="#responsive-header" rel="daily-menu" class="sm:leading-loose md:leading-13 xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0 text-[16px]  md:text-slate-300  hover:text-white  font-bold">
                                 DAILY FANTASY
                                 <div class="relative hidden daily-menu active" >
                                     <div class="arrowed absolute xl:top-[13px] xl:left-10 lg:top-[17px] lg:left-10 md:top-[20px] md:left-[18px]">
@@ -30,7 +30,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0   relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0   relative md:text-slate-300  hover:text-white font-bold">
                                 PROJECTIONS
                                 <div class="relative hidden projections-menu ">
                                     <div class="arrowed absolute xl:top-[13px] xl:left-10 lg:top-[17px] lg:left-10 md:top-[20px] md:left-[18px]">
@@ -38,7 +38,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="news-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="news-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 NEWS
 
                                 <div class="relative  hidden news-menu">
@@ -47,7 +47,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 BETTING
 
                                 <div class="relative  hidden betting-menu">
@@ -56,7 +56,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 ODDS
 
                                 <div class="relative  hidden odds-menu">
@@ -71,7 +71,7 @@
                 <div class="w-5/12 md:w-5/12 bg-[#1d9bf0] flex sm:flex-row-reverse md:flex-row items-center  lg:justify-start">
                     <div id="main-menu2" class="w-full xl:p-[12px]  lg:p-[12px] p-[14px] w-full flex flex-row items-center 2xl:gap-[4.5rem] xl:gap-[0.5rem] lg:gap-[10px] md:gap-[0.5rem] md:justify-between navbar">
                         <div class="2xl:gap-[4rem] xl:gap-[1.5rem] lg:gap-[10px] md:gap-[20px] flex flex-row justify-between">
-                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
+                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
                                 STARTING GOALIES
                                 <div class="relative hidden goalies-menu">
                                     <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
@@ -79,7 +79,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
+                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 LINE COMBINATIONS
                                 <div class="relative hidden line-menu">
                                     <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
@@ -89,9 +89,9 @@
                             </a>
                         </div>
                         <div class="flex flex-row xl:gap-3 lg:gap-[3px] md:gap-1 ">
-                            <div class="flex flex-row justify-center items-center relative ">
+                            <div class="flex flex-row justify-evenly items-center relative ">
                                 <div>
-                                    <input type="text" name="text" id="search" class="px-2 xl:w-32 lg:w-[7rem] md:w-[5rem] border-1 rounded-md "/>
+                                    <input type="text" name="text" id="search" class="px-2 xl:w-32 lg:w-[6rem] md:w-[5rem] border-1 rounded-md "/>
                                 </div>
                                 <div class="absolute right-px xl:top-2.5 lg:top-2.5 md:top-1.5">
                                     <img src = "{{ asset('/images/search.png') }}" class="text-white w-4" />
