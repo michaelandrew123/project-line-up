@@ -5,7 +5,7 @@
 
     <!-- Desktop Design -->
     <div class="flex justify-evenly lg:flex-row md:flex-col sm:flex-col smm-hidden">
-            <div class="flex flex-col ">
+            <div class="flex flex-col xl:block lg:block md:hidden">
                 <img class="w-[17rem] h-[35rem] mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
                 <img class="w-[17rem] h-[185px] mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
                 <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds4.png') }}">
@@ -32,7 +32,7 @@
                 <div class="flex justify-center md:flex-row sm:flex-col gap-4">
                        <div class="w-96 h-5/6 border border-black relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
-                                <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
                                         <div class="bg-green-400 bg-orange-400 rounded-full w-40 flex items-center p-1">
                                             <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -66,7 +66,7 @@
                         </div>       
                             <div class="w-96 h-5/6 border border-black relative mb-10 ">
                                 <div class="flex m-3 mt-5 ">
-                                    <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                             <div class="bg-orange-400 rounded-full w-40 flex items-center p-1">
                                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -120,7 +120,7 @@
                         <div class="flex justify-center md:flex-row sm:flex-col  gap-4">
                             <div class="w-96 h-5/6 border border-black relative mb-10 ">
                                 <div class="flex m-3 mt-5 ">
-                                    <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="w-24 h-28" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                             <div class="bg-green-400 bg-orange-400 rounded-full w-40 flex items-center p-1">
                                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -155,7 +155,7 @@
                             </div>       
                             <div class="w-96 h-5/6 border border-black relative mb-10 ">
                                 <div class="flex m-3 mt-5 ">
-                                    <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                             <div class="bg-orange-400 rounded-full w-40 flex items-center p-1">
                                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -182,9 +182,9 @@
                                         <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                     </div>
                                 </div>  
-                                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
-                                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                                    <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +202,7 @@
                     <div class="flex justify-center md:flex-row sm:flex-col  gap-4">
                         <div class="w-96 h-5/6 border border-black relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
-                                <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="w-24 h-28" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
                                         <div class="bg-green-400 bg-orange-400 rounded-full w-40 flex items-center p-1">
                                             <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -236,7 +236,7 @@
                         </div>       
                         <div class="w-96 h-5/6 border border-black relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
-                                <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
                                     <div class="bg-orange-400 rounded-full w-40 flex items-center p-1">
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -272,12 +272,18 @@
                 </div>  
             </div> 
         </div>
-        <div class="flex flex-col gap-2 items-center">
+        <div class="flex flex-col gap-2 items-center xl:block lg:block md:hidden">
             <img class="w-72 h-[263px]" src="{{ asset('/images/menu-icon/adds3.png') }}">
             <img class="w-[17rem] h-[499px] mb-[31px]" src="{{ asset('/images/menu-icon/adds6.png') }}">
             <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds5.png') }}">
         </div>
     </div>
+    <div class="block smm-hidden">
+       <h1 class="font-bold text-center">NHL Starting Goalies</h1>
+        <p class="text-center mx-0.5 text-sm font-medium">Teams will announce the goalie starting well ahead of game time about 80% of the time. You can find the goalies starting right here on <a href="#" class="underline">projectedlineups.com</a> . 
+        Sometimes they will be designated “Expected” when a beat reporter doesn’t use definitive language in their announcements. However, these goalies end up starting about 99% of the time. Goalies designated “Confirmed”  have been validated by a credible team source or from a beat reporter. We always start the day with a “projected”  designation and will update a goalies status when we get any sort of announcement. 
+        This is based on our opinion on who we feel may start for a team on that given night, if no information has been reported. Goalies will rarely start on both ends of a back-to-back, so you can be confident the other goalie will start on the second leg even with no announcement. When teams warm up 30 minutes before the game, you will get official confirmation on what goalie is starting.</p>
+    </div> 
     <!-- End of Desktop -->
     <!-- Mobile design -->
         <div class="mx-1 hidden smm-block">
@@ -836,5 +842,11 @@
               <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div>
         </div>
+    <div class="hidden smm-block">
+       <h1 class="font-bold text-center ">NHL Starting Goalies</h1>
+        <p class="text-center mx-0.5 text-xs font-medium">Teams will announce the goalie starting well ahead of game time about 80% of the time. You can find the goalies starting right here on <a href="#" class="underline">projectedlineups.com</a> . 
+        Sometimes they will be designated “Expected” when a beat reporter doesn’t use definitive language in their announcements. However, these goalies end up starting about 99% of the time. Goalies designated “Confirmed”  have been validated by a credible team source or from a beat reporter. We always start the day with a “projected”  designation and will update a goalies status when we get any sort of announcement. 
+        This is based on our opinion on who we feel may start for a team on that given night, if no information has been reported. Goalies will rarely start on both ends of a back-to-back, so you can be confident the other goalie will start on the second leg even with no announcement. When teams warm up 30 minutes before the game, you will get official confirmation on what goalie is starting.</p>
+     </div> 
     <!-- End of Mobile -->
 @endsection

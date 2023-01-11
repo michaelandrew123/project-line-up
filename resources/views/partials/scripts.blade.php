@@ -19,7 +19,16 @@
     //     .then((response) => response.json())
     // .then((data) => console.log(data));
     //
-  
+    // Home/Highlights-function
+     $(".link").hover(function(){
+        $(this).css("border-left", "3px solid #045473");
+        }, function(){
+        $(this).css("border-left", "none");
+    });
+
+
+
+    
     $( "div#main-menu1 > div > a, div#main-menu2 > div > a" ).hover(function() {  
         var data = $(this).attr('rel'); 
         $("a > div.active").removeClass('active'); 
@@ -288,7 +297,7 @@
     // $('.text').on('touchstart', function(){
     //    $('.-icon-plus, .-icon-negative').toggle();
     // });
-   
+    
 
 
        
@@ -329,7 +338,15 @@
         $('#sub-menu > ul.active').removeClass('active');
         $('.'+data).addClass('active');
     })
+    $('#tml_btn').on('touchstart', function(){
+        $('.arrow').toggleClass('rotate-90')
+    });
     
+    $('#tml_btn').on('touchstart', function(){
+        $('#drop_down').toggleClass('hidden');
+        
+    });
+
 
     //Mobile navigation
 
@@ -363,7 +380,7 @@
             }else if($(this).text() == 'NEWS'){
                 $('#scrollbar').removeClass('hidden'); 
                 $('#ldf, #img').addClass('hidden');
-            }else if($(this).text() == 'ODDS'){
+            }else if($(this).text() == 'STATS'){
                 $('#img').removeClass('hidden'); 
                 $('#ldf, #scrollbar').addClass('hidden');
             }else{
@@ -382,8 +399,10 @@
         //     $('#scrollbar').removeClass('hidden');
         //     $('#scrollbar').addClass('active');
         // });
+         
 
-
+           
+  
         
 
         
