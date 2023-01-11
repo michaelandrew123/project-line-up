@@ -506,11 +506,19 @@
     <!-- Mobile Design -->
     <div class="xl:hidden lg:hidden md:hidden sm:block smm-block">
         <div class="flex flex-col justify-center w-full">
-            <div class="list-none flex flex-row justify-between items-center mx-3">
+            <div class="list-none flex flex-col mx-3 gap-0">
                 <div class="flex items-center gap-4">
                     <img class="w-12 h-12 rounded-lg" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
-                    <p class="text-lg font-bold">Toronto Maple Leafs Line Combinations</p>
+                    <div class="flex flex-col">
+                        <p class="text-lg font-bold">Toronto Maple Leafs</p>
+                        <p class="text-lg font-bold">Line Combinations</p>
+                        <div class="flex flex-row gap-2">
+                            <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-4 h-4  rounded-full ml-2">
+                            <h1 class="text-[11px] font-bold">MORNING SKATE</h1>              
+                        </div>
+                    </div>
                 </div>
+                
                 
                 <!-- <div class="flex flex-row gap-4">
                     <li><a class="text-sm font-bold">News</a></li>
@@ -528,26 +536,81 @@
                             <p class="text-[11px]">David Alter</p>
                             <p class="text-[11px]">09/22/2022 | 4:21pm EST</p>
                         </div>
+                        
                     </div>
-                    <div class="flex flex-row gap-2">
-                        <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4  rounded-full ml-2">
-                        <h1 class="text-[11px] font-bold ">MORNING SKATE</h1>
+                    <div class="relative">
+                        <button id="tml_btn" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
+                            <p class="text-[13px]">TORONTO MAPLE LEAFS</p>
+                            <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow">
+                        </button> 
+                            <ul id="drop_down" class="absolute bg-white w-[11rem] bg-slate-300 py-2 hidden top-[30px] left-[4px] z-20">
+                                <li class="hover:bg-slate-100 active:bg-slate-200 p-2">TEAM-01</li>
+                                <li class="hover:bg-slate-100 active:bg-slate-200 p-2">TEAM-02</li>
+                                <li class="hover:bg-slate-100 active:bg-slate-200 p-2">TEAM-03</li>
+                            </ul>
                     </div>
                     <!-- <h1 class="text-[10px] font-extrabold border border-gray px-7 p-3 ml-2 bg-slate-300 rounded-full">MORNING SKATE</h1> -->
                 </div>
             </div>
         </div>
-            <ul class="flex flex-row justify-center items-center mx-px bg-black h-9 w-full justify-evenly mt-3" id="mobile-2nd-mnav">
+            <ul class="flex flex-row justify-center items-center mx-px bg-black h-9 w-full justify-evenly mt-3 z-10" id="mobile-2nd-mnav">
                 <li class="list-none w-full h-full text-center  " id="nav-active" ><a href="#" class=" font-bold text-[11px] text-white">LINEUPS</a></li>
                 <li class="list-none w-full h-full text-center mr-3 ml-2"><a href="#" class=" text-white font-bold text-[11px] ">DRAFTKINGS</a></li>  
                 <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px]  ">FANDUEL</a></li>
-                <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px] ">ODDS</a></li>
+                <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px] ">STATS</a></li>
                 <li class="list-none w-full h-full text-center " ><a href="#" class=" text-white font-bold text-[11px]  ">NEWS</a></li>
             </ul>
        <hr />
-       
+       <!-- STATS ROW -->
        <div id="img" class="hidden flex justify-center">
-         <img class="w-4/5" src="{{ asset('/images/menu-icon/coming_soon.png') }}" alt="">
+         <!-- <img class="w-4/5" src="{{ asset('/images/menu-icon/coming_soon.png') }}" alt=""> -->
+           <div class="flex flex-col justify-center items-center mt-2 mx-1 " id="nav-body">
+                    <h1 class="text-center text-sm font-bold">FORWARDS</h1>
+                <div class="flex flex-row gap-1 mt-1 justify-center ">
+                    <div class="bg-slate-100 p-2 rounded-xl text-center relative ">
+                        <p class="text-center">KERFOT</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                        <div class="flex flex-row items-center justify-between mt-3 text-center h-[15px]">
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">GOALS:13</p>
+                                <p class="text-[11px] text-sm">ASSISTS:16</p>
+                            </div>
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">TOI:16.1</p>
+                                <p class="text-[11px] text-sm">SHOTS:85</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl relative ">
+                        <p class="text-center">MATTHEWS</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                        <div class="flex flex-row items-center justify-between mt-3 text-center h-[15px]">
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">GOALS:13</p>
+                                <p class="text-[11px] text-sm">ASSISTS:16</p>
+                            </div>
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">TOI:16.1</p>
+                                <p class="text-[11px] text-sm">SHOTS:85</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-2 rounded-xl relative ">
+                        <p class="text-center">MARNER</p>
+                        <img src ="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-32 mx-px" alt="">
+                        <div class="flex flex-row items-center justify-between mt-3 text-center h-[15px]">
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">GOALS:13</p>
+                                <p class="text-[11px] text-sm">ASSISTS:16</p>
+                            </div>
+                            <div class=" flex flex-col ">
+                                <p class="text-[11px] text-sm">TOI:16.1</p>
+                                <p class="text-[11px] text-sm">SHOTS:85</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
        </div>
 
        <div id="scrollbar" class="w-full flex flex-col justify-center hidden my-9 gap-8">
@@ -1183,7 +1246,6 @@
                         </div>
                     </div>
                 </div>
-            
                 <div class="flex flex-row gap-1 mt-1 justify-center ">
                     <div class="bg-slate-100 p-2 rounded-xl text-center relative ">
                         <p class="text-center">KERFOT</p>

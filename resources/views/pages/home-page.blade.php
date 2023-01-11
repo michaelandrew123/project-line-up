@@ -7,24 +7,24 @@
 
 <!-- Desktop design -->
 <div class="flex xl:block lg:block md:block hidden w-full mx-2">
-    <div class="flex flex-col ">
+    <div class="flex flex-col md:justify-center ">
         <div class="flex flex-row">
             <div class="flex flex-col gap-16 mr-6 xl:block lg:hidden md:hidden">
-                <img class="w-48 h-[50%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
+                <img class="w-48 h-[50%] mb-10" src="{{ asset('/images/menu-icon/adds1.png') }}">
                 <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
             </div>
-           <div class="flex flex-col">
+           <div class="flex flex-col xl:w-[67%] lg:w-auto md:w-auto">
                 <div class="flex justify-center mb-5">
                     <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
-                <div class="flex md:flex-row  ">
-                    <div class="w-[308px] h-80  relative  ">
+                <div class="flex md:flex-row justify-center ">
+                    <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12 h-80  relative  ">
                         <div class=" m-1 mt-5 ">
                             <div class="bg-orange-400 rounded-full w-40 flex items-center p-1 mb-3">
                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
                                 <h1 class="text-sm ml-4 text-black font-semibold">Morning Skates</h1>
                             </div>
-                            <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-[18rem]">
+                            <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-[21rem]">
 
                         </div>
                         <div class=" ml-1 mb-5 pb-9">
@@ -37,17 +37,17 @@
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[308px] h-80  relative ml-5 mr-5 ">
+                    <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12  h-80  relative ml-5 mr-5 ">
                         <div class=" m-1 mt-5 ">
                             <div class="bg-[#15d869] rounded-full w-40 flex items-center p-1 mb-3">
                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
                                 <h1 class="text-sm ml-4 text-black font-semibold">Top Tracks</h1>
                             </div>
-                            <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-[18rem]">
+                            <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-[21rem]">
 
                         </div>
                         <div class=" ml-1 mb-5 pb-9">
-                            <p class="text-xs font-bold mb-5">Edmonton in a great spot tonight against the Predators</p>
+                            <p class="text-xs font-bold mb-5">Edmonton in a great spot tonight against the </br>Predators</p>
                             <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
                         </div>
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
@@ -56,13 +56,13 @@
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[308px] h-80  relative  ">
+                    <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12  h-80  relative  ">
                         <div class=" m-1 mt-5 ">
                             <div class="bg-orange-400  rounded-full w-40 flex items-center p-1 mb-3">
                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
                                 <h1 class="text-sm ml-4 text-black font-semibold">Best Sets</h1>
                             </div>
-                            <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-[18rem]">
+                            <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-[21rem]">
 
                         </div>
                         <div class=" ml-1 mb-5 pb-9">
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="">
                     <div class="flex items-center">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
@@ -126,8 +126,8 @@
                             Starting Goalies
                         </h1>
                     </div>
-                    <div class="flex md:flex-row">
-                        <div class="w-[308px] h-80 border border-black relative  ">
+                    <div class="flex md:flex-row justify-center">
+                        <div class="w-[31%] h-80 border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -135,7 +135,7 @@
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
                                         <h1 class="text-sm ml-4 text-[#637a92]">Line Changes</h1>
                                     </div>
-                                    <h1 class=" text-lg font-extrabold">JOHN TAVORES</h1>
+                                    <h1 class=" text-lg font-extrabold md:font-bold">JOHN TAVORES</h1>
                                     <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
                                     <div class="flex mt-1">
                                         <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
@@ -145,7 +145,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" ml-1 mb-2 pb-9">
+                            <div class=" ml-1 mb-2 pb-5">
                                 <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                                 <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                             </div>
@@ -163,7 +163,7 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[308px] h-80 border border-black relative ml-5 mr-5">
+                        <div class="w-[31%] h-80 border border-black relative ml-5 mr-5">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -171,7 +171,7 @@
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
                                         <h1 class="text-sm ml-4 text-slate-100">Confirmed</h1>
                                     </div>
-                                    <h1 class=" text-lg font-extrabold">ILYA SANSONOV</h1>
+                                    <h1 class=" text-lg font-extrabold md:font-bold">ILYA SANSONOV</h1>
                                     <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
                                     <div class="flex mt-1">
                                         <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
@@ -181,7 +181,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" ml-1 mb-2 pb-9">
+                            <div class=" ml-1 mb-2 pb-5">
                                 <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                                 <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                             </div>
@@ -199,7 +199,7 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[308px] h-80 border border-black relative  ">
+                        <div class="w-[31%] h-80 border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -207,7 +207,7 @@
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
                                         <h1 class="text-sm ml-4 text-slate-100">Projected</h1>
                                     </div>
-                                    <h1 class=" text-lg font-extrabold">JACOB MARKSTORM</h1>
+                                    <h1 class=" text-lg font-extrabold md:font-bold">JACOB MARKSTORM</h1>
                                     <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
                                     <div class="flex mt-1">
                                         <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
@@ -217,8 +217,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" ml-1 mb-2 pb-9">
-                                <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
+                            <div class=" ml-1 mb-2 2xl:pb-5 xl:pb-5 lg:pb-5  sm:pb-0">
+                                <p class="text-[14px] font-bold mb-5 md:sm-1">Anderson was the first gaolie off the ice at morning skate</p>
                                 <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                             </div>
                             <div class="flex items-center">
@@ -243,14 +243,14 @@
             </div>
             <div class="flex flex-col  items-center ml-4 xl:block lg:hidden md:hidden">
                 <img class="w-64 h-52" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                <img class="w-48 h-4/5 ml-2" src="{{ asset('/images/menu-icon/adds6.png') }}">
+                <img class="w-48 h-[48%] ml-2" src="{{ asset('/images/menu-icon/adds6.png') }}">
             </div>  
         </div>
         <div class="flex flex-row relative ">  
-            <div class="mr-5 xl:block lg:hidden md:hidden">
-                <img class="w-48 h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
+            <div class="mr-3 xl:block lg:hidden md:hidden">
+                <img class="w-[21rem] h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>       
-            <div class="flex flex-col">        
+            <div class="flex flex-col ">        
                 <div class="flex flex-col relative">
                     <div class="flex items-center">
                     <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
@@ -258,8 +258,8 @@
                             Players News
                         </h1>
                     </div>
-                    <div class="flex md:flex-row ">
-                        <div class="w-[308px] h-80 border border-black relative  ">
+                    <div class="flex md:flex-row  w-auto">
+                        <div class="w-[31%] h-80 border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -267,7 +267,7 @@
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
                                         <h1 class="text-sm ml-4 text-[#637a92]">Line Changes</h1>
                                     </div>
-                                    <h1 class=" text-lg font-extrabold">JOHN TAVORES</h1>
+                                    <h1 class=" text-lg font-extrabold md:font-bold">JOHN TAVORES</h1>
                                     <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
                                     <div class="flex mt-1">
                                         <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
@@ -277,7 +277,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" ml-1 mb-2 pb-9">
+                            <div class=" ml-1 mb-2 pb-5">
                                 <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                                 <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                             </div>
@@ -295,7 +295,7 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[308px] h-80 border border-black relative ml-5 mr-5">
+                        <div class="w-[31%] h-80 border border-black relative ml-5 mr-5">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -303,7 +303,7 @@
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
                                         <h1 class="text-sm ml-4 text-slate-100">Confirmed</h1>
                                     </div>
-                                    <h1 class=" text-lg font-extrabold">ILYA SANSONOV</h1>
+                                    <h1 class=" text-lg font-extrabold md:font-bold">ILYA SANSONOV</h1>
                                     <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
                                     <div class="flex mt-1">
                                         <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
@@ -313,7 +313,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" ml-1 mb-2 pb-9">
+                            <div class=" ml-1 mb-2 pb-5">
                                 <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                                 <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                             </div>
@@ -324,13 +324,14 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
+
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[308px] h-80 border border-black relative  ">
+                        <div class="w-[31%] h-80 border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -338,7 +339,7 @@
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
                                         <h1 class="text-sm ml-4 text-slate-100">Projected</h1>
                                     </div>
-                                    <h1 class=" text-lg font-extrabold">JACOB MARKSTORM</h1>
+                                    <h1 class=" text-lg font-extrabold md:font-bold">JACOB MARKSTORM</h1>
                                     <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
                                     <div class="flex mt-1">
                                         <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
@@ -348,8 +349,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" ml-1 mb-2 pb-9">
-                                <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
+                            <div class=" ml-1 mb-2 2xl:pb-5 xl:pb-5 lg:pb-5  sm:pb-0">
+                                <p class="text-[14px] font-bold mb-5 md:sm-1">Anderson was the first gaolie off the ice at morning skate</p>
                                 <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                             </div>
                             <div class="flex items-center">
@@ -359,9 +360,9 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
+                            
 
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
-
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
@@ -380,8 +381,8 @@
                             </h1>
                         </div>
                         
-                        <div class="flex flex-row" >
-                                <table class="tbl table-fixed">
+                        <div class="flex flex-row overflow-x-clip">
+                                <table class="tbl table-fixed ">
                                     <tr>
                                         <th class="relative ">First
                                         <div class="absolute right-0 bottom-1">
@@ -815,8 +816,8 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-5 flex items-end xl:block lg:hidden md:hidden">
-                <img class="w-48 h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
+            <div class="ml-3 flex items-end xl:block lg:hidden md:hidden">
+                <img class="w-[21rem] h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
             </div> 
         </div>
     </div>
@@ -824,98 +825,98 @@
 <!-- End Desktop -->
 <!-- Tablet and mobile responsive design -->
 <div class="flex flex-col xl:hidden lg:hidden md:hidden smm-block ">
-       <!-- <div id="carouselExampleControls3" class="carousel slide relative mt-4  hidden md:block smm-block" data-bs-ride="carousel">
-            <div class="carousel-inner relative w-full overflow-hidden">
-                <div class="carousel-item active relative float-left w-full"> 
-                    <div class=" flex justify-center">
-                        <div class="w-[70%] h-[23rem]  relative  ">
-                            <div class=" m-1 mt-5 ">
-                                <div class="bg-orange-400 rounded-full w-40 flex items-center p-1 mb-3">
-                                    <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
-                                    <h1 class="text-sm ml-4 text-black font-semibold">Morning Skates</h1>
-                                </div>
-                                <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-full">
+    <!-- <div id="carouselExampleControls3" class="carousel slide relative mt-4  hidden md:block smm-block" data-bs-ride="carousel">
+        <div class="carousel-inner relative w-full overflow-hidden">
+            <div class="carousel-item active relative float-left w-full"> 
+                <div class=" flex justify-center">
+                    <div class="w-[70%] h-[23rem]  relative  ">
+                        <div class=" m-1 mt-5 ">
+                            <div class="bg-orange-400 rounded-full w-40 flex items-center p-1 mb-3">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
+                                <h1 class="text-sm ml-4 text-black font-semibold">Morning Skates</h1>
+                            </div>
+                            <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-full">
 
-                            </div>
-                            <div class=" ml-1 mb-5 pb-9">
-                                <p class="text-xs font-bold mb-5">Sharks look to put together some extra wins</p>
-                                <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
-                            </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
-
-                                <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                            </div>
                         </div>
-                    </div> 
-                </div>
-                <div class="carousel-item relative float-left w-full">
-                    <div class="flex justify-center align-center">
-                        <div class="w-[70%] h-[23rem]  relative ml-5 mr-5 ">
-                            <div class=" m-1 mt-5 ">
-                                <div class="bg-[#15d869] rounded-full w-40 flex items-center p-1 mb-3">
-                                    <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
-                                    <h1 class="text-sm ml-4 text-black font-semibold">Top Tracks</h1>
-                                </div>
-                                <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-full">
-
-                            </div>
-                            <div class=" ml-1 mb-5 pb-9">
-                                <p class="text-xs font-bold mb-5">Edmonton in a great spot tonight against the Predators</p>
-                                <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
-                            </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
-
-                                <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                            </div>
+                        <div class=" ml-1 mb-5 pb-9">
+                            <p class="text-xs font-bold mb-5">Sharks look to put together some extra wins</p>
+                            <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-item relative float-left w-full">
-                    <div class="flex justify-center align-center">
-                        <div class="w-[70%] h-[23rem]  relative  ">
-                            <div class=" m-1 mt-5 ">
-                                <div class="bg-orange-400  rounded-full w-40 flex items-center p-1 mb-3">
-                                    <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
-                                    <h1 class="text-sm ml-4 text-black font-semibold">Best Sets</h1>
-                                </div>
-                                <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-full">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
 
-                            </div>
-                            <div class=" ml-1 mb-5 pb-9">
-                                <p class="text-xs font-bold mb-5">Sharks look to put together some extra wins</p>
-                                <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
-                            </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
-
-                                <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                            </div>
+                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
                 </div> 
             </div>
-           <button
-                class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-                type="button"
-                data-bs-target="#carouselExampleControls3"
-                data-bs-slide="prev"
-            >
-                <img class="color-red border border-sky-100 rounded-full w-12 rotate-180 " src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
-            </button>
+            <div class="carousel-item relative float-left w-full">
+                <div class="flex justify-center align-center">
+                    <div class="w-[70%] h-[23rem]  relative ml-5 mr-5 ">
+                        <div class=" m-1 mt-5 ">
+                            <div class="bg-[#15d869] rounded-full w-40 flex items-center p-1 mb-3">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
+                                <h1 class="text-sm ml-4 text-black font-semibold">Top Tracks</h1>
+                            </div>
+                            <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-full">
 
-            <button
-                class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-                type="button"
-                data-bs-target="#carouselExampleControls3"
-                data-bs-slide="next"
-            >     
-             <img class="color-red border border-sky-100 rounded-full w-12" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
-           
-            </button>
-      </div>      -->
-      <div>
+                        </div>
+                        <div class=" ml-1 mb-5 pb-9">
+                            <p class="text-xs font-bold mb-5">Edmonton in a great spot tonight against the Predators</p>
+                            <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
+                        </div>
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+
+                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item relative float-left w-full">
+                <div class="flex justify-center align-center">
+                    <div class="w-[70%] h-[23rem]  relative  ">
+                        <div class=" m-1 mt-5 ">
+                            <div class="bg-orange-400  rounded-full w-40 flex items-center p-1 mb-3">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
+                                <h1 class="text-sm ml-4 text-black font-semibold">Best Sets</h1>
+                            </div>
+                            <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-full">
+
+                        </div>
+                        <div class=" ml-1 mb-5 pb-9">
+                            <p class="text-xs font-bold mb-5">Sharks look to put together some extra wins</p>
+                            <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
+                        </div>
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+
+                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <button
+            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+            type="button"
+            data-bs-target="#carouselExampleControls3"
+            data-bs-slide="prev"
+        >
+            <img class="color-red border border-sky-100 rounded-full w-12 rotate-180 " src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
+        </button>
+
+        <button
+            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+            type="button"
+            data-bs-target="#carouselExampleControls3"
+            data-bs-slide="next"
+        >     
+            <img class="color-red border border-sky-100 rounded-full w-12" src="{{ asset('/images/menu-icon/arrow-icon-28.png') }}" alt="">
+        
+        </button>
+    </div>      -->
+        <div>
             <div class="flex justify-center  mt-5 mb-5">
                 <img class="w-3/4 h-14" src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div> 
@@ -939,7 +940,7 @@
                             <img class="w-7" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
                             <p class="text-sm font-bold ml-2">Top Tracks</p>  
                         </div>
-                        <div class="w-full max-h-[23rem]  relative ">
+                        <div class="w-full max-h-[23rem] relative ">
                             <div class="">
                                 <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-full">
                             </div>
@@ -978,9 +979,7 @@
                                 <p class="text-sm ml-2">Toronto Maple Leafs</p> 
                             </td>
                             <td class="border-none text-sm">Line Combinations</td>
-                            <td class="border-none text-sm">Morning Skate</td>
-                            
-                            
+                            <td class="border-none text-sm">Morning Skate</td>                           
                         </tr>
                         <tr class="">
                             <td class="border-none flex flex-row">

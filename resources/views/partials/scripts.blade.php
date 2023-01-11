@@ -338,7 +338,15 @@
         $('#sub-menu > ul.active').removeClass('active');
         $('.'+data).addClass('active');
     })
+    $('#tml_btn').on('touchstart', function(){
+        $('.arrow').toggleClass('rotate-90')
+    });
     
+    $('#tml_btn').on('touchstart', function(){
+        $('#drop_down').toggleClass('hidden');
+        
+    });
+
 
     //Mobile navigation
 
@@ -372,7 +380,7 @@
             }else if($(this).text() == 'NEWS'){
                 $('#scrollbar').removeClass('hidden'); 
                 $('#ldf, #img').addClass('hidden');
-            }else if($(this).text() == 'ODDS'){
+            }else if($(this).text() == 'STATS'){
                 $('#img').removeClass('hidden'); 
                 $('#ldf, #scrollbar').addClass('hidden');
             }else{
@@ -391,8 +399,10 @@
         //     $('#scrollbar').removeClass('hidden');
         //     $('#scrollbar').addClass('active');
         // });
+         
 
-
+           
+  
         
 
         

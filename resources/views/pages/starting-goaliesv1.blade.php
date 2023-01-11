@@ -32,7 +32,7 @@
                 <div class="flex justify-center md:flex-row sm:flex-col gap-4">
                        <div class="w-96 h-5/6 border border-black relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
-                                <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
                                         <div class="bg-green-400 bg-orange-400 rounded-full w-40 flex items-center p-1">
                                             <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -66,7 +66,7 @@
                         </div>       
                             <div class="w-96 h-5/6 border border-black relative mb-10 ">
                                 <div class="flex m-3 mt-5 ">
-                                    <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                             <div class="bg-orange-400 rounded-full w-40 flex items-center p-1">
                                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -120,7 +120,7 @@
                         <div class="flex justify-center md:flex-row sm:flex-col  gap-4">
                             <div class="w-96 h-5/6 border border-black relative mb-10 ">
                                 <div class="flex m-3 mt-5 ">
-                                    <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="w-24 h-28" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                             <div class="bg-green-400 bg-orange-400 rounded-full w-40 flex items-center p-1">
                                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -155,7 +155,7 @@
                             </div>       
                             <div class="w-96 h-5/6 border border-black relative mb-10 ">
                                 <div class="flex m-3 mt-5 ">
-                                    <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                             <div class="bg-orange-400 rounded-full w-40 flex items-center p-1">
                                                 <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -182,9 +182,9 @@
                                         <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                     </div>
                                 </div>  
-                                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
-                                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                                    <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +202,7 @@
                     <div class="flex justify-center md:flex-row sm:flex-col  gap-4">
                         <div class="w-96 h-5/6 border border-black relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
-                                <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="w-24 h-28" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
                                         <div class="bg-green-400 bg-orange-400 rounded-full w-40 flex items-center p-1">
                                             <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -236,7 +236,7 @@
                         </div>       
                         <div class="w-96 h-5/6 border border-black relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
-                                <img class="w-24 h-32 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
                                     <div class="bg-orange-400 rounded-full w-40 flex items-center p-1">
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
