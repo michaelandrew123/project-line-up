@@ -126,10 +126,10 @@
                                 Starting Goalies
                             </h1>
                         </div>
-                        <div class="flex md:flex-row justify-center">
-                            <div class="w-[31%] h-80 border border-black relative  ">
+                        <div class="flex md:flex-row justify-center justify-evenly">
+                            <div class="w-[31%] h-[21rem] border border-black relative  ">
                                 <div class="flex m-1 mt-5 ">
-                                    <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-[#e7e9ec] rounded-full w-[97%] flex items-center p-1">
                                             <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -145,7 +145,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" ml-1 mb-2 pb-5">
+                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
                                     <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                                     <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                                 </div>
@@ -163,9 +163,9 @@
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div>
-                            <div class="w-[31%] h-80 border border-black relative ml-5 mr-5">
+                            <div class="w-[31%] h-[21rem] border border-black relative ">
                                 <div class="flex m-1 mt-5 ">
-                                    <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-[#15d869] rounded-full w-[97%] flex items-center p-1">
                                             <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -181,7 +181,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" ml-1 mb-2 pb-5">
+                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
                                     <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                                     <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                                 </div>
@@ -199,9 +199,9 @@
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div>
-                            <div class="w-[31%] h-80 border border-black relative  ">
+                            <div class="w-[31%] h-[21rem] border border-black relative  ">
                                 <div class="flex m-1 mt-5 ">
-                                    <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-orange-400 rounded-full w-36 flex items-center p-1">
                                             <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -228,8 +228,6 @@
                                         <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                     </div>
                                 </div>
-                                
-
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
@@ -247,7 +245,7 @@
             </div>  
         </div>
         <div class="flex flex-row relative justify-between">  
-            <div class="mr-6 xl:block lg:hidden md:hidden">
+            <div class="mr-[0.5rem] xl:block lg:hidden md:hidden">
                 <img class="w-[21rem] h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>       
             <div class="flex flex-col">  
@@ -258,10 +256,10 @@
                             Player News
                         </h1>
                     </div>
-                    <div class="flex md:flex-row justify-center">
-                        <div class="w-[31%] h-80 border border-black relative  ">
+                    <div class="flex md:flex-row justify-center justify-evenly">
+                        <div class="w-[31%] h-[21rem] border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
-                                <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
                                     <div class="bg-[#e7e9ec] rounded-full w-[100%] flex items-center p-1">
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -277,7 +275,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" ml-1 mb-2 pb-5">
+                            <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
                                 <p class="text-[14px] font-bold mb-5 ">Anderson was the first gaolie off the ice at morning skate</p>
                                 <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                             </div>
@@ -295,9 +293,9 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[31%] h-80 border border-black relative ml-5 mr-5">
+                        <div class="w-[31%] h-[21rem] border border-black relative ">
                             <div class="flex m-1 mt-5 ">
-                                <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
                                     <div class="bg-[#15d869] rounded-full w-[97%] flex items-center p-1">
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -313,7 +311,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" ml-1 mb-2 pb-5">
+                            <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
                                 <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                                 <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                             </div>
@@ -331,9 +329,9 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[31%] h-80 border border-black relative  ">
+                        <div class="w-[31%] h-[21rem] border border-black relative  ">
                             <div class="flex m-1 mt-5 ">
-                                <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
                                     <div class="bg-orange-400 rounded-full w-36 flex items-center p-1">
                                         <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -815,7 +813,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ml-4 flex items-end xl:block lg:hidden md:hidden">
+            <div class="ml-[0.5rem] flex items-end xl:block lg:hidden md:hidden">
                 <img class="w-[27rem] h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
             </div> 
         </div>
@@ -919,8 +917,8 @@
             <div class="flex justify-center  mt-5 mb-5">
                 <img class="w-3/4 h-14" src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div> 
-            <div class="flex flex-col gap-1.5">
-                <div class="flex justify-center">
+            <div class="flex flex-col justify-evenly">
+                <div class="flex justify-center ">
                     <div>
                         <div class="flex felx-row items-center ml-2 mb-0.5">
                             <img class="w-7" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
@@ -1172,15 +1170,8 @@
                     </table>
                 </div>
             </div>
-      </div>
+        </div>
         
-
-
-
-
-
-
-
         <!-- Old Design of Mobile -->
         <!-- <div id="carouselExampleControls" class="carousel slide relative mt-4" data-bs-ride="carousel">
             <div class="flex justify-center items-center mt-4">
@@ -1195,7 +1186,7 @@
                         <div class="parent border border-black w-[85%] relative">
                             <div class="flex flex-row gap-3 ml-2 mt-5">
                                 <div class="">
-                                <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 </div>
                                 <div>
                                     <div>
@@ -1248,7 +1239,7 @@
                         <div class="parent border border-black w-[85%] relative">
                             <div class="flex flex-row gap-3 ml-2 mt-5">
                                 <div class="">
-                                <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 </div>
                                 <div>
                                     <div>
@@ -1302,7 +1293,7 @@
                        <div class="parent border border-black w-[85%] relative">
                             <div class="flex flex-row gap-3 ml-2 mt-5">
                                 <div class="">
-                                <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 </div>
                                 <div>
                                     <div>
@@ -1383,9 +1374,9 @@
                 <div class="carousel-inner relative w-full overflow-hidden">
                         <div class="carousel-item active relative float-left w-full"> 
                             <div class=" flex justify-center">
-                                <div class="w-[70%] h-80 border border-black relative  ">
+                                <div class="w-[70%] h-[21rem] border border-black relative  ">
                                     <div class="flex m-1 mt-5">
-                                        <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                         <div class="ml-2">
                                                 <div class="bg-[#e7e9ec] rounded-full w-[97%] flex items-center p-1">
                                                     <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -1421,9 +1412,9 @@
                         </div>
                         <div class="carousel-item relative float-left w-full">
                             <div class="flex justify-center align-center">
-                                <div class="w-[70%] h-80 border border-black relative ml-5 mr-5">
+                                <div class="w-[70%] h-[21rem] border border-black relative ml-5 mr-5">
                                     <div class="flex m-1 mt-5 ">
-                                        <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                         <div class="ml-2">
                                                 <div class="bg-[#15d869] rounded-full w-[97%] flex items-center p-1">
                                                     <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -1461,9 +1452,9 @@
                         </div>
                         <div class="carousel-item relative float-left w-full">
                             <div class="flex justify-center align-center">
-                                    <div class="w-[70%] h-80 border border-black relative smm-overflow-x-hidden ">
+                                    <div class="w-[70%] h-[21rem] border border-black relative smm-overflow-x-hidden ">
                                         <div class="flex m-1 mt-5 ">
-                                            <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                            <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                             <div class="ml-2">
                                                 <div class="bg-orange-400 rounded-full w-[97%] flex items-center p-1">
                                                     <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -1539,7 +1530,7 @@
                 <div class="parent border border-black w-[85%] relative">
                     <div class="flex flex-row gap-3 ml-2 mt-5">
                         <div class="">
-                          <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                          <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         </div>
                         <div>
                             <div>
@@ -1588,7 +1579,7 @@
                 <div class="parent border border-black w-[85%] relative">
                     <div class="flex flex-row gap-3 ml-2 mt-5">
                         <div class="">
-                          <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                          <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         </div>
                         <div>
                             <div>
@@ -1637,7 +1628,7 @@
                 <div class="parent border border-black w-[85%] relative">
                     <div class="flex flex-row gap-3 ml-2 mt-5">
                         <div class="">
-                          <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                          <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         </div>
                         <div>
                             <div>
