@@ -892,15 +892,15 @@
       
 
   <div class="flex justify-between smm:flex-col block smm:hidden">
-        <div class="flex flex-col md:overflow-x-auto sm:overflow-x-auto block smm-hidden">
-            <div class="flex flex-col gap-10 mr-5 ">
+        <div class="flex flex-col md:overflow-x-auto sm:overflow-x-auto lg:block md:hidden smm-hidden">
+            <div class="flex flex-col gap-[5.5rem] ">
                 <img class="w-48 h-[70%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
                 <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
                 <img class="w-48 h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>
         </div>
-        <div class="">    
-            <div class="flex md:flex-row  w-full  smm-hidden">
+        <div class="flex flex-col items-center gap-5">    
+            <div class="flex md:flex-row  w-full hidden smm-hidden">
                 <div class="w-[18rem] h-80 border border-black relative  ">
                     <div class="flex m-1 mt-5">
                         <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1005,9 +1005,8 @@
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>       
                 </div>         
-                
             </div>
-            <div class="flex md:flex-row sm:flex-col mb-10 mt-10 block smm-hidden">
+            <div class="flex md:flex-row sm:flex-col mb-10 mt-10 hidden smm-hidden">
                 <div class="w-[18rem] h-80 border border-black relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1111,7 +1110,7 @@
                         </div>       
                 </div>         
             </div>
-	        <div class="flex md:flex-row sm:flex-col smm-hidden">
+	        <div class="flex md:flex-row sm:flex-col hidden smm-hidden">
 		            <div class="w-[18rem] h-80 border border-black relative  ">
 		                <div class="flex m-1 mt-5 ">
 		                    <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1215,10 +1214,333 @@
 	                    </div>       
 	               </div>         
 	        </div>
+            <div class="flex md:flex-row justify-evenly block smm-hidden">
+                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                    <div class="flex m-1 mt-5 ">
+                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        <div class="ml-2">
+                            <div class="bg-[#e7e9ec] rounded-full w-[97%] flex items-center p-1">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
+                                <h1 class="text-sm ml-4 text-[#637a92]">Line Changes</h1>
+                            </div>
+                            <h1 class=" text-lg font-extrabold md:font-bold">JOHN TAVORES</h1>
+                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
+                            <div class="flex mt-1">
+                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,700</p>
+                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                        <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
+                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                        <div>
+                            <h3 class="font-bold">David Alter</h3>
+                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+
+                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                    </div>
+                </div>
+                <div class="w-[31%] h-[21rem] border border-black relative ">
+                    <div class="flex m-1 mt-5 ">
+                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        <div class="ml-2">
+                            <div class="bg-[#15d869] rounded-full w-[97%] flex items-center p-1">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
+                                <h1 class="text-sm ml-4 text-slate-100">Confirmed</h1>
+                            </div>
+                            <h1 class=" text-lg font-extrabold md:font-bold">ILYA SANSONOV</h1>
+                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
+                            <div class="flex mt-1">
+                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,700</p>
+                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                        <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
+                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                        <div>
+                            <h3 class="font-bold">David Alter</h3>
+                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+
+                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                    </div>
+                </div>
+                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                    <div class="flex m-1 mt-5 ">
+                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        <div class="ml-2">
+                            <div class="bg-orange-400 rounded-full w-36 flex items-center p-1">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
+                                <h1 class="text-sm ml-4 text-slate-100">Projected</h1>
+                            </div>
+                            <h1 class=" text-lg font-extrabold md:font-bold">JACOB MARKSTORM</h1>
+                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
+                            <div class="flex mt-1">
+                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,700</p>
+                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" ml-1 mb-2 2xl:pb-5 xl:pb-5 lg:pb-5  sm:pb-0">
+                        <p class="text-[14px] font-bold lg:mb-5 md:mb-[13px] md:sm-1">Anderson was the first gaolie off the ice at morning skate</p>
+                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                        <div>
+                            <h3 class="font-bold">David Alter</h3>
+                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                        </div>
+                    </div>
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:flex-row justify-evenly block smm-hidden">
+                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                    <div class="flex m-1 mt-5 ">
+                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        <div class="ml-2">
+                            <div class="bg-[#e7e9ec] rounded-full w-[97%] flex items-center p-1">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
+                                <h1 class="text-sm ml-4 text-[#637a92]">Line Changes</h1>
+                            </div>
+                            <h1 class=" text-lg font-extrabold md:font-bold">JOHN TAVORES</h1>
+                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
+                            <div class="flex mt-1">
+                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,700</p>
+                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                        <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
+                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                        <div>
+                            <h3 class="font-bold">David Alter</h3>
+                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+
+                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                    </div>
+                </div>
+                <div class="w-[31%] h-[21rem] border border-black relative ">
+                    <div class="flex m-1 mt-5 ">
+                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        <div class="ml-2">
+                            <div class="bg-[#15d869] rounded-full w-[97%] flex items-center p-1">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
+                                <h1 class="text-sm ml-4 text-slate-100">Confirmed</h1>
+                            </div>
+                            <h1 class=" text-lg font-extrabold md:font-bold">ILYA SANSONOV</h1>
+                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
+                            <div class="flex mt-1">
+                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,700</p>
+                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                        <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
+                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                        <div>
+                            <h3 class="font-bold">David Alter</h3>
+                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+
+                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                    </div>
+                </div>
+                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                    <div class="flex m-1 mt-5 ">
+                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        <div class="ml-2">
+                            <div class="bg-orange-400 rounded-full w-36 flex items-center p-1">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
+                                <h1 class="text-sm ml-4 text-slate-100">Projected</h1>
+                            </div>
+                            <h1 class=" text-lg font-extrabold md:font-bold">JACOB MARKSTORM</h1>
+                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
+                            <div class="flex mt-1">
+                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,700</p>
+                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" ml-1 mb-2 2xl:pb-5 xl:pb-5 lg:pb-5  sm:pb-0">
+                        <p class="text-[14px] font-bold lg:mb-5 md:mb-[13px] md:sm-1">Anderson was the first gaolie off the ice at morning skate</p>
+                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                        <div>
+                            <h3 class="font-bold">David Alter</h3>
+                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                        </div>
+                    </div>
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:flex-row justify-evenly block smm-hidden">
+                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                    <div class="flex m-1 mt-5 ">
+                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        <div class="ml-2">
+                            <div class="bg-[#e7e9ec] rounded-full w-[97%] flex items-center p-1">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
+                                <h1 class="text-sm ml-4 text-[#637a92]">Line Changes</h1>
+                            </div>
+                            <h1 class=" text-lg font-extrabold md:font-bold">JOHN TAVORES</h1>
+                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
+                            <div class="flex mt-1">
+                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,700</p>
+                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                        <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
+                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                        <div>
+                            <h3 class="font-bold">David Alter</h3>
+                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+
+                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                    </div>
+                </div>
+                <div class="w-[31%] h-[21rem] border border-black relative ">
+                    <div class="flex m-1 mt-5 ">
+                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        <div class="ml-2">
+                            <div class="bg-[#15d869] rounded-full w-[97%] flex items-center p-1">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
+                                <h1 class="text-sm ml-4 text-slate-100">Confirmed</h1>
+                            </div>
+                            <h1 class=" text-lg font-extrabold md:font-bold">ILYA SANSONOV</h1>
+                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
+                            <div class="flex mt-1">
+                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,700</p>
+                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                        <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
+                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                        <div>
+                            <h3 class="font-bold">David Alter</h3>
+                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                        </div>
+                    </div>
+
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+
+                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                    </div>
+                </div>
+                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                    <div class="flex m-1 mt-5 ">
+                        <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        <div class="ml-2">
+                            <div class="bg-orange-400 rounded-full w-36 flex items-center p-1">
+                                <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
+                                <h1 class="text-sm ml-4 text-slate-100">Projected</h1>
+                            </div>
+                            <h1 class=" text-lg font-extrabold md:font-bold">JACOB MARKSTORM</h1>
+                            <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
+                            <div class="flex mt-1">
+                                <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,700</p>
+                                <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                <p class="text-[14px] font-bold ml-1">$8,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" ml-1 mb-2 2xl:pb-5 xl:pb-5 lg:pb-5  sm:pb-0">
+                        <p class="text-[14px] font-bold lg:mb-5 md:mb-[13px] md:sm-1">Anderson was the first gaolie off the ice at morning skate</p>
+                        <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                        <div>
+                            <h3 class="font-bold">David Alter</h3>
+                            <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                        </div>
+                    </div>
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                    </div>
+                </div>
+            </div>
 	    </div>
-        
-        <div class="flex flex-col block overflow-x-visible md:overflow-x-auto sm:overflow-y-hidden block smm-hidden">
-            <div class="flex flex-col  items-center ml-1 gap-6">
+        <div class="flex flex-col block overflow-x-visible md:overflow-x-auto sm:overflow-y-hidden lg:block md:hidden smm-hidden">
+            <div class="flex flex-col  items-center gap-6">
                 <img class="w-64 h-52" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 <img class="w-48 h-4/5" src="{{ asset('/images/menu-icon/adds6.png') }}">
                 <img class="w-48 h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
