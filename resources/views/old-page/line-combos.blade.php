@@ -1467,7 +1467,7 @@
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
                 {{--ads--}}
                 <div class=" flex w-3/5 h-48 justify-center items-center">
-                   <img class="" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                   <img class="w-[14rem]" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div>
                 {{----}}
             </section> 
@@ -1570,7 +1570,7 @@
             <div>
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto">
                 <div class="  w-10/12 m-auto h-20 flex justify-center items-center  mt-5 mb-5">
-                   <img  src="{{ asset('/images/menu-icon/adds_header.png') }}">
+                   <img class="w-[32rem]" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
             </div> 
             <hr />
@@ -1657,7 +1657,7 @@
                 <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
                 {{--ads--}}
                 <div class=" flex w-3/5 h-48 justify-center items-center">
-                   <img class="" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                   <img class="w-[14rem]" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div>
                 {{----}}
             </div>
@@ -1780,7 +1780,7 @@
             </section> 
 
             <div class="  w-10/12 m-auto h-20 flex justify-center items-center  mt-5 mb-5">
-               <img  src="{{ asset('/images/menu-icon/adds_header.png') }}">
+               <img class="w-[32rem]" src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div>
             <!-- Fifth row -->
             <hr />

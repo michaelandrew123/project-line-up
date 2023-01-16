@@ -442,7 +442,7 @@
                 <li ><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">GAME ODDS</a></li>
                 <li ><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">PLAYER PROPS</a></li>
             </ul> 
-            <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap justify-center relative 2xl:left-[44rem] xl:left-[44rem] xl:w-[53%]  lg:left-[30rem] lg:w-[53%]  md:left-[29rem] md:w-[53%]">
+            <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap justify-center relative 2xl:left-[44rem] xl:left-[44rem] xl:w-[53%]  lg:left-[30rem] lg:w-[53%]  md:left-[26rem] md:w-[53%]">
                 <ul class="w-full bg-white flex flex-wrap gap-2 m-1">
                     <li><a href=""><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>

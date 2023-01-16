@@ -5,18 +5,20 @@
 
     <!-- Desktop Design -->
     <div class="flex justify-evenly lg:flex-row md:flex-col sm:flex-col smm-hidden">
-            <div class="flex flex-col xl:block lg:block md:hidden">
-                <img class="w-[17rem] h-[35rem] mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
-                <img class="w-[17rem] h-[185px] mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
-                <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds4.png') }}">
-            </div>
+        <div class="flex flex-col xl:block lg:block md:hidden">
+            <img class="w-[17rem] h-[35rem] mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
+            <img class="w-[17rem] h-[185px] mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
+            <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds4.png') }}">
+        </div>
         <div class=" flex flex-col">  
             <div class="flex justify-center mb-5">
                 <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
-            </div>  
-            <h1 class="text-black text-3xl font-bold">Starting Goalies</h1>
-            <div class="flex justify-center  mb-3 w-">
-                <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex justify-between">
+            </div> 
+            <div class="flex">
+              <h1 class="text-black text-3xl font-bold lg:ml-0 md:ml-8">Starting Goalies</h1>
+            </div> 
+            <div class=" flex justify-center mb-3 ">
+                <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex  justify-between">
                     <img class="w-16" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
                     <div class="flex flex-col items-center gap-5 mb-4 justify-center">
                         <p class="text-white  xl:text-lg lg:text-lg font-bold  ">FEB 18TH, 2022 7:00PM EST</p>
@@ -102,20 +104,20 @@
                     </div> 
                     <div class="flex flex-col">    
                         <div class="flex justify-center mb-3 ">
-                                    <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex gap-16 items-center">
-                                        <div class="flex gap-32">
-                                            <div class="flex">
-                                                <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
-                                                <h1 class="text-white text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
-                                            </div>
-                                            <div class="flex">
-                                                <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
-                                                <h1 class="text-white text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
-                                            </div> 
-                                        </div>                                                               
-                                        <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
+                            <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex gap-16 items-center">
+                                <div class="flex gap-32">
+                                    <div class="flex">
+                                        <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                        <h1 class="text-white text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
                                     </div>
-                                </div>
+                                    <div class="flex">
+                                        <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                                        <h1 class="text-white text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
+                                    </div> 
+                                </div>                                                               
+                                <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
+                            </div>
+                        </div>
                         <div class=" ">
                         <div class="flex justify-center md:flex-row sm:flex-col  gap-4">
                             <div class="w-96 h-5/6 border border-black relative mb-10 ">
@@ -191,11 +193,19 @@
                     </div>  
                 </div>
                 <div class="flex flex-col">   
-                    <div class="flex justify-center mb-3 w-">
-                        <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex ">
-                        <h1 class="text-white text-3xl sm:text-1xl font-bold ">NASHILLE <br> PREDATOR </h1>
-                            <h1 class="text-white text-3xl sm:text-1xl font-bold xl:ml-60 lg:ml-60 md:ml-64 sm:ml-40  ">CAROLINA <br>HURRICANES</h1>
-                            <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold xl:ml-20 lg:ml-20 md:ml-20 sm:ml-10 lg:mt-0 md:mt-0 sm:mt-2 ">FEB 18TH, 2022 7:00PM EST</p>
+                    <div class="flex justify-center mb-3 ">
+                        <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex gap-16 items-center">
+                            <div class="flex gap-32">
+                                <div class="flex">
+                                    <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                    <h1 class="text-white text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
+                                </div>
+                                <div class="flex">
+                                    <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                                    <h1 class="text-white text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
+                                </div> 
+                            </div>                                                               
+                            <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
                         </div>
                     </div>
                     <div class=" ">
@@ -527,8 +537,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-center my-3">
-                <div class="w-2/4 h-32 bg-lime-400 ">                
-                </div>
+                <img class="w-2/4 h-32" src="{{ asset('/images/menu-icon/adds3.png') }}">                
             </div>
             <div class="flex flex-col items-center gap-1 mt-3">
                 <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
@@ -576,7 +585,6 @@
                             </div> 
                         </div>
                     </div>
-                    
                     <div class="rectangle">
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
@@ -734,9 +742,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full flex justify-center my-3">
-                <div class="w-2/4 h-32 bg-lime-400 ">                
-                </div>
+            <div class="w-full flex justify-center my-2">
+               <img class="w-2/4 h-32 " src="{{ asset('/images/menu-icon/adds2.png') }}">               
             </div>
             <div class="flex flex-col items-center gap-1 mt-3">
                 <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
@@ -840,9 +847,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full flex justify-center my-3">
-                <div class="w-full h-16 bg-lime-400 ">                
-                </div>
+            <div class="w-full flex justify-center my-2">
+               <img class="w-full h-16" src="{{ asset('/images/menu-icon/adds_header.png') }}">                
             </div>
         </div>
     <div class="hidden smm-block">
