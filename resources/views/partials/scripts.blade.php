@@ -27,8 +27,7 @@
         $(this).css("border-left", "none");
     });
     
-
-    
+      
 
 
     
@@ -341,6 +340,7 @@
         $('#sub-menu > ul.active').removeClass('active');
         $('.'+data).addClass('active');
     })
+
     $('#tml_btn').on('touchstart', function(){
         $('.arrow').toggleClass('rotate-90')
     });
@@ -349,7 +349,9 @@
         $('#drop_down').toggleClass('hidden');
         
     });
+    
 
+  
 
     //Mobile navigation
 
@@ -437,6 +439,7 @@
     //     // }
         
     //     });
+    
     $('#btn-n').on('click', function(){
         $('#btn-n').addClass('bg-[#202e5b]');
         $('#btn-l').removeClass('bg-[#202e5b]');
