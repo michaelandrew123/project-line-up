@@ -32,4 +32,7 @@ class HockeyController extends Controller
     public function schedule(){
         return view('pages/schedule');
     }
+    public function projections(){
+        return view('pages/projections');
+    }
 }

@@ -32,7 +32,7 @@
             </div>
             <div class=" ">
                 <div class="flex justify-center md:flex-row sm:flex-col gap-4">
-                       <div class="w-96 h-5/6 border border-black relative mb-10 ">
+                       <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
                                 <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -66,7 +66,7 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>       
-                            <div class="w-96 h-5/6 border border-black relative mb-10 ">
+                            <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
                                 <div class="flex m-3 mt-5 ">
                                     <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
@@ -120,7 +120,7 @@
                         </div>
                         <div class=" ">
                         <div class="flex justify-center md:flex-row sm:flex-col  gap-4">
-                            <div class="w-96 h-5/6 border border-black relative mb-10 ">
+                            <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
                                 <div class="flex m-3 mt-5 ">
                                     <img class="w-24 h-28" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
@@ -155,7 +155,7 @@
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div>       
-                            <div class="w-96 h-5/6 border border-black relative mb-10 ">
+                            <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
                                 <div class="flex m-3 mt-5 ">
                                     <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
@@ -210,7 +210,7 @@
                     </div>
                     <div class=" ">
                     <div class="flex justify-center md:flex-row sm:flex-col  gap-4">
-                        <div class="w-96 h-5/6 border border-black relative mb-10 ">
+                        <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
                                 <img class="w-24 h-28" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -244,7 +244,7 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>       
-                        <div class="w-96 h-5/6 border border-black relative mb-10 ">
+                        <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
                                 <img class="w-24 h-28 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -341,7 +341,7 @@
                     </div>
                     <img class="w-12 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
                 </div>
-                <div class="parent border border-black w-full relative">
+                <div class="parent border border-black rounded-xl w-full relative">
                     <div class="flex flex-row gap-1.5 ml-2 mt-5">
                         <div class="">
                             <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -387,7 +387,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center w-full ">
-                    <div class="parent border border-black w-full relative">
+                    <div class="parent border border-black rounded-xl w-full relative">
                         <div class="flex flex-row gap-1.5 ml-2 mt-5">
                             <div class="">
                                 <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -443,7 +443,7 @@
                     </div>
                     <img class="w-12 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
                 </div>
-                <div class="parent border border-black w-full relative">
+                <div class="parent border border-black rounded-xl w-full relative">
                     <div class="flex flex-row gap-1.5 ml-2 mt-5">
                         <div class="">
                             <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -489,7 +489,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center w-full ">
-                    <div class="parent border border-black w-full relative">
+                    <div class="parent border border-black rounded-xl w-full relative">
                         <div class="flex flex-row gap-1.5 ml-2 mt-5">
                             <div class="">
                                 <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -548,7 +548,7 @@
                     </div>
                     <img class="w-12 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
                 </div>
-                <div class="parent border border-black w-full relative">
+                <div class="parent border border-black rounded-xl w-full relative">
                     <div class="flex flex-row gap-1.5 ml-2 mt-5">
                         <div class="">
                             <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -593,7 +593,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center w-full ">
-                    <div class="parent border border-black w-full relative">
+                    <div class="parent border border-black rounded-xl w-full relative">
                         <div class="flex flex-row gap-1.5 ml-2 mt-5">
                             <div class="">
                                 <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -649,7 +649,7 @@
                     </div>
                     <img class="w-12 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
                 </div>
-                <div class="parent border border-black w-full relative">
+                <div class="parent border border-black rounded-xl w-full relative">
                     <div class="flex flex-row gap-1.5 ml-2 mt-5">
                         <div class="">
                             <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -695,7 +695,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center w-full ">
-                    <div class="parent border border-black w-full relative">
+                    <div class="parent border border-black rounded-xl w-full relative">
                         <div class="flex flex-row gap-1.5 ml-2 mt-5">
                             <div class="">
                                 <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -754,7 +754,7 @@
                     </div>
                     <img class="w-12 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
                 </div>
-                <div class="parent border border-black w-full relative">
+                <div class="parent border border-black rounded-xl w-full relative">
                     <div class="flex flex-row gap-1.5 ml-2 mt-5">
                         <div class="">
                             <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -800,7 +800,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center w-full ">
-                    <div class="parent border border-black w-full relative">
+                    <div class="parent border border-black rounded-xl w-full relative">
                         <div class="flex flex-row gap-1.5 ml-2 mt-5">
                             <div class="">
                                 <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
