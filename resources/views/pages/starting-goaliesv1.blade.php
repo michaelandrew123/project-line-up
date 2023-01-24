@@ -5,18 +5,20 @@
 
     <!-- Desktop Design -->
     <div class="flex justify-evenly lg:flex-row md:flex-col sm:flex-col smm-hidden">
-            <div class="flex flex-col xl:block lg:block md:hidden">
-                <img class="w-[17rem] h-[35rem] mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
-                <img class="w-[17rem] h-[185px] mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
-                <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds4.png') }}">
-            </div>
+        <div class="flex flex-col xl:block lg:block md:hidden">
+            <img class="w-[17rem] h-[35rem] mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
+            <img class="w-[17rem] h-[185px] mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
+            <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds4.png') }}">
+        </div>
         <div class=" flex flex-col">  
             <div class="flex justify-center mb-5">
                 <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
-            </div>  
-            <h1 class="text-black text-3xl font-bold">Starting Goalies</h1>
-            <div class="flex justify-center  mb-3 w-">
-                <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex justify-between">
+            </div> 
+            <div class="flex">
+              <h1 class="text-black text-3xl font-bold lg:ml-0 md:ml-8">Starting Goalies</h1>
+            </div> 
+            <div class=" flex justify-center mb-3 ">
+                <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex  justify-between">
                     <img class="w-16" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
                     <div class="flex flex-col items-center gap-5 mb-4 justify-center">
                         <p class="text-white  xl:text-lg lg:text-lg font-bold  ">FEB 18TH, 2022 7:00PM EST</p>
@@ -102,20 +104,20 @@
                     </div> 
                     <div class="flex flex-col">    
                         <div class="flex justify-center mb-3 ">
-                                    <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex gap-16 items-center">
-                                        <div class="flex gap-32">
-                                            <div class="flex">
-                                                <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
-                                                <h1 class="text-white text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
-                                            </div>
-                                            <div class="flex">
-                                                <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
-                                                <h1 class="text-white text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
-                                            </div> 
-                                        </div>                                                               
-                                        <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
+                            <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex gap-16 items-center">
+                                <div class="flex gap-32">
+                                    <div class="flex">
+                                        <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                        <h1 class="text-white text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
                                     </div>
-                                </div>
+                                    <div class="flex">
+                                        <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                                        <h1 class="text-white text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
+                                    </div> 
+                                </div>                                                               
+                                <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
+                            </div>
+                        </div>
                         <div class=" ">
                         <div class="flex justify-center md:flex-row sm:flex-col  gap-4">
                             <div class="w-96 h-5/6 border border-black relative mb-10 ">
@@ -191,11 +193,19 @@
                     </div>  
                 </div>
                 <div class="flex flex-col">   
-                    <div class="flex justify-center mb-3 w-">
-                        <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex ">
-                        <h1 class="text-white text-3xl sm:text-1xl font-bold ">NASHILLE <br> PREDATOR </h1>
-                            <h1 class="text-white text-3xl sm:text-1xl font-bold xl:ml-60 lg:ml-60 md:ml-64 sm:ml-40  ">CAROLINA <br>HURRICANES</h1>
-                            <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold xl:ml-20 lg:ml-20 md:ml-20 sm:ml-10 lg:mt-0 md:mt-0 sm:mt-2 ">FEB 18TH, 2022 7:00PM EST</p>
+                    <div class="flex justify-center mb-3 ">
+                        <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex gap-16 items-center">
+                            <div class="flex gap-32">
+                                <div class="flex">
+                                    <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
+                                    <h1 class="text-white text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
+                                </div>
+                                <div class="flex">
+                                    <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                                    <h1 class="text-white text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
+                                </div> 
+                            </div>                                                               
+                            <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
                         </div>
                     </div>
                     <div class=" ">
@@ -526,215 +536,109 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full flex justify-center my-3"> 
-                   <img class="w-2/4 h-32" src="{{ asset('/images/menu-icon/adds7.png') }}">            
-            </div>
-            <div class="flex flex-col items-center gap-1 mt-3">
-                <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
-                    <img class="w-12 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt="">
-                    <div class="text-center">
-                        <h1 class="text-md font-semibold">Tronto Maple Leafs @ Calgary Flames</h1>
-                        <p class="text-sm font-semibold">7:00 pm EST</p>
-                    </div>
-                    <img class="w-12 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
-                </div>
-                <div class="parent border border-black w-full relative">
-                    <div class="flex flex-row gap-1.5 ml-2 mt-5">
-                        <div class="">
-                            <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
-                        </div>
-                        <div class="flex flex-col gap-3 ml-3">
-                            <div>
-                                <div class="flex flex-row items-center">
-                                    <img src="{{ asset('/images/menu-icon/green-checked.png') }}" class="w-[24px] rounded-full ">
-                                    <h1 class="text-[12px] font-extrabold ml-px text-black">CONFIRMED</h1>
-                                </div>
-                            </div>
-                            <div >
-                                <h1 class=" text-xl font-extrabold">JUUSE SAROS</h1>
-                                <p class="text-[9px] font-bold ml-2">Toronto Maple Leafs - c</p>
-                            </div>
-                            <div class="flex flex-row">
-                                <div class="flex flex-row items-center gap-1">
-                                    <img class="w-[9%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                    <p class="text-[10px] font-bold">7500</p>
-                                    <img class="w-[9%] ml-2" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                    <p class="text-[10px] font-bold">8200</p>
-                                </div>
-                            </div> 
-                        </div>                    
-                    </div>
-                    <div class="m-px gap-1 mb-px">
-                        <div class="mt-5">
-                            <div class="flex items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="font-bold">David Alter</h3>
-                                    <p class="text-[12px] ">11/07/2022 4:21pm EST</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    
-                    <div class="rectangle">
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
-                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col items-center w-full ">
-                    <div class="parent border border-black w-full relative">
-                        <div class="flex flex-row gap-1.5 ml-2 mt-5">
-                            <div class="">
-                                <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
-                            </div>
-                            <div class="flex flex-col gap-3 ml-3">
-                                <div>
-                                    <div class="flex flex-row items-center">
-                                        <img src="{{ asset('/images/menu-icon/green-checked.png') }}" class="w-[24px] rounded-full ">
-                                        <h1 class="text-[12px] font-extrabold ml-px text-black">PROJECTED</h1>
-                                    </div>
-                                </div>
-                                <div >
-                                    <h1 class=" text-xl font-extrabold">PREDRIK ANDERSON</h1>
-                                    <p class="text-[9px] font-bold ml-2">Toronto Maple Leafs - c</p>
-                                </div>
-                                <div class="flex flex-row">
-                                    <div class="flex flex-row items-center gap-1">
-                                        <img class="w-[9%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                        <p class="text-[10px] font-bold">7500</p>
-                                        <img class="w-[9%] ml-2" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                        <p class="text-[10px] font-bold">8200</p>
-                                    </div>
-                                </div> 
-                            </div>                    
-                        </div>
-                        <div class="m-px gap-1 mb-px">
-                            <div class="mt-5">
-                                <div class="flex items-center">
-                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                    <div>
-                                        <h3 class="font-bold">David Alter</h3>
-                                        <p class="text-[12px] ">11/07/2022 4:21pm EST</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        
-                        <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
-                                <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col items-center gap-1 mt-3">
-                <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
-                    <img class="w-12 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt="">
-                    <div class="text-center">
-                        <h1 class="text-md font-semibold">Tronto Maple Leafs @ Calgary Flames</h1>
-                        <p class="text-sm font-semibold">7:00 pm EST</p>
-                    </div>
-                    <img class="w-12 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
-                </div>
-                <div class="parent border border-black w-full relative">
-                    <div class="flex flex-row gap-1.5 ml-2 mt-5">
-                        <div class="">
-                            <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
-                        </div>
-                        <div class="flex flex-col gap-3 ml-3">
-                            <div>
-                                <div class="flex flex-row items-center">
-                                    <img src="{{ asset('/images/menu-icon/green-checked.png') }}" class="w-[24px] rounded-full ">
-                                    <h1 class="text-[12px] font-extrabold ml-px text-black">CONFIRMED</h1>
-                                </div>
-                            </div>
-                            <div >
-                                <h1 class=" text-xl font-extrabold">JUUSE SAROS</h1>
-                                <p class="text-[9px] font-bold ml-2">Toronto Maple Leafs - c</p>
-                            </div>
-                            <div class="flex flex-row">
-                                <div class="flex flex-row items-center gap-1">
-                                    <img class="w-[9%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                    <p class="text-[10px] font-bold">7500</p>
-                                    <img class="w-[9%] ml-2" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                    <p class="text-[10px] font-bold">8200</p>
-                                </div>
-                            </div> 
-                        </div>                    
-                    </div>
-                    <div class="m-px gap-1 mb-px">
-                        <div class="mt-5">
-                            <div class="flex items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="font-bold">David Alter</h3>
-                                    <p class="text-[12px] ">11/07/2022 4:21pm EST</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                    
-                    <div class="rectangle">
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
-                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col items-center w-full ">
-                    <div class="parent border border-black w-full relative">
-                        <div class="flex flex-row gap-1.5 ml-2 mt-5">
-                            <div class="">
-                                <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
-                            </div>
-                            <div class="flex flex-col gap-3 ml-3">
-                                <div>
-                                    <div class="flex flex-row items-center">
-                                        <img src="{{ asset('/images/menu-icon/green-checked.png') }}" class="w-[24px] rounded-full ">
-                                        <h1 class="text-[12px] font-extrabold ml-px text-black">PROJECTED</h1>
-                                    </div>
-                                </div>
-                                <div >
-                                    <h1 class=" text-xl font-extrabold">PREDRIK ANDERSON</h1>
-                                    <p class="text-[9px] font-bold ml-2">Toronto Maple Leafs - c</p>
-                                </div>
-                                <div class="flex flex-row">
-                                    <div class="flex flex-row items-center gap-1">
-                                        <img class="w-[9%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
-                                        <p class="text-[10px] font-bold">7500</p>
-                                        <img class="w-[9%] ml-2" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
-                                        <p class="text-[10px] font-bold">8200</p>
-                                    </div>
-                                </div> 
-                            </div>                    
-                        </div>
-                        <div class="m-px gap-1 mb-px">
-                            <div class="mt-5">
-                                <div class="flex items-center">
-                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                    <div>
-                                        <h3 class="font-bold">David Alter</h3>
-                                        <p class="text-[12px] ">11/07/2022 4:21pm EST</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        
-                        <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
-                                <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="w-full flex justify-center my-3">
-                <img class="w-2/4 h-40" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                <img class="w-2/4 h-32" src="{{ asset('/images/menu-icon/adds3.png') }}">                
+            </div>
+            <div class="flex flex-col items-center gap-1 mt-3">
+                <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
+                    <img class="w-12 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt="">
+                    <div class="text-center">
+                        <h1 class="text-md font-semibold">Tronto Maple Leafs @ Calgary Flames</h1>
+                        <p class="text-sm font-semibold">7:00 pm EST</p>
+                    </div>
+                    <img class="w-12 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                </div>
+                <div class="parent border border-black w-full relative">
+                    <div class="flex flex-row gap-1.5 ml-2 mt-5">
+                        <div class="">
+                            <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        </div>
+                        <div class="flex flex-col gap-3 ml-3">
+                            <div>
+                                <div class="flex flex-row items-center">
+                                    <img src="{{ asset('/images/menu-icon/green-checked.png') }}" class="w-[24px] rounded-full ">
+                                    <h1 class="text-[12px] font-extrabold ml-px text-black">CONFIRMED</h1>
+                                </div>
+                            </div>
+                            <div >
+                                <h1 class=" text-xl font-extrabold">JUUSE SAROS</h1>
+                                <p class="text-[9px] font-bold ml-2">Toronto Maple Leafs - c</p>
+                            </div>
+                            <div class="flex flex-row">
+                                <div class="flex flex-row items-center gap-1">
+                                    <img class="w-[9%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                    <p class="text-[10px] font-bold">7500</p>
+                                    <img class="w-[9%] ml-2" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                                    <p class="text-[10px] font-bold">8200</p>
+                                </div>
+                            </div> 
+                        </div>                    
+                    </div>
+                    <div class="m-px gap-1 mb-px">
+                        <div class="mt-5">
+                            <div class="flex items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <div>
+                                    <h3 class="font-bold">David Alter</h3>
+                                    <p class="text-[12px] ">11/07/2022 4:21pm EST</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="rectangle">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center w-full ">
+                    <div class="parent border border-black w-full relative">
+                        <div class="flex flex-row gap-1.5 ml-2 mt-5">
+                            <div class="">
+                                <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                            </div>
+                            <div class="flex flex-col gap-3 ml-3">
+                                <div>
+                                    <div class="flex flex-row items-center">
+                                        <img src="{{ asset('/images/menu-icon/green-checked.png') }}" class="w-[24px] rounded-full ">
+                                        <h1 class="text-[12px] font-extrabold ml-px text-black">PROJECTED</h1>
+                                    </div>
+                                </div>
+                                <div >
+                                    <h1 class=" text-xl font-extrabold">PREDRIK ANDERSON</h1>
+                                    <p class="text-[9px] font-bold ml-2">Toronto Maple Leafs - c</p>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="flex flex-row items-center gap-1">
+                                        <img class="w-[9%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                        <p class="text-[10px] font-bold">7500</p>
+                                        <img class="w-[9%] ml-2" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                                        <p class="text-[10px] font-bold">8200</p>
+                                    </div>
+                                </div> 
+                            </div>                    
+                        </div>
+                        <div class="m-px gap-1 mb-px">
+                            <div class="mt-5">
+                                <div class="flex items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="font-bold">David Alter</h3>
+                                        <p class="text-[12px] ">11/07/2022 4:21pm EST</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        <div class="rectangle">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                                <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="flex flex-col items-center gap-1 mt-3">
                 <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
@@ -838,8 +742,115 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full flex justify-center my-3">
-              <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
+
+            <div class="w-full flex justify-center my-2">
+               <img class="w-2/4 h-32 " src="{{ asset('/images/menu-icon/adds2.png') }}">               
+
+            </div>
+            <div class="flex flex-col items-center gap-1 mt-3">
+                <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
+                    <img class="w-12 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt="">
+                    <div class="text-center">
+                        <h1 class="text-md font-semibold">Tronto Maple Leafs @ Calgary Flames</h1>
+                        <p class="text-sm font-semibold">7:00 pm EST</p>
+                    </div>
+                    <img class="w-12 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                </div>
+                <div class="parent border border-black w-full relative">
+                    <div class="flex flex-row gap-1.5 ml-2 mt-5">
+                        <div class="">
+                            <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                        </div>
+                        <div class="flex flex-col gap-3 ml-3">
+                            <div>
+                                <div class="flex flex-row items-center">
+                                    <img src="{{ asset('/images/menu-icon/green-checked.png') }}" class="w-[24px] rounded-full ">
+                                    <h1 class="text-[12px] font-extrabold ml-px text-black">CONFIRMED</h1>
+                                </div>
+                            </div>
+                            <div >
+                                <h1 class=" text-xl font-extrabold">JUUSE SAROS</h1>
+                                <p class="text-[9px] font-bold ml-2">Toronto Maple Leafs - c</p>
+                            </div>
+                            <div class="flex flex-row">
+                                <div class="flex flex-row items-center gap-1">
+                                    <img class="w-[9%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                    <p class="text-[10px] font-bold">7500</p>
+                                    <img class="w-[9%] ml-2" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                                    <p class="text-[10px] font-bold">8200</p>
+                                </div>
+                            </div> 
+                        </div>                    
+                    </div>
+                    <div class="m-px gap-1 mb-px">
+                        <div class="mt-5">
+                            <div class="flex items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <div>
+                                    <h3 class="font-bold">David Alter</h3>
+                                    <p class="text-[12px] ">11/07/2022 4:21pm EST</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="rectangle">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center w-full ">
+                    <div class="parent border border-black w-full relative">
+                        <div class="flex flex-row gap-1.5 ml-2 mt-5">
+                            <div class="">
+                                <img class="w-[7rem] h-[8rem]" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                            </div>
+                            <div class="flex flex-col gap-3 ml-3">
+                                <div>
+                                    <div class="flex flex-row items-center">
+                                        <img src="{{ asset('/images/menu-icon/green-checked.png') }}" class="w-[24px] rounded-full ">
+                                        <h1 class="text-[12px] font-extrabold ml-px text-black">PROJECTED</h1>
+                                    </div>
+                                </div>
+                                <div >
+                                    <h1 class=" text-xl font-extrabold">PREDRIK ANDERSON</h1>
+                                    <p class="text-[9px] font-bold ml-2">Toronto Maple Leafs - c</p>
+                                </div>
+                                <div class="flex flex-row">
+                                    <div class="flex flex-row items-center gap-1">
+                                        <img class="w-[9%]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                                        <p class="text-[10px] font-bold">7500</p>
+                                        <img class="w-[9%] ml-2" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">
+                                        <p class="text-[10px] font-bold">8200</p>
+                                    </div>
+                                </div> 
+                            </div>                    
+                        </div>
+                        <div class="m-px gap-1 mb-px">
+                            <div class="mt-5">
+                                <div class="flex items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="font-bold">David Alter</h3>
+                                        <p class="text-[12px] ">11/07/2022 4:21pm EST</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                       
+                        <div class="rectangle">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                                <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-center my-2">
+               <img class="w-full h-16" src="{{ asset('/images/menu-icon/adds_header.png') }}">                
             </div>
         </div>
     <div class="hidden smm-block">

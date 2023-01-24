@@ -238,8 +238,8 @@
                     </div> 
                </div> 
             </div>
-            <div class="bg-[#99D9D9] text-center p-3">
-                  <h2 class="text-[#ffffff] text-[#001628] lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
+            <div class="bg-black text-center p-3">
+                  <h2 class="text-white  lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
                </div>
       </div>
  </div>
@@ -475,9 +475,9 @@
                     </div> 
                </div> 
             </div>
-            <div class="bg-[#99D9D9] text-center p-3">
-                  <h2 class="text-[#ffffff] text-[#001628] lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
-               </div>
+            <div class="bg-black text-center p-3">
+              <h2 class="text-white lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
+            </div>
       </div>
  </div>
  <!-- end of second row -->
@@ -712,9 +712,9 @@
                     </div> 
                </div> 
             </div>
-            <div class="bg-[#99D9D9] text-center p-3">
-                  <h2 class="text-[#ffffff] text-[#001628] lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
-               </div>
+            <div class="bg-black text-center p-3">
+              <h2 class="text-white lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
+            </div>
       </div>
  </div>
  <!-- end of third row -->
@@ -1002,8 +1002,8 @@
                </div> 
             </div>
             <div class="bg-[#99D9D9] text-center p-3">
-                  <h2 class="text-[#001628]  lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
-               </div>
+              <h2 class="text-[#001628]  lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
+            </div>
       </div>
  </div>
  <!-- end of third shirt group -->

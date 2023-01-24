@@ -29,4 +29,7 @@ class HockeyController extends Controller
     public function playerNews(){
         return view('pages/player-News');
     }
+    public function schedule(){
+        return view('pages/schedule');
+    }
 }

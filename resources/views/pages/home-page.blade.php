@@ -22,7 +22,7 @@
                             <div class=" m-1 mt-5 ">
                                 <div class="bg-orange-400 rounded-full w-[63%] flex items-center p-1 mb-3">
                                     <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
-                                    <h1 class="text-sm ml-4 text-black font-semibold">Morning Skates</h1>
+                                    <h1 class="lg:text-sm md:text-[13px] ml-4 text-black font-semibold">Morning Skates</h1>
                                 </div>
                                 <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-[21rem]">
 
@@ -41,7 +41,7 @@
                             <div class=" m-1 mt-5 ">
                                 <div class="bg-[#15d869] rounded-full w-[50%] flex items-center p-1 mb-3">
                                     <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
-                                    <h1 class="text-sm ml-4 text-black font-semibold">Top Tracks</h1>
+                                    <h1 class="lg:text-sm md:text-[13px] ml-4 text-black font-semibold">Top Tracks</h1>
                                 </div>
                                 <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-[21rem]">
 
@@ -60,7 +60,7 @@
                             <div class=" m-1 mt-5 ">
                                 <div class="bg-orange-400  rounded-full w-[50%] flex items-center p-1 mb-3">
                                     <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
-                                    <h1 class="text-sm ml-4 text-black font-semibold">Best Sets</h1>
+                                    <h1 class="lg:text-sm md:text-[13px]  ml-4 text-black font-semibold">Best Sets</h1>
                                 </div>
                                 <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-[21rem]">
 
