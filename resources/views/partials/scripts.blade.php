@@ -1,5 +1,6 @@
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
     // let headers = new Headers();
     //
@@ -462,5 +463,24 @@
         $('#table-2').addClass('hidden');
     });
         
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        gap:5,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                nav:true
+            },
+            600:{
+                items:5,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:false
+            }
+        }
+    })
 
 </script>

@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="flex md:flex-row justify-evenly block smm-hidden">
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  z-20">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -65,13 +65,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -101,13 +101,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -136,14 +136,14 @@
                             <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                         </div>
                     </div>
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
             </div>
             <div class="flex my-5 md:flex-row justify-evenly block smm-hidden">
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -173,13 +173,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -209,13 +209,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -244,14 +244,14 @@
                             <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                         </div>
                     </div>
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
             </div>
             <div class="flex md:flex-row justify-evenly block smm-hidden">
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -281,13 +281,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -317,13 +317,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -352,7 +352,7 @@
                             <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                         </div>
                     </div>
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
@@ -360,7 +360,7 @@
             </div>
             <!-- <div class="mb-5">
                 <div class="flex md:flex-row">
-                    <div class="w-[19rem] h-80 border border-black relative  ">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -384,13 +384,13 @@
                             </div>
                         </div>
 
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[19rem] h-80 border border-black relative ml-5 mr-5">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative ml-5 mr-5">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -419,13 +419,13 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[19rem] h-80 border border-black relative  ">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -455,7 +455,7 @@
                         </div>
                         
 
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
@@ -464,7 +464,7 @@
             </div>
             <div>
                 <div class="flex md:flex-row">
-                    <div class="w-[19rem] h-80 border border-black relative  ">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -487,12 +487,12 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[19rem] h-80 border border-black relative ml-5 mr-5">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative ml-5 mr-5">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -521,13 +521,13 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[19rem] h-80 border border-black relative  ">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -555,7 +555,7 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
@@ -576,7 +576,7 @@
             <!-- <div class="mb-5">
                 <div class="mb-5">
                     <div class="flex md:flex-row">
-                        <div class="w-[19rem] h-80 border border-black relative  ">
+                        <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -600,13 +600,13 @@
                                 </div>
                             </div>
 
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[19rem] h-80 border border-black relative ml-5 mr-5">
+                        <div class="w-[19rem] h-80 border border-black rounded-xl relative ml-5 mr-5">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -635,13 +635,13 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[19rem] h-80 border border-black relative  ">
+                        <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -669,7 +669,7 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
@@ -678,7 +678,7 @@
                 </div>
                 <div>
                     <div class="flex md:flex-row">
-                        <div class="w-[19rem] h-80 border border-black relative  ">
+                        <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -701,12 +701,12 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[19rem] h-80 border border-black relative ml-5 mr-5">
+                        <div class="w-[19rem] h-80 border border-black rounded-xl relative ml-5 mr-5">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -735,13 +735,13 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[19rem] h-80 border border-black relative  ">
+                        <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -769,7 +769,7 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
@@ -780,7 +780,7 @@
             <div class="mb-5">
                 <div class="mb-5">
                     <div class="flex md:flex-row">
-                        <div class="w-[19rem] h-80 border border-black relative  ">
+                        <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -804,13 +804,13 @@
                                 </div>
                             </div>
 
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[19rem] h-80 border border-black relative ml-5 mr-5">
+                        <div class="w-[19rem] h-80 border border-black rounded-xl relative ml-5 mr-5">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -839,13 +839,13 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
-                        <div class="w-[19rem] h-80 border border-black relative  ">
+                        <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                 <div class="ml-2">
@@ -875,7 +875,7 @@
                             </div>
                             
 
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
@@ -884,7 +884,7 @@
                 </div>
             <div>
                 <div class="flex md:flex-row">
-                    <div class="w-[19rem] h-80 border border-black relative  ">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -907,12 +907,12 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[19rem] h-80 border border-black relative ml-5 mr-5">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative ml-5 mr-5">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -941,13 +941,13 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[19rem] h-80 border border-black relative  ">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -975,7 +975,7 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
@@ -985,7 +985,7 @@
             </div>
             <div>
                 <div class="flex md:flex-row">
-                    <div class="w-[19rem] h-80 border border-black relative  ">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -1008,12 +1008,12 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[19rem] h-80 border border-black relative ml-5 mr-5">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative ml-5 mr-5">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -1042,13 +1042,13 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
                     </div>
-                    <div class="w-[19rem] h-80 border border-black relative  ">
+                    <div class="w-[19rem] h-80 border border-black rounded-xl relative  ">
                         <div class="flex m-1 mt-5 ">
                             <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                             <div class="ml-2">
@@ -1076,7 +1076,7 @@
                                 <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                             </div>
                         </div>
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                             <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                         </div>
@@ -1084,7 +1084,7 @@
                 </div>
             </div> -->
             <div class="flex md:flex-row justify-evenly block smm-hidden">
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -1114,13 +1114,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -1150,13 +1150,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -1185,14 +1185,14 @@
                             <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                         </div>
                     </div>
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
             </div>
             <div class="flex my-5 md:flex-row justify-evenly block smm-hidden">
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -1222,13 +1222,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -1258,13 +1258,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -1293,14 +1293,14 @@
                             <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                         </div>
                     </div>
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
             </div>
             <div class="flex md:flex-row justify-evenly block smm-hidden">
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -1330,13 +1330,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -1366,13 +1366,13 @@
                         </div>
                     </div>
 
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
 
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
                 </div>
-                <div class="w-[31%] h-[21rem] border border-black relative  ">
+                <div class="w-[31%] h-[21rem] border border-black rounded-xl relative  ">
                     <div class="flex m-1 mt-5 ">
                         <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
@@ -1401,7 +1401,7 @@
                             <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                         </div>
                     </div>
-                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                    <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                         <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                     </div>
@@ -1420,11 +1420,11 @@
                 <!-- <div class="relative flex justify-center border border-black">
                    <img class="w-2/5" src="{{ asset('/images/menu-icon/box.png') }}" alt="">
                    <a href="">
-                      <img class="w-9 h-9 border border-black absolute top-0 right-0" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
+                      <img class="w-9 h-9 border border-black rounded-xl absolute top-0 right-0" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
                     </a>
                 </div> -->
-                <div class="border-2 border-black rounded-md w-full h-[57px] overflow-hidden mt-1 flex flex-row items-center justify-between">
-                   <input class="border-2 border-black h-[110%] w-[319%]" type="text">
+                <div class="border-2 border-black rounded-xl rounded-md w-full h-[57px] overflow-hidden mt-1 flex flex-row items-center justifyrounded-br-xl-between">
+                   <input class="border-2 border-black rounded-xl h-[110%] w-[319%]" type="text">
                    <a class="w-full flex justify-center" href="">
                       <img class="w-[73px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
                    </a> 
@@ -1437,7 +1437,7 @@
             </div>
             <div class="flex flex-col items-center gap-5">               
                 <div class="flex flex-col items-center gap-8">
-                    <div class="parent border border-black w-[85%] relative">
+                    <div class="parent border border-black  w-[85%] relative rounded-xl">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
                             <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1469,13 +1469,13 @@
                             </div>
                         </div>
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 border rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="parent border border-black w-[85%] relative ">
+                    <div class="parent border border-black rounded-xl w-[85%] relative ">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
                             <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1508,13 +1508,13 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="parent border border-black w-[85%] relative">
+                    <div class="parent border border-black rounded-xl w-[85%] relative">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
                             <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1547,7 +1547,7 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
@@ -1558,7 +1558,7 @@
                     <button id="main-tile" >Next</button>
                 </div> 
                 <div id="tile" class="flex flex-col items-center gap-8 hidden">
-                    <div class="parent border border-black w-[85%] relative">
+                    <div class="parent border border-black rounded-xl w-[85%] relative">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
                             <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1591,13 +1591,13 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="parent border border-black w-[85%] relative ">
+                    <div class="parent border border-black rounded-xl w-[85%] relative ">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
                             <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1630,13 +1630,13 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="parent border border-black w-[85%] relative">
+                    <div class="parent border border-black rounded-xl w-[85%] relative">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
                             <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1669,7 +1669,7 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
@@ -1680,7 +1680,7 @@
                     <button id="main-tile2" class="hidden">Next</button>
                 </div> 
                 <div id="tile2" class="flex flex-col items-center gap-8 hidden">
-                    <div class="parent border border-black w-[85%] relative">
+                    <div class="parent border border-black rounded-xl w-[85%] relative">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
                             <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1713,13 +1713,13 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="parent border border-black w-[85%] relative ">
+                    <div class="parent border border-black rounded-xl w-[85%] relative ">
                         <div class="flex flex-row gap-3 ml-2 mt-5">
                             <div class="">
                             <img class="w-20 h-24" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -1752,7 +1752,7 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>

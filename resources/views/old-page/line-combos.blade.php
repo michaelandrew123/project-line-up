@@ -4,7 +4,7 @@
 
 
     <div class="flex flex-col lg:block md:block sm:hidden smm-hidden ">
-        <div class="text-white bg-[#202e5b] flex  justify-evenly py-4">
+        <div class="text-white bg-[#202e5b] flex justify-evenly py-4">
             <div class="w-1/7 hidden">
                 <img src="/admin.png" />
             </div>
@@ -20,11 +20,9 @@
                 <p>2022-23 Season</p>
                 <div class="flex flex-row justify-center gap-x-3 ">
                     <div class="flex flex-col gap-y-3">
-
                         <h1>54-21-7</h1>
                         <hr />
                         <p>RECORD</p>
-
                     </div>
                     <div class="flex flex-col gap-y-3">
                         <h1>54-21-7</h1>
@@ -539,14 +537,14 @@
                 </div>
             </div>
         </div>
-            <ul class="flex flex-row justify-center items-center mx-px bg-black h-9 w-full justify-evenly mt-3 z-10" id="mobile-2nd-mnav">
-                <li class="list-none w-full h-full text-center  " id="nav-active" ><a href="#" class=" font-bold text-[11px] text-white">LINEUPS</a></li>
-                <li class="list-none w-full h-full text-center mr-3 ml-2"><a href="#" class=" text-white font-bold text-[11px] ">DRAFTKINGS</a></li>  
-                <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px]  ">FANDUEL</a></li>
-                <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px] ">STATS</a></li>
-                <li class="list-none w-full h-full text-center " ><a href="#" class=" text-white font-bold text-[11px]  ">NEWS</a></li>
-            </ul>
-       <hr />
+        <ul class="flex flex-row justify-center items-center mx-px bg-black h-9 w-full justify-evenly mt-3 z-10" id="mobile-2nd-mnav">
+            <li class="list-none w-full h-full text-center  " id="nav-active" ><a href="#" class=" font-bold text-[11px] text-white">LINEUPS</a></li>
+            <li class="list-none w-full h-full text-center mr-3 ml-2"><a href="#" class=" text-white font-bold text-[11px] ">DRAFTKINGS</a></li>  
+            <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px]  ">FANDUEL</a></li>
+            <li class="list-none w-full h-full text-center "><a href="#" class=" text-white font-bold text-[11px] ">STATS</a></li>
+            <li class="list-none w-full h-full text-center " ><a href="#" class=" text-white font-bold text-[11px]  ">NEWS</a></li>
+        </ul>
+       <hr/>
        <!-- STATS ROW -->
        <div id="img" class="hidden flex justify-center">
          <!-- <img class="w-4/5" src="{{ asset('/images/menu-icon/coming_soon.png') }}" alt=""> -->
