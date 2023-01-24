@@ -456,24 +456,24 @@
                     <div class="flex flex-row ml-4 w-[40%] justify-between">
                         <div class=" relative">
                             <span class="text-[50px] text-white rotate-90 absolute right-2 bottom-[-19px]" href="">></span>
-                            <select style="-webkit-appearance: none;" class="bg-[#545454] w-[8rem] h-[41px] text-black text-lg font-semibold text-center">
-                                <option class="text-lg font-semibold" value="">NHL</option> 
-                                <option class="text-lg font-semibold" value="">MLB</option>
-                                <option class="text-lg font-semibold" value="">NFL</option>
-                                <option class="text-lg font-semibold" value="">NBA</option>
-                                <option class="text-lg font-semibold" value="">SOC</option>
+                            <select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] w-[8rem] h-[41px] text-black text-lg font-semibold text-center">
+                                <option id="hockey" class="text-lg font-semibold " value="">NHL</option> 
+                                <option id="base" class="text-lg font-semibold " value="">MLB</option>
+                                <option id="rugby" class="text-lg font-semibold " value="">NFL</option>
+                                <option id="basket" class="text-lg font-semibold " value="">NBA</option>
+                                <option id="soccer" class="text-lg font-semibold" value="">SOC</option>
                             </select>
                             <!-- <img class="absolute top-0 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">     -->
                         </div>
                         <div class="flex items-center flex-shrink-0 text-white">
-                            <div class="ml-1 flex flex-row items-center gap-3">
+                            <div id="" class="ml-1 flex flex-row items-center gap-3">
                                 <div class="relative">
                                     <div class="bg-[#37b3fc] w-[33px] h-[2rem] rounded-full"></div>
-                                   <img class="w-[36px] hidden absolute top-[1px] right-[2px]" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
-                                   <img class="w-[36px] hidden absolute top-[1px] right-[2px]" src="{{ asset('/images/menu-icon/baseball.png') }}" alt="">
-                                   <img class="w-[36px] hidden absolute top-[1px] right-[2px]" src="{{ asset('/images/menu-icon/rugbyball.png') }}" alt="">
-                                   <img class="w-[36px] hidden absolute top-[1px] right-[2px]" src="{{ asset('/images/menu-icon/basketball.png') }}" alt="">
-                                   <img class="w-[28px] absolute top-[1px] right-[2px]" src="{{ asset('/images/menu-icon/soccer.png') }}" alt="">
+                                   <img class="w-[36px]  absolute top-[1px] right-[2px] nhl" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
+                                   <img class="w-[36px] hidden absolute top-[1px] right-[0px] base" src="{{ asset('/images/menu-icon/baseball.png') }}" alt="">
+                                   <img class="w-[24px] hidden absolute top-[5px] right-[4px] rugby" src="{{ asset('/images/menu-icon/rugbyball.png') }}" alt="">
+                                   <img class="w-[27px] hidden absolute top-[2px] right-[3px] basket" src="{{ asset('/images/menu-icon/basketball.png') }}" alt="">
+                                   <img class="w-[28px] hidden absolute top-[1px] right-[2px] soccer" src="{{ asset('/images/menu-icon/soccer.png') }}" alt="">
                                 </div>
                                 <div class="flex">
                                     <h1 class="text-xl font-bold italic">projected</h1>
@@ -538,10 +538,10 @@
                        </div> 
                     </div>
                 </div>
-                <div class="w-4/12 md:w-4/12 bg-[#1d9bf0] flex sm:flex-row-reverse md:flex-row items-center  lg:justify-start">
+                <div id="nav-text" class="w-4/12 md:w-4/12 bg-[#1d9bf0] flex sm:flex-row-reverse md:flex-row items-center  lg:justify-start">
                     <div id="main-menu2" class="w-full xl:p-[12px]  lg:p-[12px] p-[14px] w-full flex flex-row items-center 2xl:gap-[4.5rem] xl:gap-[0.5rem] lg:gap-[10px] md:gap-[0.5rem] md:justify-between navbar">
-                        <div class="2xl:gap-[4rem] xl:gap-[1.5rem] lg:gap-[10px] md:gap-[20px] flex flex-row justify-between">
-                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
+                        <div class="2xl:gap-[4rem] xl:gap-[1.5rem] lg:gap-[10px] md:gap-[20px] flex flex-row justify-between NHL ">
+                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 STARTING GOALIES
                                 <div class="relative hidden goalies-menu">
                                     <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
@@ -551,6 +551,78 @@
                             </a>
                             <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 LINE COMBINATIONS
+                                <div class="relative hidden line-menu">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                        <div class="arrow-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="2xl:gap-[4rem] xl:gap-[4.5rem] lg:gap-[3rem] md:gap-[20px] flex flex-row justify-between MLB hidden ">
+                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
+                                STARTING PITCHERS
+                                <div class="relative hidden goalies-menu">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                        <div class="arrow-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
+                                LINEUPS
+                                <div class="relative hidden line-menu">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                        <div class="arrow-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="2xl:gap-[4rem] xl:gap-[4.5rem] lg:gap-[3rem] md:gap-[20px] flex flex-row justify-between NFL hidden ">
+                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
+                                DEPTHCHARTS
+                                <div class="relative hidden goalies-menu">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                        <div class="arrow-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
+                                MASHUPS
+                                <div class="relative hidden line-menu">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                        <div class="arrow-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="2xl:gap-[4rem] xl:gap-[4.5rem] lg:gap-[3rem] md:gap-[20px] flex flex-row justify-between NBA hidden ">
+                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
+                                STARTING LINEUPS
+                                <div class="relative hidden goalies-menu">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                        <div class="arrow-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
+                                MASHUPS
+                                <div class="relative hidden line-menu">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                        <div class="arrow-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="2xl:gap-[4rem] xl:gap-[4.5rem] lg:gap-[3rem] md:gap-[20px] flex flex-row justify-between SOC hidden ">
+                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
+                                STARTING LINEUPS
+                                <div class="relative hidden goalies-menu">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                        <div class="arrow-3"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
+                                MASHUPS
                                 <div class="relative hidden line-menu">
                                     <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
                                         <div class="arrow-3"></div>
