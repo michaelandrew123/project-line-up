@@ -18,33 +18,48 @@
                         <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                     </div>
                     <div class="flex md:flex-row justify-center ">
-                        <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12 h-80  relative  ">
-                            <div class=" m-1 mt-5 ">
-                                <div class="bg-orange-400 rounded-full w-[63%] flex items-center p-1 mb-3">
+                              <!-- <div class="bg-orange-400 rounded-full w-[63%] flex items-center p-1 mb-3">
                                     <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
                                     <h1 class="lg:text-sm md:text-[13px] ml-4 text-black font-semibold">Morning Skates</h1>
-                                </div>
-                                <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-[21rem]">
-
+                                </div> -->
+                        <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12 h-80 border border-black relative rounded-xl flex justify-center">
+                            <div class="m-1 mt-4 w-[15rem] flex flex-col gap-2">
+                                <h1 class="font-bold "><span class="text-white bg-green-500 text-[11px] px-1.5 py-0.5 rounded-full mr-2">$</span>Props and Odds</h1>
+                                <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-[15rem]">
+                                <p class="text-[12px] font-bold">Red Wings vs. lightning PLayer Props | Dryian Larkin</p>
+                                <p class="text-[10px]">The Red Wings host the Tampa Bay Lightning on Tuesday
+                                     January 24th. Dylan Larkin continue to being a dominate force for Wings. 
+                                     Tonight he's in good spot to succeed. 
+                                    The Wings are the consensus moneyline favorites at -145.
+                                </p>
                             </div>
-                            <div class=" ml-1 mb-5 pb-9">
+                            
+                            <!-- <div class=" ml-1 mb-5 pb-9">
                                 <p class="text-xs font-bold mb-5">Sharks look to put together some extra wins</p>
                                 <p class="text-[10px] font-bold mb-5 ml-2">Marc Burg 11/08/22</p>
                             </div>
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
-
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12  h-80  relative ml-5 mr-5 ">
-                            <div class=" m-1 mt-5 ">
+                        <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12  h-80  relative ml-5 mr-5 border border-black rounded-xl flex justify-center">
+                            <div class="m-1 mt-4 w-[15rem] flex flex-col gap-2">
+                                <h1 class="font-bold "><span class="text-white bg-green-500 text-[11px] px-1.5 py-0.5 rounded-full mr-2">$</span>Props and Odds</h1>
+                                <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-[15rem]">
+                                <p class="text-[12px] font-bold">Red Wings vs. lightning PLayer Props | Dryian Larkin</p>
+                                <p class="text-[10px]">The Red Wings host the Tampa Bay Lightning on Tuesday
+                                     January 24th. Dylan Larkin continue to being a dominate force for Wings. 
+                                     Tonight he's in good spot to succeed. 
+                                    The Wings are the consensus moneyline favorites at -145.
+                                </p>
+                            </div>
+                            <!-- <div class=" m-1 mt-5 ">
                                 <div class="bg-[#15d869] rounded-full w-[50%] flex items-center p-1 mb-3">
                                     <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
                                     <h1 class="lg:text-sm md:text-[13px] ml-4 text-black font-semibold">Top Tracks</h1>
                                 </div>
                                 <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-[21rem]">
-
                             </div>
                             <div class=" ml-1 mb-5 pb-9">
                                 <p class="text-xs font-bold mb-5">Edmonton in a great spot tonight against the </br>Predators</p>
@@ -54,10 +69,20 @@
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12  h-80  relative  ">
-                            <div class=" m-1 mt-5 ">
+                        <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12  h-80  relative border border-black  rounded-xl flex justify-center">
+                            <div class="m-1 mt-4 w-[15rem] flex flex-col gap-2">
+                                <h1 class="font-bold "><span class="text-white bg-green-500 text-[11px] px-1.5 py-0.5 rounded-full mr-2">$</span>Props and Odds</h1>
+                                <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-[15rem]">
+                                <p class="text-[12px] font-bold">Red Wings vs. lightning PLayer Props | Dryian Larkin</p>
+                                <p class="text-[10px]">The Red Wings host the Tampa Bay Lightning on Tuesday
+                                     January 24th. Dylan Larkin continue to being a dominate force for Wings. 
+                                     Tonight he's in good spot to succeed. 
+                                    The Wings are the consensus moneyline favorites at -145.
+                                </p>
+                            </div>
+                            <!-- <div class=" m-1 mt-5 ">
                                 <div class="bg-orange-400  rounded-full w-[50%] flex items-center p-1 mb-3">
                                     <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-2">
                                     <h1 class="lg:text-sm md:text-[13px]  ml-4 text-black font-semibold">Best Sets</h1>
@@ -73,7 +98,7 @@
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="">
@@ -119,53 +144,55 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col ">
                         <div class="flex items-center">
-                        <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                            <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                             <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
-                                Starting Goalies
+                                NHL Starting Goalies
                             </h1>
                         </div>
-                        <div class="flex md:flex-row justify-center justify-evenly">
+                        <div class="flex md:flex-row justify-center justify-evenly mb-3">
                             <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
                                 <div class="flex m-1 mt-5 ">
-                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                     <div class="ml-2">
-                                        <div class="bg-[#e7e9ec] rounded-full w-[97%] flex items-center p-1">
+                                        <!-- <div class="bg-[#e7e9ec] rounded-full w-[97%] flex items-center p-1">
                                             <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
                                             <h1 class="text-sm ml-4 text-[#637a92]">Line Changes</h1>
+                                        </div> -->
+                                        <div class="flex flex-row gap-2">
+                                           <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                           <p class="text-[11px] font-bold">Confirmed</p>
                                         </div>
-                                        <h1 class=" text-lg font-extrabold md:font-bold">JOHN TAVORES</h1>
-                                        <p class="text-[13px] font-semibold">Toronto Maple Leafs</p>
-                                        <div class="flex mt-1">
-                                            <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                            <p class="text-[14px] font-bold ml-1">$8,700</p>
-                                            <img class="w-5 ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                            <p class="text-[14px] font-bold ml-1">$8,500</p>
+                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex mt-1 items-center">
+                                            <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,700</p>
+                                            <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,500</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                    <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
-                                    <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
+                                    <p class="text-[14px] font-bold mb-5">Shesterkin will start as per Gerard Galiant vs Florida </p>
+                                    <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
                                 </div>
                                 <div class="flex items-center">
                                     <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                     <div>
-                                        <h3 class="font-bold">David Alter</h3>
-                                        <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                     </div>
                                 </div>
-
-                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
-
+                                <!-- <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
-                                </div>
+                                </div> -->
                             </div>
-                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl">
+                            <!-- <div class="w-[31%] h-[21rem] border border-black relative rounded-xl">
                                 <div class="flex m-1 mt-5 ">
-                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/menu-icon/player-uniform1.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-[#15d869] rounded-full w-[97%] flex items-center p-1">
                                             <img src="{{ asset('/images/starting-goalies/checked.png') }}" class="w-4 h-4 bg-white rounded-full ml-3">
@@ -198,8 +225,44 @@
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform1.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                           <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                           <p class="text-[11px] font-bold">Confirmed</p>
+                                        </div>
+                                        <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex mt-1 items-center">
+                                            <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,700</p>
+                                            <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                    <p class="text-[14px] font-bold mb-5">Francouz was first goalie off the ice at morning skate </p>
+                                    <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
+                                </div>
+                                <div class="flex items-center w-[17rem] justify-between">
+                                    <div class="flex flex-row items-center">
+                                       <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                       <div>
+                                            <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                            <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row xl:gap-3 lg:gap-2">
+                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
                                 <div class="flex m-1 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
@@ -232,10 +295,337 @@
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
+                            </div> -->
+                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform3.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                           <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                           <p class="text-[11px] font-bold">Confirmed</p>
+                                        </div>
+                                        <h1 class=" text-xl font-extrabold">Juuse Saros</h1>
+                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex mt-1 items-center">
+                                            <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,700</p>
+                                            <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                    <p class="text-[14px] font-bold mb-5">Saros was first goalie off the ice morning skate </p>
+                                    <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
+                                </div>
+                                <div class="flex items-center w-[17rem] justify-between">
+                                    <div class="flex flex-row items-center">
+                                       <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                       <div>
+                                            <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                            <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row xl:gap-3 lg:gap-2">
+                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex md:flex-row justify-center justify-evenly items-center">
+                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform1.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                           <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                           <p class="text-[11px] font-bold">Confirmed</p>
+                                        </div>
+                                        <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex mt-1 items-center">
+                                            <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,700</p>
+                                            <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                    <p class="text-[14px] font-bold mb-5">Francouz was first goalie off the ice at morning skate </p>
+                                    <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
+                                </div>
+                                <div class="flex items-center w-[17rem] justify-between">
+                                    <div class="flex flex-row items-center">
+                                       <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                       <div>
+                                            <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                            <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row xl:gap-3 lg:gap-2">
+                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                              <img class="w-[31%] h-[18rem]" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform3.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                           <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                           <p class="text-[11px] font-bold">Confirmed</p>
+                                        </div>
+                                        <h1 class=" text-xl font-extrabold">Juuse Saros</h1>
+                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex mt-1 items-center">
+                                            <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,700</p>
+                                            <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
+                                            <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                    <p class="text-[14px] font-bold mb-5">Saros was first goalie off the ice morning skate </p>
+                                    <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
+                                </div>
+                                <div class="flex items-center w-[17rem] justify-between">
+                                    <div class="flex flex-row items-center">
+                                       <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                       <div>
+                                            <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                            <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row xl:gap-3 lg:gap-2">
+                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="relative">
                             <a href="" class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex items-center">
+                            <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                            <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
+                                NHL Line Combinations
+                            </h1>
+                        </div>
+                        <div class="flex md:flex-row justify-center justify-evenly mb-3">
+                           <div class="flex flex-col gap-3 w-[31%] h-[21rem] border border-black  rounded-xl ">
+                              <div class="flex flex-row items-center  w-full justify-evenly">
+                                   <img class="w-[5.5rem] mt-2" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                    <div class="flex flex-col ">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/transaction icon.png') }}">
+                                            <p class="text-[10px] font-bold text-sky-600">Morning skate</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="text-lg font-extrabold">Pittburgh Penguins</h1>
+                                            <p class="text-[10px] font-semibold">Line Combinations</p>
+                                        </div>
+                                    </div>   
+                              </div>
+                              <div class="flex flex-col items-center gap-3">
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                              </div>
+                                <div class="flex flex-row items-center mt-6">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="flex flex-col gap-3 w-[31%] h-[21rem] border border-black  rounded-xl ">
+                              <div class="flex flex-row items-center  w-full justify-evenly">
+                                   <img class="w-[5.5rem] mt-2" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                    <div class="flex flex-col ">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/transaction icon.png') }}">
+                                            <p class="text-[10px] font-bold text-sky-600">Morning skate</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="text-lg font-extrabold">Pittburgh Penguins</h1>
+                                            <p class="text-[10px] font-semibold">Line Combinations</p>
+                                        </div>
+                                    </div>   
+                              </div>
+                              <div class="flex flex-col items-center gap-3">
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                              </div>
+                                <div class="flex flex-row items-center mt-6">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="flex flex-col gap-3 w-[31%] h-[21rem] border border-black  rounded-xl ">
+                              <div class="flex flex-row items-center  w-full justify-evenly">
+                                   <img class="w-[5.5rem] mt-2" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                    <div class="flex flex-col ">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/transaction icon.png') }}">
+                                            <p class="text-[10px] font-bold text-sky-600">Morning skate</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="text-lg font-extrabold">Pittburgh Penguins</h1>
+                                            <p class="text-[10px] font-semibold">Line Combinations</p>
+                                        </div>
+                                    </div>   
+                              </div>
+                              <div class="flex flex-col items-center gap-3">
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                              </div>
+                                <div class="flex flex-row items-center mt-6">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="flex md:flex-row justify-center justify-evenly">
+                           <div class="flex flex-col gap-3 w-[31%] h-[21rem] border border-black  rounded-xl ">
+                              <div class="flex flex-row items-center  w-full justify-evenly">
+                                   <img class="w-[5.5rem] mt-2" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                    <div class="flex flex-col ">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/transaction icon.png') }}">
+                                            <p class="text-[10px] font-bold text-sky-600">Morning skate</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="text-lg font-extrabold">Pittburgh Penguins</h1>
+                                            <p class="text-[10px] font-semibold">Line Combinations</p>
+                                        </div>
+                                    </div>   
+                              </div>
+                              <div class="flex flex-col items-center gap-3">
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                              </div>
+                                <div class="flex flex-row items-center mt-6">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="flex flex-col gap-3 w-[31%] h-[21rem] border border-black  rounded-xl ">
+                              <div class="flex flex-row items-center  w-full justify-evenly">
+                                   <img class="w-[5.5rem] mt-2" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                    <div class="flex flex-col ">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/transaction icon.png') }}">
+                                            <p class="text-[10px] font-bold text-sky-600">Morning skate</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="text-lg font-extrabold">Pittburgh Penguins</h1>
+                                            <p class="text-[10px] font-semibold">Line Combinations</p>
+                                        </div>
+                                    </div>   
+                              </div>
+                              <div class="flex flex-col items-center gap-3">
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                              </div>
+                                <div class="flex flex-row items-center mt-6">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="flex flex-col gap-3 w-[31%] h-[21rem] border border-black  rounded-xl ">
+                              <div class="flex flex-row items-center  w-full justify-evenly">
+                                   <img class="w-[5.5rem] mt-2" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                    <div class="flex flex-col ">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/transaction icon.png') }}">
+                                            <p class="text-[10px] font-bold text-sky-600">Morning skate</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="text-lg font-extrabold">Pittburgh Penguins</h1>
+                                            <p class="text-[10px] font-semibold">Line Combinations</p>
+                                        </div>
+                                    </div>   
+                              </div>
+                              <div class="flex flex-col items-center gap-3">
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                                    <div class="flex flex-row w-[80%] justify-evenly">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                      <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform4.png') }}">
+                                    </div>
+                              </div>
+                                <div class="flex flex-row items-center mt-6">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                           </div>
                         </div>
                     </div>
                 </div>
@@ -244,19 +634,19 @@
                 <img class="w-48 h-[48%] ml-2 " src="{{ asset('/images/menu-icon/adds6.png') }}">
             </div>  
         </div>
-        <div class="flex flex-row relative justify-between">  
+        <div class="flex flex-row relative xl:justify-between lg:justify-center">  
             <div class="mr-[0.5rem] xl:block lg:hidden md:hidden">
-                <img class="w-[21rem] h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
+                <img class="w-[14rem] h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>       
-            <div class="flex flex-col">  
+            <div class="flex flex-col xl:w-[67%] lg:w-auto ">  
                 <div class="flex flex-col">
                     <div class="flex items-center">
                     <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
-                            Player News
+                            NHL Player News
                         </h1>
                     </div>
-                    <div class="flex md:flex-row justify-center justify-evenly">
+                    <!-- <div class="flex md:flex-row justify-center justify-evenly">
                         <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
@@ -365,7 +755,169 @@
                                 <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                             </div>
                         </div>
+                    </div> -->
+                    <div class="flex flex-row w-full justify-between mb-3">
+                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                            <div class="flex m-1 mt-5 ">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                <div class="ml-2">
+                                    <div class="flex flex-row gap-2">
+                                        <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                        <p class="text-[11px] font-bold">Injury</p>
+                                    </div>
+                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                    
+                                </div>
+                            </div>
+                            <div class=" ml-1">
+                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <div>
+                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                            <div class="flex m-1 mt-5 ">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                <div class="ml-2">
+                                    <div class="flex flex-row gap-2">
+                                        <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                        <p class="text-[11px] font-bold">Injury</p>
+                                    </div>
+                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                    
+                                </div>
+                            </div>
+                            <div class=" ml-1">
+                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <div>
+                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                            <div class="flex m-1 mt-5 ">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                <div class="ml-2">
+                                    <div class="flex flex-row gap-2">
+                                        <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                        <p class="text-[11px] font-bold">Injury</p>
+                                    </div>
+                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                    
+                                </div>
+                            </div>
+                            <div class=" ml-1">
+                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <div>
+                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="flex flex-row w-full justify-between">
+                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                            <div class="flex m-1 mt-5 ">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                <div class="ml-2">
+                                    <div class="flex flex-row gap-2">
+                                        <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                        <p class="text-[11px] font-bold">Injury</p>
+                                    </div>
+                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                    
+                                </div>
+                            </div>
+                            <div class=" ml-1">
+                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <div>
+                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                            <div class="flex m-1 mt-5 ">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                <div class="ml-2">
+                                    <div class="flex flex-row gap-2">
+                                        <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                        <p class="text-[11px] font-bold">Injury</p>
+                                    </div>
+                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                    
+                                </div>
+                            </div>
+                            <div class=" ml-1">
+                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <div>
+                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                            <div class="flex m-1 mt-5 ">
+                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                <div class="ml-2">
+                                    <div class="flex flex-row gap-2">
+                                        <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                        <p class="text-[11px] font-bold">Injury</p>
+                                    </div>
+                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                    
+                                </div>
+                            </div>
+                            <div class=" ml-1">
+                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                            </div>
+                            <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <div>
+                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                     <div class="relative">
                         <a href="" class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
                     </div>
@@ -814,7 +1366,7 @@
                 </div>
             </div>
             <div class="ml-[0.5rem] flex items-end xl:block lg:hidden md:hidden">
-                <img class="w-[27rem] h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
+                <img class="w-[17rem] h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
             </div> 
         </div>
     </div>

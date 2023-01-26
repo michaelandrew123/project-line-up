@@ -453,33 +453,32 @@
             <!--Desktop menu and Tablet-->
             <div class="w-full flex-row lg:flex lg:flex-row md:flex items-center sm:flex-wrap sm:px-0 md:block  sm:hidden smm-hidden">
                 <div class="w-full lg:w-8/12 md:w-8/12 bg-current  flex  md:items-center md:justify-start md:justify-between ">
-                    <div class="flex flex-row ml-4 w-[40%] justify-between">
+                    <div class="flex flex-row ml-4 w-[30%] justify-between">
                         <div class=" relative">
                             <span class="text-[50px] text-white rotate-90 absolute right-2 bottom-[-19px]" href="">></span>
-                            <select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] w-[8rem] h-[41px] text-black text-lg font-semibold text-center">
-                                <option id="hockey" class="text-lg font-semibold " value="">NHL</option> 
-                                <option id="base" class="text-lg font-semibold " value="">MLB</option>
-                                <option id="rugby" class="text-lg font-semibold " value="">NFL</option>
-                                <option id="basket" class="text-lg font-semibold " value="">NBA</option>
-                                <option id="soccer" class="text-lg font-semibold" value="">SOC</option>
+                            <select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[6rem] h-[41px] h-[39px] text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 lg:pl-2">
+                                <option id="nhl" class="text-lg font-semibold" value="">NHL</option> 
+                                <option id="mlb" class="text-lg font-semibold" value="">MLB </option>
+                                <option id="nfl" class="text-lg font-semibold" value="">NFL</option>
+                                <option id="nba" class="text-lg font-semibold" value="">NBA</option>
+                                <option id="soc" class="text-lg font-semibold" value="">SOC</option>
                             </select>
                             <!-- <img class="absolute top-0 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">     -->
                         </div>
                         <div class="flex items-center flex-shrink-0 text-white">
-                            <div id="" class="ml-1 flex flex-row items-center gap-3">
+                            <div id="Sl" class="ml-1 flex flex-row items-center gap-1">
                                 <div class="relative">
                                     <div class="bg-[#37b3fc] w-[33px] h-[2rem] rounded-full"></div>
-                                   <img class="w-[36px]  absolute top-[1px] right-[2px] nhl" src="{{ asset('/images/menu-icon/hockey_logo.png') }}" alt="">
-                                   <img class="w-[36px] hidden absolute top-[1px] right-[0px] base" src="{{ asset('/images/menu-icon/baseball.png') }}" alt="">
-                                   <img class="w-[24px] hidden absolute top-[5px] right-[4px] rugby" src="{{ asset('/images/menu-icon/rugbyball.png') }}" alt="">
-                                   <img class="w-[27px] hidden absolute top-[2px] right-[3px] basket" src="{{ asset('/images/menu-icon/basketball.png') }}" alt="">
-                                   <img class="w-[28px] hidden absolute top-[1px] right-[2px] soccer" src="{{ asset('/images/menu-icon/soccer.png') }}" alt="">
+                                   <img id="hockey" class="w-[27px] absolute top-[3px] right-[3px]" src="{{ asset('/images/menu-icon/puck icon 40x40.png') }}" alt="">
+                                   <img id="base" class="w-[27px] hidden absolute top-[3px] right-[3px]" src="{{ asset('/images/menu-icon/baseball icon 40x40.png') }}" alt="">
+                                   <img id="rugby" class="w-[27px] hidden absolute top-[2px] right-[2px]" src="{{ asset('/images/menu-icon/football icon 40x40.png') }}" alt="">
+                                   <img id="basket" class="w-[27px] hidden absolute top-[2px] right-[3px]" src="{{ asset('/images/menu-icon/baskball icon 40x40.png') }}" alt="">
+                                   <img id="soccer" class="w-[27px] hidden absolute top-[3px] right-[3px]" src="{{ asset('/images/menu-icon/soccer icon 40x40.png') }}" alt="">
                                 </div>
                                 <div class="flex">
-                                    <h1 class="text-xl font-bold italic">projected</h1>
-                                    <h1 class="text-xl font-bold italic text-[#39b6ff] ">lineups</h1>
+                                    <h1 class="text-lg font-bold italic">projected</h1>
+                                    <h1 class="text-lg font-bold italic text-[#39b6ff] ">lineups</h1>
                                 </div>
-                                
                                 <!-- <img class="xl:w-[200px] lg:w-[150px] md:w-[7rem]" src="{{ asset('/images/menu-icon/logo.png') }}" alt=""> -->
                             </div>
                         </div>
@@ -527,8 +526,7 @@
                                 </div>
                             </a>
                             <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
-                                ODDS
-
+                                PROPS & ODDS
                                 <div class="relative  hidden odds-menu">
                                     <div class="arrowed absolute xl:top-[13px] xl:left-3 lg:top-[17px] lg:left-3 md:top-[20px] md:left-2">
                                         <div class="arrow-3"></div>

@@ -27,8 +27,11 @@
         $(this).css("border-left", "none");
     });
     
-      
-
+    //   header logo
+    $('#SN > .mlb').click(function(){
+        $('div > Sl > #base').removeClass('hidden');
+        $('div > Sl > #hockey').addClass('hidden');
+    });
 
     
     $( "div#main-menu1 > div > a, div#main-menu2 > div > a" ).hover(function() {  
@@ -419,7 +422,7 @@
        
 
     });
-    
+   
     //    $('#btn-n').click(function() {
     //       $('#btn-l').removeClass('bg-[#202e5b]');
     //       $('#btn-n').addClass('bg-[#202e5b]');
