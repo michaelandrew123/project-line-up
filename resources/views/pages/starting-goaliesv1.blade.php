@@ -294,18 +294,13 @@
     </div>
     <!-- End  -->
     <!-- New Update Design -->
-    <div class="w-full flex flex-row xl:justify-between lg:justify-center justify-center smm-hidden">
-        <div class="flex flex-col gap-3 xl:block lg:hidden md:hidden w-[15.5rem]">
-            <img class="mt-10" src="{{ asset('/images/menu-icon/adds1.png') }}">
-            <img class="mt-10" src="{{ asset('/images/menu-icon/adds2.png') }}">
-            <img class="mt-14" src="{{ asset('/images/menu-icon/adds3.png') }}">
-        </div>
+    <div class="w-full flex flex-row justify-evenly smm-hidden">
         <div class="flex flex-col items-center w-7/12">
             <div class="w-full  h-36 bg-[#1d9bf0] flex  border rounded-3xl justify-center items-center">
               <h1 class="text-2xl font-bold ">NHL Starting Goalies Tuesday, January 24</h1>
             </div>
-            <div class="w-auto">
-                <div id="carouselExampleControlsv1" class="carousel slide relative mt-4 nav-corsl" data-bs-ride="carousel">
+            <div class="w-full">
+                <div id="carouselExampleControlsv1" class="carousel slide relative mt-4 nav-corsl" data-bs-ride="">
                     <div class="relative">
                         <div class="absolute top-0 bottom-0 left-0 flex items-center">
                             <button
@@ -321,9 +316,7 @@
                                     <div>
                                       <h1 class="font-extrabold text-black text-lg">Previous Day</h1>
                                     </div>
-                              
                             </button>
-                            
                         </div>
                         <div class="absolute top-0 bottom-0 right-0 flex items-center">
                             <button
@@ -345,7 +338,7 @@
                     <div class="carousel-inner relative w-full overflow-hidden mt-8">
                         <div class="carousel-item active relative float-left w-full ">
                             <div class="flex flex-col mt-10"> 
-                                <div class="flex flex-row justify-between">
+                                <div class="flex flex-row justify-between ">
                                     <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
@@ -372,177 +365,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row justify-between mt-4">
+                                <div class="flex flex-row justify-between mt-4 ">
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform1.png') }}">
-                                            <div class="ml-4">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class=" mx-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Francouz was first goalie off the ice at morning skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform3.png') }}">
-                                            <div class="ml-2">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Juuse Saros</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class=" m-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Saros was first goalie off the ice morning <br> skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Toronto</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br><br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform1.png') }}">
-                                            <div class="ml-4">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
-                                                </div>
-                                                <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=" mx-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Francouz was first goalie off the ice at morning skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform3.png') }}">
-                                            <div class="ml-2">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
-                                                </div>
-                                                <h1 class=" text-xl font-extrabold">Juuse Saros</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=" m-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Saros was first goalie off the ice morning <br> skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
@@ -574,76 +426,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row justify-between mt-4">
+                                <div class="flex flex-row justify-between mt-4 ">
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform1.png') }}">
-                                            <div class="ml-4">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class=" mx-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Francouz was first goalie off the ice at morning skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform3.png') }}">
-                                            <div class="ml-2">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Juuse Saros</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class=" m-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Saros was first goalie off the ice morning <br> skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
@@ -675,76 +487,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row justify-between mt-4">
+                                <div class="flex flex-row justify-between mt-4 ">
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform1.png') }}">
-                                            <div class="ml-4">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class=" mx-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Francouz was first goalie off the ice at morning skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform3.png') }}">
-                                            <div class="ml-2">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Juuse Saros</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class=" m-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Saros was first goalie off the ice morning <br> skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
@@ -776,76 +548,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row justify-between mt-4">
+                                <div class="flex flex-row justify-between mt-4 ">
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform1.png') }}">
-                                            <div class="ml-4">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class=" mx-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Francouz was first goalie off the ice at morning skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform3.png') }}">
-                                            <div class="ml-2">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Juuse Saros</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class=" m-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Saros was first goalie off the ice morning <br> skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
@@ -877,76 +609,280 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row justify-between mt-4">
+                                <div class="flex flex-row justify-between mt-4 ">
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform1.png') }}">
-                                            <div class="ml-4">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px] fill-yellow-300 " src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class=" mx-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Francouz was first goalie off the ice at morning skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
-                                            </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="w-[47%] h-auto border border-black relative rounded-xl ">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-24 lg:h-32 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform3.png') }}">
-                                            <div class="ml-2">
-                                                <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/yellow-check.png') }}">
-                                                <p class="text-[11px] font-bold">Expected</p>
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                                 </div>
-                                                <h1 class=" text-xl font-extrabold">Juuse Saros</h1>
-                                                <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                <div class="flex mt-1 items-center">
-                                                    <img class="w-[28px]" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,700</p>
-                                                    <img class="w-[28px] ml-3" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}">
-                                                    <p class="text-[14px] font-extrabold ml-1">$8,500</p>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
                                                 </div>
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
-                                        <div class=" m-2 mb-2 lg:pb-5 md:pb-1">
-                                            <p class="text-[14px] font-bold mb-5">Saros was first goalie off the ice morning <br> skate </p>
-                                            <p class="text-[11px] font-semibold">Murray's given up at least four goals in two straight starts and four of his last seven outings. Leaving him with a 2.73 GAA and .911 save percentage  on the season</p>
-                                        </div>
-                                        <div class="flex items-center xl:w-[22rem] lg:w-[18rem] justify-between">
-                                            <div class="flex flex-row items-center">
-                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                <div>
-                                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                                </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between mt-10">
+                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                        <div class="justify-center items-center gap-2 mb-4">
+                                            <div class="flex flex-row items-center gap-3">
+                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                            <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                        </div>
+                                    </div>
+                                    <h1 class="text-center text-sm font-bold">
+                                        Jan 24, 7:00pm <br><br>
+                                        Bridgestone Arena <br>
+                                        NashVille, TN <br>
+                                        Line : COL- 155 <br>
+                                        O/U 6.5
+                                    </h1>
+                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                        <div class="justify-center items-center gap-3 mb-4">
+                                            <div class="flex flex-row items-center gap-3">
+                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                            </div>
+                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between mt-4 ">
+                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                </div>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                </div>
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                </div>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                </div>
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between mt-10">
+                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                        <div class="justify-center items-center gap-2 mb-4">
+                                            <div class="flex flex-row items-center gap-3">
+                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                            </div>
+                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                        </div>
+                                    </div>
+                                    <h1 class="text-center text-sm font-bold">
+                                        Jan 24, 7:00pm <br><br>
+                                        Bridgestone Arena <br>
+                                        NashVille, TN <br>
+                                        Line : COL- 155 <br>
+                                        O/U 6.5
+                                    </h1>
+                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                        <div class="justify-center items-center gap-3 mb-4">
+                                            <div class="flex flex-row items-center gap-3">
+                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                            </div>
+                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between mt-4 ">
+                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                </div>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                </div>
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                </div>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                </div>
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between mt-10">
+                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                        <div class="justify-center items-center gap-2 mb-4">
+                                            <div class="flex flex-row items-center gap-3">
+                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                            </div>
+                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                        </div>
+                                    </div>
+                                    <h1 class="text-center text-sm font-bold">
+                                        Jan 24, 7:00pm <br><br>
+                                        Bridgestone Arena <br>
+                                        NashVille, TN <br>
+                                        Line : COL- 155 <br>
+                                        O/U 6.5
+                                    </h1>
+                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                        <div class="justify-center items-center gap-3 mb-4">
+                                            <div class="flex flex-row items-center gap-3">
+                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                            </div>
+                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between mt-4 ">
+                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                </div>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                </div>
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                </div>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                </div>
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between mt-10">
+                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                        <div class="justify-center items-center gap-2 mb-4">
+                                            <div class="flex flex-row items-center gap-3">
+                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                            </div>
+                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                        </div>
+                                    </div>
+                                    <h1 class="text-center text-sm font-bold">
+                                        Jan 24, 7:00pm <br><br>
+                                        Bridgestone Arena <br>
+                                        NashVille, TN <br>
+                                        Line : COL- 155 <br>
+                                        O/U 6.5
+                                    </h1>
+                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                        <div class="justify-center items-center gap-3 mb-4">
+                                            <div class="flex flex-row items-center gap-3">
+                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                            </div>
+                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-between mt-4 ">
+                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                </div>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                </div>
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                        <div class="flex mt-5 gap-8 mx-4 my-5">
+                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                            <div class="flex flex-col gap-4">
+                                                <div class="flex flex-col">
+                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                </div>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                </div>
+                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
                                             </div>
                                         </div>
                                     </div>
@@ -2177,9 +2113,58 @@
                 </div>
             </div> 
         </div>
-        <div class="flex flex-col gap-16 xl:block lg:hidden md:hidden w-[15.5rem]">
-          <img class="mt-52" src="{{ asset('/images/menu-icon/adds6.png') }}">
-        </div>
+        <div class=" flex flex-col w-60 gap-8">
+            <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
+            <img class="" src="{{ asset('/images/menu-icon/adds-new1.png') }}">
+            <div class="flex flex-col gap-3 ml-5">
+                <div class="flex flex-row ">
+                    <img src="{{ asset('/images/menu-icon/ .png') }}" alt="">
+                    <h1 class="text-md font-semibold">Latest Articles </h1>
+                </div>
+                <hr>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                </div>
+            </div>
+            <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
+        </div> 
     </div> 
     
     <!-- End of Desktop -->
