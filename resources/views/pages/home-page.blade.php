@@ -7,7 +7,7 @@
 
 <!-- Desktop design -->
 <div class="flex xl:block lg:block md:block hidden w-full mx-2 bg-slate-100">
-    <div class="flex flex-row justify-center">
+    <div class="flex flex-row justify-center gap-3">
         <div class="flex flex-col w-[67%] ">
             <!-- <div class="flex flex-col gap-16 mr-6 xl:block lg:hidden md:hidden">
                 <img class="w-48 h-[50%] mb-10" src="{{ asset('/images/menu-icon/adds1.png') }}">
@@ -139,16 +139,18 @@
                             </h1>
                         </div>
                         <div class="flex md:flex-row justify-center justify-evenly mb-3">
-                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl bg-white">
+                            <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
                                 <div class="flex m-1 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                    <div class="ml-2">
+                                    <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                            <p class="text-[11px] font-bold">Confirmed</p>
                                         </div>
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex flex-col">
+                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        </div>  
                                     </div>
                                 </div>
                                 <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
@@ -165,7 +167,7 @@
                                     </div>
                                     <div class="flex flex-row xl:gap-3 lg:gap-2">
                                       <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                      <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
                                 <!-- <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
@@ -207,16 +209,18 @@
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div> -->
-                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl bg-white">
+                            <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
                                 <div class="flex m-1 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                    <div class="ml-2">
+                                    <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                            <p class="text-[11px] font-bold">Confirmed</p>
                                         </div>
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex flex-col">
+                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        </div>  
                                     </div>
                                 </div>
                                 <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
@@ -233,7 +237,7 @@
                                     </div>
                                     <div class="flex flex-row xl:gap-3 lg:gap-2">
                                       <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                      <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
                                 <!-- <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
@@ -241,16 +245,18 @@
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div> -->
                             </div>
-                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl bg-white">
+                            <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
                                 <div class="flex m-1 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                    <div class="ml-2">
+                                    <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                            <p class="text-[11px] font-bold">Confirmed</p>
                                         </div>
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex flex-col">
+                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        </div>  
                                     </div>
                                 </div>
                                 <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
@@ -267,22 +273,24 @@
                                     </div>
                                     <div class="flex flex-row xl:gap-3 lg:gap-2">
                                       <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                      <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="flex md:flex-row justify-center justify-evenly ">
-                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl bg-white">
+                            <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
                                 <div class="flex m-1 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                    <div class="ml-2">
+                                    <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                            <p class="text-[11px] font-bold">Confirmed</p>
                                         </div>
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex flex-col">
+                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        </div>  
                                     </div>
                                 </div>
                                 <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
@@ -299,7 +307,7 @@
                                     </div>
                                     <div class="flex flex-row xl:gap-3 lg:gap-2">
                                       <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                      <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
                                 <!-- <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
@@ -341,16 +349,18 @@
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div>
                             </div> -->
-                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl bg-white">
+                            <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
                                 <div class="flex m-1 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                    <div class="ml-2">
+                                    <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                            <p class="text-[11px] font-bold">Confirmed</p>
                                         </div>
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex flex-col">
+                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        </div>  
                                     </div>
                                 </div>
                                 <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
@@ -367,7 +377,7 @@
                                     </div>
                                     <div class="flex flex-row xl:gap-3 lg:gap-2">
                                       <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                      <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
                                 <!-- <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
@@ -375,16 +385,18 @@
                                     <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                                 </div> -->
                             </div>
-                            <div class="w-[31%] h-[21rem] border border-black relative rounded-xl bg-white">
+                            <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
                                 <div class="flex m-1 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                    <div class="ml-2">
+                                    <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                            <p class="text-[11px] font-bold">Confirmed</p>
                                         </div>
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        <div class="flex flex-col">
+                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        </div>  
                                     </div>
                                 </div>
                                 <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
@@ -401,7 +413,7 @@
                                     </div>
                                     <div class="flex flex-row xl:gap-3 lg:gap-2">
                                       <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                      <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                      <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
                             </div>
@@ -411,7 +423,7 @@
                         </div>
                     </div>
                     <div class="flex justify-center">
-                      <img class="w-9/12 h-80" src="{{ asset('/images/menu-icon/adds-new1.png') }}">
+                      <img class="w-[70%] h-80" src="{{ asset('/images/menu-icon/adds-new1.png') }}">
                     </div>
                     <!-- NHL combinations penguins -->
                     <!-- <div class="flex flex-col">
@@ -756,22 +768,24 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="flex flex-row w-full justify-between mb-3">
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-slate-300  rounded-xl bg-white relative">
+                    <div class="flex flex-row w-full justify-evenly mb-3">
+                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]  rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
-                                <div class="ml-2">
+                                <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
-                                    <h1 class=" text-xl font-extrabold">John Tavares</h1>
-                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>                                   
+                                    <div class="flex flex-col">
+                                        <h1 class=" text-xl font-extrabold">John Tavares</h1>
+                                        <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
+                                    </div>                                                                      
                                 </div>
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -781,22 +795,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-slate-300  rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]   rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                <div class="ml-2">
+                                <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
-                                    <h1 class=" text-xl font-extrabold">Mark Stone </h1>
-                                    <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
-                                    
+                                    <div class="flex flex-col">
+                                        <h1 class=" text-xl font-extrabold">John Tavares</h1>
+                                        <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
+                                    </div>                                                                      
                                 </div>
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -806,21 +821,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-slate-300  rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]  rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                <div class="ml-2">
+                                <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
-                                        <img class="w-[18px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                        <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
-                                    <h1 class=" text-xl font-extrabold">Connor McDavid</h1>
-                                    <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p> 
+                                    <div class="flex flex-col">
+                                        <h1 class=" text-xl font-extrabold">Connor Mcdavid</h1>
+                                        <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
+                                    </div>                                                                      
                                 </div>
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -831,22 +848,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row w-full justify-between mb-3">
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-slate-300  rounded-xl  bg-white relative">
+                    <div class="flex flex-row w-full justify-evenly mb-3">
+                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]   rounded-xl  bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
-                                <div class="ml-2">
+                                <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
-                                    <h1 class=" text-xl font-extrabold">John Tavares</h1>
-                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>                                   
+                                    <div class="flex flex-col">
+                                        <h1 class=" text-xl font-extrabold">John Tavares</h1>
+                                        <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
+                                    </div>                                                                      
                                 </div>
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -856,22 +875,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-slate-300  rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]   rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                <div class="ml-2">
+                                <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
-                                        <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                        <p class="text-[11px] font-bold">Line Changes</p>
+                                        <img class="w-[18px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                        <p class="text-[11px] font-bold">Injury</p>
                                     </div>
-                                    <h1 class=" text-xl font-extrabold">Mark Stone </h1>
-                                    <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
-                                    
+                                    <div>
+                                        <h1 class=" text-xl font-extrabold">Auston Mathews</h1>
+                                        <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                    </div>   
                                 </div>
                             </div>
                             <div class=" ml-1">
-                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
+                                <p class="text-[9px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -881,22 +901,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-slate-300  rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]   rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                <div class="ml-2">
+                                <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
-                                        <img class="w-[18px]   " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                        <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
-                                    <h1 class=" text-xl font-extrabold">Connor McDavid</h1>
-                                    <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
-                                    
+                                    <div class="flex flex-col">
+                                        <h1 class=" text-xl font-extrabold">Connor Mcdavid</h1>
+                                        <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
+                                    </div>                                                                      
                                 </div>
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -915,74 +936,262 @@
                     <img class="w-96" src="{{ asset('/images/menu-icon/adds3.png') }}">
                     <img class="w-96" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div> 
-                <div class="flex flex-col w-full lg:w-auto mt-10">  
-                    <div class="flex flex-col ">
+                <div class="flex flex-col w-full  mt-10">  
+                    <div class="flex flex-col gap-9">
                         <div class="flex items-center">
                             <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                             <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
                                 NHL Line Combinations
                             </h1>
                         </div>
-                        <div class="w-full flex flex-row justify-between">
-                            <div class="flex flex-col gap-7 ">
-                                <div class="flex">
-                                <img class="w-10" src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">
-                                <h1 class="text-3xl font-normal">Boston Bruins</h1>
-                                </div>
-                                <div class="flex">
-                                <img class="w-10" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt="">
-                                <h1 class="text-3xl font-normal">Buffalo Sabres</h1>
-                                </div>
-                            </div>
-                            <div class="flex flex-row w-5/12 justify-between ml-10">
-                                <div class="flex flex-col">
-                                    <h1 class="text-lg font-bold">CENTRAL</h1>
-                                    <p>Arizon Coyotes</p>
-                                    <p>Chicago Blackhawks</p>
-                                    <p>Colorado Avalanche </p>
-                                    <p>Dallas Stars</p>
-                                    <p>Minnesota Wild</p>
-                                    <p>Nashville Predators </p>
-                                    <p>St. Louis Blues</p>
-                                    <p>Winnipeg Jets</p>
-                                </div>
-                                <div>
-                                    <h1 class="text-lg font-bold">ATLANTIC</h1>
-                                    <p>Boston Bruins</p>
-                                    <p>Buffalo Sabres</p>
-                                    <p>Detriot Red Wings</p>
-                                    <p>Florida Panthers </p>
-                                    <p>Montreal Canadiens</p>
-                                    <p>Ottawa Senators</p>
-                                    <p>Tampa  Bay Lightning</p>
-                                    <p>Toronto Maple Leafs</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row w-full justify-evenly mt-10">
-                            <div class="ml-5">
-                                <h1 class="text-lg font-bold">METROPOLITANT</h1>
-                                <p>Carolina Hurricanes</p>
-                                <p>Columbus Blue Jackets</p>
-                                <p>New Jersey Devils</p>
-                                <p>New York Islanders</p>
-                                <p>New York Rangers</p>
-                                <p>Philadelphia Flyers</p>
-                                <p>Pittsburgh Penguins</p>
-                                <p>Washington Capital</p>
-                            </div>
-                            <div>
-                                <h1 class="text-lg font-bold">PACIFIC</h1>
-                                <p>Anaheim Ducks</p>
-                                <p>Calgary Flames</p>
-                                <p>Edmonton Oilers</p>
-                                <p>Los Angeles Kings</p>
-                                <p>San Jose Sharks</p>
-                                <p>Seattle Kraken</p>
-                                <p>Vancouver Canucks</p>
-                                <p>Vegas Golden Knights</p>
-                            </div>
-                        </div>
+                        <ul class="w-full flex flex-col gap-5">
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-between">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                            <li class="flex flex-row justify-evenly">
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <!-- Projections table      -->
@@ -1429,15 +1638,56 @@
                 <img class="w-[17rem] h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
             </div>  -->
         </div>   
-        <div class=" flex flex-col items-center w-60 border border-black">
+        <div class=" flex flex-col w-60 gap-8">
             <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
-            <div class="flex">
-                <img src="" alt="">
-                <h1 class="text-md font-semibold">Latest Articles <hr></h1>
+            <div class="flex flex-col gap-3 ml-5">
+                <div class="flex flex-row ">
+                    <img src="{{ asset('/images/menu-icon/ .png') }}" alt="">
+                    <h1 class="text-md font-semibold">Latest Articles </h1>
+                </div>
+                <hr>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                </div>
             </div>
-            
-
-
+            <img class="mt-[28rem] w-[17rem] h-[35rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
         </div>    
         <div class="flex flex-row relative xl:justify-between lg:justify-center hidden">  
             <!-- <div class="xl:block lg:hidden md:hidden">
@@ -1577,7 +1827,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -1602,7 +1852,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -1628,7 +1878,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -1656,7 +1906,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -1681,7 +1931,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -1707,7 +1957,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day. The Penguins havenot confirmed a timeline for Letang for return, but dis say they don't believe the stroke is career-threatening.</p>
+                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
