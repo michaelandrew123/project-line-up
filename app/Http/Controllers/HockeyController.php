@@ -35,4 +35,7 @@ class HockeyController extends Controller
     public function projections(){
         return view('pages/projections');
     }
+    public function nflHome(){
+        return view('pages/nflhome');
+    }
 }

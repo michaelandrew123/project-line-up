@@ -2,8 +2,8 @@
 
 @section('content')
 
-
-    <div class="flex flex-col lg:block md:block sm:hidden smm-hidden ">
+    <!-- old design -->
+    <!-- <div class="flex flex-col lg:block md:block sm:hidden smm-hidden ">
         <div class="text-white bg-[#202e5b] flex justify-evenly py-4">
             <div class="w-1/7 hidden">
                 <img src="/admin.png" />
@@ -35,8 +35,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="md:w-full  smm-flex smm-justify-center text-center m-auto text-black lg:block md:hidden sm:hidden smm-hidden">
+    </div> -->
+    <!-- <div class="md:w-full  smm-flex smm-justify-center text-center m-auto text-black lg:block md:hidden sm:hidden smm-hidden">
         <ul class="list-none flex gap-2  justify-center  ">
             <img class="w-7 h-6" src="{{ asset('/images/starting-goalies/69-691619_shield-transparent-png-blue-shield-no-background-png.png') }}">
             <h1 class="text-base font-bold">Toronto Maple Leafs</h1>
@@ -44,453 +44,452 @@
             <li><a class="text-sm font-bold">Schedule</a></li>
             <li><a class="text-sm font-bold">Odds</a></li>
         </ul>
-    </div>
-    <div class=" text-center flex flex-row items-center justify-center  m-auto md:block sm:hidden">
+    </div> -->
+    <!-- <div class=" text-center flex flex-row items-center justify-center  m-auto md:block sm:hidden">
         <img src="https://tpc.googlesyndication.com/daca_images/simgad/7715899908337629235" class="m-auto"/>
         {{--ads--}}
         {{----}}
-    </div>
-    <div class="flex justify-center lg:block md:block sm:hidden smm-hidden">
-        <div class="md:inline-flex gap-4">
-            <div class="md:w-3/12 sm:w-11/12 smm-w-11-12 flex flex-row items-center justify-center smm-hidden  sm:m-auto">
-                <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
-                {{--ads--}}
-                {{----}}
-            </div>
-    
-            <div class="md:w-4/12 sm:w-11/12 smm-w-11-12 md:m-0 sm:m-auto smm-m-auto">
-                <div class="divide-y divide-slate-200 my-4">
-                    <div class="flex flex-col items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
-                        <div class="flex items-center ">
-                            <h1 class="font-bold">LINE COMBINATIONS</h1> &nbsp;
-                        </div>
-                    </div>
-                    <div class="flex flex-row items-center p-4 rounded-b-lg bg-[#eab308] justify-center ">
-                        <div class="flex flex-row gap-1 items-center justify-center ">
-                            <div class="flex flex-row gap-1 items-center justify-center">
-                                <h1 class="font-bold text-white text-center">MORNING SKATE</h1>
-                                <p class="font-bold text-white text-center">(Updated July 25, 6:18am) </p>
-                            </div>
-                            <div>
-                                <p class="text-[#99D9D9]">Source:</p>
-                            </div>
-                        </div>
-                        <div class="hidden">
-                            LOGO
-                        </div>
-                        <div class="flex flex-row gap-1 items-center hidden">
-                            <div>
-                                <input type="radio" />
-                            </div>
-                            <div>
-                                Starting Goalie
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Start First row -->
-                     <div class="pb-2 flex lg:flex-row md:flex-row  justify-center smm-hidden">
-                        <div class=" mt-4">
-                            <div class="flex flex-row justify-center items-center font-bold">
-                                <p>FORWARD</p>
-                            </div>
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="flex flex-row justify-center items-center invisible">
-                                <p>Line 1</p>
-                            </div>
-                        </div>
-                        <div class=" mt-4">
-                            <div class="text-center font-bold">
-                                <p>DEFENCE</p>
-                            </div>
-                            <div class="grid grid-cols-2 gap-4 ">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="text-center invisible">
-                                <p>Pairing 1</p>
-                            </div>
-                        </div>
-                    </div> 
-                   <!--  End First row -->
-                     
-                    <!-- Start Second row -->
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
-                        <div>
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-row justify-center items-center invisible font-bold">
-                                <p>Line 2</p>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="text-center invisible font-bold">
-                                <p>Pairing 2</p>
-                            </div>
-                        </div>
-                    </div> <!-- End Second row -->
-                    <!-- Start Third row -->
-                    <div class="pb-2 flex flex-row gap-4 justify-center" >
-                        <div >
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="flex flex-row justify-center items-center invisible font-bold">
-                                <p>Line 3</p>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="text-center invisible">
-                                <p>Pairing 3</p>
-                            </div>
-                        </div>
-                    </div> <!-- End Third row -->
-                    <!-- Start Fourth row -->
-                    <div class="pb-2 flex flex-row gap-4 justify-center">
-                        <div>
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-row justify-center items-center invisible">
-                                <p>Line 4</p>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="text-center invisible">
-                                <p>Goalies</p>
-                            </div>
-                        </div>
-                    </div>  <!-- End Fourth row -->
-                </div>
-                <div class=" flex flex-row items-center justify-center my-4">
+    </div> -->
+    <div class="hidden">
+        <div class="flex justify-center lg:block md:block sm:hidden smm-hidden ">
+            <div class="md:inline-flex gap-4">
+                <div class="md:w-3/12 sm:w-11/12 smm-w-11-12 flex flex-row items-center justify-center smm-hidden  sm:m-auto">
                     <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
                     {{--ads--}}
                     {{----}}
                 </div>
-                <div > <!-- Start POWER PLAY 1 -->
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
-                        <h1 class="font-bold">POWER PLAY 1</h1> &nbsp;
-                    </div>
-                    <!-- Start First row -->
-                    <div class="flex flex-row gap-4 justify-center">
-                        <div>
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="flex flex-row justify-center items-center font-bold">
-                                <p>Line 1</p>
+                <div class="md:w-4/12 sm:w-11/12 smm-w-11-12 md:m-0 sm:m-auto smm-m-auto">
+                    <div class="divide-y divide-slate-200 my-4">
+                        <div class="flex flex-col items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                            <div class="flex items-center ">
+                                <h1 class="font-bold">LINE COMBINATIONS</h1> &nbsp;
                             </div>
                         </div>
-                        <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                        <div class="flex flex-row items-center p-4 rounded-b-lg bg-[#eab308] justify-center ">
+                            <div class="flex flex-row gap-1 items-center justify-center ">
+                                <div class="flex flex-row gap-1 items-center justify-center">
+                                    <h1 class="font-bold text-white text-center">MORNING SKATE</h1>
+                                    <p class="font-bold text-white text-center">(Updated July 25, 6:18am) </p>
                                 </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="text-center font-bold">
-                                <p>Pairing 1</p>
-                            </div>
-                        </div>
-                    </div>  <!-- End First row -->
-                </div><!-- End POWER PLAY 1 -->
-                <div> <!-- Start POWER PLAY 2 -->
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
-                        <h1 class="font-bold">POWER PLAY 2</h1> &nbsp;
-                    </div>
-                    <!-- Start First row -->
-                    <div class="flex flex-row gap-4 justify-center">
-                        <div>
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                <div>
+                                    <p class="text-[#99D9D9]">Source:</p>
                                 </div>
                             </div>
+                            <div class="hidden">
+                                LOGO
+                            </div>
+                            <div class="flex flex-row gap-1 items-center hidden">
+                                <div>
+                                    <input type="radio" />
+                                </div>
+                                <div>
+                                    Starting Goalie
+                                </div>
+                            </div>
+                        </div>                   
+                        <!-- Start First row -->
+                            <div class="pb-2 flex lg:flex-row md:flex-row  justify-center smm-hidden">
+                            <div class=" mt-4">
+                                <div class="flex flex-row justify-center items-center font-bold">
+                                    <p>FORWARD</p>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-center items-center invisible">
+                                    <p>Line 1</p>
+                                </div>
+                            </div>
+                            <div class=" mt-4">
+                                <div class="text-center font-bold">
+                                    <p>DEFENCE</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4 ">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="text-center invisible">
+                                    <p>Pairing 1</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <!--  End First row -->  
+                        <!-- Start Second row -->
+                        <div class="pb-2 flex flex-row gap-4 justify-center">
+                            <div>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
 
-                            <div class="flex flex-row justify-center items-center font-bold">
-                                <p>Line 1</p>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                <div class="flex flex-row justify-center items-center invisible font-bold">
+                                    <p>Line 2</p>
                                 </div>
                             </div>
-                            <div class="text-center font-bold">
-                                <p>Pairing 1</p>
+                            <div class="">
+                                <div class="grid grid-cols-2 gap-4 ">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="text-center invisible font-bold">
+                                    <p>Pairing 2</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>  <!-- End First row -->
-                </div><!-- End POWER PLAY 2 -->
-                <div class=" flex flex-row items-center justify-center   my-4">
-                    <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
-                    {{--ads--}}
-                    {{----}}
-                </div>
-                <div> <!-- Start PRESS BOX -->
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
-                        <h1 class="font-bold">PRESS BOX</h1> &nbsp;
+                        </div> <!-- End Second row -->
+                        <!-- Start Third row -->
+                        <div class="pb-2 flex flex-row gap-4 justify-center" >
+                            <div >
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-center items-center invisible font-bold">
+                                    <p>Line 3</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="grid grid-cols-2 gap-4 ">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="text-center invisible">
+                                    <p>Pairing 3</p>
+                                </div>
+                            </div>
+                        </div> <!-- End Third row -->
+                        <!-- Start Fourth row -->
+                        <div class="pb-2 flex flex-row gap-4 justify-center">
+                            <div>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-center items-center invisible">
+                                    <p>Line 4</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="grid grid-cols-2 gap-4 ">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="text-center invisible">
+                                    <p>Goalies</p>
+                                </div>
+                            </div>
+                        </div>  <!-- End Fourth row -->
                     </div>
-                    <!-- Start First row -->
-                    <div class="flex flex-row gap-4 justify-center" >
-                        <div>
-                            <div class="grid grid-cols-3 gap-4">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="flex flex-row justify-center items-center font-bold">
-                                <p>Line 1</p>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="grid grid-cols-2 gap-4 ">
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                                <div class="p-4 smm-p-0">
-                                    <h3 class="capitalize">Mctavish</h3>
-                                    <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
-                                </div>
-                            </div>
-                            <div class="text-center font-bold">
-                                <p>Pairing 1</p>
-                            </div>
-                        </div>
-                    </div>  <!-- End First row -->
-                </div><!-- End PRESS BOX -->
-            </div>
-            <div class="md:w-3/12 sm:w-11/12 smm-w-11-12 md:m-0 sm:m-auto smm-m-auto">
-                <div class="my-4">
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
-                        <h1 class="font-bold">INJURY REPORT</h1> &nbsp;
+                    <div class=" flex flex-row items-center justify-center my-4">
+                        <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
+                        {{--ads--}}
+                        {{----}}
                     </div>
-                    <div class="flex flex-col divide-y divide-slate-200 gap-y-3 mt-2">
-                        <div class="flex flex-row space-x-4">
-                            <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
-                            <div class="flex flex-col">
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
-                                    <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
+                    <div > <!-- Start POWER PLAY 1 -->
+                        <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                            <h1 class="font-bold">POWER PLAY 1</h1> &nbsp;
+                        </div>
+                        <!-- Start First row -->
+                        <div class="flex flex-row gap-4 justify-center">
+                            <div>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Thu Sep 22, 2022</p>
-                                    <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
+                                <div class="flex flex-row justify-center items-center font-bold">
+                                    <p>Line 1</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="flex flex-row space-x-4">
-                            <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
-                            <div class="flex flex-col">
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
-                                    <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
+                            <div class="">
+                                <div class="grid grid-cols-2 gap-4 ">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Thu Sep 22, 2022</p>
-                                    <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row space-x-4">
-                            <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
-                            <div class="flex flex-col">
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
-                                    <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Thu Sep 22, 2022</p>
-                                    <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
+                                <div class="text-center font-bold">
+                                    <p>Pairing 1</p>
                                 </div>
                             </div>
+                        </div>  <!-- End First row -->
+                    </div><!-- End POWER PLAY 1 -->
+                    <div> <!-- Start POWER PLAY 2 -->
+                        <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                            <h1 class="font-bold">POWER PLAY 2</h1> &nbsp;
                         </div>
-                    </div>
-                </div>
-                <div class="my-4">
-                    <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
-                        <h1 class="font-bold">TRANSACTIONS</h1> &nbsp;
-                    </div>
-                    <div class="flex flex-col divide-y divide-slate-200 gap-y-3 mt-2">
-                        <div class="flex flex-row space-x-4">
-                            <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
-                            <div class="flex flex-col">
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
-                                    <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
+                        <!-- Start First row -->
+                        <div class="flex flex-row gap-4 justify-center">
+                            <div>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Thu Sep 22, 2022</p>
-                                    <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row space-x-4">
-                            <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
-                            <div class="flex flex-col">
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
-                                    <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Thu Sep 22, 2022</p>
-                                    <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row space-x-4">
-                            <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
-                            <div class="flex flex-col">
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
-                                    <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <p class="text-slate-300">Thu Sep 22, 2022</p>
-                                    <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-center items-center bg-slate-700 py-4 rounded-b-lg">
-                            <a href="#" class="uppercase inline-block text-sm px-4 py-2 leading-none border rounded tex hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">
-                                Buttton
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class=" flex flex-row items-center justify-center ">
 
-                    <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
-                    
+                                <div class="flex flex-row justify-center items-center font-bold">
+                                    <p>Line 1</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="grid grid-cols-2 gap-4 ">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="text-center font-bold">
+                                    <p>Pairing 1</p>
+                                </div>
+                            </div>
+                        </div>  <!-- End First row -->
+                    </div><!-- End POWER PLAY 2 -->
+                    <div class=" flex flex-row items-center justify-center   my-4">
+                        <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
+                        {{--ads--}}
+                        {{----}}
+                    </div>
+                    <div> <!-- Start PRESS BOX -->
+                        <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                            <h1 class="font-bold">PRESS BOX</h1> &nbsp;
+                        </div>
+                        <!-- Start First row -->
+                        <div class="flex flex-row gap-4 justify-center" >
+                            <div>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row justify-center items-center font-bold">
+                                    <p>Line 1</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="grid grid-cols-2 gap-4 ">
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                    <div class="p-4 smm-p-0">
+                                        <h3 class="capitalize">Mctavish</h3>
+                                        <img src = "{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}" class="w-24"/>
+                                    </div>
+                                </div>
+                                <div class="text-center font-bold">
+                                    <p>Pairing 1</p>
+                                </div>
+                            </div>
+                        </div>  <!-- End First row -->
+                    </div><!-- End PRESS BOX -->
+                </div>
+                <div class="md:w-3/12 sm:w-11/12 smm-w-11-12 md:m-0 sm:m-auto smm-m-auto">
+                    <div class="my-4">
+                        <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                            <h1 class="font-bold">INJURY REPORT</h1> &nbsp;
+                        </div>
+                        <div class="flex flex-col divide-y divide-slate-200 gap-y-3 mt-2">
+                            <div class="flex flex-row space-x-4">
+                                <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
+                                <div class="flex flex-col">
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
+                                        <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Thu Sep 22, 2022</p>
+                                        <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row space-x-4">
+                                <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
+                                <div class="flex flex-col">
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
+                                        <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Thu Sep 22, 2022</p>
+                                        <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row space-x-4">
+                                <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
+                                <div class="flex flex-col">
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
+                                        <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Thu Sep 22, 2022</p>
+                                        <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <div class="flex flex-row items-center justify-center p-lg-3 bg-slate-700 text-white py-4 rounded-t-lg">
+                            <h1 class="font-bold">TRANSACTIONS</h1> &nbsp;
+                        </div>
+                        <div class="flex flex-col divide-y divide-slate-200 gap-y-3 mt-2">
+                            <div class="flex flex-row space-x-4">
+                                <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
+                                <div class="flex flex-col">
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
+                                        <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Thu Sep 22, 2022</p>
+                                        <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row space-x-4">
+                                <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
+                                <div class="flex flex-col">
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
+                                        <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Thu Sep 22, 2022</p>
+                                        <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row space-x-4">
+                                <img class="h-14" src="https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/nhl/low-res/30002539.png  " />
+                                <div class="flex flex-col">
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Expected Return > Mon Sep 25, 2022</p>
+                                        <p><span  class="font-bold text-sky-400">Jake Muzzin</span> - <span class="font-bold text-slate-400">DAY-TO-DAY <i>Back</i></span></p>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-slate-300">Thu Sep 22, 2022</p>
+                                        <p><span class="font-bold text-sky-400">Jake Muzzin </span> <span class="text-slate-400">| Muzzin will not participate in the first week of camp due to back discomfort, reports Sport </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-row justify-center items-center bg-slate-700 py-4 rounded-b-lg">
+                                <a href="#" class="uppercase inline-block text-sm px-4 py-2 leading-none border rounded tex hover:border-transparent hover:text-teal-100 hover:bg-white mt-4 lg:mt-0">
+                                    Buttton
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flex flex-row items-center justify-center ">
+                        <img src="https://tpc.googlesyndication.com/daca_images/simgad/9745768358543156588" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- end  -->
+    <!-- New update design -->
+    
     <!-- Mobile Design -->
     <div class="xl:hidden lg:hidden md:hidden sm:block smm-block">
         <div class="flex flex-col justify-center w-full">
@@ -549,7 +548,7 @@
        <div id="img" class="hidden flex justify-center">
          <!-- <img class="w-4/5" src="{{ asset('/images/menu-icon/coming_soon.png') }}" alt=""> -->
            <div class="flex flex-col justify-center items-center mt-2 mx-1 " id="nav-body">
-                    <h1 class="text-center text-sm font-bold">FORWARDS</h1>
+                <h1 class="text-center text-sm font-bold">FORWARDS</h1>
                 <div class="flex flex-row gap-1 mt-1 justify-center ">
                     <div class="bg-slate-100 p-2 rounded-xl text-center relative ">
                         <p class="text-center">KERFOT</p>
@@ -684,7 +683,6 @@
                 </div>
            </div>
        </div>
-
        <div id="scrollbar" class="w-full flex flex-col justify-center hidden my-9 gap-8">
            <!-- <div class="flex flex-col gap-4 ">
                 <div class=" flex justify-center">
@@ -1264,7 +1262,6 @@
                 </div>
             </div>
        </div>
-
         <div id="ldf" class="">  
             <!-- Start First Row -->
             <div class="flex flex-col justify-center items-center mt-2 mx-1 " id="nav-body">

@@ -2,8 +2,11 @@
 
 
 <nav class="bg-white shadow-lg shadow-[#ececec]">
-    <div class="md:flex md:flex-col sm:block ">
-        <div class="bg-[#545454] w-full h-[6rem] gap-1 flex justify-center">
+
+
+
+    <div class="md:flex md:flex-col sm:block "  @if(URL::current()==route('nfl.home')) style="display:none !important;" @endif>
+        <div class="bg-[#545454] w-full h-[6rem] gap-1 flex justify-center ">
             <!-- <div class=" flex flex-col items-center w-[10rem] gap-1.5 ml-1.5">
                 <select style="-webkit-appearance: none;" class="font-bold text-[12px] border border-white rounded-[4px] w-[9rem] h-[29px] snap-none pl-2 ">
                     <option class="text-lg font-semibold" value="" class="font-bold text-[12px] p-5">All Sports</option> 
@@ -197,7 +200,13 @@
                 </div>
                 </div>
             </div> -->
-            <div class="owl-carousel image-slider my-1.5 mx-5 relative">
+            
+            <div class="owl-carousel image-slider my-1.5 mx-5 relative" >
+           
+          
+           
+            
+        
                 <div class="w-[5rem] h-[5.5rem]  bg-black border border-black rounded-[11px] flex items-center justify-center absolute right-3">
                     <a class="text-white text-center" href="#">
                         <h1 class="text-sm font-bold text-white" >THURS</h1>
@@ -493,8 +502,7 @@
                             </div>
                         </div>               
                     </div>
-                </div>
-                    
+                </div>     
             </div>         
         </div> 
         <div class="sm:relative md:flex md:justify-center z-30">
