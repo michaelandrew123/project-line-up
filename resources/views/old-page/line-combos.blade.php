@@ -1,7 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-
+    <!-- New update design -->
+    
+    <!-- end -->
     <!-- old design -->
     <!-- <div class="flex flex-col lg:block md:block sm:hidden smm-hidden ">
         <div class="text-white bg-[#202e5b] flex justify-evenly py-4">
@@ -488,8 +490,8 @@
         </div>
     </div>
     <!-- end  -->
-    <!-- New update design -->
-    
+ 
+  
     <!-- Mobile Design -->
     <div class="xl:hidden lg:hidden md:hidden sm:block smm-block">
         <div class="flex flex-col justify-center w-full">

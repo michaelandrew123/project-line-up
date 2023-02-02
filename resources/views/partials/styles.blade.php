@@ -39,6 +39,13 @@
       
     }
     
+    .home-input, value{
+         font-size: 36px;
+         font-weight: bold;
+         color: #9fa0a0;
+         padding: 15px;
+         
+    }
 
     .owl-carousel .owl-item.active {
         width: 16rem !important;
