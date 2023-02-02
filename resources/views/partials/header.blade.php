@@ -545,7 +545,6 @@
                                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                             </button>
                         </div>
- 
                         <div class=" flex flex-row 2xl:gap-12 xl:gap-[rem] lg:gap-[1.5rem] md:gap-5 navbar"> 
                             <a href="#responsive-header" rel="daily-menu" class="sm:leading-loose md:leading-13 xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0 text-[16px]  md:text-slate-300  hover:text-white  font-bold">
                                 DAILY FANTASY
