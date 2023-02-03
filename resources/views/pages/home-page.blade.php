@@ -111,7 +111,7 @@
                                         <a class="text-sm font-semibold ml-2" href="#">NHL Highlight: Jet 3, Flames 2</a>
                                         <p class="text-[13px] opacity-50 ml-2">NHL | 5:35</p>
                                     </li>
-                                    <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                    <li id="nav-active" class="flex flex-col border border-slate-400 p-0.5 link">
                                         <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Predator 6, Canadiens 3</a>
                                         <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
                                     </li>
