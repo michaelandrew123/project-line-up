@@ -28,10 +28,7 @@
     });
     
     //   header logo
-    $('#SN > .mlb').click(function(){
-        $('div > Sl > #base').removeClass('hidden');
-        $('div > Sl > #hockey').addClass('hidden');
-    });
+    
 
     
     $( "div#main-menu1 > div > a, div#main-menu2 > div > a" ).hover(function() {  
@@ -488,5 +485,7 @@
             }
         }
     })
+   
+
 
 </script>
