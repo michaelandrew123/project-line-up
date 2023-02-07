@@ -5,30 +5,30 @@
 
     <!-- Desktop Design -->
     <!-- Old Design -->
-    <div class="flex justify-evenly lg:flex-row md:flex-col sm:flex-col smm-hidden hidden">
+    <div class="flex justify-evenly lg:flex-row md:flex-col sm:flex-col smm-hidden ">
         <div class="flex flex-col xl:block lg:block md:hidden">
             <img class="w-[17rem] h-[35rem] mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
             <img class="w-[17rem] h-[185px] mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
             <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div>
         <div class=" flex flex-col">  
-            <!-- <div class="flex justify-center mb-5">
+            <div class="flex justify-center mb-5">
                 <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
-            </div>  -->
-            <!-- <div class="flex">
+            </div> 
+            <div class="flex">
               <h1 class="text-black text-3xl font-bold lg:ml-0 md:ml-8">Starting Goalies</h1>
-            </div>  -->
-            <!-- <div class=" flex justify-center mb-3 ">
+            </div> 
+            <div class=" flex justify-center mb-3 ">
                 <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex  justify-between">
                     <img class="w-16" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
                     <div class="flex flex-col items-center gap-5 mb-4 justify-center">
-                        <p class="text-white  xl:text-lg lg:text-lg font-bold  ">FEB 18TH, 2022 7:00PM EST</p>
+                        <p class="text-black  xl:text-lg lg:text-lg font-bold  ">FEB 18TH, 2022 7:00PM EST</p>
                         <h1 class="text-black text-3xl font-bold ">Toronto Maple Leafs VS Calagary Flames</h1>
                     </div>
                     <img class="w-16 " src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
                 </div>
-            </div> -->
-            <!-- <div class=" ">
+            </div>
+            <div class=" ">
                 <div class="flex justify-center md:flex-row sm:flex-col gap-4">
                        <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
                             <div class="flex m-3 mt-5 ">
@@ -59,9 +59,9 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>    
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">  
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">  
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                             </div>
                         </div>       
                             <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
@@ -93,9 +93,9 @@
                                         <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                     </div>
                                 </div>       
-                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">  
+                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">  
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                                 </div>
                             </div>
                         </div>
@@ -106,14 +106,14 @@
                                 <div class="flex gap-32">
                                     <div class="flex">
                                         <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
-                                        <h1 class="text-white text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
+                                        <h1 class="text-black text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
                                     </div>
                                     <div class="flex">
                                         <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
-                                        <h1 class="text-white text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
+                                        <h1 class="text-black text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
                                     </div> 
                                 </div>                                                               
-                                <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
+                                <p class="text-black  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
                             </div>
                         </div>
                         <div class=" ">
@@ -147,10 +147,10 @@
                                         <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                     </div>
                                 </div>  
-                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 "> 
+                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl"> 
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left">  
                                     </div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                                 </div>
                             </div>       
                             <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
@@ -182,9 +182,9 @@
                                         <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                     </div>
                                 </div>  
-                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                                <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                                 </div>
                             </div>
                         </div>
@@ -196,14 +196,14 @@
                             <div class="flex gap-32">
                                 <div class="flex">
                                     <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
-                                    <h1 class="text-white text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
+                                    <h1 class="text-black text-3xl sm:text-1xl font-bold ">TORONTO <br> MAPLE LEAFS </h1>
                                 </div>
                                 <div class="flex">
                                     <img class="w-16 mr-3" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
-                                    <h1 class="text-white text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
+                                    <h1 class="text-black text-3xl sm:text-1xl font-bold">CALGARY<br>FLAMES</h1>
                                 </div> 
                             </div>                                                               
-                            <p class="text-white  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
+                            <p class="text-black  xl:text-lg lg:text-lg sm:text-sm font-bold lg:mt-0 md:mt-0 sm:mt-2 ">Nov.7 <br> 7:00 pm </p>
                         </div>
                     </div>
                     <div class=" ">
@@ -237,9 +237,9 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>       
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                             </div>
                         </div>       
                         <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
@@ -271,14 +271,14 @@
                                     <p class="text-[12px] font-bold">11/07/2022 4:21pm EST</p>
                                 </div>
                             </div>
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                             </div>
                         </div>
                     </div>
                 </div>  
-            </div>  -->
+            </div> 
         </div>
         <div class="flex flex-col gap-2 items-center xl:block lg:block md:hidden">
             <img class="w-72 h-[263px]" src="{{ asset('/images/menu-icon/adds3.png') }}">
@@ -286,7 +286,7 @@
             <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds5.png') }}">
         </div>
     </div>
-    <div class="block smm-hidden hidden">
+    <div class="block smm-hidden">
        <h1 class="font-bold text-center">NHL Starting Goalies</h1>
         <p class="text-center mx-0.5 text-sm font-medium">Teams will announce the goalie starting well ahead of game time about 80% of the time. You can find the goalies starting right here on <a href="#" class="underline">projectedlineups.com</a> . 
         Sometimes they will be designated “Expected” when a beat reporter doesn't use definitive language in their announcements. However, these goalies end up starting about 99% of the time. Goalies designated “Confirmed”  have been validated by a credible team source or from a beat reporter. We always start the day with a “projected”  designation and will update a goalies status when we get any sort of announcement. 
@@ -294,9 +294,9 @@
     </div>
     <!-- End  -->
     <!-- New Update Design -->
-    <div class="w-full flex flex-row justify-evenly smm-hidden">
+    <!-- <div class="w-full flex flex-row justify-evenly smm-hidden">
         <div class="flex flex-col items-center w-7/12">
-            <div class="w-full  h-36 bg-[#1d9bf0] flex  border rounded-3xl justify-center items-center">
+            <div class="w-full  h-36 bg-[#d9d9d9] flex  border rounded-[10px] justify-center items-center">
               <h1 class="text-2xl font-bold ">NHL Starting Goalies Tuesday, January 24</h1>
             </div>
             <div class="w-full">
@@ -339,13 +339,13 @@
                         <div class="carousel-item active relative float-left w-full ">
                             <div class="flex flex-col mt-10"> 
                                 <div class="flex flex-row justify-between ">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -355,18 +355,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -382,7 +382,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -400,13 +400,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -416,18 +416,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -443,7 +443,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -461,13 +461,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -477,18 +477,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -504,7 +504,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -522,13 +522,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -538,18 +538,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -565,7 +565,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -583,13 +583,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -599,18 +599,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -626,7 +626,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -644,13 +644,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -660,18 +660,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -687,7 +687,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -705,13 +705,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -721,18 +721,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -748,7 +748,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -766,13 +766,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -782,18 +782,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -809,7 +809,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -827,13 +827,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -843,18 +843,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -870,7 +870,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -892,13 +892,13 @@
                         <div class="carousel-item relative float-left w-full ">
                             <div class="flex flex-col mt-10"> 
                                 <div class="flex flex-row justify-between ">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -908,18 +908,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -935,7 +935,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -953,13 +953,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -969,18 +969,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -996,7 +996,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1014,13 +1014,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1030,18 +1030,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1057,7 +1057,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1075,13 +1075,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1091,18 +1091,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1118,7 +1118,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1136,13 +1136,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1152,18 +1152,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1179,7 +1179,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1197,13 +1197,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1213,18 +1213,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1240,7 +1240,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1258,13 +1258,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1274,18 +1274,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1301,7 +1301,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1319,13 +1319,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1335,18 +1335,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1362,7 +1362,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1380,13 +1380,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1396,18 +1396,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1423,7 +1423,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1445,13 +1445,13 @@
                         <div class="carousel-item relative float-left w-full ">
                             <div class="flex flex-col mt-10"> 
                                 <div class="flex flex-row justify-between ">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1461,18 +1461,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1488,7 +1488,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1506,13 +1506,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1522,18 +1522,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1549,7 +1549,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1567,13 +1567,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1583,18 +1583,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1610,7 +1610,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1628,13 +1628,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1644,18 +1644,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1671,7 +1671,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1689,13 +1689,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1705,18 +1705,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1732,7 +1732,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1750,13 +1750,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1766,18 +1766,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1793,7 +1793,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1811,13 +1811,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1827,18 +1827,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1854,7 +1854,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1872,13 +1872,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1888,18 +1888,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1915,7 +1915,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1933,13 +1933,13 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-2 mb-4">
                                             <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-white">Colorado</h1>
+                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
                                             </div>
-                                            <p class="text-md text-center text-white">25-17-13, 4th Central</p>
+                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
                                         </div>
                                     </div>
                                     <h1 class="text-center text-sm font-bold">
@@ -1949,18 +1949,18 @@
                                         Line : COL- 155 <br>
                                         O/U 6.5
                                     </h1>
-                                    <div class="h-32 w-72 bg-[#1d9bf0] border rounded-3xl flex flex-col items-center justify-end ">
+                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                         <div class="justify-center items-center gap-3 mb-4">
                                             <div class="flex flex-row items-center gap-3">
                                                 <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-white">Nashville</h1>
+                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
                                             </div>
-                                            <p class="text-md text-center text-white">22-18-6, 5th Central</p>
+                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -1976,7 +1976,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="w-[47%] h-auto border border-black relative rounded-xl ">
+                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
                                         <div class="flex mt-5 gap-8 mx-4 my-5">
                                             <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                             <div class="flex flex-col gap-4">
@@ -2051,7 +2051,7 @@
             </div>
             <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
         </div> 
-    </div>
+    </div> -->
     <!-- End of Desktop -->
     <!-- Mobile design -->
         <div class="mx-1 hidden smm-block">
@@ -2138,9 +2138,9 @@
                     </div>
                     
                     <div class="rectangle">
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2184,9 +2184,9 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                             </div>
                         </div>
                     </div>
@@ -2240,9 +2240,9 @@
                     </div>
                     
                     <div class="rectangle">
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2286,9 +2286,9 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                             </div>
                         </div>
                     </div>
@@ -2344,9 +2344,9 @@
                         </div>
                     </div>
                     <div class="rectangle">
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2390,9 +2390,9 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                             </div>
                         </div>
                     </div>
@@ -2446,9 +2446,9 @@
                     </div>
                     
                     <div class="rectangle">
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2492,9 +2492,9 @@
                         </div>
                         
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                             </div>
                         </div>
                     </div>
@@ -2553,9 +2553,9 @@
                     </div>
                     
                     <div class="rectangle">
-                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                        <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2599,9 +2599,9 @@
                         </div>
                        
                         <div class="rectangle">
-                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 ">                     
+                            <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
                             </div>
                         </div>
                     </div>

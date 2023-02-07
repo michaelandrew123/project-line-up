@@ -4,8 +4,13 @@
 <nav class="bg-white shadow-lg shadow-[#ececec]">
 
 
-
-    <div class="md:flex md:flex-col sm:block "  @if(URL::current()==route('nfl.home')) style="display:none !important;" @endif>
+    <div class="md:flex md:flex-col sm:block "  
+    @if(URL::current()==route('nfl.home')) style="display:none !important;" @endif
+    @if(URL::current()==route('nhl.starting-goalies')) style="display:none !important;" @endif
+    @if(URL::current()==route('nhl.home')) style="display:none !important;" @endif
+    @if(URL::current()==route('nhl.line-combos')) style="display:none !important;" @endif
+    >
+      
         <div class="bg-[#545454] w-full h-[6rem] gap-1 flex justify-center ">
             <!-- <div class=" flex flex-col items-center w-[10rem] gap-1.5 ml-1.5">
                 <select style="-webkit-appearance: none;" class="font-bold text-[12px] border border-white rounded-[4px] w-[9rem] h-[29px] snap-none pl-2 ">
@@ -885,7 +890,7 @@
                                 </ul>
                             </div>
                         </div> -->
-                    <div class="hidden" id="new-menu">
+                    <div id="new-menu" class="hidden" >
                         <div class="mt-4 flex flex-row justify-evenly">
                             <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">JOIN</button>
                             <button class="text-[#28abf3] font-bold text-sm border border-black border-radius rounded-full bg-black w-[41%] p-1">SIGN IN</button>
