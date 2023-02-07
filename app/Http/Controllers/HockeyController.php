@@ -38,4 +38,13 @@ class HockeyController extends Controller
     public function nflHome(){
         return view('pages/nflhome');
     }
+    public function nhlHome(){
+        return view('pages/nhlhome');
+    }
+    public function nhlstartingGoalies(){
+        return view('pages/nhlstarting-goalies');
+    }
+    public function nhllineCombos(){
+        return view('pages/nhlline-combos');
+    }
 }

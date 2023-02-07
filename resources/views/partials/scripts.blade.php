@@ -26,11 +26,8 @@
         }, function(){
         $(this).css("border-left", "none");
     });
-    
-    //   header logo
-    
 
-    
+    //   header logo
     $( "div#main-menu1 > div > a, div#main-menu2 > div > a" ).hover(function() {  
         var data = $(this).attr('rel'); 
         $("a > div.active").removeClass('active'); 
@@ -39,6 +36,9 @@
         $("#sub-menu > ul."+data).addClass('active');  
     });
      
+    $('#sub-hed > .d-kings').on('click', function(){
+        $('.drftking').removeClass('hidden');
+    });
    
 
 
@@ -85,7 +85,7 @@
     // })
     
     $('#main-menu-mobile').on('touchstart', function(){
-        $('#new-menu').toggleClass();
+        $('#new-menu').toggleClass('hidden');
         
     });
    
@@ -312,7 +312,6 @@
         $('#main-tile2').on('touchstart', function(){
                 $("#main-tile2").addClass('hidden');
                 $("#tile2").removeClass('hidden');
-                
             });
 
 

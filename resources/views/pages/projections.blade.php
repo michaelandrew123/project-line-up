@@ -12,7 +12,7 @@
         <hr>
         <div>
            <ul class="flex flex-row gap-3">
-            <li class="">
+                <li class="">
                     <select style="-webkit-appearance: none;" class="w-[12rem] p-1.5 text-[12px] border border-2 " name="" id="">
                         <option value="">Daily Hockey Projections</option>
                         <option value=""></option>
@@ -75,7 +75,6 @@
                 <tr class="flex justify-between h-[3rem] bg-stone-100 ">
                     <td class="flex flex-col justify-center  border border-slate-200 justify-start w-full ">
                         <div class="flex flex-row  gap-2 ml-2">
-                            
                             <div class="flex flex-col">
                                 <h1 class="text-sky-300 text-[12px] font-normal">Tage Thompson C</h1>
                                 <p class="text-[11px] "><b>BUF</b> @ STL</p>
@@ -596,8 +595,7 @@
                     <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">19.4</p></td>
                     <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">20.7</p></td>
                     <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.57</p></td>
-                </tr>
-                
+                </tr> 
             </table>
         </div>
         
