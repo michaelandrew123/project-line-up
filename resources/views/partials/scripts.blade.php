@@ -28,22 +28,53 @@
     });
 
     //   header logo
-    $( "div#main-menu1 > div > a, div#main-menu2 > div > a" ).hover(function() {  
+    $("div#main-menu1 > div > a, div#main-menu2 > div > a" ).hover(function() {  
         var data = $(this).attr('rel'); 
         $("a > div.active").removeClass('active'); 
         $("a > div."+data).addClass('active'); 
         $("#sub-menu > ul.active").removeClass('active');
         $("#sub-menu > ul."+data).addClass('active');  
     });
-     
+
+    // nhl line-combos sub link
+     $('#sub-hed > .d-kings').on('click', function(){
+      $('.d-kings').addClass('bg-[#1d9bf0]');
+      $('.l-ups, .fnl, .sts').removeClass('bg-[#1d9bf0]');
+     });
+     $('#sub-hed > .fnl').on('click', function(){
+      $('.fnl').addClass('bg-[#1d9bf0]');
+      $('.l-ups, .d-kings, .sts').removeClass('bg-[#1d9bf0]');
+     });
+     $('#sub-hed > .sts').on('click', function(){
+      $('.sts').addClass('bg-[#1d9bf0]');
+      $('.l-ups, .d-kings, .fnl').removeClass('bg-[#1d9bf0]');
+     });
+     $('#sub-hed > .l-ups').on('click', function(){
+      $('.l-ups').addClass('bg-[#1d9bf0]');
+      $('.sts, .d-kings, .fnl').removeClass('bg-[#1d9bf0]');
+     });
+
+
     $('#sub-hed > .d-kings').on('click', function(){
-        $('.drftking').removeClass('hidden');
+        $('.drftking, .dk-price').removeClass('hidden');
+        $('.fduel, .stat, .fl-price').addClass('hidden');
+    });
+    $('#sub-hed > .fnl').on('click', function(){
+        $('.fduel, .fl-price').removeClass('hidden');
+        $('.drftking, .stat, .dk-price').addClass('hidden');
+    });
+    $('#sub-hed > .sts').on('click', function(){
+        $('.stat').removeClass('hidden');
+        $('.drftking ,.fduel, .dk-price, .fl-price').addClass('hidden');
+    });
+    $('#sub-hed > .l-ups').on('click', function(){
+        $('.drftking, .fduel, .stat, .dk-price, .fl-price').addClass('hidden');
     });
    
-
+    // nhl line-combos sub link end
 
     $( "div#main-menu > div > a" ).on('click', function() {
-
+   
  
 
         // $("div#main-menu > div > a > div").addClass('md:hidden');
