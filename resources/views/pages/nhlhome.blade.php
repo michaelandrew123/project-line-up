@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="flex flex-row justify-center gap-3">
-        <div class="flex flex-col w-[67%] ">
+        <div class="flex flex-col xl:w-[67%] lg:w-full">
                 <div class="flex flex-col w-full">
                     <div class="flex justify-center mb-5">
                         <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
