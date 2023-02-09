@@ -505,14 +505,24 @@
                 nav:true
             },
             600:{
-                items:5,
-                nav:false
+                items:2,
+                nav:false,
+                loop:false
+                
+            },
+            768:{
+                items:3,
+                nav:false,
+                loop:false
+                
             },
             1000:{
                 items:5,
                 nav:true,
                 loop:false
+                
             }
+        
         }
     })
    

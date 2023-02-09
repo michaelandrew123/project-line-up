@@ -10,8 +10,10 @@
     @if(URL::current()==route('nhl.home')) style="display:none !important;" @endif
     @if(URL::current()==route('nhl.line-combos')) style="display:none !important;" @endif
     @if(URL::current()==route('nhl.team-news')) style="display:none !important;" @endif
+    @if(URL::current()==route('nhl.individual-player-news')) style="display:none !important;" @endif
+    @if(URL::current()==route('nhl.all-player-news')) style="display:none !important;" @endif
     >
-      
+    
         <div class="bg-[#545454] w-full h-[6rem] gap-1 flex justify-center ">
             <!-- <div class=" flex flex-col items-center w-[10rem] gap-1.5 ml-1.5">
                 <select style="-webkit-appearance: none;" class="font-bold text-[12px] border border-white rounded-[4px] w-[9rem] h-[29px] snap-none pl-2 ">
@@ -208,12 +210,7 @@
             </div> -->
             
             <div class="owl-carousel image-slider my-1.5 mx-5 relative" >
-           
-          
-           
-            
-        
-                <div class="w-[5rem] h-[5.5rem]  bg-black border border-black rounded-[11px] flex items-center justify-center absolute right-3">
+                <div class="w-[5rem] h-[5.5rem] bg-black border border-black rounded-[11px] flex items-center justify-center absolute left-[10rem] md:left- smm-left-28 ">
                     <a class="text-white text-center" href="#">
                         <h1 class="text-sm font-bold text-white" >THURS</h1>
                         <p class="text-[26px] font-[700] text-white">1 7</p>
@@ -517,7 +514,7 @@
                 <div class="w-full lg:w-8/12 md:w-8/12 bg-current  flex  md:items-center md:justify-start md:justify-between ">
                     <div class="flex flex-row ml-4 w-[30%] justify-between">
                         <div class=" relative">
-                            <span class="text-[50px] text-white rotate-90 absolute right-2 bottom-[-19px]" href="">></span>
+                            <!-- <span class="text-[50px] text-white rotate-90 absolute right-2 bottom-[-19px]" href=""></span> -->
                             <select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[6rem] h-[41px] h-[39px] text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 lg:pl-2">
                                 <option id="nhl" class="text-lg font-semibold" value="">NHL</option> 
                                 <option id="mlb" class="text-lg font-semibold" value="">MLB </option>
@@ -525,6 +522,7 @@
                                 <option id="nba" class="text-lg font-semibold" value="">NBA</option>
                                 <option id="soc" class="text-lg font-semibold" value="">SOC</option>
                             </select>
+                            <img class="absolute -top-3 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">
                             <!-- <img class="absolute top-0 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">     -->
                         </div>
                         <div class="flex items-center flex-shrink-0 text-white">

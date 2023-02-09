@@ -31,14 +31,14 @@
     <div class="w-full flex flex-col items-center justify-center relative ">
         <div class="flex flex-row justify-center items-center relative w-10/12">
             <img class="absolute left-0" src="{{ asset('/images/menu-icon/basketball_player.png') }}" alt="">
-            <img class="absolute xl:left-[12.5rem] lg:left-[9rem]" src="{{ asset('/images/menu-icon/soccer_player.png') }}" alt="">
-            <img class="w-[20rem] " src="{{ asset('/images/menu-icon/hockey_player.png') }}" alt="">
-            <img class="absolute xl:right-[11.5rem] lg:right-[10rem]" src="{{ asset('/images/menu-icon/baseball_player.png') }}" alt="">
+            <img class="absolute xl:left-[12.5rem] lg:left-[9rem] z-0" src="{{ asset('/images/menu-icon/soccer_player.png') }}" alt="">
+            <img class="w-[20rem] z-10" src="{{ asset('/images/menu-icon/hockey_player.png') }}" alt="">
+            <img class="absolute xl:right-[11.5rem] lg:right-[10rem] z-0" src="{{ asset('/images/menu-icon/baseball_player.png') }}" alt="">
             <img class="absolute right-0" src="{{ asset('/images/menu-icon/football_player_(2).png') }}" alt="">
         </div>
-        <div class="absolute">
+        <div class="absolute z-20">
             <div class="relative">
-            <input class="border border-black w-[50rem] h-[4.5rem] rounded-lg home-input" type="" value="Search team projected lineups. . .">
+            <input class="border border-black w-[50rem] h-[4.5rem] rounded-lg home-input " type="" value="Search team projected lineups. . .">
             <a class="absolute right-[10px] top-[7px]" href=""><img class=" w-[57px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
             </div>
         </div>

@@ -2,7 +2,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="w-full flex justify-center">
+    <div class="w-full flex justify-center lg:block  smm:hidden">
         <div class="w-11/12 flex flex-col border-black m-4 gap-5">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">

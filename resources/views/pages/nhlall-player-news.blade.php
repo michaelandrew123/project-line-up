@@ -32,18 +32,25 @@
             <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-8 py-2 rounded-md">NEWS</button>
             <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-8 py-2 rounded-md">PROPS & ODDS</button>
         </div>
-            <div class="relative">
-                <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players"> 
-                <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
-            </div>
+        <div class="relative">
+            <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players"> 
+            <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
+        </div>
     </div>
 </div>
 <div class="w-full flex justify-center bg-slate-100">
     <div class="w-11/12 flex flex-row justify-between gap-3">
         <div class="flex flex-col  w-9/12 gap-5">
-            <div class="w-full bg-[#d9d9d9] flex flex-row  items-center rounded-md">
-                <img class="w-[4rem] rounded-lg justify-self-start ml-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
-                <h1 class="text-center text-xl font-bold w-full">Toronto Maples Leafs Team News</h1>
+            <div class="w-full bg-[#d9d9d9] flex flex-row  items-center justify-between rounded-md">
+                <div class="flex gap-2 ml-2">
+                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
+                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                </div>
+                <h1 class="text-xl font-bold text-center">NHL Player News</h1>
+                <div class="flex gap-2 mr-2">
+                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
+                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
+                </div>
             </div>
             <div class="flex flex-row justify-between w-full">
                 <button class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 py-2 rounded-md">ALL</button>
@@ -54,23 +61,23 @@
             </div> 
             <div class="flex flex-col w-full">
                 <div class="flex flex-row w-full justify-between mb-3">
-                    <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
+                    <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white relative">
                         <div class="flex m-1 mt-5 ">
                             <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
-                                    <img class="w-[18px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                    <p class="text-[11px] font-bold">Injury</p>
+                                    <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                    <p class="text-[11px] font-bold">Line Changes</p>
                                 </div>
-                                <div>
-                                    <h1 class=" text-xl font-extrabold">Auston Mathews</h1>
-                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
-                                </div>   
+                                <div class="flex flex-col">
+                                    <h1 class=" xl:text-xl lg:text-md xl:font-extrabold lg:font-bold font-semibold"> Connor Mcdavid</h1>
+                                    <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
+                                </div>                                                                      
                             </div>
                         </div>
                         <div class=" ml-1">
-                            <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
-                            <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                            <p class="text-[14px] font-bold mb-2">Stone out with lower body injury</p>
+                            <p class="text-[12px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                         </div>
                         <div class="flex flex-row items-center absolute left-3 bottom-2">
                             <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -89,7 +96,7 @@
                                     <p class="text-[11px] font-bold">Line Changes</p>
                                 </div>
                                 <div class="flex flex-col">
-                                    <h1 class=" text-xl font-extrabold">John Tavares</h1>
+                                    <h1 class=" xl:text-xl lg:text-md xl:font-extrabold lg:font-bold font-semibold">John Tavares</h1>
                                     <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
                                 </div>                                                                      
                             </div>
@@ -115,7 +122,7 @@
                                     <p class="text-[11px] font-bold">Injury</p>
                                 </div>
                                 <div>
-                                    <h1 class=" text-xl font-extrabold">Auston Mathews</h1>
+                                    <h1 class=" xl:text-xl lg:text-md xl:font-extrabold lg:font-bold font-semibold">Auston Mathews</h1>
                                     <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
                                 </div>   
                             </div>
@@ -134,23 +141,23 @@
                     </div>
                 </div>
                 <div class="flex flex-row w-full justify-between mb-3">
-                    <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
+                    <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white relative">
                         <div class="flex m-1 mt-5 ">
                             <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
-                                    <img class="w-[18px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                    <p class="text-[11px] font-bold">Injury</p>
+                                    <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                    <p class="text-[11px] font-bold">Line Changes</p>
                                 </div>
-                                <div>
-                                    <h1 class=" text-xl font-extrabold">Auston Mathews</h1>
-                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
-                                </div>   
+                                <div class="flex flex-col">
+                                    <h1 class=" xl:text-xl lg:text-md xl:font-extrabold lg:font-bold font-semibold">Mark Stone</h1>
+                                    <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
+                                </div>                                                                      
                             </div>
                         </div>
                         <div class=" ml-1">
-                            <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
-                            <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                            <p class="text-[14px] font-bold mb-2">Stone out with lower body injury</p>
+                            <p class="text-[12px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                         </div>
                         <div class="flex flex-row items-center absolute left-3 bottom-2">
                             <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -161,7 +168,7 @@
                         </div>
                     </div>
                     <div class="flex justify-center items-center">
-                       <img class="h-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                       <img class="h-64 xl:w-auto lg:w-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
                     </div>
                     <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
                         <div class="flex m-1 mt-5 ">
@@ -172,7 +179,7 @@
                                     <p class="text-[11px] font-bold">Injury</p>
                                 </div>
                                 <div>
-                                    <h1 class=" text-xl font-extrabold">Auston Mathews</h1>
+                                    <h1 class=" xl:text-xl lg:text-md xl:font-extrabold lg:font-bold font-semibold">Auston Mathews</h1>
                                     <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
                                 </div>   
                             </div>
@@ -200,7 +207,7 @@
                                     <p class="text-[11px] font-bold">Injury</p>
                                 </div>
                                 <div>
-                                    <h1 class=" text-xl font-extrabold">Auston Mathews</h1>
+                                    <h1 class=" xl:text-xl lg:text-md xl:font-extrabold lg:font-bold font-semibold">Auston Mathews</h1>
                                     <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
                                 </div>   
                             </div>
@@ -226,7 +233,7 @@
                                     <p class="text-[11px] font-bold">Injury</p>
                                 </div>
                                 <div>
-                                    <h1 class=" text-xl font-extrabold">Auston Mathews</h1>
+                                    <h1 class=" xl:text-xl lg:text-md xl:font-extrabold lg:font-bold font-semibold">Auston Mathews</h1>
                                     <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
                                 </div>   
                             </div>
@@ -252,7 +259,7 @@
                                     <p class="text-[11px] font-bold">Injury</p>
                                 </div>
                                 <div>
-                                    <h1 class=" text-xl font-extrabold">Auston Mathews</h1>
+                                    <h1 class=" xl:text-xl lg:text-md xl:font-extrabold lg:font-bold font-semibold">Auston Mathews</h1>
                                     <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
                                 </div>   
                             </div>
