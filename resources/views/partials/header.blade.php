@@ -12,6 +12,7 @@
     @if(URL::current()==route('nhl.team-news')) style="display:none !important;" @endif
     @if(URL::current()==route('nhl.individual-player-news')) style="display:none !important;" @endif
     @if(URL::current()==route('nhl.all-player-news')) style="display:none !important;" @endif
+    @if(URL::current()==route('nhl.line-combinations')) style="display:none !important;" @endif
     >
     
         <div class="bg-[#545454] w-full h-[6rem] gap-1 flex justify-center ">
@@ -209,7 +210,7 @@
                 </div>
             </div> -->
             
-            <div class="owl-carousel image-slider my-1.5 mx-5 relative" >
+            <div class="owl-carousel image-slider my-1.5 mx-5 relative " >
                 <div class="w-[5rem] h-[5.5rem] bg-black border border-black rounded-[11px] flex items-center justify-center absolute left-[10rem] md:left- smm-left-28 ">
                     <a class="text-white text-center" href="#">
                         <h1 class="text-sm font-bold text-white" >THURS</h1>
@@ -448,81 +449,24 @@
                         </div>               
                     </div>
                 </div>
-                <div class="flex flex-row items-center gap-1.5 h-[5.5rem]">
-                    <div class="bg-[#212123] w-[14rem] h-[82px] rounded-[8px] ">
-                        <div class="flex flex-col  m-2">
-                            <div class="flex flex-row justify-between items-center w-full">
-                                <div class="flex flex-col justify-center mr-12">
-                                    <div class="flex flex-row items-center w-[27px] gap-4">
-                                        <img class="w-[88%]" src="{{ asset('/images/teamlogo-svg/vancouver-canucks.svg') }}" alt="">
-                                        <h1 class="text-[14px] font-normalbold text-white">PHI</h1>
-                                    </div>
-                                    <div class="flex flex-row items-center w-[27px] gap-4">
-                                        <img class="w-[88%]" src="{{ asset('/images/teamlogo-svg/new-jersey-devils.svg') }}" alt="">
-                                        <h1 class="text-[14px] font-normalbold text-white">SEA</h1>  
-                                    </div>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <p class="text-[13px] text-white  bg-rose-600 px-2 rounded-sm">+140</p>
-                                    <p class="text-[13px] text-white bg-green-400  px-2 rounded-sm">-300</p>
-                                </div>
-                                <div class="text-center bg-[#3f4148] p-3 rounded-[5px]">
-                                    <p class="text-[11px] text-white font-semibold">O/U</p>
-                                    <p class="text-[11px] text-white font-semibold ">6.5</p>
-                                </div>
-                            </div>
-                            <div class="ml-4 ">
-                                <p class="text-[12px] text-slate-400">10:00pm EST</p> 
-                            </div>
-                        </div>               
-                    </div>
-                </div>
-                <div class="flex flex-row items-center gap-1.5 h-[5.5rem]">
-                    <div class="bg-[#212123] w-[14rem] h-[82px] rounded-[8px] ">
-                        <div class="flex flex-col  m-2">
-                            <div class="flex flex-row justify-between items-center w-full">
-                                <div class="flex flex-col justify-center mr-12">
-                                    <div class="flex flex-row items-center w-[27px] gap-4">
-                                        <img class="w-[88%]" src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt="">
-                                        <h1 class="text-[14px] font-normalbold text-white">WPG</h1>
-                                    </div>
-                                    <div class="flex flex-row items-center w-[27px] gap-4">
-                                        <img class="w-[88%]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-[14px] font-normalbold text-white">PIT</h1>  
-                                    </div>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <p class="text-[13px] text-white bg-green-400 px-2 rounded-sm">-185</p>
-                                    <p class="text-[13px] text-white bg-rose-600  px-2 rounded-sm">+150</p>
-                                </div>
-                                <div class="text-center bg-[#3f4148] p-3 rounded-[5px]">
-                                    <p class="text-[11px] text-white font-semibold">O/U</p>
-                                    <p class="text-[11px] text-white font-semibold ">6.5</p>
-                                </div>
-                            </div>
-                            <div class="ml-4 ">
-                                <p class="text-[12px] text-slate-400">10:00pm EST</p> 
-                            </div>
-                        </div>               
-                    </div>
-                </div>     
+                     
             </div>         
         </div> 
         <div class="sm:relative md:flex md:justify-center z-30">
             <!--Desktop menu and Tablet-->
-            <div class="w-full flex-row lg:flex lg:flex-row md:flex items-center sm:flex-wrap sm:px-0 md:block  sm:hidden smm-hidden">
+            <div class="w-full flex-row lg:flex lg:flex-row md:flex items-center sm:flex-wrap sm:px-0 md:block  sm:hidden smm-hidden ">
                 <div class="w-full lg:w-8/12 md:w-8/12 bg-current  flex  md:items-center md:justify-start md:justify-between ">
-                    <div class="flex flex-row ml-4 w-[30%] justify-between">
-                        <div class=" relative">
+                    <div class="flex flex-row xl:ml-4 ml-2 w-[30%] justify-between">
+                        <div class="relative">
                             <!-- <span class="text-[50px] text-white rotate-90 absolute right-2 bottom-[-19px]" href=""></span> -->
-                            <select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[6rem] h-[41px] h-[39px] text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 lg:pl-2">
+                            <select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">
                                 <option id="nhl" class="text-lg font-semibold" value="">NHL</option> 
                                 <option id="mlb" class="text-lg font-semibold" value="">MLB </option>
                                 <option id="nfl" class="text-lg font-semibold" value="">NFL</option>
                                 <option id="nba" class="text-lg font-semibold" value="">NBA</option>
                                 <option id="soc" class="text-lg font-semibold" value="">SOC</option>
                             </select>
-                            <img class="absolute -top-3 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">
+                            <img class="absolute xl:-top-3 lg:top-1 right-0 xl:w-[3.5rem] xl:h-[4rem] lg:w-[2rem] lg:h-[2rem] " src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">
                             <!-- <img class="absolute top-0 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">     -->
                         </div>
                         <div class="flex items-center flex-shrink-0 text-white">
@@ -535,9 +479,9 @@
                                    <img id="basket" class="w-[27px] hidden absolute top-[2px] right-[3px]" src="{{ asset('/images/menu-icon/baskball icon 40x40.png') }}" alt="">
                                    <img id="soccer" class="w-[27px] hidden absolute top-[3px] right-[3px]" src="{{ asset('/images/menu-icon/soccer icon 40x40.png') }}" alt="">
                                 </div>
-                                <div class="flex">
-                                    <h1 class="text-lg font-bold italic">projected</h1>
-                                    <h1 class="text-lg font-bold italic text-[#39b6ff] ">lineups</h1>
+                                <div class="flex xl:text-lg lg:text-md font-bold">
+                                    <h1 class="italic">projected</h1>
+                                    <h1 class="italic text-[#39b6ff] ">lineups</h1>
                                 </div>
                                 <!-- <img class="xl:w-[200px] lg:w-[150px] md:w-[7rem]" src="{{ asset('/images/menu-icon/logo.png') }}" alt=""> -->
                             </div>
@@ -549,7 +493,7 @@
                                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                             </button>
                         </div>
-                        <div class=" flex flex-row 2xl:gap-12 xl:gap-[rem] lg:gap-[1.5rem] md:gap-5 navbar"> 
+                        <div class=" flex flex-row 2xl:gap-12 xl:gap-[rem] lg:gap-[1rem] md:gap-5 navbar"> 
                             <a href="#responsive-header" rel="daily-menu" class="sm:leading-loose md:leading-13 xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0 text-[16px]  md:text-slate-300  hover:text-white  font-bold">
                                 DAILY FANTASY
                                 <div class="relative hidden daily-menu active" >
@@ -1003,7 +947,7 @@
             <!--End Mobile menu -->
         </div>
      <!-- Desktop -->
-        <div class="w-4/5 m-auto lg:block md:block sm:hidden smm-hidden p-4 relative" id="sub-menu">
+        <div class="w-4/5 m-auto lg:block md:block sm:hidden smm-hidden p-4 relative " id="sub-menu">
             <ul class="list-none flex-row items-center gap-2 py-2 daily-fantasy hidden sm:flex-wrap smm-flex-wrap daily-menu active">
                 <li ><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold"  href="#">STARTING GOALIES</a></li>
                 <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#" >LINE COMBINATIONS</a></li>

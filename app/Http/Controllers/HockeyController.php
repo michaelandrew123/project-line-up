@@ -56,4 +56,7 @@ class HockeyController extends Controller
     public function nhlallplayerNews(){
         return view('pages/nhlall-player-news');
     }
+    public function nhllineCombinations(){
+        return view('pages/nhlline-combinations');
+    }
 }
