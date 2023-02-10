@@ -45,7 +45,7 @@
                 <h1 class="text-2xl font-bold ">NHL Starting Goalies Tuesday, January 24</h1>
                 </div>
                 <div class="w-full">
-                    <div id="carouselExampleControlsv1" class="carousel slide relative mt-4 nav-corsl" data-bs-ride="">
+                    <div id="carouselExampleControlsv1" class="carousel slide relative mt-4 " data-bs-ride="">
                         <div class="relative">
                             <div class="absolute top-0 bottom-0 left-0 flex items-center">
                                 <button
