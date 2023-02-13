@@ -27,8 +27,8 @@
                 </div>
             </div>
             <div class="flex flex-row justify-between w-full">
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 py-2 rounded-md">STARTING GOALIES</button>
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">LINE COMBOS</button>
+                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">STARTING GOALIES</button>
+                <button class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 py-2 rounded-md">LINE COMBOS</button>
                 <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">PROJECTIONS</button>
                 <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">NEWS</button>
                 <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">PROPS & ODDS</button>
@@ -43,7 +43,7 @@
        <div class="w-11/12 flex flex-row justify-between gap-3">
           <div class="flex flex-col  w-9/12 gap-5">
                 <div class="w-full bg-[#d9d9d9] flex flex-row  items-center rounded-md">
-                    <h1 class="text-center py-10 text-3xl font-bold w-full">Toronto Maples Leafs Team News</h1>
+                    <h1 class="text-center py-10 text-3xl font-bold w-full">NHL Line Combinations</h1>
                 </div>
                 <div class="flex flex-col w-full  mt-7">  
                     <div class="flex flex-col ">
