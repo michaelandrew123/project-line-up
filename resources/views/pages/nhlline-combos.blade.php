@@ -58,8 +58,7 @@
         <div class="bg-slate-300 h-[2px] w-full"></div>
             <div class=" mx-3 mt-2">
                 <div class="flex flex-row items-center justify-between">
-                    <div class="flex flex-row gap-2 items-center">
-                        <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt="">
+                    <div class="flex flex-row gap-2 items-center">                       
                         <div>
                             <p class="text-[13px] font-semibold">David Alter</p>
                             <p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>
@@ -928,88 +927,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
-                            <div class="w-full flex flex-row justify-between p-2 my-0.5 hidden drftking">
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm font-semibold">8500</p>
-                                </div>
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem]" src="{{ asset('/images/menu-icon/draftking-rate.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold">12.5</p>
-                                </div>   
-                            </div>
-                            <div class="w-full flex flex-row justify-between p-2 my-0.5 hidden fduel">
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem]" src="{{ asset('/images/menu-icon/fanduel-icon.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold">8500</p>
-                                </div>
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem]" src="{{ asset('/images/menu-icon/fanduel-rate.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold">12.5</p>
-                                </div>   
-                            </div>
-                            <div class="w-full flex justify-evenly hidden hidden stat">
-                                <div class="flex flex-col">
-                                    <p class="text-sm font-semibold">Goals</p>
-                                    <p class="text-sm font-semibold">Assists</p>
-                                    <p class="text-sm font-semibold">Shots/Gm</p>
-                                    <p class="text-sm font-semibold">TOI/Gm</p>
-                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <p class="text-sm font-semibold">Goals</p>
-                                    <p class="text-sm font-semibold">Assists</p>
-                                    <p class="text-sm font-semibold">Shots/Gm</p>
-                                    <p class="text-sm font-semibold">CF %</p>
-                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
-                            <div class="w-full flex flex-row justify-between p-2 my-0.5 hidden drftking">
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm font-semibold">8500</p>
-                                </div>
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem]" src="{{ asset('/images/menu-icon/draftking-rate.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold">12.5</p>
-                                </div>   
-                            </div>
-                            <div class="w-full flex flex-row justify-between p-2 my-0.5 hidden fduel">
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem]" src="{{ asset('/images/menu-icon/fanduel-icon.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold">8500</p>
-                                </div>
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem]" src="{{ asset('/images/menu-icon/fanduel-rate.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold">12.5</p>
-                                </div>   
-                            </div>
-                            <div class="w-full flex justify-evenly hidden hidden stat">
-                                <div class="flex flex-col">
-                                    <p class="text-sm font-semibold">Goals</p>
-                                    <p class="text-sm font-semibold">Assists</p>
-                                    <p class="text-sm font-semibold">Shots/Gm</p>
-                                    <p class="text-sm font-semibold">TOI/Gm</p>
-                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <p class="text-sm font-semibold">Goals</p>
-                                    <p class="text-sm font-semibold">Assists</p>
-                                    <p class="text-sm font-semibold">Shots/Gm</p>
-                                    <p class="text-sm font-semibold">CF %</p>
-                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <div class="flex flex-col w-full">

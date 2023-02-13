@@ -30,16 +30,20 @@
     </div>
     <div class="w-full flex flex-col items-center justify-center relative ">
         <div class="flex flex-row justify-center items-center relative w-10/12">
-            <img class="absolute left-0" src="{{ asset('/images/menu-icon/basketball_player.png') }}" alt="">
+            <!-- <img class="absolute left-0" src="{{ asset('/images/menu-icon/basketball_player.png') }}" alt="">
             <img class="absolute xl:left-[12.5rem] lg:left-[9rem] z-0" src="{{ asset('/images/menu-icon/soccer_player.png') }}" alt="">
             <img class="w-[20rem] z-10" src="{{ asset('/images/menu-icon/hockey_player.png') }}" alt="">
             <img class="absolute xl:right-[11.5rem] lg:right-[10rem] z-0" src="{{ asset('/images/menu-icon/baseball_player.png') }}" alt="">
-            <img class="absolute right-0" src="{{ asset('/images/menu-icon/football_player_(2).png') }}" alt="">
+            <img class="absolute right-0" src="{{ asset('/images/menu-icon/football_player_(2).png') }}" alt=""> -->
+            <!-- <img class="w-[70rem] relative top-0" src="{{ asset('/images/menu-icon/football banner (1).png') }}" alt=""> -->
+            <img class="w-[20rem] absolute xl:left-[9.5rem] lg:left-0" src="{{ asset('/images/menu-icon/allen_fb.png') }}" alt="">
+            <img class="w-[20rem] z-10" src="{{ asset('/images/menu-icon/mahomes_fb.png') }}" alt="">
+            <img class="w-[21rem] absolute xl:right-[9.5rem] lg:right-0" src="{{ asset('/images/menu-icon/chase_fb.png') }}" alt="">
         </div>
-        <div class="absolute z-20">
+        <div class="absolute bottom-1 z-20">
             <div class="relative">
-            <input class="border border-black w-[50rem] h-[4.5rem] rounded-lg home-input " type="" value="Search team projected lineups. . .">
-            <a class="absolute right-[10px] top-[7px]" href=""><img class=" w-[57px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
+                <input class="border border-black w-[50rem] h-[4.5rem] rounded-lg home-input " type="" value="Search team projected lineups. . .">
+                <a class="absolute right-[10px] top-[7px]" href=""><img class=" w-[57px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
             </div>
         </div>
         <div class="bg-slate-300 h-[2px] w-11/12 "></div>
