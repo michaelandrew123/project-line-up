@@ -109,9 +109,21 @@
       color:white;
     }
 
+    /* chart style */
+    .chartCard {
+        width: 100vw;
+        height: calc(100vh - 40px);
 
-
-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .chartBox {
+        width: 500px;
+        padding: 15px;
+        background: white;
+      }
+      /* end of chart style */
     /**
     start projection table 
     */
