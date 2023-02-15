@@ -1,6 +1,9 @@
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 <script>
     // let headers = new Headers();
     //
@@ -529,5 +532,212 @@
     })
    
 
+
+
+
+
+
+    /**Start Chart  */
+    
+    // const labelsBarChart = [
+    //     "January",
+    //     "February",
+    //     "March",
+    //     "April",
+    //     "May",
+    //     "June",
+    //     "edsan"
+        
+    // ];
+    
+    // const data = {
+    //     font:"bold",
+    // };
+    // const dataBarChart = {
+    //     labels: labelsBarChart,
+    //     datasets: [
+    //         {
+    //             label: "My First dataset",
+    //             backgroundColor: "deepskyblue",
+    //             borderColor: "hsl(252, 82.9%, 67.8%)",
+    //             data: [1, 2, 3, 4, 5, 6, 7, ],
+                
+    //         },
+    //     ],
+    // };
+     
+    // const configBarChart = {
+    //     type: "bar",
+    //     data: dataBarChart,
+    //     options: {
+    //         scales: {
+    //             y: {
+    //             beginAtZero: true,
+    //             display: ''
+    //             },
+    //             y1:{
+    //             position: 'right',
+    //             ticks: {
+    //             beginAtZero: true
+    //             }
+    //             },
+    //             x: {
+    //             beginAtZero: true,
+    //             },
+    //         }
+    //     },
+    // };
+
+    // var chartBar = new Chart(
+    //     document.getElementById("chartBar"),
+    //     configBarChart
+    // );
+
+  /**End Chart  */
+//   New charts
+const data = {
+      labels: ['Logo1', 'Logo2', 'Logo3', 'Logo4', 'Logo5', 'Logo6', 'logo7', 'Logo8', 'Logo9', 'Logo10'],
+      datasets: [{
+        label: '',
+        data: [3.8, 6, 0.8, 4.5, 3, 3, 3.8, 0.8, 4.5, 2.2],
+        backgroundColor: [
+          '#38b6ff',
+          '#38b6ff',
+          '#ff5757',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#ff5757',
+          '#38b6ff',
+          '#ff5757'
+        ],
+        borderColor: [
+          '#38b6ff',
+          '#38b6ff',
+          '#ff5757',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff'
+        ],
+        borderWidth: 1
+      }]
+    };
+
+    // config 
+    const config = {
+      type: 'bar',
+      data,
+      options: {
+        scales: {
+        	// x:{
+        	// 	plugins:{
+        	// 		labels:{
+        	// 			render: 'image',
+        	// 			images: [
+        	// 			{
+        	// 				src: 'https://www.youtube.com/',
+        	// 				width: 16,
+        	// 				height: 16
+        	// 			}
+        	// 			]
+        	// 		}
+        	// 	}
+        	// },
+          y: {
+            beginAtZero: true,
+            ticks:{
+            count: 9,
+            display: ''
+            }
+          },
+          right: {
+          	beginAtZero: true,
+          	position:'right',
+          	ticks: {
+          		count: 9,
+                callback: ((value, index, ticks) => {
+                	return value * 8
+                })
+          	}
+          }
+        }
+      }
+    };
+    
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+//   End of Chart
+
+
+
+
+
+
+
+
+
+
+
+
+//   var chartBar = new Chart(
+//     document.getElementById("chartBar"),
+//     configBarChart
+//   );
+// var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+// var yValues = [55, 49, 44, 24, 35];
+// var barColors = ["red", "green","blue","orange","brown"];
+
+// new Chart("myChart", {
+//   type: "bar",
+//   data: {
+//     labels: xValues,
+//     datasets: [{
+//       backgroundColor: barColors,
+//       data: yValues
+//     }]
+//   },
+//   options: {
+//     legend: {display: true},
+//     title: {
+//       display: false,
+//       text: "World Wine Production 2018"
+//     }
+//   }
+// });
+
+// const ctx = document.getElementById("chart").getContext('2d');
+//       const myChart = new Chart(ctx, {
+//         type: 'bar',
+//         data: {
+//           labels: ["rice", "yam", "tomato", "potato",
+//           "beans", "maize", "oil", "vegie"],
+//           datasets: [{
+//             label: 'food Items',
+//             backgroundColor: 'rgba(161, 198, 247, 1)',
+//             borderColor: 'rgb(47, 128, 237)',
+//             data: [300, 400, 200, 500, 800, 900, 200, 150],
+//           }]
+//         },
+//         options: {
+//           scales: {
+//             yAxes: [{
+//               ticks: {
+//                 beginAtZero: true,
+//               }
+//             }]
+//           }
+//         },
+//       });
+
+  
 
 </script>

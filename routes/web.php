@@ -26,6 +26,7 @@ Route::get('/schedule',  [App\Http\Controllers\HockeyController::class, 'schedul
 Route::get('/projections',  [App\Http\Controllers\HockeyController::class, 'projections']);
 Route::get('/nfl/home',  [App\Http\Controllers\HockeyController::class, 'nflhome'])->name('nfl.home');
 Route::get('/nhl/home',  [App\Http\Controllers\HockeyController::class, 'nhlhome'])->name('nhl.home');
+Route::get('/nhl/props',  [App\Http\Controllers\HockeyController::class, 'nhlprops'])->name('nhl.props');
 Route::get('/nhl/all-player-news',  [App\Http\Controllers\HockeyController::class, 'nhlallplayerNews'])->name('nhl.all-player-news');
 Route::get('/nhl/starting-goalies',  [App\Http\Controllers\HockeyController::class, 'nhlstartingGoalies'])->name('nhl.starting-goalies');
 Route::get('/nhl/individual-player-news',  [App\Http\Controllers\HockeyController::class, 'nhlindividualplayerNews'])->name('nhl.individual-player-news');
