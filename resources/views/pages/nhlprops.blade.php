@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="w-full flex justify-center lg:block  smm:hidden">
+  <div class="w-full flex justify-center lg:block  smm:hidden">
         <div class="w-11/12 flex flex-col border-black m-4 gap-5">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">
@@ -40,12 +40,70 @@
     <div>
   </div>
   <div class="w-full bg-slate-200 flex justify-center">
-    <div class="w-11/12">
+    <div class="w-[95%]">
       <div class=" bg-[#d9d9d9] flex flex-row  items-center rounded-md">
           <h1 class="text-center py-10 text-3xl font-bold w-full">NHL Player Props</h1>
       </div>
+      <div class="flex flex-col mt-5 items-center gap-8">
+          <div class="flex flex-row justify-between text-3xl font-bold w-[97%] gap-3">
+            <button class="bg-[#38b6ff] border border-[#38b6ff] rounded-lg py-5 w-8/12">ALL</button>
+            <button class="bg-[#d9d9d9] border border-[#d9d9d9] rounded-lg py-5 w-full">SOG</button>
+            <button class="bg-[#d9d9d9] border border-[#d9d9d9] rounded-lg py-5 w-full">GOALS</button>
+            <button class="bg-[#d9d9d9] border border-[#d9d9d9] rounded-lg py-5 w-full">ASSISTS</button>
+            <button class="bg-[#d9d9d9] border border-[#d9d9d9] rounded-lg py-5 w-full">POINTS</button>
+            <button class="bg-[#d9d9d9] border border-[#d9d9d9] rounded-lg py-5 w-full">SAVES</button>
+          </div>
+          <div class="w-[97%] flex flex-col gap-4">
+            <ul class="flex flex-row w-full gap-3">
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/chicago-blackhawks.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/columbus-blue-jackets.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/dallas-stars.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/detroit-red-wings.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a></li>
+              <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li>               
+            </ul>
+            <div class="flex flex-row w-full gap-3">
+              <div class="relative w-[62%]">            
+                <input class="border border-[#9fa0a0] w-full h-[4rem] rounded-lg props-input" type="" value="Search players"> 
+                <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[48px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
+              </div>
+              <ul class="flex flex-row w-full gap-3">
+                <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/seattle-kraken.svg') }}" alt=""></a></li>
+                <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt=""></a></li>
+                <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/tampa-bay-lightning.svg') }}" alt=""></a></li>
+                <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt=""></a></li>
+                <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/vancouver-canucks.svg') }}" alt=""></a></li>
+                <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt=""></a></li>
+                <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/washington-capitals.svg') }}" alt=""></a></li>
+                <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a></li>  
+              </ul>
+            </div>
+            
+          </div>
+      </div>
+      <!--          <li><a><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/chicago-blackhawks.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/columbus-blue-jackets.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/dallas-stars.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/detroit-red-wings.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a></li>
+                    <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li> -->
+                    
       <div class="w-full flex flex-row">
-        <div class="w-14 ">
+        <div class="w-14">
           <!-- <div class="shadow-lg rounded-lg overflow-hidden">
             <div class="py-3 px-5 bg-gray-50" style="">Bar chart</div>
             <canvas class="p-10" id="chartBar" ></canvas>
@@ -125,8 +183,6 @@
             </div>
           </div>
         </div>
-        
-        
       </div>
     </div>
   </div>

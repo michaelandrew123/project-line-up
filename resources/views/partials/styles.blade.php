@@ -55,6 +55,13 @@
          
          
     }
+    .props-input, value{
+         font-size: 26px;
+         font-weight: bold;
+         color: #9fa0a0;
+         padding: 15px;
+         padding-left: 2rem;
+    }
 
     .owl-carousel .owl-item.active {
         width: 16rem !important;
