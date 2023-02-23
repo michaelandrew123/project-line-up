@@ -48,7 +48,7 @@
                 <div class="flex flex-col w-full  mt-7">  
                     <div class="flex flex-col ">
                         <ul class="w-full flex flex-col gap-5">
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -71,7 +71,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -94,7 +94,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -117,7 +117,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -140,7 +140,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -163,7 +163,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -186,7 +186,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -209,7 +209,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -232,7 +232,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -255,7 +255,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between">
+                            <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -421,84 +421,84 @@
                             <div class="bg-slate-300 h-[2px] w-full"></div>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Pittburgh Penguins</p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Toronto Maples Leafs</p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Washington Capitals </p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Montreal Canadiens</p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Washington Capitals </p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Montreal Canadiens</p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Pittburgh Penguins</p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Toronto Maples Leafs</p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Washington Capitals </p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Montreal Canadiens</p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Washington Capitals </p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>
                             <p class="text-sm">morning skate</p>
                         </div>
                         <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between">
+                                <div class="w-full flex flex-row justify-between gap-3">
                                     <p class="font-semibold text-sm">Montreal Canadiens</p>
                                     <p class="text-sm"> 2023-01-16</p>
                                 </div>

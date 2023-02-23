@@ -40,7 +40,7 @@
     </div>
     <div class="w-full flex flex-col smm-hidden">
         <div class="flex flex-row justify-evenly mt-10">   
-            <div class="flex flex-col items-center w-7/12">
+            <div class="flex flex-col items-center xl:w-7/12 lg:w-8/12">
                 <div class="w-full  h-36 bg-[#d9d9d9] flex  border rounded-[10px] justify-center items-center">
                 <h1 class="text-2xl font-bold ">NHL Starting Goalies Tuesday, January 24</h1>
                 </div>
@@ -94,7 +94,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -155,7 +155,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -216,7 +216,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -277,7 +277,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -338,7 +338,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -399,7 +399,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -460,7 +460,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -521,7 +521,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -582,7 +582,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -647,7 +647,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -708,7 +708,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -769,7 +769,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -830,7 +830,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -891,7 +891,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -952,7 +952,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1013,7 +1013,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1074,7 +1074,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1135,7 +1135,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1200,7 +1200,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1261,7 +1261,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1322,7 +1322,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1383,7 +1383,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1444,7 +1444,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1505,7 +1505,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1566,7 +1566,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1627,7 +1627,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>
@@ -1688,7 +1688,7 @@
                                             </div>
                                         </div>
                                         <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br><br>
+                                            Jan 24, 7:00pm <br>
                                             Bridgestone Arena <br>
                                             NashVille, TN <br>
                                             Line : COL- 155 <br>

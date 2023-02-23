@@ -2,15 +2,15 @@
 
 @section('content')
 <!-- first group shirt -->
- <div class="mb-8">
+ <div class="mb-8 ">
       <div class="bg-[#1d9bf0] p-0.5 flex flex-row justify-evenly items-end">
-            <div class="flex flex-row gap-[4.75rem]">
+            <div class="flex flex-row gap-[4.75rem] smm-gap-[2rem]">
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                <h1 class="text-black text-3xl font-bold mt-[7px]">Nashville Predator</h1>
+                <h1 class="text-black text-3xl smm-text-lg font-bold mt-[7px]">Nashville Predator</h1>
             </div>
                 <p class="text-black text-lg mb-2">Feb. 18,2022 | 7:00 EST</p>
-            <div class="flex flex-row gap-[4.75rem]">
-                <h1 class="text-black text-3xl font-bold mt-[7px]">Carolina Hurricanes</h1>
+            <div class="flex flex-row gap-[4.75rem]  smm-gap-[2rem]">
+                <h1 class="text-black text-3xl smm-text-lg font-bold mt-[7px]">Carolina Hurricanes</h1>
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt="">
             </div>
       </div>
@@ -121,9 +121,9 @@
                                 <p>Line 2</p>
                             </div>
                         </div>
-                        <div class="flex flex-col ml-7 mb-[15px] justify-center items-center">
+                        <div class="flex flex-col ml-7  mb-[15px] justify-center items-center">
                             <p class="text-lg font-semibold">Morning Skate</p>
-                            <p class="text-lg font-semibold">(July 25 6:18 am)</p>
+                            <p class="text-lg  font-semibold">(July 25 6:18 am)</p>
                         </div>
                     </div> 
                </div>

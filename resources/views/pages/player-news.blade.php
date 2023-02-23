@@ -4,7 +4,7 @@
 <!-- Desktop Design -->
 <div class="xl:block lg:block md:block smm-hidden ">
     <div class="flex flex-row mb-5 justify-between">
-        <div class="flex flex-col gap-10 mr-5 lg:block md:hidden">
+        <div class="flex flex-col gap-10 mr-5 xl:block lg:hidden md:hidden">
             <img class="w-48 h-[70%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
             <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
         </div>
@@ -563,13 +563,13 @@
                 </div>
             </div> -->
         </div>
-        <div class="flex flex-col  items-center ml-1 lg:block md:hidden">
+        <div class="flex flex-col  items-center ml-1 xl:block lg:hidden md:hidden">
             <img class="w-64 h-52" src="{{ asset('/images/menu-icon/adds3.png') }}">
             <img class="w-48 h-4/5" src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div>             
     </div>
     <div class="flex flex-row justify-between">
-        <div class=" lg:block mr-5 md:hidden">
+        <div class=" xl:block lg:hidden mr-5 md:hidden">
             <img class="w-48 h-3/5" src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div>
         <div class="flex flex-col items-center">
@@ -1408,7 +1408,7 @@
                 </div>
             </div>
         </div>
-        <div class=" lg:block ml-1 md:hidden">
+        <div class="xl:block lg:hidden ml-1 md:hidden">
             <img class="w-[16rem] h-3/5" src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div> 
     </div>
@@ -1423,7 +1423,7 @@
                       <img class="w-9 h-9 border border-black rounded-xl absolute top-0 right-0" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
                     </a>
                 </div> -->
-                <div class="border-2 border-black rounded-xl rounded-md w-full h-[57px] overflow-hidden mt-1 flex flex-row items-center justifyrounded-br-xl-between">
+                <div class="border-2 border-black rounded-xl rounded-md w-full h-[57px] overflow-hidden mt-1 flex flex-row items-center rounded-br-xl-between">
                    <input class="border-2 border-black rounded-xl h-[110%] w-[319%]" type="text">
                    <a class="w-full flex justify-center" href="">
                       <img class="w-[73px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
