@@ -38,7 +38,7 @@
         
       
     }
-    
+    /* NFL home */
     .home-input, value{
          font-size: 36px;
          font-weight: bold;
@@ -46,6 +46,14 @@
          padding: 15px;
          
     }
+    .home-input-mob, value{
+         font-size: 28px;
+         font-weight: bold;
+         color: #9fa0a0;
+         padding: 15px;
+         
+    }
+    /* End of NFL home */
     .startgoal-input, value{
          font-size: 26px;
          font-weight: bold;

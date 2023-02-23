@@ -420,37 +420,7 @@
                             </div>
                         </div>               
                     </div>
-                </div> 
-                <div class="flex flex-row items-center gap-1.5 h-[5.5rem]">
-                    <div class="bg-[#212123] w-[14rem] h-[82px] rounded-[8px] ">
-                        <div class="flex flex-col  m-2">
-                            <div class="flex flex-row justify-between items-center w-full">
-                                <div class="flex flex-col justify-center mr-12">
-                                    <div class="flex flex-row items-center w-[27px] gap-4">
-                                        <img class="w-[88%]" src="{{ asset('/images/teamlogo-svg/montreal-canadiens.svg') }}" alt="">
-                                        <h1 class="text-[14px] font-normalbold text-white">MTL</h1>
-                                    </div>
-                                    <div class="flex flex-row items-center w-[27px] gap-4">
-                                        <img class="w-[88%]" src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt="">
-                                        <h1 class="text-[14px] font-normalbold text-white">EDM</h1>  
-                                    </div>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <p class="text-[13px] text-white bg-green-400 px-2 rounded-sm">-140</p>
-                                    <p class="text-[13px] text-white bg-rose-600  px-2 rounded-sm">+300</p>
-                                </div>
-                                <div class="text-center bg-[#3f4148] p-3 rounded-[5px]">
-                                    <p class="text-[11px] text-white font-semibold">O/U</p>
-                                    <p class="text-[11px] text-white font-semibold ">5.5</p>
-                                </div>
-                            </div>
-                            <div class="ml-4 ">
-                                <p class="text-[12px] text-slate-400">9:00pm EST</p> 
-                            </div>
-                        </div>               
-                    </div>
-                </div>
-                     
+                </div>                   
             </div>         
         </div> 
         <div class="sm:relative md:flex md:justify-center z-30">

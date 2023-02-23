@@ -1666,7 +1666,25 @@
 
     </div>
 </div>
-
+<div class="hidden smm-block w-full">
+  <div class="flex flex-row justify-between items-center">
+        <div class="flex flex-row items-center gap-1.5">
+            <img class="w-[3rem]" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
+            <div class="flex">
+                <h1 class="sm:text-4xl text-3xl font-extrabold">projected</h1>
+                <h1 class="sm:text-4xl text-3xl font-extrabold text-[#39b6ff]">lineups</h1>
+            </div>
+        </div>
+        <a href="#">
+            <svg class="w-10 text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+    </div>
+    <div>
+      <img class="w-20 h-20" src="{{ asset('/images/menu-icon/ .png') }}" alt="">
+    </div>
+</div>
 
 
 

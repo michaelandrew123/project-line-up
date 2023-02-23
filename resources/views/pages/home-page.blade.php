@@ -12,7 +12,7 @@
             <img class="w-48 h-[65%] mb-32" src="{{ asset('/images/menu-icon/adds1.png') }}">
             <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
         </div>
-        <div class="flex flex-col xl:w-[67%] lg:w-[70%] md:w-full">
+        <div class="flex flex-col xl:w-[67%] lg:w-[90%] md:w-full">
             <div class="flex justify-center mb-5">
                 <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div>
@@ -125,7 +125,7 @@
         <div class="xl:block lg:hidden md:hidden">
             <img class="w-48 h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div> 
-        <div class="flex flex-col xl:w-[67%] lg:w-[70%] md:w-full">
+        <div class="flex flex-col xl:w-[67%] lg:w-[90%] md:w-full">
             <div class="flex flex-col ">
                 <div class="flex items-center">
                     <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">

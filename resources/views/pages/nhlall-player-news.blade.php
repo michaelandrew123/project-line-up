@@ -40,7 +40,7 @@
 </div>
 <div class="w-full flex justify-center bg-slate-100">
     <div class="w-11/12 flex flex-row justify-between gap-3">
-        <div class="flex flex-col  w-9/12 gap-5">
+        <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
             <div class="w-full bg-[#d9d9d9] flex flex-row  items-center justify-between rounded-md">
                 <div class="flex gap-2 ml-2">
                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                         <div class=" ml-1">
-                            <p class="text-[14px] font-bold mb-2">Tavares set to play in his third All Star <br> game </p>
+                            <p class="text-[14px] font-bold mb-2">Tavares set to play in his third All Star game </p>
                             <p class="text-[12px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                         </div>
                         <div class="flex flex-row items-center absolute left-3 bottom-2">
@@ -285,7 +285,7 @@
                <img class="w-full h-32 border border-black" src="{{ asset('/images/menu-icon/.png') }}">
             </div>              
         </div>
-        <div class="w-3/12 flex flex-col ">
+        <div class="xl:w-3/12 lg:w-2/12 flex flex-col ">
            <img class="h-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
            <div class="flex flex-col gap-5 mt-9">
                 <div class="flex flex-col gap-2">

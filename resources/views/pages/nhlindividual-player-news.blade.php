@@ -40,7 +40,7 @@
     </div>
     <div class="w-full flex justify-center bg-slate-100">
         <div class="w-11/12 flex flex-row justify-between gap-3">
-            <div class="flex flex-col  w-9/12 gap-5">
+            <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
                 <div class=" w-full bg-[#d9d9d9] flex flex-row items-center rounded-md">
                     <img class="lg:w-20 lg:h-20 md:w-16 md:h-20 ml-6" src="{{ asset('/images/menu-icon/.png') }}">
                     <h1 class="text-center text-xl font-bold w-full">Auston Mathews News</h1>
@@ -278,7 +278,7 @@
                 <img class="w-full h-32 border border-black" src="{{ asset('/images/menu-icon/.png') }}">
                 </div>              
             </div>
-            <div class="w-3/12 flex flex-col ">
+            <div class="xl:w-3/12 lg:w-2/12 flex flex-col ">
             <img class="h-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
             <div class="flex flex-col gap-5 mt-9">
                     <div class="flex flex-col gap-2">
