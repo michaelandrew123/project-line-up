@@ -1733,7 +1733,7 @@
         </div>
         <div id="carouselExampleControls2" class="carousel slide relative mt-4 nav-corsl " data-bs-ride="carousel">
             <div class="carousel-inner relative w-full overflow-hidden">
-                <div class="carousel-item active relative float-left w-full"> 
+                <div class="carousel-item active relative float-left w-full" > 
                     <div class=" flex justify-center">
                         <div class="parent border border-black w-[75%] relative rounded-xl">
                             <div class="flex flex-row gap-3 ml-2 mt-5">
