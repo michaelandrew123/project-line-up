@@ -1,10 +1,7 @@
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
 
 <script>
     // let headers = new Headers();
@@ -597,86 +594,86 @@
 
   /**End Chart  */
 //   New charts
-const data = {
-      labels: ['Logo1', 'Logo2', 'Logo3', 'Logo4', 'Logo5', 'Logo6', 'logo7', 'Logo8', 'Logo9', 'Logo10'],
-      datasets: [{
-        label: '',
-        data: [3.8, 6, 0.8, 4.5, 3, 3, 3.8, 0.8, 4.5, 2.2],
-        backgroundColor: [
-          '#38b6ff',
-          '#38b6ff',
-          '#ff5757',
-          '#38b6ff',
-          '#38b6ff',
-          '#38b6ff',
-          '#38b6ff',
-          '#ff5757',
-          '#38b6ff',
-          '#ff5757'
-        ],
-        borderColor: [
-          '#38b6ff',
-          '#38b6ff',
-          '#ff5757',
-          '#38b6ff',
-          '#38b6ff',
-          '#38b6ff',
-          '#38b6ff',
-          '#38b6ff',
-          '#38b6ff',
-          '#38b6ff'
-        ],
-        borderWidth: 1
-      }]
-    };
+// const data = {
+//       labels: ['Logo1', 'Logo2', 'Logo3', 'Logo4', 'Logo5', 'Logo6', 'logo7', 'Logo8', 'Logo9', 'Logo10'],
+//       datasets: [{
+//         label: '',
+//         data: [3.8, 6, 0.8, 4.5, 3, 3, 3.8, 0.8, 4.5, 2.2],
+//         backgroundColor: [
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#ff5757',
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#ff5757',
+//           '#38b6ff',
+//           '#ff5757'
+//         ],
+//         borderColor: [
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#ff5757',
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#38b6ff',
+//           '#38b6ff'
+//         ],
+//         borderWidth: 1
+//       }]
+//     };
 
-    // config 
-    const config = {
-      type: 'bar',
-      data,
-      options: {
-        scales: {
-        	// x:{
-        	// 	plugins:{
-        	// 		labels:{
-        	// 			render: 'image',
-        	// 			images: [
-        	// 			{
-        	// 				src: 'https://www.youtube.com/',
-        	// 				width: 16,
-        	// 				height: 16
-        	// 			}
-        	// 			]
-        	// 		}
-        	// 	}
-        	// },
-          y: {
-            beginAtZero: true,
-            ticks:{
-            count: 9,
-            display: ''
-            }
-          },
-          right: {
-          	beginAtZero: true,
-          	position:'right',
-          	ticks: {
-          		count: 9,
-                callback: ((value, index, ticks) => {
-                	return value * 8
-                })
-          	}
-          }
-        }
-      }
-    };
+//     // config 
+//     const config = {
+//       type: 'bar',
+//       data,
+//       options: {
+//         scales: {
+//         	// x:{
+//         	// 	plugins:{
+//         	// 		labels:{
+//         	// 			render: 'image',
+//         	// 			images: [
+//         	// 			{
+//         	// 				src: 'https://www.youtube.com/',
+//         	// 				width: 16,
+//         	// 				height: 16
+//         	// 			}
+//         	// 			]
+//         	// 		}
+//         	// 	}
+//         	// },
+//           y: {
+//             beginAtZero: true,
+//             ticks:{
+//             count: 9,
+//             display: ''
+//             }
+//           },
+//           right: {
+//           	beginAtZero: true,
+//           	position:'right',
+//           	ticks: {
+//           		count: 9,
+//                 callback: ((value, index, ticks) => {
+//                 	return value * 8
+//                 })
+//           	}
+//           }
+//         }
+//       }
+//     };
     
 
     // render init block
-    const myChart = new Chart(
-      document.getElementById('myChart'),
-      config
-    );
+    // const myChart = new Chart(
+    //   document.getElementById('myChart'),
+    //   config
+    // );
 //   End of Chart
 
 
@@ -739,7 +736,170 @@ const data = {
 //           }
 //         },
 //       });
+const data = {
+  
+      labels: ['Rate 1', 'Rate 2', 'Rate 3', 'Rate 4', 'Rate 5', 'Rate 6', 'Rate 7', 'Rate 8'],
+      datasets: [{
+        label: 'labels',
+        
+        data: [3.8,  3,  0.8,  4.5,  3,  3,  3.8,  0.8,  4.5,  2.2],
+        backgroundColor: [
+          '#38b6ff',
+          '#38b6ff',
+          '#ff5757',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#ff5757',
+          '#38b6ff',
+          '#ff5757'
+        ],
+        
+        image:[
+        './patrick.png',
+      
+       
+        ],
+        borderColor: [
+          '#38b6ff',
+          '#38b6ff',
+          '#ff5757',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff',
+          '#38b6ff'
+        ],
+        borderWidth: 1,
+        // image:[
+        // 'logo/edmonton-oilers.svg',
+        // 'logo/detroit-red-wings.svg',
+        // 'logo/columbus-blue-jackets.svg',
+        // 'logo/colorado-avalanche.svg',
+        // 'logo/chicago-blackhawks.svg',
+        // 'logo/boston-bruins.svg',
+        // 'logo/buffalo-sabres.svg',
+        // 'logo/calgary-flames.svg'
+        // ]
+      }]
+    };
+    const imageItems = {
 
+      id : 'imageItems',
+
+      beforeDatasetsDraw(chart, args, pluginOptions){
+        const {image,ctx,data,scales:{x,y}} =  chart;
+        ctx.strokeStyle = image; 
+        ctx.save();
+
+        // const imageSize = options.layout.padding.left;
+     
+
+        // data.datasets[0].image.forEach((imageLink, index) => {
+       
+          // ctx.preventDefault() 
+          // return;
+         
+          
+        // });
+        const logo = new Image();
+        const lo = new Image();
+        const kill = new Image();
+        const nice = new Image();
+        const nice1 = new Image();
+        const nice2 = new Image();
+        const nice3 = new Image();
+        const nice4 = new Image();
+          // logo.src=imageLink;
+       
+      
+        kill.src='logo/calgary-flames.svg';
+        ctx.drawImage(kill,  20 , x.getPixelForValue(3) + 0,50,50),
+        logo.src='./adds3.png';
+        ctx.drawImage(logo,  108, x.getPixelForValue(1) + 170,50,50),
+        lo.src='logo/buffalo-sabres.svg';
+        ctx.drawImage(lo,  195, x.getPixelForValue(2) + 85,50,50),
+        // next
+        nice.src='logo/chicago-blackhawks.svg';
+        ctx.drawImage(nice,  280, x.getPixelForValue(2) + 86,50,50),
+        nice1.src='logo/colorado-avalanche.svg';
+        ctx.drawImage(nice1,  360, x.getPixelForValue(2) + 84,50,50),
+        nice2.src='logo/columbus-blue-jackets.svg';
+        ctx.drawImage(nice2,  445, x.getPixelForValue(2) + 82,50,50),
+        nice3.src='logo/detroit-red-wings.svg';
+        ctx.drawImage(nice3,  530, x.getPixelForValue(2) + 80,50,50),
+        nice4.src='logo/edmonton-oilers.svg';
+        ctx.drawImage(nice4,  615, x.getPixelForValue(2) + 84,50,50)
+      
+
+      }
+    }
+
+    // config 
+    const config = {
+      plugins: [imageItems],
+      type: 'bar',
+      data,
+      options: {
+        indexAxis:'x',  // <-- position y , x
+        layout:{
+          padding:{
+            bottom:20
+          }
+        },
+        
+        
+        // plugins:{
+        //   labels:{
+        //     render: 'images',
+        //     images: [{
+        //       src: './patrick.png',
+        //       height: 25,
+        //       width: 25
+        //     },
+        //     {
+        //       src: './patrick.png',
+        //       height: 25,
+        //       width: 25
+        //     },
+        //     ]
+        //   }
+       
+        
+        // },
+        scales: {
+          y:{
+            beginAtZero: false,
+            ticks:{
+            count: 9,
+            display: ''
+            }
+          },
+          right: {
+            beginAtZero: true,
+            position:'right',
+            ticks: {
+              count: 9,
+                callback: ((value, index, ticks) => {
+                  return value * 8
+             })
+            }
+          }
+        }
+      },
+ 
+      
+    };
+    
+
+    // render init block
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
   
 
 </script>

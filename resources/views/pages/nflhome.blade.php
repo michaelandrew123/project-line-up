@@ -3,7 +3,7 @@
 
 @section('content')
 
-
+<!-- Desktop design -->
 <div class="w-full flex flex-col items-center block smm-hidden">
     <div class="w-11/12  border-black m-4">
         <div class="flex flex-row justify-between items-center">
@@ -277,6 +277,8 @@
         </p>
     </div>
 </div>
+<!-- End desktop design -->
+<!-- Mobile design -->
 <div class="w-full flex flex-col items-center hidden smm-block">
     <div class="border-black m-4">
         <div class="flex flex-col gap-5">
@@ -402,6 +404,7 @@
         </div>
     </div>
 </div>
+<!-- End mobile design -->
 
 
 @endsection
