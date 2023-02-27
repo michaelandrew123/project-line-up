@@ -143,7 +143,7 @@
                   </div>
                 </div>
               </div>
-              <canvas  id="myChart"></canvas>
+              <canvas  id="myChart"></canvas>             
               <div class="flex flex-col gap-3">       
                 <div class="flex flex-col gap-2 text-center">
                   <p class="text-[10px] font-bold">SPLITS</p>
