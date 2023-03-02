@@ -629,7 +629,7 @@
                     <div class="flex flex-row justify-between items-center h-16 bg-black w-full pb-2">
                         <div class="flex items-center flex-shrink-0 text-white pl-[9px]">
                             <div id="main-menu1" class="pr-2 md:flex md:items-center sm:h-full sm:relative md:h-14 md:leading-13 relative  md:block">
-                                <div class=" block flex flex-row items-center gap-[7px]">
+                                <div class="block flex flex-row items-center gap-[7px]">
                                     <button id="main-menu-mobile" class="flex flex-col items-center gap-2 py-2  text-sky-600 border-sky-600 hover:text-white hover:border-white justify-end ">
                                         <!-- <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg> -->
                                         <div class="w-10 h-1 bg-[#0284c7] border border-[#0284c7] rounded"></div>

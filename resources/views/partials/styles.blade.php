@@ -67,6 +67,14 @@
          padding: 8px;
          
     }
+      .linecomb-input-mob{
+         text-align: center;
+         font-size: 20px;
+         font-weight: bold;
+         color: #9fa0a0;
+         padding: 8px;
+         
+    }
     .props-input, value{
          font-size: 26px;
          font-weight: bold;
