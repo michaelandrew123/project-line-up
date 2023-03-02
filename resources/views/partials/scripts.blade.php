@@ -2,6 +2,7 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
     // let headers = new Headers();
@@ -503,22 +504,33 @@
         gap:5,
         responsiveClass:true,
         responsive:{
-            0:{
-                nav:true
+          0:{
+                nav:true,
+                
             },
             600:{
                 items:2,
-                nav:false,
+                nav:true,
                 loop:false
                 
             },
             768:{
                 items:3,
-                nav:false,
+                nav:true,
                 loop:false
                 
             },
             1000:{
+                items:5,
+                nav:true,
+                loop:false
+                
+            },1058:{
+                items:3,
+                nav:true,
+                loop:false
+                
+            },1280:{
                 items:5,
                 nav:true,
                 loop:false
@@ -528,7 +540,7 @@
             
         
         }
-    })
+    });
    
 
 
@@ -738,11 +750,12 @@
 //       });
 const data = {
   
-      labels: ['Rate 1', 'Rate 2', 'Rate 3', 'Rate 4', 'Rate 5', 'Rate 6', 'Rate 7', 'Rate 8'],
+      labels: ['', '', '', '', '', '', '', '', '', ''],
       datasets: [{
-        label: 'labels',
+        label: '',
         
-        data: [3.8,  3,  0.8,  4.5,  3,  3,  3.8,  0.8,  4.5,  2.2],
+        
+        data: [3.8,  3,  0.8,  4.5,  3,  3,  3.8,  0.8,  4.5,  2.2, 4.5,  2.2],
         backgroundColor: [
           '#38b6ff',
           '#38b6ff',
@@ -756,11 +769,11 @@ const data = {
           '#ff5757'
         ],
         
-        image:[
-        './patrick.png',
+        // image:[
+        // './patrick.png',
       
        
-        ],
+        // ],
         borderColor: [
           '#38b6ff',
           '#38b6ff',
@@ -813,29 +826,38 @@ const data = {
         const nice2 = new Image();
         const nice3 = new Image();
         const nice4 = new Image();
+        const nice5 = new Image();
+        const nice6 = new Image();
           // logo.src=imageLink;
-       
-      
-        kill.src='logo/calgary-flames.svg';
-        ctx.drawImage(kill,  20 , x.getPixelForValue(3) + 0,50,50),
-        logo.src='./adds3.png';
-        ctx.drawImage(logo,  108, x.getPixelForValue(1) + 170,50,50),
-        lo.src='logo/buffalo-sabres.svg';
-        ctx.drawImage(lo,  195, x.getPixelForValue(2) + 85,50,50),
+        
+        kill.src='../images/teamlogo-svg/toronto-maple-leafs.svg';
+        ctx.drawImage(kill,  11 , x.getPixelForValue(3) + 30,35,35),
+        logo.src='../images/teamlogo-svg/seattle-kraken.svg';
+        ctx.drawImage(logo, 56, x.getPixelForValue(1) + 120,35,35),
+        lo.src='../images/teamlogo-svg/philadelphia-flyers.svg';
+        ctx.drawImage(lo, 100, x.getPixelForValue(2) + 75,35,35),
         // next
-        nice.src='logo/chicago-blackhawks.svg';
-        ctx.drawImage(nice,  280, x.getPixelForValue(2) + 86,50,50),
-        nice1.src='logo/colorado-avalanche.svg';
-        ctx.drawImage(nice1,  360, x.getPixelForValue(2) + 84,50,50),
-        nice2.src='logo/columbus-blue-jackets.svg';
-        ctx.drawImage(nice2,  445, x.getPixelForValue(2) + 82,50,50),
-        nice3.src='logo/detroit-red-wings.svg';
-        ctx.drawImage(nice3,  530, x.getPixelForValue(2) + 80,50,50),
-        nice4.src='logo/edmonton-oilers.svg';
-        ctx.drawImage(nice4,  615, x.getPixelForValue(2) + 84,50,50)
+        nice.src='../images/teamlogo-svg/new-jersey-devils.svg';
+        ctx.drawImage(nice, 145, x.getPixelForValue(2) + 75,35,35),
+        nice1.src='../images/teamlogo-svg/new-york-rangers.svg';
+        ctx.drawImage(nice1, 189, x.getPixelForValue(2) + 75,35,35),
+        nice2.src='../images/teamlogo-svg/montreal-canadiens.svg';
+        ctx.drawImage(nice2,  235, x.getPixelForValue(2) + 75,35,35),
+        nice3.src='../images/teamlogo-svg/chicago-blackhawks.svg';
+        ctx.drawImage(nice3, 276, x.getPixelForValue(2) + 75,35,35),
+        nice4.src='../images/teamlogo-svg/boston-bruins.svg';
+        ctx.drawImage(nice4, 322, x.getPixelForValue(2) + 75,35,35)
+        nice5.src='../images/teamlogo-svg/buffalo-sabres.svg';
+        ctx.drawImage(nice5, 368, x.getPixelForValue(2) + 75,35,35),
+        nice6.src='../images/teamlogo-svg/calgary-flames.svg';
+        ctx.drawImage(nice6, 410, x.getPixelForValue(2) + 75,35,35)
+        
       
 
       }
+    };
+    const dataXaxis = {
+
     }
 
     // config 
@@ -847,7 +869,9 @@ const data = {
         indexAxis:'x',  // <-- position y , x
         layout:{
           padding:{
-            bottom:20
+            bottom:20,
+            
+            
           }
         },
         
@@ -888,8 +912,10 @@ const data = {
              })
             }
           }
-        }
-      },
+        },
+         
+      }
+      
  
       
     };
