@@ -3,14 +3,14 @@
 @section('content')
 <!-- first group shirt -->
  <div class="mb-8 ">
-      <div class="bg-[#1d9bf0] p-0.5 flex flex-row justify-evenly items-end">
-            <div class="flex flex-row gap-[4.75rem] smm-gap-[2rem]">
+      <div class="bg-[#1d9bf0] p-0.5 flex flex-row lg:justify-evenly justify-between items-end w-full">
+            <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                <h1 class="text-black text-3xl smm-text-lg font-bold mt-[7px]">Nashville Predator</h1>
+                <h1 class="text-black lg:text-3xl md:text-2xl  sm:text-lg text-lg font-bold mt-[7px]">Nashville <br class="lg:hidden smm-block"> Predator</h1>
             </div>
-                <p class="text-black text-lg mb-2">Feb. 18,2022 | 7:00 EST</p>
-            <div class="flex flex-row gap-[4.75rem]  smm-gap-[2rem]">
-                <h1 class="text-black text-3xl smm-text-lg font-bold mt-[7px]">Carolina Hurricanes</h1>
+                <p class="text-black lg:text-lg text-md mb-2">Feb. 18,2022 <br class="lg:hidden md:block"> | 7:00 EST</p>
+            <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
+                <h1 class="text-black lg:text-3xl md:text-2xl sm:text-lg text-lg font-bold mt-[7px]">Carolina <br class="lg:hidden smm-block"> Hurricanes</h1>
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt="">
             </div>
       </div>
@@ -103,7 +103,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem]">
+                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem] smm-right-0">
                         <div class="">
                             <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
@@ -121,7 +121,7 @@
                                 <p>Line 2</p>
                             </div>
                         </div>
-                        <div class="flex flex-col ml-7  mb-[15px] justify-center items-center">
+                        <div class="flex flex-col xl:ml-7 lg:ml-7 md:ml-7 ml-0  mb-[15px] justify-center items-center">
                             <p class="text-lg font-semibold">Morning Skate</p>
                             <p class="text-lg  font-semibold">(July 25 6:18 am)</p>
                         </div>
@@ -213,7 +213,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem]">
+                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem] smm-right-0">
                         <div class="">
                             <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
@@ -231,9 +231,9 @@
                                 <p>Line 2</p>
                             </div>
                         </div>
-                        <div class="flex flex-col ml-7 mb-[15px] justify-center items-center">
+                        <div class="flex flex-col xl:ml-7 lg:ml-7 md:ml-7 ml-0  mb-[15px] justify-center items-center">
                             <p class="text-lg font-semibold">Morning Skate</p>
-                            <p class="text-lg font-semibold">(July 25 6:18 am)</p>
+                            <p class="text-lg  font-semibold">(July 25 6:18 am)</p>
                         </div>
                     </div> 
                </div> 
@@ -246,14 +246,14 @@
  <!-- end of first shirt group -->
  <!-- second group row -->
  <div class="mb-8">
-      <div class="bg-[#1d9bf0] p-0.5 flex flex-row justify-evenly items-end">
-            <div class="flex flex-row gap-[4.75rem]">
+      <div class="bg-[#1d9bf0] p-0.5 flex flex-row lg:justify-evenly justify-between items-end w-full">
+            <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                <h1 class="text-black text-3xl font-bold mt-[7px]">Nashville Predator</h1>
+                <h1 class="text-black lg:text-3xl md:text-2xl  sm:text-lg text-lg font-bold mt-[7px]">Nashville <br class="lg:hidden smm-block"> Predator</h1>
             </div>
-                <p class="text-black text-lg mb-2">Feb. 18,2022 | 7:00 EST</p>
-            <div class="flex flex-row gap-[4.75rem]">
-                <h1 class="text-black text-3xl font-bold mt-[7px]">Carolina Hurricanes</h1>
+                <p class="text-black lg:text-lg text-md mb-2">Feb. 18,2022 <br class="lg:hidden md:block"> | 7:00 EST</p>
+            <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
+                <h1 class="text-black lg:text-3xl md:text-2xl sm:text-lg text-lg font-bold mt-[7px]">Carolina <br class="lg:hidden smm-block"> Hurricanes</h1>
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt="">
             </div>
       </div>
@@ -343,7 +343,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem]">
+                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem] smm-right-0">
                         <div class="">
                             <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
@@ -361,13 +361,13 @@
                                 <p>Line 2</p>
                             </div>
                         </div>
-                        <div class="flex flex-col ml-7 mb-[15px] justify-center items-center">
+                        <div class="flex flex-col xl:ml-7 lg:ml-7 md:ml-7 ml-0  mb-[15px] justify-center items-center">
                             <p class="text-lg font-semibold">Morning Skate</p>
-                            <p class="text-lg font-semibold">(July 25 6:18 am)</p>
+                            <p class="text-lg  font-semibold">(July 25 6:18 am)</p>
                         </div>
-                    </div> 
+                    </div>  
                </div>
-               <div class="flex-auto relative">
+                    <div class="flex-auto relative">
                         <div class="flex flex-row justify-center items-center gap-[6rem] bg-slate-300 p-5">
                             <h2 class="text-xl font-bold">FRED ANDERSON</h2>
                             <div class="flex flex-row items-center gap-[3.25rem]">
@@ -450,7 +450,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem]">
+                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem] smm-right-0">
                         <div class="">
                             <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
@@ -468,9 +468,9 @@
                                 <p>Line 2</p>
                             </div>
                         </div>
-                        <div class="flex flex-col ml-7 mb-[15px] justify-center items-center">
+                        <div class="flex flex-col xl:ml-7 lg:ml-7 md:ml-7 ml-0  mb-[15px] justify-center items-center">
                             <p class="text-lg font-semibold">Morning Skate</p>
-                            <p class="text-lg font-semibold">(July 25 6:18 am)</p>
+                            <p class="text-lg  font-semibold">(July 25 6:18 am)</p>
                         </div>
                     </div> 
                </div> 
@@ -483,14 +483,14 @@
  <!-- end of second row -->
  <!-- third group row -->
  <div class="mb-8">
-      <div class="bg-[#1d9bf0] p-0.5 flex flex-row justify-evenly items-end">
-            <div class="flex flex-row gap-[4.75rem]">
+      <div class="bg-[#1d9bf0] p-0.5 flex flex-row lg:justify-evenly justify-between items-end w-full">
+            <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                <h1 class="text-black text-3xl font-bold mt-[7px]">Nashville Predator</h1>
+                <h1 class="text-black lg:text-3xl md:text-2xl  sm:text-lg text-lg font-bold mt-[7px]">Nashville <br class="lg:hidden smm-block"> Predator</h1>
             </div>
-                <p class="text-black text-lg mb-2">Feb. 18,2022 | 7:00 EST</p>
-            <div class="flex flex-row gap-[4.75rem]">
-                <h1 class="text-black text-3xl font-bold mt-[7px]">Carolina Hurricanes</h1>
+                <p class="text-black lg:text-lg text-md mb-2">Feb. 18,2022 <br class="lg:hidden md:block"> | 7:00 EST</p>
+            <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
+                <h1 class="text-black lg:text-3xl md:text-2xl sm:text-lg text-lg font-bold mt-[7px]">Carolina <br class="lg:hidden smm-block"> Hurricanes</h1>
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt="">
             </div>
       </div>
@@ -580,7 +580,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem]">
+                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem] smm-right-0">
                         <div class="">
                             <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
@@ -598,9 +598,9 @@
                                 <p>Line 2</p>
                             </div>
                         </div>
-                        <div class="flex flex-col ml-7 mb-[15px] justify-center items-center">
+                        <div class="flex flex-col xl:ml-7 lg:ml-7 md:ml-7 ml-0  mb-[15px] justify-center items-center">
                             <p class="text-lg font-semibold">Morning Skate</p>
-                            <p class="text-lg font-semibold">(July 25 6:18 am)</p>
+                            <p class="text-lg  font-semibold">(July 25 6:18 am)</p>
                         </div>
                     </div> 
                </div>
@@ -687,7 +687,7 @@
                             </div>
                         </div>
                     </div> 
-                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem]">
+                    <div class="pb-2 flex flex-row gap-1 justify-center relative right-[0.75rem] smm-right-0">
                         <div class="">
                             <div class="grid grid-cols-3 gap-1">
                                 <div class="p-4 smm-p-0">
@@ -705,9 +705,9 @@
                                 <p>Line 2</p>
                             </div>
                         </div>
-                        <div class="flex flex-col ml-7 mb-[15px] justify-center items-center">
+                        <div class="flex flex-col xl:ml-7 lg:ml-7 md:ml-7 ml-0  mb-[15px] justify-center items-center">
                             <p class="text-lg font-semibold">Morning Skate</p>
-                            <p class="text-lg font-semibold">(July 25 6:18 am)</p>
+                            <p class="text-lg  font-semibold">(July 25 6:18 am)</p>
                         </div>
                     </div> 
                </div> 

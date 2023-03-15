@@ -508,20 +508,31 @@
                 nav:true,
                 
             },
+            320:{
+                items:1,
+                nav:true,
+                loop:false
+            },
             600:{
                 items:2,
                 nav:true,
                 loop:false
                 
             },
-            768:{
-                items:3,
+            770:{
+                items:2,
                 nav:true,
                 loop:false
                 
             },
-            1000:{
-                items:5,
+            768:{
+                items:2,
+                nav:true,
+                loop:false
+                
+            },
+            1003:{
+                items:3,
                 nav:true,
                 loop:false
                 

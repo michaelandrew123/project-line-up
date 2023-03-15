@@ -1424,7 +1424,7 @@
                     </a>
                 </div> -->
                 <div class="border-2 border-black rounded-xl rounded-md w-full h-[57px] overflow-hidden mt-1 flex flex-row items-center rounded-br-xl-between">
-                   <input class="border-2 border-black rounded-xl h-[110%] w-[319%]" type="text">
+                   <input class="border border-l-0 border-r-2 border-black rounded-xl h-[110%] w-[319%]" type="text">
                    <a class="w-full flex justify-center" href="">
                       <img class="w-[73px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
                    </a> 
