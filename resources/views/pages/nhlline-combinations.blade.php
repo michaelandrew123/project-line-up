@@ -2,9 +2,9 @@
 @extends('layouts.master')
 
 @section('content')
-
-   <div class="w-full flex justify-center lg:block  smm:hidden">
-        <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col border-black m-4 gap-5">
+<!-- Desktop design -->
+   <div class="w-full flex justify-center ">
+        <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col border-black m-4 gap-5 block  smm-hidden">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">
                     <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
@@ -39,8 +39,8 @@
             </div>
         </div>
     </div>
-    <div class="w-full flex justify-center bg-slate-100">
-       <div class="w-11/12 flex flex-row justify-between gap-3">
+    <div class="w-full flex justify-center bg-slate-100 ">
+       <div class="w-11/12 flex flex-row justify-between gap-3 block  smm-hidden">
           <div class="flex flex-col  w-9/12 gap-5">
                 <div class="w-full bg-[#d9d9d9] flex flex-row  items-center rounded-md">
                     <h1 class="text-center py-10 text-3xl font-bold w-full">NHL Line Combinations</h1>
@@ -513,6 +513,46 @@
                 </div>
             </div>
     </div>
+<!-- End of Design -->
+
+
+<!-- Mobile Design -->
+<div class="w-full">
+    <div class="flex flex-col mx-1">
+        <div class="flex flex-row justify-between items-center mb-1">
+            <div class="flex flex-row items-center gap-1.5">
+                <img class="w-[3rem]" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
+                <div class="flex">
+                    <h1 class="sm:text-4xl text-3xl font-extrabold">projected</h1>
+                    <h1 class="sm:text-4xl text-3xl font-extrabold text-[#39b6ff]">lineups</h1>
+                </div>
+            </div>
+            <a href="#">
+                <svg class="w-10 text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>  
+        <div class="flex flex-row gap-2 mx-2 my-5">
+            <button class="text-xl font-bold bg-[#38b6ff] text-black w-full h-12 rounded-md">NHL</button>
+            <button class="text-xl font-bold bg-[#ebece9] text-black w-full h-12 rounded-md">NFL</button>
+            <button class="text-xl font-bold bg-[#ebece9] text-black w-full h-12 rounded-md">NBA</button>
+            <button class="text-xl font-bold bg-[#ebece9] text-black w-full h-12 rounded-md">MLB</button>
+            <button class="text-xl font-bold bg-[#ebece9] text-black w-full h-12 rounded-md">SOC</button>
+        </div>
+        <div class="flex flex-row mx-2 gap-3 mb-3">
+            <button class="text-xl font-bold bg-[#ebece9] text-black w-full h-12 rounded-md">STARTING GOALIES</button>
+            <button class="text-xl font-bold bg-[#1d9bf0] text-black w-full h-12 rounded-md">LINE COMBOS</button>
+        </div>
+        <div class="relative mx-2 z-20">
+            <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg linecomb-input-mob" type="" value="Search team projected lineups"> 
+            <a class="absolute right-[12px] top-[12px] font-extrabold" href="">
+               <img class="w-[2.5rem]" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+ 
 
 
 
