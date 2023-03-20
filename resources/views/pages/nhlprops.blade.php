@@ -73,12 +73,8 @@
               <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a></li>
               <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li>               
             </ul>
-            <div class="flex flex-row w-full gap-3">
-              <div class="relative w-[62%]">            
-                <input class="border border-[#9fa0a0] w-full h-[4rem] rounded-lg props-input" type="" value="Search players"> 
-                <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[48px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
-              </div>
-              <ul class="flex flex-row w-full gap-3">
+            <div class="flex flex-col w-full gap-3">
+              <ul class="flex flex-row w-[61%] gap-3">
                 <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/seattle-kraken.svg') }}" alt=""></a></li>
                 <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt=""></a></li>
                 <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/tampa-bay-lightning.svg') }}" alt=""></a></li>
@@ -88,6 +84,10 @@
                 <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/washington-capitals.svg') }}" alt=""></a></li>
                 <li class="flex justify-center items-center bg-[#d9d9d9] border border-[#d9d9d9] rounded-md w-full"><a href=""><img class="w-16 " src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a></li>  
               </ul>
+              <div class="relative w-full">            
+                <input class="border border-[#9fa0a0] w-full h-[5rem] rounded-lg props-input" type="" value="Search players"> 
+                <a class="absolute right-[15px] top-[16px]" href=""><img class=" w-[52px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
+              </div>
             </div>           
           </div>
         </div>
