@@ -401,9 +401,9 @@
         <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
     </div>
 </div>
-<div class="flex flex-col gap-1">
+<div class="flex flex-col gap-1 hidden smm-block">
     <img class="w-full my-1.5" src="{{ asset('/images/menu-icon/adds_header.png') }}" >  
-    <div id="" class=" my-3 mx-1 hidden smm-block ">
+    <div id="" class=" my-3 mx-1  ">
         <div class="w-full h-20  flex items-center justify-between border-slate-300 border-b-2 my-4"> 
             <div class="flex gap-1">
               <img class="w-16 h-16 " src="{{ asset('/images/menu-icon/.png') }}" alt=""> 

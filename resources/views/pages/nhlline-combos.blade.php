@@ -56,7 +56,7 @@
             </div>            
         </div>
         <div class="bg-slate-300 h-[2px] w-full"></div>
-        <div class=" mx-3 mt-2">
+        <div class=" mx-3">
             <div class="flex flex-row items-center justify-between">
                 <div class="flex flex-row gap-2 items-center">                       
                     <div>
@@ -91,13 +91,13 @@
                 <button class="w-full bg-slate-100 mx-1 py-4 font-semibold rounded-md sts">STATS</button>
                 <button class="w-full bg-slate-100 mx-1 py-4 font-semibold rounded-md nws">NEWS</button>
             </div>
-            <div id="shirt-footer"  class="flex flex-col gap-2">
+            <div id="shirt-footer"  class="flex flex-col gap-2 my-3">
                 <div class="flex flex-col gap-2 w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">FORWARDS</h1>
                     <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem] " src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -135,9 +135,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -175,9 +175,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/MITCH-MARNER-16.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -219,9 +219,9 @@
                     <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="flex flex-row justify-between mt-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -259,9 +259,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -299,9 +299,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/MITCH-MARNER-16.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -343,9 +343,9 @@
                     <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="flex flex-row justify-between mt-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -383,9 +383,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -423,9 +423,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/MITCH-MARNER-16.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -467,9 +467,9 @@
                     <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="flex flex-row justify-between mt-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -507,9 +507,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -547,9 +547,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/MITCH-MARNER-16.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -595,9 +595,9 @@
                 <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">DEFENCE</h1>
                     <div class="flex flex-row justify-center gap-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -635,91 +635,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
-                            <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm font-semibold text-[13px]">8500</p>
-                                </div>
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2rem]" src="{{ asset('/images/menu-icon/draftking-rate.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">12.5</p>
-                                </div>   
-                            </div>
-                            <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden fduel">
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/fanduel-icon.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">8500</p>
-                                </div>
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2rem]" src="{{ asset('/images/menu-icon/fanduel-rate.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">12.5</p>
-                                </div>   
-                            </div>
-                            <div class="w-full flex justify-evenly hidden hidden stat">
-                                <div class="flex flex-col">
-                                    <p class="text-sm font-semibold">Goals</p>
-                                    <p class="text-sm font-semibold">Assists</p>
-                                    <p class="text-sm font-semibold">Shots/Gm</p>
-                                    <p class="text-sm font-semibold">TOI/Gm</p>
-                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <p class="text-sm font-semibold">Goals</p>
-                                    <p class="text-sm font-semibold">Assists</p>
-                                    <p class="text-sm font-semibold">Shots/Gm</p>
-                                    <p class="text-sm font-semibold">CF %</p>
-                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
-                            <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm font-semibold text-[13px]">8500</p>
-                                </div>
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2rem]" src="{{ asset('/images/menu-icon/draftking-rate.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">12.5</p>
-                                </div>   
-                            </div>
-                            <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden fduel">
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/fanduel-icon.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">8500</p>
-                                </div>
-                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
-                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2rem]" src="{{ asset('/images/menu-icon/fanduel-rate.png') }}" alt="">
-                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">12.5</p>
-                                </div>   
-                            </div>
-                            <div class="w-full flex justify-evenly hidden hidden stat">
-                                <div class="flex flex-col">
-                                    <p class="text-sm font-semibold">Goals</p>
-                                    <p class="text-sm font-semibold">Assists</p>
-                                    <p class="text-sm font-semibold">Shots/Gm</p>
-                                    <p class="text-sm font-semibold">TOI/Gm</p>
-                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <p class="text-sm font-semibold">Goals</p>
-                                    <p class="text-sm font-semibold">Assists</p>
-                                    <p class="text-sm font-semibold">Shots/Gm</p>
-                                    <p class="text-sm font-semibold">CF %</p>
-                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -759,9 +677,9 @@
                         </div>
                     </div>
                     <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -799,9 +717,91 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
+                            <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
+                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
+                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
+                                    <p class="xl:text-lg lg:text-sm font-semibold text-[13px]">8500</p>
+                                </div>
+                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
+                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2rem]" src="{{ asset('/images/menu-icon/draftking-rate.png') }}" alt="">
+                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">12.5</p>
+                                </div>   
+                            </div>
+                            <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden fduel">
+                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
+                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/fanduel-icon.png') }}" alt="">
+                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">8500</p>
+                                </div>
+                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
+                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2rem]" src="{{ asset('/images/menu-icon/fanduel-rate.png') }}" alt="">
+                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">12.5</p>
+                                </div>   
+                            </div>
+                            <div class="w-full flex justify-evenly hidden hidden stat">
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">Goals</p>
+                                    <p class="text-sm font-semibold">Assists</p>
+                                    <p class="text-sm font-semibold">Shots/Gm</p>
+                                    <p class="text-sm font-semibold">TOI/Gm</p>
+                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">Goals</p>
+                                    <p class="text-sm font-semibold">Assists</p>
+                                    <p class="text-sm font-semibold">Shots/Gm</p>
+                                    <p class="text-sm font-semibold">CF %</p>
+                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-center mt-3 gap-3">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
+                            <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
+                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
+                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
+                                    <p class="xl:text-lg lg:text-sm font-semibold text-[13px]">8500</p>
+                                </div>
+                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
+                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2rem]" src="{{ asset('/images/menu-icon/draftking-rate.png') }}" alt="">
+                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">12.5</p>
+                                </div>   
+                            </div>
+                            <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden fduel">
+                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
+                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/fanduel-icon.png') }}" alt="">
+                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">8500</p>
+                                </div>
+                                <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
+                                    <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2rem]" src="{{ asset('/images/menu-icon/fanduel-rate.png') }}" alt="">
+                                    <p class="xl:text-lg lg:text-sm  font-semibold text-[13px]">12.5</p>
+                                </div>   
+                            </div>
+                            <div class="w-full flex justify-evenly hidden hidden stat">
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">Goals</p>
+                                    <p class="text-sm font-semibold">Assists</p>
+                                    <p class="text-sm font-semibold">Shots/Gm</p>
+                                    <p class="text-sm font-semibold">TOI/Gm</p>
+                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold">Goals</p>
+                                    <p class="text-sm font-semibold">Assists</p>
+                                    <p class="text-sm font-semibold">Shots/Gm</p>
+                                    <p class="text-sm font-semibold">CF %</p>
+                                    <p class="text-sm font-semibold">PP TOI/Gm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -846,9 +846,9 @@
                 <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">GOALIES</h1>
                     <div class="flex flex-row justify-center gap-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -886,9 +886,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -932,9 +932,9 @@
                 <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 1</h1>
                     <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -972,9 +972,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -1012,9 +1012,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/MITCH-MARNER-16.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -1054,9 +1054,9 @@
                         </div>
                     </div>
                     <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -1094,9 +1094,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -1139,9 +1139,9 @@
                 <div class="flex flex-col w-full mt-10">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 2</h1>
                     <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -1179,9 +1179,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -1219,9 +1219,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/MITCH-MARNER-16.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -1261,9 +1261,9 @@
                         </div>
                     </div>
                     <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center border border-black rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/ALEXANDER-KERFOOT-15.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -1301,9 +1301,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center border border-black  rounded-md gap-2 w-[32%]">
-                            <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/AUSTON-MATTHEWS-34.png') }}" class="mb-2.5 px-3" alt="">
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                 <div class="flex flex-row items-center xl:gap-2 lg:gap-1">
                                     <img class="xl:w-[3.5rem] lg:w-[2rem] xl:h-[2rem] lg:h-[1.5rem] md:w-[2.5rem]" src="{{ asset('/images/menu-icon/draftking-icon.png') }}" alt="">
@@ -1343,9 +1343,69 @@
                         </div>
                     </div>
                 </div>
+                <div class="bg-slate-300 h-[2px] w-full my-5"></div>
+                 <div class="flex flex-col w-full">
+                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
+                    <div class="flex flex-row justify-between">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
+                        </div>
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
+                        </div>
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between">
+                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
+                        </div>
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
+                        </div>
+                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                            <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
+                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center ">
+                    <ul class="flex flex-row justify-evenly list-none w-10/12 bg-slate-200 p-5 border rounded-3xl">
+                        <li class=" flex flex-col items-center justify-center text-center mt-3">
+                            <img class="w-14" src="{{ asset('/images/menu-icon/gtd icon.png') }}"  alt="">
+                            <p class="text-sm font-bold"> Game Time <br> Decision</p>
+                        </li>
+                        <li class=" flex flex-col items-center justify-center  text-center">
+                            <img class="w-14" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
+                            <p class="text-sm font-bold"> Injured </p> 
+                        </li>
+                        <li class=" flex flex-col items-center justify-center text-center">
+                            <img class="w-14" src="{{ asset('/images/menu-icon/hot icon.png') }}" alt=""> 
+                            <p class="text-sm font-bold"> Hot Streak </p>
+                        </li>
+                        <li class=" flex flex-col items-center justify-center  text-center">
+                            <img class="w-14" src="{{ asset('/images/menu-icon/cold icon.png') }}" alt="">
+                            <p class="text-sm font-bold"> Cold player </p> 
+                        </li>
+                        <li class=" flex flex-col items-center justify-center  text-center">
+                            <img class="w-14" src="{{ asset('/images/menu-icon/value icon.png') }}"alt="">
+                            <p class="text-sm font-bold"> Value Player </p>
+                        </li>
+                        <li class=" flex flex-col items-center justify-center  text-center">
+                            <img class="w-14" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
+                            <p class="text-sm font-bold"> Top slack </p>
+                        </li>                             
+                    </ul>
+                </div> 
             </div>
             
-            <div class="flex flex-col gap-10 mt-10">
+            <div class="flex flex-col gap-10 mt-10 hidden">
                 <h1 class="text-lg font-bold text-center">Power play</h1>
                 <p class="text-lg">
                     You might hear these lines reffered to as special teams lines,
@@ -1559,7 +1619,7 @@
                 </div>
             </div>         
             <div class="bg-slate-300 h-[2px] w-full"></div>
-            <div class="mx-3 mt-2">             
+            <div class="mx-3">             
                 <div class="flex flex-row gap-2 items-center w-full justify-between">                       
                     <div>
                         <p class="text-[13px] font-semibold">David Alter</p>
@@ -1583,7 +1643,7 @@
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">FORWARDS</h1>
                         <div class="flex flex-row justify-between">
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1623,7 +1683,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1663,7 +1723,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1707,7 +1767,7 @@
                         <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1747,7 +1807,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center   rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1787,7 +1847,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center   rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1831,7 +1891,7 @@
                         <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1871,7 +1931,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1911,7 +1971,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1955,7 +2015,7 @@
                         <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -1995,7 +2055,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2035,7 +2095,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2083,7 +2143,7 @@
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">DEFENCE</h1>
                         <div class="flex flex-row justify-center gap-3">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2123,7 +2183,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2165,7 +2225,7 @@
                         </div>
                         <div class="flex flex-row justify-center mt-3 gap-3">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2205,7 +2265,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2247,7 +2307,7 @@
                         </div>
                         <div class="flex flex-row justify-center mt-3 gap-3">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2287,7 +2347,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2334,7 +2394,7 @@
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">GOALIES</h1>
                         <div class="flex flex-row justify-center gap-3">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2374,7 +2434,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2420,7 +2480,7 @@
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 1</h1>
                         <div class="flex flex-row justify-between">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2460,7 +2520,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2500,7 +2560,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2542,7 +2602,7 @@
                         </div>
                         <div class="flex flex-row justify-center mt-3 gap-3">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2582,7 +2642,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2627,7 +2687,7 @@
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 2</h1>
                         <div class="flex flex-row justify-between">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2667,7 +2727,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2707,7 +2767,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">MITCH MARNER</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2749,7 +2809,7 @@
                         </div>
                         <div class="flex flex-row justify-center mt-3 gap-3">
                             <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">ALEXANDER KERFOOT</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2789,7 +2849,7 @@
                                 </div>
                             </div>
                             <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
-                                <p class="text-center text-[11px] font-bold">AUSTON MATTHEWS</p>
+                                <p class="text-center text-sm bg-slate-300 p-1.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
                                     <div class="flex flex-row items-center gap-1">
@@ -2881,7 +2941,7 @@
                                                         <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <p class="font-extrabold">Jim Thomas</p>
-                                                        <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                                                        <p class="text-sm font-boldfont-bold">11/30/2022 | 12:59 pm EST</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2904,7 +2964,7 @@
                                                         <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <p class="font-extrabold">Jim Thomas</p>
-                                                        <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                                                        <p class="text-sm font-boldfont-bold">11/30/2022 | 12:59 pm EST</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2927,7 +2987,7 @@
                                                         <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <p class="font-extrabold">Jim Thomas</p>
-                                                        <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                                                        <p class="text-sm font-boldfont-bold">11/30/2022 | 12:59 pm EST</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2957,7 +3017,7 @@
                                                         <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <p class="font-extrabold">Jim Thomas</p>
-                                                        <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                                                        <p class="text-sm font-boldfont-bold">11/30/2022 | 12:59 pm EST</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2980,7 +3040,7 @@
                                                         <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <p class="font-extrabold">Jim Thomas</p>
-                                                        <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                                                        <p class="text-sm font-boldfont-bold">11/30/2022 | 12:59 pm EST</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3003,7 +3063,7 @@
                                                         <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <p class="font-extrabold">Jim Thomas</p>
-                                                        <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                                                        <p class="text-sm font-boldfont-bold">11/30/2022 | 12:59 pm EST</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3033,7 +3093,7 @@
                                                         <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <p class="font-extrabold">Jim Thomas</p>
-                                                        <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                                                        <p class="text-sm font-boldfont-bold">11/30/2022 | 12:59 pm EST</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3056,7 +3116,7 @@
                                                         <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <p class="font-extrabold">Jim Thomas</p>
-                                                        <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                                                        <p class="text-sm font-boldfont-bold">11/30/2022 | 12:59 pm EST</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3079,7 +3139,7 @@
                                                         <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <p class="font-extrabold">Jim Thomas</p>
-                                                        <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                                                        <p class="text-sm font-boldfont-bold">11/30/2022 | 12:59 pm EST</p>
                                                     </div>
                                                 </div>
                                             </div>

@@ -299,8 +299,7 @@
                 </div> 
                 <div class="flex flex-row w-full ">
                    <img class="w-full h-32 border border-black" src="{{ asset('/images/menu-icon/.png') }}">
-                </div> 
-               
+                </div>               
                     <p class="text-xl my-5">
                         In fantasy sports betting, <span class="font-semibold"> line combinations</span> can be used to analyze 
                         player performance and make informed decisions. In fantasy sports, understanding
@@ -517,7 +516,7 @@
 
 
 <!-- Mobile Design -->
-<div class="w-full">
+<div class="w-full hidden smm-block">
     <div class="flex flex-col mx-1">
         <div class="flex flex-row justify-between items-center mb-1">
             <div class="flex flex-row items-center gap-1.5">
@@ -550,6 +549,69 @@
                <img class="w-[2.5rem]" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
             </a>
         </div>
+    </div>
+    <div class="flex flex-col mx-2">
+        <img class="w-full my-1.5 " src="{{ asset('/images/menu-icon/adds_header.png') }}" >         
+        <div class="w-full h-20 bg-[#d9d9d9] flex border rounded-lg justify-center items-center ">
+            <h1 class="text-xl font-bold text-black ">NHL Line Combinations</h1>
+        </div>
+        <div class="mx-1 my-3 flex flex-col gap-3">
+            <div class="w-full flex flex-row justify-evenly gap-3">
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/chicago-blackhawks.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt=""></a>
+            </div>
+            <div class="w-full flex flex-row justify-evenly gap-3">
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/columbus-blue-jackets.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/dallas-stars.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/detroit-red-wings.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a>
+            </div>
+            <div class="w-full flex flex-row justify-evenly gap-3">
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/montreal-canadiens.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/new-jersey-devils.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/new-york-islanders.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/new-york-rangers.svg') }}" alt=""></a>
+            </div>
+            <div class="w-full flex flex-row justify-evenly gap-3">
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img  class="w-14 " src="{{ asset('/images/teamlogo-svg/ottawa-senators.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img  class="w-14 " src="{{ asset('/images/teamlogo-svg/philadelphia-flyers.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img  class="w-14 " src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img  class="w-14 " src="{{ asset('/images/teamlogo-svg/san-jose-sharks.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img  class="w-14 " src="{{ asset('/images/teamlogo-svg/seattle-kraken.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img  class="w-14 " src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt=""></a>
+            </div>
+            <div class="w-full flex flex-row justify-evenly gap-3">
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/tampa-bay-lightning.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/vancouver-canucks.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/washington-capitals.svg') }}" alt=""></a>
+                <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/winnipeg-jets.svg') }}" alt=""></a>
+            </div>
+            <div class="flex justify-center">
+                <div class="w-[33%] flex flex-row sm:justify-between justify-center gap-3">
+                    <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/tampa-bay-lightning.svg') }}" alt=""></a>
+                    <a class="bg-[#d9d9d9] w-20 border rounded-lg flex justify-center" href=""><img class="w-14 " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt=""></a>
+                </div>
+            </div>  
+        </div>
+        <div class="flex flex-col gap-3 mt-8">
+            <div class=" w-full flex justify-center">
+                <img class="w-[25rem] h-72" src="{{ asset('/images/menu-icon/adds3.png') }}">
+            </div> 
+            <div class=" w-full flex justify-center">
+                <img class="w-[25rem] h-64" src="{{ asset('/images/menu-icon/high_lights.png') }}" alt="">
+            </div>
+            <img class="w-auto my-3" src="{{ asset('/images/menu-icon/newsletter.png') }}" alt=""> 
+        </div>       
     </div>
 </div>
  

@@ -3567,7 +3567,7 @@
         </div>
 
     </div>
-    <img class="w-full my-3" src="{{ asset('/images/menu-icon/adds_header.png') }}" alt="">
+    <img class="w-full my-3 smm-block hidden" src="{{ asset('/images/menu-icon/adds_header.png') }}" alt="">
     <div class="flex justify-center w-full my-8 smm-block hidden">
         <div class="w-full h-20 bg-[#d9d9d9] flex border rounded-[10px] justify-center items-center my-5 ">
             <h1 class="text-xl font-bold text-black ">NHL Starting Goalies Tuesday, January 24</h1>
