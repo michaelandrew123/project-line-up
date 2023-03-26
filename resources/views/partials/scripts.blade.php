@@ -40,59 +40,126 @@
     });
 
     // nhl line-combos sub link
-     $('#sub-hed > .d-kings').on('click', function(){
-      $('.d-kings').addClass('bg-[#ff8210]');
-      $('.l-ups, .fnl, .sts, .nws').removeClass('bg-[#1d9bf0]');
+    //  $('#sub-hed > .d-kings').on('click', function(){
+    //   $('.d-kings').addClass('bg-[#ff8210]');
+    //   $('.l-ups, .fnl, .sts, .nws').removeClass('bg-[#1d9bf0]');
+    //  });
+    //  $('#sub-hed > .fnl').on('click', function(){
+    //   $('.fnl').addClass('bg-[#1d9bf0]');
+    //   $('.l-ups, .sts, .nws').removeClass('bg-[#1d9bf0]');
+    //   $('.d-kings').removeClass('bg-[#ff8210]');
+    //  });
+    //  $('#sub-hed > .sts').on('click', function(){
+    //   $('.sts').addClass('bg-[#1d9bf0]');
+    //   $('.l-ups, .fnl, .nws ').removeClass('bg-[#1d9bf0]');
+    //   $('.d-kings').removeClass('bg-[#ff8210]');
+    //  });
+    //  $('#sub-hed > .l-ups').on('click', function(){
+    //   $('.l-ups').addClass('bg-[#1d9bf0]');
+    //   $('.sts, .fnl, .nws').removeClass('bg-[#1d9bf0]');
+    //   $('.d-kings').removeClass('bg-[#ff8210]');
+    //  });
+    //  $('#sub-hed > .nws').on('click', function(){
+    //   $('.nws').addClass('bg-[#1d9bf0]');
+    //   $('.sts, .fnl, .l-ups').removeClass('bg-[#1d9bf0]');
+    //   $('.d-kings').removeClass('bg-[#ff8210]');
+    //  });
+
+
+    // $('#sub-hed > .d-kings').on('click', function(){
+    //     $('.drftking, .dk-price').removeClass('hidden');
+    //     $('.fduel, .stat, .fl-price, #shirt-footer').addClass('hidden');
+    // });
+    // $('#sub-hed > .fnl').on('click', function(){
+    //     $('.fduel, .fl-price').removeClass('hidden');
+    //     $('.drftking, .stat, .dk-price, #shirt-footer').addClass('hidden');
+    // });
+    // $('#sub-hed > .sts').on('click', function(){
+    //     $('.stat').removeClass('hidden');
+    //     $('.drftking ,.fduel, .dk-price, .fl-price, #shirt-footer').addClass('hidden');
+    // });
+    // $('#sub-hed > .l-ups').on('click', function(){
+    //     $('.drftking, .fduel, .stat, .dk-price, .fl-price, #shirt-footer').addClass('hidden');
+    // });
+    // $('#sub-hed > .nws').on('click', function(){
+    //     $('div > #shirt-footer').addClass('hidden');
+    //     $('div > #carsl').removeClass('hidden');
+    // });
+    // $('#sub-hed > .sts, .d-kings, .fnl, .l-ups').on('click', function(){
+    //     $('div > #shirt-footer').removeClass('hidden');
+    //     $('div > #carsl').addClass('hidden');
+    // });
+    // nhl line-combos sub link end
+
+    // NHL LINE-COMBOS
+    $('#sub-hed > .d-kings').on('click', function(){
+      $('.d-kings').addClass('bg-[#1d9bf0]');
+      $('.l-ups, .fnl, .sts, .nws, .prp, .shp').removeClass('bg-[#1d9bf0]');
      });
      $('#sub-hed > .fnl').on('click', function(){
       $('.fnl').addClass('bg-[#1d9bf0]');
-      $('.l-ups, .sts, .nws').removeClass('bg-[#1d9bf0]');
-      $('.d-kings').removeClass('bg-[#ff8210]');
+      $('.l-ups, .sts, .nws, .d-kings, .prp, .shp').removeClass('bg-[#1d9bf0]');
      });
      $('#sub-hed > .sts').on('click', function(){
       $('.sts').addClass('bg-[#1d9bf0]');
-      $('.l-ups, .fnl, .nws ').removeClass('bg-[#1d9bf0]');
-      $('.d-kings').removeClass('bg-[#ff8210]');
+      $('.l-ups, .fnl, .nws, .d-kings, .prp, .shp').removeClass('bg-[#1d9bf0]');     
      });
      $('#sub-hed > .l-ups').on('click', function(){
       $('.l-ups').addClass('bg-[#1d9bf0]');
-      $('.sts, .fnl, .nws').removeClass('bg-[#1d9bf0]');
-      $('.d-kings').removeClass('bg-[#ff8210]');
+      $('.sts, .fnl, .nws, .d-kings, .prp, .shp').removeClass('bg-[#1d9bf0]');
      });
      $('#sub-hed > .nws').on('click', function(){
       $('.nws').addClass('bg-[#1d9bf0]');
-      $('.sts, .fnl, .l-ups').removeClass('bg-[#1d9bf0]');
-      $('.d-kings').removeClass('bg-[#ff8210]');
+      $('.sts, .fnl, .l-ups, .d-kings, .prp, .shp').removeClass('bg-[#1d9bf0]');
      });
+     $('#sub-hed > .sts').on('click', function(){
+      $('.sts').addClass('bg-[#1d9bf0]');
+      $('.fnl, .l-ups, .d-kings, .nws, .prp, .shp').removeClass('bg-[#1d9bf0]');
+     });
+     $('#sub-hed > .prp').on('click', function(){
+      $('.prp').addClass('bg-[#1d9bf0]');
+      $('.fnl, .l-ups, .d-kings, .nws, .sts, .shp').removeClass('bg-[#1d9bf0]');
+     });
+     $('#sub-hed > .shp').on('click', function(){
+      $('.shp').addClass('bg-[#1d9bf0]');
+      $('.fnl, .l-ups, .d-kings, .nws, .sts, .prp').removeClass('bg-[#1d9bf0]');
+     });
+  
 
-
-    $('#sub-hed > .d-kings').on('click', function(){
-        $('.drftking, .dk-price').removeClass('hidden');
-        $('.fduel, .stat, .fl-price, #shirt-footer').addClass('hidden');
-    });
-    $('#sub-hed > .fnl').on('click', function(){
-        $('.fduel, .fl-price').removeClass('hidden');
-        $('.drftking, .stat, .dk-price, #shirt-footer').addClass('hidden');
-    });
-    $('#sub-hed > .sts').on('click', function(){
-        $('.stat').removeClass('hidden');
-        $('.drftking ,.fduel, .dk-price, .fl-price, #shirt-footer').addClass('hidden');
-    });
+    //  $('#sub-hed > l-ups').on('click', function(){
+    //   $('#lu-body').removeClass('hidden');
+    //  });
     $('#sub-hed > .l-ups').on('click', function(){
-        $('.drftking, .fduel, .stat, .dk-price, .fl-price, #shirt-footer').addClass('hidden');
-    });
-    $('#sub-hed > .nws').on('click', function(){
-        $('div > #shirt-footer').addClass('hidden');
-        $('div > #carsl').removeClass('hidden');
-    });
-    $('#sub-hed > .sts, .d-kings, .fnl, .l-ups').on('click', function(){
-        $('div > #shirt-footer').removeClass('hidden');
-        $('div > #carsl').addClass('hidden');
-    });
- 
+      $('#drf-shp').addClass('hidden');
+      $('#lu-body').removeClass('hidden');
+     });
+     $('#sub-hed > .d-kings').on('click', function(){
+      $('#drf-shp, .drftking, .dk-price').removeClass('hidden');
+      $('#lu-body, .fduel, .stats, .props, .shop, .fl-price').addClass('hidden');
+     });
+     $('#sub-hed > .fnl').on('click', function(){
+      $('#drf-shp, .fduel, .fl-price').removeClass('hidden');
+      $('#lu-body, .drftking, .stats, .props, .shop, .dk-price').addClass('hidden');
+     });
+     $('#sub-hed > .sts').on('click', function(){
+      $('#drf-shp, .stats').removeClass('hidden');
+      $('#lu-body, .drftking, .fduel, .props, .shop, .fl-price, .dk-price').addClass('hidden');
+     });
+     $('#sub-hed > .shp').on('click', function(){
+      $('#drf-shp, .shop').removeClass('hidden');
+      $('#lu-body, .drftking, .fduel, .props, .stats, .fl-price, .dk-price').addClass('hidden');
+     });
+     $('#sub-hed > .prp').on('click', function(){
+      $('#drf-shp, .props').removeClass('hidden');
+      $('#lu-body, .drftking, .fduel, .shop, .stats, .fl-price, .dk-price').addClass('hidden');
+     });
+     
+
     
-   
-    // nhl line-combos sub link end
+    
+     
+
+
 
     $( "div#main-menu > div > a" ).on('click', function() {
    
