@@ -292,8 +292,7 @@
         Sometimes they will be designated “Expected” when a beat reporter doesn't use definitive language in their announcements. However, these goalies end up starting about 99% of the time. Goalies designated “Confirmed”  have been validated by a credible team source or from a beat reporter. We always start the day with a “projected”  designation and will update a goalies status when we get any sort of announcement. 
         This is based on our opinion on who we feel may start for a team on that given night, if no information has been reported. Goalies will rarely start on both ends of a back-to-back, so you can be confident the other goalie will start on the second leg even with no announcement. When teams warm up 30 minutes before the game, you will get official confirmation on what goalie is starting.</p>
     </div>
-    <!-- End  -->
-    <!-- New Update Design -->
+   
     <!-- <div class="w-full flex flex-row justify-evenly smm-hidden">
         <div class="flex flex-col items-center w-7/12">
             <div class="w-full  h-36 bg-[#d9d9d9] flex  border rounded-[10px] justify-center items-center">
