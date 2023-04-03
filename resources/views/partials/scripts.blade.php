@@ -153,6 +153,9 @@
       $('#drf-shp, .props').removeClass('hidden');
       $('#lu-body, .drftking, .fduel, .shop, .stats, .fl-price, .dk-price').addClass('hidden');
      });
+     $('#sub-hed > .l-ups').on('click', function(){
+      $(' .drftking, .fduel, .shop, .stats, .fl-price, .dk-price').addClass('hidden');
+     });
      
 
     
