@@ -8,6 +8,9 @@
     body{
         font-family:  'Maven Pro', sans-serif 
     }
+    .txt-logo{
+        font-family: 'Mouse Memoirs', sans-serif
+    }
 
     /* Arrow holder */
     .arrowed {
