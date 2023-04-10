@@ -41,28 +41,28 @@
 
     // nhl line-combos sub link
     //  $('#sub-hed > .d-kings').on('click', function(){
-    //   $('.d-kings').addClass('bg-[#ff8210]');
-    //   $('.l-ups, .fnl, .sts, .nws').removeClass('bg-[#1d9bf0]');
-    //  });
-    //  $('#sub-hed > .fnl').on('click', function(){
-    //   $('.fnl').addClass('bg-[#1d9bf0]');
-    //   $('.l-ups, .sts, .nws').removeClass('bg-[#1d9bf0]');
-    //   $('.d-kings').removeClass('bg-[#ff8210]');
-    //  });
-    //  $('#sub-hed > .sts').on('click', function(){
-    //   $('.sts').addClass('bg-[#1d9bf0]');
-    //   $('.l-ups, .fnl, .nws ').removeClass('bg-[#1d9bf0]');
-    //   $('.d-kings').removeClass('bg-[#ff8210]');
-    //  });
-    //  $('#sub-hed > .l-ups').on('click', function(){
-    //   $('.l-ups').addClass('bg-[#1d9bf0]');
-    //   $('.sts, .fnl, .nws').removeClass('bg-[#1d9bf0]');
-    //   $('.d-kings').removeClass('bg-[#ff8210]');
-    //  });
-    //  $('#sub-hed > .nws').on('click', function(){
-    //   $('.nws').addClass('bg-[#1d9bf0]');
-    //   $('.sts, .fnl, .l-ups').removeClass('bg-[#1d9bf0]');
-    //   $('.d-kings').removeClass('bg-[#ff8210]');
+      //   $('.d-kings').addClass('bg-[#ff8210]');
+      //   $('.l-ups, .fnl, .sts, .nws').removeClass('bg-[#1d9bf0]');
+      //  });
+      //  $('#sub-hed > .fnl').on('click', function(){
+      //   $('.fnl').addClass('bg-[#1d9bf0]');
+      //   $('.l-ups, .sts, .nws').removeClass('bg-[#1d9bf0]');
+      //   $('.d-kings').removeClass('bg-[#ff8210]');
+      //  });
+      //  $('#sub-hed > .sts').on('click', function(){
+      //   $('.sts').addClass('bg-[#1d9bf0]');
+      //   $('.l-ups, .fnl, .nws ').removeClass('bg-[#1d9bf0]');
+      //   $('.d-kings').removeClass('bg-[#ff8210]');
+      //  });
+      //  $('#sub-hed > .l-ups').on('click', function(){
+      //   $('.l-ups').addClass('bg-[#1d9bf0]');
+      //   $('.sts, .fnl, .nws').removeClass('bg-[#1d9bf0]');
+      //   $('.d-kings').removeClass('bg-[#ff8210]');
+      //  });
+      //  $('#sub-hed > .nws').on('click', function(){
+      //   $('.nws').addClass('bg-[#1d9bf0]');
+      //   $('.sts, .fnl, .l-ups').removeClass('bg-[#1d9bf0]');
+      //   $('.d-kings').removeClass('bg-[#ff8210]');
     //  });
 
 
@@ -124,6 +124,15 @@
       $('.shp').addClass('bg-[#1d9bf0]');
       $('.fnl, .l-ups, .d-kings, .nws, .sts, .prp').removeClass('bg-[#1d9bf0]');
      });
+     $('.fnl, .shp, .d-kings, .nws, .sts, .prp').on('click', function(){
+      $('#p-box > div.frstrow').addClass('w-[69%]');
+      $('#p-box > div.scondrow').addClass('w-[65%]');
+     });
+     $('#sub-hed > .l-ups').on('click', function(){
+      $('#p-box > div.frstrow').removeClass('w-[69%]');
+      $('#p-box > div.scondrow').removeClass('w-[65%]');
+     });
+  
   
 
     //  $('#sub-hed > l-ups').on('click', function(){
@@ -154,8 +163,12 @@
       $('#lu-body, .drftking, .fduel, .shop, .stats, .fl-price, .dk-price').addClass('hidden');
      });
      $('#sub-hed > .l-ups').on('click', function(){
-      $(' .drftking, .fduel, .shop, .stats, .fl-price, .dk-price').addClass('hidden');
+      $(' .drftking, .fduel, .shop, .stats, .fl-price, .dk-price, .props').addClass('hidden');
      });
+
+
+      
+
      
 
     
