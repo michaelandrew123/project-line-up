@@ -15,11 +15,11 @@
                     </div>
                 </div>
                 <div class="flex flex-row items-center xl:gap-5 gap-3">
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 px-8  py-2 rounded-md">NHL</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-8  py-2 rounded-md">NFL</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-8  py-2 rounded-md">NBA</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-8  py-2 rounded-md">MLB</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-8  py-2 rounded-md">EPL</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 md:px-4  py-2 rounded-md">NHL</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-4 py-2 rounded-md">NFL</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-4 py-2 rounded-md">NBA</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-4 py-2 rounded-md">MLB</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-4 py-2 rounded-md">EPL</button>
                     <a href="#">
                         <svg class="w-10 text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
@@ -28,11 +28,11 @@
                 </div>
             </div>
             <div class="flex flex-row justify-between gap-3">
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-6  py-2 rounded-md">STARTING GOALIES</button>
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-6  py-2 rounded-md">LINE COMBOS</button>
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-6  py-2 rounded-md">PROJECTIONS</button>
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-6  py-2 rounded-md">NEWS</button>
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-6  py-2 rounded-md">PROPS & ODDS</button>
+                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5  py-2 rounded-md">STARTING GOALIES</button>
+                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">LINE COMBOS</button>
+                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROJECTIONS</button>
+                <button class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">NEWS</button>
+                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROPS & ODDS</button>
             </div>
             <div class="relative">
                 <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players"> 
@@ -40,14 +40,14 @@
             </div>
         </div> 
     </div>
-    <div class="flex flex-row justify-center gap-3">
-        <div class="flex flex-col xl:w-[67%] lg:w-full">
+    <div class="flex flex-row justify-center w-full xl:gap-3 lg:gap-2">
+        <div class="flex flex-col xl:w-[67%] lg:w-9/12 md:w-full">
             <div class="flex flex-col w-full">
                 <div class="flex justify-center mb-5">
                     <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
                 <div class="flex md:flex-row justify-center">
-                    <div class="w-[23rem] w-12/12 h-72 border border-slate-200 relative rounded-xl flex justify-center bg-white">
+                    <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72 border border-slate-200 relative rounded-xl flex justify-center bg-white">
                         <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
                             <div class="flex flex-row items-center gap-2">
                                 <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
@@ -60,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[23rem] w-12/12  h-72  relative ml-5 mr-5 border border-slate-200 rounded-xl flex justify-center bg-white">
+                    <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72  relative ml-5 mr-5 border border-slate-200 rounded-xl flex justify-center bg-white">
                         <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
                             <div class="flex flex-row items-center gap-2">
                                 <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
@@ -73,9 +73,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[23rem] w-12/12  h-72  relative border border-slate-200  rounded-xl flex justify-center bg-white">
-                        <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
-                            <h1 class="font-bold "><span class="text-white bg-green-500 text-[11px] px-1.5 py-0.5 rounded-full mr-2">$</span>Props and Odds</h1>
+                    <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72  relative border border-slate-200  rounded-xl flex justify-center bg-white">
+                        <div class="m-1 mt-6 w-[15rem] flex flex-col gap-2">
+                            <h1 class="font-bold "><span class="text-white bg-green-500 text-base px-3 py-2 rounded-full mr-2">$</span>Props and Odds</h1>
                             <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-[15rem]">
                             <p class="text-[12px] font-extrabold">Edmonton on the list  of top stacks to play tonight</p>
                             <div class="flex w-full justify-end mt-4">
@@ -96,7 +96,7 @@
                     </div>
                     <div class="flex flex-row justify-between">
                         <div >
-                            <img class="w-[25rem] h-64" src="{{ asset('/images/menu-icon/high_lights.png') }}" alt="">
+                            <img class="xl:w-[25rem] lg:w-[20rem] xl:h-64 lg:h-full md:w-[20rem] md:h-full" src="{{ asset('/images/menu-icon/high_lights.png') }}" alt="">
                         </div>
                         <div class="w-[57%] bg-slate-50">
                             <ul id="parent" class="flex flex-col">
@@ -134,201 +134,201 @@
                             NHL Starting Goalies
                         </h1>
                     </div>
-                    <div class="flex md:flex-row justify-center justify-evenly mb-3">
-                        <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
+                    <div class="flex w-full md:flex-row justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3">
+                        <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%] md:h-[18rem]  relative rounded-xl bg-white">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                         <p class="text-[11px] font-bold">Confirmed</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                        <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
                                         <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                     </div>  
                                 </div>
                             </div>
                             <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                <p class="text-[14px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                                <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                                <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
                             </div>
-                            <div class="flex items-center w-[17rem] justify-between">
+                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
                                 <div class="flex flex-row items-center">
-                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                     <div>
                                         <h3 class="text-[13px] ">Mollie Walker</h3>
-                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                     </div>
                                 </div>
                                 <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                    <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
                         </div>                          
-                        <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
+                        <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%] md:h-[18rem]  relative rounded-xl bg-white">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                         <p class="text-[11px] font-bold">Confirmed</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                        <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
                                         <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                     </div>  
                                 </div>
                             </div>
                             <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                <p class="text-[14px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                                <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                                <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
                             </div>
-                            <div class="flex items-center w-[17rem] justify-between">
+                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
                                 <div class="flex flex-row items-center">
-                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                     <div>
                                         <h3 class="text-[13px] ">Mollie Walker</h3>
-                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                     </div>
                                 </div>
                                 <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                    <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
-                        </div>
-                        <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
+                        </div>   
+                        <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%] md:h-[18rem]  relative rounded-xl bg-white">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                         <p class="text-[11px] font-bold">Confirmed</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                        <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
                                         <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                     </div>  
                                 </div>
                             </div>
                             <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                <p class="text-[14px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                                <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                                <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
                             </div>
-                            <div class="flex items-center w-[17rem] justify-between">
+                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
                                 <div class="flex flex-row items-center">
-                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                     <div>
                                         <h3 class="text-[13px] ">Mollie Walker</h3>
-                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                     </div>
                                 </div>
                                 <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                    <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
-                    <div class="flex md:flex-row justify-center justify-evenly ">
-                        <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
+                    <div class="flex w-full md:flex-row justify-center xl:justify-evenly lg:justify-between md:justify-between">
+                        <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                         <p class="text-[11px] font-bold">Confirmed</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                        <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
                                         <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                     </div>  
                                 </div>
                             </div>
                             <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                <p class="text-[14px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                                <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                                <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
                             </div>
-                            <div class="flex items-center w-[17rem] justify-between">
+                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
                                 <div class="flex flex-row items-center">
-                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                     <div>
                                         <h3 class="text-[13px] ">Mollie Walker</h3>
-                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                     </div>
                                 </div>
                                 <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                    <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
                         </div>                          
-                        <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
+                        <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                         <p class="text-[11px] font-bold">Confirmed</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                        <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
                                         <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                     </div>  
                                 </div>
                             </div>
                             <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                <p class="text-[14px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                                <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                                <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
                             </div>
-                            <div class="flex items-center w-[17rem] justify-between">
+                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
                                 <div class="flex flex-row items-center">
-                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                     <div>
                                         <h3 class="text-[13px] ">Mollie Walker</h3>
-                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                     </div>
                                 </div>
                                 <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                    <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
-                        </div>
-                        <div class="w-[31%] h-[21rem]  relative rounded-xl bg-white">
+                        </div>   
+                        <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
                                         <p class="text-[11px] font-bold">Confirmed</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                        <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
                                         <p class="text-[10px] font-semibold">New York Rangers - G</p>
                                     </div>  
                                 </div>
                             </div>
                             <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                <p class="text-[14px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                                <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                                <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
                             </div>
-                            <div class="flex items-center w-[17rem] justify-between">
+                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
                                 <div class="flex flex-row items-center">
-                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                     <div>
                                         <h3 class="text-[13px] ">Mollie Walker</h3>
-                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                     </div>
                                 </div>
                                 <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                    <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div class="relative">
                         <a href="" class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
@@ -555,7 +555,7 @@
                     </div>
                 </div> -->
             </div>
-            <div class="flex flex-col w-full ">  
+            <div class="flex flex-col xl:w-full lg:w-11/12">  
                 <div class="flex flex-col">
                    <div class="flex items-center">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
@@ -563,17 +563,17 @@
                             NHL Player News
                         </h1>
                     </div>
-                    <div class="flex flex-row w-full justify-evenly mb-3">
-                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]  rounded-xl bg-white relative">
+                    <div class="flex flex-row w-full xl:justify-evenly lg:justify-between md:justify-between mb-3">
+                        <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
-                                <div class="flex flex-col ml-2 gap-3">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                                <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">John Tavares</h1>
+                                        <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">John Tavares</h1>
                                         <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
                                     </div>                                                                      
                                 </div>
@@ -583,23 +583,23 @@
                                 <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
                                     <h3 class="text-[13px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]   rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem] rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                <div class="flex flex-col ml-2 gap-3">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">
+                                <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">John Tavares</h1>
+                                        <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">John Tavares</h1>
                                         <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
                                     </div>                                                                      
                                 </div>
@@ -609,23 +609,23 @@
                                 <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
                                     <h3 class="text-[13px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]  rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                <div class="flex flex-col ml-2 gap-3">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">
+                                <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">Connor Mcdavid</h1>
+                                        <h1 class="xl:text-xl lg:text-lg md:text-base  font-extrabold">Connor Mcdavid</h1>
                                         <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
                                     </div>                                                                      
                                 </div>
@@ -635,7 +635,7 @@
                                 <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
                                     <h3 class="text-[13px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
@@ -643,17 +643,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row w-full justify-evenly mb-3">
-                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]   rounded-xl  bg-white relative">
+                    <div class="flex flex-row w-full xl:justify-evenly lg:justify-between md:justify-between mb-3">
+                        <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
-                                <div class="flex flex-col ml-2 gap-3">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                                <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">John Tavares</h1>
+                                        <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">John Tavares</h1>
                                         <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
                                     </div>                                                                      
                                 </div>
@@ -663,23 +663,23 @@
                                 <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
                                     <h3 class="text-[13px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]   rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]   rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                <div class="flex flex-col ml-2 gap-3">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">
+                                <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
                                         <p class="text-[11px] font-bold">Injury</p>
                                     </div>
                                     <div>
-                                        <h1 class=" text-xl font-extrabold">Auston Mathews</h1>
+                                        <h1 class="xl:text-xl lg:text-lg md:text-base  font-extrabold">Auston Mathews</h1>
                                         <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
                                     </div>   
                                 </div>
@@ -689,23 +689,23 @@
                                 <p class="text-[9px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
                                     <h3 class="text-[13px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-3 w-[31%] h-[21rem]   rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]   rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                <div class="flex flex-col ml-2 gap-3">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">
+                                <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">Connor Mcdavid</h1>
+                                        <h1 class="xl:text-xl lg:text-lg md:text-base  font-extrabold">Connor Mcdavid</h1>
                                         <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
                                     </div>                                                                      
                                 </div>
@@ -715,7 +715,7 @@
                                 <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
                                     <h3 class="text-[13px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
@@ -728,10 +728,10 @@
                     </div>
                 </div>
                 <div class="flex flex-row w-full justify-center gap-24">
-                    <img class="w-96" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                    <img class="w-96" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                    <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                    <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div> 
-                <div class="flex flex-col w-full  mt-10">  
+                <div class="flex flex-col w-full  mt-10 hidden">  
                     <div class="flex flex-col gap-9">
                         <div class="flex items-center">
                             <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
@@ -991,7 +991,8 @@
                 </div>                
             </div>
         </div>   
-        <div class=" flex flex-col w-60 gap-8">
+        <!-- Articles  -->
+        <div class=" flex flex-col xl:w-60 xl:w-[11rem] lg:w-[8rem] gap-8  ">
             <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
             <div class="flex flex-col gap-3 ml-5">
                 <div class="flex flex-row ">
@@ -1000,52 +1001,50 @@
                 </div>
                 <hr>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
-                    <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, <span class="ml-2">2023 ESPN</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
-                    <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
-                    <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, <span class="ml-2">2023 ESPN</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
-                    <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
-                    <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, <span class="ml-2">2023 ESPN</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
-                    <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                    <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
                 </div>
             </div>
             <img class="mt-[28rem] w-[17rem] h-[35rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
         </div>    
         <div class="flex flex-row relative xl:justify-between lg:justify-center hidden">  
-            <!-- <div class="xl:block lg:hidden md:hidden">
-                <img class="" src="{{ asset('/images/menu-icon/adds4.png') }}">
-            </div>        -->
+          
             <div class="flex flex-col xl:w-[67%] lg:w-auto ">  
                 <div class="flex flex-col">
                     <div class="flex items-center">
@@ -1662,7 +1661,6 @@
                 <img class="" src="{{ asset('/images/menu-icon/adds5.png') }}">
             </div>  -->
         </div>
-
     </div>
 </div>
     <div class="w-full flex justify-center hidden smm-block">
@@ -1911,177 +1909,177 @@
                 NHL Starting Goalies
             </h1>
         </div>
-    <div id="carouselExampleCaptions2" class="relative" data-te-carousel-init data-te-carousel-slide>
-	    <div class="absolute right-0 -bottom-10 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 z-[-2]"
-		    data-te-carousel-indicators>
-		    <button
-		      type="button"
-		      data-te-target="#carouselExampleCaptions2"
-		      data-te-slide-to="0"
-		      data-te-carousel-active
-		      class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-		      aria-current="true"
-		      aria-label="Slide 1"></button>
-		    <button
-		      type="button"
-		      data-te-target="#carouselExampleCaptions2"
-		      data-te-slide-to="1"
-		      class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-		      aria-label="Slide 2"></button>
-		    <button
-		      type="button"
-		      data-te-target="#carouselExampleCaptions2"
-		      data-te-slide-to="2"
-		      class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-		      aria-label="Slide 3"></button>
-		</div>
-	    <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
-		    <div
-		      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
-		      data-te-carousel-active
-		      data-te-carousel-item
-		      style="backface-visibility: hidden">
-                <div class="flex flex-row justify-center">
-                    <div class="w-[23rem] h-[21rem]  relative rounded-xl bg-white border border-black">
-                        <div class="flex m-1 mt-5 ">
-                            <img class="h-36 w-26" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                            <div class="flex flex-col ml-2 gap-3">
+        <div id="carouselExampleCaptions2" class="relative" data-te-carousel-init data-te-carousel-slide>
+            <div class="absolute right-0 -bottom-10 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 z-[-2]"
+                data-te-carousel-indicators>
+                <button
+                type="button"
+                data-te-target="#carouselExampleCaptions2"
+                data-te-slide-to="0"
+                data-te-carousel-active
+                class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+                <button
+                type="button"
+                data-te-target="#carouselExampleCaptions2"
+                data-te-slide-to="1"
+                class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                aria-label="Slide 2"></button>
+                <button
+                type="button"
+                data-te-target="#carouselExampleCaptions2"
+                data-te-slide-to="2"
+                class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
+                <div
+                class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
+                data-te-carousel-active
+                data-te-carousel-item
+                style="backface-visibility: hidden">
+                    <div class="flex flex-row justify-center">
+                        <div class="w-[23rem] h-[21rem]  relative rounded-xl bg-white border border-black">
+                            <div class="flex m-1 mt-5 ">
+                                <img class="h-36 w-26" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                <div class="flex flex-col ml-2 gap-3">
+                                    <div class="flex flex-row gap-2">
+                                        <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                        <p class="text-md font-bold">Confirmed</p>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h1 class=" text-3xl font-extrabold">Igor Shesterkin</h1>
+                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class=" ml-1 mb-2 pb-1">
+                                <p class="text-md font-extrabold mb-2">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                            </div>
+                            <div class="flex items-center justify-between mx-2">
+                                <div class="flex flex-row items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] ">Mollie Walker</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
                                 <div class="flex flex-row gap-2">
-                                    <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                    <p class="text-md font-bold">Confirmed</p>
+                                    <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
-                                <div class="flex flex-col">
-                                    <h1 class=" text-3xl font-extrabold">Igor Shesterkin</h1>
-                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class=" ml-1 mb-2 pb-1">
-                            <p class="text-md font-extrabold mb-2">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                            <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
-                        </div>
-                        <div class="flex items-center justify-between mx-2">
-                            <div class="flex flex-row items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="text-[13px] ">Mollie Walker</h3>
-                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                </div>
-                            </div>
-                            <div class="flex flex-row gap-2">
-                                <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                             </div>
                         </div>
                     </div>
                 </div>
-		    </div>
-		    <div
-		      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
-		      data-te-carousel-item
-		      style="backface-visibility: hidden">
-                <div class="flex flex-row justify-center">
-                    <div class="w-[23rem] h-[21rem]  relative rounded-xl bg-white border border-black">
-                        <div class="flex m-1 mt-5 ">
-                            <img class="h-36 w-26" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                            <div class="flex flex-col ml-2 gap-3">
+                <div
+                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
+                data-te-carousel-item
+                style="backface-visibility: hidden">
+                    <div class="flex flex-row justify-center">
+                        <div class="w-[23rem] h-[21rem]  relative rounded-xl bg-white border border-black">
+                            <div class="flex m-1 mt-5 ">
+                                <img class="h-36 w-26" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                <div class="flex flex-col ml-2 gap-3">
+                                    <div class="flex flex-row gap-2">
+                                        <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                        <p class="text-md font-bold">Confirmed</p>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h1 class=" text-3xl font-extrabold">Igor Shesterkin</h1>
+                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class=" ml-1 mb-2 pb-1">
+                                <p class="text-md font-extrabold mb-2">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                            </div>
+                            <div class="flex items-center justify-between mx-2">
+                                <div class="flex flex-row items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] ">Mollie Walker</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
                                 <div class="flex flex-row gap-2">
-                                    <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                    <p class="text-md font-bold">Confirmed</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <h1 class=" text-3xl font-extrabold">Igor Shesterkin</h1>
-                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class=" ml-1 mb-2 pb-1">
-                            <p class="text-md font-extrabold mb-2">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                            <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
-                        </div>
-                        <div class="flex items-center justify-between mx-2">
-                            <div class="flex flex-row items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="text-[13px] ">Mollie Walker</h3>
-                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-2">
-                                <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                            </div>
-                        </div>
-                    </div> 
+                        </div> 
+                    </div>
                 </div>
-		    </div>
-		    <div
-		      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
-		      data-te-carousel-item
-		      style="backface-visibility: hidden">
-                <div class="flex flex-row justify-center">
-                    <div class="w-[23rem] h-[21rem]  relative rounded-xl bg-white border border-black">
-                        <div class="flex m-1 mt-5 ">
-                            <img class="h-36 w-26" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                            <div class="flex flex-col ml-2 gap-3">
+                <div
+                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
+                data-te-carousel-item
+                style="backface-visibility: hidden">
+                    <div class="flex flex-row justify-center">
+                        <div class="w-[23rem] h-[21rem]  relative rounded-xl bg-white border border-black">
+                            <div class="flex m-1 mt-5 ">
+                                <img class="h-36 w-26" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                <div class="flex flex-col ml-2 gap-3">
+                                    <div class="flex flex-row gap-2">
+                                        <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                        <p class="text-md font-bold">Confirmed</p>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h1 class=" text-3xl font-extrabold">Igor Shesterkin</h1>
+                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class=" ml-1 mb-2 pb-1">
+                                <p class="text-md font-extrabold mb-2">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                            </div>
+                            <div class="flex items-center justify-between mx-2">
+                                <div class="flex flex-row items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] ">Mollie Walker</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
                                 <div class="flex flex-row gap-2">
-                                    <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                    <p class="text-md font-bold">Confirmed</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <h1 class=" text-3xl font-extrabold">Igor Shesterkin</h1>
-                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class=" ml-1 mb-2 pb-1">
-                            <p class="text-md font-extrabold mb-2">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                            <p class="text-[11px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
-                        </div>
-                        <div class="flex items-center justify-between mx-2">
-                            <div class="flex flex-row items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="text-[13px] ">Mollie Walker</h3>
-                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-2">
-                                <img class="w-[25px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                            </div>
-                        </div>
-                    </div> 
+                        </div> 
+                    </div>
                 </div>
-		    </div>
-	   </div>
-	  <button
-	    class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-	    type="button"
-	    data-te-target="#carouselExampleCaptions2"
-	    data-te-slide="prev">
-	    <span class="inline-block h-8 w-8">
-	     
-	    </span>
-	    <span
-	      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-	      >Previous</span
-	    >
-	  </button>
-	  <button
-	    class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-	    type="button"
-	    data-te-target="#carouselExampleCaptions2"
-	    data-te-slide="next">
-	    <span class="inline-block h-8 w-8">
-	      
-	    </span>
-	    <span
-	      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-	      >Next</span
-	    >
-	  </button>
-	</div>
+        </div>
+        <button
+            class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleCaptions2"
+            data-te-slide="prev">
+            <span class="inline-block h-8 w-8">
+            
+            </span>
+            <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Previous</span
+            >
+        </button>
+        <button
+            class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleCaptions2"
+            data-te-slide="next">
+            <span class="inline-block h-8 w-8">
+            
+            </span>
+            <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Next</span
+            >
+        </button>
+        </div>
         <div class="flex justify-center">
            <img class="w-9/12 my-10" src="{{ asset('/images/menu-icon/adds-new1.png') }}" alt="">
         </div>

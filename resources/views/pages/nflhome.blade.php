@@ -278,14 +278,14 @@
         <div class="flex flex-col gap-5">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex flex-row items-center gap-1.5">
-                    <img class="w-[3rem]" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
+                    <img class="sm:w-[3rem] w-[1.5rem]" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
                     <div class="flex">
-                        <h1 class="sm:text-4xl text-3xl font-extrabold">projected</h1>
-                        <h1 class="sm:text-4xl text-3xl font-extrabold text-[#39b6ff]">lineups</h1>
+                        <h1 class="sm:text-4xl text-2xl font-extrabold">projected</h1>
+                        <h1 class="sm:text-4xl text-2xl font-extrabold text-[#39b6ff]">lineups</h1>
                     </div>
                 </div>
                 <a href="#">
-                    <svg class="w-10 text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="sm:w-10 w-8 text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
                     </svg>
                 </a>
@@ -306,65 +306,65 @@
             </div>
         </div>
     </div>
-    <div class="w-full flex flex-col items-center justify-center relative ">
+    <div class="w-full flex flex-col items-center justify-center relative border border-black">
         <div class="flex flex-row justify-center items-center relative w-11/12">
-            <img class="absolute -left-16 sm:w-[15rem] w-[12rem]" src="{{ asset('/images/menu-icon/basketball_player.png') }}" alt="">
-            <img class="absolute sm:left-[4rem] left-[2rem] sm:w-[15rem] w-[12rem] z-0" src="{{ asset('/images/menu-icon/soccer_player.png') }}" alt="">
-            <img class="sm:w-[15rem] w-[12rem] z-10" src="{{ asset('/images/menu-icon/hockey_player.png') }}" alt="">
-            <img class="absolute sm:right-[4rem] right-[2rem] sm:w-[15rem] w-[12rem] z-0" src="{{ asset('/images/menu-icon/baseball_player.png') }}" alt="">
-            <img class="absolute -right-14 sm:w-[15rem] w-[12rem]" src="{{ asset('/images/menu-icon/football_player_(2).png') }}" alt="">
+            <img class="absolute left-0 sm:w-[10rem] w-[7rem]" src="{{ asset('/images/menu-icon/basketball_player.png') }}" alt="">
+            <img class="absolute sm:left-[7rem] left-[3rem] sm:w-[10rem] w-[7rem] z-0" src="{{ asset('/images/menu-icon/soccer_player.png') }}" alt="">
+            <img class="sm:w-[10rem] w-[7rem] z-10" src="{{ asset('/images/menu-icon/hockey_player.png') }}" alt="">
+            <img class="absolute sm:right-[7rem] right-[3rem] sm:w-[10rem] w-[7rem] z-0" src="{{ asset('/images/menu-icon/baseball_player.png') }}" alt="">
+            <img class="absolute right-0 sm:w-[10rem] w-[7rem]" src="{{ asset('/images/menu-icon/football_player_(2).png') }}" alt="">
         </div>
         <div class="absolute  z-20">
             <div class="relative">
-                <input class="border border-black sm:w-[40rem] smm-w-[30rem] h-[3.5rem] rounded-lg home-input-mob" type="" value="Search team projected lineups. . .">
-                <a class="absolute right-[10px] top-[7px]" href=""><img class=" w-[40px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
+                <input class="border border-black sm:w-[40rem] w-full sm:h-[3.5rem] h-[2.5rem] rounded-lg home-input-mob" type="" value="Search team projected lineups. . .">
+                <a class="absolute right-[10px] top-[7px]" href=""><img class=" sm:w-[40px] w-[27px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
             </div>
         </div>
         <div class="bg-slate-300 h-[2px] w-11/12 "></div>
     </div>
-    <h1 class="text-center text-4xl font-extrabold mt-20">Your destination for fantasy sports players and bettors</h1>
+    <h1 class="text-center sm:text-4xl text-2xl font-extrabold mt-20">Your destination for fantasy sports players and bettors</h1>
     <div class="flex flex-col gap-10 w-full mt-24">
         <div class=" flex flex-row justify-evenly">
             <div class="flex flex-col gap-3">
                 <div class="flex flex-row items-center gap-4">
-                <img class="w-12" src="{{ asset('/images/menu-icon/puck icon 40x40.png') }}" alt="">
-                <h1 class="text-4xl font-extrabold">NHL</h1>
+                <img class="sm:w-12 w-10" src="{{ asset('/images/menu-icon/puck icon 40x40.png') }}" alt="">
+                <h1 class="sm:text-4xl text-3xl font-extrabold">NHL</h1>
                 </div>
                 <ul class="flex flex-col gap-2">
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Starting goalies</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Line Combinations</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Starting goalies</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Line Combinations</a></li>
                 </ul>
             </div>
             <div class="flex flex-col gap-3">
                 <div class="flex flex-row items-center gap-4">
-                <img class="w-12" src="{{ asset('/images/menu-icon/baskball icon 40x40.png') }}" alt="">
-                <h1 class="text-4xl font-extrabold">NBA</h1>
+                <img class="sm:w-12 w-9" src="{{ asset('/images/menu-icon/baskball icon 40x40.png') }}" alt="">
+                <h1 class="sm:text-4xl text-3xl font-extrabold">NBA</h1>
                 </div>
                 <ul class="flex flex-col gap-2">
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Matchups</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Matchups</a></li>
                 </ul>
             </div>
         </div>
         <div class="flex flex-row justify-evenly">
             <div class="flex flex-col gap-3">
                 <div class="flex flex-row items-center gap-4">
-                <img class="w-12 -rotate-45" src="{{ asset('/images/menu-icon/football icon 40x40.png') }}" alt="">
-                <h1 class="text-4xl font-extrabold">NFL</h1>
+                <img class="sm:w-12 w-10 -rotate-45" src="{{ asset('/images/menu-icon/football icon 40x40.png') }}" alt="">
+                <h1 class="sm:text-4xl text-3xl font-extrabold">NFL</h1>
                 </div>
                 <ul class="flex flex-col gap-2">
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Depth Charts</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Matchups</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Depth Charts</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Matchups</a></li>
                 </ul>
             </div>
             <div class="flex flex-col gap-3">
                 <div class="flex flex-row items-center gap-4">
-                <img class="w-12 -rotate-45" src="{{ asset('/images/menu-icon/baseball icon 40x40.png') }}" alt="">
-                <h1 class="text-4xl font-extrabold">MLB</h1>
+                <img class="sm:w-12 w-9 -rotate-45" src="{{ asset('/images/menu-icon/baseball icon 40x40.png') }}" alt="">
+                <h1 class="sm:text-4xl text-3xl font-extrabold">MLB</h1>
                 </div>
                 <ul class="flex flex-col gap-2">
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Starting Pitchers</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Starting Pitchers</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
                 </ul>
             </div>
         </div>
@@ -372,27 +372,27 @@
             <div class="flex flex-col gap-3">
                 <div class="flex flex-row items-center gap-4">
                 <img class="w-10 h-10" src="{{ asset('/images/menu-icon/ .png') }}" alt="">
-                <h1 class="text-4xl font-extrabold">LEARN</h1>
+                <h1 class="sm:text-4xl text-3xl font-extrabold">LEARN</h1>
                 </div>
                 <ul class="flex flex-col gap-2">
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Newletter</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">DFS Strategy</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Betting Strategy</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Betting Terms</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Fantasy Sports</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Newletter</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">DFS Strategy</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Betting Strategy</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Betting Terms</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Fantasy Sports</a></li>
                 </ul>
             </div>
             <div class="flex flex-col gap-3">
                 <div class="flex flex-row items-center gap-4">
                 <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                <h1 class="text-4xl font-extrabold">ODDS</h1>
+                <h1 class="sm:text-4xl text-3xl font-extrabold">ODDS</h1>
                 </div>
                 <ul class="flex flex-col gap-2">
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Sports Review</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Best Odds</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Player Props</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Futures</a></li>
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Bonuses</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Sports Review</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Best Odds</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Player Props</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Futures</a></li>
+                    <li><a class="sm:text-xl text-lg font-bold text-[#39b6ff]" href="">Bonuses</a></li>
                 </ul>
             </div>
         </div>

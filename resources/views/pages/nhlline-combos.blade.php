@@ -6205,7 +6205,7 @@
                             </div>
                         </div>
                         <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
-                        <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
+                        <div class="w-full  rounded-lg bg-[#ffa100] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
                             <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
                                 <div class="">
@@ -6428,7 +6428,7 @@
                             </div>
                         </div>
                         <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
-                        <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
+                        <div class="w-full  rounded-lg bg-[#ffa100] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
                             <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
                                 <div class="">
@@ -6651,7 +6651,7 @@
                             </div>
                         </div>
                         <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
-                        <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
+                        <div class="w-full  rounded-lg bg-[#ffa100] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
                             <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
                                 <div class="">
@@ -6875,7 +6875,7 @@
                         </div>
                     </div> 
                     <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
-                    <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
+                    <div class="w-full  rounded-lg bg-[#ffa100] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                     <div class="flex flex-col w-full">
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">DEFENCE</h1>
@@ -8228,9 +8228,9 @@
                             </div>
                         </div>  
                     </div>
-                    <div class="flex flex-col w-full mt-10">
+                    <div id="p-box" class="flex flex-col items-center w-full mt-10">
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
-                        <div class="flex flex-row justify-between">
+                        <div class="flex flex-row justify-between frstrow ">
                             <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
                                 <div class="">
                                     <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
@@ -8253,16 +8253,16 @@
                                                             
                             </div>
                         </div>
-                        <div class="flex flex-row justify-center gap-3">
+                        <div class="flex flex-row justify-center gap-3 scondrow">
                             <div class="flex flex-row justify-center gap-3">
-                                <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
+                                <div class="flex flex-row items-center rounded-md gap-2 w-[33%]">
                                     <div>
                                         <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                         <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
                                      
                                 </div>
-                                <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
+                                <div class="flex flex-row items-center  rounded-md gap-2 w-[33%]">
                                     <div>
                                         <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                         <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
