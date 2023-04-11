@@ -225,85 +225,7 @@
     });
    
     
-    // var clickedTwice = 1; 
-    // var currentRelAttr=""; 
-    // $('#header-mobile-menu > div > a').on('touchstart', function(){
-        
-
-
-    //     console.log("Clicked me anytime: " + clickedTwice)
-        
-    //     $('.active-menu').removeClass('active-menu'); 
-    //     var val = $(this).attr('rel'); 
-        
-        
-    //     if(currentRelAttr != val){ 
-    //           clickedTwice++;
-    //             if(clickedTwice == 1){   
-    //             if($('ul.'+val).hasClass('hidden')){ 
-    //                 $('.active-menu').removeClass("hidden");
-    //                 console.log('version1'+ clickedTwice);     
-    //             }else{  
-    //                 // $('.active-menu').addClass("hidden");
-    //                 // console.log('version1'+ clickedTwice); 
-    //                 // // $('.-icon-1').addClass("hidden"); 
-    //                 // // $('.-icon-2').removeClass("hidden"); 
-    //                 // clickedTwice = 1; 
-    //             } 
-    //             // $('.ul'+val).addClass('hidden');
-    //             // $('.ul'+val).removeClass('hidden'); 
-    //             // clickedTwice = 1; 
-                
-    //         }else{  
-    //             console.log('version2'+ clickedTwice);
-    //             if($('ul.'+val).hasClass('active-menu')){    
-    //                 $('.active-menu').removeClass("active-menu");
-    //                 clickedTwice = 1; 
-    //                 $('.'+val+'-icon-1').removeClass('hidden');
-    //                 $('.'+val+'-icon-2').addClass('hidden'); 
-    //             }else{ 
-    //                 $('.'+val).addClass("active-menu");  
-    //             }
-    //             // $('.'+val+'-icon-1').removeClass('hidden');
-    //             // $('.'+val+'-icon-2').addClass('hidden');  
-    //             // clickedTwice = 1;
-
-
-    //             currentRelAttr = val; //new record for currebt rel attribute
-    //             // clickedTwice=1; 
-    //             //clickedTiceFunc(clickedTwice, val);
-    //         } 
-    //     }else{ 
-    //         currentRelAttr = val;  
-    //         if(clickedTwice == 1){   
-    //             if($('ul.'+val).hasClass('active-menu')){  
-    //                   $('.active-menu').removeClass("active-menu");
-    //             }else{  
-    //                 $('.'+val).addClass("active-menu"); 
-    //             } 
-    //             $('.'+val+'-icon-1').addClass('hidden');
-    //             $('.'+val+'-icon-2').removeClass('hidden');  
-    //             clickedTwice++; 
-    //         }else{  
-    //             if($('ul.'+val).hasClass('active-menu')){
-    //                 $('.active-menu').removeClass("active-menu");
-    //             }else{
-    //                 $('.'+val).addClass("hidden");    
-    //             } 
-    //             $('.'+val+'-icon-1').removeClass('hidden');
-    //             $('.'+val+'-icon-2').addClass('hidden');  
-    //             clickedTwice = 1;
-    //         } 
-    //     }
-         
-    // });
-    // $('div > a').on('touchstart', function(){
-    //     $('.icon-plus').addClass('hidden');
-    // });
-    // $('a ' > ('rel')).on('touchstart', function(){
-    //     $('.'+'-icon-2').removeClass('hidden');
-    //     $('.'+'-icon-1').addClass('hidden');
-    // });
+    
 
 
    
@@ -364,69 +286,7 @@
         
 
 
-        // if(currentRelAttr != val){ 
-        //     // if(clickedTwice == 1){ 
-        //     //     clickedTwice++;
-        //         if($('.'+val).hasClass('hidden')){   
-        //             console.log("has class hidden")
-        //             $('.' + val + '-icon-1').addClass("hidden");
-        //             $('.' + val + '-icon-2').removeClass("hidden");
-        //             clickedTwice = 1;
-        //         }else{
-        //             $('.' + val + '-icon-2').removeClass("active-menu");
-        //             $('.' + val + '-icon-1').addClass("active-menu");
-                   
-        //     //         // $('a.'+val).addClass("active-menu");  
-
-        //     //         // $('.icon-1').addClass("acive-menu");
-        //     //         // $('.icon-2').removeClass("active-menu");
-        //     //         // clickedTwice = 1;
-        //     //         // $('.'+val).addClass("active-menu"); 
-        //     //         // $('.'+val).removeClass("active-menu");  
-        //     //     } 
-        //     //     currentRelAttr = val; //new record for currebt rel attribute  
-        //     //     // $('img'+ '-icon-1').removeClass('hidden');
-        //     //     // $('img'+'-icon-2').addClass('hidden');  
-        //     //     // clickedTwice = 1;
-                
-        //     // }else{  
-  
-        //     //     if($('img'+val).hasClass('hidden')){    
-        //     //         $('.active-menu').removeClass("active-menu"); 
-        //     //     }else{ 
-        //     //         $('.'+val).addClass("active-menu");  
-        //     //     }
-        //     //     // $('.'+val+'-icon-1').removeClass('hidden');
-        //     //     // $('.'+val+'-icon-2').addClass('hidden');  
-        //     //     // clickedTwice = 1;
-
-
-        //     //     currentRelAttr = val; //new record for currebt rel attribute
-        //     //     // clickedTwice=1; 
-        //     //     //clickedTiceFunc(clickedTwice, val);
-        //     } 
-        // }else{ 
-        //     currentRelAttr = val;  
-        //     if(clickedTwice == 1){   
-        //         if($('ul.'+val).hasClass('active-menu')){  
-        //               $('.active-menu').removeClass("active-menu");
-        //         }else{  
-        //             $('.'+val).addClass("active-menu"); 
-        //         } 
-        //         $('.'+val+'-icon-1').addClass('hidden');
-        //         $('.'+val+'-icon-2').removeClass('hidden');  
-        //         clickedTwice++; 
-        //     }else{  
-        //         if($('ul.'+val).hasClass('active-menu')){
-        //             $('.active-menu').removeClass("active-menu");
-        //         }else{
-        //             $('.'+val).addClass("active-menu");    
-        //         } 
-        //         $('.'+val+'-icon-1').removeClass('hidden');
-        //         $('.'+val+'-icon-2').addClass('hidden');  
-        //         clickedTwice = 1;
-        //     } 
-        // }
+       
          
     });
 
@@ -484,8 +344,10 @@
         
     });
     
-
-  
+  //  header function
+    $('select > option > a.nhl').on('click', function(){
+      console.log('hello world')
+    }); 
 
     //Mobile navigation
 
@@ -613,8 +475,12 @@
                 items:1,
                 nav:true,
                 loop:false
-            },
-            600:{
+            },528:{
+                items:2,
+                nav:true,
+                loop:false
+                
+            },600:{
                 items:2,
                 nav:true,
                 loop:false
@@ -631,6 +497,31 @@
                 nav:true,
                 loop:false
                 
+            },817:{
+                items:3,
+                nav:true,
+                loop:false
+                
+            },864:{
+                items:3,
+                nav:true,
+                loop:false
+                
+            },995:{
+                items:3,
+                nav:true,
+                loop:false
+                
+            },965:{
+                items:3,
+                nav:true,
+                loop:false
+                
+            },966:{
+                items:3,
+                nav:true,
+                loop:false
+                
             },
             1003:{
                 items:3,
@@ -642,11 +533,50 @@
                 nav:true,
                 loop:false
                 
-            },1280:{
-                items:5,
+            },1139:{
+                items:4,
                 nav:true,
                 loop:false
                 
+            },1116:{
+                items:4,
+                nav:true,
+                loop:false
+                
+            },1208:{
+                items:4,
+                nav:true,
+                loop:false
+                
+            },1280:{
+                items:4,
+                nav:true,
+                loop:false
+                
+            },1324:{
+              items:5,
+              nav:true,
+              loop:false
+
+            },1512:{
+              items:5,
+              nav:true,
+              loop:false
+
+            },1520:{
+              items:5,
+              nav:true,
+              loop:false
+
+            },1528:{
+              items:5,
+              nav:true,
+              loop:false
+
+            },1536:{
+              items:5,
+              nav:true,
+              loop:false
             },
      
             

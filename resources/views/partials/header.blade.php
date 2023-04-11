@@ -212,7 +212,7 @@
                 </div>
             </div> -->         
             <div class="owl-carousel image-slider my-1.5 mx-5 relative " >
-                <div class="w-[5rem] h-[5.5rem] bg-black border border-black rounded-[11px] flex items-center justify-center absolute left-[10rem] md:left- smm-left-28 ">
+                <div class="w-[5rem] h-[5.5rem] bg-black border border-black rounded-[11px] flex items-center justify-center absolute left-[10rem]  smm-left-[10rem] ">
                     <a class="text-white text-center" href="#">
                         <h1 class="text-sm font-bold text-white" >THURS</h1>
                         <p class="text-[26px] font-[700] text-white">1 7</p>
@@ -431,8 +431,9 @@
                         <div class="relative">
                             <!-- <span class="text-[50px] text-white rotate-90 absolute right-2 bottom-[-19px]" href=""></span> -->
                             <select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">
-                                <option id="nhl" class="xl:text-lg text-md font-semibold" value="">NHL</option> 
-                                <option id="mlb" class="xl:text-lg text-md font-semibold" value="">MLB </option>
+                                <option class="xl:text-lg text-md font-semibold" value="1">
+                                   <a class="nhl" href="">NHL</a></option> 
+                                <option id="mlb" class="xl:text-lg text-md font-semibold" value="">MLB</option>
                                 <option id="nfl" class="xl:text-lg text-md font-semibold" value="">NFL</option>
                                 <option id="nba" class="xl:text-lg text-md font-semibold" value="">NBA</option>
                                 <option id="soc" class="xl:text-lg text-md font-semibold" value="">SOC</option>
@@ -450,7 +451,7 @@
                                    <img id="basket" class="w-[27px] hidden absolute top-[2px] right-[3px]" src="{{ asset('/images/menu-icon/baskball icon 40x40.png') }}" alt="">
                                    <img id="soccer" class="w-[27px] hidden absolute top-[3px] right-[3px]" src="{{ asset('/images/menu-icon/soccer icon 40x40.png') }}" alt="">
                                 </div>
-                                <div class="flex xl:text-lg lg:text-md font-bold">
+                                <div class="flex xl:text-lg lg:text-md md:text-sm font-bold">
                                     <h1 class="italic">projected</h1>
                                     <h1 class="italic text-[#39b6ff] ">lineups</h1>
                                 </div>
@@ -464,8 +465,8 @@
                                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                             </button>
                         </div>
-                        <div class=" flex flex-row 2xl:gap-12 xl:gap-[rem] lg:gap-[1rem] md:gap-5 navbar"> 
-                            <a href="#responsive-header" rel="daily-menu" class="sm:leading-loose md:leading-13 xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0 text-[16px]  md:text-slate-300  hover:text-white  font-bold">
+                        <div class=" flex flex-row 2xl:gap-12 lg:gap-[1rem] md:gap-[0.5rem] navbar"> 
+                            <a href="#responsive-header" rel="daily-menu" class="sm:leading-loose md:leading-13 xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 no-underline h-full block mt-4 md:mt-0 md:inline-block lg:mt-0 text-[16px]  md:text-slate-300  hover:text-white  font-bold">
                                 DAILY FANTASY
                                 <div class="relative hidden daily-menu active" >
                                     <div class="arrowed absolute xl:top-[13px] xl:left-10 lg:top-[17px] lg:left-10 md:top-[20px] md:left-[18px]">
@@ -473,7 +474,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0   relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="projections-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block  mt-4 md:inline-block lg:mt-0 md:mt-0   relative md:text-slate-300  hover:text-white font-bold">
                                 PROJECTIONS
                                 <div class="relative hidden projections-menu ">
                                     <div class="arrowed absolute xl:top-[13px] xl:left-10 lg:top-[17px] lg:left-10 md:top-[20px] md:left-[18px]">
@@ -481,7 +482,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="news-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="news-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 NEWS
 
                                 <div class="relative  hidden news-menu">
@@ -490,7 +491,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header " rel="betting-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 BETTING
 
                                 <div class="relative  hidden betting-menu">
@@ -499,10 +500,10 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
+                            <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 PROPS & ODDS
                                 <div class="relative  hidden odds-menu">
-                                    <div class="arrowed absolute xl:top-[13px] xl:left-3 lg:top-[17px] lg:left-3 md:top-[20px] md:left-2">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-7 lg:top-[17px] lg:left-7 md:top-[20px] md:left-5">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
@@ -510,10 +511,10 @@
                        </div> 
                     </div>
                 </div>
-                <div id="nav-text" class="w-4/12 md:w-4/12 bg-[#1d9bf0] flex sm:flex-row-reverse md:flex-row items-center  lg:justify-start">
-                    <div id="main-menu2" class="w-full xl:p-[12px]  lg:p-[12px] p-[14px] w-full flex flex-row items-center 2xl:gap-[4.5rem] xl:gap-[0.5rem] lg:gap-[10px] md:gap-[0.5rem] md:justify-between navbar">
+                <div id="nav-text" class="  xl:w-4/12 lg:w-4/12 md:w-4/12 bg-[#1d9bf0] flex sm:flex-row-reverse md:flex-row items-center  lg:justify-start">
+                    <div id="main-menu2" class="w-full xl:p-[12px]  lg:p-[12px] py-[14px]  w-full flex flex-row items-center 2xl:gap-[0.5rem] xl:gap-[0.5rem] lg:gap-[10px] md:gap-[0.5rem] md:justify-evenly navbar">
                         <div class="2xl:gap-[4rem] xl:gap-[1.5rem] lg:gap-[10px] md:gap-[20px] flex flex-row justify-between NHL ">
-                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
+                            <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 STARTING GOALIES
                                 <div class="relative hidden goalies-menu">
                                     <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
@@ -521,7 +522,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
+                            <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 LINE COMBINATIONS
                                 <div class="relative hidden line-menu">
                                     <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
@@ -611,7 +612,7 @@
                                     <img src = "{{ asset('/images/search.png') }}" class="text-white w-4" />
                                 </div>
                             </div> -->
-                            <div class="mr-[1.5rem]">
+                            <div class="xl:mr-[1.5rem] lg:mr-[1.5rem]">
                                 <a href="#">
                                     <svg class="xl:w-8 xl:h-8 lg:w-8 lg:h-8 md:w-[27px] md:h-[27px] text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
@@ -908,9 +909,9 @@
                                 <img class="w-[20px] ml-2.5 hidden negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
                                 <a class="text-white font-bold text-sm p-1 link-text" menu="header6" rel="menu-schedule"  href="#">SCHEDULE</a>
                             </ul>
-                                <ul class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-schedule hidden">
-                                    <li class="h-24"></li>
-                                </ul>
+                            <ul class="w-full bg-white flex flex-wrap justify-center gap-2 m-2 menu-schedule hidden">
+                                <li class="h-24"></li>
+                            </ul>
                        </div>
                     </div>
                 </div>
@@ -955,7 +956,7 @@
                 <li ><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">GAME ODDS</a></li>
                 <li ><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">PLAYER PROPS</a></li>
             </ul> 
-            <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap justify-center relative 2xl:left-[44rem] xl:left-[44rem] xl:w-[53%]  lg:left-[30rem] lg:w-[53%]  md:left-[26rem] md:w-[53%]">
+            <ul class="list-none flex-row gap-2 py-2 line-menu hidden smm-flex-wrap justify-center relative 2xl:left-[38rem] xl:left-[38rem] xl:w-[53%]  lg:left-[30rem] lg:w-[53%]  md:left-[26rem] md:w-[45%]">
                 <ul class="w-full bg-white flex flex-wrap gap-2 m-1">
                     <li><a href=""><img class="w-10 mr-1" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt=""></a></li>
                     <li><a href=""><img class="w-10 ml-1" src="{{ asset('/images/teamlogo-svg/buffalo-sabres.svg') }}" alt=""></a></li>
