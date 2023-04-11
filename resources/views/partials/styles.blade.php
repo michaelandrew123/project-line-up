@@ -118,6 +118,7 @@
       top: 4px; 
       background-color: #39b6ff !important;
       color: white;
+
       
     }
     /* .owl-carousel{
@@ -141,9 +142,15 @@
     }
     .owl-next span{
       color:white;
+      height: 80px;
+      position: absolute;
+      bottom:10px;
     }
     .owl-prev span{
       color:white;
+      height: 80px;
+      position: absolute;
+      bottom:10px;
     }
 
     /* chart style */
