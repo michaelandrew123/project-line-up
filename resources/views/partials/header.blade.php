@@ -438,7 +438,7 @@
                                 <option id="nba" class="xl:text-lg text-md font-semibold" value="">NBA</option>
                                 <option id="soc" class="xl:text-lg text-md font-semibold" value="">SOC</option>
                             </select>
-                            <img class="absolute xl:top-1.5 lg:top-2 right-0.5 xl:w-[2.5rem] lg:w-[1.5rem] xl:h-[2rem] lg:h-[1.5rem] xl:block lg:block md:hidden " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
+                            <img class="absolute xl:top-1.5 lg:top-2 right-0.5 xl:w-[2.5rem] lg:w-[1.5rem] xl:h-[2rem] lg:h-[1.5rem] xl:block lg:block md:hidden rotate-[270deg] arrw" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
                             <!-- <img class="absolute top-0 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">     -->
                         </div>
                         <div class="flex items-center flex-shrink-0 text-white">
@@ -921,11 +921,11 @@
      <!-- Desktop -->
         <div class="w-4/5 m-auto lg:block md:block sm:hidden smm-hidden p-4 relative " id="sub-menu">
             <ul class="list-none flex-row items-center gap-2 py-2 daily-fantasy hidden sm:flex-wrap smm-flex-wrap daily-menu active">
-                <li ><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold"  href="#">STARTING GOALIES</a></li>
-                <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#" >LINE COMBINATIONS</a></li>
-                <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">PROJECTIONS</a></li>
-                <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="todays-game#responsive-header">MATCH UP</a></li>
-                <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">SCHEDULE</a></li>
+                <li ><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold"  href="{{url('/starting-goaliesv1')}}">STARTING GOALIES</a></li>
+                <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="{{url('/line-combos')}}" >LINE COMBINATIONS</a></li>
+                <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="{{url('/projections')}}">PROJECTIONS</a></li>
+                <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">MATCH UP</a></li>
+                <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="{{url('/schedule')}}">SCHEDULE</a></li>
             </ul>
 
             <ul class="list-none flex-row gap-2 py-2 projections-menu hidden  smm-flex-wrap">
@@ -940,8 +940,8 @@
             </ul>
             <ul class="list-none flex-row gap-2 py-2  hidden smm-flex-wrap news-menu">
                 <li ><a class="xl:text-[16px] lg:text-[12px]  font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">TEAM NEWS</a></li>
-                <li ><a class="xl:text-[16px] lg:text-[12px]  font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">PLAYER NEWS</a></li>
-                <li ><a class="xl:text-[16px] lg:text-[12px]  font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">SCHEDULE</a></li>
+                <li ><a class="xl:text-[16px] lg:text-[12px]  font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="{{url('/player-news')}}">PLAYER NEWS</a></li>
+                <li ><a class="xl:text-[16px] lg:text-[12px]  font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="{{url('/schedule')}}">SCHEDULE</a></li>
             </ul>
             <ul class="list-none flex-row gap-2 py-2 dfs-projections hidden smm-flex-wrap hidden betting-menu">
                 <li class="flex"><a class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">SPORTSBOOKS</a></li>

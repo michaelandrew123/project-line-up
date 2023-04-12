@@ -894,9 +894,9 @@
   <div class="flex justify-between smm:flex-col block smm:hidden">
         <div class="flex flex-col md:overflow-x-auto sm:overflow-x-auto xl:block lg:hidden md:hidden smm-hidden">
             <div class="flex flex-col gap-[5.5rem] ">
-                <img class="w-48 h-[70%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
-                <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
-                <img class="w-48 h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
+                <img class="w-48  " src="{{ asset('/images/menu-icon/adds1.png') }}">
+                <img class="h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
+                <img class="h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>
         </div>
         <div class="flex flex-col items-center gap-5">    
@@ -1541,9 +1541,9 @@
 	    </div>
         <div class="flex flex-col block overflow-x-visible md:overflow-x-auto sm:overflow-y-hidden  xl:block lg:hidden md:hidden smm-hidden">
             <div class="flex flex-col  items-center gap-6">
-                <img class="w-64 h-52" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                <img class="w-48 h-4/5" src="{{ asset('/images/menu-icon/adds6.png') }}">
-                <img class="w-48 h-/4 " src="{{ asset('/images/menu-icon/adds5.png') }}">
+                <img class="w-64  " src="{{ asset('/images/menu-icon/adds3.png') }}">
+                <img class="w-48  " src="{{ asset('/images/menu-icon/adds6.png') }}">
+                <img class="w-48   " src="{{ asset('/images/menu-icon/adds5.png') }}">
             </div>  
             
         </div>    

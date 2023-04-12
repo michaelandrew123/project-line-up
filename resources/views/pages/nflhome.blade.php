@@ -15,11 +15,11 @@
                 </div>
             </div>
             <div class="flex flex-row items-center xl:gap-5 gap-3">
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">NHL</button>
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">NFL</button>
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">NBA</button>
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">MLB</button>
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">SOC</button>
+                <a href="{{url('/nhl/home')}}" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">NHL</a>
+                <a href="" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">NFL</a>
+                <a href="" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">NBA</a>
+                <a href="" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">MLB</a>
+                <a href="" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-slate-500 xl:px-10 lg:px-8 md:px-5 py-2 rounded-sm">SOC</a>
                 <a href="#">
                     <svg class="w-10 text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
