@@ -6,15 +6,15 @@
 
 
 <!-- Desktop design -->
-<div class="flex justify-center xl:block lg:block md:block hidden w-full mx-2 bg-slate-100">
+<div class="flex   xl:block lg:block md:block hidden w-full mx-2 bg-slate-100">
     <div class="flex flex-row w-full xl:justify-between lg:justify-center mb-8">
         <div class="flex flex-col xl:block lg:hidden md:hidden">
-            <img class="w-48 h-[65%] mb-32" src="{{ asset('/images/menu-icon/adds1.png') }}">
-            <img class="w-48 h-36" src="{{ asset('/images/menu-icon/adds2.png') }}">
+            <img class="w-48   mb-32" src="{{ asset('/images/menu-icon/adds1.png') }}">
+            <img class="w-48 " src="{{ asset('/images/menu-icon/adds2.png') }}">
         </div>
         <div class="flex flex-col xl:w-[67%] lg:w-[90%] md:w-full">
             <div class="flex justify-center mb-5">
-                <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
+                <img class="w-10/12  " src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div>
             <div class="flex md:flex-row justify-between">
                 <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12  h-80  relative border border-slate-200  rounded-xl flex flex-col justify-center ">
@@ -113,13 +113,13 @@
             </div>
         </div>
         <div class="flex flex-col items-center xl:justify-between lg:justify-center xl:block lg:hidden md:hidden">
-            <img class="w-60 h-52" src="{{ asset('/images/menu-icon/adds3.png') }}">
-            <img class="w-48 h-[75%] " src="{{ asset('/images/menu-icon/adds6.png') }}">
+            <img class="w-60  " src="{{ asset('/images/menu-icon/adds3.png') }}">
+            <img class="w-48   " src="{{ asset('/images/menu-icon/adds6.png') }}">
         </div>  
     </div>
     <div class="flex flex-row w-full xl:justify-between lg:justify-center">
         <div class="xl:block lg:hidden md:hidden">
-            <img class="w-48 h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
+            <img class="w-48  " src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div> 
         <div class="flex flex-col xl:w-[67%] lg:w-[90%] md:w-full">
             <div class="flex flex-col ">
@@ -364,7 +364,7 @@
             </div>
         </div>
         <div class="flex xl:block lg:hidden md:hidden">
-            <img class="w-60 h-/4 relative bottom-0" src="{{ asset('/images/menu-icon/adds5.png') }}">
+            <img class="w-60  relative bottom-0" src="{{ asset('/images/menu-icon/adds5.png') }}">
         </div> 
     </div>
     <div class="flex flex-row lg:justify-center">

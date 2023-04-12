@@ -7,13 +7,13 @@
     <!-- Old Design -->
     <div class="flex justify-evenly lg:flex-row md:flex-col sm:flex-col smm-hidden ">
         <div class="flex flex-col xl:block lg:block md:hidden">
-            <img class="w-[17rem] h-[35rem] mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
-            <img class="w-[17rem] h-[185px] mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
-            <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds4.png') }}">
+            <img class="w-[17rem]   mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
+            <img class="w-[17rem]  mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
+            <img class="w-[17rem]  " src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div>
         <div class=" flex flex-col">  
             <div class="flex justify-center mb-5">
-                <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
+                <img class="  h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div> 
             <div class="flex">
               <h1 class="text-black text-3xl font-bold lg:ml-0 md:ml-8">Starting Goalies</h1>
@@ -281,9 +281,9 @@
             </div> 
         </div>
         <div class="flex flex-col gap-2 items-center xl:block lg:block md:hidden">
-            <img class="w-72 h-[263px]" src="{{ asset('/images/menu-icon/adds3.png') }}">
-            <img class="w-[17rem] h-[499px] mb-[31px]" src="{{ asset('/images/menu-icon/adds6.png') }}">
-            <img class="w-[17rem] h-[540px]" src="{{ asset('/images/menu-icon/adds5.png') }}">
+            <img class="  h-[263px]" src="{{ asset('/images/menu-icon/adds3.png') }}">
+            <img class="w-[17rem]  mb-[31px]" src="{{ asset('/images/menu-icon/adds6.png') }}">
+            <img class="w-[17rem] " src="{{ asset('/images/menu-icon/adds5.png') }}">
         </div>
     </div>
     <div class="block smm-hidden">
@@ -2293,7 +2293,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-center my-3">
-                <img class="w-2/4 h-32" src="{{ asset('/images/menu-icon/adds3.png') }}">                
+                <img class="  h-32" src="{{ asset('/images/menu-icon/adds3.png') }}">                
             </div>
             <div class="flex flex-col items-center gap-1 mt-3">
                 <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
@@ -2499,7 +2499,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-center my-2">
-               <img class="w-2/4 h-32 " src="{{ asset('/images/menu-icon/adds2.png') }}">               
+               <img class="  h-32 " src="{{ asset('/images/menu-icon/adds2.png') }}">               
             </div>
             <div class="flex flex-col items-center gap-1 mt-3">
                 <div class="w-full bg-sky-500 flex flex-row justify-between items-center p-1">
@@ -2604,7 +2604,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-center my-2">
-               <img class="w-full h-16" src="{{ asset('/images/menu-icon/adds_header.png') }}">                
+               <img class=" h-16" src="{{ asset('/images/menu-icon/adds_header.png') }}">                
             </div>
         </div>
     <div class="hidden smm-block">

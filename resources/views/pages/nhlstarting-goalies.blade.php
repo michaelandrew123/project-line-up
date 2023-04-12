@@ -2,22 +2,22 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="w-full flex justify-center xl-block lg:block  smm-hidden">
-        <div class="w-11/12 flex flex-col border-black m-4 gap-5">
+    <div class="w-full flex justify-center">
+        <div class="xl:w-11/12 lg:w-11/12 w-full flex flex-col border-black m-4 gap-5 block smm-hidden">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">
                     <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                     <div class="flex">
-                        <h1 class="xl:text-4xl lg:text-3xl font-extrabold">projected</h1>
-                        <h1 class="xl:text-4xl lg:text-3xl font-bold text-[#39b6ff]">lineups</h1>
+                        <h1 class="xl:text-4xl text-3xl font-extrabold">projected</h1>
+                        <h1 class="xl:text-4xl text-3xl font-bold text-[#39b6ff]">lineups</h1>
                     </div>
                 </div>
-                <div class="flex flex-row items-center xl:gap-5 lg:gap-3">
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 py-2 rounded-md">NHL</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">NFL</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">NBA</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">MLB</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">EPL</button>
+                <div class="flex flex-row items-center xl:gap-5 gap-3">
+                    <a href="{{url('/nhl/home')}}" class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 md:px-4  py-2 rounded-md">NHL</a>
+                    <a href="{{url('/nfl/home')}}" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-4 py-2 rounded-md">NFL</a>
+                    <a href="" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-4 py-2 rounded-md">NBA</a>
+                    <a href="" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-4 py-2 rounded-md">MLB</a>
+                    <a href="" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-4 py-2 rounded-md">EPL</a>
                     <a href="#">
                         <svg class="w-10 text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
@@ -25,18 +25,18 @@
                     </a>
                 </div>
             </div>
-            <div class="flex flex-row justify-between w-full">
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 py-2 rounded-md">STARTING GOALIES</button>
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">LINE COMBOS</button>
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">PROJECTIONS</button>
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">NEWS</button>
-                <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">PROPS & ODDS</button>
+            <div class="flex flex-row justify-between gap-3">
+                <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5  py-2 rounded-md">STARTING GOALIES</a>
+                <a href="{{url('/nhl/line-combos')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">LINE COMBOS</a>
+                <a href="{{url('/nhl/ ')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROJECTIONS</a>
+                <a href="{{url('/nhl/ ')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">NEWS</a>
+                <a href="{{url('/nhl/props')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROPS & ODDS</a>
             </div>
-               <div class="relative">
-                 <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players"> 
-                 <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
-               </div>
-        </div>
+            <div class="relative">
+                <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players"> 
+                <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
+            </div>
+        </div> 
     </div>
     <div class="w-full flex flex-col smm-hidden">
         <div class="flex flex-row justify-evenly mt-10">   
@@ -3444,7 +3444,7 @@
                     </div>
                 </div>
                 <button
-                class=" absolute top-0 bottom-0 left-0 z-[1] flex  h-[3rem] w-[25%]  items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                class=" absolute top-0 bottom-0 left-0 z-[1] flex  h-[3rem] w-[25%] md:w-[27%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                 type="button"
                 data-te-target="#carouselExampleCaptions3"
                 data-te-slide="prev">
@@ -3459,7 +3459,7 @@
                    </div>                 
                 </button>
                 <button
-                class=" absolute top-0 bottom-0 right-0 z-[1] flex flex  h-[3rem] w-[19%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                class=" absolute top-0 bottom-0 right-0 z-[1] flex flex  h-[3rem] w-[19%] lg:w-[20%] md:w-[21%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                 type="button"
                 data-te-target="#carouselExampleCaptions3"
                 data-te-slide="next"> 

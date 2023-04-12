@@ -344,9 +344,9 @@
         
     });
     
-  //  header function
-    $('select > option > a.nhl').on('click', function(){
-      console.log('hello world')
+  //  header select arrow function
+    $('#SN').on('click', function(){
+      $('.arrw').toggleClass('rotate-[1deg]')
     }); 
 
     //Mobile navigation

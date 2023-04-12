@@ -39,22 +39,22 @@
         </div>
     </div>
     <div class="w-full flex justify-center bg-slate-100">
-        <div class="w-11/12 flex flex-row justify-between gap-3 block smm-hidden">
+        <div class="xl:w-11/12 w-full flex flex-row justify-between xl:gap-3 gap-1 block smm-hidden">
             <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
                 <div class=" w-full bg-[#d9d9d9] flex flex-row items-center rounded-md">
                     <img class="lg:w-20 lg:h-20 md:w-16 md:h-20 ml-6" src="{{ asset('/images/menu-icon/.png') }}">
                     <h1 class="text-center text-xl font-bold w-full">Auston Mathews News</h1>
                 </div>
                 <div class="flex flex-row justify-between w-full">
-                    <button class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 py-2 rounded-md">ALL</button>
-                    <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">LINE CHANGES</button>
-                    <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">INJURIES</button>
-                    <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">MOVES</button>
-                    <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">SIGNINGS</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">ALL</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">LINE CHANGES</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">INJURIES</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">MOVES</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">SIGNINGS</button>
                 </div> 
                 <div class="flex flex-col w-full">
                     <div class="flex flex-row w-full justify-between mb-3">
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3  w-[32%] h-[21rem]   rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
@@ -161,7 +161,7 @@
                             </div>
                         </div>
                         <div class="flex justify-center items-center">
-                        <img class="h-64 xl:w-auto lg:w-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                        <img class="w-9/12 " src="{{ asset('/images/menu-icon/adds3.png') }}">
                         </div>
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
@@ -278,8 +278,8 @@
                 <img class="w-full h-32 border border-black" src="{{ asset('/images/menu-icon/.png') }}">
                 </div>              
             </div>
-            <div class="xl:w-3/12 lg:w-2/12 flex flex-col ">
-            <img class="h-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
+            <div class="xl:w-3/12 lg:w-2/12 md:w-2/12 flex flex-col items-center">
+             <img class="w-9/12" src="{{ asset('/images/menu-icon/adds3.png') }}">
             <div class="flex flex-col gap-5 mt-9">
                     <div class="flex flex-col gap-2">
                         <h1 class="font-bold ml-16">Features</h1>
@@ -391,7 +391,7 @@
         <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search players"> 
         <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
     </div>
-</div>
+ 
 <div class="flex flex-col gap-1 hidden smm-block ">
     <img class="w-full my-1.5 mx-1" src="{{ asset('/images/menu-icon/adds_header.png') }}" >  
     <div id="" class=" my-3 mx-1 hidden smm-block ">
