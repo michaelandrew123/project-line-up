@@ -51,7 +51,7 @@
                 <h1 class="text-4xl font-extrabold">NHL</h1>
                 </div>
                 <ul class="flex flex-col gap-2">
-                    <li><a class="text-xl font-bold text-[#39b6ff]" href="">Starting goalies</a></li>
+                    <li><a class="text-xl font-bold text-[#39b6ff]" href="{{url('/nhl/')}}">Starting goalies</a></li>
                     <li><a class="text-xl font-bold text-[#39b6ff]" href="">Line Combinations</a></li>
                     <li><a class="text-xl font-bold text-[#39b6ff]" href="">DFS Projections</a></li>
                     <li><a class="text-xl font-bold text-[#39b6ff]" href="">Latest Articles</a></li>

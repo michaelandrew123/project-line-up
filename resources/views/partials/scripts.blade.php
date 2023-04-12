@@ -349,6 +349,12 @@
       $('.arrw').toggleClass('rotate-[1deg]')
     }); 
 
+  // header select option 
+  $("#nfl").on('click', function(){
+    $('#main-menu > .MLB').removeClass('hidden');
+    $('#main-menu > .NHL').addClass('hidden');
+  });
+
     //Mobile navigation
 
     $('ul#mobile-2nd-mnav > li').on('touchstart', function(e){

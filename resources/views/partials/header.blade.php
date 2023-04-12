@@ -438,7 +438,7 @@
                                 <option id="nba" class="xl:text-lg text-md font-semibold" value="">NBA</option>
                                 <option id="soc" class="xl:text-lg text-md font-semibold" value="">SOC</option>
                             </select>
-                            <img class="absolute xl:top-1.5 lg:top-2 right-0.5 xl:w-[2.5rem] lg:w-[1.5rem] xl:h-[2rem] lg:h-[1.5rem] xl:block lg:block md:hidden rotate-[270deg] arrw" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
+                            <img class="absolute xl:top-2 lg:top-2.5 right-0.5 xl:w-[24px] lg:w-[24px] xl:h-[24px] lg:h-[24px] xl:block lg:block md:hidden rotate-[270deg] arrw" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
                             <!-- <img class="absolute top-0 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">     -->
                         </div>
                         <div class="flex items-center flex-shrink-0 text-white">
@@ -503,7 +503,7 @@
                             <a href="#responsive-header" rel="odds-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[10px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0  relative md:text-slate-300  hover:text-white font-bold">
                                 PROPS & ODDS
                                 <div class="relative  hidden odds-menu">
-                                    <div class="arrowed absolute xl:top-[13px] xl:left-7 lg:top-[17px] lg:left-7 md:top-[20px] md:left-5">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-[2.75rem] lg:top-[17px] lg:left-7 md:top-[20px] md:left-5">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
