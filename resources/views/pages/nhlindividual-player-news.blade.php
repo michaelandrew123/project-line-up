@@ -2,22 +2,22 @@
 
 @section('content')
 
-    <div class="w-full flex justify-center bg-slate-100">
-        <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5 block smm-hidden">
-            <div class="flex flex-row justify-between items-center">
+    <div class="flex justify-center bg-slate-100">
+        <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5  block smm-hidden">
+            <div class="w-full flex flex-row justify-between items-center">
                 <div class="flex gap-3">
                     <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                     <div class="flex">
-                        <h1 class="xl:text-4xl text-3xl font-extrabold">projected</h1>
-                        <h1 class="xl:text-4xl text-3xl font-bold text-[#39b6ff]">lineups</h1>
+                        <h1 class="xl:text-4xl text-2xl font-extrabold">projected</h1>
+                        <h1 class="xl:text-4xl text-2xl font-bold text-[#39b6ff]">lineups</h1>
                     </div>
                 </div>
                 <div class="flex flex-row items-center xl:gap-5 gap-3">
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 px-8  py-2 rounded-md">NHL</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-8  py-2 rounded-md">NFL</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-8  py-2 rounded-md">NBA</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-8  py-2 rounded-md">MLB</button>
-                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-8  py-2 rounded-md">EPL</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 px-5  py-2 rounded-md">NHL</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NFL</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NBA</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">MLB</button>
+                    <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">EPL</button>
                     <a href="#">
                         <svg class="w-10 text-white border border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
@@ -39,18 +39,18 @@
         </div>
     </div>
     <div class="w-full flex justify-center bg-slate-100">
-        <div class="xl:w-11/12 w-full flex flex-row justify-between xl:gap-3 gap-1 block smm-hidden">
+        <div class="xl:w-11/12 lg:w-full md:w-full flex flex-row justify-between xl:gap-3 gap-1 block smm-hidden">
             <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
                 <div class=" w-full bg-[#d9d9d9] flex flex-row items-center rounded-md">
                     <img class="lg:w-20 lg:h-20 md:w-16 md:h-20 ml-6" src="{{ asset('/images/menu-icon/.png') }}">
                     <h1 class="text-center text-xl font-bold w-full">Auston Mathews News</h1>
                 </div>
                 <div class="flex flex-row justify-between w-full">
-                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">ALL</button>
-                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">LINE CHANGES</button>
-                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">INJURIES</button>
-                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">MOVES</button>
-                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-5 py-2 rounded-md">SIGNINGS</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 md:px-6 py-2 rounded-md">ALL</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-6 py-2 rounded-md">LINE CHANGES</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-6 py-2 rounded-md">INJURIES</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-6 py-2 rounded-md">MOVES</button>
+                    <button class="xl:text-2xl lg:text-lg text-base font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 md:px-6 py-2 rounded-md">SIGNINGS</button>
                 </div> 
                 <div class="flex flex-col w-full">
                     <div class="flex flex-row w-full justify-between mb-3">
@@ -278,31 +278,31 @@
                 <img class="w-full h-32 border border-black" src="{{ asset('/images/menu-icon/.png') }}">
                 </div>              
             </div>
-            <div class="xl:w-3/12 lg:w-2/12 md:w-2/12 flex flex-col items-center">
-             <img class="w-9/12" src="{{ asset('/images/menu-icon/adds3.png') }}">
-            <div class="flex flex-col gap-5 mt-9">
+            <div class="xl:w-3/12 lg:w-2/12 md:w-2/12 flex flex-col items-center  ">
+                <img class="w-9/12" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex flex-col gap-2">
                         <h1 class="font-bold ml-16">Features</h1>
                         <div class="bg-slate-300 h-[2px] w-full"></div>
                     </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <p class="font-semibold text-sm">Props and Odds</p>
-                    <p class="text-sm">Check out today's top Props and Odds for <br> tonight slate</p>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <p class="font-semibold text-sm">Morning Skate </p>
-                    <p class="text-sm">Update and happening from this morning's <br> skate</p>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <p class="font-semibold text-sm">Top Stacks</p>
-                    <p class="text-sm">Looking at today's slate DFS top stacks for  <br>Draftkings</p>
-                </div>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <p class="font-semibold text-sm">Props and Odds</p>
+                        <p class="text-sm">Check out today's top Props and Odds for <br> tonight slate</p>
+                    </div>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <p class="font-semibold text-sm">Morning Skate </p>
+                        <p class="text-sm">Update and happening from this morning's <br> skate</p>
+                    </div>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <p class="font-semibold text-sm">Top Stacks</p>
+                        <p class="text-sm">Looking at today's slate DFS top stacks for  <br>Draftkings</p>
+                    </div>
                 </div>
                 <div class="flex flex-col gap-5 mt-9">
                     <div class="flex flex-col gap-2">
                         <div class="flex flex-row items-center">
                         <img class="w-6 h-6" src="{{ asset('/images/menu-icon/injury icon.png') }}" alt="">
-                        <h1 class="font-bold ml-8">Line Combinations</h1>
+                        <h1 class="font-bold xl:ml-8 lg:ml-8 md:ml-1">Line Combinations</h1>
                         </div>
                         <div class="bg-slate-300 h-[2px] w-full"></div>
                     </div>
