@@ -134,7 +134,7 @@
                         </div>
                     </div>
                     <div class="flex flex-row w-full justify-between mb-3">
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 xl:w-[32%] lg:w-[32%] md:w-[44%] h-[21rem]   rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
@@ -161,9 +161,9 @@
                             </div>
                         </div>
                         <div class="flex justify-center items-center">
-                        <img class="w-9/12 " src="{{ asset('/images/menu-icon/adds3.png') }}">
+                        <img class="xl:w-9/12 lg:w-9/12 md:w-9/12 " src="{{ asset('/images/menu-icon/adds3.png') }}">
                         </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
+                        <div class="flex flex-col gap-3 xl:w-[32%] lg:w-[32%] md:w-[44%] h-[21rem]   rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
@@ -282,7 +282,7 @@
                 <img class="w-9/12" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex flex-col gap-2">
-                        <h1 class="font-bold ml-16">Features</h1>
+                        <h1 class="font-bold xl:ml-16 lg:ml-12 ">Features</h1>
                         <div class="bg-slate-300 h-[2px] w-full"></div>
                     </div>
                     <div class="flex flex-col gap-2 ml-3">

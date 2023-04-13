@@ -39,8 +39,8 @@
         </div>
     </div>
 </div>
-   <div class="flex flex-row justify-center w-full gap-3  ">
-        <div class="flex flex-col xl:w-9/12 lg:w-9/12 md:w-9/12 block smm-hidden">
+   <div class="flex flex-row justify-center w-full gap-3 lg:gap-2 md:gap-1 ">
+        <div class="flex flex-col xl:w-9/12 lg:w-9/12 md:w-11/12 block smm-hidden">
             <div class="flex flex-col w-full ">
                 <div class="flex flex-col">
                     <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
@@ -53,7 +53,7 @@
                                 <div class="w-11/12 flex flex-col items-center gap-5">
                                         <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">                                   
                                         <p class="xl:text-base lg:text-base md:text-sm font-bold ">San Jose changes up their top line as they face Rangers</p>                                                                                          
-                                    <div class="text-[12px] md:text-[9px] w-full flex flex-row items-end justify-between">
+                                    <div class="text-sm lg:text-[12px] md:text-[9px] w-full flex flex-row items-end justify-between">
                                         <p>January 27, 2023</p>
                                         <div class="flex items-end gap-2">
                                             <p>projectedlineup.com</p>
@@ -73,7 +73,7 @@
                                     <div class="w-11/12 flex flex-col items-center gap-5">
                                         <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                         <p class="xl:text-base lg:text-base md:text-sm font-bold ">Edmonton on the list of top stacks to play tonight</p>                                                                                          
-                                        <div class="text-[12px] md:text-[9px] w-full flex flex-row items-end justify-between">
+                                        <div class="text-sm lg:text-[12px] md:text-[9px] w-full flex flex-row items-end justify-between">
                                             <p>January 27, 2023</p>
                                             <div class="flex items-end gap-2">
                                                 <p>projectedlineup.com</p>
@@ -93,7 +93,7 @@
                                     <div class="w-11/12 flex flex-col items-center gap-5">
                                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                          <p class="xl:text-base lg:text-base md:text-sm font-bold">Edmonton on the list of top stacks to play tonight</p>                                                                                          
-                                        <div class="text-[12px] md:text-[9px] w-full flex flex-row items-end justify-between">
+                                        <div class="text-sm lg:text-[12px] md:text-[9px] w-full flex flex-row items-end justify-between">
                                             <p>January 27, 2023</p>
                                             <div class="flex items-end gap-2">
                                                 <p>projectedlineup.com</p>
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
-                            <div class="flex flex-col items-center w-11/12 justify-center ml-2 gap-14 md:gap-[1.5rem] m-1 mt-5">
+                            <div class="flex flex-col items-center w-11/12 justify-center ml-2 gap-14 md:gap-[3.5rem] m-1 mt-5">
                                 <h1 class="xl:text-lg lg:text-lg md:text-base font-extrabold text-center">Who is the best current <br> NHL player you'd trade <br> for Connor Bedard</h1>
                                 <div class="w-full flex flex-col items-center gap-12">
                                     <div class="flex flex-row">
@@ -170,151 +170,151 @@
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl md:text-base font-extrabold">John Tavares</h1>
+                                        <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">John Tavares</h1>
                                         <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
                                     </div>                                                                      
                                 </div>
                             </div>
                             <div class=" ml-1">
                                 <p class="text-base md:text-sm font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[10px]  font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
-                                    <h3 class="text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
+                                    <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[10px]   font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white border border-black relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl md:text-base font-extrabold">Mark Stone</h1>
+                                        <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">Mark Stone</h1>
                                         <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
                                     </div>                                                                      
                                 </div>
                             </div>
                             <div class=" ml-1">
-                                <p class="text-base font-bold mb-2">Stone out with a lower body injury</p>
-                                <p class="text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                <p class="text-base xl:text-base lg:text-base md:text-sm font-bold mb-2">Stone out with a lower body injury</p>
+                                <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
-                                    <h3 class="text-[13px] md:text-base  font-extrabold">Chris Benn</h3>
+                                    <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl md:text-base  font-extrabold">Connor Mcdavid</h1>
+                                        <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">Connor Mcdavid</h1>
                                         <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
                                     </div>                                                                      
                                 </div>
                             </div>
                             <div class=" ml-1">
-                                <p class="text-base font-bold mb-2">Stone out with a lower body injury</p>
-                                <p class="text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                <p class="text-base xl:text-base lg:text-base md:text-sm font-bold mb-2">Stone out with a lower body injury</p>
+                                <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
-                                    <h3 class="text-[13px] md:text-base  font-extrabold">Chris Benn</h3>
+                                    <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl  bg-white border border-black relative">
-                            <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] rounded-xl bg-white border border-black relative">
+                            <div class="flex m-1 mt-5">
+                                <img class="lg:w-20 lg:h-20 md:w-13 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
-                                        <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                        <img class="w-[18px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">John Tavares</h1>
+                                        <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">John Tavares</h1>
                                         <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
                                     </div>                                                                      
                                 </div>
                             </div>
-                            <div class=" ml-1">
-                                <p class="text-base font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                            <div class="ml-1">
+                                <p class="text-base md:text-sm font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
-                                    <h3 class="text-[13px] font-extrabold">Chris Benn</h3>
+                                    <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white border border-black relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
                                         <p class="text-[11px] font-bold">Injury</p>
                                     </div>
                                     <div>
-                                        <h1 class=" text-xl font-extrabold">Auston Matthews</h1>
+                                        <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">Auston Matthews</h1>
                                         <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
                                     </div>   
                                 </div>
                             </div>
                             <div class=" ml-1">
-                                <p class="text-base font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
-                                <p class="text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                <p class="text-base md:text-sm font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
+                                <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
-                                    <h3 class="text-[13px] font-extrabold">Chris Benn</h3>
+                                    <h3 class=" text-xl md:text-base  font-extrabold">Chris Benn</h3>
                                     <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white border border-black relative">
+                        <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
                             <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 gap-3">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <p class="text-[11px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
-                                        <h1 class=" text-xl font-extrabold">Connor Mcdavid</h1>
+                                        <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">Connor Mcdavid</h1>
                                         <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
                                     </div>                                                                      
                                 </div>
                             </div>
                             <div class=" ml-1">
-                                <p class="text-base font-bold mb-2">Stone out with a lower body injury</p>
-                                <p class="text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                <p class="text-base xl:text-base lg:text-base md:text-sm font-bold mb-2">Stone out with a lower body injury</p>
+                                <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                 <div>
-                                    <h3 class="text-[13px] font-extrabold">Chris Benn</h3>
+                                    <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
                                     <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
                                 </div>
                             </div>
@@ -324,13 +324,13 @@
                         <a href="" class="text-black text-base  font-semibold flex justify-end mr-[13px]">see all</a>
                     </div>
                 </div>
-                <div class="flex flex-row w-full justify-center gap-24">
-                    <img class="w-96" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                    <img class="w-96" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                <div class="flex flex-row w-full justify-center gap-24 md:gap-14">
+                    <img class="w-96 lg:w-64 md:w-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                    <img class="w-96 lg:w-64 md:w-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div>                
             </div>
         </div>   
-        <div class=" flex flex-col w-64 md:w-[9rem] gap-8 block smm-hidden">
+        <div class=" flex flex-col w-64 xl:w-2/12 lg:w-2/12 md:w-[8rem] gap-8 block smm-hidden">
             <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
             <div class="flex flex-col gap-3 ml-5">
                 <div class="flex flex-row ">
@@ -339,43 +339,43 @@
                 </div>
                 <hr>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
                     <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
                     <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
                     <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
                     <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
                     <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
                     <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
                     <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
                     <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
                     <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <h1 class="text-sm font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                    <h1 class="text-sm xl:text-sm lg:text-sm md:text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
                     <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
                 </div>
             </div>
