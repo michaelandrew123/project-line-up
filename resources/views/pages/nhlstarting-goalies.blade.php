@@ -40,7 +40,7 @@
     </div>
     <div class="w-full flex flex-col smm-hidden">
         <div class="flex flex-row justify-evenly mt-10">   
-            <div class="flex flex-col items-center xl:w-7/12 lg:w-8/12">
+            <div class="flex flex-col items-center xl:w-7/12 lg:w-8/12 md:w-4/5">
                 <div class="w-full  h-36 bg-[#d9d9d9] flex  border rounded-[10px] justify-center items-center">
                     <h1 class="text-2xl font-bold ">NHL Starting Goalies Tuesday, January 24</h1>
                 </div>
@@ -3459,7 +3459,7 @@
                    </div>                 
                 </button>
                 <button
-                class=" absolute top-0 bottom-0 right-0 z-[1] flex flex  h-[3rem] w-[19%] lg:w-[20%] md:w-[21%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                class=" absolute top-0 bottom-0 right-0 z-[1] flex flex  h-[3rem] w-[19%] lg:w-[20%] md:w-[23%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                 type="button"
                 data-te-target="#carouselExampleCaptions3"
                 data-te-slide="next"> 
@@ -3476,7 +3476,7 @@
                  </div>
                 </div> 
             </div>
-            <div class=" flex flex-col w-60 gap-8">
+            <div class=" flex flex-col w-1/5 gap-8">
                 <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 <img class="" src="{{ asset('/images/menu-icon/adds-new1.png') }}">
                 <div class="flex flex-col gap-3 ml-5">
