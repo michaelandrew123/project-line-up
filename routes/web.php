@@ -27,6 +27,7 @@ Route::get('/projections',  [App\Http\Controllers\HockeyController::class, 'proj
 Route::get('/nfl/home',  [App\Http\Controllers\HockeyController::class, 'nflhome'])->name('nfl.home');
 Route::get('/starting-goaliesv1',  [App\Http\Controllers\HockeyController::class, 'startingGoaliesv1'])->name('starting-goaliesv1');
 Route::get('/starting-goalies', [App\Http\Controllers\HockeyController::class, 'startingGoalies'])->name('starting-goalies');
+Route::get('/posts/article',  [App\Http\Controllers\HockeyController::class, 'postsarticle'])->name('posts.article');
 
 
 Route::prefix('nhl')->group(function () {
@@ -39,6 +40,7 @@ Route::prefix('nhl')->group(function () {
     Route::get('/team-news',  [App\Http\Controllers\HockeyController::class, 'nhlteamNews'])->name('nhl.team-news');
     Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'nhllineCombos'])->name('nhl.line-combos');
     Route::get('/line-combinations',  [App\Http\Controllers\HockeyController::class, 'nhllineCombinations'])->name('nhl.line-combinations');
+   
 });
 
 

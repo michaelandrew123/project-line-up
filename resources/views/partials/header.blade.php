@@ -15,9 +15,10 @@
     @if(URL::current()==route('nhl.line-combinations')) style="display:none !important;" @endif
     @if(URL::current()==route('nhl.props')) style="display:none !important;" @endif
     @if(URL::current()==route('nhl.player-news')) style="display:none !important;" @endif
+    @if(URL::current()==route('posts.article')) style="display:none !important;" @endif
     >
     
-        <div class="bg-[#545454] w-full h-[6rem] gap-1 flex justify-center ">
+        <div class="bg-[#545454] w-full h-[6rem] gap-1 flex justify-center  ">
             <!-- <div class=" flex flex-col items-center w-[10rem] gap-1.5 ml-1.5">
                 <select style="-webkit-appearance: none;" class="font-bold text-[12px] border border-white rounded-[4px] w-[9rem] h-[29px] snap-none pl-2 ">
                     <option class="text-lg font-semibold" value="" class="font-bold text-[12px] p-5">All Sports</option> 
@@ -211,7 +212,7 @@
                 </div>
                 </div>
             </div> -->         
-            <div class="owl-carousel image-slider my-1.5 mx-5 relative " >
+            <div class="owl-carousel image-slider my-1.5 mx-5 relative max-w-screen-2xl" >
                 <div class="w-[5rem] h-[5.5rem] bg-black border border-black rounded-[11px] flex items-center justify-center absolute left-[10rem]  smm-left-[10rem] ">
                     <a class="text-white text-center" href="#">
                         <h1 class="text-sm font-bold text-white" >THURS</h1>
@@ -425,7 +426,7 @@
         </div> 
         <div class="sm:relative md:flex md:justify-center z-30">
             <!--Desktop menu and Tablet-->
-            <div class="w-full flex-row lg:flex lg:flex-row md:flex items-center sm:flex-wrap sm:px-0 md:block  sm:hidden smm-hidden ">
+            <div  class="w-full flex-row lg:flex lg:flex-row md:flex items-center sm:flex-wrap sm:px-0 md:block  sm:hidden smm-hidden  max-w-screen-2xl">
                 <div class="w-full lg:w-8/12 md:w-8/12 bg-current  flex  md:items-center md:justify-start md:justify-between ">
                     <div class="flex flex-row xl:ml-4 ml-2 w-[30%] justify-between">
                         <div class="relative">
@@ -433,10 +434,10 @@
                             <select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">
                                 <option class="xl:text-lg text-md font-semibold" value="1">
                                    <a class="nhl" href="">NHL</a></option> 
-                                <option id="mlb" class="xl:text-lg text-md font-semibold" value="">MLB</option>
-                                <option id="nfl" class="xl:text-lg text-md font-semibold" value="">NFL</option>
-                                <option id="nba" class="xl:text-lg text-md font-semibold" value="">NBA</option>
-                                <option id="soc" class="xl:text-lg text-md font-semibold" value="">SOC</option>
+                                <option id="mlb" class="xl:text-lg text-md font-semibold" value="2">MLB</option>
+                                <option id="nfl" class="xl:text-lg text-md font-semibold" value="3">NFL</option>
+                                <option id="nba" class="xl:text-lg text-md font-semibold" value="4">NBA</option>
+                                <option id="soc" class="xl:text-lg text-md font-semibold" value="5">SOC</option>
                             </select>
                             <img class="absolute xl:top-2 lg:top-2.5 right-0.5 xl:w-[24px] lg:w-[24px] xl:h-[24px] lg:h-[24px] xl:block lg:block md:hidden rotate-[270deg] arrw" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
                             <!-- <img class="absolute top-0 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">     -->

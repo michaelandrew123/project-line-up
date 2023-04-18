@@ -3,8 +3,8 @@
 @section('content')
 
  
-<div class="flex xl:block lg:block md:block  hidden w-full mx-2 bg-slate-100">
-    <div class="w-full flex justify-center">
+<div class="flex justify-center xl:block lg:block md:block  hidden w-full mx-2 bg-slate-100">
+    <div class="w-full flex justify-center ">
         <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">

@@ -8,7 +8,26 @@ class HockeyController extends Controller
 {
     //
     public function homePage(){
-        return view('pages/home-page');
+
+
+        // fetch(`https://api.projectedlineups.com/v1/content/pages/about`)
+        // $about = `https://api.projectedlineups.com/v1/content/pages/about`;
+
+        // dd($about);
+
+
+        $api_url = 'https://api.projectedlineups.com/v1/content/pages/about';
+
+        // Read JSON file
+        $json_data = file_get_contents($api_url);
+
+        // Decode JSON data into PHP array
+        $datas = json_decode($json_data, true);
+    //    $datas = $datas->data;
+
+    //$slug = $datas['data']['slug'];
+        //   dd($datas['data']['slug']);
+        return view('pages/home-page')->with('slug', $datas['data']['slug']);
     }
     public function lineCombos(){
         return view('old-page/line-combos');
@@ -64,5 +83,8 @@ class HockeyController extends Controller
     }
     public function nhllineCombinations(){
         return view('pages/nhlline-combinations');
+    }
+    public function postsarticle(){
+        return view('pages/postsarticle');
     }
 }
