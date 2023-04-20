@@ -3,8 +3,9 @@
 @section('content')
 
  
-<div class="flex justify-center xl:block lg:block md:block  hidden w-full mx-2 bg-slate-100">
-    <div class="w-full flex justify-center ">
+<div class="flex justify-center">
+    <div class=" flex xl:block lg:block md:block  hidden w-full mx-2 bg-slate-100 max-w-screen-2xl">
+    <div class="w-full flex justify-center  ">
         <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">
@@ -40,7 +41,7 @@
             </div>
         </div> 
     </div>
-    <div class="flex flex-row justify-center w-full xl:gap-3 lg:gap-2">
+    <div class="flex flex-row justify-center w-full xl:gap-3 lg:gap-2 ">
         <div class="flex flex-col xl:w-[67%] lg:w-9/12 md:w-full">
             <div class="flex flex-col w-full">
                 <div class="flex justify-center mb-5">
@@ -1661,6 +1662,7 @@
                 <img class="" src="{{ asset('/images/menu-icon/adds5.png') }}">
             </div>  -->
         </div>
+    </div>
     </div>
 </div>
     <div class="w-full flex justify-center hidden smm-block">

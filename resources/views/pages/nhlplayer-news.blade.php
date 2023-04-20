@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="w-full flex justify-center bg-slate-100">
-    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5 block smm-hidden">
+    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5 block smm-hidden max-w-screen-2xl">
         <div class="flex flex-row justify-between items-center">
             <div class="flex items-center gap-3">
                 <div  class="flex txt-logo">
@@ -39,8 +39,8 @@
         </div>
     </div>
 </div>
-   <div class="flex flex-row justify-center w-full gap-3 lg:gap-2 md:gap-1 ">
-        <div class="flex flex-col xl:w-9/12 lg:w-9/12 md:w-11/12 block smm-hidden">
+    <div class="flex flex-row justify-center w-full gap-3 lg:gap-2 md:gap-1 ">
+        <div class="flex flex-col xl:w-9/12 lg:w-9/12 md:w-11/12 block smm-hidden max-w-screen-2xl">
             <div class="flex flex-col w-full ">
                 <div class="flex flex-col">
                     <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
@@ -330,7 +330,7 @@
                 </div>                
             </div>
         </div>   
-        <div class=" flex flex-col w-64 xl:w-2/12 lg:w-2/12 md:w-[8rem] gap-8 block smm-hidden">
+        <div class=" flex flex-col w-64 xl:w-2/12 lg:w-2/12 md:w-[8rem] gap-8 block smm-hidden max-w-screen-2xl">
             <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
             <div class="flex flex-col gap-3 ml-5">
                 <div class="flex flex-row ">

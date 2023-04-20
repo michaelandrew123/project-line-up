@@ -4,7 +4,7 @@
 
  <!-- Desktop nhl/Line combos -->
 <div class="w-full flex flex-row justify-center block smm-hidden">
-    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center  border-black m-4 gap-5">
+    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center  border-black m-4 gap-5 max-w-screen-2xl">
         <div class="flex flex-row justify-between  items-center flex justify-center w-full">
             <div class="flex gap-3">
                 <img class="w-10 h-10" class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
@@ -43,7 +43,7 @@
 </div>
 <div class="">
 <div class="w-full flex flex-col items-center ">
-    <div class="w-11/12 flex justify-center gap-3 items-center block smm-hidden">
+    <div class="w-11/12 flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl">
         <div class="w-9/12 flex flex-col gap-2">
             <div class="flex flex-row items-center justify-between m-3">
                 <div class="flex flex-row items-center gap-7">
@@ -80,7 +80,7 @@
           <img class="w-full h-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
         </div>
     </div>
-    <div class="flex flex-row items-center w-11/12 justify-evenly mt-3 gap-2.5 text-slate-500  block smm-hidden" id="sub-hed">
+    <div class="flex flex-row items-center w-11/12 justify-evenly mt-3 gap-2.5 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
         <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md l-ups bg-[#1d9bf0]">LINEUPS</button>
         <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md  d-kings">DRAFTKINGS</button>
         <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md fnl">FANDUEL</button>
@@ -90,7 +90,7 @@
             <img class="w-7" src="{{ asset('/images/menu-icon/shopping-bag.png') }}" alt="">
         </button>
     </div> 
-    <div class="flex w-11/12 my-5 gap-5 block smm-hidden">
+    <div class="flex w-11/12 my-5 gap-5 block smm-hidden max-w-screen-2xl">
         <ul class="flex flex-row justify-between w-9/12 ml-[5rem] text-lg font-bold text-slate-500 ">
             <li><a class="bg-slate-100 p-1 border rounded-md" href="">SHOTS</a></li>
             <li><a class="bg-slate-100 p-1 border rounded-md" href="">GOALS</a></li>
@@ -99,7 +99,7 @@
         </ul>
     </div>
     <!-- Line-ups  -->
-    <div id="lu-body" class="w-full flex flex-row xl:justify-end lg:justify-center gap-7  ">
+    <div id="lu-body" class="w-full flex flex-row xl:justify-end lg:justify-center gap-7  max-w-screen-2xl">
         <div class="xl:w-7/12 lg:w-8/12 md:w-10/12  block smm-hidden"> 
             <div id="shirt-footer"  class="flex flex-col gap-2 my-3">
                 <div class="flex flex-col gap-2 w-full">
@@ -530,7 +530,7 @@
     </div> 
     <!-- End of Line-ups -->
    <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden">
-        <div class="w-11/12 md:w-full flex flex-col items-center gap-6 ">
+        <div class="w-11/12 md:w-full flex flex-col items-center gap-6 max-w-screen-2xl">
             <div class="bg-slate-300 h-[2px] w-11/12"></div>
                 <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg">FORWARDS</h1>
                 <div class="flex flex-row justify-between xl:w-11/12 lg:w-full gap-3.5 md:gap-0">

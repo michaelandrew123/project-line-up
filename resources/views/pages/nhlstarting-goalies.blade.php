@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="w-full flex justify-center">
-        <div class="xl:w-11/12 lg:w-11/12 w-full flex flex-col border-black m-4 gap-5 block smm-hidden">
+        <div class="xl:w-11/12 lg:w-11/12 w-full flex flex-col border-black m-4 gap-5 block smm-hidden max-w-screen-2xl">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">
                     <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
@@ -38,3495 +38,3497 @@
             </div>
         </div> 
     </div>
-    <div class="w-full flex flex-col smm-hidden">
-        <div class="flex flex-row justify-evenly mt-10">   
-            <div class="flex flex-col items-center xl:w-7/12 lg:w-8/12 md:w-4/5">
-                <div class="w-full  h-36 bg-[#d9d9d9] flex  border rounded-[10px] justify-center items-center">
-                    <h1 class="text-2xl font-bold ">NHL Starting Goalies Tuesday, January 24</h1>
-                </div>
-                <div class="w-full">
-                    <!-- <div id="carouselExampleControlsv1 hidden" class="carousel slide relative mt-4 " data-bs-ride="">
-                        <div class="relative">
-                            <div class="absolute top-0 bottom-0 left-0 flex items-center">
-                                <button
-                                    class="carousel-control-prev  flex items-center justify-between p-1 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0 w-[12.5rem] border border-2 border-black "
-                                    type="button"
-                                    data-bs-target="#carouselExampleControlsv1"
-                                    data-bs-slide="prev"
-                                >
-                                        <div class="flex flex-row">
-                                        <img class="w-[25px] rotate-90 " src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
-                                        <img class="w-[25px] rotate-90 " src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
-                                        </div>
+    <div class="w-full flex flex-col items-center">
+        <div class="max-w-screen-2xl smm-hidden  xl:w-full">
+            <div class="flex flex-row justify-evenly mt-10 w-full">   
+                <div class="flex flex-col items-center xl:w-7/12 lg:w-8/12 md:w-4/5">
+                    <div class="w-full  h-36 bg-[#d9d9d9] flex  border rounded-[10px] justify-center items-center">
+                        <h1 class="text-2xl font-bold ">NHL Starting Goalies Tuesday, January 24</h1>
+                    </div>
+                    <div class="w-full">
+                        <!-- <div id="carouselExampleControlsv1 hidden" class="carousel slide relative mt-4 " data-bs-ride="">
+                            <div class="relative">
+                                <div class="absolute top-0 bottom-0 left-0 flex items-center">
+                                    <button
+                                        class="carousel-control-prev  flex items-center justify-between p-1 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0 w-[12.5rem] border border-2 border-black "
+                                        type="button"
+                                        data-bs-target="#carouselExampleControlsv1"
+                                        data-bs-slide="prev"
+                                    >
+                                            <div class="flex flex-row">
+                                            <img class="w-[25px] rotate-90 " src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
+                                            <img class="w-[25px] rotate-90 " src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
+                                            </div>
+                                            <div>
+                                            <h1 class="font-extrabold text-black text-lg">Previous Day</h1>
+                                            </div>
+                                    </button>
+                                </div>
+                                <div class="absolute top-0 bottom-0 right-0 flex items-center">
+                                    <button
+                                        class="carousel-control-next  flex items-center justify-between p-1 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0 w-[12.5rem] border border-2 border-black"
+                                        type="button"
+                                        data-bs-target="#carouselExampleControlsv1"
+                                        data-bs-slide="next"
+                                    > 
                                         <div>
-                                        <h1 class="font-extrabold text-black text-lg">Previous Day</h1>
-                                        </div>
-                                </button>
+                                        <h1 class="font-extrabold text-black text-lg">Next Day</h1> 
+                                        </div>   
+                                        <div class="flex flex-row">
+                                            <img class="w-[25px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
+                                            <img class="w-[25px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
+                                        </div>  
+                                    </button>
+                                </div> 
                             </div>
-                            <div class="absolute top-0 bottom-0 right-0 flex items-center">
-                                <button
-                                    class="carousel-control-next  flex items-center justify-between p-1 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0 w-[12.5rem] border border-2 border-black"
-                                    type="button"
-                                    data-bs-target="#carouselExampleControlsv1"
-                                    data-bs-slide="next"
-                                > 
-                                    <div>
-                                    <h1 class="font-extrabold text-black text-lg">Next Day</h1> 
-                                    </div>   
-                                    <div class="flex flex-row">
-                                        <img class="w-[25px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
-                                        <img class="w-[25px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
-                                    </div>  
-                                </button>
+                            <div class="carousel-inner relative w-full overflow-hidden mt-8">
+                                <div class="carousel-item active relative float-left w-full ">
+                                    <div class="flex flex-col mt-10"> 
+                                        <div class="flex flex-row justify-between ">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item relative float-left w-full ">
+                                    <div class="flex flex-col mt-10"> 
+                                        <div class="flex flex-row justify-between ">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item relative float-left w-full ">
+                                    <div class="flex flex-col mt-10"> 
+                                        <div class="flex flex-row justify-between ">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-10">
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-2 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                    </div>
+                                                    <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                                </div>
+                                            </div>
+                                            <h1 class="text-center text-sm font-bold">
+                                                Jan 24, 7:00pm <br>
+                                                Bridgestone Arena <br>
+                                                NashVille, TN <br>
+                                                Line : COL- 155 <br>
+                                                O/U 6.5
+                                            </h1>
+                                            <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                                <div class="justify-center items-center gap-3 mb-4">
+                                                    <div class="flex flex-row items-center gap-3">
+                                                        <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                        <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                    </div>
+                                                    <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-row justify-between mt-4 ">
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                                <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                    <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                    <div class="flex flex-col gap-4">
+                                                        <div class="flex flex-col">
+                                                            <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                        </div>
+                                                        <div class="flex flex-row items-center gap-2">
+                                                            <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                            <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                        </div>
+                                                        <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div> -->
+                <div id="carouselExampleCaptions3" class="relative" data-te-carousel-init data-te-carousel-slide>
+                    <div class="absolute right-0 -bottom-10 left-0 z-[2] mx-[15%]  mb-4 flex list-none justify-center p-0 z-[-1]"
+                        data-te-carousel-indicators>
+                        <button
+                            type="button"
+                            data-te-target="#carouselExampleCaptions3"
+                            data-te-slide-to="0"
+                            data-te-carousel-active
+                            class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                            aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button
+                            type="button"
+                            data-te-target="#carouselExampleCaptions3"
+                            data-te-slide-to="1"
+                            class="mx-[3px] box-content h-h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                            aria-label="Slide 2"></button>
+                        <button
+                            type="button"
+                            data-te-target="#carouselExampleCaptions3"
+                            data-te-slide-to="2"
+                            class="mx-[3px] box-content h-h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
+                        <div
+                            class="relative float-left -mr-[100%] w-full mt-5 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                            data-te-carousel-active
+                            data-te-carousel-item
+                            style="backface-visibility: hidden">
+                            <div class="flex flex-row justify-center">
+                                <div class="flex flex-col mt-10"> 
+                                    <div class="flex flex-row justify-between ">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative float-left -mr-[100%] hidden w-full mt-5 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                            data-te-carousel-item
+                            style="backface-visibility: hidden">
+                            <div class="flex flex-row justify-center">
+                                <div class="flex flex-col mt-10"> 
+                                    <div class="flex flex-row justify-between ">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative float-left -mr-[100%] hidden w-full mt-5 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                            data-te-carousel-item
+                            style="backface-visibility: hidden">
+                            <div class="flex flex-row justify-center">
+                                <div class="flex flex-col mt-10"> 
+                                    <div class="flex flex-row justify-between ">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-10">
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-2 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
+                                                </div>
+                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
+                                            </div>
+                                        </div>
+                                        <h1 class="text-center text-sm font-bold">
+                                            Jan 24, 7:00pm <br>
+                                            Bridgestone Arena <br>
+                                            NashVille, TN <br>
+                                            Line : COL- 155 <br>
+                                            O/U 6.5
+                                        </h1>
+                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
+                                            <div class="justify-center items-center gap-3 mb-4">
+                                                <div class="flex flex-row items-center gap-3">
+                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
+                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
+                                                </div>
+                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between mt-4 ">
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
+                                            <div class="flex mt-5 gap-8 mx-4 my-5">
+                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
+                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                                    </div>
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
+                                                    </div>
+                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                    class=" absolute top-0 bottom-0 left-0 z-[1] flex  h-[3rem] w-[25%] md:w-[27%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button"
+                    data-te-target="#carouselExampleCaptions3"
+                    data-te-slide="prev">
+                    <div class="flex w-[11rem] border border-black py-2">
+                            <div class="flex flex-row ">
+                            <img class="w-[25px] rotate-90 " src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
+                            <img class="w-[25px] rotate-90 " src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
+                            </div>
+                            <div>
+                            <h1 class="font-extrabold text-black text-lg">Previous Day</h1>
+                            </div>
+                    </div>                 
+                    </button>
+                    <button
+                    class=" absolute top-0 bottom-0 right-0 z-[1] flex flex  h-[3rem] w-[19%] lg:w-[20%] md:w-[23%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button"
+                    data-te-target="#carouselExampleCaptions3"
+                    data-te-slide="next"> 
+                        <div class="flex  w-[9rem] border border-black py-2">
+                            <div>
+                            <h1 class="font-extrabold text-black text-lg">Next Day</h1> 
+                            </div>   
+                            <div class="flex flex-row ">
+                                <img class="w-[25px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
+                                <img class="w-[25px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
                             </div> 
-                        </div>
-                        <div class="carousel-inner relative w-full overflow-hidden mt-8">
-                            <div class="carousel-item active relative float-left w-full ">
-                                <div class="flex flex-col mt-10"> 
-                                    <div class="flex flex-row justify-between ">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item relative float-left w-full ">
-                                <div class="flex flex-col mt-10"> 
-                                    <div class="flex flex-row justify-between ">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item relative float-left w-full ">
-                                <div class="flex flex-col mt-10"> 
-                                    <div class="flex flex-row justify-between ">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-10">
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-2 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                                </div>
-                                                <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                            </div>
-                                        </div>
-                                        <h1 class="text-center text-sm font-bold">
-                                            Jan 24, 7:00pm <br>
-                                            Bridgestone Arena <br>
-                                            NashVille, TN <br>
-                                            Line : COL- 155 <br>
-                                            O/U 6.5
-                                        </h1>
-                                        <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                            <div class="justify-center items-center gap-3 mb-4">
-                                                <div class="flex flex-row items-center gap-3">
-                                                    <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                    <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                                </div>
-                                                <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-row justify-between mt-4 ">
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                            <div class="flex mt-5 gap-8 mx-4 my-5">
-                                                <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                                <div class="flex flex-col gap-4">
-                                                    <div class="flex flex-col">
-                                                        <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                    </div>
-                                                    <div class="flex flex-row items-center gap-2">
-                                                        <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                    </div>
-                                                    <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div> -->
-            <div id="carouselExampleCaptions3" class="relative" data-te-carousel-init data-te-carousel-slide>
-                <div class="absolute right-0 -bottom-10 left-0 z-[2] mx-[15%]  mb-4 flex list-none justify-center p-0 z-[-1]"
-                    data-te-carousel-indicators>
-                    <button
-                        type="button"
-                        data-te-target="#carouselExampleCaptions3"
-                        data-te-slide-to="0"
-                        data-te-carousel-active
-                        class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-                        aria-current="true"
-                        aria-label="Slide 1"></button>
-                    <button
-                        type="button"
-                        data-te-target="#carouselExampleCaptions3"
-                        data-te-slide-to="1"
-                        class="mx-[3px] box-content h-h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-                        aria-label="Slide 2"></button>
-                    <button
-                        type="button"
-                        data-te-target="#carouselExampleCaptions3"
-                        data-te-slide-to="2"
-                        class="mx-[3px] box-content h-h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-                        aria-label="Slide 3"></button>
+                        </div>                          
+                    </button>
+                    </div>
+                    </div> 
                 </div>
-                <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
-                    <div
-                        class="relative float-left -mr-[100%] w-full mt-5 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
-                        data-te-carousel-active
-                        data-te-carousel-item
-                        style="backface-visibility: hidden">
-                        <div class="flex flex-row justify-center">
-                            <div class="flex flex-col mt-10"> 
-                                <div class="flex flex-row justify-between ">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="relative float-left -mr-[100%] hidden w-full mt-5 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
-                        data-te-carousel-item
-                        style="backface-visibility: hidden">
-                        <div class="flex flex-row justify-center">
-                            <div class="flex flex-col mt-10"> 
-                                <div class="flex flex-row justify-between ">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="relative float-left -mr-[100%] hidden w-full mt-5 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
-                        data-te-carousel-item
-                        style="backface-visibility: hidden">
-                        <div class="flex flex-row justify-center">
-                            <div class="flex flex-col mt-10"> 
-                                <div class="flex flex-row justify-between ">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-10">
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-2 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <h1 class="text-3xl font-bold text-black">Colorado</h1>
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/colorado-avalanche.svg') }}" alt="">
-                                            </div>
-                                            <p class="text-md text-center text-black">25-17-13, 4th Central</p>
-                                        </div>
-                                    </div>
-                                    <h1 class="text-center text-sm font-bold">
-                                        Jan 24, 7:00pm <br>
-                                        Bridgestone Arena <br>
-                                        NashVille, TN <br>
-                                        Line : COL- 155 <br>
-                                        O/U 6.5
-                                    </h1>
-                                    <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
-                                        <div class="justify-center items-center gap-3 mb-4">
-                                            <div class="flex flex-row items-center gap-3">
-                                                <img class="w-16" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                                                <h1 class="text-3xl font-bold text-black">Nashville</h1>
-                                            </div>
-                                            <p class="text-md text-center text-black">22-18-6, 5th Central</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex flex-row justify-between mt-4 ">
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-[47%] h-auto border-2 border-[#d9d9d9] relative rounded-xl ">
-                                        <div class="flex mt-5 gap-8 mx-4 my-5">
-                                            <img class="lg:w-24 lg:h-28 md:w-20 md:h-24" src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-xl font-extrabold">Igor Shesterkin</h1>
-                                                    <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                                </div>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[14px] h-[14px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-sm font-bold text-[#2f4e6f]">Confirmed</p>
-                                                </div>
-                                                <p class="text-[11px]">Mollie Walker jan 30 11:53 am EST</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button
-                class=" absolute top-0 bottom-0 left-0 z-[1] flex  h-[3rem] w-[25%] md:w-[27%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                type="button"
-                data-te-target="#carouselExampleCaptions3"
-                data-te-slide="prev">
-                   <div class="flex w-[11rem] border border-black py-2">
+                <div class=" flex flex-col w-1/5 gap-8">
+                    <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                    <img class="" src="{{ asset('/images/menu-icon/adds-new1.png') }}">
+                    <div class="flex flex-col gap-3 ml-5">
                         <div class="flex flex-row ">
-                          <img class="w-[25px] rotate-90 " src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
-                          <img class="w-[25px] rotate-90 " src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
+                            <img src="{{ asset('/images/menu-icon/ .png') }}" alt="">
+                            <h1 class="text-md font-semibold">Latest Articles </h1>
                         </div>
-                        <div>
-                          <h1 class="font-extrabold text-black text-lg">Previous Day</h1>
+                        <hr>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                            <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
                         </div>
-                   </div>                 
-                </button>
-                <button
-                class=" absolute top-0 bottom-0 right-0 z-[1] flex flex  h-[3rem] w-[19%] lg:w-[20%] md:w-[23%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                type="button"
-                data-te-target="#carouselExampleCaptions3"
-                data-te-slide="next"> 
-                    <div class="flex  w-[9rem] border border-black py-2">
-                        <div>
-                          <h1 class="font-extrabold text-black text-lg">Next Day</h1> 
-                        </div>   
-                        <div class="flex flex-row ">
-                            <img class="w-[25px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
-                            <img class="w-[25px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
-                        </div> 
-                    </div>                          
-                </button>
-                 </div>
-                </div> 
-            </div>
-            <div class=" flex flex-col w-1/5 gap-8">
-                <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                <img class="" src="{{ asset('/images/menu-icon/adds-new1.png') }}">
-                <div class="flex flex-col gap-3 ml-5">
-                    <div class="flex flex-row ">
-                        <img src="{{ asset('/images/menu-icon/ .png') }}" alt="">
-                        <h1 class="text-md font-semibold">Latest Articles </h1>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                            <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                            <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                            <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                            <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                            <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                            <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
+                            <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
+                            <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
+                            <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                        <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
-                        <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
-                        <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                        <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
-                        <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
-                        <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                        <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
-                        <p class="text-[10px]">January 27, <span class="ml-2">2023 ESPN</span></p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
-                        <p class="text-[10px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
-                    </div>
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-[12px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                        <p class="text-[10px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
-                    </div>
+                    <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div>
-                <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
             </div>
         </div>
     </div>
@@ -3565,7 +3567,6 @@
             <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players"> 
             <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
         </div>
-
     </div>
     <img class="w-full my-3 smm-block hidden" src="{{ asset('/images/menu-icon/adds_header.png') }}" alt="">
     <div class="flex justify-center w-full my-8 smm-block hidden">

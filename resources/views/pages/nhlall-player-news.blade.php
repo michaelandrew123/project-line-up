@@ -2,8 +2,8 @@
 
 @section('content')
 <!-- Desktop design -->
-<div class="w-full flex justify-center bg-slate-100">
-    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5 block smm-hidden">
+<div class="w-full flex justify-center bg-slate-100 ">
+    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5 block smm-hidden max-w-screen-2xl">
         <div class="flex flex-row justify-between items-center">
             <div class="flex gap-3">
                 <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
@@ -39,7 +39,7 @@
     </div>
 </div>
 <div class="w-full flex justify-center bg-slate-100">
-    <div class="w-11/12 flex flex-row justify-between gap-3 block smm-hidden">
+    <div class="w-11/12 flex flex-row justify-between gap-3 block smm-hidden max-w-screen-2xl">
         <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
             <div class="w-full bg-[#d9d9d9] flex flex-row  items-center justify-between rounded-md">
                 <div class="flex gap-2 ml-2">

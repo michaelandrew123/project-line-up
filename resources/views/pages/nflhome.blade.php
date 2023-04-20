@@ -4,8 +4,9 @@
 @section('content')
 
 <!-- Desktop design -->
-<div class="w-full flex flex-col items-center block smm-hidden">
-    <div class="w-11/12  border-black m-4 max-w-screen-2xl">
+<div class="w-full flex justify-center ">
+    <div class=" flex justify-center xl:block lg:block md:block smm-hidden xl:w-11/12 max-w-screen-2xl"> 
+    <div class="w-11/12  border-black m-4  ">
         <div class="flex flex-row justify-between items-center">
             <div class="flex gap-3">
                 <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
@@ -28,7 +29,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full flex flex-col items-center justify-center relative max-w-screen-2xl">
+    <div class="w-full flex flex-col items-center justify-center relative ">
         <div class="flex flex-row justify-center items-center relative w-10/12">
             <img class="w-[20rem] absolute xl:left-[9.5rem] left-0" src="{{ asset('/images/menu-icon/allen_fb.png') }}" alt="">
             <img class="w-[20rem] z-10" src="{{ asset('/images/menu-icon/mahomes_fb.png') }}" alt="">
@@ -43,7 +44,7 @@
         <div class="bg-slate-300 h-[2px] w-11/12 "></div>
     </div>
     <h1 class="text-center xl:text-7xl text-5xl font-extrabold mt-24">Your destination for fantasy sports players and bettors</h1>
-    <div class="flex flex-col gap-20 w-10/12 mt-24 max-w-screen-2xl">
+    <div class="flex flex-col  gap-20 w-full mt-24  ">
         <div class="w-full flex flex-row justify-between">
             <div class="flex flex-col gap-3">
                 <div class="flex flex-row items-center gap-4">
@@ -230,7 +231,7 @@
             </div>  
         </div>
     </div> -->
-    <div class="w-10/12 flex flex-col mt-16 gap-6 max-w-screen-2xl">
+    <div class="w-full  flex flex-col items-center mt-16 gap-6  ">
         <h1 class="text-2xl font-extrabold">What is the importance using projected luneups?</h1>
         <p class="text-xl">
             Projected Lineups can help give you the edge in all types of fantasy sports or sports betting;
@@ -270,6 +271,8 @@
             betting information, including lines. spread, and statistic on NFL games each and every week.  
         </p>
     </div>
+    </div>
+    
 </div>
 <!-- End desktop design -->
 <!-- Mobile design -->

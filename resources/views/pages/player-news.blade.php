@@ -2,7 +2,8 @@
 
 @section('content')
 <!-- Desktop Design -->
-<div class="xl:block lg:block md:block smm-hidden ">
+<div class="w-full flex justify-center">
+<div class="xl:block lg:block md:block smm-hidden max-w-screen-2xl">
     <div class="flex flex-row mb-5 justify-between">
         <div class="flex flex-col gap-10   xl:block lg:hidden md:hidden">
             <img class="  h-[40%]" src="{{ asset('/images/menu-icon/adds1.png') }}">
@@ -1736,6 +1737,7 @@
             <img class="  h-3/5" src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div> 
     </div>
+</div>
 </div>
 <!-- End of desktop -->
         <!-- Mobile Design -->
