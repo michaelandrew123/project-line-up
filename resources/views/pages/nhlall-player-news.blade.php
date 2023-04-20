@@ -2,8 +2,8 @@
 
 @section('content')
 <!-- Desktop design -->
-<div class="w-full flex justify-center bg-slate-100">
-    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5 block smm-hidden">
+<div class="w-full flex justify-center bg-slate-100 ">
+    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5 block smm-hidden max-w-screen-2xl">
         <div class="flex flex-row justify-between items-center">
             <div class="flex gap-3">
                 <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
@@ -39,7 +39,7 @@
     </div>
 </div>
 <div class="w-full flex justify-center bg-slate-100">
-    <div class="w-11/12 flex flex-row justify-between gap-3 block smm-hidden">
+    <div class="w-11/12 flex flex-row justify-between gap-3 block smm-hidden max-w-screen-2xl">
         <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
             <div class="w-full bg-[#d9d9d9] flex flex-row  items-center justify-between rounded-md">
                 <div class="flex gap-2 ml-2">
@@ -415,7 +415,149 @@
               <img class="w-16 h-16 " src="{{ asset('/images/menu-icon/.png') }}" alt=""> 
             </div>
         </div>       
-        <div class="w-full flex flex-col gap-3">
+        <div class="w-full flex flex-col gap-3 border-2 h-[91rem] overflow-auto">
+            <div class="flex flex-col items-center gap-3">          
+                <div class="flex flex-row w-full justify-evenly  border border-black rounded-xl sm:px-5 px-2 py-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-row items-center gap-1">                                                   
+                            <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                            <p class="text-[#385575] text-lg font-extrabold">Injury</p>
+                        </div>                                              
+                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-36 h-36 " alt="">
+                    </div>
+                    <div class="flex flex-col gap-3.5">
+                        <div class="">
+                            <h1 class="text-xl font-bold">Jordan Kyrou</h1>
+                            <p class="text-[12px] font-bold">St.Louis Blues - C</p>
+                        </div>
+                        <h1 class="text-xl font-extrabold">Jordan Kyrou out indefinitely <br> after suffering stroke</h1>
+                        <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                            <div>
+                                <p class="font-extrabold">Jim Thomas</p>
+                                <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full justify-evenly  border border-black rounded-xl sm:px-5 px-2 py-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-row items-center gap-1">                                                   
+                            <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                            <p class="text-[#385575] text-lg font-extrabold">Injury</p>
+                        </div>                                              
+                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-36 h-36 " alt="">
+                    </div>
+                    <div class="flex flex-col gap-3.5">
+                        <div class="">
+                            <h1 class="text-xl font-bold">Jordan Kyrou</h1>
+                            <p class="text-[12px] font-bold">St.Louis Blues - C</p>
+                        </div>
+                        <h1 class="text-xl font-extrabold">Jordan Kyrou out indefinitely <br> after suffering stroke</h1>
+                        <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                            <div>
+                                <p class="font-extrabold">Jim Thomas</p>
+                                <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full justify-evenly  border border-black rounded-xl sm:px-5 px-2 py-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-row items-center gap-1">                                                   
+                            <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                            <p class="text-[#385575] text-lg font-extrabold">Injury</p>
+                        </div>                                              
+                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-36 h-36 " alt="">
+                    </div>
+                    <div class="flex flex-col gap-3.5">
+                        <div class="">
+                            <h1 class="text-xl font-bold">Jordan Kyrou</h1>
+                            <p class="text-[12px] font-bold">St.Louis Blues - C</p>
+                        </div>
+                        <h1 class="text-xl font-extrabold">Jordan Kyrou out indefinitely <br> after suffering stroke</h1>
+                        <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                            <div>
+                                <p class="font-extrabold">Jim Thomas</p>
+                                <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                           
+            </div>                   
+            <div class="flex flex-col items-center gap-3">          
+                <div class="flex flex-row w-full justify-evenly  border border-black rounded-xl sm:px-5 px-2 py-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-row items-center gap-1">                                                   
+                            <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                            <p class="text-[#385575] text-lg font-extrabold">Injury</p>
+                        </div>                                              
+                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-36 h-36 " alt="">
+                    </div>
+                    <div class="flex flex-col gap-3.5">
+                        <div class="">
+                            <h1 class="text-xl font-bold">Jordan Kyrou</h1>
+                            <p class="text-[12px] font-bold">St.Louis Blues - C</p>
+                        </div>
+                        <h1 class="text-xl font-extrabold">Jordan Kyrou out indefinitely <br> after suffering stroke</h1>
+                        <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                            <div>
+                                <p class="font-extrabold">Jim Thomas</p>
+                                <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full justify-evenly  border border-black rounded-xl sm:px-5 px-2 py-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-row items-center gap-1">                                                   
+                            <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                            <p class="text-[#385575] text-lg font-extrabold">Injury</p>
+                        </div>                                              
+                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-36 h-36 " alt="">
+                    </div>
+                    <div class="flex flex-col gap-3.5">
+                        <div class="">
+                            <h1 class="text-xl font-bold">Jordan Kyrou</h1>
+                            <p class="text-[12px] font-bold">St.Louis Blues - C</p>
+                        </div>
+                        <h1 class="text-xl font-extrabold">Jordan Kyrou out indefinitely <br> after suffering stroke</h1>
+                        <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                            <div>
+                                <p class="font-extrabold">Jim Thomas</p>
+                                <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row w-full justify-evenly  border border-black rounded-xl sm:px-5 px-2 py-5">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex flex-row items-center gap-1">                                                   
+                            <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                            <p class="text-[#385575] text-lg font-extrabold">Injury</p>
+                        </div>                                              
+                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-36 h-36 " alt="">
+                    </div>
+                    <div class="flex flex-col gap-3.5">
+                        <div class="">
+                            <h1 class="text-xl font-bold">Jordan Kyrou</h1>
+                            <p class="text-[12px] font-bold">St.Louis Blues - C</p>
+                        </div>
+                        <h1 class="text-xl font-extrabold">Jordan Kyrou out indefinitely <br> after suffering stroke</h1>
+                        <div class="flex flex-row items-center">
+                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                            <div>
+                                <p class="font-extrabold">Jim Thomas</p>
+                                <p class="text-[10px] font-bold">11/30/2022 | 12:59 pm EST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                           
+            </div>
             <div class="flex flex-col items-center gap-3">          
                 <div class="flex flex-row w-full justify-evenly  border border-black rounded-xl sm:px-5 px-2 py-5">
                     <div class="flex flex-col gap-4">

@@ -870,28 +870,19 @@
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
                               <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
                        </div>    
-             </div>
+            </div>
                        <div class="xl:absolute lg:absolute  h-72 xl:w-40 bg-lime-400 right-0 lg:w-14 mt-5 ">
                             <h1 class="text-lg font-semibold text-center">ADDS</h1>
                         </div>
-                        
-            
-            
-     </div>
-
-
-
-
-
-
-
+   
+    </div>
 </div> -->
     
      
 
       
-
-  <div class="flex justify-between smm:flex-col block smm:hidden">
+<div class="flex justify-center">
+  <div class="flex justify-between smm:flex-col block smm:hidden  max-w-screen-2xl">
         <div class="flex flex-col md:overflow-x-auto sm:overflow-x-auto xl:block lg:hidden md:hidden smm-hidden">
             <div class="flex flex-col gap-[5.5rem] ">
                 <img class="w-48  " src="{{ asset('/images/menu-icon/adds1.png') }}">
@@ -899,7 +890,7 @@
                 <img class="h-2/4" src="{{ asset('/images/menu-icon/adds4.png') }}">
             </div>
         </div>
-        <div class="flex flex-col items-center gap-5">    
+        <div class="flex flex-col items-center gap-5  max-w-screen-2xl">    
             <div class="flex md:flex-row  w-full hidden smm-hidden">
                 <div class="w-[18rem] h-80 border border-red-700 relative rounded-xl">
                     <div class="flex m-1 mt-5">
@@ -1539,7 +1530,7 @@
                 </div>
             </div>
 	    </div>
-        <div class="flex flex-col block overflow-x-visible md:overflow-x-auto sm:overflow-y-hidden  xl:block lg:hidden md:hidden smm-hidden">
+        <div class="flex flex-col block overflow-x-visible md:overflow-x-auto sm:overflow-y-hidden  xl:block lg:hidden md:hidden smm-hidden  max-w-screen-2xl">
             <div class="flex flex-col  items-center gap-6">
                 <img class="w-64  " src="{{ asset('/images/menu-icon/adds3.png') }}">
                 <img class="w-48  " src="{{ asset('/images/menu-icon/adds6.png') }}">
@@ -1548,7 +1539,7 @@
             
         </div>    
    </div>
-
+</div>
    <!-- Start of Mobile Design -->
    <div class="  hidden smm-block ">
         <div class="flex flex-col gap-10 my-5">

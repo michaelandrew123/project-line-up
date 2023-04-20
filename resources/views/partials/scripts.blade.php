@@ -3,8 +3,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 <script>
+
+ 
+
+
+
+
     // let headers = new Headers();
     //
     // headers.append('Content-Type', 'application/json');
@@ -350,11 +356,13 @@
     }); 
 
   // header select option 
-  $("#nfl").on('click', function(){
-    $('#main-menu > .MLB').removeClass('hidden');
-    $('#main-menu > .NHL').addClass('hidden');
+  $("#SN ").val('1').change(function(){
+    // console.log('hello');
+    $('#hockey').addClass('hidden');
+    $('#base').removeClass('hidden');
   });
-
+ 
+   
     //Mobile navigation
 
     $('ul#mobile-2nd-mnav > li').on('touchstart', function(e){
