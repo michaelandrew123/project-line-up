@@ -3,7 +3,7 @@
 @section('content')
 
 
- {{ $slug }}
+ {{--{{ $slug }}--}}
  
 <!-- Desktop design -->
 
@@ -240,7 +240,7 @@
                             </div>
                         </div>
                         <div class="relative">
-                            <a href="" class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
+                            <a href="{{URL::route('starting-goaliesv1')}} " class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
                         </div>
                     </div>
                     <div class="flex flex-col">
@@ -361,7 +361,7 @@
                             </div>
                         </div>
                         <div class="relative">
-                            <a href="" class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
+                            <a href="{{URL::route('player-news')}} " class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
                         </div>
                     </div>
                 </div>
@@ -807,7 +807,7 @@
                             </table>
                     </div>
                     <div class="relative">
-                        <a href="" class="text-black font-semibold flex justify-end mr-2">see all</a>
+                        <a href="{{URL::route('projections')}}" class="text-black font-semibold flex justify-end mr-2">see all</a>
                     </div>
                 </div>
             </div>

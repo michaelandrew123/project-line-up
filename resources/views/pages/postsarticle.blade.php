@@ -4,7 +4,7 @@
  
 
 <!-- Desktop design -->
-<div class="w-full flex justify-center bg-slate-100 ">
+<div class=" flex justify-center bg-slate-100 ">
     <div class="max-w-screen-2xl xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5 block smm-hidden">
         <div class="flex flex-row justify-between items-center">
             <div class="flex items-center gap-3">
@@ -50,7 +50,7 @@
            <img class="xl:w-28 xl:h-28   border border-black" src="{{ asset('/images/menu-icon/.png') }}" alt="">
         </div>
     </div>
-    <div class="max-w-screen-2xl flex flex-row justify-evenly ">
+    <div class="max-w-full flex flex-row justify-evenly ">
         <div class="flex flex-col gap-10 smm-hidden">
             <p class="text-xl">
                  As the NHL seaon continues, daily fantasy sports (DFS) players are <br>

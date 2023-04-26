@@ -12,10 +12,10 @@
             <img class="w-[17rem]  " src="{{ asset('/images/menu-icon/adds4.png') }}">
         </div>
         <div class=" flex flex-col">  
-            <div class="flex justify-center mb-5">
+            <div class="flex justify-center  ">
                 <img class="  h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
             </div> 
-            <div class="flex">
+            <div class="flex py-5">
               <h1 class="text-black text-3xl font-bold lg:ml-0 md:ml-8">Starting Goalies</h1>
             </div> 
             <div class=" flex justify-center mb-3 ">

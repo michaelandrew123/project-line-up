@@ -1,6 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
+
+
+
     <!-- old design -->
     <div class="flex flex-col lg:block md:block sm:hidden smm-hidden ">
         <div class="text-white bg-[#202e5b] flex justify-evenly py-4">
@@ -85,8 +88,14 @@
                                     Starting Goalie
                                 </div>
                             </div>
-                        </div>                   
-                        <!-- Start First row -->
+                        </div>
+
+
+
+
+
+
+                    <!-- Start First row -->
                             <div class="pb-2 flex lg:flex-row md:flex-row  justify-center smm-hidden">
                             <div class=" mt-4">
                                 <div class="flex flex-row justify-center items-center font-bold">
@@ -128,7 +137,7 @@
                                     <p>Pairing 1</p>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <!--  End First row -->  
                         <!-- Start Second row -->
                         <div class="pb-2 flex flex-row gap-4 justify-center">

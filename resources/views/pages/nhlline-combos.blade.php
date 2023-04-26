@@ -55,7 +55,7 @@
                 </div>
                 <div class="flex gap-2">
                     <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-5 h-5  rounded-full ml-2">
-                    <h1 class="text-[13px] font-bold">MORNING SKATE</h1> 
+                    <h1 class="text-[13px] font-bold uppercase">{{ $result->data->status->name  }}</h1>
                 </div>            
             </div>
             <div class="bg-slate-300 h-[2px] w-full"></div>
@@ -63,13 +63,22 @@
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-row gap-2 items-center">                       
                         <div>
-                            <p class="text-[13px] font-semibold">David Alter</p>
-                            <p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>
+                            <a href="{{ $result->data->source->url  }}" class=" " target="_blank">
+                                <p class="text-[13px] font-semibold">{{ $result->data->source->name  }} </p>
+                            </a>
+                            <p class="text-[13px] font-semibold">{{ $result->data->updated_at->date  }} | {{ $result->data->updated_at->time  }}</p>
+                            {{--<p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>--}}
                         </div>
                     </div>
                     <div class="relative">
                         <button id="" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
-                            <p class="text-[13px]">TORONTO MAPLE LEAFS</p>
+                            {{--<select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">--}}
+                                {{--<option class="xl:text-lg text-md font-semibold" value="1"><a class="nhl" href="">TORONTO MAPLE LEAFS</a></option>--}}
+                                {{--<option id="mlb" class="xl:text-lg text-md font-semibold" value="2">TORONTO MAPLE LEAFS</option>--}}
+                                {{--<option id="nfl" class="xl:text-lg text-md font-semibold" value="3">TORONTO MAPLE LEAFS</option>--}}
+                                {{--<option id="nba" class="xl:text-lg text-md font-semibold" value="4">TORONTO MAPLE LEAFS</option>--}}
+                                {{--<option id="soc" class="xl:text-lg text-md font-semibold" value="5">TORONTO MAPLE LEAFS</option>--}}
+                            {{--</select>--}}
                             <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow">
                         </button> 
                     </div>
@@ -104,231 +113,335 @@
             <div id="shirt-footer"  class="flex flex-col gap-2 my-3">
                 <div class="flex flex-col gap-2 w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">FORWARDS</h1>
-                    <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
+
+
+
+                        <div class="flex flex-row mt-3">
+
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'lw1')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">  {{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                                @if($key == 'c1')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                                @if($key == 'rw1')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
+
+                        <div class="flex flex-row mt-3">
+
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'lw2')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                                @if($key == 'c2')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                                @if($key == 'rw2')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
+
+
+                        <div class="flex flex-row  mt-3">
+
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'lw3')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                                @if($key == 'c3')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                                @if($key == 'rw3')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>
+
+                    <div class="flex flex-row  mt-3">
+                        @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'lw4')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'c4')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'rw4')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                        @endforeach
                     </div>
-                    
-                    <div class="flex flex-row justify-between mt-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div> 
-                    </div>
-                    
-                    <div class="flex flex-row justify-between mt-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-row justify-between mt-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                    </div>
+
+
+
                 </div> 
                 
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">DEFENCE</h1>
+
+
+
                     <div class="flex flex-row justify-center gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
+                        @foreach($result->data->slots as $key=>$item)
+
+
+                            @if($key == 'ld1')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'rd1')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+
+                        @endforeach
                     </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
+
+
+
+                    <div class="flex flex-row justify-center gap-3">
+                        @foreach($result->data->slots as $key=>$item)
+
+
+                            @if($key == 'ld2')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'rd2')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+
+                        @endforeach
                     </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
+
+
+
+
+                    <div class="flex flex-row justify-center gap-3">
+                        @foreach($result->data->slots as $key=>$item)
+
+
+                            @if($key == 'ld3')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'rd3')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+
+                        @endforeach
                     </div>
+
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <img class="w-auto" src="{{ asset('/images/menu-icon/newsletter.png') }}" alt=""> 
                 <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">GOALIES</h1>
                     <div class="flex flex-row justify-center gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
+                        @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'sg1')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'sg2')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+
+                        @endforeach
                     </div>                    
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 1</h1>
-                    <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
+                    <div class="flex flex-row ">
+                        @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'pp11')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'pp12')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'pp13')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+
+                        @endforeach
                     </div>
                     <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
+                        @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'pp14')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'pp15')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+
+                        @endforeach
                     </div>
                 </div>
                 <div class="flex flex-col w-full mt-10">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 2</h1>
-                    <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
+                    <div class="flex flex-row">
+                        @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'pp21')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'pp22')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+
+                                @if($key == 'pp23')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                        <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                        @endforeach
                     </div>
                     <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
-                            
-                        </div>
+                        @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'pp24')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'pp25')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                        @endforeach
                     </div>
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-5"></div>
                     <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
-                    <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
-                        </div>
+                    <div class="flex flex-row">
+                        @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'b1')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'b2')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key == 'b3')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                        @endforeach
                     </div>
-                    <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
-                        </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
-                            <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                            <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
-                        </div>
+                    <div class="flex flex-row ">
+                        @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'b4')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key=='b5')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                            @if($key=='b6')
+                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
+                                    <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
+                                </div>
+                            @endif
+                        @endforeach
                     </div>
                 </div>
                 <div class="flex flex-col items-center ">
