@@ -29,11 +29,11 @@
                 </div>
             </div>
             <div class="flex flex-row justify-between gap-3">
-                <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5  py-2 rounded-md">STARTING GOALIES</a>
-                <a href="{{url('/nhl/line-combos')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">LINE COMBOS</a>
-                <a href="{{url('/nhl/ ')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROJECTIONS</a>
-                <a href="{{url('/nhl/ ')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">NEWS</a>
-                <a href="{{url('/nhl/props')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROPS & ODDS</a>
+                <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5  py-2 rounded-md">STARTING GOALIES</a>
+                <a href="{{url('/nhl/line-combos')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">LINE COMBOS</a>
+                <a href="{{url('/nhl/ ')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROJECTIONS</a>
+                <a href="{{url('/nhl/ ')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">NEWS</a>
+                <a href="{{url('/nhl/props')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROPS & ODDS</a>
             </div>
             <div class="relative">
                 <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players"> 

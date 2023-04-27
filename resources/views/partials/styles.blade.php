@@ -41,6 +41,7 @@
         
       
     }
+ 
     /* NFL home */
     .home-input, value{
          font-size: 36px;

@@ -61,7 +61,8 @@
             <div class="bg-slate-300 h-[2px] w-full"></div>
             <div class=" mx-3">
                 <div class="flex flex-row items-center justify-between">
-                    <div class="flex flex-row gap-2 items-center">                       
+                    <div class="flex flex-row gap-2 items-center">  
+                      <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt="">
                         <div>
                             <a href="{{ $result->data->source->url  }}" class=" " target="_blank">
                                 <p class="text-[13px] font-semibold">{{ $result->data->source->name  }} </p>
@@ -70,7 +71,7 @@
                             {{--<p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>--}}
                         </div>
                     </div>
-                    <div class="relative">
+                    <!-- <div class="relative">
                         <button id="" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
                             {{--<select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">--}}
                                 {{--<option class="xl:text-lg text-md font-semibold" value="1"><a class="nhl" href="">TORONTO MAPLE LEAFS</a></option>--}}
@@ -81,6 +82,40 @@
                             {{--</select>--}}
                             <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow">
                         </button> 
+                    </div> -->
+                    <div class="border border-slate-300 w-[13rem] rounded-full bg-slate-300 relative">
+                        <select name="" id="team-name" style="-webkit-appearance: none;" class="bg-slate-300 rounded-full  px-2 w-full">
+                            <option value="">Boston Bruins</option>
+                            <option value="">Buffalo Sabres</option>
+                            <option value="">Calgary Flames</option>
+                            <option value="">Carolina Hurricanes</option>
+                            <option value="">Chicago Blackhawks</option>
+                            <option value="">Colorado Avalanche</option>
+                            <option value="">Columbus Blues Jacket</option>
+                            <option value="">Dallas Stars</option>
+                            <option value="">Detroit Red Wings</option>
+                            <option value="">Edmonton Oilers</option>
+                            <option value="">Florida Panthers</option>
+                            <option value="">Los Angeles Kings</option>
+                            <option value="">Minnesota Wild</option>
+                            <option value="">Montreal Canadiens</option>
+                            <option value="">Nashville Predators</option>
+                            <option value="">New Jersey Devils</option>
+                            <option value="">New York Islander</option>
+                            <option value="">New York Rangers</option>
+                            <option value="">Ottawa Senators</option>
+                            <option value="">Philadelphia Flyers</option>
+                            <option value="">San Jose Sharks</option>
+                            <option value="">Seattle Kraken</option>
+                            <option value="">St. Louis Blues</option>
+                            <option value="">Tampa Bay Lightning</option>
+                            <option value="">Toronto Maple Leafs</option>
+                            <option value="">Vancouver Canucks</option>
+                            <option value="">Vegas Golden Knights</option>
+                            <option value="">Washington Capitals</option>
+                            <option value="">Winnipeg Jets</option>
+                        </select>
+                        <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow absolute right-[5px] top-[4px] arrw2">
                     </div>
                 </div>
             </div>
@@ -99,7 +134,7 @@
             <img class="w-7" src="{{ asset('/images/menu-icon/shopping-bag.png') }}" alt="">
         </button>
     </div> 
-    <div class="flex w-11/12 my-5 gap-5 block smm-hidden max-w-screen-2xl">
+    <div class="props flex w-11/12 my-5 gap-5 block smm-hidden max-w-screen-2xl hidden">
         <ul class="flex flex-row justify-between w-9/12 ml-[5rem] text-lg font-bold text-slate-500 ">
             <li><a class="bg-slate-100 p-1 border rounded-md" href="">SHOTS</a></li>
             <li><a class="bg-slate-100 p-1 border rounded-md" href="">GOALS</a></li>
@@ -116,7 +151,7 @@
 
 
 
-                        <div class="flex flex-row mt-3">
+                        <div class="flex flex-row mt-3 gap-3">
 
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw1')
@@ -140,7 +175,7 @@
                             @endforeach
                         </div>
 
-                        <div class="flex flex-row mt-3">
+                        <div class="flex flex-row mt-3 gap-3">
 
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw2')
@@ -165,7 +200,7 @@
                         </div>
 
 
-                        <div class="flex flex-row  mt-3">
+                        <div class="flex flex-row  mt-3 gap-3">
 
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw3')
@@ -189,7 +224,7 @@
                             @endforeach
                         </div>
 
-                    <div class="flex flex-row  mt-3">
+                    <div class="flex flex-row  mt-3 gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'lw4')
                                 <div class="flex flex-col items-center gap-2 w-[32%]">
@@ -313,7 +348,7 @@
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 1</h1>
-                    <div class="flex flex-row ">
+                    <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp11')
                                 <div class="flex flex-col items-center gap-2 w-[32%]">
@@ -356,7 +391,7 @@
                 </div>
                 <div class="flex flex-col w-full mt-10">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 2</h1>
-                    <div class="flex flex-row">
+                    <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp21')
                                 <div class="flex flex-col items-center gap-2 w-[32%]">
@@ -399,7 +434,7 @@
                 <div class="bg-slate-300 h-[2px] w-full my-5"></div>
                     <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
-                    <div class="flex flex-row">
+                    <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'b1')
                                 <div class="flex flex-col items-center gap-2 w-[32%]">
@@ -421,7 +456,7 @@
                             @endif
                         @endforeach
                     </div>
-                    <div class="flex flex-row ">
+                    <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'b4')
                                 <div class="flex flex-col items-center gap-2 w-[32%]">
@@ -429,13 +464,13 @@
                                     <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
-                            @if($key=='b5')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                            @if($key == 'b5')
+                                <div class="flex flex-col items-center gap-2 w-[32%] ">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
                                     <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
-                            @if($key=='b6')
+                            @if($key == 'b6')
                                 <div class="flex flex-col items-center gap-2 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ $item->full_name  }}</p>
                                     <img src="{{   $item->images->uniform    }}" class="mb-2.5 px-3" alt="">

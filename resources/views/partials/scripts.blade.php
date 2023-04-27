@@ -349,18 +349,22 @@
         $('#drop_down').toggleClass('hidden');
         
     });
-    
+    // nhl line-combos select option
+    $('#team-name').on('click', function(){
+      $('.arrw2').toggleClass('rotate-[90deg]');
+      
+    }); 
   //  header select arrow function
     $('#SN').on('click', function(){
       $('.arrw').toggleClass('rotate-[1deg]')
     }); 
 
   // header select option 
-  $("#SN ").val('1').change(function(){
-    // console.log('hello');
-    $('#hockey').addClass('hidden');
-    $('#base').removeClass('hidden');
-  });
+  // $("#SN ").val('1').change(function(){
+  //   // console.log('hello');
+  //   $('#hockey').addClass('hidden');
+  //   $('#base').removeClass('hidden');
+  // });
  
    
     //Mobile navigation
