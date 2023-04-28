@@ -44,7 +44,9 @@
         $("#sub-menu > ul.active").removeClass('active');
         $("#sub-menu > ul."+data).addClass('active');  
     });
-
+    $('#head-drp').on('click', function(){
+      $('.drp-dwn').toggleClass('hidden');
+    })
     // nhl line-combos sub link
     //  $('#sub-hed > .d-kings').on('click', function(){
       //   $('.d-kings').addClass('bg-[#ff8210]');

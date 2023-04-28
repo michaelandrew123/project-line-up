@@ -39,6 +39,7 @@ Route::prefix('nhl')->group(function () {
     Route::get('/individual-player-news',  [App\Http\Controllers\HockeyController::class, 'nhlindividualplayerNews'])->name('nhl.individual-player-news');
     Route::get('/team-news',  [App\Http\Controllers\HockeyController::class, 'nhlteamNews'])->name('nhl.team-news');
     Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'nhllineCombos'])->name('nhl.line-combos');
+    Route::get('/line-combos/{team}',  [App\Http\Controllers\HockeyController::class, 'nhllineCombosTeam'])->name('nhl.line-combos.team');
     Route::get('/line-combinations',  [App\Http\Controllers\HockeyController::class, 'nhllineCombinations'])->name('nhl.line-combinations');
    
 });

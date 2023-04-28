@@ -31,9 +31,9 @@ class HockeyController extends Controller
     }
     public function lineCombos(){
 
-
-
+ 
         $client = new \GuzzleHttp\Client();
+ 
         $response = $client->get(
             'https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation',
             [
@@ -49,7 +49,7 @@ class HockeyController extends Controller
       //  dd($respose->$result->b5)
 
         //    print_r(json_decode($body));
-
+   
       //   dd($result->data->slots);
         return view('old-page/line-combos')->with('result', $result);
     }
@@ -88,15 +88,76 @@ class HockeyController extends Controller
         return view('pages/nhlstarting-goalies');
     }
     public function nhllineCombos(){
+        // dd($getTeam);
+      
+        
+       
+            $client = new \GuzzleHttp\Client();
+        
+            $team = $client->get(
+                'https://api.projectedlineups.com/v1/sports/teams',
+                [
+                    'headers' => [
+                        'Content-Type' => 'application/json',
+                        'Accept' => 'application/json',
+                    ],
+                ]
+            );
+    
+            $team_body = $team->getBody();
+            $team_result = json_decode($team_body);
+            // print_r(json_decode((string) $body));
+    
+            // dd($team_result);
+    
+           
+            $response = $client->get(
+                'https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation',
+                [
+                    'headers' => [
+                        'Content-Type' => 'application/json',
+                        'Accept' => 'application/json',
+                    ],
+                ]
+            );
+            $body = $response->getBody();
+    
+            $result = json_decode($body);
+       
+       
+        //  dd($respose->$result->b5)
+
+        //    print_r(json_decode($body));
+
+        //   dd($result->data->slots);
 
 
+        return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result]);
+    }
 
-
-
+     public function nhllineCombosTeam($team_slug){
 
         $client = new \GuzzleHttp\Client();
+        
+        $team = $client->get(
+            'https://api.projectedlineups.com/v1/sports/teams',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+
+        $team_body = $team->getBody();
+        $team_result = json_decode($team_body);
+        // print_r(json_decode((string) $body));
+
+        // dd($team_slug);
+
+       $url='https://api.projectedlineups.com/v1/sports/teams/'.$team_slug.'/formation';
         $response = $client->get(
-            'https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation',
+            $url,
             [
                 'headers' => [
                     'Content-Type' => 'application/json',
@@ -107,14 +168,16 @@ class HockeyController extends Controller
         $body = $response->getBody();
 
         $result = json_decode($body);
-        //  dd($respose->$result->b5)
+   
+        
+    //  dd($respose->$result->b5)
 
-        //    print_r(json_decode($body));
+    //    print_r(json_decode($body));
 
-        //   dd($result->data->slots);
+    //   dd($result->data->slots);
 
 
-        return view('pages/nhlline-combos')->with('result', $result);
+    return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result]);
     }
     public function nhlteamNews(){
         return view('pages/nhlteam-news');
@@ -134,4 +197,5 @@ class HockeyController extends Controller
     public function postsarticle(){
         return view('pages/postsarticle');
     }
+    
 }
