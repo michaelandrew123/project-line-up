@@ -31,12 +31,23 @@
             <button class="xl:text-2xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md">LINE COMBOS</button>
             <button class="xl:text-2xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">PROJECTIONS</button>
             <button class="xl:text-2xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">NEWS</button>
-            <button class="flex items-center xl:text-2xl text-lg font-bold bg-[#ebece9] text-black xl:px-9 px-5  py-2 rounded-md"hidden>PROPS & ODDS
+            <button class="flex items-center xl:text-2xl text-lg font-bold bg-[#ebece9] text-black xl:px-9 px-5  py-2 rounded-md">PROPS & ODDS
                 <img class="w-7 w-5" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
             </button>
         </div>
-        <div class="relative w-full">
-            <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players"> 
+        <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
+            <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">{{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
+            <div class="drp-dwn hidden flex flex-col w-[28rem] p-2 bg-slate-100 absolute top-12 overflow-y-auto h-[26rem]">
+                @foreach($team->data as $key=>$val)
+                  <a class="teams text-4xl font-semibold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                @endforeach
+            </div>
+            <a class="absolute right-[15px] top-[6px] rotate-[265deg] arrw-v1" href="">
+                <img class="w-[3rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
+            </a>
+        </div>
+        <div class="relative w-full hidden">
+            <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input " type="" value="Search team projected lineups or players"> 
             <a class="absolute right-[15px] top-[7px]" href="">
                 <!-- <img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""> -->
                 <img class="w-[3.5rem]" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
@@ -47,11 +58,11 @@
 <div class="">
 <div class="w-full flex flex-col items-center ">
     <div class="w-11/12 flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl">
-        <div class="w-9/12 flex flex-col gap-2">
+        <div class="w-9/12 flex flex-col gap-2 ">
             <div class="flex flex-row items-center justify-between m-3">
                 <div class="flex flex-row items-center gap-7">
                     <img class="w-[4rem] rounded-lg" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
-                    <div>
+                    <div class="flex flex-wrap">
                         <p class="text-2xl font-extrabold">Toronto Maple Leafs</p>
                         <p class="text-2xl font-extrabold">Line Combinations</p>
                     </div>
@@ -62,10 +73,10 @@
                 </div>            
             </div>
             <div class="bg-slate-300 h-[2px] w-full"></div>
-            <div class=" mx-3">
+            <div class=" mx-3 ">
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-row gap-2 items-center">  
-                      <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt="">
+                      <!-- <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt=""> -->
                         <div>
                             <a href="{{ $result->data->source->url  }}" class=" " target="_blank">
                                 <p class="text-[13px] font-semibold">{{ $result->data->source->name  }} </p>
@@ -75,7 +86,7 @@
                             
                         </div>
                     </div>
-                    <!-- <div class="relative">
+                    <div class="relative hidden">
                         <button id="" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
                             {{--<select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">--}}
                                 {{--<option class="xl:text-lg text-md font-semibold" value="1"><a class="nhl" href="">TORONTO MAPLE LEAFS</a></option>--}}
@@ -86,8 +97,8 @@
                             {{--</select>--}}
                             <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow">
                         </button> 
-                    </div> -->
-                    <!-- <div class="border border-slate-300 w-[13rem] rounded-full bg-slate-300 relative">
+                    </div>
+                    <div class="border border-slate-300 w-[13rem] rounded-full bg-slate-300 relative hidden">
                         <select name="" id="team-name" style="-webkit-appearance: none;" class="bg-slate-300 rounded-full  px-2 w-full">
                            {{ $team->data[0]->name }}
                            @foreach($team->data as $key=>$val)                                    
@@ -95,15 +106,14 @@
                            @endforeach  
                         </select>
                         <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow absolute right-[5px] top-[4px] arrw2">
-                    </div> -->
-                    <div class="relative">
-                        <a href="#" id="head-drp" class="text-lg font-bold border border-slate-300 w-[13rem] rounded-full bg-slate-300">Dropdown</a>
-                            <!-- <input type="text" id="head-drp" value="" list=""> -->
-                            <div class="drp-dwn hidden flex flex-col bg-slate-300 w-[13rem] p-2 absolute">
-                                @foreach($team->data as $key=>$val)
-                                <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
-                                @endforeach
-                            </div>
+                    </div>
+                    <div class="relative hidden">
+                        <a href="#" id="head-drp" class="text-lg font-bold border border-slate-300 w-[13rem] rounded-full bg-slate-300"> {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
+                        <div class="drp-dwn hidden flex flex-col bg-slate-300 w-[13rem] p-2 absolute">
+                            @foreach($team->data as $key=>$val)
+                            <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,7 +122,7 @@
           <img class="w-full h-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
         </div>
     </div>  
-    <div class="flex flex-row items-center w-11/12 justify-evenly mt-3 gap-2.5 text-slate-500  block smm-hidden max-w-screen-2xl " id="sub-hed">
+    <div class="flex flex-row items-center w-11/12 justify-evenly mt-3 gap-2.5 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
         <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md l-ups bg-[#1d9bf0]">LINEUPS</button>
         <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md  d-kings">DRAFTKINGS</button>
         <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md fnl">FANDUEL</button>
@@ -131,7 +141,7 @@
         </ul>
     </div>
     <!-- Line-ups  -->
-    <div id="lu-body" class="w-full flex flex-row xl:justify-end lg:justify-center gap-7  max-w-screen-2xl  ">
+    <div id="lu-body" class="w-full flex flex-row xl:justify-end lg:justify-center gap-7  max-w-screen-2xl">
         <div class="xl:w-7/12 lg:w-8/12 md:w-10/12  block smm-hidden"> 
             <div id="shirt-footer"  class="flex flex-col gap-2 my-3">
                 <div class="flex flex-col gap-2 w-full">
@@ -568,32 +578,13 @@
                     <div class="bg-slate-300 h-[2px] w-full"></div>
                 </div>
                 <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Jake Muzzin - LTIR-UBI</p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                    <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Nick Robertson - LTIR-UBI</p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                    <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">TJ Brodie - LTIR-UBI </p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                    <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Jake Muzzin - LTIR-UBI</p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                    <p class="text-sm">Muzzin underwent a minor surgical procedure<br> and will be re-evaluated after the ASG (ankle).</p>
+                    @foreach($article->data as $key=>$val)
+                        <div class="w-full flex flex-row justify-between">
+                            <p class="font-semibold text-sm">{{$val->player->full_name}}- LTIR-UBI</p>
+                            <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
+                        </div>
+                        <p class="text-sm">{{$val->title}}</p>
+                    @endforeach
                 </div>
                 <div class="w-full flex justify-center">
                     <a class="font-semibold text-sm" href="">View All NHL injuries</a>
@@ -647,7 +638,7 @@
         </div>
     </div> 
     <!-- End of Line-ups -->
-   <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden  ">
+   <div id="drf-shp" class="hidden w-full flex flex-col items-center block ">
         <div class="w-11/12 md:w-full flex flex-col items-center gap-6 max-w-screen-2xl">
             <div class="bg-slate-300 h-[2px] w-11/12"></div>
                 <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg">FORWARDS</h1>
