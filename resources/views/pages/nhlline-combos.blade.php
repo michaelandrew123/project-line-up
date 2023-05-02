@@ -37,12 +37,12 @@
         </div>
         <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
             <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">{{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
-            <div class="drp-dwn hidden flex flex-col w-[28rem] p-2 bg-slate-100 absolute top-12 overflow-y-auto h-[26rem]">
+            <div class="drp-dwn hidden flex flex-col w-full p-2 bg-slate-100 absolute top-12 overflow-y-auto h-[26rem]">
                 @foreach($team->data as $key=>$val)
                   <a class="teams text-4xl font-semibold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
                 @endforeach
             </div>
-            <a class="absolute right-[15px] top-[6px] rotate-[265deg] arrw-v1" href="">
+            <a class="absolute right-[15px] top-[6px] rotate-[271deg] arrw-v1" href="">
                 <img class="w-[3rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
             </a>
         </div>
