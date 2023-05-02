@@ -79,6 +79,14 @@ class HockeyController extends Controller
         return view('pages/nflhome');
     }
     public function nhlHome(){
+
+
+
+       
+      
+       
+
+
         return view('pages/nhlhome');
     }
     public function nhlProps(){
@@ -90,9 +98,28 @@ class HockeyController extends Controller
     public function nhllineCombos(){
         // dd($getTeam);
       
-        
+            
        
             $client = new \GuzzleHttp\Client();
+
+
+            $article = $client->get(
+                'https://api.projectedlineups.com/v1/content/cards/cards',
+                [
+                    'headers' => [
+                        'Content-Type' => 'application/json',
+                        'Accept' => 'application/json',
+                    ],
+                ]
+            );
+           
+            // print_r(json_decode((string) $body));
+            $sports_article = $article->getBody();
+            $team_article = json_decode( $sports_article);
+            // dd($team_article);
+
+    
+
         
             $team = $client->get(
                 'https://api.projectedlineups.com/v1/sports/teams',
@@ -132,7 +159,7 @@ class HockeyController extends Controller
         //   dd($result->data->slots);
 
 
-        return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result]);
+        return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result, 'article' => $team_article] );
     }
 
      public function nhllineCombosTeam($team_slug){
@@ -153,7 +180,13 @@ class HockeyController extends Controller
         $team_result = json_decode($team_body);
         // print_r(json_decode((string) $body));
 
-        // dd($team_slug);
+        // dd($team_result);
+        foreach($team_result->data as $key){
+            // print_r($key->slug);
+            if($key->slug == $team_slug){
+               $drp = $key->name;
+            }
+        }
 
        $url='https://api.projectedlineups.com/v1/sports/teams/'.$team_slug.'/formation';
         $response = $client->get(
@@ -168,7 +201,7 @@ class HockeyController extends Controller
         $body = $response->getBody();
 
         $result = json_decode($body);
-   
+          
         
     //  dd($respose->$result->b5)
 
@@ -177,7 +210,7 @@ class HockeyController extends Controller
     //   dd($result->data->slots);
 
 
-    return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result]);
+    return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result, 'drp_name' => $drp]);
     }
     public function nhlteamNews(){
         return view('pages/nhlteam-news');
