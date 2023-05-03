@@ -135,7 +135,18 @@
                             NHL Starting Goalies
                         </h1>
                     </div>
-                    <div class="flex w-full md:flex-row justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3">
+                    <!-- {{count($goalies->data )}} -->
+                    @foreach($goalies->data as $key=>$val)
+                     <!-- @if(count($goalies->data) % 2 == 0)
+                  
+                       even
+                    @endif -->
+                    @if(count($goalies->data) % 2 == 1)
+                       odd
+                      
+                     @endif
+                     
+                    <!-- <div class="flex w-full md:flex-row justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3">
                         <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%] md:h-[18rem]  relative rounded-xl bg-white">
                             <div class="flex m-1 mt-5 ">
                                 <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
@@ -232,7 +243,8 @@
                                 </div>
                             </div>
                         </div> 
-                    </div>
+                    </div> -->
+                    @endforeach
                     <div class="flex w-full md:flex-row justify-center xl:justify-evenly lg:justify-between md:justify-between">
                         <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
                             <div class="flex m-1 mt-5 ">
@@ -1000,12 +1012,13 @@
                     <img src="{{ asset('/images/menu-icon/ .png') }}" alt="">
                     <h1 class="text-md font-semibold">Latest Articles </h1>
                 </div>
-                <hr>
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
-                </div>
-                <div class="flex flex-col gap-1">
+                <hr> 
+                    <div class="flex flex-col gap-1">
+                        <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">{{$articles->data->title}}</h1>
+                        <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">{{$articles->data->published_at->datetime}} <span class="ml-2">Yahoo Sports</span></p>
+                    </div>
+               
+                <!-- <div class="flex flex-col gap-1">
                     <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
                     <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, <span class="ml-2">2023 ESPN</span></p>
                 </div>
@@ -1040,7 +1053,7 @@
                 <div class="flex flex-col gap-1">
                     <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
                     <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
-                </div>
+                </div> -->
             </div>
             <img class="mt-[28rem] w-[17rem] h-[35rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
         </div>    
