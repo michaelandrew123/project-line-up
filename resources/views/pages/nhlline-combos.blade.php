@@ -260,7 +260,6 @@
                     <div class="flex flex-row justify-center gap-3">
                         @foreach($result->data->slots as $key=>$item)
 
-
                             @if($key == 'ld2')
                                 <div class="flex flex-col items-center gap-2 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
