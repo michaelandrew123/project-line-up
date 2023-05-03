@@ -95,7 +95,6 @@ class HockeyController extends Controller
         // dd($result_article);
         // print_r(json_decode((string) $body));
 
-
         $goalies = $client->get(
             'https://api.projectedlineups.com/v1/content/cards/cards',
             [
@@ -109,7 +108,7 @@ class HockeyController extends Controller
         // print_r(json_decode((string) $body));
          $player= $goalies->getBody();
          $player_news = json_decode($player);
-        // dd($player_article);
+        //  dd( $player_news);
        
  
         return view('pages/nhlhome')->with(['articles' => $result_article , 'goalies' => $player_news] );;
