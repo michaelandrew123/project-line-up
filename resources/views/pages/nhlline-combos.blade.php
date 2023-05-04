@@ -212,28 +212,28 @@
                                 @endif
                             @endforeach
                         </div>
-                    <div class="flex flex-row  mt-3 gap-3">
-                        @foreach($result->data->slots as $key=>$item)
-                            @if($key == 'lw4')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                    <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                </div>
-                            @endif
-                            @if($key == 'c4')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                    <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                </div>
-                            @endif
-                            @if($key == 'rw4')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                    <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                </div>
-                            @endif
-                        @endforeach
-                    </div>
+                        <div class="flex flex-row  mt-3 gap-3">
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'lw4')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                                @if($key == 'c4')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                                @if($key == 'rw4')
+                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
                 </div>                
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <div class="flex flex-col w-full">
@@ -637,7 +637,7 @@
         </div>
     </div> 
     <!-- End of Line-ups -->
-   <div id="drf-shp" class="hidden w-full flex flex-col items-center block ">
+   <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden">
         <div class="w-11/12 md:w-full flex flex-col items-center gap-6 max-w-screen-2xl">
             <div class="bg-slate-300 h-[2px] w-11/12"></div>
                 <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg">FORWARDS</h1>
@@ -6092,894 +6092,926 @@
                     <div class="flex flex-col gap-2 w-full">
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">FORWARDS</h1>
                         <div class="flex flex-row justify-between">
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class=" ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'lw1')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                    <div class=" ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>    
-                                </div>   
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class=" ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>        
-                                </div>                                                            
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class=" ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
                                         </div>
-                                    </div>       
-                                </div>                            
-                            </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
+                                    </div>   
+                                </div>
+                                @endif
+                                @if($key == 'c1')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class=" ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>        
+                                    </div>                                                            
+                                </div>
+                                @endif
+                                @if($key == 'rw1')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class=" ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>       
+                                    </div>                            
+                                </div>
+                                @endif
+                            @endforeach
                         </div>
                         <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="w-full  rounded-lg bg-[#ffa100] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'lw2')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>    
-                                </div>   
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>    
-                                </div>                                                            
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
                                         </div>
-                                    </div>    
-                                </div>                             
-                            </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
+                                    </div>   
+                                </div>
+                                @endif
+                                @if($key == 'c2')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
+                                    </div>                                                            
+                                </div>
+                                @endif
+                                @if($key == 'rw2')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
+                                    </div>                             
+                                </div>
+                                @endif
+                            @endforeach
                         </div>
                         <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="w-full  rounded-lg bg-[#ffa100] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'lw3')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>    
-                                </div>   
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>    
-                                </div>                                                             
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
                                         </div>
-                                    </div>    
-                                </div>                             
-                            </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
+                                    </div>   
+                                </div>
+                                @endif
+                                @if($key == 'c3')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
+                                    </div>                                                             
+                                </div>
+                                @endif
+                                @if($key == 'rw3')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
+                                    </div>                             
+                                </div>
+                                @endif
+                            @endforeach
                         </div>
                         <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="w-full  rounded-lg bg-[#ffa100] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
+                            @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'lw4')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>    
-                                </div>    
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>    
-                                </div>                                                             
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
                                         </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
                                     </div>    
-                                </div>                             
-                            </div>
+                                </div>
+                            @endif
+                            @if($key == 'c4')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
+                                    </div>                                                             
+                                </div>
+                            @endif
+                            @if($key == 'rw4')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>    
+                                    </div>                             
+                                </div>
+                            @endif
+                            @endforeach
                         </div>
                     </div> 
                     <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
@@ -6988,448 +7020,466 @@
                     <div class="flex flex-col w-full">
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">DEFENCE</h1>
                         <div class="flex flex-row justify-center gap-3">
-                            <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
-                                <div>
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
+                            @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'ld1')
+                                <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
+                                    <div>
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>      
-                                </div> 
-                            </div>
-                            <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
-                                <div>
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
                                         </div>
-                                    </div>     
-                                </div>                            
-                            </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>      
+                                    </div> 
+                                </div>
+                            @endif
+                            @if($key == 'rd1')
+                                <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
+                                    <div>
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>     
+                                    </div>                            
+                                </div>
+                            @endif
+                            @endforeach
                         </div>
                         <div class="flex flex-row justify-center mt-3 gap-3">
-                            <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
-                                <div>
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
+                            @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'ld2')
+                                <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
+                                    <div>
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>      
-                                </div> 
-                            </div>
-                            <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
-                                <div>
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
                                         </div>
-                                    </div>     
-                                </div>                            
-                            </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>      
+                                    </div> 
+                                </div>
+                            @endif
+                            @if($key == 'rd2')
+                                <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
+                                    <div>
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>     
+                                    </div>                            
+                                </div>
+                            @endif
+                            @endforeach
                         </div>
                         <div class="flex flex-row justify-center mt-3 gap-3">
-                            <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
-                                <div>
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
+                            @foreach($result->data->slots as $key=>$item)
+                            @if($key == 'ld3')
+                                <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
+                                    <div>
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>      
-                                </div> 
-                            </div>
-                            <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
-                                <div>
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class="   ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
                                         </div>
-                                    </div>     
-                                </div>                            
-                            </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>      
+                                    </div> 
+                                </div>
+                            @endif
+                            @if($key == 'rd3')
+                                <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
+                                    <div>
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class="   ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>     
+                                    </div>                            
+                                </div>
+                            @endif
+                            @endforeach
                         </div>
                     </div>
                     <div class="bg-slate-300 h-[2px] w-full my-24"></div>
@@ -7438,152 +7488,158 @@
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">GOALIES</h1>
                         <div class="flex flex-row justify-center gap-3">
                             <div class="flex flex-row justify-center gap-3">
-                                <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
-                                    <div>
-                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                    </div>
-                                    <div class="   ">
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                @foreach($result->data->slots as $key=>$item)
+                                    @if($key == 'sg1')
+                                        <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
+                                            <div>
+                                                <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                                <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                             </div>
-                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                            </div>
-                                        </div>
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                            </div>
-                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                            </div>
-                                        </div>
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                            </div>
-                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                                <img src="" alt="">
-                                            </div>
-                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                                <p class="text-center">Start per Game</p>
-                                                <div class="flex flex-row w-full justify-evenly">
-                                                    <div class="sm:text-[10px] text-[5px]">
-                                                        <p>Goals</p>
-                                                        <p>Assist</p>
-                                                        <p>Points</p>
-                                                        <p>Shots</p>
-                                                        <p>Blocks</p>
-                                                        <p>TOI</p>
-                                                        <p>PP TQI</p>
+                                            <div class="   ">
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                                    <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                        <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                        <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
                                                     </div>
-                                                    <div class="sm:text-[10px] text-[5px]">
-                                                        <p>.45</p>
-                                                        <p>.35</p>
-                                                        <p>.80</p>
-                                                        <p>2.76</p>
-                                                        <p>1.2</p>
-                                                        <p>16:53</p>
-                                                        <p>2.12</p>
+                                                    <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                        <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                            </div>
-                                        </div>      
-                                    </div> 
-                                </div>
-                                <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
-                                    <div>
-                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                    </div>
-                                    <div class="   ">
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                            </div>
-                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                            </div>
-                                        </div>
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                            </div>
-                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                            </div>
-                                        </div>
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                            </div>
-                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                                <img src="" alt="">
-                                            </div>
-                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                                <p class="text-center">Start per Game</p>
-                                                <div class="flex flex-row w-full justify-evenly">
-                                                    <div class="sm:text-[10px] text-[5px]">
-                                                        <p>Goals</p>
-                                                        <p>Assist</p>
-                                                        <p>Points</p>
-                                                        <p>Shots</p>
-                                                        <p>Blocks</p>
-                                                        <p>TOI</p>
-                                                        <p>PP TQI</p>
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                                    <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                        <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                        <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
                                                     </div>
-                                                    <div class="sm:text-[10px] text-[5px]">
-                                                        <p>.45</p>
-                                                        <p>.35</p>
-                                                        <p>.80</p>
-                                                        <p>2.76</p>
-                                                        <p>1.2</p>
-                                                        <p>16:53</p>
-                                                        <p>2.12</p>
+                                                    <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                        <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                                     </div>
                                                 </div>
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                                    <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                        <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                        <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                    </div>
+                                                    <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                        <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                        <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                                    <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                        <img src="" alt="">
+                                                    </div>
+                                                    <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                        <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                        <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                                    <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                        <p class="text-center">Start per Game</p>
+                                                        <div class="flex flex-row w-full justify-evenly">
+                                                            <div class="sm:text-[10px] text-[5px]">
+                                                                <p>Goals</p>
+                                                                <p>Assist</p>
+                                                                <p>Points</p>
+                                                                <p>Shots</p>
+                                                                <p>Blocks</p>
+                                                                <p>TOI</p>
+                                                                <p>PP TQI</p>
+                                                            </div>
+                                                            <div class="sm:text-[10px] text-[5px]">
+                                                                <p>.45</p>
+                                                                <p>.35</p>
+                                                                <p>.80</p>
+                                                                <p>2.76</p>
+                                                                <p>1.2</p>
+                                                                <p>16:53</p>
+                                                                <p>2.12</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                        <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                                    </div>
+                                                </div>      
+                                            </div> 
+                                        </div>
+                                    @endif
+                                    @if($key == 'sg2')
+                                        <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
+                                            <div>
+                                                <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                                <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                             </div>
-                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                            </div>
-                                        </div>     
-                                    </div>                            
-                                </div>
+                                            <div class="   ">
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                                    <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                        <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                        <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                    </div>
+                                                    <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                        <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                                    <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                        <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                        <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                                    </div>
+                                                    <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                        <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                                    <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                        <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                        <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                    </div>
+                                                    <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                        <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                        <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                                    <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                        <img src="" alt="">
+                                                    </div>
+                                                    <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                        <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                        <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                                    <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                        <p class="text-center">Start per Game</p>
+                                                        <div class="flex flex-row w-full justify-evenly">
+                                                            <div class="sm:text-[10px] text-[5px]">
+                                                                <p>Goals</p>
+                                                                <p>Assist</p>
+                                                                <p>Points</p>
+                                                                <p>Shots</p>
+                                                                <p>Blocks</p>
+                                                                <p>TOI</p>
+                                                                <p>PP TQI</p>
+                                                            </div>
+                                                            <div class="sm:text-[10px] text-[5px]">
+                                                                <p>.45</p>
+                                                                <p>.35</p>
+                                                                <p>.80</p>
+                                                                <p>2.76</p>
+                                                                <p>1.2</p>
+                                                                <p>16:53</p>
+                                                                <p>2.12</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                        <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                                    </div>
+                                                </div>     
+                                            </div>                            
+                                        </div>
+                                    @endif
+                                @endforeach
                             </div>
                         </div>      
                     </div>
@@ -7591,234 +7647,14 @@
                     <div class="flex flex-col w-full">
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 1</h1>
                         <div class="flex flex-row justify-between">
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class=" ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'pp11')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>    
-                                </div>   
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class=" ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>        
-                                </div>                                                            
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class=" ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
-                                                </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>       
-                                </div>                            
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-center gap-3">
-                            <div class="flex flex-row justify-center gap-3">
-                                <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
-                                    <div>
-                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                    </div>
-                                    <div class="   ">
+                                    <div class=" ">
                                         <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
                                             <div class="flex flex-col  sm:h-[5.5rem] h-auto">
                                                 <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
@@ -7883,15 +7719,17 @@
                                             <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
                                                 <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
                                             </div>
-                                        </div>      
-                                    </div> 
+                                        </div>    
+                                    </div>   
                                 </div>
-                                <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
-                                    <div>
-                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                @endif
+                                @if($key == 'pp12')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
-                                    <div class="   ">
+                                    <div class=" ">
                                         <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
                                             <div class="flex flex-col  sm:h-[5.5rem] h-auto">
                                                 <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
@@ -7956,241 +7794,480 @@
                                             <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
                                                 <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
                                             </div>
-                                        </div>     
+                                        </div>        
+                                    </div>                                                            
+                                </div>
+                                @endif
+                                @if($key == 'pp13')
+                                <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
+                                    <div class="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                    </div>
+                                    <div class=" ">
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                            </div>
+                                            <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                            </div>
+                                            <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                            <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                            <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                <p class="text-center">Start per Game</p>
+                                                <div class="flex flex-row w-full justify-evenly">
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>Goals</p>
+                                                        <p>Assist</p>
+                                                        <p>Points</p>
+                                                        <p>Shots</p>
+                                                        <p>Blocks</p>
+                                                        <p>TOI</p>
+                                                        <p>PP TQI</p>
+                                                    </div>
+                                                    <div class="sm:text-[10px] text-[5px]">
+                                                        <p>.45</p>
+                                                        <p>.35</p>
+                                                        <p>.80</p>
+                                                        <p>2.76</p>
+                                                        <p>1.2</p>
+                                                        <p>16:53</p>
+                                                        <p>2.12</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                            </div>
+                                        </div>       
                                     </div>                            
                                 </div>
-                            </div>
+                                @endif
+                            @endforeach
+                        </div>
+                        <div class="flex flex-row justify-center gap-3">   
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'pp14')
+                                    <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
+                                        <div>
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        </div>
+                                        <div class="   ">
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                                </div>
+                                                <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                </div>
+                                                <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                    <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                    <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                                <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                    <p class="text-center">Start per Game</p>
+                                                    <div class="flex flex-row w-full justify-evenly">
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>Goals</p>
+                                                            <p>Assist</p>
+                                                            <p>Points</p>
+                                                            <p>Shots</p>
+                                                            <p>Blocks</p>
+                                                            <p>TOI</p>
+                                                            <p>PP TQI</p>
+                                                        </div>
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>.45</p>
+                                                            <p>.35</p>
+                                                            <p>.80</p>
+                                                            <p>2.76</p>
+                                                            <p>1.2</p>
+                                                            <p>16:53</p>
+                                                            <p>2.12</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                                </div>
+                                            </div>      
+                                        </div> 
+                                    </div>
+                                @endif
+                                @if($key == 'pp15')
+                                    <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
+                                        <div>
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        </div>
+                                        <div class="   ">
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                                </div>
+                                                <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                </div>
+                                                <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                    <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                    <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                                <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                    <p class="text-center">Start per Game</p>
+                                                    <div class="flex flex-row w-full justify-evenly">
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>Goals</p>
+                                                            <p>Assist</p>
+                                                            <p>Points</p>
+                                                            <p>Shots</p>
+                                                            <p>Blocks</p>
+                                                            <p>TOI</p>
+                                                            <p>PP TQI</p>
+                                                        </div>
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>.45</p>
+                                                            <p>.35</p>
+                                                            <p>.80</p>
+                                                            <p>2.76</p>
+                                                            <p>1.2</p>
+                                                            <p>16:53</p>
+                                                            <p>2.12</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                                </div>
+                                            </div>     
+                                        </div>                            
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>  
+                       
                     </div>
                     <div class="flex flex-col w-full mt-10">
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 2</h1>
                         <div class="flex flex-row justify-between">
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class=" ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'pp21')
+                                    <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
+                                        <div class="">
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
+                                        <div class=" ">
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
                                                 </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>    
-                                </div>   
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class=" ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
                                                 </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
+                                                <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
-                                        </div>
-                                    </div>        
-                                </div>                                                            
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                <div class=" ">
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
-                                        </div>
-                                        <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-auto">
-                                            <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
-                                            <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
-                                        </div>
-                                        <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
-                                            <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                        <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
-                                            <img src="" alt="">
-                                        </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
-                                            <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
-                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                        <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
-                                            <p class="text-center">Start per Game</p>
-                                            <div class="flex flex-row w-full justify-evenly">
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>Goals</p>
-                                                    <p>Assist</p>
-                                                    <p>Points</p>
-                                                    <p>Shots</p>
-                                                    <p>Blocks</p>
-                                                    <p>TOI</p>
-                                                    <p>PP TQI</p>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
                                                 </div>
-                                                <div class="sm:text-[10px] text-[5px]">
-                                                    <p>.45</p>
-                                                    <p>.35</p>
-                                                    <p>.80</p>
-                                                    <p>2.76</p>
-                                                    <p>1.2</p>
-                                                    <p>16:53</p>
-                                                    <p>2.12</p>
+                                                <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                    <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
                                                 </div>
                                             </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                    <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                                <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                    <p class="text-center">Start per Game</p>
+                                                    <div class="flex flex-row w-full justify-evenly">
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>Goals</p>
+                                                            <p>Assist</p>
+                                                            <p>Points</p>
+                                                            <p>Shots</p>
+                                                            <p>Blocks</p>
+                                                            <p>TOI</p>
+                                                            <p>PP TQI</p>
+                                                        </div>
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>.45</p>
+                                                            <p>.35</p>
+                                                            <p>.80</p>
+                                                            <p>2.76</p>
+                                                            <p>1.2</p>
+                                                            <p>16:53</p>
+                                                            <p>2.12</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                                </div>
+                                            </div>    
+                                        </div>   
+                                    </div>
+                                @endif
+                                @if($key == 'pp22')
+                                    <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">                              
+                                        <div class="">
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                         </div>
-                                        <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
-                                            <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                        <div class=" ">
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                                </div>
+                                                <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                </div>
+                                                <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                    <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                    <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                                <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                    <p class="text-center">Start per Game</p>
+                                                    <div class="flex flex-row w-full justify-evenly">
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>Goals</p>
+                                                            <p>Assist</p>
+                                                            <p>Points</p>
+                                                            <p>Shots</p>
+                                                            <p>Blocks</p>
+                                                            <p>TOI</p>
+                                                            <p>PP TQI</p>
+                                                        </div>
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>.45</p>
+                                                            <p>.35</p>
+                                                            <p>.80</p>
+                                                            <p>2.76</p>
+                                                            <p>1.2</p>
+                                                            <p>16:53</p>
+                                                            <p>2.12</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                                </div>
+                                            </div>        
+                                        </div>                                                                                   
+                                    </div>
+                                @endif 
+                                @if($key == 'pp23')  
+                                    <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">                         
+                                        <div class="">
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                         </div>
-                                    </div>       
-                                </div>                            
-                            </div>
+                                        <div class=" ">
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">5.3</h1>
+                                                </div>
+                                                <div class="bg-[#1d9bf0] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-lg text-[10px] font-semibold text-center">7500</h3>
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-auto">
+                                                    <h3 class="sm:text-xl text-sm font-semibold text-center">Proj.</h3>
+                                                    <h1 class="sm:text-3xl text-sm font-extrabold text-center">12.3</h1>
+                                                </div>
+                                                <div class="bg-[#ffa100] flex flex-wrap justify-center items-center w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[9px] font-semibold text-center">CHART</h3>
+                                                    <img class="sm:w-3 sm:h-3 w-2 h-2" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                                <div class="flex flex-col  sm:h-[5.5rem] h-[3rem]">
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-3 py-1 border rounded-lg">
+                                                    <h3 class="sm:text-sm text-[9px] font-bold text-center">BUY</h3>
+                                                    <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                                <div class="flex flex-col  sm:h-[7.5rem] h-auto items-center sm:text-[11px] text-[8px] font-semibold">
+                                                    <p class="text-center">Start per Game</p>
+                                                    <div class="flex flex-row w-full justify-evenly">
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>Goals</p>
+                                                            <p>Assist</p>
+                                                            <p>Points</p>
+                                                            <p>Shots</p>
+                                                            <p>Blocks</p>
+                                                            <p>TOI</p>
+                                                            <p>PP TQI</p>
+                                                        </div>
+                                                        <div class="sm:text-[10px] text-[5px]">
+                                                            <p>.45</p>
+                                                            <p>.35</p>
+                                                            <p>.80</p>
+                                                            <p>2.76</p>
+                                                            <p>1.2</p>
+                                                            <p>16:53</p>
+                                                            <p>2.12</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-[#ffa100] w-full sm:py-[3%] py-0 border rounded-lg">
+                                                    <h3 class="sm:text-[12px] text-[10px] font-semibold text-center">Last 5</h3>
+                                                </div>
+                                            </div>       
+                                        </div>                                                   
+                                    </div>
+                                @endif   
+                            @endforeach
                         </div>
                         <div class="flex flex-row justify-center gap-3">
                             <div class="flex flex-row justify-center gap-3">
                                 <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
                                     <div>
-                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
                                     <div class="   ">
                                         <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
@@ -8262,8 +8339,8 @@
                                 </div>
                                 <div class="flex flex-row items-center  rounded-md gap-2 w-[37%]">
                                     <div>
-                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
                                     </div>
                                     <div class="   ">
                                         <div class="sm:w-[6rem] w-[3rem] bg-slate-300 flex flex-col justify-between border rounded-lg hidden drftking">
@@ -8339,44 +8416,64 @@
                     <div id="p-box" class="flex flex-col items-center w-full mt-10">
                         <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
                         <div class="flex flex-row justify-between frstrow ">
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                  
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                                                                         
-                            </div>
-                            <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
-                                <div class="">
-                                    <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
-                                </div>
-                                                            
-                            </div>
+                            @foreach($result->data->slots as $key=>$item)
+                               @if($key == 'b1')
+                                    <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full   ">
+                                        <div class="">
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        </div>
+                                    </div>
+                                @endif
+                                @if($key == 'pp22')
+                                    <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full ">
+                                        <div class="">
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        </div>                                                       
+                                    </div>
+                                @endif
+                                @if($key == 'b3')
+                                    <div class="flex flex-row items-center rounded-md sm:gap-2 gap-0 w-full  ">
+                                        <div class="">
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        </div>                          
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>
                         <div class="flex flex-row justify-center gap-3 scondrow">
                             <div class="flex flex-row justify-center gap-3">
-                                <div class="flex flex-row items-center rounded-md gap-2 w-[33%]">
-                                    <div>
-                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                            @foreach($result->data->slots as $key=>$item)
+                                @if($key == 'b4')
+                                    <div class="flex flex-row items-center rounded-md gap-2 w-[33%]">
+                                        <div>
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        </div>
+                                        
                                     </div>
-                                     
-                                </div>
-                                <div class="flex flex-row items-center  rounded-md gap-2 w-[33%]">
-                                    <div>
-                                        <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                        <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                @endif
+                                @if($key == 'b5')
+                                    <div class="flex flex-row items-center  rounded-md gap-2 w-[33%]">
+                                        <div>
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        </div>
+                                                                    
                                     </div>
-                                                                
-                                </div>
+                                @endif
+                                @if($key == 'b6')
+                                    <div class="flex flex-row items-center  rounded-md gap-2 w-[33%]">
+                                        <div>
+                                            <p class="text-center sm:text-[10px] text-[6px] bg-slate-300 p-0.5 border rounded-lg font-bold"> {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 sm:max-w-full min-w-[2rem]" alt="">
+                                        </div>
+                                                                    
+                                    </div>
+                                @endif
+                            @endforeach
                             </div>
                         </div>  
                     </div>
