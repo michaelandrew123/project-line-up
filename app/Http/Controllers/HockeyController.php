@@ -81,6 +81,23 @@ class HockeyController extends Controller
     public function nhlHome(){
         
         $client = new \GuzzleHttp\Client();
+
+        $home = $client->get(
+            'https://api.projectedlineups.com/v1/content/posts',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+        $first_cards = $home->getBody();
+        $home_cards = json_decode($first_cards);
+        // dd($home_cards);
+        // print_r(json_decode((string) $body));
+
+
+
         $articles = $client->get(
             'https://api.projectedlineups.com/v1/content/posts/7',
             [
@@ -105,13 +122,14 @@ class HockeyController extends Controller
             ]
         );
        
-        // print_r(json_decode((string) $body));
+       
          $player= $goalies->getBody();
          $player_news = json_decode($player);
+          // print_r(json_decode((string) $body));
         //  dd( $player_news);
        
- 
-        return view('pages/nhlhome')->with(['articles' => $result_article , 'goalies' => $player_news] );;
+       
+        return view('pages/nhlhome')->with(['articles' => $result_article, 'home' => $home_cards, 'goalies' => $player_news] );;
     }
     public function nhlProps(){
         return view('pages/nhlprops');
