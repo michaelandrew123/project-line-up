@@ -48,6 +48,10 @@
       $('.drp-dwn').toggleClass('hidden');
       $('.arrw-v1').toggleClass('rotate-[271deg]');
     })
+    $('#head-drp-mob').on('click', function(){
+      $('.drp-dwn-mob').toggleClass('hidden');
+      $('.arrw-v1-mob').toggleClass('rotate-[271deg]');
+    })
     // nhl line-combos sub link
     //  $('#sub-hed > .d-kings').on('click', function(){
       //   $('.d-kings').addClass('bg-[#ff8210]');

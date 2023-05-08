@@ -76,14 +76,13 @@
             <div class=" mx-3 ">
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-row gap-2 items-center">  
-                      <!-- <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt=""> -->
+                        <!-- <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt=""> -->
                         <div>
                             <a href="{{ $result->data->source->url  }}" class=" " target="_blank">
-                                <p class="text-[13px] font-semibold">{{ $result->data->source->name  }} </p>
+                                <p class="text-[13px] font-semibold">{{ $result->data->source->name  }}</p>
                             </a>
                             <p class="text-[13px] font-semibold">{{ $result->data->updated_at->date  }} | {{ $result->data->updated_at->time  }}</p>
                             {{--<p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>--}}   
-                            
                         </div>
                     </div>
                     <div class="relative hidden">
@@ -6048,12 +6047,32 @@
             <button class="sm:text-xl text-sm font-bold bg-[#ebece9] text-black w-full h-12 rounded-md">STARTING GOALIES</button>
             <button class="sm:text-xl text-sm font-bold bg-[#1d9bf0] text-black w-full h-12 rounded-md">LINE COMBOS</button>
         </div>
-        <div class="relative mx-2 z-20">
-            <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg linecomb-input-mob" type="" value="Search team projected lineups"> 
+        
+            <!-- <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg linecomb-input-mob" type="" value="Search team projected lineups"> 
             <a class="absolute right-[12px] top-[12px] font-extrabold" href="">
                <img class="w-[2.5rem]" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
-            </a>
-        </div>
+            </a> -->
+           
+                <!-- <a href="#" id="head-drp" class="sm:text-xl text-sm font-bold border border-slate-300 w-full h-[3rem] rounded-full bg-slate-300"> {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
+                <div class="drp-dwn hidden flex flex-col bg-slate-300 w-[13rem] p-2 absolute">
+                    @foreach($team->data as $key=>$val)
+                    <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                    @endforeach
+                </div> -->
+                
+
+                <div id="head-drp-mob" class=" relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
+                    <a href="#" class="w-full text-[20px] text-center font-bold text-[#9fa0a0] font-semibold">{{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
+                    <div class="drp-dwn-mob hidden flex flex-col w-full p-2 bg-slate-100 absolute top-12 overflow-y-auto h-[17rem]">
+                        @foreach($team->data as $key=>$val)
+                        <a class="teams text-[20px]  font-bold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                        @endforeach
+                    </div>
+                    <a class="absolute right-[15px] top-[12px] rotate-[271deg] arrw-v1-mob" href="">
+                        <img class="w-[2rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
+                    </a>
+                </div>
+   
     </div>
     <div class="flex flex-col items-center  ">
         <div class="w-[95%] mx-5">   
