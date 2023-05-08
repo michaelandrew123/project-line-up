@@ -93,7 +93,7 @@ class HockeyController extends Controller
         );
         $first_cards = $home->getBody();
         $home_cards = json_decode($first_cards);
-        // dd($home_cards);
+
         // print_r(json_decode((string) $body));
 
 
@@ -109,7 +109,7 @@ class HockeyController extends Controller
         );
         $latest_article = $articles->getBody();
         $result_article = json_decode($latest_article);
-        // dd($result_article);
+
         // print_r(json_decode((string) $body));
 
         $goalies = $client->get(
@@ -129,7 +129,7 @@ class HockeyController extends Controller
         //  dd( $player_news);
        
        
-        return view('pages/nhlhome')->with(['articles' => $result_article, 'home' => $home_cards, 'goalies' => $player_news] );;
+        return view('pages/nhlhome')->with(['articles' => $result_article, 'contentPosts' => $home_cards->data, 'goalies' => $player_news] );;
     }
     public function nhlProps(){
         return view('pages/nhlprops');

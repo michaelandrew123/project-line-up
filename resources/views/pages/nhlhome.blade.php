@@ -48,22 +48,64 @@
                     <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
                 <div class="flex md:flex-row justify-center">
-                    @foreach($home as $id=>$items)
-                       
+
+
+
+                    @foreach($contentPosts as $key=>$item)
+
+                        {{--{{ $item->category->slug }}--}}
+                        @if($item->category->slug === 'morning-skate')
                             <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72 border border-slate-200 relative rounded-xl flex justify-center bg-white">
                                 <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
                                     <div class="flex flex-row items-center gap-2">
-                                        <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                        <h1 class="font-extrabold"></h1>
+                                        <img class="w-8" src="">
+                                        <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
-                                    <img src="{{ asset('/images/home-page/45876_a11.jpg') }}" class="w-[16rem]">
-                                    <p class="text-[12px] font-extrabold">San jose changes up their top line as they face the race the Rangers</p>
+                                    <img src="  {{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
                                     <div class="flex w-full justify-end mt-4">
                                         <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
                             </div>
-                       
+                        @endif
+                        @if($item->category->slug === 'top-stacks')
+                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72 border border-slate-200 relative rounded-xl flex justify-center bg-white">
+                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
+                                    <div class="flex flex-row items-center gap-2">
+                                        <img class="w-8" src="">
+                                        <h1 class="font-extrabold">{{$item->category->name}}</h1>
+                                    </div>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                    <div class="flex w-full justify-end mt-4">
+                                        <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+                        @if($item->category->slug === 'props-and-odds')
+                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72 border border-slate-200 relative rounded-xl flex justify-center bg-white">
+                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
+                                    <div class="flex flex-row items-center gap-2">
+                                        <img class="w-8" src="">
+                                        <h1 class="font-extrabold">{{$item->category->name}}</h1>
+                                    </div>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                    <div class="flex w-full justify-end mt-4">
+                                        <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+
+
+
+                       {{----}}
                          
                             <!-- <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72  relative ml-5 mr-5 border border-slate-200 rounded-xl flex justify-center bg-white">
                                 <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
@@ -143,43 +185,52 @@
                             NHL Starting Goalies
                         </h1>
                     </div>
-                    <!-- {{count($goalies->data )}} -->
-                  
+                    @php
+                        $count_nhl_starting_goalies = 0;
+                    @endphp
                         <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 gap-[10px]">
                             @foreach($goalies->data as $key=>$val)
-                                <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%] md:h-[18rem] relative rounded-xl bg-white">
-                                    <div class="flex m-1 mt-5 ">
-                                        <img class="xl:w-24 lg:w-[4.5rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{$val->player->images->uniform}}">
-                                        <div class="flex flex-col ml-2 gap-3">
-                                            <div class="flex flex-row gap-2">
-                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                <p class="text-[11px] font-bold">
-                                                  Confirmed
-                                                </p>
-                                            </div>
-                                            <div class="flex flex-col">
-                                                <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">{{$val->player->full_name}} </h1>
-                                                <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                    <div class=" ml-1 mb-2 lg:pb-3 md:pb-1">
-                                        <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">{{$val->title}}</p>
-                                        <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">{{$val->description}}</p>
-                                    </div>
-                                    <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between absolute bottom-1">
-                                        <div class="flex flex-row items-center">
-                                            <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                            <div>
-                                                <h3 class="text-[13px]">{{$val->source->name}}</h3>
-                                                <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+
+                                @php
+                                    $count_nhl_starting_goalies++;
+                                @endphp
+                                @if($count_nhl_starting_goalies <= 6 )
+                                    <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%] md:h-[18rem] relative rounded-xl bg-white">
+                                        <div class="flex m-1 mt-5 ">
+                                            <img class="xl:w-24 lg:w-[4.5rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{$val->player->images->uniform}}">
+                                            <div class="flex flex-col ml-2 gap-3">
+                                                <div class="flex flex-row gap-2">
+                                                    <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-[11px] font-bold">
+                                                      Confirmed
+                                                    </p>
+                                                </div>
+                                                <div class="flex flex-col">
+                                                    <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">{{$val->player->full_name}} </h1>
+                                                    <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                            <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                        <div class=" ml-1 mb-2 lg:pb-3 md:pb-1">
+                                            <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">{{$val->title}}</p>
+                                            <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">{{$val->description}}</p>
+                                        </div>
+                                        <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between absolute bottom-1">
+                                            <div class="flex flex-row items-center">
+                                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                                <div>
+                                                    <h3 class="text-[13px]">{{$val->source->name}}</h3>
+                                                    <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-row xl:gap-3 lg:gap-2">
+                                                <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                            </div>
                                         </div>
                                     </div>
-                                </div> 
+                                @endif
+
+
                             @endforeach
                         </div> 
                         <!-- @if(count($goalies->data) % 2 == 0)
@@ -616,10 +667,13 @@
                    <div class="flex items-center">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
-                            NHL Player News
+                            NHL Player News  sdasdadas
                         </h1>
                     </div>
                     <div class="flex flex-row w-full xl:justify-evenly lg:justify-between md:justify-between mb-3">
+
+
+
                         <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
@@ -646,6 +700,10 @@
                                 </div>
                             </div>
                         </div>
+
+
+
+
                         <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem] rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">
@@ -672,6 +730,9 @@
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">
@@ -698,7 +759,11 @@
                                 </div>
                             </div>
                         </div>
+
+
+
                     </div>
+
                     <div class="flex flex-row w-full xl:justify-evenly lg:justify-between md:justify-between mb-3">
                         <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
