@@ -35,11 +35,21 @@
                 <img class="w-7 w-5" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
             </button>
         </div>
+        
         <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
-            <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">{{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
-            <div class="drp-dwn hidden flex flex-col w-full p-2 bg-slate-100 absolute top-12 overflow-y-auto h-[26rem]">
+            <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">
+                {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}
+            </a>
+            
+            <div class="drp-dwn hidden flex flex-col  w-full p-2 bg-slate-100 absolute top-12 overflow-y-auto h-[26rem]">
                 @foreach($team->data as $key=>$val)
-                  <a class="teams text-4xl font-semibold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                <div class="flex flex-row items-center gap-10">
+                  <a class="teams text-4xl font-semibold text-[#9fa0a0] " href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                  <div class="flex flex-col">
+                     <img class="w-8 flex " src="{{$val->logo->src}}" alt="">
+                  </div>
+                </div>
+                  
                 @endforeach
             </div>
             <a class="absolute right-[15px] top-[6px] rotate-[271deg] arrw-v1" href="">
