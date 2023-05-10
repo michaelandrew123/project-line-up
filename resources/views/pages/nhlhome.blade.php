@@ -58,7 +58,7 @@
                             <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex justify-center bg-white">
                                 <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 relative">
                                     <div class="flex flex-row items-center gap-2">
-                                        <img class="w-8" src="">
+                                        <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
                                     <img src="  {{$item->metafields->featured_image->url }}" class="w-[16rem]">
@@ -74,7 +74,7 @@
                             <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex justify-center bg-white">
                                 <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 relative">
                                     <div class="flex flex-row items-center gap-2">
-                                        <img class="w-8" src="">
+                                        <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
                                     <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
@@ -90,7 +90,9 @@
                             <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex justify-center bg-white">
                                 <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 relative">
                                     <div class="flex flex-row items-center gap-2">
-                                        <img class="w-8" src="">
+                                        <div class="w-7 h-7 bg-green-600 rounded-full flex justify-center items-center">
+                                            <p class="text-xl font-bold text-white">$</p>
+                                        </div>
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
                                     <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
@@ -1894,17 +1896,17 @@
                             style="backface-visibility: hidden">
                             
                                 <div class="flex flex-row justify-center">
-                                    <div class="w-[23rem]  h-72 border border-slate-200 relative rounded-xl flex justify-center bg-white">
+                                    <div class="w-[23rem]  h-80 border border-slate-200 relative rounded-xl flex justify-center bg-white relative">
                                         <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
                                             <div class="flex flex-row items-center gap-2">
-                                                <img class="w-8" src=" ">
+                                                <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                                 <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                             </div>
-                                            <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
-                                            <p class="text-[12px] font-extrabold">{{$item->title}}</p>
-                                            <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                            <div class="flex w-full justify-end mt-4">
-                                            <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                             <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                             <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                             <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                            <div class="flex w-full justify-end mt-4  ">
+                                              <img class="w-[21px] h-[25px] absolute bottom-2" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                             </div>
                                         </div>
                                     </div> 
@@ -1919,17 +1921,17 @@
                             style="backface-visibility: hidden">
                            
                             <div class="flex flex-row justify-center">
-                                <div class="w-[23rem]  h-72 border border-slate-200 relative rounded-xl flex justify-center bg-white">
+                                <div class="w-[23rem]  h-80 border border-slate-200 relative rounded-xl flex justify-center bg-white relative">
                                     <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
                                         <div class="flex flex-row items-center gap-2">
-                                            <img class="w-8" src=" ">
+                                            <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }} ">
                                             <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                         </div>
                                         <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
                                         <p class="text-[12px] font-extrabold">{{$item->title}}</p>
                                         <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                        <div class="flex w-full justify-end mt-4">
-                                        <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                        <div class="flex w-full justify-end mt-4  ">
+                                          <img class="w-[21px] h-[25px] absolute bottom-2" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                         </div>
                                     </div>
                                 </div> 
@@ -1942,18 +1944,20 @@
                             data-te-carousel-item
                             style="backface-visibility: hidden">
                            
-                            <div class="flex flex-row justify-center">
-                                <div class="w-[23rem]  h-72 border border-slate-200 relative rounded-xl flex justify-center bg-white">
+                            <div class="flex flex-row justify-center relative">
+                                <div class="w-[23rem]  h-80 border border-slate-200 relative rounded-xl flex justify-center bg-white ">
                                     <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
                                         <div class="flex flex-row items-center gap-2">
-                                            <img class="w-8" src=" ">
+                                            <div class="w-7 h-7 bg-green-600 rounded-full flex justify-center items-center">
+                                                <p class="text-xl font-bold text-white">$</p>
+                                            </div>
                                             <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                         </div>
                                         <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
                                         <p class="text-[12px] font-extrabold">{{$item->title}}</p>
                                         <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                        <div class="flex w-full justify-end mt-4">
-                                        <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                        <div class="flex w-full justify-end mt-4 ">
+                                          <img class="w-[21px] h-[25px] absolute bottom-2" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                         </div>
                                     </div>
                                 </div> 
@@ -2075,9 +2079,9 @@
                                     data-te-carousel-item
                                     style="backface-visibility: hidden">
                                     <div class="flex flex-row justify-center">
-                                        <div class="w-[23rem] h-[21rem]  relative rounded-xl bg-white border border-black">
-                                            <div class="flex m-1 mt-5 ">
-                                                <img class="h-36 w-26" src="{{$val->player->images->uniform}}">
+                                        <div class="w-[23rem] h-[23rem]  relative rounded-xl bg-white border border-black relative">
+                                            <div class="flex mx-2 mt-5 ">
+                                                 <img class="h-28 w-28" src="{{$val->player->images->uniform}}">
                                                 <div class="flex flex-col ml-2 gap-3">
                                                     <div class="flex flex-row gap-2">
                                                         <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
@@ -2089,19 +2093,19 @@
                                                     </div>  
                                                 </div>
                                             </div>
-                                            <div class=" ml-1 mb-2 pb-1">
+                                            <div class=" mx-2 mb-2 pb-1">
                                                 <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
                                                 <p class="text-[11px] font-semibold">{{$val->description}}</p>
                                             </div>
-                                            <div class="flex items-center justify-between mx-2">
-                                                <div class="flex flex-row items-center">
+                                            <div class="flex items-center justify-between absolute bottom-2 w-full">
+                                                <div class="flex flex-row items-center mx-2">
                                                     <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <h3 class="text-[13px] ">{{$val->source->name}}</h3>
                                                         <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-row gap-2">
+                                                <div class="mx-2">
                                                     <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                                 </div>
                                             </div>
@@ -2114,9 +2118,9 @@
                                     data-te-carousel-item
                                     style="backface-visibility: hidden">
                                     <div class="flex flex-row justify-center">
-                                        <div class="w-[23rem] h-[21rem]  relative rounded-xl bg-white border border-black">
-                                            <div class="flex m-1 mt-5 ">
-                                                <img class="h-36 w-26" src="{{$val->player->images->uniform}}">
+                                        <div class="w-[23rem] h-[23rem]  relative rounded-xl bg-white border border-black">
+                                            <div class="flex mx-2 mt-5 ">
+                                                <img class="h-28 w-28" src="{{$val->player->images->uniform}}">
                                                 <div class="flex flex-col ml-2 gap-3">
                                                     <div class="flex flex-row gap-2">
                                                         <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
@@ -2128,19 +2132,19 @@
                                                     </div>  
                                                 </div>
                                             </div>
-                                            <div class=" ml-1 mb-2 pb-1">
+                                            <div class=" mx-2 mb-2 pb-1">
                                                 <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
                                                 <p class="text-[11px] font-semibold">{{$val->description}}</p>
                                             </div>
-                                            <div class="flex items-center justify-between mx-2">
-                                                <div class="flex flex-row items-center">
+                                            <div class="flex items-center justify-between  absolute bottom-2 w-full">
+                                                <div class="flex flex-row items-center mx-2">
                                                     <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                                     <div>
                                                         <h3 class="text-[13px] ">{{$val->source->name}}</h3>
                                                         <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-row gap-2">
+                                                <div class="flex flex-row gap-2 mx-2">
                                                     <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                                 </div>
                                             </div>
@@ -2372,8 +2376,8 @@
                                 data-te-carousel-item
                                 style="backface-visibility: hidden">
                                 <div class="flex flex-row justify-center">
-                                    <div class="flex flex-col gap-3 w-[23rem] h-[21rem]  rounded-xl bg-white relative border border-black mx-5">
-                                        <div class="flex m-1 mt-5 ">
+                                    <div class="flex flex-col gap-3 w-[23rem] h-[23rem]  rounded-xl bg-white relative border border-black mx-5">
+                                        <div class="flex mx-2 mt-5 ">
                                             <img class="w-20 h-20" src="{{$val->player->images->uniform}}">
                                             <div class="flex flex-col ml-2 gap-3">
                                                 <div class="flex flex-row items-center gap-2">
@@ -2386,7 +2390,7 @@
                                                 </div>                                                                      
                                             </div>
                                         </div>
-                                        <div class=" ml-1">
+                                        <div class="mx-2 ">
                                             <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
                                             <p class="text-[11px] font-semibold">{{$val->description}}</p>
                                         </div>
@@ -2406,8 +2410,8 @@
                                 data-te-carousel-item
                                 style="backface-visibility: hidden">
                                 <div class="flex flex-row justify-center">
-                                    <div class="flex flex-col gap-3 w-[23rem] h-[21rem]  rounded-xl bg-white relative border border-black mx-5">
-                                        <div class="flex m-1 mt-5 ">
+                                    <div class="flex flex-col gap-3 w-[23rem] h-[23rem]  rounded-xl bg-white relative border border-black mx-5">
+                                        <div class="flex mx-2 mt-5 ">
                                             <img class="w-20 h-20" src="{{$val->player->images->uniform}}">
                                             <div class="flex flex-col ml-2 gap-3">
                                                 <div class="flex flex-row items-center gap-2">
@@ -2420,7 +2424,7 @@
                                                 </div>                                                                      
                                             </div>
                                         </div>
-                                        <div class=" ml-1">
+                                        <div class="mx-2">
                                             <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
                                             <p class="text-[11px] font-semibold">{{$val->description}}</p>
                                         </div>
