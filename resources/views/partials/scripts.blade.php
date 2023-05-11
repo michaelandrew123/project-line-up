@@ -36,7 +36,7 @@
         }, function(){
         $(this).css("border-left", "none");
     });
-
+    
     //   header logo
     $("div#main-menu1 > div > a, div#main-menu2 > div > a" ).hover(function() {  
         var data = $(this).attr('rel'); 
@@ -52,7 +52,79 @@
     $('#head-drp-mob').on('click', function(){
       $('.drp-dwn-mob').toggleClass('hidden');
       $('.arrw-v1-mob').toggleClass('rotate-[271deg]');
-    })
+    });
+ 
+    $('#SN').on('change', function(){
+    	var demovalue = $(this).val(); 
+        if(demovalue == 'val1'){
+          $('#hockey').removeClass('hidden');
+          $('#base').addClass('hidden');
+          $('#rugby').addClass('hidden');
+          $('#basket').addClass('hidden');
+          $('#soccer').addClass('hidden');
+        }else if(demovalue == 'val2'){
+          $('#base').removeClass('hidden');
+          $('#hockey').addClass('hidden');
+          $('#rugby').addClass('hidden');
+          $('#basket').addClass('hidden');
+          $('#soccer').addClass('hidden');
+        }else if(demovalue == 'val3') {
+          $('#rugby').removeClass('hidden');
+          $('#hockey').addClass('hidden');
+          $('#base').addClass('hidden');
+          $('#basket').addClass('hidden');
+          $('#soccer').addClass('hidden');
+        }else if(demovalue == 'val4') {
+          $('#basket').removeClass('hidden');
+          $('#rugby').addClass('hidden');
+          $('#hockey').addClass('hidden');
+          $('#base').addClass('hidden');
+          $('#soccer').addClass('hidden');
+        }else if(demovalue == 'val5'){
+          $('#soccer').removeClass('hidden');
+          $('#hockey').addClass('hidden');
+          $('#base').addClass('hidden');
+          $('#basket').addClass('hidden');
+          $('#rugby').addClass('hidden');
+        }else{
+
+        }
+    });
+    $('#SN').on('change', function(){
+    	var demovalue = $(this).val();
+        if(demovalue == 'val1'){
+          $('.NHL').removeClass('hidden');
+          $('.MLB').addClass('hidden');
+          $('.NFL').addClass('hidden');
+          $('.NBA').addClass('hidden');
+          $('.SOC').addClass('hidden');
+        }else if(demovalue == 'val2'){
+          $('.NHL').addClass('hidden');
+          $('.MLB').removeClass('hidden');
+          $('.NFL').addClass('hidden');
+          $('.NBA').addClass('hidden');
+          $('.SOC').addClass('hidden');
+        }else if(demovalue == 'val3'){
+          $('.NHL').addClass('hidden');
+          $('.MLB').addClass('hidden');
+          $('.NFL').removeClass('hidden');
+          $('.NBA').addClass('hidden');
+          $('.SOC').addClass('hidden');
+        }else if(demovalue == 'val4'){
+          $('.NHL').addClass('hidden');
+          $('.MLB').addClass('hidden');
+          $('.NFL').addClass('hidden');
+          $('.NBA').removeClass('hidden');
+          $('.SOC').addClass('hidden');
+        }else if(demovalue == 'val5'){
+          $('.NHL').addClass('hidden');
+          $('.MLB').addClass('hidden');
+          $('.NFL').addClass('hidden');
+          $('.NBA').addClass('hidden');
+          $('.SOC').removeClass('hidden');
+        }
+    });
+  
     // nhl line-combos sub link
     //  $('#sub-hed > .d-kings').on('click', function(){
       //   $('.d-kings').addClass('bg-[#ff8210]');

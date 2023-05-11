@@ -6,7 +6,7 @@
 <!-- Desktop design -->
 <div class="w-full flex justify-center ">
     <div class=" flex justify-center xl:block lg:block md:block smm-hidden xl:w-11/12 max-w-screen-2xl"> 
-    <div class="w-11/12  border-black m-4  ">
+    <div class="w-11/12  m-4  ">
         <div class="flex flex-row justify-between items-center">
             <div class="flex gap-3">
                 <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
