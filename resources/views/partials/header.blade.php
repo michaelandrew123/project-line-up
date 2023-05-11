@@ -432,12 +432,12 @@
                         <div class="relative">
                             <!-- <span class="text-[50px] text-white rotate-90 absolute right-2 bottom-[-19px]" href=""></span> -->
                             <select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">
-                                <option class="xl:text-lg text-md font-semibold" value="1">
+                                <option class="xl:text-lg text-md font-semibold" value="val1">
                                    <a class="nhl" href="">NHL</a></option> 
-                                <option id="mlb" class="xl:text-lg text-md font-semibold" value="2">MLB</option>
-                                <option id="nfl" class="xl:text-lg text-md font-semibold" value="3">NFL</option>
-                                <option id="nba" class="xl:text-lg text-md font-semibold" value="4">NBA</option>
-                                <option id="soc" class="xl:text-lg text-md font-semibold" value="5">SOC</option>
+                                <option id="mlb" class="xl:text-lg text-md font-semibold" value="val2">MLB</option>
+                                <option id="nfl" class="xl:text-lg text-md font-semibold" value="val3">NFL</option>
+                                <option id="nba" class="xl:text-lg text-md font-semibold" value="val4">NBA</option>
+                                <option id="soc" class="xl:text-lg text-md font-semibold" value="val5">SOC</option>
                             </select>
                             <img class="absolute xl:top-2 lg:top-2.5 right-0.5 xl:w-[24px] lg:w-[24px] xl:h-[24px] lg:h-[24px] xl:block lg:block md:hidden rotate-[270deg] arrw" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
                             <!-- <img class="absolute top-0 right-0 w-[3.5rem] h-[4rem]" src="{{ asset('/images/starting-goalies/arrowhead-white.png') }}" alt="">     -->
