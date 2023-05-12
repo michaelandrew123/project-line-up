@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="w-full flex flex-row justify-center ">
-  <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col  m-4 gap-5 block smm-hidden">
+  <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col  m-4 gap-5 block max-w-screen-2xl smm-hidden">
         <div class="flex flex-row justify-between items-center">
           <div class="flex gap-3">
               <img class="w-16 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
@@ -44,7 +44,7 @@
 </div> -->
 
   <div class="w-full bg-slate-200 flex justify-center">
-    <div class="w-[95%] block smm-hidden">
+    <div class="w-[95%] block smm-hidden max-w-screen-2xl">
       <div class=" bg-[#d9d9d9] flex flex-row  items-center rounded-md">
           <h1 class="text-center py-10 text-3xl font-bold w-full">NHL Player Props</h1>
       </div>
@@ -105,7 +105,7 @@
                     <li><a href=""><img class="w-16 ml-1" src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a></li>
                     <li><a href=""><img class="w-16 ml-1" src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li> -->
                     
-      <div class="w-full flex flex-row">
+      <div class="w-full flex flex-row ">
         <div class="w-14">
           <!-- <div class="shadow-lg rounded-lg overflow-hidden">
             <div class="py-3 px-5 bg-gray-50" style="">Bar chart</div>

@@ -41,8 +41,9 @@
         </div>
     </div>
 </div>
-<div class="w-full flex flex-col justify-center gap-5">
-    <div class="flex flex-col items-center justify-between bg-[#38b6ff] w-full h-52 border border-black smm-hidden">
+<div class="flex w-full justify-center">
+<div class="w-full flex flex-col justify-center gap-5 max-w-screen-2xl">
+    <div class="flex flex-col items-center justify-between bg-[#38b6ff] w-full h-52 border border-black smm-hidden  ">
         <h1 class="text-black xl:text-5xl lg:text-4xl md:text-2xl font-semibold">Toronto Maple Leafs easily the top stack tonight</h1>
         <div class="flex flex-row">
            <img class="xl:w-28 xl:h-28   border border-black" src="{{ asset('/images/menu-icon/.png') }}" alt=""> 
@@ -186,6 +187,7 @@
             </div>     
         </div>  
     </div>
+</div>
 </div>
 
 

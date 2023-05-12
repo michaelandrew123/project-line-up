@@ -35,7 +35,7 @@
                 <img class="w-7 w-5" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
             </button>
         </div>
-        <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
+        <!-- <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
             <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">
                 {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}
             </a>
@@ -52,21 +52,19 @@
             <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
                 <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
             </a>
-        </div>
-        <!-- <div id="head-drp" >
+        </div> -->
+        <div id="head-drp" >
             <select class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center" name="" id="">
                 @foreach($team->data as $key=>$val)
-                    <option class="" value="" href="/nhl/line-combos/{{$val->slug}}">
-                       {{$val->name}}
-                           
+                    <option class="" value="">
+                        <a href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
                     </option>
                 @endforeach
             </select>
             <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
                 <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
             </a>
-        </div> -->
-        
+        </div>
         <div class="relative w-full hidden">
             <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input " type="" value="Search team projected lineups or players"> 
             <a class="absolute right-[15px] top-[7px]" href="">
@@ -274,9 +272,6 @@
                             @endif
                         @endforeach
                     </div>
-
-
-
                     <div class="flex flex-row justify-center gap-3">
                         @foreach($result->data->slots as $key=>$item)
 
@@ -295,10 +290,6 @@
 
                         @endforeach
                     </div>
-
-
-
-
                     <div class="flex flex-row justify-center gap-3">
                         @foreach($result->data->slots as $key=>$item)
 
@@ -318,10 +309,9 @@
 
                         @endforeach
                     </div>
-
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
-                <img class="w-auto" src="{{ asset('/images/menu-icon/newsletter.png') }}" alt=""> 
+                 <img class="w-auto" src="{{ asset('/images/menu-icon/newsletter.png') }}" alt=""> 
                 <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-1 mb-6">GOALIES</h1>
                     <div class="flex flex-row justify-center gap-3">
@@ -659,7 +649,7 @@
     <!-- End of Line-ups -->
    <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden">
         <div class="w-11/12 md:w-full flex flex-col items-center gap-6 max-w-screen-2xl">
-            <div class="bg-slate-300 h-[2px] w-11/12"></div>
+            <div class="bg-slate-300 h-[2px] w-11/12 max-w-screen-2xl"></div>
                 <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg">FORWARDS</h1>
                 <div class="flex flex-row justify-between xl:w-11/12 lg:w-full gap-3.5 md:gap-0">
                     <div class="flex flex-row items-center gap-2 w-8/12 ">
@@ -1530,7 +1520,7 @@
                 <div class="w-11/12  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-xl font-bold p-3"> Stack Price: $25,500</h1></div>
                 <div class="w-11/12  rounded-lg bg-[#ffa100] dk-price hidden"><h1 class="text-center text-xl font-bold p-3"> Stack Price: $25,500</h1></div>
             </div>
-            <div class="w-10/12 flex flex-row justify-between gap-2 my-10">
+            <div class="w-10/12 flex flex-row justify-between gap-2 my-10 max-w-screen-2xl">
                     <div class="flex flex-col items-center gap-8 w-9/12  md:w-full">
                        <div class="bg-slate-300 h-[2px] w-11/12"></div>
                        <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg w-[5rem] text-center">DEFENCE</h1>
@@ -2118,7 +2108,7 @@
                 </div>
                 <img class="xl:w-[20rem] w-[7rem]  h-3/5 lg:h-2/5 md:h-1/4" src="{{ asset('/images/menu-icon/adds1.png') }}">
             </div>
-            <div class="w-full flex flex-col items-center  gap-8 ">
+            <div class="w-full flex flex-col items-center  gap-8 max-w-screen-2xl">
                 <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg w-[6rem] ">PLAYER-1</h1>  
                 <div class="flex flex-col w-11/12 md:w-full gap-5">                    
                 <div class="flex flex-row justify-between xl:w-11/12 w-full gap-3.5 md:gap-0">
@@ -2481,7 +2471,7 @@
                     </div>
                 </div>      
             </div>
-            <div class="w-full flex flex-col items-center  gap-8 ">
+            <div class="w-full flex flex-col items-center  gap-8 max-w-screen-2xl">
                 <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg w-[6rem] ">PLAYER-2</h1>  
                 <div class="flex flex-col w-11/12 md:w-full gap-5">                    
                 <div class="flex flex-row justify-between xl:w-11/12 w-full gap-3.5 md:gap-0">
@@ -2845,7 +2835,7 @@
                 </div>      
             </div>
                 <div class="bg-slate-300 h-[2px] w-9/12 flex  my-5"></div>
-               <div class="flex flex-col items-center w-9/12 gap-5">
+            <div class="flex flex-col items-center w-9/12 gap-5">
                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
                 <div class="flex flex-row justify-between w-full">
                     <div class="flex flex-col items-center gap-2 w-[32%]">

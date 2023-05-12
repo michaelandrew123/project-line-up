@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="flex flex-row justify-center relative">
-    <div class="w-[72%] flex flex-col items-center">
+    <div class="w-[72%] flex flex-col items-center max-w-screen-2xl">
         <div class="bg-[#1d9bf0] w-full h-32 flex flex-col items-center justify-center">
             <h1 class="text-white text-[28px]">NHL Weekly Schedule</h1>
             <p class="text-white">Week of January 9,2023</p>
@@ -1271,8 +1271,8 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col justify-between border border-slate-200 w-[20%] xl:block lg:hidden relative">
-        <div class="relative sticky top-0">
+    <div class="flex flex-col justify-between border border-slate-200 w-64 xl:block lg:hidden  relative">
+        <div class="relative sticky top-0 ">
             <div class="w-full border border-slate-200 h-[18rem] bg-slate-400">
               <img class="w-full h-full" src="{{ asset('/images/menu-icon/adds2.png') }}">
             </div>
@@ -1310,8 +1310,8 @@
         
     </div>
 </div>
-<div class="flex flex-row justify-center ">
-  <div class=" bg-slate-800 w-[92%] flex flex-row justify-between">
+<div class="flex flex-row justify-center w-full">
+  <div class=" bg-slate-800 w-[92%] flex flex-row justify-between w-full">
      <h1 class=" text-white p-3">COPYRIGHT &#169 THE NATONAL NETWORK LTD</h1>
      <div class="flex items-center">
         <a class="text-white p-3" href="">CONTACT</a>
