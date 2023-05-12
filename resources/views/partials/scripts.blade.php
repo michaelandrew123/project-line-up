@@ -53,7 +53,7 @@
       $('.drp-dwn-mob').toggleClass('hidden');
       $('.arrw-v1-mob').toggleClass('rotate-[271deg]');
     });
- 
+  //  header input 
     $('#SN').on('change', function(){
     	var demovalue = $(this).val(); 
         if(demovalue == 'val1'){

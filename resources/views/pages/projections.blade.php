@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="w-full flex flex-col items-center bg-stone-200 ">
+<div class="w-full flex flex-col items-center  ">
    
-    <div class="w-[90%] flex flex-col gap-3">
+    <div class="w-[90%] flex flex-col gap-3 bg-stone-200 max-w-screen-2xl">
         <div class="w-full flex flex-row items-center justify-between">
             <h1 class="text-2xl font-bold">Daily Hockey Projections</h1>
             <a class="text-blue-400 text-[12px] text-end" href="#">Show Help</a>

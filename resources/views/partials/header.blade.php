@@ -876,18 +876,18 @@
                                 <img class="w-[20px] ml-2.5 hidden negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
                                 <a class="text-white font-bold text-sm p-1 link-text" menu="header3" rel="menu-news" href="#">News</a>
                             </ul>
-                                  <ul class="bg-white flex flex-col  menu-news hidden">
-                                    <li class=" border border-black w-full p-1">
-                                            <a class="flex flex-row items-center ml-[27px]" href="#">
-                                                <p class="ml-2 text-md font-semibold">PLAYER NEWS</p>
-                                            </a> 
-                                        </li>
-                                        <li class=" border border-black w-full p-1">
-                                            <a class="flex flex-row items-center ml-[27px]" href="#">
-                                                <p class="ml-2 text-md font-semibold">TEAM NEWS</p>
-                                            </a>
-                                        </li>
-                                  </ul>
+                            <ul class="bg-white flex flex-col  menu-news hidden">
+                                <li class=" border border-black w-full p-1">
+                                    <a class="flex flex-row items-center ml-[27px]" href="#">
+                                        <p class="ml-2 text-md font-semibold">PLAYER NEWS</p>
+                                    </a> 
+                                </li>
+                                <li class=" border border-black w-full p-1">
+                                    <a class="flex flex-row items-center ml-[27px]" href="#">
+                                        <p class="ml-2 text-md font-semibold">TEAM NEWS</p>
+                                    </a>
+                                </li>
+                            </ul>
                             <ul id="header4" class="flex flex-row bg-[#38b6ff] border border-black flex flex-row items-center gap-2 ">
                                 <img class="w-[20px] h-[20px] ml-2.5 plus" src="{{ asset('/images/menu-icon/plus.png') }}" alt="">
                                 <img class="w-[20px] ml-2.5 hidden negative" src="{{ asset('/images/menu-icon/negative.png') }}" alt="">
@@ -919,8 +919,8 @@
             </div>
             <!--End Mobile menu -->
         </div>
-     <!-- Desktop -->
-        <div class="w-4/5 m-auto lg:block md:block sm:hidden smm-hidden p-4 relative " id="sub-menu">
+        <!-- Desktop -->
+        <div class="w-4/5 m-auto lg:block md:block sm:hidden  max-w-screen-2xl smm-hidden p-4 relative " id="sub-menu">
             <ul class="list-none flex-row items-center gap-2 py-2 daily-fantasy hidden sm:flex-wrap smm-flex-wrap daily-menu active">
                 <li ><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold"  href="{{url('/starting-goaliesv1')}}">STARTING GOALIES</a></li>
                 <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="{{url('/line-combos')}}" >LINE COMBINATIONS</a></li>
@@ -928,7 +928,6 @@
                 <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="#">MATCH UP</a></li>
                 <li><a  class="xl:text-[16px] lg:text-[12px] font-semibold hover:font-bold md:text-[13px] md:hover:font-bold" href="{{url('/schedule')}}">SCHEDULE</a></li>
             </ul>
-
             <ul class="list-none flex-row gap-2 py-2 projections-menu hidden  smm-flex-wrap">
                 <li class="flex items-center">
                     <img class="w-5" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}">
