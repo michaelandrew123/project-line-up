@@ -2,7 +2,8 @@
 
 @section('content')
 <!-- first group shirt -->
- <div class="mb-8 ">
+<div class="flex flex-col items-center w-full">
+    <div class="mb-8  max-w-screen-2xl ">
       <div class="bg-[#1d9bf0] p-0.5 flex flex-row lg:justify-evenly justify-between items-end w-full">
             <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
@@ -241,11 +242,11 @@
             <div class="bg-black text-center p-3">
                   <h2 class="text-white  lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
                </div>
-      </div>
- </div>
+        </div>
+    </div>
  <!-- end of first shirt group -->
  <!-- second group row -->
- <div class="mb-8">
+    <div class="mb-8  max-w-screen-2xl">
       <div class="bg-[#1d9bf0] p-0.5 flex flex-row lg:justify-evenly justify-between items-end w-full">
             <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
@@ -479,10 +480,10 @@
               <h2 class="text-white lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
             </div>
       </div>
- </div>
+   </div>
  <!-- end of second row -->
  <!-- third group row -->
- <div class="mb-8">
+    <div class="mb-8  max-w-screen-2xl">
       <div class="bg-[#1d9bf0] p-0.5 flex flex-row lg:justify-evenly justify-between items-end w-full">
             <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
@@ -716,6 +717,7 @@
               <h2 class="text-white lg:text-xl md:text-xl text-base">STARRING GOALIES | LINE COMBINATION | DFS PROJECTIONS | GAME ODSS</h2>
             </div>
       </div>
+    </div>
  </div>
  <!-- end of third row -->
  <!-- old design -->

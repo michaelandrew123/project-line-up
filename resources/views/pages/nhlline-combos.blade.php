@@ -35,7 +35,7 @@
                 <img class="w-7 w-5" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
             </button>
         </div>
-        <!-- <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
+        <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
             <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">
                 {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}
             </a>
@@ -52,8 +52,8 @@
             <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
                 <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
             </a>
-        </div> -->
-        <div id="head-drp" >
+        </div>
+        <!-- <div id="head-drp" >
             <select class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center" name="" id="">
                 @foreach($team->data as $key=>$val)
                     <option class="" value="">
@@ -64,7 +64,7 @@
             <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
                 <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
             </a>
-        </div>
+        </div> -->
         <div class="relative w-full hidden">
             <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input " type="" value="Search team projected lineups or players"> 
             <a class="absolute right-[15px] top-[7px]" href="">
@@ -589,7 +589,7 @@
                 <div class="flex flex-col gap-2 ml-3">
                     @foreach($article->data as $key=>$val)
                         <div class="w-full flex flex-row justify-between">
-                            <p class="font-semibold text-sm">{{$val->player->full_name}}- LTIR-UBI</p>
+                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
                             <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
                         </div>
                         <p class="text-sm">{{$val->title}}</p>

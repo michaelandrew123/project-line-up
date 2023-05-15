@@ -105,8 +105,8 @@
                     <li><a href=""><img class="w-16 ml-1" src="{{ asset('/images/teamlogo-svg/los-angeles-kings.svg') }}" alt=""></a></li>
                     <li><a href=""><img class="w-16 ml-1" src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li> -->
                     
-      <div class="w-full flex flex-row ">
-        <div class="w-14">
+      <div class="max-w-screen-2xl flex flex-col items-center ">
+        <div class="w-14 flex flex-col items-center">
           <!-- <div class="shadow-lg rounded-lg overflow-hidden">
             <div class="py-3 px-5 bg-gray-50" style="">Bar chart</div>
             <canvas class="p-10" id="chartBar" ></canvas>
@@ -115,7 +115,7 @@
             </div>
             <img class="" src="{{ asset('/images/menu-icon/adds5.png') }}">
           </div> -->
-          <div class="chartCard">
+          <div class="chartCard flex flex-col">
             <div class="chartBox ">
               <div class="flex flex-col gap-3">
                 <div class="flex flex-row items-end justify-between">
@@ -188,6 +188,13 @@
         </div>
       </div>
     </div>
+    
+    <!-- <div>
+      <canvas id="chart"></canvas>
+    </div>
+    <div>
+      <canvas id="chart"></canvas>
+    </div> -->
   </div>
   <!-- Mobile design -->
   <div class="hidden smm-block">
@@ -355,7 +362,6 @@
     <h1>dfgdfgh</h1>
   </div>
   <canvas class="p-10 charts" id="chartBar">
-    
   </canvas>
 </div> -->
 

@@ -1311,7 +1311,7 @@
     </div>
 </div>
 <div class="flex flex-row justify-center w-full">
-  <div class=" bg-slate-800 w-[92%] flex flex-row justify-between w-full">
+  <div class=" bg-slate-800 w-[92%] flex flex-row justify-between w-full max-w-screen-2xl">
      <h1 class=" text-white p-3">COPYRIGHT &#169 THE NATONAL NETWORK LTD</h1>
      <div class="flex items-center">
         <a class="text-white p-3" href="">CONTACT</a>

@@ -154,7 +154,9 @@
             </div>
         </div>
     </div>
-    <img class="w-6/12 mt-32" src="{{ asset('/images/menu-icon/adds-new1.png') }}" alt="">
+    <div class="w-full flex justify-center"> 
+      <img class="w-6/12 mt-32" src="{{ asset('/images/menu-icon/adds-new1.png') }}" alt="">
+    </div>
     <!-- <div class="flex flex-row w-full justify-center gap-16 mt-16">  
         <div class="w-[36%] h-[33rem] border border-slate-300 rounded-3xl">
             <div class="flex flex-col ">
