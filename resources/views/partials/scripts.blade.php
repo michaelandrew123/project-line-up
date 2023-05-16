@@ -8,26 +8,7 @@
 
 <script>
 
-const ctx = document.getElementById('chart');
 
-new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
-  }
-});
  
 
 
@@ -948,6 +929,8 @@ const data = {
           '#38b6ff'
         ],
         borderWidth: 1,
+        pointHitRadius: 1,
+        pointRadius: 1
         // image:[
         // 'logo/edmonton-oilers.svg',
         // 'logo/detroit-red-wings.svg',
@@ -961,23 +944,15 @@ const data = {
       }]
     };
     const imageItems = {
-
       id : 'imageItems',
-
       beforeDatasetsDraw(chart, args, pluginOptions){
         const {image,ctx,data,scales:{x,y}} =  chart;
         ctx.strokeStyle = image; 
         ctx.save();
-
         // const imageSize = options.layout.padding.left;
-     
-
         // data.datasets[0].image.forEach((imageLink, index) => {
-       
           // ctx.preventDefault() 
           // return;
-         
-          
         // });
         const logo = new Image();
         const lo = new Image();
@@ -1023,17 +998,20 @@ const data = {
 
     // config 
     const config = {
-      plugins: [imageItems],
+      plugins: [imageItems]     
+            // tooltip:{
+            //   enable:false
+            // }   
+      ,
       type: 'bar',
       data,
-      options: {
+      options:{
         indexAxis:'x',  // <-- position y , x
         layout:{
           padding:{
-            bottom:20,
-            
-            
-          }
+            bottom:20, 
+          },
+          
         },
         
         
@@ -1052,8 +1030,6 @@ const data = {
         //     },
         //     ]
         //   }
-       
-        
         // },
         scales: {
           y:{
@@ -1073,8 +1049,7 @@ const data = {
              })
             }
           }
-        },
-         
+        },  
       }
       
  
@@ -1087,6 +1062,48 @@ const data = {
       document.getElementById('myChart'),
       config
     );
-    
+    myChart.canvas.addEventListener('mousemove', (e) => {
+      crosshair(myChart, e);
+    })
+     
+    function crosshair(chart, mousemove){
+      chart.update('none');
+      console.log(mousemove)
+      const x = mousemove.offsetX;
+      const y = mousemove.offsetY;
 
+      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+      ctx.save();
+
+      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+      ctx.lineWidth = 2;
+
+      ctx.beginPath();
+      ctx.moveTo(left, mousemove.offsetY);
+      ctx.lineTo(right, mousemove.offsetY);
+      ctx.stroke();
+      ctx.closepath();
+    }
+
+
+    const newChart = new Chart(
+      document.getElementById('newChart'),
+      config
+    );
+    const newChart2 = new Chart(
+      document.getElementById('newChart2'),
+      config
+    );
+    const newChart3 = new Chart(
+      document.getElementById('newChart3'),
+      config
+    );
+    const newChart4 = new Chart(
+      document.getElementById('newChart4'),
+      config
+    );
+    const newChart5 = new Chart(
+      document.getElementById('newChart5'),
+      config
+    );
 </script>
