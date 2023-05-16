@@ -106,7 +106,7 @@
                     <li><a href=""><img class="w-16 ml-1" src="{{ asset('/images/teamlogo-svg/minnesota-wild.svg') }}" alt=""></a></li> -->
                     
       <div class="max-w-screen-2xl flex flex-col items-center ">
-        <div class="w-14 flex flex-col items-center">
+        <div class="w-14 flex flex-col items-center gap-3">
           <!-- <div class="shadow-lg rounded-lg overflow-hidden">
             <div class="py-3 px-5 bg-gray-50" style="">Bar chart</div>
             <canvas class="p-10" id="chartBar" ></canvas>
@@ -115,7 +115,7 @@
             </div>
             <img class="" src="{{ asset('/images/menu-icon/adds5.png') }}">
           </div> -->
-          <div class="chartCard flex flex-col">
+          <div class="chartCard flex flex-row w-full gap-3 h-auto">
             <div class="chartBox ">
               <div class="flex flex-col gap-3">
                 <div class="flex flex-row items-end justify-between">
@@ -146,7 +146,349 @@
                   </div>
                 </div>
               </div>
-              <canvas  id="myChart"></canvas>             
+              <canvas class="border border-black " id="myChart"></canvas>  
+              <div class="flex flex-col gap-3">       
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">SPLITS</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">HOME</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AWAY</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">ALL</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">L10</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">L5</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">60%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">58%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">49%</button>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">OPPONENT</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">VS</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#ebece9] border border-[#ebece9] rounded-sm">OPP RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AVG</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">PK RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">PEN/GEM</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">80%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">36.6</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">2.5</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chartBox ">
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-row items-end justify-between">
+                  <img class="w-16" src="{{ asset('/images/menu-icon/CONNOR-MCDAVID-97.png') }}">
+                  <div class="flex flex-col gap-3">
+                      <h1 class="text-2xl font-bold ">Connor McDavid - C</h1>
+                      <div class="text-[12px] font-bold flex flex-row gap-2">
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">L1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">PP1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">0-135</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">U-170</button>
+                      </div>
+                  </div>
+                  <div class="flex flex-col justify-center bg-[#38b6ff] w-24 h-24 border rounded-md text-center ">
+                    <p class="text-xl font-extrabold">SOG</p>
+                    <h1 class="text-5xl font-bold">3.5</h1>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="flex flex-row justify-between text-center">
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-md"> SOG</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">GOALS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">ASSIST</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">POINTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">TOI</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">DK PTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">FD PTS</button>
+                  </div>
+                </div>
+              </div>
+              <canvas  id="newChart"></canvas>             
+              <div class="flex flex-col gap-3">       
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">SPLITS</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">HOME</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AWAY</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">ALL</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">L10</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">L5</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">60%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">58%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">49%</button>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">OPPONENT</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">VS</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#ebece9] border border-[#ebece9] rounded-sm">OPP RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AVG</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">PK RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">PEN/GEM</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">80%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">36.6</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">2.5</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chartBox ">
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-row items-end justify-between">
+                  <img class="w-16" src="{{ asset('/images/menu-icon/CONNOR-MCDAVID-97.png') }}">
+                  <div class="flex flex-col gap-3">
+                      <h1 class="text-2xl font-bold ">Connor McDavid - C</h1>
+                      <div class="text-[12px] font-bold flex flex-row gap-2">
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">L1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">PP1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">0-135</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">U-170</button>
+                      </div>
+                  </div>
+                  <div class="flex flex-col justify-center bg-[#38b6ff] w-24 h-24 border rounded-md text-center ">
+                    <p class="text-xl font-extrabold">SOG</p>
+                    <h1 class="text-5xl font-bold">3.5</h1>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="flex flex-row justify-between text-center">
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-md"> SOG</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">GOALS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">ASSIST</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">POINTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">TOI</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">DK PTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">FD PTS</button>
+                  </div>
+                </div>
+              </div>
+              <canvas  id="newChart2"></canvas>             
+              <div class="flex flex-col gap-3">       
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">SPLITS</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">HOME</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AWAY</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">ALL</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">L10</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">L5</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">60%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">58%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">49%</button>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">OPPONENT</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">VS</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#ebece9] border border-[#ebece9] rounded-sm">OPP RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AVG</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">PK RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">PEN/GEM</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">80%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">36.6</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">2.5</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chartCard flex flex-row w-full gap-3 h-auto">
+            <div class="chartBox ">
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-row items-end justify-between">
+                  <img class="w-16" src="{{ asset('/images/menu-icon/CONNOR-MCDAVID-97.png') }}">
+                  <div class="flex flex-col gap-3">
+                      <h1 class="text-2xl font-bold ">Connor McDavid - C</h1>
+                      <div class="text-[12px] font-bold flex flex-row gap-2">
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">L1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">PP1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">0-135</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">U-170</button>
+                      </div>
+                  </div>
+                  <div class="flex flex-col justify-center bg-[#38b6ff] w-24 h-24 border rounded-md text-center ">
+                    <p class="text-xl font-extrabold">SOG</p>
+                    <h1 class="text-5xl font-bold">3.5</h1>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="flex flex-row justify-between text-center">
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-md"> SOG</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">GOALS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">ASSIST</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">POINTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">TOI</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">DK PTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">FD PTS</button>
+                  </div>
+                </div>
+              </div>
+              <canvas class="border border-black " id="newChart3"></canvas>  
+              <div class="flex flex-col gap-3">       
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">SPLITS</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">HOME</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AWAY</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">ALL</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">L10</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">L5</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">60%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">58%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">49%</button>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">OPPONENT</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">VS</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#ebece9] border border-[#ebece9] rounded-sm">OPP RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AVG</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">PK RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">PEN/GEM</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">80%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">36.6</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">2.5</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chartBox ">
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-row items-end justify-between">
+                  <img class="w-16" src="{{ asset('/images/menu-icon/CONNOR-MCDAVID-97.png') }}">
+                  <div class="flex flex-col gap-3">
+                      <h1 class="text-2xl font-bold ">Connor McDavid - C</h1>
+                      <div class="text-[12px] font-bold flex flex-row gap-2">
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">L1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">PP1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">0-135</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">U-170</button>
+                      </div>
+                  </div>
+                  <div class="flex flex-col justify-center bg-[#38b6ff] w-24 h-24 border rounded-md text-center ">
+                    <p class="text-xl font-extrabold">SOG</p>
+                    <h1 class="text-5xl font-bold">3.5</h1>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="flex flex-row justify-between text-center">
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-md"> SOG</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">GOALS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">ASSIST</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">POINTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">TOI</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">DK PTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">FD PTS</button>
+                  </div>
+                </div>
+              </div>
+              <canvas  id="newChart4"></canvas>             
+              <div class="flex flex-col gap-3">       
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">SPLITS</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">HOME</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AWAY</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">ALL</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">L10</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">L5</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">60%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">58%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">53%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">49%</button>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2 text-center">
+                  <p class="text-[10px] font-bold">OPPONENT</p>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">VS</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#ebece9] border border-[#ebece9] rounded-sm">OPP RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">AVG</button>
+                      <button class="text-sm font-bold w-20 px-3 bg-[#38b6ff] border border-[#38b6ff] rounded-sm">PK RANK</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ebece9] border border-[#ebece9] rounded-sm">PEN/GEM</button>
+                  </div>
+                  <div class="flex flex-row justify-between">
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">80%</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">36.6</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#15d869] border border-[#15d869] rounded-sm">30</button>
+                      <button class="text-sm font-bold w-20 px-3 py-1 bg-[#ff5757] border border-[#ff5757] rounded-sm">2.5</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chartBox ">
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-row items-end justify-between">
+                  <img class="w-16" src="{{ asset('/images/menu-icon/CONNOR-MCDAVID-97.png') }}">
+                  <div class="flex flex-col gap-3">
+                      <h1 class="text-2xl font-bold ">Connor McDavid - C</h1>
+                      <div class="text-[12px] font-bold flex flex-row gap-2">
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">L1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">PP1</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">0-135</button>
+                        <button class="border border-slate-400 px-2 py-1 rounded-md w-16">U-170</button>
+                      </div>
+                  </div>
+                  <div class="flex flex-col justify-center bg-[#38b6ff] w-24 h-24 border rounded-md text-center ">
+                    <p class="text-xl font-extrabold">SOG</p>
+                    <h1 class="text-5xl font-bold">3.5</h1>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="flex flex-row justify-between text-center">
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#38b6ff] border border-[#38b6ff] rounded-md"> SOG</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">GOALS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">ASSIST</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">POINTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">TOI</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">DK PTS</button>
+                    <button class="text-[10px] font-bold w-14 px-2 py-1 bg-[#ebece9] border border-slate rounded-md">FD PTS</button>
+                  </div>
+                </div>
+              </div>
+              <canvas  id="newChart5"></canvas>             
               <div class="flex flex-col gap-3">       
                 <div class="flex flex-col gap-2 text-center">
                   <p class="text-[10px] font-bold">SPLITS</p>
@@ -190,11 +532,9 @@
     </div>
     
     <!-- <div>
-      <canvas id="chart"></canvas>
-    </div>
-    <div>
-      <canvas id="chart"></canvas>
+      <canvas id="chart2"></canvas>
     </div> -->
+     
   </div>
   <!-- Mobile design -->
   <div class="hidden smm-block">
