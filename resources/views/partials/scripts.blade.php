@@ -892,13 +892,13 @@
 //       });
 const data = {
   
-      labels: ['', '', '', '', '', '', '', '', '', ''],
+      labels: [
+        ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '
+      ],
       datasets: [{
-        label: '',
-        
-        
         data: [3.8,  3,  0.8,  4.5,  3,  3,  3.8,  0.8,  4.5,  2.2, 4.5,  2.2],
-        backgroundColor: [
+        label:[''],
+        backgroundColor:[
           '#38b6ff',
           '#38b6ff',
           '#ff5757',
@@ -930,7 +930,13 @@ const data = {
         ],
         borderWidth: 1,
         pointHitRadius: 1,
-        pointRadius: 1
+        pointRadius: 1,
+        // hoverBackgroundColor: [
+  
+        // ],
+        
+             
+            
         // image:[
         // 'logo/edmonton-oilers.svg',
         // 'logo/detroit-red-wings.svg',
@@ -941,7 +947,8 @@ const data = {
         // 'logo/buffalo-sabres.svg',
         // 'logo/calgary-flames.svg'
         // ]
-      }]
+      },
+    ]
     };
     const imageItems = {
       id : 'imageItems',
@@ -993,15 +1000,12 @@ const data = {
       }
     };
     const dataXaxis = {
-
+      
     }
 
     // config 
     const config = {
-      plugins: [imageItems]     
-            // tooltip:{
-            //   enable:false
-            // }   
+      plugins: [imageItems]   
       ,
       type: 'bar',
       data,
@@ -1011,18 +1015,14 @@ const data = {
           padding:{
             bottom:20, 
           },
-          
+        },
+        showTooltips : false,
+        plugins:{
+            tooltip:{
+              enabled:false
+          },
         },
         
-        
-        // plugins:{
-        //   labels:{
-        //     render: 'images',
-        //     images: [{
-        //       src: './patrick.png',
-        //       height: 25,
-        //       width: 25
-        //     },
         //     {
         //       src: './patrick.png',
         //       height: 25,
@@ -1050,10 +1050,8 @@ const data = {
             }
           }
         },  
-      }
-      
- 
-      
+      },
+   
     };
     
 
@@ -1090,20 +1088,131 @@ const data = {
       document.getElementById('newChart'),
       config
     );
+    newChart.canvas.addEventListener('mousemove', (e) => {
+      crosshair(newChart, e);
+    })
+     
+    function crosshair(chart, mousemove){
+      chart.update('none');
+      console.log(mousemove)
+      const x = mousemove.offsetX;
+      const y = mousemove.offsetY;
+
+      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+      ctx.save();
+
+      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+      ctx.lineWidth = 2;
+
+      ctx.beginPath(left,  mousemove.offsetY);
+      ctx.moveTo(left,  mousemove.offsetY);
+      ctx.lineTo(right, mousemove.offsetY);
+      ctx.stroke();
+      ctx.closepath();
+    }
+
     const newChart2 = new Chart(
       document.getElementById('newChart2'),
       config
     );
+    newChart2.canvas.addEventListener('mousemove', (e) => {
+      crosshair(newChart2, e);
+    })
+     
+    function crosshair(chart, mousemove){
+      chart.update('none');
+      console.log(mousemove)
+      const x = mousemove.offsetX;
+      const y = mousemove.offsetY;
+
+      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+      ctx.save();
+
+      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+      ctx.lineWidth = 2;
+
+      ctx.beginPath(left,  mousemove.offsetY);
+      ctx.moveTo(left,  mousemove.offsetY);
+      ctx.lineTo(right, mousemove.offsetY);
+      ctx.stroke();
+      ctx.closepath();
+    }
     const newChart3 = new Chart(
       document.getElementById('newChart3'),
       config
     );
+    newChart3.canvas.addEventListener('mousemove', (e) => {
+      crosshair(newChart3, e);
+    })
+     
+    function crosshair(chart, mousemove){
+      chart.update('none');
+      console.log(mousemove)
+      const x = mousemove.offsetX;
+      const y = mousemove.offsetY;
+
+      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+      ctx.save();
+
+      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+      ctx.lineWidth = 2;
+
+      ctx.beginPath(left,  mousemove.offsetY);
+      ctx.moveTo(left,  mousemove.offsetY);
+      ctx.lineTo(right, mousemove.offsetY);
+      ctx.stroke();
+      ctx.closepath();
+    }
     const newChart4 = new Chart(
       document.getElementById('newChart4'),
       config
     );
+    newChart4.canvas.addEventListener('mousemove', (e) => {
+      crosshair(newChart4, e);
+    })
+     
+    function crosshair(chart, mousemove){
+      chart.update('none');
+      console.log(mousemove)
+      const x = mousemove.offsetX;
+      const y = mousemove.offsetY;
+
+      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+      ctx.save();
+
+      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+      ctx.lineWidth = 2;
+
+      ctx.beginPath(left,  mousemove.offsetY);
+      ctx.moveTo(left,  mousemove.offsetY);
+      ctx.lineTo(right, mousemove.offsetY);
+      ctx.stroke();
+      ctx.closepath();
+    }
     const newChart5 = new Chart(
       document.getElementById('newChart5'),
       config
     );
+    newChart5.canvas.addEventListener('mousemove', (e) => {
+      crosshair(newChart5, e);
+    })
+     
+    function crosshair(chart, mousemove){
+      chart.update('none');
+      console.log(mousemove)
+      const x = mousemove.offsetX;
+      const y = mousemove.offsetY;
+
+      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+      ctx.save();
+
+      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+      ctx.lineWidth = 2;
+
+      ctx.beginPath(left,  mousemove.offsetY);
+      ctx.moveTo(left,  mousemove.offsetY);
+      ctx.lineTo(right, mousemove.offsetY);
+      ctx.stroke();
+      ctx.closepath();
+    }
 </script>
