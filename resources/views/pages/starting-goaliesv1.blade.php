@@ -6,7 +6,7 @@
     <!-- Desktop Design -->
     <!-- Old Design -->
     <div class="w-full flex flex-col items-center">
-        <div class="flex justify-evenly lg:flex-row md:flex-col sm:flex-col smm-hidden  max-w-screen-2xl">
+        <div class="flex justify-evenly xl:w-full lg:flex-row md:flex-col sm:flex-col smm-hidden  max-w-screen-2xl">
             <div class="flex flex-col xl:block lg:block md:hidden">
                 <img class="w-[17rem]   mb-[2rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
                 <img class="w-[17rem]  mb-[31px]" src="{{ asset('/images/menu-icon/adds2.png') }}">
@@ -16,8 +16,8 @@
                 <div class="flex justify-center  ">
                     <img class="  h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div> 
-                <div class="flex py-5">
-                <h1 class="text-black text-3xl font-bold lg:ml-0 md:ml-8">Starting Goalies</h1>
+                <div class="flex justify-center py-5">
+                  <h1 class="text-black text-3xl font-bold lg:ml-0 md:ml-8">Starting Goalies</h1>
                 </div> 
                 <div class=" flex justify-center mb-3 ">
                     <div class="bg-sky-500/100 w-[49rem] h-24 p-2 flex  justify-between">

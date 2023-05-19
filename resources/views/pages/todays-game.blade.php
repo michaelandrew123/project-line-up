@@ -7,9 +7,9 @@
       <div class="bg-[#1d9bf0] p-0.5 flex flex-row lg:justify-evenly justify-between items-end w-full">
             <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/nashville-predators.svg') }}" alt="">
-                <h1 class="text-black lg:text-3xl md:text-2xl  sm:text-lg text-lg font-bold mt-[7px]">Nashville <br class="lg:hidden smm-block"> Predator</h1>
+                <h1 class="text-black lg:text-3xl md:text-2xl  sm:text-lg  text-lg font-bold mt-[7px]">Nashville <br class="lg:hidden smm-block"> Predator</h1>
             </div>
-                <p class="text-black lg:text-lg text-md mb-2">Feb. 18,2022 <br class="lg:hidden md:block"> | 7:00 EST</p>
+                <p class="text-black lg:text-lg text-base smm-text-sm mb-2">Feb. 18,2022 <br class="lg:hidden md:block"> | 7:00 EST</p>
             <div class="flex flex-row lg:gap-[4.75rem] gap-[2rem]">
                 <h1 class="text-black lg:text-3xl md:text-2xl sm:text-lg text-lg font-bold mt-[7px]">Carolina <br class="lg:hidden smm-block"> Hurricanes</h1>
                 <img class="w-20" src="{{ asset('/images/teamlogo-svg/carolina-hurricanes.svg') }}" alt="">

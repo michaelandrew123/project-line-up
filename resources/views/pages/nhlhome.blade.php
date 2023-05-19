@@ -187,11 +187,8 @@
                             NHL Starting Goalies
                         </h1>
                     </div>
-                  
                         <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 gap-[3px]">
                             @foreach($goalies->data as $key=>$val)
-                                    
-                          
                                @if(isset($val->metafields->goalie_status))
                                     @if($val->metafields->goalie_status->name === 'Confirmed')  
                                        <div class="w-[31%] xl:h-[22rem] lg:h-[19rem] md:w-[32%] md:h-[18rem] relative rounded-xl bg-white m-1.5">
@@ -230,17 +227,14 @@
                                             </div>
                                         </div>
                                     @endif
-                               @endif
-                                    
-                                
-
+                               @endif     
                             @endforeach
                         </div> 
                         <!-- @if(count($goalies->data) % 2 == 0)
-                        even
-                        @endif
-                        @if(count($goalies->data) % 2 == 1)
-                        odd
+                            even
+                            @endif
+                            @if(count($goalies->data) % 2 == 1)
+                            odd
                         @endif -->
                         
                         <!-- <div class="flex w-full md:flex-row justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3">
@@ -341,105 +335,104 @@
                                 </div>
                             </div> 
                         </div> -->
-               
-                    <!-- <div class="flex w-full md:flex-row justify-center xl:justify-evenly lg:justify-between md:justify-between">
-                        <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
-                            <div class="flex m-1 mt-5 ">
-                                <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                <div class="flex flex-col ml-2 gap-3">
-                                    <div class="flex flex-row gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
-                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                                <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
-                            </div>
-                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
-                                <div class="flex flex-row items-center">
-                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                    <div>
-                                        <h3 class="text-[13px] ">Mollie Walker</h3>
-                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                        <!-- <div class="flex w-full md:flex-row justify-center xl:justify-evenly lg:justify-between md:justify-between">
+                            <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                    <div class="flex flex-col ml-2 gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                            <p class="text-[11px] font-bold">Confirmed</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
+                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        </div>  
                                     </div>
                                 </div>
-                                <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
                                 </div>
-                            </div>
-                        </div>                          
-                        <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
-                            <div class="flex m-1 mt-5 ">
-                                <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                <div class="flex flex-col ml-2 gap-3">
-                                    <div class="flex flex-row gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
+                                <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
+                                    <div class="flex flex-row items-center">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        <div>
+                                            <h3 class="text-[13px] ">Mollie Walker</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>
                                     </div>
-                                    <div class="flex flex-col">
-                                        <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
-                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                                <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
-                            </div>
-                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
-                                <div class="flex flex-row items-center">
-                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                    <div>
-                                        <h3 class="text-[13px] ">Mollie Walker</h3>
-                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    <div class="flex flex-row xl:gap-3 lg:gap-2">
+                                        <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                        <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
-                                <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                </div>
-                            </div>
-                        </div>   
-                        <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
-                            <div class="flex m-1 mt-5 ">
-                                <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
-                                <div class="flex flex-col ml-2 gap-3">
-                                    <div class="flex flex-row gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
-                                        <p class="text-[10px] font-semibold">New York Rangers - G</p>
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
-                                <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
-                                <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
-                            </div>
-                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
-                                <div class="flex flex-row items-center">
-                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                    <div>
-                                        <h3 class="text-[13px] ">Mollie Walker</h3>
-                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                            </div>                          
+                            <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                    <div class="flex flex-col ml-2 gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                            <p class="text-[11px] font-bold">Confirmed</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
+                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        </div>  
                                     </div>
                                 </div>
-                                <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
-                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
                                 </div>
-                            </div>
-                        </div> 
-                    </div> -->
+                                <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
+                                    <div class="flex flex-row items-center">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        <div>
+                                            <h3 class="text-[13px] ">Mollie Walker</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row xl:gap-3 lg:gap-2">
+                                        <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                        <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="w-[31%] xl:h-[21rem] lg:h-[19rem] md:w-[32%]  md:h-[18rem]  relative rounded-xl bg-white">
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="xl:w-20 lg:w-[4rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{ asset('/images/menu-icon/player-uniform2.png') }}">
+                                    <div class="flex flex-col ml-2 gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                            <p class="text-[11px] font-bold">Confirmed</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
+                                            <p class="text-[10px] font-semibold">New York Rangers - G</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-5">Igor Sherterk in goal for # NYR vs. Panthers, per Gerard Gallant. No lineup changes</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Shesterkin has a 15-5-5 record with a 2.95 GAA and .910 SV%. He made 24 saves in a 3-1 loss to Boston on Thursday.</p>
+                                </div>
+                                <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between">
+                                    <div class="flex flex-row items-center">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        <div>
+                                            <h3 class="text-[13px] ">Mollie Walker</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row xl:gap-3 lg:gap-2">
+                                        <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-proj.png') }}">
+                                        <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> -->
                     <div class="relative">
                         <a href="" class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
                     </div>
@@ -708,38 +701,34 @@
                                 @endif
                             @endif
                         @endforeach
-                        <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
-                                            <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
-                                                <div class="flex flex-row gap-2">
-                                                    <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                                    <p class="text-[11px] font-bold">{{$val->type->name}}</p>
-                                                </div>
-                                                <div class="flex flex-col">
-                                                    <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
-                                                    <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
-                                                </div>                                                                      
-                                            </div>
+                            <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
+                                <div class="flex m-2 mt-5 ">
+                                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
+                                    <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
                                         </div>
-                                        <div class=" m-2">
-                                            <p class="text-[14px] font-bold mb-2">{{$val->title}}</p>
-                                            <p class="text-[9px] font-semibold">{{$val->description}}</p>
-                                        </div>
-                                        <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                            <a href="{{$val->source->url}}">
-                                              <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                            </a>
-                                            <div>
-                                                <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
-                                                <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
-                                            </div>
-                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
+                                            <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                        </div>                                                                      
                                     </div>
-                         
-
-
-
+                                </div>
+                                <div class=" m-2">
+                                    <p class="text-[14px] font-bold mb-2">{{$val->title}}</p>
+                                    <p class="text-[9px] font-semibold">{{$val->description}}</p>
+                                </div>
+                                <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                    <a href="{{$val->source->url}}">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    </a>
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                        <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         <!-- <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem] rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">
@@ -766,9 +755,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
                             <div class="flex m-1 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">
@@ -1115,7 +1101,6 @@
             <img class="mt-[28rem] w-[17rem] h-[35rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
         </div>    
         <div class="flex flex-row relative xl:justify-between lg:justify-center hidden">  
-          
             <div class="flex flex-col xl:w-[67%] lg:w-auto ">  
                 <div class="flex flex-col">
                     <div class="flex items-center">
@@ -1894,7 +1879,6 @@
                             data-te-carousel-active
                             data-te-carousel-item
                             style="backface-visibility: hidden">
-                            
                                 <div class="flex flex-row justify-center">
                                     <div class="w-[23rem]  h-80 border border-slate-200 relative rounded-xl flex justify-center bg-white relative">
                                         <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
@@ -1911,15 +1895,13 @@
                                         </div>
                                     </div> 
                                 </div>
-                           
                         </div>
                         @endif
                         @if($item->category->slug === 'top-stacks')
                         <div
                             class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
                             data-te-carousel-item
-                            style="backface-visibility: hidden">
-                           
+                            style="backface-visibility: hidden">                           
                             <div class="flex flex-row justify-center">
                                 <div class="w-[23rem]  h-80 border border-slate-200 relative rounded-xl flex justify-center bg-white relative">
                                     <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
@@ -1942,8 +1924,7 @@
                         <div
                             class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
                             data-te-carousel-item
-                            style="backface-visibility: hidden">
-                           
+                            style="backface-visibility: hidden">                          
                             <div class="flex flex-row justify-center relative">
                                 <div class="w-[23rem]  h-80 border border-slate-200 relative rounded-xl flex justify-center bg-white ">
                                     <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
@@ -2009,8 +1990,7 @@
                     type="button"
                     data-te-target="#carouselExampleCaptions3"
                     data-te-slide="prev">
-                    <span class="inline-block h-8 w-8">
-                        
+                    <span class="inline-block h-8 w-8">  
                     </span>
                     <span
                         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -2023,7 +2003,6 @@
                     data-te-target="#carouselExampleCaptions3"
                     data-te-slide="next">
                     <span class="inline-block h-8 w-8">
-                        
                     </span>
                     <span
                         class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
@@ -2063,9 +2042,7 @@
                 class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
                 aria-label="Slide 3"></button>
             </div>
-           
-            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] "> 
-                
+            <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">                 
                 @php
                    $nhl_starting_goalies = 0;
                 @endphp
@@ -2158,11 +2135,7 @@
                         @endif
                     @endif
                 @endforeach
-
-            </div>
-          
-            
-            
+            </div>           
             <button
                 class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                 type="button"
@@ -2361,91 +2334,88 @@
 		      aria-label="Slide 3"></button>
 		</div>     
             <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
-           
-            @php
+                @php
                    $nhl_player_news = 0;
                 @endphp
                 @foreach($goalies->data as $key=>$val)
                    @if(isset($val->type))
                         @if($val->type->slug === 'line-change'  )
                             @if($nhl_player_news == 0)
-           
-                            <div
-                                class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-3]"
-                                data-te-carousel-active
-                                data-te-carousel-item
-                                style="backface-visibility: hidden">
-                                <div class="flex flex-row justify-center">
-                                    <div class="flex flex-col gap-3 w-[23rem] h-[23rem]  rounded-xl bg-white relative border border-black mx-5">
-                                        <div class="flex mx-2 mt-5 ">
-                                            <img class="w-20 h-20" src="{{$val->player->images->uniform}}">
-                                            <div class="flex flex-col ml-2 gap-3">
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[20px] h-[20px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                                    <p class="text-md font-bold">{{$val->type->name}}</p>
+                                <div
+                                    class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-3]"
+                                    data-te-carousel-active
+                                    data-te-carousel-item
+                                    style="backface-visibility: hidden">
+                                    <div class="flex flex-row justify-center">
+                                        <div class="flex flex-col gap-3 w-[23rem] h-[23rem]  rounded-xl bg-white relative border border-black mx-5">
+                                            <div class="flex mx-2 mt-5 ">
+                                                <img class="w-20 h-20" src="{{$val->player->images->uniform}}">
+                                                <div class="flex flex-col ml-2 gap-3">
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[20px] h-[20px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                                        <p class="text-md font-bold">{{$val->type->name}}</p>
+                                                    </div>
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-3xl font-extrabold">{{$val->player->full_name}}</h1>
+                                                        <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                                    </div>                                                                      
                                                 </div>
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-3xl font-extrabold">{{$val->player->full_name}}</h1>
-                                                    <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
-                                                </div>                                                                      
                                             </div>
-                                        </div>
-                                        <div class="mx-2 ">
-                                            <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
-                                            <p class="text-[11px] font-semibold">{{$val->description}}</p>
-                                        </div>
-                                        <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                            <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                            <div>
-                                                <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
-                                                <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                            <div class="mx-2 ">
+                                                <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
+                                                <p class="text-[11px] font-semibold">{{$val->description}}</p>
                                             </div>
-                                        </div>
-                                    </div> 
+                                            <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                                <div>
+                                                    <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                                    <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
                                 </div>
-                            </div>
                             @else
-                            <div
-                                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-3]"
-                                data-te-carousel-item
-                                style="backface-visibility: hidden">
-                                <div class="flex flex-row justify-center">
-                                    <div class="flex flex-col gap-3 w-[23rem] h-[23rem]  rounded-xl bg-white relative border border-black mx-5">
-                                        <div class="flex mx-2 mt-5 ">
-                                            <img class="w-20 h-20" src="{{$val->player->images->uniform}}">
-                                            <div class="flex flex-col ml-2 gap-3">
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[20px] h-[20px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                                    <p class="text-md font-bold">{{$val->type->name}}</p>
+                                <div
+                                    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-3]"
+                                    data-te-carousel-item
+                                    style="backface-visibility: hidden">
+                                    <div class="flex flex-row justify-center">
+                                        <div class="flex flex-col gap-3 w-[23rem] h-[23rem]  rounded-xl bg-white relative border border-black mx-5">
+                                            <div class="flex mx-2 mt-5 ">
+                                                <img class="w-20 h-20" src="{{$val->player->images->uniform}}">
+                                                <div class="flex flex-col ml-2 gap-3">
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[20px] h-[20px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                                        <p class="text-md font-bold">{{$val->type->name}}</p>
+                                                    </div>
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-3xl font-extrabold">{{$val->player->full_name}}</h1>
+                                                        <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                                    </div>                                                                      
                                                 </div>
-                                                <div class="flex flex-col">
-                                                    <h1 class=" text-3xl font-extrabold">{{$val->player->full_name}}</h1>
-                                                    <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
-                                                </div>                                                                      
                                             </div>
-                                        </div>
-                                        <div class="mx-2">
-                                            <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
-                                            <p class="text-[11px] font-semibold">{{$val->description}}</p>
-                                        </div>
-                                        <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                            <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                            <div>
-                                                <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
-                                                <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                            <div class="mx-2">
+                                                <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
+                                                <p class="text-[11px] font-semibold">{{$val->description}}</p>
                                             </div>
-                                        </div>
-                                    </div> 
+                                            <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                                <div>
+                                                    <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                                    <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
                                 </div>
-                            </div>
                             @endif
                             @php
-                             $nhl_player_news++;
+                              $nhl_player_news++;
                             @endphp
                         @endif
                     @endif
-                @endforeach
-               
+                @endforeach             
                 <!-- <div
                     class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-3]"
                     data-te-carousel-item
@@ -2527,13 +2497,13 @@
 	    >
 	  </button>
 	  <button
-	    class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-	    type="button"
-	    data-te-target="#carouselExampleCaptions1"
-	    data-te-slide="next">
-	    <span class="inline-block h-8 w-8">
-	      
-	    </span>
+            class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleCaptions1"
+            data-te-slide="next">
+            <span class="inline-block h-8 w-8">
+            
+            </span>
 	    <span
 	      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
 	      >Next</span
