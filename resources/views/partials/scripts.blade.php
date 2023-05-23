@@ -685,218 +685,13 @@
     });
    
 
-
-
-
-
-
-    /**Start Chart  */
-    
-    // const labelsBarChart = [
-    //     "January",
-    //     "February",
-    //     "March",
-    //     "April",
-    //     "May",
-    //     "June",
-    //     "edsan"
-        
-    // ];
-    
-    // const data = {
-    //     font:"bold",
-    // };
-    // const dataBarChart = {
-    //     labels: labelsBarChart,
-    //     datasets: [
-    //         {
-    //             label: "My First dataset",
-    //             backgroundColor: "deepskyblue",
-    //             borderColor: "hsl(252, 82.9%, 67.8%)",
-    //             data: [1, 2, 3, 4, 5, 6, 7, ],
-                
-    //         },
-    //     ],
-    // };
-     
-    // const configBarChart = {
-    //     type: "bar",
-    //     data: dataBarChart,
-    //     options: {
-    //         scales: {
-    //             y: {
-    //             beginAtZero: true,
-    //             display: ''
-    //             },
-    //             y1:{
-    //             position: 'right',
-    //             ticks: {
-    //             beginAtZero: true
-    //             }
-    //             },
-    //             x: {
-    //             beginAtZero: true,
-    //             },
-    //         }
-    //     },
-    // };
-
-    // var chartBar = new Chart(
-    //     document.getElementById("chartBar"),
-    //     configBarChart
-    // );
-
-  /**End Chart  */
-//   New charts
-// const data = {
-//       labels: ['Logo1', 'Logo2', 'Logo3', 'Logo4', 'Logo5', 'Logo6', 'logo7', 'Logo8', 'Logo9', 'Logo10'],
-//       datasets: [{
-//         label: '',
-//         data: [3.8, 6, 0.8, 4.5, 3, 3, 3.8, 0.8, 4.5, 2.2],
-//         backgroundColor: [
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#ff5757',
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#ff5757',
-//           '#38b6ff',
-//           '#ff5757'
-//         ],
-//         borderColor: [
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#ff5757',
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#38b6ff',
-//           '#38b6ff'
-//         ],
-//         borderWidth: 1
-//       }]
-//     };
-
-//     // config 
-//     const config = {
-//       type: 'bar',
-//       data,
-//       options: {
-//         scales: {
-//         	// x:{
-//         	// 	plugins:{
-//         	// 		labels:{
-//         	// 			render: 'image',
-//         	// 			images: [
-//         	// 			{
-//         	// 				src: 'https://www.youtube.com/',
-//         	// 				width: 16,
-//         	// 				height: 16
-//         	// 			}
-//         	// 			]
-//         	// 		}
-//         	// 	}
-//         	// },
-//           y: {
-//             beginAtZero: true,
-//             ticks:{
-//             count: 9,
-//             display: ''
-//             }
-//           },
-//           right: {
-//           	beginAtZero: true,
-//           	position:'right',
-//           	ticks: {
-//           		count: 9,
-//                 callback: ((value, index, ticks) => {
-//                 	return value * 8
-//                 })
-//           	}
-//           }
-//         }
-//       }
-//     };
-    
-
-    // render init block
-    // const myChart = new Chart(
-    //   document.getElementById('myChart'),
-    //   config
-    // );
-//   End of Chart
-
-
-
-
-
-
-
-
-
-
-
-
-//   var chartBar = new Chart(
-//     document.getElementById("chartBar"),
-//     configBarChart
-//   );
-// var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-// var yValues = [55, 49, 44, 24, 35];
-// var barColors = ["red", "green","blue","orange","brown"];
-
-// new Chart("myChart", {
-//   type: "bar",
-//   data: {
-//     labels: xValues,
-//     datasets: [{
-//       backgroundColor: barColors,
-//       data: yValues
-//     }]
-//   },
-//   options: {
-//     legend: {display: true},
-//     title: {
-//       display: false,
-//       text: "World Wine Production 2018"
-//     }
-//   }
-// });
-
-// const ctx = document.getElementById("chart").getContext('2d');
-//       const myChart = new Chart(ctx, {
-//         type: 'bar',
-//         data: {
-//           labels: ["rice", "yam", "tomato", "potato",
-//           "beans", "maize", "oil", "vegie"],
-//           datasets: [{
-//             label: 'food Items',
-//             backgroundColor: 'rgba(161, 198, 247, 1)',
-//             borderColor: 'rgb(47, 128, 237)',
-//             data: [300, 400, 200, 500, 800, 900, 200, 150],
-//           }]
-//         },
-//         options: {
-//           scales: {
-//             yAxes: [{
-//               ticks: {
-//                 beginAtZero: true,
-//               }
-//             }]
-//           }
-//         },
-//       });
 const data = {
   
       labels: [
         ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '
       ],
       datasets: [{
-        data: [3.8,  3,  0.8,  4.5,  3,  3,  3.8,  0.8,  4.5,  2.2, 4.5,  2.2],
+        data: [1,  3,  0.8,  4.5,  3,  3,  3.8,  0.8,  4.5,  2.2, 4.5,  2.2],
         label:[''],
         backgroundColor:[
           '#38b6ff',
@@ -974,29 +769,26 @@ const data = {
           // logo.src=imageLink;
         
         kill.src='../images/teamlogo-svg/toronto-maple-leafs.svg';
-        ctx.drawImage(kill,  11 , x.getPixelForValue(3) + 30,35,35),
+        ctx.drawImage(kill,  11 , x.getPixelForValue(3) + 32,37,37),
         logo.src='../images/teamlogo-svg/seattle-kraken.svg';
-        ctx.drawImage(logo, 56, x.getPixelForValue(1) + 120,35,35),
+        ctx.drawImage(logo, 50, x.getPixelForValue(1) + 115,35,35),
         lo.src='../images/teamlogo-svg/philadelphia-flyers.svg';
-        ctx.drawImage(lo, 100, x.getPixelForValue(2) + 75,35,35),
+        ctx.drawImage(lo, 95, x.getPixelForValue(2) + 70,38,38),
         // next
         nice.src='../images/teamlogo-svg/new-jersey-devils.svg';
-        ctx.drawImage(nice, 145, x.getPixelForValue(2) + 75,35,35),
+        ctx.drawImage(nice, 135, x.getPixelForValue(2) + 75,35,35),
         nice1.src='../images/teamlogo-svg/new-york-rangers.svg';
-        ctx.drawImage(nice1, 189, x.getPixelForValue(2) + 75,35,35),
+        ctx.drawImage(nice1, 175, x.getPixelForValue(2) + 75,38,38),
         nice2.src='../images/teamlogo-svg/montreal-canadiens.svg';
-        ctx.drawImage(nice2,  235, x.getPixelForValue(2) + 75,35,35),
+        ctx.drawImage(nice2,  217, x.getPixelForValue(2) + 75,37,37),
         nice3.src='../images/teamlogo-svg/chicago-blackhawks.svg';
-        ctx.drawImage(nice3, 276, x.getPixelForValue(2) + 75,35,35),
+        ctx.drawImage(nice3, 260, x.getPixelForValue(2) + 75,35,35),
         nice4.src='../images/teamlogo-svg/boston-bruins.svg';
-        ctx.drawImage(nice4, 322, x.getPixelForValue(2) + 75,35,35)
+        ctx.drawImage(nice4, 300, x.getPixelForValue(2) + 75,35,35)
         nice5.src='../images/teamlogo-svg/buffalo-sabres.svg';
-        ctx.drawImage(nice5, 368, x.getPixelForValue(2) + 75,35,35),
+        ctx.drawImage(nice5, 345, x.getPixelForValue(2) + 75,35,35),
         nice6.src='../images/teamlogo-svg/calgary-flames.svg';
-        ctx.drawImage(nice6, 410, x.getPixelForValue(2) + 75,35,35)
-        
-      
-
+        ctx.drawImage(nice6, 385, x.getPixelForValue(2) + 75,35,35)
       }
     };
     const dataXaxis = {
@@ -1031,6 +823,13 @@ const data = {
         //     ]
         //   }
         // },
+    //     options: {
+    //   scales: {
+    //     y: {
+    //       beginAtZero: true
+    //     }
+    //   }
+    // }
         scales: {
           y:{
             beginAtZero: false,
