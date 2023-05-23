@@ -64,7 +64,7 @@
                                     <img src="  {{$item->metafields->featured_image->url }}" class="w-[16rem]">
                                     <p class="text-[12px] font-extrabold">{{$item->title}}</p>
                                     <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                    <div class="flex w-full justify-end absolute bottom-1">
+                                    <div class="flex w-full justify-end absolute xl:left-7 right-2 bottom-2">
                                         <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@
                                     <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
                                     <p class="text-[12px] font-extrabold">{{$item->title}}</p>
                                     <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                    <div class="flex w-full justify-end absolute bottom-1">
+                                    <div class="flex w-full justify-end absolute  xl:left-7 right-2 bottom-2">
                                         <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@
                                     <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
                                     <p class="text-[12px] font-extrabold">{{$item->title}}</p>
                                     <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                    <div class="flex w-full justify-end absolute bottom-1">
+                                    <div class="flex w-full justify-end absolute  xl:left-7 right-2 bottom-2">
                                         <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div>
@@ -187,12 +187,12 @@
                             NHL Starting Goalies
                         </h1>
                     </div>
-                        <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 gap-[3px]">
+                        <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
                             @foreach($goalies->data as $key=>$val)
                                @if(isset($val->metafields->goalie_status))
                                     @if($val->metafields->goalie_status->name === 'Confirmed')  
-                                       <div class="w-[31%] xl:h-[22rem] lg:h-[19rem] md:w-[32%] md:h-[18rem] relative rounded-xl bg-white m-1.5">
-                                            <div class="flex m-2 mt-5 ">
+                                       <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white m-1.5">
+                                            <div class="flex m-3 mt-5 ">
                                                 <img class="xl:w-24 lg:w-[4.5rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{$val->player->images->uniform}}">
                                                 <div class="flex flex-col ml-2 gap-3">
                                                     <div class="flex flex-row gap-2">
@@ -207,11 +207,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class=" m-2 mb-2 lg:pb-3 md:pb-1">
+                                            <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
                                                 <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">{{$val->title}}</p>
                                                 <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">{{$val->description}}</p>
                                             </div>
-                                            <div class="flex items-center xl:w-[17rem] lg:w-[w-14rem] justify-between absolute bottom-1">
+                                            <div class="flex  items-center xl:w-[17rem] lg:w-[14rem] justify-between absolute bottom-1">
                                                 <div class="flex flex-row items-center">
                                                     <a href="{{$val->source->url}}">
                                                     <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -220,10 +220,8 @@
                                                         <h3 class="text-[13px]">{{$val->source->name}}</h3>
                                                         <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
                                                     </div>
-                                                </div>
-                                                <div class="flex flex-row xl:gap-3 lg:gap-2">
-                                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                                </div>
+                                                </div>                                   
+                                                <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px] absolute right-0" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                             </div>
                                         </div>
                                     @endif

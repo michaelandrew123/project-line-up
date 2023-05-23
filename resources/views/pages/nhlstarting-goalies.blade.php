@@ -1774,7 +1774,7 @@
                             data-te-carousel-item
                             style="backface-visibility: hidden">
                             <div class="flex flex-row justify-center">
-                                <div class="flex flex-col mt-10"> 
+                                <div class="flex flex-col mt-10 w-full"> 
                                     <div class="flex flex-row justify-between ">
                                         <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                             <div class="justify-center items-center gap-2 mb-4">
@@ -2332,7 +2332,7 @@
                             data-te-carousel-item
                             style="backface-visibility: hidden">
                             <div class="flex flex-row justify-center">
-                                <div class="flex flex-col mt-10"> 
+                                <div class="flex flex-col mt-10 w-full"> 
                                     <div class="flex flex-row justify-between ">
                                         <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                             <div class="justify-center items-center gap-2 mb-4">
@@ -2890,7 +2890,7 @@
                             data-te-carousel-item
                             style="backface-visibility: hidden">
                             <div class="flex flex-row justify-center">
-                                <div class="flex flex-col mt-10"> 
+                                <div class="flex flex-col mt-10 w-full"> 
                                     <div class="flex flex-row justify-between ">
                                         <div class="h-32 w-72 bg-[#d9d9d9] border rounded-[10px] flex flex-col items-center justify-end ">
                                             <div class="justify-center items-center gap-2 mb-4">
