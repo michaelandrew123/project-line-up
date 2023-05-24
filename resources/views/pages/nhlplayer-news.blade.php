@@ -161,7 +161,7 @@
                 </div>
                 <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
                     <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
-                        <div class="flex m-1 mt-5 ">
+                        <div class="flex mx-2 mt-5 ">
                             <img class="lg:w-20 lg:h-20 md:w-13 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
@@ -174,7 +174,7 @@
                                 </div>                                                                      
                             </div>
                         </div>
-                        <div class=" ml-1">
+                        <div class=" mx-2 ml-1">
                             <p class="text-base md:text-sm font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
                             <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                         </div>
@@ -187,7 +187,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white border border-black relative">
-                        <div class="flex m-1 mt-5 ">
+                        <div class="flex  mx-2 mt-5 ">
                             <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
@@ -200,7 +200,7 @@
                                 </div>                                                                      
                             </div>
                         </div>
-                        <div class=" ml-1">
+                        <div class=" mx-2 ml-1">
                             <p class="text-base xl:text-base lg:text-base md:text-sm font-bold mb-2">Stone out with a lower body injury</p>
                             <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                         </div>
@@ -213,7 +213,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
-                        <div class="flex m-1 mt-5 ">
+                        <div class="flex  mx-2 mt-5 ">
                             <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
@@ -226,7 +226,7 @@
                                 </div>                                                                      
                             </div>
                         </div>
-                        <div class=" ml-1">
+                        <div class=" mx-2 ml-1">
                             <p class="text-base xl:text-base lg:text-base md:text-sm font-bold mb-2">Stone out with a lower body injury</p>
                             <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                         </div>
@@ -241,7 +241,7 @@
                 </div>
                 <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
                     <div class="flex flex-col gap-3 w-[32%] h-[21rem] rounded-xl bg-white border border-black relative">
-                        <div class="flex m-1 mt-5">
+                        <div class="flex  mx-2 mt-5">
                             <img class="lg:w-20 lg:h-20 md:w-13 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
@@ -254,7 +254,7 @@
                                 </div>                                                                      
                             </div>
                         </div>
-                        <div class="ml-1">
+                        <div class=" mx-2 ml-1">
                             <p class="text-base md:text-sm font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
                             <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                         </div>
@@ -267,7 +267,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white border border-black relative">
-                        <div class="flex m-1 mt-5 ">
+                        <div class="flex  mx-2 mt-5 ">
                             <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
@@ -280,7 +280,7 @@
                                 </div>   
                             </div>
                         </div>
-                        <div class=" ml-1">
+                        <div class=" mx-2 ml-1">
                             <p class="text-base md:text-sm font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
                             <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                         </div>
@@ -293,7 +293,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
-                        <div class="flex m-1 mt-5 ">
+                        <div class="flex  mx-2 mt-5 ">
                             <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
@@ -306,7 +306,7 @@
                                 </div>                                                                      
                             </div>
                         </div>
-                        <div class=" ml-1">
+                        <div class=" mx-2 ml-1">
                             <p class="text-base xl:text-base lg:text-base md:text-sm font-bold mb-2">Stone out with a lower body injury</p>
                             <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                         </div>

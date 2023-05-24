@@ -893,7 +893,7 @@
         <div class="flex flex-col items-center gap-5  max-w-screen-2xl">    
             <div class="flex md:flex-row  w-full hidden smm-hidden">
                 <div class="w-[18rem] h-80 border border-red-700 relative rounded-xl">
-                    <div class="flex m-1 mt-5">
+                    <div class="flex mx-2 mt-5">
                         <img class="w-20 h-24 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                         <div class="ml-2">
                                 <div class="bg-[#e7e9ec] rounded-full w-40 flex items-center p-1">
@@ -910,7 +910,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" ml-1 mb-2 pb-9">
+                    <div class="mx-3 ml-1 mb-2 pb-9">
                         <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                         <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                     </div>

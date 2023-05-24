@@ -544,7 +544,7 @@
                             <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 LINEUPS
                                 <div class="relative hidden line-menu">
-                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-[2rem] lg:top-[17px] lg:left-14 md:top-[20px] md:left-[1rem]">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
@@ -554,7 +554,7 @@
                             <a href="#responsive-header" rel="goalies-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold">
                                 DEPTHCHARTS
                                 <div class="relative hidden goalies-menu">
-                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-10 lg:top-[17px] lg:left-14 md:top-[20px] md:left-7">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
@@ -562,7 +562,7 @@
                             <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 MASHUPS
                                 <div class="relative hidden line-menu">
-                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-[2rem] lg:top-[17px] lg:left-14 md:top-[20px] md:left-[1rem]">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
@@ -580,7 +580,7 @@
                             <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 MASHUPS
                                 <div class="relative hidden line-menu">
-                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-[2rem] lg:top-[17px] lg:left-14 md:top-[20px] md:left-[1rem]">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
@@ -598,7 +598,7 @@
                             <a href="#responsive-header" rel="line-menu" class="sm:leading-loose xl:text-[16px] lg:text-[12px] md:text-[8px] sm:block sm:mt-0 h-full block mt-4 md:inline-block lg:mt-0 md:mt-0 md:text-slate-300 relative hover:text-white  font-bold ">
                                 MASHUPS
                                 <div class="relative hidden line-menu">
-                                    <div class="arrowed absolute xl:top-[13px] xl:left-16 lg:top-[17px] lg:left-14 md:top-[20px] md:left-9">
+                                    <div class="arrowed absolute xl:top-[13px] xl:left-[2rem] lg:top-[17px] lg:left-14 md:top-[20px] md:left-[1rem]">
                                         <div class="arrow-3"></div>
                                     </div>
                                 </div>
