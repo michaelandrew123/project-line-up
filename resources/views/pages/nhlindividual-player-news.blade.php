@@ -55,7 +55,7 @@
                 <div class="flex flex-col w-full">
                     <div class="flex flex-row w-full justify-between mb-3">
                         <div class="flex flex-col gap-3  w-[32%] h-[21rem]   rounded-xl bg-white relative">
-                            <div class="flex m-1 mt-5 ">
+                            <div class="flex mx-2 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
                                     <div class="flex flex-row gap-2">
@@ -68,7 +68,7 @@
                                     </div>   
                                 </div>
                             </div>
-                            <div class=" ml-1">
+                            <div class=" mx-2 ml-1">
                                 <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
                                 <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
-                            <div class="flex m-1 mt-5 ">
+                            <div class="flex  mx-2 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
                                     <div class="flex flex-row gap-2">
@@ -94,7 +94,7 @@
                                     </div>   
                                 </div>
                             </div>
-                            <div class=" ml-1">
+                            <div class=" mx-2 ml-1">
                                 <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
                                 <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
-                            <div class="flex m-1 mt-5 ">
+                            <div class="flex  mx-2 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
                                     <div class="flex flex-row gap-2">
@@ -120,7 +120,7 @@
                                     </div>   
                                 </div>
                             </div>
-                            <div class=" ml-1">
+                            <div class=" mx-2 ml-1">
                                 <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
                                 <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
@@ -135,7 +135,7 @@
                     </div>
                     <div class="flex flex-row w-full justify-between mb-3">
                         <div class="flex flex-col gap-3 xl:w-[32%] lg:w-[32%] md:w-[44%] h-[21rem]   rounded-xl bg-white relative">
-                            <div class="flex m-1 mt-5 ">
+                            <div class="flex  mx-2 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
                                     <div class="flex flex-row gap-2">
@@ -148,7 +148,7 @@
                                     </div>   
                                 </div>
                             </div>
-                            <div class=" ml-1">
+                            <div class=" mx-2 ml-1">
                                 <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
                                 <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
@@ -164,7 +164,7 @@
                         <img class="xl:w-9/12 lg:w-9/12 md:w-9/12 " src="{{ asset('/images/menu-icon/adds3.png') }}">
                         </div>
                         <div class="flex flex-col gap-3 xl:w-[32%] lg:w-[32%] md:w-[44%] h-[21rem]   rounded-xl bg-white relative">
-                            <div class="flex m-1 mt-5 ">
+                            <div class="flex mx-2 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
                                     <div class="flex flex-row gap-2">
@@ -177,7 +177,7 @@
                                     </div>   
                                 </div>
                             </div>
-                            <div class=" ml-1">
+                            <div class=" mx-2 ml-1">
                                 <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
                                 <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
@@ -192,7 +192,7 @@
                     </div>
                     <div class="flex flex-row w-full justify-between mb-3">
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
-                            <div class="flex m-1 mt-5 ">
+                            <div class="flex  mx-2 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
                                     <div class="flex flex-row gap-2">
@@ -205,7 +205,7 @@
                                     </div>   
                                 </div>
                             </div>
-                            <div class=" ml-1">
+                            <div class=" mx-2 ml-1">
                                 <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
                                 <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
@@ -218,7 +218,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
-                            <div class="flex m-1 mt-5 ">
+                            <div class="flex  mx-2 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
                                     <div class="flex flex-row gap-2">
@@ -231,7 +231,7 @@
                                     </div>   
                                 </div>
                             </div>
-                            <div class=" ml-1">
+                            <div class=" mx-2 ml-1">
                                 <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
                                 <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
@@ -244,7 +244,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white relative">
-                            <div class="flex m-1 mt-5 ">
+                            <div class="flex  mx-2 mt-5 ">
                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-2">
                                     <div class="flex flex-row gap-2">
@@ -257,7 +257,7 @@
                                     </div>   
                                 </div>
                             </div>
-                            <div class=" ml-1">
+                            <div class=" mx-2 ml-1">
                                 <p class="text-[14px] font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
                                 <p class="text-[12px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
                             </div>
