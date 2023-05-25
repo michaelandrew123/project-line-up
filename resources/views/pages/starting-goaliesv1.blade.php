@@ -62,7 +62,7 @@
                                 </div>    
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">  
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                                 </div>
                             </div>       
                                 <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
@@ -96,7 +96,7 @@
                                     </div>       
                                     <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">  
                                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                                     </div>
                                 </div>
                             </div>
@@ -151,7 +151,7 @@
                                     <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl"> 
                                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left">  
                                         </div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                                     </div>
                                 </div>       
                                 <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
@@ -185,7 +185,7 @@
                                     </div>  
                                     <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +240,7 @@
                                 </div>       
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                                 </div>
                             </div>       
                             <div class="w-96 h-5/6 border border-black rounded-xl relative mb-10 ">
@@ -274,7 +274,7 @@
                                 </div>
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                                 </div>
                             </div>
                         </div>
@@ -2140,7 +2140,7 @@
                     <div class="rectangle">
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2186,7 +2186,7 @@
                         <div class="rectangle">
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                             </div>
                         </div>
                     </div>
@@ -2242,7 +2242,7 @@
                     <div class="rectangle">
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2288,7 +2288,7 @@
                         <div class="rectangle">
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                             </div>
                         </div>
                     </div>
@@ -2346,7 +2346,7 @@
                     <div class="rectangle">
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2392,7 +2392,7 @@
                         <div class="rectangle">
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                             </div>
                         </div>
                     </div>
@@ -2448,7 +2448,7 @@
                     <div class="rectangle">
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2494,7 +2494,7 @@
                         <div class="rectangle">
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                             </div>
                         </div>
                     </div>
@@ -2554,7 +2554,7 @@
                     <div class="rectangle">
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2600,7 +2600,7 @@
                         <div class="rectangle">
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl">                     
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-black">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-2  text-black">+</h1>
                             </div>
                         </div>
                     </div>
