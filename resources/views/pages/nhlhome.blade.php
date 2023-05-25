@@ -137,7 +137,7 @@
                        
                     @endforeach
                 </div>
-                <div class="">
+                <!-- <div class="">
                     <div class="flex items-center">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
@@ -147,32 +147,69 @@
                     <div class="bg-[#045473] w-full mb-2">
                         <p class="text-white text-[15px] font-semibold p-0.5 mx-1">NHL Highlights: Blues 6, Maple Leafs 5 (SO)</p>
                     </div>
-                    <div class="flex flex-row justify-between">
-                        <div >
-                            <img class="xl:w-[25rem] lg:w-[20rem] xl:h-64 lg:h-full md:w-[20rem] md:h-full" src="{{ asset('/images/menu-icon/high_lights.png') }}" alt="">
+                    <div class="flex flex-row justify-between items-stretch">                     
+                         <img class="w-6/12" src="{{ asset('/images/menu-icon/high_lights.png') }}" alt="">
+                        <ul id="parent" class="flex flex-col w-6/12">
+                            <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                <p class="text-[13px] opacity-50 ml-2">NHL | 5:37</p>
+                            </li>
+                            <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                <a class="text-sm font-semibold ml-2" href="#">NHL Highlight: Jet 3, Flames 2</a>
+                                <p class="text-[13px] opacity-50 ml-2">NHL | 5:35</p>
+                            </li>
+                            <li id="-active" class="flex flex-col border border-slate-400 p-0.5 link">
+                                <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Predator 6, Canadiens 3</a>
+                                <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
+                            </li>
+                            <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Blues 6, Maple Leafs 5 (SO)</a>
+                                <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
+                            </li>
+                            <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                <a class="text-sm font-semibold ml-2" href="#">NHL HIghtlights: Sabres 5, Capital 4 (OT)</a>
+                                <p class="text-[13px] opacity-50 ml-2">NHL | 5:39</p>
+                            </li>
+                            <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Panthers 5, Coyotes 3</a>
+                                <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="w-full flex justify-center">
+                    <div class="w-11/12">
+                        <div class="flex items-center">
+                            <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                            <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
+                                Hightlights
+                            </h1>
                         </div>
-                        <div class="w-[57%] bg-slate-50">
-                            <ul id="parent" class="flex flex-col">
-                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                        <div class="bg-[#045473] w-full mb-2">
+                            <p class="text-white text-[15px] font-semibold p-0.5 mx-1">NHL Highlights: Blues 6, Maple Leafs 5 (SO)</p>
+                        </div>
+                        <div class="flex flex-row justify-between items-stretch">
+                            <img class="w-6/12" src="http://127.0.0.1:8000/images/menu-icon/high_lights.png" alt="">
+                            <ul id="parent" class="flex flex-col w-6/12">
+                                <li class="flex flex-col border grow border-slate-400 p-0.5 link" style="border-left: none;">
                                     <p class="text-[13px] opacity-50 ml-2">NHL | 5:37</p>
                                 </li>
-                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                <li class="flex flex-col border border-slate-400 p-0.5 link" style="border-left: none;">
                                     <a class="text-sm font-semibold ml-2" href="#">NHL Highlight: Jet 3, Flames 2</a>
                                     <p class="text-[13px] opacity-50 ml-2">NHL | 5:35</p>
                                 </li>
-                                <li id="-active" class="flex flex-col border border-slate-400 p-0.5 link">
+                                <li id="-active" class="flex flex-col border border-slate-400 p-0.5 link" style="border-left: none;">
                                     <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Predator 6, Canadiens 3</a>
                                     <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
                                 </li>
-                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                <li class="flex flex-col border border-slate-400 p-0.5 link" style="border-left: none;">
                                     <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Blues 6, Maple Leafs 5 (SO)</a>
                                     <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
                                 </li>
-                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                <li class="flex flex-col border border-slate-400 p-0.5 link" style="border-left: none;">
                                     <a class="text-sm font-semibold ml-2" href="#">NHL HIghtlights: Sabres 5, Capital 4 (OT)</a>
                                     <p class="text-[13px] opacity-50 ml-2">NHL | 5:39</p>
                                 </li>
-                                <li class="flex flex-col border border-slate-400 p-0.5 link">
+                                <li class="flex flex-col border border-slate-400 p-0.5 link" style="border-left: none;">
                                     <a class="text-sm font-semibold ml-2" href="#">NHL Highlights: Panthers 5, Coyotes 3</a>
                                     <p class="text-[13px] opacity-50 ml-2">NHL | 5:36</p>
                                 </li>

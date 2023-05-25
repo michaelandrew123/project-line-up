@@ -34,7 +34,7 @@
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                             </div>
                         </div>
                         <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12  h-80  relative ml-5 mr-5 border border-slate-200  rounded-xl flex flex-col justify-center">
@@ -52,7 +52,7 @@
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                             </div>
                         </div>
                         <div class="2xl:w-[23rem] xl:w-[23rem] w-12/12  h-80  relative border border-slate-200  rounded-xl flex flex-col justify-center">
@@ -70,7 +70,7 @@
                             <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                                 <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                         </div>
                         <div class="flex md:flex-row justify-center justify-between">
                             <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
-                                <div class="flex m-1 mt-5 ">
+                                <div class="flex mx-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-[#e7e9ec] rounded-full w-[100%] flex items-center p-1">
@@ -150,7 +150,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                <div class="mx-2 mb-2 lg:pb-5 md:pb-1">
                                     <p class="text-[14px] font-bold mb-5 ">Anderson was the first gaolie off the ice at morning skate</p>
                                     <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                                 </div>
@@ -163,11 +163,11 @@
                                 </div>
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                 </div>
                             </div>
                             <div class="w-[31%] h-[21rem] border border-black relative rounded-xl">
-                                <div class="flex m-1 mt-5 ">
+                                <div class="flex mx-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-[#15d869] rounded-full w-[97%] flex items-center p-1">
@@ -184,7 +184,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                <div class=" mx-2 mb-2 lg:pb-5 md:pb-1">
                                     <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                                     <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                                 </div>
@@ -199,11 +199,11 @@
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                 </div>
                             </div>
                             <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
-                                <div class="flex m-1 mt-5 ">
+                                <div class="flex mx-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-orange-400 rounded-full w-36 flex items-center p-1">
@@ -220,7 +220,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" ml-1 mb-2 2xl:pb-5 xl:pb-5 lg:pb-5  sm:pb-0">
+                                <div class="mx-2 mb-2 2xl:pb-5 xl:pb-5 lg:pb-5  sm:pb-0">
                                     <p class="text-[14px] font-bold lg:mb-5 md:mb-[13px]  md:sm-1">Anderson was the first gaolie off the ice at morning skate</p>
                                     <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                                 </div>
@@ -235,7 +235,7 @@
 
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +252,7 @@
                         </div>
                         <div class="flex md:flex-row justify-center justify-between">
                             <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
-                                <div class="flex m-1 mt-5 ">
+                                <div class="flex mx-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-[#e7e9ec] rounded-full w-[100%] flex items-center p-1">
@@ -269,7 +269,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                <div class=" mx-2 mb-2 lg:pb-5 md:pb-1">
                                     <p class="text-[14px] font-bold mb-5 ">Anderson was the first gaolie off the ice at morning skate</p>
                                     <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                                 </div>
@@ -284,11 +284,11 @@
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                 </div>
                             </div>
                             <div class="w-[31%] h-[21rem] border border-black relative rounded-xl">
-                                <div class="flex m-1 mt-5 ">
+                                <div class="flex mx-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-[#15d869] rounded-full w-[97%] flex items-center p-1">
@@ -305,7 +305,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" ml-1 mb-2 lg:pb-5 md:pb-1">
+                                <div class=" mx-2 mb-2 lg:pb-5 md:pb-1">
                                     <p class="text-[14px] font-bold mb-5">Anderson was the first gaolie off the ice at morning skate</p>
                                     <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                                 </div>
@@ -320,11 +320,11 @@
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                 </div>
                             </div>
                             <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
-                                <div class="flex m-1 mt-5 ">
+                                <div class="flex mx-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-24 md:w-16 md:h-20 " src="{{ asset('/images/Anaheim/MASON-MCTAVISH-37.png') }}">
                                     <div class="ml-2">
                                         <div class="bg-orange-400 rounded-full w-36 flex items-center p-1">
@@ -341,7 +341,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" ml-1 mb-2 2xl:pb-5 xl:pb-5 lg:pb-5  sm:pb-0">
+                                <div class=" mx-2 mb-2 2xl:pb-5 xl:pb-5 lg:pb-5  sm:pb-0">
                                     <p class="text-[14px] font-bold lg:mb-5 md:mb-[13px]  md:sm-1">Anderson was the first gaolie off the ice at morning skate</p>
                                     <p class="text-[11px] font-semibold">Predrik Anderson continue to show that he is well equiped to be a number one goalie in the NHL</p>
                                 </div>
@@ -356,7 +356,7 @@
 
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                 </div>
                             </div>
                         </div>
@@ -1518,7 +1518,7 @@
                                     <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                     </div>
                                 </div>
                                 <div class="w-[31%] h-[21rem] border border-black relative rounded-xl">
@@ -1554,7 +1554,7 @@
                                     <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                     </div>
                                 </div>
                                 <div class="w-[31%] h-[21rem] border border-black relative rounded-xl ">
@@ -1590,7 +1590,7 @@
 
                                     <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
                                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                     </div>
                                 </div>
                             </div> -->
@@ -1788,7 +1788,7 @@
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                         </div>
                     </div>
                 </div> 
@@ -1811,7 +1811,7 @@
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                         </div>
                     </div>
                 </div>
@@ -1834,7 +1834,7 @@
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">
 
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2173,7 +2173,7 @@
                             <div class="rectangle">
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">                     
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                 </div>
                             </div>
                         </div>
@@ -2226,7 +2226,7 @@
                             <div class="rectangle">
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">                     
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                 </div>
                             </div>
                         </div>
@@ -2280,7 +2280,7 @@
                             <div class="rectangle">
                                 <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">                     
                                     <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                    <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                 </div>
                             </div>
                         </div> 
@@ -2346,7 +2346,7 @@
                                     </div>     
                                     <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">                     
                                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                     </div>
                                 </div>
                             </div> 
@@ -2385,7 +2385,7 @@
                                     <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">                                           
                                         <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"> 
                                         </div>
-                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                        <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                     </div>
                                 </div>  
                             </div>
@@ -2425,7 +2425,7 @@
                                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">                           
                                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left">                                
                                             </div>
-                                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                                         </div>       
                                     </div> 
                                 </div>
@@ -2513,7 +2513,7 @@
                     <div class="rectangle">
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2562,7 +2562,7 @@
                     <div class="rectangle">
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                         </div>
                     </div>
                 </div>
@@ -2611,7 +2611,7 @@
                     <div class="rectangle">
                         <div class="w-20  overflow-hidden inline-block absolute bottom-0 right-0 rounded-br-xl ">                     
                             <div class=" h-28  bg-sky-500/100 rotate-45 transform origin-bottom-left"></div>
-                            <h1 class="text-xl text-[50px] absolute bottom-4 right-1 text-white">+</h1>
+                            <h1 class="text-xl text-[50px] absolute bottom-4 right-2 text-white">+</h1>
                         </div>
                     </div>
                 </div>
