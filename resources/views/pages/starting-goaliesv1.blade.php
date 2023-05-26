@@ -50,7 +50,7 @@
                                     </div>
                                 </div>
                                 <div class="m-3 mb-5 pb-5">
-                                    <p class="text-[16px] font-bold mb-5">Saros was the first gaolie off the ice at morning skate</p>
+                                    <p class="text-[16px] font- bold mb-5">Saros was the first gaolie off the ice at morning skate</p>
                                     <p class="text-[13px] font-semibold">Juuse Saros continue to show that he is well equiped to be a number one goalie in the NHL</p>
                                 </div>
                                 <div class="flex items-center ml-3 pb-5">
