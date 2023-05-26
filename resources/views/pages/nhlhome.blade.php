@@ -55,8 +55,8 @@
 
                         {{--{{ $item->category->slug }}--}}
                         @if($item->category->slug === 'morning-skate')
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex justify-center bg-white">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 relative">
+                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
                                     <div class="flex flex-row items-center gap-2">
                                         <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
@@ -64,15 +64,15 @@
                                     <img src="  {{$item->metafields->featured_image->url }}" class="w-[16rem]">
                                     <p class="text-[12px] font-extrabold">{{$item->title}}</p>
                                     <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                    <div class="flex w-full justify-end absolute xl:left-7 right-2 bottom-2">
-                                        <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                    </div>
+                                </div>
+                                <div class="w-full ">
+                                    <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
                         @endif
                         @if($item->category->slug === 'top-stacks')
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex justify-center bg-white">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 relative">
+                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
                                     <div class="flex flex-row items-center gap-2">
                                         <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
@@ -80,15 +80,15 @@
                                     <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
                                     <p class="text-[12px] font-extrabold">{{$item->title}}</p>
                                     <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                    <div class="flex w-full justify-end absolute  xl:left-7 right-2 bottom-2">
-                                        <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                    </div>
+                                </div>
+                                <div class=" w-full ">
+                                    <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
                         @endif
                         @if($item->category->slug === 'props-and-odds')
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex justify-center bg-white">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 relative">
+                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
+                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
                                     <div class="flex flex-row items-center gap-2">
                                         <div class="w-7 h-7 bg-green-600 rounded-full flex justify-center items-center">
                                             <p class="text-xl font-bold text-white">$</p>
@@ -98,9 +98,9 @@
                                     <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
                                     <p class="text-[12px] font-extrabold">{{$item->title}}</p>
                                     <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                    <div class="flex w-full justify-end absolute  xl:left-7 right-2 bottom-2">
-                                        <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                    </div>
+                                </div>
+                                <div class="w-full ">
+                                    <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
                         @endif
@@ -228,7 +228,7 @@
                             @foreach($goalies->data as $key=>$val)
                                @if(isset($val->metafields->goalie_status))
                                     @if($val->metafields->goalie_status->name === 'Confirmed')  
-                                       <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white m-1.5">
+                                       <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
                                             <div class="flex m-3 mt-5 ">
                                                 <img class="xl:w-24 lg:w-[4.5rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{$val->player->images->uniform}}">
                                                 <div class="flex flex-col ml-2 gap-3">
@@ -248,17 +248,19 @@
                                                 <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">{{$val->title}}</p>
                                                 <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">{{$val->description}}</p>
                                             </div>
-                                            <div class="flex  items-center xl:w-[17rem] lg:w-[14rem] justify-between absolute bottom-1">
-                                                <div class="flex flex-row items-center">
-                                                    <a href="{{$val->source->url}}">
-                                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                                    </a>
-                                                    <div>
-                                                        <h3 class="text-[13px]">{{$val->source->name}}</h3>
-                                                        <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
-                                                    </div>
-                                                </div>                                   
-                                                <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px] absolute right-0" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                            <div class="w-full absolute bottom-1">
+                                                <div class="w-full flex flex-row items-center justify-between">
+                                                    <div class="flex flex-row items-center">
+                                                        <a href="{{$val->source->url}}">
+                                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                                        </a>
+                                                        <div>
+                                                            <h3 class="text-[13px]">{{$val->source->name}}</h3>
+                                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                                        </div>
+                                                    </div>                                   
+                                                    <img class="xl:w-[25px] xl:h-[25px] lg:w-[25px] lg:h-[25px] md:w-[20px] md:h-[20px] mr-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                                </div>
                                             </div>
                                         </div>
                                     @endif

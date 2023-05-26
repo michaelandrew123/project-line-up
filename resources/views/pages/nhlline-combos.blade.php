@@ -5,20 +5,26 @@
  <!-- Desktop nhl/Line combos -->
 <div class="w-full flex flex-row justify-center block smm-hidden">
     <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center  border-black m-4 gap-5 max-w-screen-2xl">
-        <div class="flex flex-row justify-between  items-center flex justify-center w-full">
-            <div class="flex gap-3">
-                <img class="w-10 h-10" class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+        <div class="flex flex-row justify-between items-center flex w-full">
+            <div class="flex items-center gap-2">
+                <img class="w-8 h-8" class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                 <div class="flex">
                     <h1 class="xl:text-4xl text-2xl font-extrabold">projected</h1>
                     <h1 class="xl:text-4xl text-2xl font-bold text-[#39b6ff]">lineups</h1>
                 </div>
             </div>
-            <div class="flex flex-row items-center xl:gap-5 gap-3">
+            <div class="flex flex-row items-center xl:gap-3 gap-2">
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 px-5  py-2 rounded-md">NHL</button>
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NFL</button>
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NBA</button>
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">MLB</button>
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">EPL</button>
+                <div class="flex relative">
+                   <input class="border border-black w-[10rem] h-10" type="text">
+                    <a class="absolute right-0" href="">
+                        <img class="w-[50px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
+                    </a> 
+                </div>
                 <a href="#">
                     <svg class="w-10 text-white border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
@@ -27,15 +33,24 @@
             </div>
         </div>
         <div class="flex flex-row justify-between w-full gap-3">
-            <button class="xl:text-2xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">STARTING GOALIES</button>
-            <button class="xl:text-2xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md">LINE COMBOS</button>
-            <button class="xl:text-2xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">PROJECTIONS</button>
-            <button class="xl:text-2xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">NEWS</button>
-            <button class="flex items-center xl:text-2xl text-lg font-bold bg-[#ebece9] text-black xl:px-9 px-5  py-2 rounded-md">PROPS & ODDS
+            <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">STARTING GOALIES</a>
+            <a href="" class="xl:text-xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md">LINE COMBINATIONS</a>
+            <a href=" " class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">DFS PROJECTIONS</a>
+            <a href="" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">PLAYER NEWS</a>
+            <a href="" class="flex items-center xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-9 px-5  py-2 rounded-md">PROPS & ODDS
                 <img class="w-7 w-5" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-            </button>
+            </a>
         </div>
-        <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
+        <ul class="flex flex-row items-center xl:gap-6 lg:gap-4 ">
+                @foreach($team->data as $key=>$val)
+                    <li class="" value="">
+                        <a class=""  href="/nhl/line-combos/{{$val->slug}}">
+                            <img class="w-10 flex " src="{{$val->logo->src}}" alt="">
+                        </a>
+                    </li>
+                @endforeach
+        </ul>
+        <!-- <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
             <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">
                 {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}
             </a>
@@ -52,7 +67,7 @@
             <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
                 <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
             </a>
-        </div>
+        </div> -->
         <!-- <div id="head-drp" >
             <select class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center" name="" id="">
                 @foreach($team->data as $key=>$val)
@@ -81,18 +96,21 @@
             <div class="flex flex-row items-center justify-between m-3">
                 <div class="flex flex-row items-center gap-7">
                     <img class="w-[4rem] rounded-lg" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
-                    <div class="flex flex-wrap">
+                    <div class="flex flex-wrap gap-2">
                         <p class="text-2xl font-extrabold">Toronto Maple Leafs</p>
                         <p class="text-2xl font-extrabold">Line Combinations</p>
                     </div>
-                </div>
-                <div class="flex gap-2">
-                    <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-5 h-5  rounded-full ml-2">
-                    <h1 class="text-[13px] font-bold uppercase">{{ $result->data->status->name  }}</h1>
-                </div>            
+                    <!-- @foreach($team->data as $key=>$val)
+                        <div class="flex flex-row items-center gap-10">
+                            <div class="flex flex-col">
+                                <img class="w-[4rem] flex " src="{{$val->logo->src}}" alt="">
+                            </div>
+                            <p class="teams text-2xl font-semibold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</p>
+                        </div>
+                    @endforeach -->
+                </div>         
             </div>
-            <div class="bg-slate-300 h-[2px] w-full"></div>
-            <div class=" mx-3 ">
+            <div class="mx-3">
                 <div class="flex flex-row items-center justify-between">
                     <div class="flex flex-row gap-2 items-center">  
                         <!-- <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt=""> -->
@@ -104,6 +122,10 @@
                             {{--<p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>--}}   
                         </div>
                     </div>
+                    <div class="flex gap-2">
+                        <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-5 h-5  rounded-full ml-2">
+                        <h1 class="text-[13px] font-bold uppercase">{{ $result->data->status->name  }}</h1>
+                    </div>   
                     <div class="relative hidden">
                         <button id="" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
                             {{--<select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">--}}
@@ -135,6 +157,7 @@
                     </div>
                 </div>
             </div>
+            <div class="bg-slate-300 h-[2px] w-full"></div>
         </div>
         <div class="w-3/12 ">
           <img class="w-full h-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
