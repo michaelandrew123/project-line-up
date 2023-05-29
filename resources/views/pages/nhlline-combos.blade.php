@@ -6,7 +6,7 @@
 <div class="w-full flex flex-row justify-center block smm-hidden">
     <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center  border-black m-4 gap-5 max-w-screen-2xl">
         <div class="flex flex-row justify-between items-center flex w-full">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-1">
                 <img class="w-8 h-8" class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                 <div class="flex">
                     <h1 class="xl:text-4xl text-2xl font-extrabold">projected</h1>
@@ -34,17 +34,17 @@
         </div>
         <div class="flex flex-row justify-between w-full gap-3">
             <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">STARTING GOALIES</a>
-            <a href="" class="xl:text-xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md">LINE COMBINATIONS</a>
+            <a href="#" id="lc-btn" class="xl:text-xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md ">LINE COMBINATIONS</a>
             <a href=" " class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">DFS PROJECTIONS</a>
             <a href="" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">PLAYER NEWS</a>
             <a href="" class="flex items-center xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-9 px-5  py-2 rounded-md">PROPS & ODDS
                 <img class="w-7 w-5" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
             </a>
         </div>
-        <ul class="flex flex-row items-center xl:gap-6 lg:gap-4 ">
+        <ul id="lc-dropdown" class="flex flex-row items-center xl:gap-6 lg:gap-4 hidden ">
                 @foreach($team->data as $key=>$val)
                     <li class="" value="">
-                        <a class=""  href="/nhl/line-combos/{{$val->slug}}">
+                        <a class="" href="/nhl/line-combos/{{$val->slug}}">
                             <img class="w-10 flex " src="{{$val->logo->src}}" alt="">
                         </a>
                     </li>
@@ -83,7 +83,6 @@
         <div class="relative w-full hidden">
             <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input " type="" value="Search team projected lineups or players"> 
             <a class="absolute right-[15px] top-[7px]" href="">
-                <!-- <img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""> -->
                 <img class="w-[3.5rem]" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
             </a>
         </div>
@@ -95,19 +94,35 @@
         <div class="w-9/12 flex flex-col gap-2 ">
             <div class="flex flex-row items-center justify-between m-3">
                 <div class="flex flex-row items-center gap-7">
-                    <img class="w-[4rem] rounded-lg" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
+                    <!-- <img class="w-[4rem] rounded-lg" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
                     <div class="flex flex-wrap gap-2">
                         <p class="text-2xl font-extrabold">Toronto Maple Leafs</p>
                         <p class="text-2xl font-extrabold">Line Combinations</p>
-                    </div>
-                    <!-- @foreach($team->data as $key=>$val)
-                        <div class="flex flex-row items-center gap-10">
-                            <div class="flex flex-col">
-                                <img class="w-[4rem] flex " src="{{$val->logo->src}}" alt="">
-                            </div>
-                            <p class="teams text-2xl font-semibold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</p>
-                        </div>
-                    @endforeach -->
+                    </div> -->
+               
+                    
+                        
+                                <div class="flex flex-col items-center gap-10">
+                                    <div class="flex ">
+                                   
+                                    
+                                   
+                                  
+                                        <div class="flex flex-col">
+                                            <!-- <img class="w-7 flex" src="{{$val->logo->src}}" alt=""> -->
+                                            
+                                        </div>
+                                   
+                                
+                                    </div>
+                                    <p class="teams text-2xl font-semibold text-[#9fa0a0]"> 
+                                    {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}
+                                    </p>    
+                                </div>
+                  
+                       
+                       
+                  
                 </div>         
             </div>
             <div class="mx-3">
@@ -124,7 +139,7 @@
                     </div>
                     <div class="flex gap-2">
                         <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-5 h-5  rounded-full ml-2">
-                        <h1 class="text-[13px] font-bold uppercase">{{ $result->data->status->name  }}</h1>
+                        <h1 class="text-[13px] font-bold uppercase">{{ $result->data->status->name }}</h1>
                     </div>   
                     <div class="relative hidden">
                         <button id="" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
@@ -159,8 +174,8 @@
             </div>
             <div class="bg-slate-300 h-[2px] w-full"></div>
         </div>
-        <div class="w-3/12 ">
-          <img class="w-full h-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
+        <div class="w-3/12  flex justify-end">
+          <img class=" w-56" src="{{ asset('/images/menu-icon/adds3.png') }}">
         </div>
     </div>  
     <div class="flex flex-row items-center w-11/12 justify-evenly mt-3 gap-2.5 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
@@ -182,93 +197,93 @@
         </ul>
     </div>
     <!-- Line-ups  -->
-    <div id="lu-body" class="w-full flex flex-row xl:justify-end lg:justify-center gap-7  max-w-screen-2xl">
-        <div class="xl:w-7/12 lg:w-8/12 md:w-10/12  block smm-hidden"> 
+    <div id="lu-body" class="w-full flex flex-row xl:justify-evenly lg:justify-evenly gap-7  max-w-screen-2xl">
+        <div class="xl:w-7/12 lg:w-8/12 md:w-10/12  block smm-hidden   "> 
             <div id="shirt-footer"  class="flex flex-col gap-2 my-3">
                 <div class="flex flex-col gap-2 w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">FORWARDS</h1>
-                        <div class="flex flex-row mt-3 gap-3">
+                    <h1 class="text-center font-extrabold text-md mt-5 ">FORWARDS</h1>
+                        <div class="flex flex-row mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw1')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">  {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                                 @if($key == 'c1')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                                 @if($key == 'rw1')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                             @endforeach
                         </div>
-                        <div class="flex flex-row mt-3 gap-3">
+                        <div class="flex flex-row mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw2')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                                 @if($key == 'c2')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                                 @if($key == 'rw2')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                             @endforeach
                         </div>
-                        <div class="flex flex-row  mt-3 gap-3">
+                        <div class="flex flex-row  mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw3')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '') }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                                 @if($key == 'c3')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                                 @if($key == 'rw3')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                             @endforeach
                         </div>
-                        <div class="flex flex-row  mt-3 gap-3">
+                        <div class="flex flex-row  mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw4')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                                 @if($key == 'c4')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                                 @if($key == 'rw4')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
@@ -278,17 +293,17 @@
                 </div>                
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <div class="flex flex-col w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">DEFENCE</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">DEFENCE</h1>
                     <div class="flex flex-row justify-center gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'ld1')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'rd1')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
@@ -299,13 +314,13 @@
                         @foreach($result->data->slots as $key=>$item)
 
                             @if($key == 'ld2')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'rd2')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
@@ -318,13 +333,13 @@
 
 
                             @if($key == 'ld3')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'rd3')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
@@ -336,17 +351,17 @@
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                  <img class="w-auto" src="{{ asset('/images/menu-icon/newsletter.png') }}" alt=""> 
                 <div class="flex flex-col w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">GOALIES</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">GOALIES</h1>
                     <div class="flex flex-row justify-center gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'sg1')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '') }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'sg2')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
@@ -357,23 +372,23 @@
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <div class="flex flex-col w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 1</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">PLAYER 1</h1>
                     <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp11')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'pp12')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'pp13')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
@@ -381,16 +396,16 @@
 
                         @endforeach
                     </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
+                    <div class="flex flex-row justify-center mt-10 gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp14')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'pp15')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
@@ -400,40 +415,40 @@
                     </div>
                 </div>
                 <div class="flex flex-col w-full mt-10">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 2</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">PLAYER 2</h1>
                     <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp21')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'pp22')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
 
                                 @if($key == 'pp23')
-                                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                                    <div class="flex flex-col items-center gap-4 w-[32%]">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                 @endif
                         @endforeach
                     </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
+                    <div class="flex flex-row justify-center mt-10 gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp24')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'pp25')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
@@ -443,23 +458,23 @@
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-5"></div>
                     <div class="flex flex-col w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">PRESS BOX</h1>
                     <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'b1')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'b2')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'b3')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
@@ -469,21 +484,21 @@
                     <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'b4')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
                             @endif
                             @if($key == 'b5')
                                 
-                                    <div class="flex flex-col items-center gap-2 w-[32%] ">
+                                    <div class="flex flex-col items-center gap-4 w-[32%] ">
                                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '') }}</p>
                                         <img src="{{   ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                     </div>
                                
                             @endif
                             @if($key == 'b6')
-                                <div class="flex flex-col items-center gap-2 w-[32%]">
+                                <div class="flex flex-col items-center gap-4 w-[32%]">
                                     <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
                                 </div>
@@ -491,34 +506,7 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="flex flex-col items-center ">
-                    <ul class="flex flex-row justify-evenly list-none w-10/12 bg-slate-200 p-5 border rounded-3xl">
-                        <li class=" flex flex-col items-center justify-center text-center mt-3">
-                            <img class="w-14" src="{{ asset('/images/menu-icon/gtd icon.png') }}"  alt="">
-                            <p class="text-sm font-bold"> Game Time <br> Decision</p>
-                        </li>
-                        <li class=" flex flex-col items-center justify-center  text-center">
-                            <img class="w-14" src="{{ asset('/images/menu-icon/injury icon.png') }}"alt="">
-                            <p class="text-sm font-bold"> Injured </p> 
-                        </li>
-                        <li class=" flex flex-col items-center justify-center text-center">
-                            <img class="w-14" src="{{ asset('/images/menu-icon/hot icon.png') }}" alt=""> 
-                            <p class="text-sm font-bold"> Hot Streak </p>
-                        </li>
-                        <li class=" flex flex-col items-center justify-center  text-center">
-                            <img class="w-14" src="{{ asset('/images/menu-icon/cold icon.png') }}" alt="">
-                            <p class="text-sm font-bold"> Cold player </p> 
-                        </li>
-                        <li class=" flex flex-col items-center justify-center  text-center">
-                            <img class="w-14" src="{{ asset('/images/menu-icon/value icon.png') }}"alt="">
-                            <p class="text-sm font-bold"> Value Player </p>
-                        </li>
-                        <li class=" flex flex-col items-center justify-center  text-center">
-                            <img class="w-14" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
-                            <p class="text-sm font-bold"> Top slack </p>
-                        </li>                             
-                    </ul>
-                </div> 
+            
             </div>
             
             <div class="flex flex-col gap-10 mt-10 hidden">
@@ -540,7 +528,7 @@
                 </p>
             </div>
         </div>
-        <div class="w-3/12 xl:mr-7 lg:mr-6 md:mr-2 block smm-hidden">
+        <div class="w-3/12 mt-5 block smm-hidden">
             <div class="">
                 <div class="flex flex-row items-center justify-end bg-[#39b6ff] w-full h-9 rounded-t-md gap-2">
                     <img class="w-5 h-6" src="{{ asset('/images/menu-icon/') }}" >
@@ -611,11 +599,15 @@
                 </div>
                 <div class="flex flex-col gap-2 ml-3">
                     @foreach($article->data as $key=>$val)
-                        <div class="w-full flex flex-row justify-between">
-                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
-                            <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
-                        </div>
-                        <p class="text-sm">{{$val->title}}</p>
+                       @if(isset($val->type))
+                        @if($val->type->slug === 'injury') 
+                            <div class="w-full flex flex-row justify-between">
+                                <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
+                            </div>
+                            <p class="text-sm">{{$val->title}}</p>
+                            @endif
+                        @endif
                     @endforeach
                 </div>
                 <div class="w-full flex justify-center">
@@ -630,14 +622,16 @@
                     </div>
                     <div class="bg-slate-300 h-[2px] w-full"></div>
                 </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Jake Muzzin - LTIR-UBI</p>
-                        <p class="text-sm"> 2023-01-16</p>
+                @foreach($article->data as $key=>$val)
+                    <div class="flex flex-col gap-2 ml-3">
+                        <div class="w-full flex flex-row justify-between">
+                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                            <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
+                        </div>
+                        <p class="text-sm">{{$val->title}}</p>
                     </div>
-                    <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
+                @endforeach
+                <!-- <div class="flex flex-col gap-2 ml-3">
                     <div class="w-full flex flex-row justify-between">
                         <p class="font-semibold text-sm">Nick Robertson - LTIR-UBI</p>
                         <p class="text-sm"> 2023-01-16</p>
@@ -657,7 +651,7 @@
                         <p class="text-sm"> 2023-01-16</p>
                     </div>
                     <p class="text-sm">Muzzin underwent a minor surgical procedure<br> and will be re-evaluated after the ASG (ankle).</p>
-                </div>
+                </div> -->
                 <div class="w-full flex justify-center">
                     <a class="font-semibold text-sm" href="">View All NHL News</a>
                 </div>
@@ -673,7 +667,7 @@
    <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden">
         <div class="w-11/12 md:w-full flex flex-col items-center gap-6 max-w-screen-2xl">
             <div class="bg-slate-300 h-[2px] w-11/12 max-w-screen-2xl"></div>
-                <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg">FORWARDS</h1>
+                <h1 class="text-center font-extrabold text-md mt-5 mb-10 bg-slate-300 p-0.5 border rounded-lg">FORWARDS</h1>
                 <div class="flex flex-row justify-between xl:w-11/12 lg:w-full gap-3.5 md:gap-0">
                     <div class="flex flex-row items-center gap-2 w-8/12 ">
                         <div class="w-11/12 flex flex-col items-center">
@@ -1546,7 +1540,7 @@
             <div class="w-10/12 flex flex-row justify-between gap-2 my-10 max-w-screen-2xl">
                     <div class="flex flex-col items-center gap-8 w-9/12  md:w-full">
                        <div class="bg-slate-300 h-[2px] w-11/12"></div>
-                       <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg w-[5rem] text-center">DEFENCE</h1>
+                       <h1 class="text-center font-extrabold text-md mt-5 mb-10 bg-slate-300 p-0.5 border rounded-lg w-[5rem] text-center">DEFENCE</h1>
                         <div class="flex flex-row justify-between xl:w-11/12 lg:w-full gap-3.5 md:gap-0">
                             <div class="flex flex-row items-center w-8/12 gap-2 ">
                                 <div class="w-11/12 flex flex-col items-center">
@@ -1981,7 +1975,7 @@
                     </div>
                     <div class="flex flex-col gap-8 items-center w-full ">
                         <div class="bg-slate-300 h-[2px] w-11/12"></div>
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg w-[5rem] ">GOALIES</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10 bg-slate-300 p-0.5 border rounded-lg w-[5rem] ">GOALIES</h1>
                         <div class="flex flex-row justify-between xl:w-11/12 lg:w-full gap-3.5 md:gap-0">
                             <div class="flex flex-row items-center w-8/12 gap-2 ">
                                 <div class="w-11/12 flex flex-col items-center">
@@ -2132,7 +2126,7 @@
                 <img class="xl:w-[20rem] w-[7rem]  h-3/5 lg:h-2/5 md:h-1/4" src="{{ asset('/images/menu-icon/adds1.png') }}">
             </div>
             <div class="w-full flex flex-col items-center  gap-8 max-w-screen-2xl">
-                <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg w-[6rem] ">PLAYER-1</h1>  
+                <h1 class="text-center font-extrabold text-md mt-5 mb-10 bg-slate-300 p-0.5 border rounded-lg w-[6rem] ">PLAYER-1</h1>  
                 <div class="flex flex-col w-11/12 md:w-full gap-5">                    
                 <div class="flex flex-row justify-between xl:w-11/12 w-full gap-3.5 md:gap-0">
                     <div class="flex flex-row items-center gap-2 w-8/12 ">
@@ -2495,7 +2489,7 @@
                 </div>      
             </div>
             <div class="w-full flex flex-col items-center  gap-8 max-w-screen-2xl">
-                <h1 class="text-center font-extrabold text-md mt-1 mb-6 bg-slate-300 p-0.5 border rounded-lg w-[6rem] ">PLAYER-2</h1>  
+                <h1 class="text-center font-extrabold text-md mt-5 mb-10 bg-slate-300 p-0.5 border rounded-lg w-[6rem] ">PLAYER-2</h1>  
                 <div class="flex flex-col w-11/12 md:w-full gap-5">                    
                 <div class="flex flex-row justify-between xl:w-11/12 w-full gap-3.5 md:gap-0">
                     <div class="flex flex-row items-center gap-2 w-8/12 ">
@@ -2859,31 +2853,31 @@
             </div>
                 <div class="bg-slate-300 h-[2px] w-9/12 flex  my-5"></div>
             <div class="flex flex-col items-center w-9/12 gap-5">
-                   <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
+                   <h1 class="text-center font-extrabold text-md mt-5 mb-10">PRESS BOX</h1>
                 <div class="flex flex-row justify-between w-full">
-                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                    <div class="flex flex-col items-center gap-4 w-[32%]">
                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                         <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-[16rem] px-3" alt="">                            
                     </div>
-                    <div class="flex flex-col items-center  gap-2 w-[32%]">
+                    <div class="flex flex-col items-center  gap-4 w-[32%]">
                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                         <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-[16rem] px-3" alt="">                            
                     </div>
-                    <div class="flex flex-col items-center  gap-2 w-[32%]">
+                    <div class="flex flex-col items-center  gap-4 w-[32%]">
                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                         <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-[16rem] px-3" alt="">                            
                     </div>
                 </div>
                 <div class="flex flex-row justify-between w-full">
-                    <div class="flex flex-col items-center gap-2 w-[32%]">
+                    <div class="flex flex-col items-center gap-4 w-[32%]">
                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                         <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-[16rem] px-3" alt="">                            
                     </div>
-                    <div class="flex flex-col items-center  gap-2 w-[32%]">
+                    <div class="flex flex-col items-center  gap-4 w-[32%]">
                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                         <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-[16rem] px-3" alt="">                            
                     </div>
-                    <div class="flex flex-col items-center  gap-2 w-[32%]">
+                    <div class="flex flex-col items-center  gap-4 w-[32%]">
                         <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                         <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-[16rem] px-3" alt="">                            
                     </div>
@@ -2962,9 +2956,9 @@
             </div>
             <div id="shirt-footer"  class="flex flex-col gap-2 my-3">
                 <div class="flex flex-col gap-2 w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">FORWARDS</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">FORWARDS</h1>
                     <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3004,7 +2998,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3044,7 +3038,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3088,7 +3082,7 @@
                     <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="flex flex-row justify-between mt-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3128,7 +3122,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3168,7 +3162,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3212,7 +3206,7 @@
                     <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="flex flex-row justify-between mt-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3252,7 +3246,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3292,7 +3286,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3336,7 +3330,7 @@
                     <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="flex flex-row justify-between mt-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3376,7 +3370,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3416,7 +3410,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3462,9 +3456,9 @@
                 <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <div class="flex flex-col w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">DEFENCE</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">DEFENCE</h1>
                     <div class="flex flex-row justify-center gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3504,7 +3498,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3545,8 +3539,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3586,7 +3580,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3627,8 +3621,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3668,7 +3662,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3713,9 +3707,9 @@
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <img class="w-auto" src="{{ asset('/images/menu-icon/newsletter.png') }}" alt=""> 
                 <div class="flex flex-col w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">GOALIES</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">GOALIES</h1>
                     <div class="flex flex-row justify-center gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3755,7 +3749,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3799,9 +3793,9 @@
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                 <div class="flex flex-col w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 1</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">PLAYER 1</h1>
                     <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3841,7 +3835,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3881,7 +3875,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3922,8 +3916,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -3963,7 +3957,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4006,9 +4000,9 @@
                     </div>
                 </div>
                 <div class="flex flex-col w-full mt-10">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 2</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">PLAYER 2</h1>
                     <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4048,7 +4042,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4088,7 +4082,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4129,8 +4123,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row justify-center mt-3 gap-3">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4170,7 +4164,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                             <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4214,31 +4208,31 @@
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-5"></div>
                  <div class="flex flex-col w-full">
-                    <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
+                    <h1 class="text-center font-extrabold text-md mt-5 mb-10">PRESS BOX</h1>
                     <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
                         </div>
                     </div>
                     <div class="flex flex-row justify-between">
-                        <div class="flex flex-col items-center gap-2 w-[32%]">
+                        <div class="flex flex-col items-center gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
                         </div>
-                        <div class="flex flex-col items-center  gap-2 w-[32%]">
+                        <div class="flex flex-col items-center  gap-4 w-[32%]">
                             <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                             <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">                            
                         </div>
@@ -4512,9 +4506,9 @@
                 </div>
                 <div id="shirt-footer"  class="flex flex-col gap-2 shirt-players">
                     <div class="flex flex-col gap-2 w-full">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">FORWARDS</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">FORWARDS</h1>
                         <div class="flex flex-row justify-between">
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4554,7 +4548,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4594,7 +4588,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4638,7 +4632,7 @@
                         <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4678,7 +4672,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center   rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center   rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4718,7 +4712,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center   rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center   rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4762,7 +4756,7 @@
                         <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4802,7 +4796,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4842,7 +4836,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4886,7 +4880,7 @@
                         <div class="w-full  rounded-lg bg-[#1d9bf0] fl-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                         <div class="flex flex-row justify-between mt-3">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4926,7 +4920,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -4966,7 +4960,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5012,9 +5006,9 @@
                     <div class="w-full  rounded-lg bg-[#ff8210] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                     <div class="flex flex-col w-full">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">DEFENCE</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">DEFENCE</h1>
                         <div class="flex flex-row justify-center gap-3">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5054,7 +5048,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5095,8 +5089,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-row justify-center mt-3 gap-3">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                        <div class="flex flex-row justify-center mt-10 gap-3">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5136,7 +5130,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5177,8 +5171,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-row justify-center mt-3 gap-3">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                        <div class="flex flex-row justify-center mt-10 gap-3">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5218,7 +5212,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5263,9 +5257,9 @@
                     <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                     <img class="w-auto" src="{{ asset('/images/menu-icon/newsletter.png') }}" alt=""> 
                     <div class="flex flex-col w-full">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">GOALIES</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">GOALIES</h1>
                         <div class="flex flex-row justify-center gap-3">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5305,7 +5299,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5349,9 +5343,9 @@
                     </div>
                     <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                     <div class="flex flex-col w-full">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 1</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">PLAYER 1</h1>
                         <div class="flex flex-row justify-between">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5391,7 +5385,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5431,7 +5425,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5472,8 +5466,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-row justify-center mt-3 gap-3">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                        <div class="flex flex-row justify-center mt-10 gap-3">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5513,7 +5507,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5556,9 +5550,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col w-full mt-10">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 2</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">PLAYER 2</h1>
                         <div class="flex flex-row justify-between">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5598,7 +5592,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5638,7 +5632,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5679,8 +5673,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-row justify-center mt-3 gap-3">
-                            <div class="flex flex-col items-center rounded-md gap-2 w-[32%]">
+                        <div class="flex flex-row justify-center mt-10 gap-3">
+                            <div class="flex flex-col items-center rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -5720,7 +5714,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col items-center  rounded-md gap-2 w-[32%]">
+                            <div class="flex flex-col items-center  rounded-md gap-4 w-[32%]">
                                 <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="mb-2.5 px-3" alt="">
                                 <div class="w-full flex flex-row justify-between items-center p-2 my-0.5 hidden drftking">
@@ -6143,7 +6137,7 @@
                 </div>
                 <div id="shirt-footer"  class="flex flex-col gap-2 shirt-players">
                     <div class="flex flex-col gap-2 w-full">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">FORWARDS</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">FORWARDS</h1>
                         <div class="flex flex-row justify-between">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw1')
@@ -7071,7 +7065,7 @@
                     <div class="w-full  rounded-lg bg-[#ffa100] dk-price hidden"><h1 class="text-center text-lg font-bold p-3"> Stack Price: $25,500</h1></div>
                     <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                     <div class="flex flex-col w-full">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">DEFENCE</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">DEFENCE</h1>
                         <div class="flex flex-row justify-center gap-3">
                             @foreach($result->data->slots as $key=>$item)
                             @if($key == 'ld1')
@@ -7226,7 +7220,7 @@
                             @endif
                             @endforeach
                         </div>
-                        <div class="flex flex-row justify-center mt-3 gap-3">
+                        <div class="flex flex-row justify-center mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                             @if($key == 'ld2')
                                 <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
@@ -7380,7 +7374,7 @@
                             @endif
                             @endforeach
                         </div>
-                        <div class="flex flex-row justify-center mt-3 gap-3">
+                        <div class="flex flex-row justify-center mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                             @if($key == 'ld3')
                                 <div class="flex flex-row items-center rounded-md gap-2 w-[37%]">
@@ -7538,7 +7532,7 @@
                     <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                     <img class="w-auto" src="{{ asset('/images/menu-icon/newsletter.png') }}" alt=""> 
                     <div class="flex flex-col w-full">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">GOALIES</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">GOALIES</h1>
                         <div class="flex flex-row justify-center gap-3">
                             <div class="flex flex-row justify-center gap-3">
                                 @foreach($result->data->slots as $key=>$item)
@@ -7698,7 +7692,7 @@
                     </div>
                     <div class="bg-slate-300 h-[2px] w-full my-24"></div>
                     <div class="flex flex-col w-full">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 1</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">PLAYER 1</h1>
                         <div class="flex flex-row justify-between">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'pp11')
@@ -8085,7 +8079,7 @@
                        
                     </div>
                     <div class="flex flex-col w-full mt-10">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">PLAYER 2</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">PLAYER 2</h1>
                         <div class="flex flex-row justify-between">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'pp21')
@@ -8467,7 +8461,7 @@
                         </div>  
                     </div>
                     <div id="p-box" class="flex flex-col items-center w-full mt-10">
-                        <h1 class="text-center font-extrabold text-md mt-1 mb-6">PRESS BOX</h1>
+                        <h1 class="text-center font-extrabold text-md mt-5 mb-10">PRESS BOX</h1>
                         <div class="flex flex-row justify-between frstrow ">
                             @foreach($result->data->slots as $key=>$item)
                                @if($key == 'b1')
