@@ -205,7 +205,7 @@ class HockeyController extends Controller
     }
 
      public function nhllineCombosTeam($team_slug){
-
+        $current_team = '';
         $client = new \GuzzleHttp\Client();
 
         $article = $client->get(
@@ -233,18 +233,32 @@ class HockeyController extends Controller
                 ],
             ]
         );
-
+         
         $team_body = $team->getBody();
         $team_result = json_decode($team_body);
         // print_r(json_decode((string) $body));
 
         // dd($team_result);
+        
         foreach($team_result->data as $key){
             // print_r($key->slug);
             if($key->slug == $team_slug){
-               $drp = $key->name;
+                // $drp = $key->name;
+                $current_team = $key->name;  
+            
+            //    dd($current_team);
             }
         }
+        
+        // foreach($team_result->data as $key){
+            
+        //     // print_r($key->logo);
+        //     if($key->logo->src == $team_logo){
+        //        $src = $key->name;
+        //     //    dd($key->name);
+        //     }
+        // }
+    
 
        $url='https://api.projectedlineups.com/v1/sports/teams/'.$team_slug.'/formation';
         $response = $client->get(
@@ -260,7 +274,7 @@ class HockeyController extends Controller
 
         $result = json_decode($body);
           
-        
+        // dd($result);
     //  dd($respose->$result->b5)
 
     //    print_r(json_decode($body));
@@ -268,7 +282,7 @@ class HockeyController extends Controller
     //   dd($result->data->slots);
 
 
-    return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result, 'drp_name' => $drp, 'article' => $team_article]);
+    return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result, 'drp_name' =>  $current_team, 'article' => $team_article]);
     }
     public function nhlteamNews(){
         return view('pages/nhlteam-news');

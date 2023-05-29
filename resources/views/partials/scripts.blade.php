@@ -221,7 +221,10 @@
       $('#p-box > div.scondrow').removeClass('w-[65%]');
      });
   
-  
+     $('#lc-btn').on('click', function(){
+      $('#lc-dropdown').toggleClass('hidden');
+    
+     });
 
     //  $('#sub-hed > l-ups').on('click', function(){
     //   $('#lu-body').removeClass('hidden');
