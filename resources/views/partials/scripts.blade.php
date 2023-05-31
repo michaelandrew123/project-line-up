@@ -93,6 +93,7 @@
         }
     });
     
+    
  
     $('#SN').on('change', function(){
     	var demovalue = $(this).val();
@@ -341,8 +342,8 @@
         var val = $(this).attr('rel');
         
 
+ 
 
-         
         // reset negative to plus
         $( ".plus" ).each(function() {
            $( this ).css( "display", "block" );

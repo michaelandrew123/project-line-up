@@ -706,12 +706,12 @@
                     </div>
                     <div class="bg-slate-300 h-[2px] w-full"></div>
                 </div>
-                <div id="" class="flex flex-col gap-2 ml-3 ">
+                <div id="injury" class="flex flex-col gap-2 ml-3 ">
                     @foreach($article->data as $key=>$val)
                    
                             @if(isset($val->type))
                                 @if($val->type->slug === 'injury') 
-                                    <div id="injury" class="flex flex-col ">
+                                    <div id="injry" class="flex flex-col ">
                                         <div class="w-full flex flex-row justify-between ">
                                             <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
                                             <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
