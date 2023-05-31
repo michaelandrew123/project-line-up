@@ -92,6 +92,8 @@
 
         }
     });
+    
+ 
     $('#SN').on('change', function(){
     	var demovalue = $(this).val();
         if(demovalue == 'val1'){
@@ -453,7 +455,7 @@
  
    
     //Mobile navigation
-
+   
     $('ul#mobile-2nd-mnav > li').on('touchstart', function(e){
         e.preventDefault();
         $('#nav-active').removeAttr('id');
@@ -518,6 +520,7 @@
        
 
     });
+    
    
     //    $('#btn-n').click(function() {
     //       $('#btn-l').removeClass('bg-[#202e5b]');

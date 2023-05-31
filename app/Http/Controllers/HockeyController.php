@@ -204,8 +204,9 @@ class HockeyController extends Controller
         return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result, 'article' => $team_article] );
     }
 
-     public function nhllineCombosTeam($team_slug){
+     public function nhllineCombosTeam($team_slug ){
         $current_team = '';
+        $current_logo = '';
         $client = new \GuzzleHttp\Client();
 
         $article = $client->get(
@@ -238,24 +239,28 @@ class HockeyController extends Controller
         $team_result = json_decode($team_body);
         // print_r(json_decode((string) $body));
 
-        // dd($team_result);
+        // dd($team_result->data[0]->slug);
         
         foreach($team_result->data as $key){
             // print_r($key->slug);
             if($key->slug == $team_slug){
                 // $drp = $key->name;
-                $current_team = $key->name;  
+                $current_team =  $key->name;
+                $current_logo = $key->logo->src;
+                // dd($key);
             
-            //    dd($current_team);
+            //    dd($current_logo);
             }
+            
+            
         }
         
         // foreach($team_result->data as $key){
             
         //     // print_r($key->logo);
         //     if($key->logo->src == $team_logo){
-        //        $src = $key->name;
-        //     //    dd($key->name);
+        //        $current_logo = $key->name;
+        //     //    dd($current_logo);
         //     }
         // }
     
@@ -274,15 +279,14 @@ class HockeyController extends Controller
 
         $result = json_decode($body);
           
-        // dd($result);
-    //  dd($respose->$result->b5)
+    
 
-    //    print_r(json_decode($body));
+       
 
-    //   dd($result->data->slots);
+     
 
 
-    return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result, 'drp_name' =>  $current_team, 'article' => $team_article]);
+    return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result, 'current_name' =>  $current_team, 'current_logo' =>  $current_logo, 'article' => $team_article]);
     }
     public function nhlteamNews(){
         return view('pages/nhlteam-news');
