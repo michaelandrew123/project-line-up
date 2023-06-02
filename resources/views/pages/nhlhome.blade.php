@@ -32,7 +32,7 @@
                 <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5  py-2 rounded-md">STARTING GOALIES</a>
                 <a href="{{url('/nhl/line-combos')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">LINE COMBOS</a>
                 <a href="{{url('/nhl/ ')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROJECTIONS</a>
-                <a href="{{url('/nhl/ ')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">NEWS</a>
+                <a href="{{url('/nhl/player-news ')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">NEWS</a>
                 <a href="{{url('/nhl/props')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] active:bg-[#38b6ff] text-black xl:px-11 lg:px-6 md:px-5 py-2 rounded-md">PROPS & ODDS</a>
             </div>
             <div class="relative">
