@@ -159,7 +159,7 @@ class HockeyController extends Controller
             $sports_article = $article->getBody();
             $team_article = json_decode( $sports_article);
             // dd($team_article);
-
+              
     
 
         

@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master-nhl-line-combos')
 
 @section('content')
 
@@ -707,20 +707,24 @@
                     <div class="bg-slate-300 h-[2px] w-full"></div>
                 </div>
                 <div id="injury" class="flex flex-col gap-2 ml-3 ">
+                    @php
+                       $team_injury_count = 0; 
+                    @endphp 
                     @foreach($article->data as $key=>$val)
-                   
-                            @if(isset($val->type))
-                                @if($val->type->slug === 'injury') 
-                                    <div id="injry" class="flex flex-col ">
-                                        <div class="w-full flex flex-row justify-between ">
-                                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
-                                            <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
-                                        </div>
-                                        <p class="text-sm">{{$val->title}}</p>
+                        @if(isset($val->type))
+                            @if($val->type->slug === 'injury') 
+                                @php 
+                                  $team_injury_count++ 
+                                @endphp
+                                <div id="injry" class="flex flex-col" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">
+                                    <div class="w-full flex flex-row justify-between ">
+                                        <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                        <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
                                     </div>
-                                @endif
+                                    <p class="text-sm">{{$val->title}}</p>
+                                </div>
                             @endif
-                        
+                        @endif
                     @endforeach
                 </div>
                 <div class="w-full flex justify-center">
@@ -735,8 +739,14 @@
                     </div>
                     <div class="bg-slate-300 h-[2px] w-full"></div>
                 </div>
+                @php
+                   $article_count = 0; 
+                @endphp
                 @foreach($article->data as $key=>$val)
-                    <div class="flex flex-col gap-2 ml-3">
+                    @php
+                      $article_count++
+                    @endphp
+                    <div class="flex flex-col gap-2 ml-3" style="{{ $article_count  > 10 ? 'display: none' : ''}}">
                         <div class="w-full flex flex-row justify-between">
                             <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
                             <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
