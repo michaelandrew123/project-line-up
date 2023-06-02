@@ -14,8 +14,8 @@
                 </div>
             </div>
             <div class="flex flex-row items-center xl:gap-3 gap-2">
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 px-5  py-2 rounded-md">NHL</button>
-                {{--<button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NFL</button>--}}
+                <a href="{{url('/nhl/home')}}" class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 px-5  py-2 rounded-md">NHL</a>
+                {{--<a href="{{url('/nfl/home')}}" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NFL</a>--}}
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NBA</button>
                 {{--<button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">MLB</button>--}}
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">EPL</button>
@@ -35,7 +35,7 @@
         </div>
         <div class="flex flex-row justify-between w-full gap-3">
             <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">Starting Goalies</a>
-            <a href="#" id="lc-btn" class="xl:text-xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md ">Line Combinations</a>
+            <a href="{{url('/nhl/line-combos')}}" id="lc-btn" class="xl:text-xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md ">Line Combinations</a>
             <a href=" " class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">DFS Projections</a>
             <a href="" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">Player News</a>
             <a href="" class="flex items-center xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-9 px-5  py-2 rounded-md">Props & Odds

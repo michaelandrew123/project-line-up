@@ -15,7 +15,7 @@
                 </div>
                 <div class="flex flex-row items-center gap-2">
                     <a href="{{url('/nhl/home')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-[#38b6ff] xl:px-7 px-4  py-2 rounded-md">NHL</a>
-                    <a href="" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-[#38b6ff] xl:px-7 px-4  py-2 rounded-md">NFL</a>
+                    <a href="{{url('/nfl/home')}}" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-[#38b6ff] xl:px-7 px-4  py-2 rounded-md">NFL</a>
                     <a href="" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-[#38b6ff] xl:px-7 px-4  py-2 rounded-md">NBA</a>
                     <a href="" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-[#38b6ff] xl:px-7 px-4  py-2 rounded-md">MLB</a>
                     <a href="" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-[#38b6ff] xl:px-7 px-4  py-2 rounded-md">EPL</a>
