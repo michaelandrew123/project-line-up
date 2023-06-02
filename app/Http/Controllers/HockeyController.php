@@ -226,7 +226,7 @@ class HockeyController extends Controller
 
 
         $team = $client->get(
-            'https://api.projectedlineups.com/v1/sports/teams',
+            'https://api.projectedlineups.com/v1/sports/teams?l=0',
             [
                 'headers' => [
                     'Content-Type' => 'application/json',
@@ -247,23 +247,10 @@ class HockeyController extends Controller
                 // $drp = $key->name;
                 $current_team =  $key->name;
                 $current_logo = $key->logo->src;
-                // dd($key);
-            
-            //    dd($current_logo);
             }
             
             
         }
-        
-        // foreach($team_result->data as $key){
-            
-        //     // print_r($key->logo);
-        //     if($key->logo->src == $team_logo){
-        //        $current_logo = $key->name;
-        //     //    dd($current_logo);
-        //     }
-        // }
-    
 
        $url='https://api.projectedlineups.com/v1/sports/teams/'.$team_slug.'/formation';
         $response = $client->get(

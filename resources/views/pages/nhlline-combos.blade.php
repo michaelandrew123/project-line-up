@@ -4,27 +4,28 @@
 
  <!-- Desktop nhl/Line combos -->
 <div class="w-full flex flex-row justify-center block smm-hidden">
-    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center  border-black m-4 gap-5 max-w-screen-2xl">
-        <div class="flex flex-row justify-between items-center flex w-full">
-            <div class="flex items-center gap-1">
-                <img class="w-8 h-8" class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-flex flex-row justify-between items-center flex w-full  border-black m-4 gap-5 max-w-screen-2xl border-b-2 border-slate-300 pb-[20px]">
+        <div class="flex flex-row justify-between items-end flex w-full">
+            <div class="flex gap-1 items-end">
+                <img class="w-[99px]" src="{{ asset('/images/line-combos/logo/matthew_tkachuk.png') }}" alt="">
                 <div class="flex">
-                    <h1 class="xl:text-4xl text-2xl font-extrabold">projected</h1>
-                    <h1 class="xl:text-4xl text-2xl font-bold text-[#39b6ff]">lineups</h1>
+                    <h1 class="text-[50px] font-regular" style="font-family: 'Mouse Memoirs'">projected</h1>
+                    <h1 class="text-[50px]  font-regular text-[#39b6ff]" style="font-family: 'Mouse Memoirs'">lineups</h1>
                 </div>
             </div>
             <div class="flex flex-row items-center xl:gap-3 gap-2">
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 px-5  py-2 rounded-md">NHL</button>
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NFL</button>
+                {{--<button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NFL</button>--}}
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NBA</button>
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">MLB</button>
+                {{--<button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">MLB</button>--}}
                 <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">EPL</button>
-                <div class="flex relative">
-                   <input class="border border-black w-[10rem] h-10" type="text">
-                    <a class="absolute right-0" href="">
-                        <img class="w-[50px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">
-                    </a> 
-                </div>
+                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">LEARN</button>
+                {{--<div class="flex relative">--}}
+                   {{--<input class="border border-black w-[10rem] h-10" type="text">--}}
+                    {{--<a class="absolute right-0" href="">--}}
+                        {{--<img class="w-[50px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">--}}
+                    {{--</a> --}}
+                {{--</div>--}}
                 <a href="#">
                     <svg class="w-10 text-white border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
@@ -33,19 +34,21 @@
             </div>
         </div>
         <div class="flex flex-row justify-between w-full gap-3">
-            <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">STARTING GOALIES</a>
-            <a href="#" id="lc-btn" class="xl:text-xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md ">LINE COMBINATIONS</a>
-            <a href=" " class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">DFS PROJECTIONS</a>
-            <a href="" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">PLAYER NEWS</a>
-            <a href="" class="flex items-center xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-9 px-5  py-2 rounded-md">PROPS & ODDS
-                <img class="w-7 w-5" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+            <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">Starting Goalies</a>
+            <a href="#" id="lc-btn" class="xl:text-xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md ">Line Combinations</a>
+            <a href=" " class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">DFS Projections</a>
+            <a href="" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">Player News</a>
+            <a href="" class="flex items-center xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-9 px-5  py-2 rounded-md">Props & Odds
+
             </a>
         </div>
-        <ul id="lc-dropdown" class="flex flex-row items-center xl:gap-6 lg:gap-4 hidden ">
+
+
+        <ul id="lc-dropdown" class="flex flex-row items-center xl:gap-4 lg:gap-2 ">
                 @foreach($team->data as $key=>$val)
                     <li class="" value="">
                         <a class="" href="/nhl/line-combos/{{$val->slug}}">
-                            <img class="w-10 flex " src="{{$val->logo->src}}" alt="">
+                            <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
                         </a>
                     </li>
                 @endforeach
@@ -80,6 +83,8 @@
                 <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
             </a>
         </div> -->
+
+
         <div class="relative w-full hidden">
             <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input " type="" value="Search team projected lineups or players"> 
             <a class="absolute right-[15px] top-[7px]" href="">
@@ -87,11 +92,14 @@
             </a>
         </div>
     </div>
+
+
 </div>
+
 <div class="">
 <div class="w-full flex flex-col items-center ">
-    <div class="w-11/12 flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl">
-        <div class="w-9/12 flex flex-col gap-2 ">
+    <div class="w-11/12 flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl border-b-2 border-slate-300 pb-[20px] ">
+        <div class="w-full flex flex-col gap-2 ">
             <div class="flex flex-row items-center justify-between m-3">
                 <div class="flex flex-row items-center gap-7">
                     <!-- <img class="w-[4rem] rounded-lg" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
@@ -99,25 +107,21 @@
                         <p class="text-2xl font-extrabold">Toronto Maple Leafs</p>
                         <p class="text-2xl font-extrabold">Line Combinations</p>
                     </div> -->
-               
-                    
-                        
-                                <div class="flex flex-row items-center gap-10">
-                                    <div class="flex flex-col">
-                                        <img class="w-20 flex" src="{{  ( !empty($current_logo) ? $current_logo: 'https://media.projectedlineups.com/sports/hockey/leagues/nhl/teams/anaheim-ducks/logos/logo.svg') }}" alt="">
-                                    </div>
-                                    <p class="teams text-4xl font-bold text-black"> 
+                        <div class="flex flex-row items-center gap-5">
+                            <div class="flex flex-col">
+                                <img class="w-20 flex" src="{{  ( !empty($current_logo) ? $current_logo: 'https://media.projectedlineups.com/sports/hockey/leagues/nhl/teams/anaheim-ducks/logos/logo.svg') }}" alt="">
+                            </div>
+                            <div>
+                                <div class="teams text-4xl font-bold text-black">
                                     {{  ( !empty($current_name) ? $current_name: 'Anaheim Ducks')  }}
-                                    </p>    
                                 </div>
-                  
-                       
-                       
-                  
+                                <div  class="teams text-2xl font-bold text-black">line combinations</div>
+                            </div>
+                        </div>
                 </div>         
             </div>
             <div class="mx-3">
-                <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row items-center justify-left gap-10">
                     <div class="flex flex-row gap-2 items-center">  
                         <!-- <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt=""> -->
                         <div>
@@ -128,7 +132,7 @@
                             {{--<p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>--}}   
                         </div>
                     </div>
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 justify-center items-center">
                         <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-5 h-5  rounded-full ml-2">
                         <h1 class="text-[13px] font-bold uppercase">{{ $result->data->status->name }}</h1>
                     </div>   
@@ -163,13 +167,13 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-slate-300 h-[2px] w-full"></div>
+            <div class="bg-slate-300 h-[2px] w-full hidden"></div>
         </div>
-        <div class="w-3/12  flex justify-end">
-          <img class=" w-56" src="{{ asset('/images/menu-icon/adds3.png') }}">
+        <div class="w-full flex justify-end">
+            <img class="w-[728px]" src="{{ asset('/images/line-combos/pd_by_betway.png') }}">
         </div>
     </div>  
-    <div class="flex flex-row items-center w-11/12 justify-evenly mt-3 gap-2.5 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
+    <div class="flex flex-row items-center w-11/12 justify-evenly mt-[20px] gap-2.5 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
         <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md l-ups bg-[#1d9bf0]">LINEUPS</button>
         <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md  d-kings">DRAFTKINGS</button>
         <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md fnl">FANDUEL</button>
