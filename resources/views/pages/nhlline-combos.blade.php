@@ -9,38 +9,42 @@
             <div class="flex gap-1 items-end">
                 <img class="w-[99px]" src="{{ asset('/images/line-combos/logo/matthew_tkachuk.png') }}" alt="">
                 <div class="flex">
-                    <h1 class="text-[50px] font-regular" style="font-family: 'Mouse Memoirs'">projected</h1>
-                    <h1 class="text-[50px]  font-regular text-[#39b6ff]" style="font-family: 'Mouse Memoirs'">lineups</h1>
+                    <h1 class="text-[48px] font-regular" style="font-family: 'Mouse Memoirs'">projected</h1>
+                    <h1 class="text-[48px]  font-regular text-[#39b6ff]" style="font-family: 'Mouse Memoirs'">lineups</h1>
                 </div>
             </div>
-            <div class="flex flex-row items-center xl:gap-3 gap-2">
-                <a href="{{url('/nhl/home')}}" class="xl:text-3xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 px-5  py-2 rounded-md">NHL</a>
-                {{--<a href="{{url('/nfl/home')}}" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NFL</a>--}}
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">NBA</button>
-                {{--<button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">MLB</button>--}}
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">EPL</button>
-                <button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 px-5  py-2 rounded-md">LEARN</button>
-                {{--<div class="flex relative">--}}
-                   {{--<input class="border border-black w-[10rem] h-10" type="text">--}}
-                    {{--<a class="absolute right-0" href="">--}}
-                        {{--<img class="w-[50px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">--}}
-                    {{--</a> --}}
-                {{--</div>--}}
-                <a href="#">
+            <div class="flex flex-row items-center  w-9/12   justify-between">
+                <div class="flex gap-4">
+                    <a href="{{url('/nhl/home')}}" class="xl:text-lg lg:text-base font-bold bg-[#38b6ff] text-blac px-2  py-0.5 rounded-md">NHL</a>
+                    <!-- {{--<a href="{{url('/nfl/home')}}" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black  px-2  py-2 rounded-md">NFL</a>--}} -->
+                    <a href="" class="xl:text-lg lg:text-base font-bold   text-black  px-2  py-0.5 rounded-md">NBA</a>
+                    <!-- {{--<button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black px-2  py-2 rounded-md">MLB</button>--}} -->
+                    <a href="" class="xl:text-lg lg:text-base font-bold  text-black  px-2  py-0.5 rounded-md">EPL</a>
+                    <a href="" class="xl:text-lg lg:text-base font-bold  text-black  px-2  py-0.5 rounded-md">LEARN</a>
+                    <!-- {{--<div class="flex relative">--}}
+                    {{--<input class="border border-black w-[10rem] h-10" type="text">--}}
+                        {{--<a class="absolute right-0" href="">--}}
+                            {{--<img class="w-[50px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">--}}
+                        {{--</a> --}}
+                    {{--</div>--}} -->
+                </div>
+                <a href="#" class="flex items-end xl:gap-16 lg:gap-7">
+                    <button class="text-base border rounded-lg bg-black text-white font-bold px-0.5 py-0.5">Create Lineup</button>
                     <svg class="w-10 text-white border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
                     </svg>
                 </a>
             </div>
         </div>
-        <div class="flex flex-row justify-between w-full gap-3">
-            <a href="{{url('/nhl/starting-goalies')}}" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">Starting Goalies</a>
-            <a href="{{url('/nhl/line-combos')}}" id="lc-btn" class="xl:text-xl text-lg font-bold bg-[#38b6ff] text-black xl:px-11 px-5  py-2 rounded-md ">Line Combinations</a>
-            <a href=" " class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">DFS Projections</a>
-            <a href="" class="xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-5  py-2 rounded-md">Player News</a>
-            <a href="" class="flex items-center xl:text-xl text-lg font-bold bg-[#ebece9] text-black xl:px-9 px-5  py-2 rounded-md">Props & Odds
-
-            </a>
+        <div class="flex flex-row justify-between w-full">
+            <a href="{{url('/nhl/starting-goalies')}}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black  px-2 py-1 rounded-md text-center">Starting Goalies</a>
+            <a href="{{url('/nhl/line-combos')}}" id="lc-btn" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#38b6ff] text-black  px-2 py-1 rounded-md text-center">Line Combinations</a>
+            <a href=" " class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-1 rounded-md text-center">Player News</a>
+            <a href="{{url('/nhl/player-news')}}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-1 rounded-md text-center">DFS Projections</a>
+            <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-1 rounded-md text-center">Props & Odds</a>
+            <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2  py-1 rounded-md text-center">Lineup Study</a>
+            <a href="" class="flex items-center text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-1 rounded-md text-center">
+               <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List</a>
         </div>
 
 
@@ -173,13 +177,13 @@
             <img class="w-[728px]" src="{{ asset('/images/line-combos/pd_by_betway.png') }}">
         </div>
     </div>  
-    <div class="flex flex-row items-center w-11/12 justify-evenly mt-[20px] gap-2.5 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
-        <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md l-ups bg-[#1d9bf0]">LINEUPS</button>
-        <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md  d-kings">DRAFTKINGS</button>
-        <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md fnl">FANDUEL</button>
-        <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md sts">STATS</button>
-        <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md prp">PROPS</button>
-        <button class="w-full bg-slate-100 text-lg py-4 font-bold rounded-md flex justify-center items-center shp">SHOP
+    <div class="flex flex-row items-center w-11/12 justify-evenly mt-[20px] gap-3 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
+        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md l-ups text-black bg-[#38b6ff]">LINEUPS</button>
+        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md text-black d-kings">DRAFTKINGS</button>
+        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md text-black fnl">FANDUEL</button>
+        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md text-black sts">STATS</button>
+        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md text-black prp">PROPS</button>
+        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md flex justify-center items-center text-black shp">SHOP
             <img class="w-7" src="{{ asset('/images/menu-icon/shopping-bag.png') }}" alt="">
         </button>
     </div> 
