@@ -184,36 +184,36 @@
 
     // NHL LINE-COMBOS
     $('#sub-hed > .d-kings').on('click', function(){
-      $('.d-kings').addClass('bg-[#1d9bf0]');
-      $('.l-ups, .fnl, .sts, .nws, .prp, .shp').removeClass('bg-[#1d9bf0]');
+      $('.d-kings').addClass('bg-[#38b6ff]');
+      $('.l-ups, .fnl, .sts, .nws, .prp, .shp').removeClass('bg-[#38b6ff]');
      });
      $('#sub-hed > .fnl').on('click', function(){
-      $('.fnl').addClass('bg-[#1d9bf0]');
-      $('.l-ups, .sts, .nws, .d-kings, .prp, .shp').removeClass('bg-[#1d9bf0]');
+      $('.fnl').addClass(' bg-[#38b6ff]');
+      $('.l-ups, .sts, .nws, .d-kings, .prp, .shp').removeClass('bg-[#38b6ff]');
      });
      $('#sub-hed > .sts').on('click', function(){
-      $('.sts').addClass('bg-[#1d9bf0]');
-      $('.l-ups, .fnl, .nws, .d-kings, .prp, .shp').removeClass('bg-[#1d9bf0]');     
+      $('.sts').addClass('bg-[#38b6ff]');
+      $('.l-ups, .fnl, .nws, .d-kings, .prp, .shp').removeClass('bg-[#38b6ff]');     
      });
      $('#sub-hed > .l-ups').on('click', function(){
-      $('.l-ups').addClass('bg-[#1d9bf0]');
-      $('.sts, .fnl, .nws, .d-kings, .prp, .shp').removeClass('bg-[#1d9bf0]');
+      $('.l-ups').addClass('bg-[#38b6ff]');
+      $('.sts, .fnl, .nws, .d-kings, .prp, .shp').removeClass('bg-[#38b6ff]');
      });
      $('#sub-hed > .nws').on('click', function(){
-      $('.nws').addClass('bg-[#1d9bf0]');
-      $('.sts, .fnl, .l-ups, .d-kings, .prp, .shp').removeClass('bg-[#1d9bf0]');
+      $('.nws').addClass('bg-[#38b6ff]');
+      $('.sts, .fnl, .l-ups, .d-kings, .prp, .shp').removeClass('bg-[#38b6ff]');
      });
      $('#sub-hed > .sts').on('click', function(){
-      $('.sts').addClass('bg-[#1d9bf0]');
-      $('.fnl, .l-ups, .d-kings, .nws, .prp, .shp').removeClass('bg-[#1d9bf0]');
+      $('.sts').addClass('bg-[#38b6ff]');
+      $('.fnl, .l-ups, .d-kings, .nws, .prp, .shp').removeClass('bg-[#38b6ff]');
      });
      $('#sub-hed > .prp').on('click', function(){
-      $('.prp').addClass('bg-[#1d9bf0]');
-      $('.fnl, .l-ups, .d-kings, .nws, .sts, .shp').removeClass('bg-[#1d9bf0]');
+      $('.prp').addClass('bg-[#38b6ff]');
+      $('.fnl, .l-ups, .d-kings, .nws, .sts, .shp').removeClass('bg-[#38b6ff]');
      });
      $('#sub-hed > .shp').on('click', function(){
-      $('.shp').addClass('bg-[#1d9bf0]');
-      $('.fnl, .l-ups, .d-kings, .nws, .sts, .prp').removeClass('bg-[#1d9bf0]');
+      $('.shp').addClass('bg-[#38b6ff]');
+      $('.fnl, .l-ups, .d-kings, .nws, .sts, .prp').removeClass('bg-[#38b6ff]');
      });
      $('.fnl, .shp, .d-kings, .nws, .sts, .prp').on('click', function(){
       $('#p-box > div.frstrow').addClass('w-[69%]');
