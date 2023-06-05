@@ -204,7 +204,7 @@ class HockeyController extends Controller
         return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result, 'article' => $team_article] );
     }
 
-     public function nhllineCombosTeam($team_slug ){
+     public function nhllineCombosTeam($team_slug){
         $current_team = '';
         $current_logo = '';
         $client = new \GuzzleHttp\Client();
@@ -247,8 +247,9 @@ class HockeyController extends Controller
                 // $drp = $key->name;
                 $current_team =  $key->name;
                 $current_logo = $key->logo->src;
+                 
             }
-            
+    
             
         }
 
@@ -266,7 +267,7 @@ class HockeyController extends Controller
 
         $result = json_decode($body);
           
-    
+        
 
        
 
