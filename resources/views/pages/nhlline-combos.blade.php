@@ -1,104 +1,9 @@
-@extends('layouts.master-nhl-line-combos')
+@extends('layouts.master-nhl')
 
 @section('content')
 
  <!-- Desktop nhl/Line combos -->
-<div class="w-full flex flex-row justify-center block smm-hidden">
-    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-flex flex-row justify-between items-center flex w-full  border-black m-4 gap-5 max-w-screen-2xl border-b-2 border-slate-300 pb-[20px]">
-        <div class="flex flex-row justify-between items-end flex w-full">
-            <div class="flex gap-1 items-end">
-                <img class="w-[99px]" src="{{ asset('/images/line-combos/logo/matthew_tkachuk.png') }}" alt="">
-                <div class="flex">
-                    <h1 class="text-[48px] font-regular" style="font-family: 'Mouse Memoirs'">projected</h1>
-                    <h1 class="text-[48px]  font-regular text-[#39b6ff]" style="font-family: 'Mouse Memoirs'">lineups</h1>
-                </div>
-            </div>
-            <div class="flex flex-row items-center  w-9/12   justify-between">
-                <div class="flex gap-4">
-                    <a href="{{url('/nhl/home')}}" class="xl:text-lg lg:text-base font-bold bg-[#38b6ff] text-blac px-2  py-0.5 rounded-md">NHL</a>
-                    <!-- {{--<a href="{{url('/nfl/home')}}" class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black  px-2  py-2 rounded-md">NFL</a>--}} -->
-                    <a href="" class="xl:text-lg lg:text-base font-bold   text-black  px-2  py-0.5 rounded-md">NBA</a>
-                    <!-- {{--<button class="xl:text-3xl lg:text-lg font-bold bg-[#ebece9] text-black px-2  py-2 rounded-md">MLB</button>--}} -->
-                    <a href="" class="xl:text-lg lg:text-base font-bold  text-black  px-2  py-0.5 rounded-md">EPL</a>
-                    <a href="" class="xl:text-lg lg:text-base font-bold  text-black  px-2  py-0.5 rounded-md">LEARN</a>
-                    <!-- {{--<div class="flex relative">--}}
-                    {{--<input class="border border-black w-[10rem] h-10" type="text">--}}
-                        {{--<a class="absolute right-0" href="">--}}
-                            {{--<img class="w-[50px]" src="{{ asset('/images/menu-icon/search.png') }}" alt="">--}}
-                        {{--</a> --}}
-                    {{--</div>--}} -->
-                </div>
-                <a href="#" class="flex items-end xl:gap-16 lg:gap-7">
-                    <button class="text-base border rounded-lg bg-black text-white font-bold px-0.5 py-0.5">Create Lineup</button>
-                    <svg class="w-10 text-white border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="flex flex-row justify-between w-full">
-            <a href="{{url('/nhl/starting-goalies')}}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black  px-2 py-1 rounded-md text-center">Starting Goalies</a>
-            <a href="{{url('/nhl/line-combos')}}" id="lc-btn" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#38b6ff] text-black  px-2 py-1 rounded-md text-center">Line Combinations</a>
-            <a href=" " class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-1 rounded-md text-center">Player News</a>
-            <a href="{{url('/nhl/player-news')}}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-1 rounded-md text-center">DFS Projections</a>
-            <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-1 rounded-md text-center">Props & Odds</a>
-            <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2  py-1 rounded-md text-center">Lineup Study</a>
-            <a href="" class="flex items-center text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-1 rounded-md text-center">
-               <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List</a>
-        </div>
 
-
-        <ul id="lc-dropdown" class="flex flex-row items-center xl:gap-4 lg:gap-2 ">
-                @foreach($team->data as $key=>$val)
-                    <li class="" value="">
-                        <a class="" href="/nhl/line-combos/{{$val->slug}}">
-                            <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
-                        </a>
-                    </li>
-                @endforeach
-        </ul>
-        <!-- <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
-            <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">
-                {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}
-            </a>
-            <div class="drp-dwn hidden flex flex-col  w-full p-2 bg-slate-50 absolute top-12 overflow-y-auto h-[21rem]">
-                @foreach($team->data as $key=>$val)
-                    <div class="flex flex-row items-center gap-10">
-                        <a class="teams text-2xl font-semibold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
-                        <div class="flex flex-col">
-                            <img class="w-7 flex " src="{{$val->logo->src}}" alt="">
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-            <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
-                <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
-            </a>
-        </div> -->
-        <!-- <div id="head-drp" >
-            <select class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center" name="" id="">
-                @foreach($team->data as $key=>$val)
-                    <option class="" value="">
-                        <a href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
-                    </option>
-                @endforeach
-            </select>
-            <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
-                <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
-            </a>
-        </div> -->
-
-
-        <div class="relative w-full hidden">
-            <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input " type="" value="Search team projected lineups or players"> 
-            <a class="absolute right-[15px] top-[7px]" href="">
-                <img class="w-[3.5rem]" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
-            </a>
-        </div>
-    </div>
-
-
-</div>
 
 <div class="">
 <div class="w-full flex flex-col items-center ">
@@ -111,17 +16,17 @@
                         <p class="text-2xl font-extrabold">Toronto Maple Leafs</p>
                         <p class="text-2xl font-extrabold">Line Combinations</p>
                     </div> -->
-                        <div class="flex flex-row items-center gap-5">
-                            <div class="flex flex-col">
-                                <img class="w-20 flex" src="{{  ( !empty($current_logo) ? $current_logo: 'https://media.projectedlineups.com/sports/hockey/leagues/nhl/teams/anaheim-ducks/logos/logo.svg') }}" alt="">
-                            </div>
-                            <div>
-                                <div class="teams text-4xl font-bold text-black">
-                                    {{  ( !empty($current_name) ? $current_name: 'Anaheim Ducks')  }}
-                                </div>
-                                <div  class="teams text-2xl font-bold text-black">line combinations</div>
-                            </div>
+                    <div class="flex flex-row items-center gap-5">
+                        <div class="flex flex-col">
+                            <img class="w-20 flex" src="{{  ( !empty($current_logo) ? $current_logo: 'https://media.projectedlineups.com/sports/hockey/leagues/nhl/teams/anaheim-ducks/logos/logo.svg') }}" alt="">
                         </div>
+                        <div>
+                            <div class="teams text-4xl font-bold text-black">
+                                {{  ( !empty($current_name) ? $current_name: 'Anaheim Ducks')  }}
+                            </div>
+                            <div class="teams text-2xl font-bold text-black">line combinations</div>
+                        </div>
+                    </div>
                 </div>         
             </div>
             <div class="mx-3">
@@ -156,7 +61,7 @@
                         <select name="" id="team-name" style="-webkit-appearance: none;" class="bg-slate-300 rounded-full  px-2 w-full">
                            {{ $team->data[0]->name }}
                            @foreach($team->data as $key=>$val)                                    
-                            <option value="{{$val->name}}" >{{$val->name}}</option>
+                             <option value="{{$val->name}}" >{{$val->name}}</option>
                            @endforeach  
                         </select>
                         <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow absolute right-[5px] top-[4px] arrw2">
@@ -165,7 +70,7 @@
                         <a href="#" id="head-drp" class="text-lg font-bold border border-slate-300 w-[13rem] rounded-full bg-slate-300"> {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
                         <div class="drp-dwn hidden flex flex-col bg-slate-300 w-[13rem] p-2 absolute">
                             @foreach($team->data as $key=>$val)
-                            <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                              <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
                             @endforeach
                         </div>
                     </div>
@@ -178,14 +83,25 @@
         </div>
     </div>  
     <div class="flex flex-row items-center w-11/12 justify-evenly mt-[20px] gap-3 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
-        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md l-ups text-black bg-[#38b6ff]">LINEUPS</button>
-        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md text-black d-kings">DRAFTKINGS</button>
-        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md text-black fnl">FANDUEL</button>
-        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md text-black sts">STATS</button>
-        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md text-black prp">PROPS</button>
-        <button class="w-full bg-[#ebece9] text-lg py-4 font-bold rounded-md flex justify-center items-center text-black shp">SHOP
-            <img class="w-7" src="{{ asset('/images/menu-icon/shopping-bag.png') }}" alt="">
+        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md l-ups text-black bg-[#38b6ff] text-[#ffffff]">
+            Lineups
         </button>
+        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black d-kings flex justify-center gap-3">
+            <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+            Draftkings
+        </button>
+        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black fnl flex justify-center gap-3">
+            <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">Fanduel
+        </button>
+        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black sts">
+            Stats
+        </button>
+        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black prp">
+            Props
+        </button>
+        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md   text-black shp">
+            Shop</button>
+        <button class="w-36 bg-green-600 text-[16px] font-bold rounded-md text-black">Create</button>
     </div> 
     <div class="props flex w-11/12 my-5 gap-5 block smm-hidden max-w-screen-2xl hidden ">
         <ul class="flex flex-row justify-between w-9/12 ml-[5rem] text-lg font-bold text-slate-500 ">
@@ -204,34 +120,29 @@
                         <div class="flex flex-row mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw1')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">  {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        <div class="w-[200px] h-[200px]">
+                                    <div class="flex flex-col items-center w-[32%]">     
+                                        <div class="">
                                             <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class=" px-3 " alt="">
                                             </div>
                                         </div>
-                                        
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">  {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     </div>
                                 @endif
                                 @if($key == 'c1')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                                                            
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'rw1')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                                                            
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                             @endforeach
@@ -239,33 +150,27 @@
                         <div class="flex flex-row mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw2')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                                                              
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'c2')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                           
-                                     </div>
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    </div>
                                 @endif
                                 @if($key == 'rw2')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                           
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                             @endforeach
@@ -273,32 +178,27 @@
                         <div class="flex flex-row  mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw3')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '') }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                           
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'c3')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                    <div class="flex flex-col items-center w-[32%]"> 
                                         <div class="w-[200px] h-[200px]">
-                                           <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-
-                                        </div>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'rw3')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                           
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                             @endforeach
@@ -306,33 +206,27 @@
                         <div class="flex flex-row  mt-10 gap-3">
                             @foreach($result->data->slots as $key=>$item)
                                 @if($key == 'lw4')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                           
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'c4')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                           
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'rw4')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
-                                        
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                           
+                                    <div class="flex flex-col items-center w-[32%]"> 
+                                        <div class="w-[200px] h-[200px]">
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                             @endforeach
@@ -344,24 +238,20 @@
                     <div class="flex flex-row justify-center mt-10 gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'ld1')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                         <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                    </div>   
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'rd1')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                          <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                      </div>   
-                               </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                </div>
                             @endif
                         @endforeach
                     </div>
@@ -369,24 +259,20 @@
                         @foreach($result->data->slots as $key=>$item)
 
                             @if($key == 'ld2')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                         <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                    </div>   
-                              </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                </div>
                             @endif
                             @if($key == 'rd2')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                         <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                    </div>                 
-                               </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                </div>
                             @endif
 
                         @endforeach
@@ -396,23 +282,19 @@
 
 
                             @if($key == 'ld3')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                         <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                    </div>            
-                               </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                </div>
                             @endif
                             @if($key == 'rd3')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                         <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                    </div>   
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
 
@@ -426,24 +308,20 @@
                     <div class="flex flex-row justify-center mt-10 gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'sg1')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '') }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                         <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                    </div>           
-                               </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                </div>
                             @endif
                             @if($key == 'sg2')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                         <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                    </div>     
-                              </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                </div>
                             @endif
 
                         @endforeach
@@ -455,32 +333,28 @@
                     <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp11')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                          <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                   </div>   
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'pp12')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                      <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'pp13')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                         <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                               </div>
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                </div>
                             @endif
 
                         @endforeach
@@ -488,21 +362,19 @@
                     <div class="flex flex-row justify-center mt-10 gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp14')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                         <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
-                                            </div>
-                                    </div>                                 
-                              </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                </div>
                             @endif
                             @if($key == 'pp15')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                               <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                      <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
 
@@ -514,28 +386,28 @@
                     <div class="flex flex-row gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp21')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                      <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'pp22')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
 
                                 @if($key == 'pp23')
-                                    <div class="flex flex-col items-center gap-4 w-[32%]">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                    <div class="flex flex-col items-center w-[32%]"> 
                                         <div class="w-[200px] h-[200px]">
-                                          <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                        </div>
+                                            <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                        </div>       
+                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                         @endforeach
@@ -543,19 +415,19 @@
                     <div class="flex flex-row justify-center mt-10 gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'pp24')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                      <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'pp25')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                       <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                         @endforeach
@@ -567,27 +439,27 @@
                     <div class="flex flex-row mt-10 gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'b1')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                      <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'b2')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'b3')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                      <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                         @endforeach
@@ -595,35 +467,39 @@
                     <div class="flex flex-row  mt-10 gap-3">
                         @foreach($result->data->slots as $key=>$item)
                             @if($key == 'b4')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                      <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'b5')
-                                
-                                    <div class="flex flex-col items-center gap-4 w-[32%] ">
-                                        <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '') }}</p>
-                                        <div class="w-[200px] h-[200px]">
-                                         <img src="{{   ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                        </div>                                    
-                                    </div>
-                               
+                                <div class="flex flex-col items-center w-[32%]"> 
+                                    <div class="w-[200px] h-[200px]">
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                </div>
                             @endif
                             @if($key == 'b6')
-                                <div class="flex flex-col items-center gap-4 w-[32%]">
-                                    <p class="text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
-                                      <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">
-                                    </div>
+                                        <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
+                                    </div>       
+                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                         @endforeach
                     </div>
                 </div>
-            
+                <ul class="flex justify-evenly items-center text-base font-medium gap-2 w-full">
+                    <li>Badges:</li>
+                    <li class="flex items-center gap-1"><img class="w-7 h-7 border border-black" src="{{ asset('/images/menu-icon/ ') }}" alt="">Game-time Decision</li>
+                    <li class="flex items-center gap-1"><p class="px-1.5 py-px border rounded-md bg-red-600 text-white font-light">IR</p> Injured Reserved list</li>
+                    <li class="flex  items-center gap-1"><p class="px-1.5 py-px border rounded-md bg-red-600 text-white font-light">DTD</p>Day-to-Day</li>
+                    <li class="flex  items-center gap-1"><p class="px-1.5 py-px border rounded-md bg-red-600 text-white font-light">OUT</p> Out</li>
+                </ul>
             </div>
             
             <div class="flex flex-col gap-10 mt-10 hidden">
@@ -645,159 +521,160 @@
                 </p>
             </div>
         </div>
-        <div class="w-3/12 mt-5 block smm-hidden">
-            <div class="">
-                <div class="flex flex-row items-center justify-end bg-[#39b6ff] w-full h-9 rounded-t-md gap-2">
-                    <img class="w-5 h-6" src="{{ asset('/images/menu-icon/') }}" >
-                    <p class="text-md font-bold mr-3">MetaBet</p>
-                </div>
-                <div class="flex flex-rowb gap-3 p-3 border border-slate-200">
-                    <img class="w-5 h-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
-                    <h1 class="text-lg font-semibold">Toronto Maple Leafs</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between gap-3 p-3 border border-slate-200">
-                    <div class="flex flex-row items-center gap-2">
-                        <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
-                        <p class="xl:text-sm lg:text-sm text-[12px] font-semibold">To win Stanley Cup</p>
+        <div class="w-3/12 mt-5 block smm-hidden relative">
+            <div class="relative sticky top-0">
+                <div class="">
+                    <div class="flex flex-row items-center justify-end bg-[#39b6ff] w-full h-9 rounded-t-md gap-2">
+                        <img class="w-5 h-6" src="{{ asset('/images/menu-icon/') }}" >
+                        <p class="text-md font-bold mr-3">MetaBet</p>
                     </div>
-                    <div>
-                        <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+1050</p>
-                    </div> 
-                </div>
-                <div class="flex flex-row items-center justify-between gap-3 md:gap-0 p-3 border border-slate-200">
-                    <div class="flex flex-row items-center gap-2">
-                        <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
-                        <p class="xl:text-sm lg:text-sm text-[12px] font-semibold">To win Eastern <br> Conference</p>
+                    <div class="flex flex-rowb gap-3 p-3 border border-slate-200">
+                        <img class="w-5 h-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
+                        <h1 class="text-lg font-semibold">Toronto Maple Leafs</h1>
                     </div>
-                    <div>
-                        <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+550</p>
-                    </div> 
-                </div>
-                <div class="flex flex-col border border-slate-200">
-                    <div class="flex flex-row items-center justify-between gap-3 p-3 ">
+                    <div class="flex flex-row items-center justify-between gap-3 p-3 border border-slate-200">
                         <div class="flex flex-row items-center gap-2">
                             <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
-                            <p class="xl:text-sm lg:text-sm text-sm md:text-[12px] font-semibold">To win Atlantic</p>
+                            <p class="xl:text-sm lg:text-sm text-[12px] font-semibold">To win Stanley Cup</p>
                         </div>
                         <div>
-                            <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+1600</p>
+                            <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+1050</p>
                         </div> 
                     </div>
-                    <div class="flex justify-end">
-                        <a class="text-[#39b6ff] font-semibold mr-1 xl:text-lg lg:text-md md:text-sm" href="#">See All Lines</a>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 mt-9">
-                <div class="flex flex-col gap-2">
-                    <h1 class="font-bold ml-16">Features</h1>
-                    <div class="bg-slate-300 h-[2px] w-full"></div>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <p class="font-semibold text-sm">Props and Odds</p>
-                    <p class="text-sm">Check out today's tophidden Props and Odds for <br> tonight slate</p>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <p class="font-semibold text-sm">Morning Skate </p>
-                    <p class="text-sm">Update and happening from this morning's <br> skate</p>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <p class="font-semibold text-sm">Top Stacks</p>
-                    <p class="text-sm">Looking at today's slate DFS top stacks for  <br>Draftkings</p>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 mt-9">
-                <div class="flex flex-col gap-2">
-                    <div class="flex flex-row items-center">
-                        <img class="w-6 h-6" src="{{ asset('/images/menu-icon/injury icon.png') }}" alt="">
-                        <h1 class="font-bold ml-8">Injury Report</h1>
-                    </div>
-                    <div class="bg-slate-300 h-[2px] w-full"></div>
-                </div>
-                <div id="injury" class="flex flex-col gap-2 ml-3 ">
-                    @php
-                       $team_injury_count = 0; 
-                    @endphp 
-                    @foreach($article->data as $key=>$val)
-                        @if(isset($val->type))
-                            @if($val->type->slug === 'injury') 
-                                @php 
-                                  $team_injury_count++ 
-                                @endphp
-                                <div id="injry" class="flex flex-col" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">
-                                    <div class="w-full flex flex-row justify-between ">
-                                        <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
-                                        <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
-                                    </div>
-                                    <p class="text-sm">{{$val->title}}</p>
-                                </div>
-                            @endif
-                        @endif
-                    @endforeach
-                </div>
-                <div class="w-full flex justify-center">
-                    <a class="font-semibold text-sm" href="">View All NHL injuries</a>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 mt-9">
-                <div class="flex flex-col gap-2">
-                    <div class="flex flex-row items-center">
-                        <img class="w-6 h-6" class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                        <h1 class="font-bold ml-8">Team News</h1>
-                    </div>
-                    <div class="bg-slate-300 h-[2px] w-full"></div>
-                </div>
-                @php
-                   $article_count = 0; 
-                @endphp
-                @foreach($article->data as $key=>$val)
-                    @php
-                      $article_count++
-                    @endphp
-                    <div class="flex flex-col gap-2 ml-3" style="{{ $article_count  > 10 ? 'display: none' : ''}}">
-                        <div class="w-full flex flex-row justify-between">
-                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
-                            <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
+                    <div class="flex flex-row items-center justify-between gap-3 md:gap-0 p-3 border border-slate-200">
+                        <div class="flex flex-row items-center gap-2">
+                            <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
+                            <p class="xl:text-sm lg:text-sm text-[12px] font-semibold">To win Eastern <br> Conference</p>
                         </div>
-                        <p class="text-sm">{{$val->title}}</p>
+                        <div>
+                            <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+550</p>
+                        </div> 
                     </div>
-                @endforeach
-                <!-- <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Nick Robertson - LTIR-UBI</p>
-                        <p class="text-sm"> 2023-01-16</p>
+                    <div class="flex flex-col border border-slate-200">
+                        <div class="flex flex-row items-center justify-between gap-3 p-3 ">
+                            <div class="flex flex-row items-center gap-2">
+                                <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
+                                <p class="xl:text-sm lg:text-sm text-sm md:text-[12px] font-semibold">To win Atlantic</p>
+                            </div>
+                            <div>
+                                <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+1600</p>
+                            </div> 
+                        </div>
+                        <div class="flex justify-end">
+                            <a class="text-[#39b6ff] font-semibold mr-1 xl:text-lg lg:text-md md:text-sm" href="#">See All Lines</a>
+                        </div>
                     </div>
-                    <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
                 </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">TJ Brodie - LTIR-UBI </p>
-                        <p class="text-sm"> 2023-01-16</p>
+                <div class="flex flex-col gap-5 mt-9">
+                    <div class="flex flex-col gap-2">
+                        <h1 class="font-bold ml-16">Features</h1>
+                        <div class="bg-slate-300 h-[2px] w-full"></div>
                     </div>
-                    <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
-                </div>
-                <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Jake Muzzin - LTIR-UBI</p>
-                        <p class="text-sm"> 2023-01-16</p>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <p class="font-semibold text-sm">Props and Odds</p>
+                        <p class="text-sm">Check out today's tophidden Props and Odds for <br> tonight slate</p>
                     </div>
-                    <p class="text-sm">Muzzin underwent a minor surgical procedure<br> and will be re-evaluated after the ASG (ankle).</p>
-                </div> -->
-                <div class="w-full flex justify-center">
-                    <a class="font-semibold text-sm" href="{{url('/nhl/player-news')}}">View All NHL News</a>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <p class="font-semibold text-sm">Morning Skate </p>
+                        <p class="text-sm">Update and happening from this morning's <br> skate</p>
+                    </div>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <p class="font-semibold text-sm">Top Stacks</p>
+                        <p class="text-sm">Looking at today's slate DFS top stacks for  <br>Draftkings</p>
+                    </div>
                 </div>
-            </div>
-            <div class="flex flex-col gap-6 items-center mt-6">
-                <img class="w-full h-60" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                <img class="w-10/12 h- " src="{{ asset('/images/menu-icon/adds6.png') }}">
-                <img class="w-full h-60" src="{{ asset('/images/menu-icon/adds3.png') }}">
-            </div>           
+                <div class="flex flex-col gap-5 mt-9">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row items-center">
+                            <img class="w-6 h-6" src="{{ asset('/images/menu-icon/injury icon.png') }}" alt="">
+                            <h1 class="font-bold ml-8">Injury Report</h1>
+                        </div>
+                        <div class="bg-slate-300 h-[2px] w-full"></div>
+                    </div>
+                    <div id="injury" class="flex flex-col gap-2 ml-3 ">
+                        @php
+                        $team_injury_count = 0; 
+                        @endphp 
+                        @foreach($article->data as $key=>$val)
+                            @if(isset($val->type))
+                                @if($val->type->slug === 'injury') 
+                                    @php 
+                                     $team_injury_count++ 
+                                    @endphp
+                                    <div id="injry" class="flex flex-col" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">
+                                        <div class="w-full flex flex-row justify-between ">
+                                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                            <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
+                                        </div>
+                                        <p class="text-sm">{{$val->title}}</p>
+                                    </div>
+                                @endif
+                            @endif
+                        @endforeach
+                    </div>
+                    <div class="w-full flex justify-center">
+                        <a class="font-semibold text-sm" href="">View All NHL injuries</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 mt-9">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row items-center">
+                            <img class="w-6 h-6" class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                            <h1 class="font-bold ml-8">Team News</h1>
+                        </div>
+                        <div class="bg-slate-300 h-[2px] w-full"></div>
+                    </div>
+                    @php
+                    $article_count = 0; 
+                    @endphp
+                    @foreach($article->data as $key=>$val)
+                        @php
+                        $article_count++
+                        @endphp
+                        <div class="flex flex-col gap-2 ml-3" style="{{ $article_count  > 10 ? 'display: none' : ''}}">
+                            <div class="w-full flex flex-row justify-between">
+                                <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
+                            </div>
+                            <p class="text-sm">{{$val->title}}</p>
+                        </div>
+                    @endforeach
+                    <!-- <div class="flex flex-col gap-2 ml-3">
+                        <div class="w-full flex flex-row justify-between">
+                            <p class="font-semibold text-sm">Nick Robertson - LTIR-UBI</p>
+                            <p class="text-sm"> 2023-01-16</p>
+                        </div>
+                        <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
+                    </div>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <div class="w-full flex flex-row justify-between">
+                            <p class="font-semibold text-sm">TJ Brodie - LTIR-UBI </p>
+                            <p class="text-sm"> 2023-01-16</p>
+                        </div>
+                        <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
+                    </div>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <div class="w-full flex flex-row justify-between">
+                            <p class="font-semibold text-sm">Jake Muzzin - LTIR-UBI</p>
+                            <p class="text-sm"> 2023-01-16</p>
+                        </div>
+                        <p class="text-sm">Muzzin underwent a minor surgical procedure<br> and will be re-evaluated after the ASG (ankle).</p>
+                    </div> -->
+                    <div class="w-full flex justify-center">
+                        <a class="font-semibold text-sm" href="{{url('/nhl/player-news')}}">View All NHL News</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 items-center mt-6">
+                    <img class="w-full h-60" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                    <img class="w-10/12 h- " src="{{ asset('/images/menu-icon/adds6.png') }}">
+                    <img class="w-full h-60" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                </div> 
+            </div>          
         </div>
     </div> 
     <!-- End of Line-ups -->
    <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden">
         <div class="w-11/12 md:w-full flex flex-col items-center gap-6 max-w-screen-2xl">
-            <div class="bg-slate-300 h-[2px] w-11/12 max-w-screen-2xl"></div>
                 <h1 class="text-center font-extrabold text-md mt-5 mb-10 bg-slate-300 p-0.5 border rounded-lg">FORWARDS</h1>
                 <div class="flex flex-row justify-between xl:w-11/12 lg:w-full gap-3.5 md:gap-0">
                     <div class="flex flex-row items-center gap-2 w-8/12 ">
@@ -6206,32 +6083,27 @@
             <button class="sm:text-xl text-sm font-bold bg-[#ebece9] text-black w-full h-12 rounded-md">STARTING GOALIES</button>
             <button class="sm:text-xl text-sm font-bold bg-[#1d9bf0] text-black w-full h-12 rounded-md">LINE COMBOS</button>
         </div>
-        
             <!-- <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg linecomb-input-mob" type="" value="Search team projected lineups"> 
             <a class="absolute right-[12px] top-[12px] font-extrabold" href="">
                <img class="w-[2.5rem]" src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
-            </a> -->
-           
-                <!-- <a href="#" id="head-drp" class="sm:text-xl text-sm font-bold border border-slate-300 w-full h-[3rem] rounded-full bg-slate-300"> {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
-                <div class="drp-dwn hidden flex flex-col bg-slate-300 w-[13rem] p-2 absolute">
+            </a> -->         
+            <!-- <a href="#" id="head-drp" class="sm:text-xl text-sm font-bold border border-slate-300 w-full h-[3rem] rounded-full bg-slate-300"> {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
+            <div class="drp-dwn hidden flex flex-col bg-slate-300 w-[13rem] p-2 absolute">
+                @foreach($team->data as $key=>$val)
+                <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                @endforeach
+            </div> -->
+            <div id="head-drp-mob" class=" relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
+                <a href="#" class="w-full text-[20px] text-center font-bold text-[#9fa0a0] font-semibold">{{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
+                <div class="drp-dwn-mob hidden flex flex-col w-full p-2 bg-slate-100 absolute top-12 overflow-y-auto h-[17rem]">
                     @foreach($team->data as $key=>$val)
-                    <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                    <a class="teams text-[20px]  font-bold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
                     @endforeach
-                </div> -->
-                
-
-                <div id="head-drp-mob" class=" relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
-                    <a href="#" class="w-full text-[20px] text-center font-bold text-[#9fa0a0] font-semibold">{{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
-                    <div class="drp-dwn-mob hidden flex flex-col w-full p-2 bg-slate-100 absolute top-12 overflow-y-auto h-[17rem]">
-                        @foreach($team->data as $key=>$val)
-                        <a class="teams text-[20px]  font-bold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
-                        @endforeach
-                    </div>
-                    <a class="absolute right-[15px] top-[12px] rotate-[271deg] arrw-v1-mob" href="">
-                        <img class="w-[2rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
-                    </a>
                 </div>
-   
+                <a class="absolute right-[15px] top-[12px] rotate-[271deg] arrw-v1-mob" href="">
+                    <img class="w-[2rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
+                </a>
+            </div>
     </div>
     <div class="flex flex-col items-center  ">
         <div class="w-[95%] mx-5">   
