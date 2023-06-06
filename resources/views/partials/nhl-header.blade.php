@@ -1,4 +1,4 @@
-<div class="w-full flex flex-row justify-center block smm-hidden ">
+<div class="w-full mb-3 flex flex-row justify-center block smm-hidden ">
     <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-flex flex-row justify-between items-center flex w-full  border-black m-4 gap-5 max-w-screen-2xl border-b-2 border-slate-300 pb-[20px]">
         <div class="flex flex-row justify-between items-end flex w-full">
             <div class="flex gap-1 items-end">
@@ -55,16 +55,17 @@
                <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List
             </a>
         </div>
-        <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 ">
+        <div class="w-full relative mb-7">
+            <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute">
                 @foreach($team->data as $key=>$val)
                     <li class="lc-team-logo" value="">
                         <a class="" href="/nhl/line-combos/{{$val->slug}}">
-                            <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
+                        <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
                         </a>
-
                     </li>  
                 @endforeach
-        </ul>
+            </ul>
+        </div>
         <!-- <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
             <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">
                 {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}

@@ -1,9 +1,9 @@
 
-@extends('layouts.master')
+@extends('layouts.master-nhl')
 
 @section('content')
 <!-- Desktop design -->
-   <div class="w-full flex justify-center ">
+    <!-- <div class="w-full flex justify-center ">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col border-black m-4 gap-5 block  smm-hidden max-w-screen-2xl">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">
@@ -38,40 +38,43 @@
                 <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="w-full flex justify-center bg-slate-100 ">
        <div class="w-11/12 flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
           <div class="flex flex-col  w-9/12 gap-5">
                 <div class="w-full bg-[#d9d9d9] flex flex-row  items-center rounded-md">
-                    <h1 class="text-center py-10 text-3xl font-bold w-full">NHL Line Combinations</h1>
+                    <h1 class="text-center py-10 text-3xl font-bold w-full">  {{  ( !empty($current_name) ? $current_name: 'Anaheim Ducks')  }} Line Combinations</h1>
                 </div>
                 <div class="flex flex-col w-full  mt-7">  
                     <div class="flex flex-col ">
-                        <ul class="w-full flex flex-col gap-5">
+                        <ul class="w-full flex flex-wrap gap-5">
+                        @foreach($team->data as $key=>$val)
                             <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white gap-px">
+                                    <div class="flex flex-row items-center w-auto gap-2">
+                                        <img class="w-[2.5rem]" src="{{$val->logo->src}}" alt="">
+                                        <h1 class="text-lg font-bold">{{$val->name}}</h1>
                                     </div>
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
-                            <li class="flex flex-row justify-between gap-3">
+                        @endforeach
+                                <!-- <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button>
+                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
+                                    <div class="flex flex-row items-center w-auto">
+                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
+                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
+                                    </div>
+                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                </button> -->
+                          
+                            <!-- <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                     <div class="flex flex-row items-center w-auto">
                                         <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
@@ -293,7 +296,7 @@
                                     </div>
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div> 
@@ -410,107 +413,135 @@
                         </ol>
                    </div>
            </div>
-            <div class="w-3/12 flex flex-col ">
-                <img class="h-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                    <div class="flex flex-col gap-5 mt-9">
-                        <div class="flex flex-col gap-2">
-                            <div class="flex flex-row items-center">
-                            <h1 class="font-bold ml-8">Recent Line Combinations</h1>
+           <div class="w-3/12 mt-5 block smm-hidden relative">
+            <div class="relative sticky top-0">
+                <div class="">
+                    <div class="flex flex-row items-center justify-end bg-[#39b6ff] w-full h-9 rounded-t-md gap-2">
+                        <img class="w-5 h-6" src="{{ asset('/images/menu-icon/') }}" >
+                        <p class="text-md font-bold mr-3">MetaBet</p>
+                    </div>
+                    <div class="flex flex-rowb gap-3 p-3 border border-slate-200">
+                        <img class="w-5 h-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
+                        <h1 class="text-lg font-semibold">Toronto Maple Leafs</h1>
+                    </div>
+                    <div class="flex flex-row items-center justify-between gap-3 p-3 border border-slate-200">
+                        <div class="flex flex-row items-center gap-2">
+                            <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
+                            <p class="xl:text-sm lg:text-sm text-[12px] font-semibold">To win Stanley Cup</p>
+                        </div>
+                        <div>
+                            <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+1050</p>
+                        </div> 
+                    </div>
+                    <div class="flex flex-row items-center justify-between gap-3 md:gap-0 p-3 border border-slate-200">
+                        <div class="flex flex-row items-center gap-2">
+                            <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
+                            <p class="xl:text-sm lg:text-sm text-[12px] font-semibold">To win Eastern <br> Conference</p>
+                        </div>
+                        <div>
+                            <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+550</p>
+                        </div> 
+                    </div>
+                    <div class="flex flex-col border border-slate-200">
+                        <div class="flex flex-row items-center justify-between gap-3 p-3 ">
+                            <div class="flex flex-row items-center gap-2">
+                                <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
+                                <p class="xl:text-sm lg:text-sm text-sm md:text-[12px] font-semibold">To win Atlantic</p>
                             </div>
-                            <div class="bg-slate-300 h-[2px] w-full"></div>
+                            <div>
+                                <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+1600</p>
+                            </div> 
                         </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Pittburgh Penguins</p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Toronto Maples Leafs</p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Washington Capitals </p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Montreal Canadiens</p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Washington Capitals </p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Montreal Canadiens</p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Pittburgh Penguins</p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Toronto Maples Leafs</p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Washington Capitals </p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Montreal Canadiens</p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Washington Capitals </p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        <div class="flex flex-col gap-2 ml-3">
-                                <div class="w-full flex flex-row justify-between gap-3">
-                                    <p class="font-semibold text-sm">Montreal Canadiens</p>
-                                    <p class="text-sm"> 2023-01-16</p>
-                                </div>
-                            <p class="text-sm">morning skate</p>
-                        </div>
-                        
-                        <div class="w-full flex flex-col items-center gap-3">
-                            <img class="h-48 w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                            <img class="" src="{{ asset('/images/menu-icon/adds-new1.png') }}" alt="">
+                        <div class="flex justify-end">
+                            <a class="text-[#39b6ff] font-semibold mr-1 xl:text-lg lg:text-md md:text-sm" href="#">See All Lines</a>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="flex flex-col gap-5 mt-9">
+                    <div class="flex flex-col gap-2">
+                        <h1 class="font-bold ml-16">Features</h1>
+                        <div class="bg-slate-300 h-[2px] w-full"></div>
+                    </div>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <p class="font-semibold text-sm">Props and Odds</p>
+                        <p class="text-sm">Check out today's tophidden Props and Odds for <br> tonight slate</p>
+                    </div>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <p class="font-semibold text-sm">Morning Skate </p>
+                        <p class="text-sm">Update and happening from this morning's <br> skate</p>
+                    </div>
+                    <div class="flex flex-col gap-2 ml-3">
+                        <p class="font-semibold text-sm">Top Stacks</p>
+                        <p class="text-sm">Looking at today's slate DFS top stacks for  <br>Draftkings</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 mt-9">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row items-center">
+                            <img class="w-6 h-6" src="{{ asset('/images/menu-icon/injury icon.png') }}" alt="">
+                            <h1 class="font-bold ml-8">Injury Report</h1>
+                        </div>
+                        <div class="bg-slate-300 h-[2px] w-full"></div>
+                    </div>
+                    <div id="injury" class="flex flex-col gap-2 ml-3 ">
+                        @php
+                          $team_injury_count = 0; 
+                        @endphp 
+                        @foreach($article->data as $key=>$val)
+                            @if(isset($val->type))
+                                @if($val->type->slug === 'injury') 
+                                    @php 
+                                     $team_injury_count++ 
+                                    @endphp
+                                    <div id="injry" class="flex flex-col" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">
+                                        <div class="w-full flex flex-row justify-between ">
+                                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                            <i class="text-sm">{{$val->source->retrieved_at->date}}</i>
+                                        </div>
+                                        <p class="text-sm">{{$val->title}}</p>
+                                    </div>
+                                @endif
+                            @endif
+                        @endforeach
+                    </div>
+                    <div class="w-full flex justify-center">
+                        <a class="font-semibold text-sm" href="">View All NHL injuries</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 mt-9">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-row items-center">
+                            <img class="w-6 h-6" class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                            <h1 class="font-bold ml-8">Team News</h1>
+                        </div>
+                        <div class="bg-slate-300 h-[2px] w-full"></div>
+                    </div>
+                    @php
+                      $article_count = 0; 
+                    @endphp
+                    @foreach($article->data as $key=>$val)
+                        @php
+                        $article_count++
+                        @endphp
+                        <div class="flex flex-col gap-2 ml-3" style="{{ $article_count  > 10 ? 'display: none' : ''}}">
+                            <div class="w-full flex flex-row justify-between">
+                                <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
+                            </div>
+                            <p class="text-sm">{{$val->title}}</p>
+                        </div>
+                    @endforeach
+                    <div class="w-full flex justify-center">
+                        <a class="font-semibold text-sm" href="{{url('/nhl/player-news')}}">View All NHL News</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 items-center mt-6">
+                    <img class="w-full h-60" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                    <img class="w-10/12 h- " src="{{ asset('/images/menu-icon/adds6.png') }}">
+                    <img class="w-full h-60" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                </div> 
+            </div>          
+        </div>
     </div>
 <!-- End of Design -->
 
