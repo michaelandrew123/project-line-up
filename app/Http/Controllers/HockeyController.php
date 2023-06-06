@@ -289,7 +289,52 @@ class HockeyController extends Controller
         return view('pages/nhlplayer-news');
     }
     public function nhllineCombinations(){
-        return view('pages/nhlline-combinations');
+        $client = new \GuzzleHttp\Client();
+
+
+        $article = $client->get(
+            'https://api.projectedlineups.com/v1/content/cards/cards',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+       
+        // print_r(json_decode((string) $body));
+        $sports_article = $article->getBody();
+        $team_article = json_decode( $sports_article);
+        // dd($team_article); 
+
+          
+
+
+    
+        $team = $client->get(
+            'https://api.projectedlineups.com/v1/sports/teams?l=0',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+
+        $team_body = $team->getBody();
+        $team_result = json_decode($team_body);
+        // print_r(json_decode((string) $body));
+
+        // dd($team_result);
+
+       
+         
+     
+       
+
+        
+
+        return view('pages/nhlline-combinations')->with([ 'team' => $team_result, 'article' => $team_article ] );
     }
     public function postsarticle(){
         return view('pages/postsarticle');

@@ -82,7 +82,7 @@
             <img class="w-[728px]" src="{{ asset('/images/line-combos/pd_by_betway.png') }}">
         </div>
     </div>  
-    <div class="flex flex-row items-center w-11/12 justify-evenly mt-[20px] gap-3 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
+    <div class="flex flex-row items-center w-11/12  justify-center  mt-[20px] gap-3 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
         <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md l-ups text-black bg-[#38b6ff] text-[#ffffff]">
             Lineups
         </button>
@@ -112,8 +112,8 @@
         </ul>
     </div>
     <!-- Line-ups  -->
-    <div id="lu-body" class="w-full flex flex-row xl:justify-evenly lg:justify-evenly gap-7  max-w-screen-2xl">
-        <div class="xl:w-7/12 lg:w-8/12 md:w-10/12  block smm-hidden   "> 
+    <div id="lu-body" class="w-full flex flex-row justify-evenly gap-7  max-w-screen-2xl">
+        <div class="xl:w-7/12 lg:w-8/12 md:w-10/12  block smm-hidden"> 
             <div id="shirt-footer"  class="flex flex-col gap-2 my-3">
                 <div class="flex flex-col gap-2 w-full">
                     <h1 class="text-center font-extrabold text-md mt-5 ">FORWARDS</h1>
@@ -501,7 +501,6 @@
                     <li class="flex  items-center gap-1"><p class="px-1.5 py-px border rounded-md bg-red-600 text-white font-light">OUT</p> Out</li>
                 </ul>
             </div>
-            
             <div class="flex flex-col gap-10 mt-10 hidden">
                 <h1 class="text-lg font-bold text-center">Power play</h1>
                 <p class="text-lg">
@@ -672,6 +671,7 @@
             </div>          
         </div>
     </div> 
+    
     <!-- End of Line-ups -->
    <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden">
         <div class="w-11/12 md:w-full flex flex-col items-center gap-6 max-w-screen-2xl">
@@ -6093,6 +6093,7 @@
                 <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
                 @endforeach
             </div> -->
+         
             <div id="head-drp-mob" class=" relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
                 <a href="#" class="w-full text-[20px] text-center font-bold text-[#9fa0a0] font-semibold">{{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
                 <div class="drp-dwn-mob hidden flex flex-col w-full p-2 bg-slate-100 absolute top-12 overflow-y-auto h-[17rem]">
