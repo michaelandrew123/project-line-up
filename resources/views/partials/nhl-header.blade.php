@@ -55,9 +55,9 @@
                <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List
             </a>
         </div>
-        <ul id="" class="flex flex-row items-center xl:gap-4 lg:gap-2 ">
+        <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 ">
                 @foreach($team->data as $key=>$val)
-                    <li class="" value="">
+                    <li class="lc-team-logo" value="">
                         <a class="" href="/nhl/line-combos/{{$val->slug}}">
                             <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
                         </a>

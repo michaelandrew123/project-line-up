@@ -604,7 +604,7 @@
                                     <div id="injry" class="flex flex-col" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">
                                         <div class="w-full flex flex-row justify-between ">
                                             <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
-                                            <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
+                                            <i class="text-sm">{{$val->source->retrieved_at->date}}</i>
                                         </div>
                                         <p class="text-sm">{{$val->title}}</p>
                                     </div>

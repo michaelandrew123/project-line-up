@@ -164,7 +164,7 @@ class HockeyController extends Controller
 
         
             $team = $client->get(
-                'https://api.projectedlineups.com/v1/sports/teams',
+                'https://api.projectedlineups.com/v1/sports/teams?l=0',
                 [
                     'headers' => [
                         'Content-Type' => 'application/json',
