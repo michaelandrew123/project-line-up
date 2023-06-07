@@ -1,8 +1,8 @@
-@extends('layouts.master')
+@extends('layouts.master-nhl')
 
 @section('content')
 <!-- Desktop design -->
-<div class="w-full flex justify-center bg-slate-100 ">
+<!-- <div class="w-full flex justify-center bg-slate-100 ">
     <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5 block smm-hidden max-w-screen-2xl">
         <div class="flex flex-row justify-between items-center">
             <div class="flex gap-3">
@@ -37,7 +37,7 @@
             <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
         </div>
     </div>
-</div>
+</div> -->
 <div class="w-full flex justify-center bg-slate-100">
     <div class="w-11/12 flex flex-row justify-between gap-3 block smm-hidden max-w-screen-2xl">
         <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
@@ -285,83 +285,7 @@
                <img class="w-full h-32 border border-black" src="{{ asset('/images/menu-icon/.png') }}">
             </div>              
         </div>
-        <div class="xl:w-3/12 lg:w-2/12 flex flex-col ">
-           <img class="h-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
-           <div class="flex flex-col gap-5 mt-9">
-                <div class="flex flex-col gap-2">
-                    <h1 class="font-bold ml-16">Features</h1>
-                    <div class="bg-slate-300 h-[2px] w-full"></div>
-                </div>
-               <div class="flex flex-col gap-2 ml-3">
-                   <p class="font-semibold text-sm">Props and Odds</p>
-                   <p class="text-sm">Check out today's top Props and Odds for <br> tonight slate</p>
-               </div>
-               <div class="flex flex-col gap-2 ml-3">
-                   <p class="font-semibold text-sm">Morning Skate </p>
-                   <p class="text-sm">Update and happening from this morning's <br> skate</p>
-               </div>
-               <div class="flex flex-col gap-2 ml-3">
-                   <p class="font-semibold text-sm">Top Stacks</p>
-                   <p class="text-sm">Looking at today's slate DFS top stacks for  <br>Draftkings</p>
-               </div>
-            </div>
-            <div class="flex flex-col gap-5 mt-9">
-                <div class="flex flex-col gap-2">
-                    <div class="flex flex-row items-center">
-                       <img class="w-6 h-6" src="{{ asset('/images/menu-icon/injury icon.png') }}" alt="">
-                       <h1 class="font-bold ml-8">Line Combinations</h1>
-                    </div>
-                    <div class="bg-slate-300 h-[2px] w-full"></div>
-                </div>
-               <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Pittburgh Penguins</p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                   <p class="text-sm">morning skate</p>
-               </div>
-               <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Toronto Maples Leafs</p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                   <p class="text-sm">morning skate</p>
-               </div>
-               <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Washington Capitals </p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                   <p class="text-sm">morning skate</p>
-               </div>
-               <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Montreal Canadiens</p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                   <p class="text-sm">morning skate</p>
-               </div>
-               <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Washington Capitals </p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                   <p class="text-sm">morning skate</p>
-               </div>
-               <div class="flex flex-col gap-2 ml-3">
-                    <div class="w-full flex flex-row justify-between">
-                        <p class="font-semibold text-sm">Montreal Canadiens</p>
-                        <p class="text-sm"> 2023-01-16</p>
-                    </div>
-                   <p class="text-sm">morning skate</p>
-               </div>
-               
-               <div class="w-full flex flex-col items-center gap-3">
-                  <a class="font-semibold text-sm" href="">View All NHL Line Combinations</a>
-                  <img class="" src="{{ asset('/images/menu-icon/high_lights.png') }}" alt="">
-               </div>
-            </div>
-        </div>
+        @include('partials.nhl-sidebar')
     </div>
 </div>
 <!-- End of Desktop -->

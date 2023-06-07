@@ -58,11 +58,13 @@
         <div class="w-full relative mb-7">
             <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute">
                 @foreach($team->data as $key=>$val)
-                    <li class="lc-team-logo" value="">
-                        <a class="" href="/nhl/line-combos/{{$val->slug}}">
-                        <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
-                        </a>
-                    </li>  
+                    @if(!empty($val->logo->src))
+                        <li class="lc-team-logo" value="">
+                            <a class="" href="/nhl/line-combos/{{$val->slug}}">
+                            <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
+                            </a>
+                        </li> 
+                    @endif 
                 @endforeach
             </ul>
         </div>

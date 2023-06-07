@@ -1,8 +1,8 @@
-@extends('layouts.master')
+@extends('layouts.master-nhl')
 
 @section('content')
 
-    <div class="flex justify-center bg-slate-100 ">
+    <!-- <div class="flex justify-center bg-slate-100 ">
         <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5  block smm-hidden max-w-screen-2xl">
             <div class="w-full flex flex-row justify-between items-center">
                 <div class="flex gap-3">
@@ -37,7 +37,7 @@
                 <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="w-full flex justify-center bg-slate-100 ">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-row justify-between xl:gap-3 gap-1 block smm-hidden max-w-screen-2xl">
             <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
