@@ -42,8 +42,8 @@
 <body>
 
 @include('partials.nhl-header')
-<main class="container-none ">
-   
+<main class="container-none">
+    
     @yield('content')
 </main>
  

@@ -302,7 +302,7 @@
                     </div>
                 </div>
                 <div class="bg-slate-300 h-[2px] w-full my-24"></div>
-                 <img class="w-auto" src="{{ asset('/images/menu-icon/newsletter.png') }}" alt=""> 
+                 
                 <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-10 mb-10">GOALIES</h1>
                     <div class="flex flex-row justify-center mt-10 gap-3">
@@ -437,7 +437,7 @@
                     <div class="flex flex-col w-full">
                     <h1 class="text-center font-extrabold text-md mt-10  ">PRESS BOX</h1>
                     <div class="flex flex-row mt-10 gap-3">
-                        @foreach($result->data->slots as $key=>$item)
+                        @foreach($result->data->slots as $key=>$item) 
                             @if($key == 'b1')
                                 <div class="flex flex-col items-center w-[32%]"> 
                                     <div class="w-[200px] h-[200px]">
@@ -520,7 +520,8 @@
                 </p>
             </div>
         </div>
-        <div class="w-3/12 mt-5 block smm-hidden relative">
+       
+        <!-- <div class="w-3/12 mt-5 block smm-hidden relative">
             <div class="relative sticky top-0">
                 <div class="">
                     <div class="flex flex-row items-center justify-end bg-[#39b6ff] w-full h-9 rounded-t-md gap-2">
@@ -592,21 +593,25 @@
                     </div>
                     <div id="injury" class="flex flex-col gap-2 ml-3 ">
                         @php
-                        $team_injury_count = 0; 
+                          $team_injury_count = 0; 
                         @endphp 
                         @foreach($article->data as $key=>$val)
-                            @if(isset($val->type))
+                            @if(isset($val->type) )
                                 @if($val->type->slug === 'injury') 
-                                    @php 
-                                     $team_injury_count++ 
-                                    @endphp
-                                    <div id="injry" class="flex flex-col" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">
-                                        <div class="w-full flex flex-row justify-between ">
-                                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
-                                            <i class="text-sm">{{$val->source->retrieved_at->date}}</i>
-                                        </div>
-                                        <p class="text-sm">{{$val->title}}</p>
-                                    </div>
+                                    
+                                    
+                                            @php 
+                                              $team_injury_count++ 
+                                            @endphp
+                                            <div id="injry" class="flex flex-col" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">
+                                                <div class="w-full flex flex-row justify-between ">
+                                                    <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                                    <i class="text-sm">{{$val->source->retrieved_at->date}}</i>
+                                                </div>
+                                                <p class="text-sm">{{$val->title}}</p>
+                                            </div>    
+                                  
+                                  
                                 @endif
                             @endif
                         @endforeach
@@ -638,27 +643,7 @@
                             <p class="text-sm">{{$val->title}}</p>
                         </div>
                     @endforeach
-                    <!-- <div class="flex flex-col gap-2 ml-3">
-                        <div class="w-full flex flex-row justify-between">
-                            <p class="font-semibold text-sm">Nick Robertson - LTIR-UBI</p>
-                            <p class="text-sm"> 2023-01-16</p>
-                        </div>
-                        <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
-                    </div>
-                    <div class="flex flex-col gap-2 ml-3">
-                        <div class="w-full flex flex-row justify-between">
-                            <p class="font-semibold text-sm">TJ Brodie - LTIR-UBI </p>
-                            <p class="text-sm"> 2023-01-16</p>
-                        </div>
-                        <p class="text-sm">Muzzin is out indefinitely with a cervical<br> spine injury</p>
-                    </div>
-                    <div class="flex flex-col gap-2 ml-3">
-                        <div class="w-full flex flex-row justify-between">
-                            <p class="font-semibold text-sm">Jake Muzzin - LTIR-UBI</p>
-                            <p class="text-sm"> 2023-01-16</p>
-                        </div>
-                        <p class="text-sm">Muzzin underwent a minor surgical procedure<br> and will be re-evaluated after the ASG (ankle).</p>
-                    </div> -->
+                    
                     <div class="w-full flex justify-center">
                         <a class="font-semibold text-sm" href="{{url('/nhl/player-news')}}">View All NHL News</a>
                     </div>
@@ -669,7 +654,8 @@
                     <img class="w-full h-60" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div> 
             </div>          
-        </div>
+        </div> -->
+        @include('partials.nhl-sidebar')
     </div> 
     
     <!-- End of Line-ups -->
