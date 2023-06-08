@@ -43,12 +43,14 @@
        <div class="w-11/12 flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
           <div class="flex flex-col  w-9/12 gap-5">
                 <div class="w-full bg-[#d9d9d9] flex flex-row  items-center rounded-md">
-                    <h1 class="text-center py-10 text-3xl font-bold w-full">  {{  ( !empty($current_name) ? $current_name: 'Anaheim Ducks')  }} Line Combinations</h1>
+                    <h1 class="text-center py-10 text-3xl font-bold w-full">  NHL Line Combinations</h1>
                 </div>
                 <div class="flex flex-col w-full  mt-7">  
                     <div class="flex flex-col ">
                         <ul class="w-full flex flex-wrap gap-5">
                         @foreach($team->data as $key=>$val)
+                          @if($val->league->slug == 'nhl')
+
                             <li class="flex flex-row justify-between gap-3">
                                 <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white gap-px">
                                     <div class="flex flex-row items-center w-auto gap-2">
@@ -58,6 +60,7 @@
                                     <p class="text-sm font-bold mb-2">Line Combinations</p>
                                 </button>
                             </li>
+                            @endif
                         @endforeach
                             <!-- <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                 <div class="flex flex-row items-center w-auto">

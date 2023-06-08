@@ -1,9 +1,9 @@
    
-@extends('layouts.master')
+@extends('layouts.master-nhl')
 
 @section('content')
  
-    <div class="bg-slate-100  w-full flex justify-center block smm-hidden py-2">
+    <!-- <div class="bg-slate-100  w-full flex justify-center block smm-hidden py-2">
         <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col  gap-5  max-w-screen-2xl">
             <div class="flex flex-row justify-between items-center w-full">
                 <div class="flex items-center gap-1.5">
@@ -41,9 +41,9 @@
             </div>
           
         </div>
-    </div>
+    </div> -->
  <div class="flex justify-center mt-8 block smm-hidden w-full">
-    <div class="flex flex-row justify-between gap-1 lg:gap-2 md:gap-1 xl:w-11/12 lg:w-11/12 md:w-full  max-w-screen-2xl">
+    <div class="flex flex-row justify-between gap-1 lg:gap-2 md:gap-1 xl:w-full lg:w-11/12 md:w-full  max-w-screen-2xl">
         <div class="flex flex-col xl:w-w-full lg:w-9/12 md:w-11/12   ">
             <div class="flex flex-col">
                 <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">

@@ -32,34 +32,49 @@
                 </a>
             </div>
         </div>
-        <div class="flex flex-row justify-between w-full">
-            <a href="{{url('/nhl/starting-goalies')}}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black  px-2 py-px rounded-lg text-center hover:bg-neutral-300 hover:text-neutral-100 active:bg-[#38b6ff] active:text-[#ffffff]">
-                Starting Goalies
-            </a>
-            <a href="{{url('/nhl/line-combos')}}" id="lc-btn" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#38b6ff] text-white  px-2 py-px rounded-lg text-center">
-                Line Combinations
-            </a>
-            <a href="{{url('/nhl/player-news')}}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300 hover:text-neutral-100 active:bg-[#38b6ff] active:text-[#ffffff]">
-                DFS Projections
-            </a>
-            <a href="{{url('/nhl/player-news')}}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300 hover:text-neutral-100 active:bg-[#38b6ff] active:text-[#ffffff]">
-                Player News
-            </a>       
-            <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300 hover:text-neutral-100 active:bg-[#38b6ff] active:text-[#ffffff]">
-                Props & Odds
-            </a>
-            <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2  py-px rounded-lg text-center hover:bg-neutral-300 hover:text-neutral-100 active:bg-[#38b6ff] active:text-[#ffffff]">
-                Lineup Study
-            </a>
-            <a href="" class="flex items-center text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300 hover:text-neutral-100 active:bg-[#38b6ff] active:text-[#ffffff]">
-               <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List
-            </a>
-        </div>
+        <ul class="flex flex-row justify-between w-full">
+ 
+            <li class="nav-itms {{Request::is('nhl/starting-goalies') ? 'active':'' }}">
+                <a href="{{url('nhl/starting-goalies')}}" style="{{Request::is('nhl/starting-goalies') ? 'background-color:transparent':'' }}" class="button-header text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black  px-2 py-px rounded-lg text-center hover:bg-neutral-300 active:bg-[#38b6ff]  ">
+                    Starting Goalies
+                </a>
+            </li>
+            <li class="nav-itms {{Request::is('nhl/line-combos') ? 'active':'' }} ">
+                <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'background-color:transparent':'' }}" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold  bg-[#ebece9]   px-2 py-px rounded-lg text-center">
+                    Line Combinations
+                </a>
+            </li>
+            <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
+                <a href="{{url('nhl/player-news')}}" style="{{('nhl/line-combos') ? 'active':'' }}" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff]  ">
+                    DFS Projections
+                </a>
+            </li>
+            <li class="nav-itms {{Request::is('nhl/player-news') ? 'active':'' }}">
+                <a href="{{url('nhl/player-news')}}" style="{{Request::is('nhl/player-news') ? 'background-color:transparent':'' }}" class="header-btn text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] px-2 py-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff]  ">
+                    Player News
+                </a>
+            </li>
+            <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
+                <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff] ">
+                    Props & Odds
+                </a>
+            </li>
+            <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
+                <a href="" class="  text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2  py-px rounded-lg text-center hover:bg-neutral-300   active:bg-[#38b6ff] ">
+                    Lineup Study
+                </a>
+            </li>
+            <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
+                <a href="" class="  flex items-center text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff] active:text-[#ffffff]">
+                  <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List
+                </a>
+            </li>
+        </ul>
         <div class="w-full relative mb-7">
             <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute">
                 @foreach($team->data as $key=>$val)
                     @if(!empty($val->logo->src))
-                        <li class="lc-team-logo" value="">
+                        <li class="lc-team-logo" style="{{ Request::is('nhl/line-combos') != ('nhl/line-combos') ? 'display:none':'' }}" value="">
                             <a class="" href="/nhl/line-combos/{{$val->slug}}">
                             <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
                             </a>
