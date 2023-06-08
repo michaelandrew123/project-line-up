@@ -16,7 +16,13 @@
     .txt-logo{
         font-family: 'Mouse Memoirs', sans-serif
     }
-
+     /* nhl.header button*/
+     .nav-itms.active {
+        background-color: #38b6ff ; 
+        color: white;
+        border-radius: 20px;
+        
+     }
     /* Arrow holder */
     .arrowed {
         position: relative;

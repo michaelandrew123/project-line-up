@@ -39,7 +39,7 @@
     </div>
 </div> -->
 <div class="w-full flex justify-center bg-slate-100">
-    <div class="w-11/12 flex flex-row justify-between gap-3 block smm-hidden max-w-screen-2xl">
+    <div class="w-full flex flex-row justify-between gap-3 block smm-hidden max-w-screen-2xl">
         <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
             <div class="w-full bg-[#d9d9d9] flex flex-row  items-center justify-between rounded-md">
                 <div class="flex gap-2 ml-2">
@@ -52,12 +52,33 @@
                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
                 </div>
             </div>
-            <div class="flex flex-row justify-between w-full">
+            <div class="flex flex-row justify-between w-full hidden">
                 <button class="xl:text-2xl lg:text-lg font-bold bg-[#38b6ff] text-black xl:px-10 lg:px-8 py-2 rounded-md">ALL</button>
                 <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">LINE CHANGES</button>
                 <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">INJURIES</button>
                 <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">MOVES</button>
                 <button class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-10 lg:px-8 py-2 rounded-md">SIGNINGS</button>
+            </div> 
+            <div class="flex flex-row items-center w-full  justify-center   mt-[20px] gap-3 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
+                <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md l-ups text-black bg-[#38b6ff] text-[#ffffff]">
+                    Lineups
+                </button>
+                <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black d-kings flex justify-center gap-3">
+                    <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+                    Draftkings
+                </button>
+                <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black fnl flex justify-center gap-3">
+                    <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">Fanduel
+                </button>
+                <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black sts">
+                    Stats
+                </button>
+                <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black prp">
+                    Props
+                </button>
+                <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md   text-black shp">
+                    Shop</button>
+                <button class="w-36 bg-green-600 text-[16px] font-bold rounded-md text-black">Create</button>
             </div> 
             <div class="flex flex-col w-full">
                 <div class="flex flex-row w-full justify-between mb-3">

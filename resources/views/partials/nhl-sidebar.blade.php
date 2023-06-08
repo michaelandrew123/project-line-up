@@ -68,7 +68,7 @@
                         </div>
                         <div class="bg-slate-300 h-[2px] w-full"></div>
                     </div>
-                    <div id="injury" class="flex flex-col gap-2 ml-3 ">
+                    <div id="injury" class="flex flex-col gap-2 w-full">
                   
                   
                         @php
@@ -78,20 +78,19 @@
                             @if(isset($val->type))
                                 @if($val->type->slug === 'injury') 
                                     @if(!empty($val->metafields))
-                                                                        
-                                        @if(!empty($current_name))
+                                        @if(!empty($current_name))                                               
                                             @if($current_name == $val->team->name)
                                                 @php 
                                                     $team_injury_count++ 
                                                 @endphp    
-                                                <div id="injry" class="flex flex-row items-center gap-2.5 w-full" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">
-                                                    <svg class="w-16 h-16 text-white border-black rounded-full bg-neutral-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
-                                                    </svg>
-                                                    <div class="flex flex-col w-full">
+                                                <div id="injry" class="flex flex-row items-center gap-2.5 w-full" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">       
+                                                    <img class="w-20" src="{{$val->player->images->uniform}}" alt="">
+                                                    <div class="flex flex-col w-full" style=" ">
                                                         <div class="w-full flex flex-col justify-between ">
                                                             <div class="flex flex-row gap-2">
-                                                                <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                                                <p class="font-semibold text-sm">
+                                                                   {{$val->player->full_name}}
+                                                                </p>
                                                                 <p class="font-semibold text-sm">({{$val->player->position->name}})</p>
                                                             </div>
                                                             <div class="flex flex-row gap-2">
@@ -101,7 +100,6 @@
                                                             <p class="text-sm">{{$val->title}}</p>
                                                             <i class="text-sm">{{$val->source->retrieved_at->date}}</i>
                                                         </div>
-                                                        
                                                     </div>
                                                 </div> 
                                             @endif
@@ -127,16 +125,21 @@
                       $article_count = 0; 
                     @endphp
                     @foreach($article->data as $key=>$val)
-                        @php
-                         $article_count++
-                        @endphp
-                        <div class="flex flex-col gap-2 ml-3" style="{{ $article_count  > 10 ? 'display: none' : ''}}">
-                            <div class="w-full flex flex-row justify-between">
-                                <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
-                                <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
-                            </div>
-                            <p class="text-sm">{{$val->title}}</p>
-                        </div>
+                        @if(!empty($current_name))
+                            @if($current_name == $val->team->name)
+                                @php
+                                  $article_count++
+                                @endphp
+                                <div class="flex flex-col gap-2 ml-3" style="{{ $article_count  > 10 ? 'display: none' : ''}}">
+                                    <div class="w-full flex flex-row justify-between">
+                                        <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                        <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
+                                    </div>
+                                    <p class="text-sm">{{$val->title}}</p>
+                                </div>
+                            
+                            @endif    
+                        @endif
                     @endforeach
                     <div class="w-full flex justify-center">
                         <a class="font-semibold text-sm" href="{{url('/nhl/player-news')}}">View All NHL News</a>
