@@ -69,8 +69,6 @@
                         <div class="bg-slate-300 h-[2px] w-full"></div>
                     </div>
                     <div id="injury" class="flex flex-col gap-2 w-full">
-                  
-                  
                         @php
                           $team_injury_count = 0; 
                         @endphp 
@@ -78,34 +76,36 @@
                             @if(isset($val->type))
                                 @if($val->type->slug === 'injury') 
                                     @if(!empty($val->metafields))
-                                        @if(!empty($current_name))                                               
+                                        @if(!empty($current_name))                                
                                             @if($current_name == $val->team->name)
                                                 @php 
                                                     $team_injury_count++ 
                                                 @endphp    
                                                 <div id="injry" class="flex flex-row items-center gap-2.5 w-full" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">       
-                                                    <img class="w-20" src="{{$val->player->images->uniform}}" alt="">
+                                                    <img class="w-14" style=" " src="{{$val->player->images->uniform}}" alt="">
                                                     <div class="flex flex-col w-full" style=" ">
                                                         <div class="w-full flex flex-col justify-between ">
-                                                            <div class="flex flex-row gap-2">
-                                                                <p class="font-semibold text-sm">
-                                                                   {{$val->player->full_name}}
-                                                                </p>
-                                                                <p class="font-semibold text-sm">({{$val->player->position->name}})</p>
+                                                            <div class="flex flex-row items-center justify-between">
+                                                                <div class="flex items-center">
+                                                                    <p class="font-semibold text-sm">
+                                                                    {{$val->player->full_name}}
+                                                                    </p>
+                                                                    <p class="font-semibold text-[10px] italic">({{$val->player->position->name}})</p>
+                                                                </div>
+                                                                <i class="text-[12px]">{{$val->source->retrieved_at->date}}</i>
                                                             </div>
-                                                            <div class="flex flex-row gap-2">
-                                                                <p class="font-semibold text-sm"> {{ !empty($val->metafields->injury_type->name ) ? $val->metafields->injury_type->name : ''}}</p>
-                                                                <p class="font-semibold text-sm"> {{ !empty($val->metafields->injury_timeframe->name ) ? $val->metafields->injury_timeframe->name : ''}}</p>   
+                                                            <div class="flex flex-row justify-between items-center">
+                                                                <p class=" font-normal text-[12px]"> {{ !empty($val->metafields->injury_type->name ) ? $val->metafields->injury_type->name : ''}}</p>
+                                                                <p class=" font-normal text-[12px]"> {{ !empty($val->metafields->injury_timeframe->name ) ? $val->metafields->injury_timeframe->name : ''}}</p>   
                                                             </div>
                                                             <p class="text-sm">{{$val->title}}</p>
-                                                            <i class="text-sm">{{$val->source->retrieved_at->date}}</i>
                                                         </div>
                                                     </div>
-                                                </div> 
-                                            @endif
-                                        @endif 
-                                    @endif                                            
-                                @endif                            
+                                                </div>
+                                            @endif 
+                                        @endif                                            
+                                    @endif     
+                                @endif                       
                             @endif
                         @endforeach
                     </div>
@@ -122,7 +122,7 @@
                         <div class="bg-slate-300 h-[2px] w-full"></div>
                     </div>
                     @php
-                      $article_count = 0; 
+                      $team_count = 0; 
                     @endphp
                     @foreach($article->data as $key=>$val)
                         @if(!empty($current_name))
@@ -130,14 +130,14 @@
                                 @php
                                   $article_count++
                                 @endphp
-                                <div class="flex flex-col gap-2 ml-3" style="{{ $article_count  > 10 ? 'display: none' : ''}}">
+                                <div class="flex flex-col gap-2 ml-3" style="{{ $team_count  > 10 ? 'display: none' : ''}}">
+                                   <img class="w-5" src="" alt="">
                                     <div class="w-full flex flex-row justify-between">
                                         <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
                                         <p class="text-sm">{{$val->source->retrieved_at->date}}</p>
                                     </div>
                                     <p class="text-sm">{{$val->title}}</p>
                                 </div>
-                            
                             @endif    
                         @endif
                     @endforeach
