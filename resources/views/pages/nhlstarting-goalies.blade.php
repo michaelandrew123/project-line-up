@@ -1,8 +1,8 @@
 
-@extends('layouts.master')
+@extends('layouts.master-nhl')
 
 @section('content')
-    <div class="w-full flex justify-center">
+    <!-- <div class="w-full flex justify-center">
         <div class="xl:w-11/12 lg:w-11/12 w-full flex flex-col border-black m-4 gap-5 block smm-hidden max-w-screen-2xl">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">
@@ -37,7 +37,7 @@
                 <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
             </div>
         </div> 
-    </div>
+    </div> -->
     <div class="w-full flex flex-col items-center">
         <div class="max-w-screen-2xl smm-hidden  xl:w-full">
             <div class="flex flex-row justify-evenly mt-10 w-full">   
@@ -46,7 +46,7 @@
                         <h1 class="text-2xl font-bold ">NHL Starting Goalies Tuesday, January 24</h1>
                     </div>
                     <div class="w-full">
-                        <!-- <div id="carouselExampleControlsv1 hidden" class="carousel slide relative mt-4 " data-bs-ride="">
+                        <div id="carouselExampleControlsv1 hidden" class="carousel slide relative mt-4 " data-bs-ride="">
                             <div class="relative">
                                 <div class="absolute top-0 bottom-0 left-0 flex items-center">
                                     <button
@@ -1742,7 +1742,7 @@
                                     </div>
                                 </div> 
                             </div>
-                        </div> -->
+                        </div>
                 <div id="carouselExampleCaptions3" class="relative" data-te-carousel-init data-te-carousel-slide>
                     <div class="absolute right-0 -bottom-10 left-0 z-[2] mx-[15%]  mb-4 flex list-none justify-center p-0 z-[-1]"
                         data-te-carousel-indicators>
