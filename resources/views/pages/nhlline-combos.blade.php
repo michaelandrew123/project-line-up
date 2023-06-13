@@ -61,7 +61,7 @@
                         <select name="" id="team-name" style="-webkit-appearance: none;" class="bg-slate-300 rounded-full  px-2 w-full">
                            {{ $team->data[0]->name }}
                            @foreach($team->data as $key=>$val)                                    
-                             <option value="{{$val->name}}" >{{$val->name}}</option>
+                              <option value="{{$val->name}}" >{{$val->name}}</option>
                            @endforeach  
                         </select>
                         <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow absolute right-[5px] top-[4px] arrw2">
@@ -86,7 +86,7 @@
         <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md l-ups text-black bg-[#38b6ff] text-[#ffffff]">
             Lineups
         </button>
-        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black d-kings flex justify-center gap-3">
+        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black d-kings flex justify-center items-center gap-3">
             <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
             Draftkings
         </button>

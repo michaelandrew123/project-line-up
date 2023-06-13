@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master-nhl')
 
 @section('content')
 
@@ -46,32 +46,35 @@
                     <td class="flex justify-center items-center border  w-[20%] border border-slate-200 text-[12px] font-semibold "><a class=" text-md font-medium underline" href="#">MIN</a></td>
                     <td class="flex justify-center items-center border  w-[20%] border border-slate-200 text-[12px] font-semibold "><a class=" text-md font-medium underline" href="#">PIM</a></td>
                 </tr>
+                @foreach($projections->data as $key=>$val)
                 <tr class="flex justify-between h-[3rem] bg-white">
-                    <td class="flex flex-col justify-center  border border-slate-200 justify-start w-full ">
-                        <div class="flex flex-row  gap-2 ml-2">
-                            
-                            <div class="flex flex-col">
-                                <h1 class="text-sky-300 text-[12px] font-normal">Steven Stamkos C</h1>
-                                <p class="text-[11px] ">MIN @ <b>TB</b></p>
-                                <p class="text-[9px]">Tue 7:00pm</p>
+                    
+                        <td class="flex flex-col justify-center  border border-slate-200 justify-start w-full ">
+                            <div class="flex flex-row  gap-2 ml-2">
+                                <div class="flex flex-col">
+                                    <h1 class="text-sky-300 text-[12px] font-normal">{{$val->player_name}}</h1>
+                                    <!-- <p class="text-[11px] ">MIN @ <b>TB</b></p>
+                                    <p class="text-[9px]">Tue 7:00pm</p> -->
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class=" text-md font-medium">14.5</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">$7,600</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">1.9</p</td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">3.51</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.60</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.74</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">01.34</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.12</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.28</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">+0.38</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.31</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">20.7</p></td>
-                    <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.57</p></td>
+                        </td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class=" text-md font-medium">14.5</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">{{$val->salary}}</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">1.9</p</td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">3.51</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.60</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.74</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">01.34</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.12</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.28</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">+0.38</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.31</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">20.7</p></td>
+                        <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.57</p></td>
+                   
                 </tr>
-                <tr class="flex justify-between h-[3rem] bg-stone-100 ">
+                @endforeach
+                <!-- <tr class="flex justify-between h-[3rem] bg-stone-100 ">
                     <td class="flex flex-col justify-center  border border-slate-200 justify-start w-full ">
                         <div class="flex flex-row  gap-2 ml-2">
                             <div class="flex flex-col">
@@ -594,31 +597,11 @@
                     <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">19.4</p></td>
                     <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">20.7</p></td>
                     <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.57</p></td>
-                </tr> 
+                </tr>  -->
             </table>
         </div>
         
     </div>
     
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @endsection
