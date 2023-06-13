@@ -39,13 +39,14 @@
                     Starting Goalies
                 </a>
             </li>
-            <li class="nav-itms {{Request::is('nhl/line-combos') ? 'active':'' }} ">
-                <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'background-color:transparent':'' }}" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold  bg-[#ebece9]   px-2 py-px rounded-lg text-center">
+            <li class="nav-itms {{Request::is('nhl/line-combos') ? 'active':'' }}{{Request::is('nhl/line-combos/{team}') ? 'active':'' }}">
+                <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'background-color:transparent':'' }} " 
+                class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold  bg-[#ebece9]   px-2 py-px rounded-lg text-center">
                     Line Combinations
                 </a>
             </li>
-            <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
-                <a href="{{url('nhl/player-news')}}" style="{{('nhl/line-combos') ? 'active':'' }}" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff]  ">
+            <li class="nav-itms {{Request::is('nhl/projections') ? 'active':'' }}">
+                <a href="{{url('nhl/projections')}}" style="{{Request::is('nhl/projections') ? 'background-color:transparent':'' }}" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff]  ">
                     DFS Projections
                 </a>
             </li>
@@ -74,7 +75,7 @@
             <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute">
                 @foreach($team->data as $key=>$val)
                     @if(!empty($val->logo->src))
-                        <li class="lc-team-logo" style="{{ Request::is('nhl/line-combos') != ('nhl/line-combos') ? 'display:none':'' }}" value="">
+                        <li class="" style="{{ Request::is('nhl/line-combos') != ('nhl/line-combos') ? 'display:none':'' }}" value="">
                             <a class="" href="/nhl/line-combos/{{$val->slug}}">
                             <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
                             </a>
