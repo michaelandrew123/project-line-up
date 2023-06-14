@@ -1,44 +1,52 @@
-<div class="w-3/12 mt-5 block smm-hidden relative">
+<div class="w-3/12 mt-5 block smm-hidden relative  ">
             <div class="relative sticky top-0 ">
-                <div class=" ">
+                <div class="">
+                    <!-- <div class="flex flex-col w-full bg-slate-300  ">
+                        <img class="skeleton  w-10 h-10 border rounded" src="{{ asset('/images/menu-icon/') }}" alt="">
+                        <div>
+                            <p class="skeleton skeleton-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum alias beatae aperiam 
+                            consectetur distinctio dolor laborum maxime, 
+                            molestiae optio facere ipsa commodi laudantium et culpa, rerum recusandae eum iste? Nostrum.</p>
+                        </div>
+                    </div> -->
                     <div class="flex flex-row items-center justify-end bg-[#39b6ff] w-full h-9 rounded-t-md gap-2">
                         <img class="w-5 h-6" src="{{ asset('/images/menu-icon/') }}" >
-                        <p class="text-md font-bold mr-3">MetaBet</p>
+                        <p class="text-md font-bold mr-3  ">MetaBet</p>
                     </div>
                     <div class="flex flex-rowb gap-3 p-3 border border-slate-200">
                         <img class="w-5 h-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
-                        <h1 class="text-lg font-semibold">Toronto Maple Leafs</h1>
+                        <h1 class="text-lg font-semibold  ">Toronto Maple Leafs</h1>
                     </div>
                     <div class="flex flex-row items-center justify-between gap-3 p-3 border border-slate-200">
                         <div class="flex flex-row items-center gap-2">
                             <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
-                            <p class="xl:text-sm lg:text-sm text-[12px] font-semibold">To win Stanley Cup</p>
+                            <p class="xl:text-sm lg:text-sm text-[12px] font-semibold  ">To win Stanley Cup</p>
                         </div>
                         <div>
-                            <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+1050</p>
+                            <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700  ">+1050</p>
                         </div> 
                     </div>
                     <div class="flex flex-row items-center justify-between gap-3 md:gap-0 p-3 border border-slate-200">
                         <div class="flex flex-row items-center gap-2">
                             <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
-                            <p class="xl:text-sm lg:text-sm text-[12px] font-semibold">To win Eastern <br> Conference</p>
+                            <p class="xl:text-sm lg:text-sm text-[12px] font-semibold  ">To win Eastern <br> Conference</p>
                         </div>
                         <div>
-                            <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+550</p>
+                            <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700  ">+550</p>
                         </div> 
                     </div>
                     <div class="flex flex-col border border-slate-200">
                         <div class="flex flex-row items-center justify-between gap-3 p-3 ">
                             <div class="flex flex-row items-center gap-2">
                                 <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
-                                <p class="xl:text-sm lg:text-sm text-sm md:text-[12px] font-semibold">To win Atlantic</p>
+                                <p class="xl:text-sm lg:text-sm text-sm md:text-[12px] font-semibold  ">To win Atlantic</p>
                             </div>
                             <div>
-                                <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700">+1600</p>
+                                <p class="border border-slate-300 px-3 py-1.5 font-semibold text-indigo-700  ">+1600</p>
                             </div> 
                         </div>
                         <div class="flex justify-end">
-                            <a class="text-[#39b6ff] font-semibold mr-1 xl:text-lg lg:text-md md:text-sm" href="#">See All Lines</a>
+                            <a class="text-[#39b6ff] font-semibold mr-1 xl:text-lg lg:text-md md:text-sm  " href="#">See All Lines</a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +68,7 @@
                         <p class="text-sm">Looking at today's slate DFS top stacks for  <br>Draftkings</p>
                     </div>
                 </div>
-                <div class="flex flex-col gap-5 mt-9">
+                <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex flex-col gap-2">
                         <div class="flex flex-row items-center">
                             <img class="w-6 h-6" src="{{ asset('/images/menu-icon/injury icon.png') }}" alt="">

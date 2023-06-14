@@ -16,6 +16,24 @@
     .txt-logo{
         font-family: 'Mouse Memoirs', sans-serif
     }
+    /* .skeleton{
+        opacity: .7;
+        animation: skeleton-loading is linear infinite alternate;
+    }
+    .skeleton-text{
+        width:100%;
+        height: .5rem;
+        margin-bottom: .25rem;
+        border-radius: .125rem;
+    }
+    @keyframes skeleton-loading{
+        0%{
+            background-color: hsl(200, 20%, 70%);
+        }
+        100%{
+            background-color: hsl(200, 20%, 95%);
+        }
+    } */
      /* nhl.header button*/
      .nav-itms.active {
         background-color: #38b6ff ; 
