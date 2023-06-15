@@ -16,22 +16,18 @@
     .txt-logo{
         font-family: 'Mouse Memoirs', sans-serif
     }
-    /* .skeleton{
-        opacity: .7;
-        animation: skeleton-loading is linear infinite alternate;
+    /* .skeleton {   
+        animation: skeleton-loading 1s linear infinite  ;
     }
-    .skeleton-text{
-        width:100%;
-        height: .5rem;
-        margin-bottom: .25rem;
-        border-radius: .125rem;
-    }
+ 
     @keyframes skeleton-loading{
         0%{
-            background-color: hsl(200, 20%, 70%);
+       
+            background-color: black;
         }
         100%{
-            background-color: hsl(200, 20%, 95%);
+           
+            background-color: white;
         }
     } */
      /* nhl.header button*/

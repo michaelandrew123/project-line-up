@@ -122,8 +122,8 @@
                                 @if($key == 'lw1')
                                     <div class="flex flex-col items-center w-[32%]">     
                                         <div class="">
-                                            <div class="w-[200px] h-[200px]">
-                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class=" px-3 " alt="">
+                                            <div class="w-[200px] h-[200px]  ">
+                                              <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class=" px-3" alt="">
                                             </div>
                                         </div>
                                         <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">  {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
