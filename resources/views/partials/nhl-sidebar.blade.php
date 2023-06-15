@@ -1,25 +1,46 @@
 <div class="w-3/12 mt-5 block smm-hidden relative  ">
             <div class="relative sticky top-0 ">
                 <div class="">
-                    <!-- <div class="flex flex-col w-full bg-slate-300  ">
-                        <img class="skeleton  w-10 h-10 border rounded" src="{{ asset('/images/menu-icon/') }}" alt="">
-                        <div>
-                            <p class="skeleton skeleton-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum alias beatae aperiam 
-                            consectetur distinctio dolor laborum maxime, 
-                            molestiae optio facere ipsa commodi laudantium et culpa, rerum recusandae eum iste? Nostrum.</p>
+                    <!-- <div class="flex flex-col w-full h-[10rem] border border-black">
+                        <img class="skeleton  w-12 h-12 border rounded-full" src="{{ asset('/images/menu-icon/adds3.png') }}" alt="">
+                        <img class="skeleton  w-20 h-12 border rounded-full" src="{{ asset('/images/menu-icon/adds3.png') }}" alt="">
+                        <div class="skeleton ">                          
+                            <p class="  h-5 rounded-lg  bg-slate-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum alias beatae aperiam 
+                             rerum recusandae eum iste? Nostrum.</p>
                         </div>
                     </div> -->
+                    <div>
+                        <div class="flex items-start animate-pulse">
+                            <div class="px-4 py-2">
+                               <img class="w-12 h-12 bg-slate-300 border rounded-full" src=" " alt=""> 
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <p class="w-40 h-5 bg-slate-300"></p>
+                                <p class="w-40 h-5 bg-slate-300"></p>
+                                <p class="w-40 h-5 bg-slate-300"></p>
+                                <p class="w-40 h-5 bg-slate-300"></p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="px-4 py-2">
+                              <img class="w-12 h-12 border rounded-full" src="{{ asset('/images/menu-icon/injury icon.png') }}" alt=""> 
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit.</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="flex flex-row items-center justify-end bg-[#39b6ff] w-full h-9 rounded-t-md gap-2">
-                        <img class="w-5 h-6" src="{{ asset('/images/menu-icon/') }}" >
+                        <img class="w-5 h-6  " src="{{ asset('/images/menu-icon/') }}" >
                         <p class="text-md font-bold mr-3  ">MetaBet</p>
                     </div>
                     <div class="flex flex-rowb gap-3 p-3 border border-slate-200">
-                        <img class="w-5 h-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
+                        <img class="w-5 h-6 " src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
                         <h1 class="text-lg font-semibold  ">Toronto Maple Leafs</h1>
                     </div>
                     <div class="flex flex-row items-center justify-between gap-3 p-3 border border-slate-200">
                         <div class="flex flex-row items-center gap-2">
-                            <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
+                            <img class="w-10  " src="{{ asset('/images/menu-icon/') }}" >
                             <p class="xl:text-sm lg:text-sm text-[12px] font-semibold  ">To win Stanley Cup</p>
                         </div>
                         <div>
@@ -28,7 +49,7 @@
                     </div>
                     <div class="flex flex-row items-center justify-between gap-3 md:gap-0 p-3 border border-slate-200">
                         <div class="flex flex-row items-center gap-2">
-                            <img class="w-10" src="{{ asset('/images/menu-icon/') }}" >
+                            <img class="w-10 " src="{{ asset('/images/menu-icon/') }}" >
                             <p class="xl:text-sm lg:text-sm text-[12px] font-semibold  ">To win Eastern <br> Conference</p>
                         </div>
                         <div>
@@ -71,7 +92,7 @@
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex flex-col gap-2">
                         <div class="flex flex-row items-center">
-                            <img class="w-6 h-6" src="{{ asset('/images/menu-icon/injury icon.png') }}" alt="">
+                            <img class="w-6 h-6 " src="{{ asset('/images/menu-icon/injury icon.png') }}" alt="">
                             <h1 class="font-bold ml-8">Injury Report</h1>
                         </div>
                         <div class="bg-slate-300 h-[2px] w-full"></div>
@@ -89,7 +110,7 @@
                                                 $team_injury_count++ 
                                             @endphp               
                                             <div id="injry" class="flex flex-row items-center gap-2.5 w-full" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">       
-                                                <img class="w-14" style=" " src="{{$val->player->images->uniform}}" alt="">
+                                                <img class="w-14  " style=" " src="{{$val->player->images->uniform}}" alt="">
                                                 <div class="flex flex-col w-full" style=" ">
                                                     <div class="w-full flex flex-col justify-between ">
                                                         <div class="flex flex-row items-center justify-between">
@@ -118,7 +139,7 @@
                                                 $team_injury_count++ 
                                             @endphp    
                                             <div id="injry" class="flex flex-row items-center gap-2.5 w-full" style="{{ $team_injury_count  > 5 ? 'display: none' : ''}}">       
-                                                <img class="w-14" style=" " src="{{$val->player->images->uniform}}" alt="">
+                                                <img class="w-14 " style=" " src="{{$val->player->images->uniform}}" alt="">
                                                 <div class="flex flex-col w-full" style=" ">
                                                     <div class="w-full flex flex-col justify-between ">
                                                         <div class="flex flex-row items-center justify-between">
@@ -153,7 +174,7 @@
                 <div class="flex flex-col gap-5 mt-9">
                     <div class="flex flex-col gap-2">
                         <div class="flex flex-row items-center">
-                            <img class="w-6 h-6" class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                            <img class="w-6 h-6  " class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                             <h1 class="font-bold ml-8">Team News</h1>
                         </div>
                         <div class="bg-slate-300 h-[2px] w-full"></div>
@@ -196,9 +217,9 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-6 items-center mt-6">
-                    <img class="w-full h-60" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                    <img class="w-10/12 h- " src="{{ asset('/images/menu-icon/adds6.png') }}">
-                    <img class="w-full h-60" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                    <img class="w-full h-60 skeleton" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                    <img class="w-10/12 h- skeleton" src="{{ asset('/images/menu-icon/adds6.png') }}">
+                    <img class="w-full h-60 skeleton" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div> 
             </div>          
         </div>

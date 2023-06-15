@@ -39,12 +39,15 @@
                     Starting Goalies
                 </a>
             </li>
-            <li class="nav-itms {{Request::is('nhl/line-combos') ? 'active':'' }}{{Request::is('nhl/line-combos/{team}') ? 'active':'' }}">
-                <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'background-color:transparent':'' }} " 
-                class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold  bg-[#ebece9]   px-2 py-px rounded-lg text-center">
-                    Line Combinations
-                </a>
-            </li>
+
+            
+                <li class="nav-itms {{Request::is('nhl/line-combos') ? 'active':'' }}">
+                    <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'background-color:transparent':'' }} " 
+                      class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold  bg-[#ebece9]  px-2 py-px rounded-lg text-center">
+                        Line Combinations
+                    </a>
+                </li>
+         
             <li class="nav-itms {{Request::is('nhl/projections') ? 'active':'' }}">
                 <a href="{{url('nhl/projections')}}" style="{{Request::is('nhl/projections') ? 'background-color:transparent':'' }}" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 py-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff]  ">
                     DFS Projections
