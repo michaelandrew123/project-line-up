@@ -39,8 +39,7 @@
                     Starting Goalies
                 </a>
             </li>
-
-            
+          
                 <li class="nav-itms {{Request::is('nhl/line-combos') ? 'active':'' }}">
                     <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'background-color:transparent':'' }} " 
                       class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold  bg-[#ebece9]  px-2 py-px rounded-lg text-center">
