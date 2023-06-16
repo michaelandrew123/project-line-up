@@ -377,7 +377,7 @@ class HockeyController extends Controller
     public function nhlallplayerNews(){
         $client = new \GuzzleHttp\Client();
 
-
+        
         $article = $client->get(
             'https://api.projectedlineups.com/v1/content/cards/cards',
             [
