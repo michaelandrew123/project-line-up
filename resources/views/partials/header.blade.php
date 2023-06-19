@@ -6,7 +6,7 @@
 
     <div class="md:flex md:flex-col sm:block "  
     @if(URL::current()==route('nfl.home')) style="display:none !important;" @endif
-    @if(URL::current()==route('nhl.starting-goalies')) style="display:none !important;" @endif
+     
     @if(URL::current()==route('nhl.home')) style="display:none !important;" @endif
     @if(URL::current()==route('nhl.line-combos')) style="display:none !important;" @endif
     @if(URL::current()==route('nhl.team-news')) style="display:none !important;" @endif

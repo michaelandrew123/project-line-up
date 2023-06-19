@@ -35,6 +35,7 @@
         background-color: #38b6ff ; 
         color: white;
         border-radius: 20px;
+      
         
      }
     /* Arrow holder */
