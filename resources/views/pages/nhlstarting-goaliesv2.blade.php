@@ -1,6 +1,9 @@
 @extends('layouts.master-nhl')
 
 @section('content')
+    @foreach($starting_goalies as $key=>$val)
+            {{$val->game->game_date->full}}
+    @endforeach
     <div class="w-full flex flex-col items-center">
         <div class="max-w-screen-2xl smm-hidden  xl:w-full">
                <div class="flex flex-row justify-evenly mt-10 w-full">   
@@ -31,37 +34,65 @@
                                         aria-label="Slide 3"></button>
                                 </div>
                                 <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
-                                    <div
-                                        class="relative float-left -mr-[100%] w-full   transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
-                                        data-te-carousel-active
-                                        data-te-carousel-item
-                                        style="backface-visibility: hidden">
-                                        <div class="flex flex-row justify-center items-center">
-                                            <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                <h1 class="text-2xl font-bold text-white ">NHL Starting Goalies Tuesday, January 24</h1>
+                                    @php
+                                        $nhl_goalies = 0;
+                                    @endphp
+                                    
+                                    @foreach($starting_goalies as $key=>$val)
+                                  
+                                        @if(isset($val->game->game_date))      
+                                            @if($nhl_goalies == 0 )   
+                                                <div class="relative float-left -mr-[100%] w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                                                    data-te-carousel-active
+                                                    data-te-carousel-item
+                                                    style="backface-visibility: hidden">
+                                                    <div class="flex flex-row justify-center items-center">
+                                                        <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
+                                                            <h1 class="text-2xl font-bold text-white ">{{$val->game->game_date->full}}</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @php
+                                                    $nhl_goalies++;
+                                                @endphp
+                                            @else 
+                                         
+                                                <div class="relative float-left -mr-[100%] hidden w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                                                    data-te-carousel-item
+                                                    style="backface-visibility: hidden">
+                                                    <div class="flex flex-row justify-center items-center">
+                                                    <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
+                                                            <h1 class="text-2xl font-bold text-white ">hello world {{$val->game->game_date->full}} {{$nhl_goalies}} </h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @php
+                                                    $nhl_goalies++;
+                                                @endphp
+                                            @endif
+                                            
+                                            <!-- <div class="relative float-left -mr-[100%] hidden w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                                                data-te-carousel-item
+                                                style="backface-visibility: hidden">
+                                                <div class="flex flex-row justify-center items-center">
+                                                <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
+                                                        <h1 class="text-2xl font-bold text-white ">NHL Starting Goalies Tuesday, January 24 </h1>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="relative float-left -mr-[100%] hidden w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
-                                        data-te-carousel-item
-                                        style="backface-visibility: hidden">
-                                        <div class="flex flex-row justify-center items-center">
-                                           <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                <h1 class="text-2xl font-bold text-white ">NHL Starting Goalies Tuesday, January 24</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="relative float-left -mr-[100%] hidden w-full   transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
-                                        data-te-carousel-item
-                                        style="backface-visibility: hidden">
-                                        <div class="flex flex-row justify-center items-center">
-                                            <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                <h1 class="text-2xl font-bold text-white ">NHL Starting Goalies Tuesday, January 24</h1>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <div class="relative float-left -mr-[100%] hidden w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                                                data-te-carousel-item
+                                                style="backface-visibility: hidden">
+                                                <div class="flex flex-row justify-center items-center">
+                                                <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
+                                                        <h1 class="text-2xl font-bold text-white "> NHL Starting Goalies Tuesday, January 24 </h1>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                         
+                                        @endif
+                                    @endforeach
+                                    
                                 </div>
                 
                             <button
@@ -85,230 +116,54 @@
                         </div>
                     </div> 
                     <div class="flex flex-col items-center mt-2 gap-5 w-full">
-                        <div class="flex flex-row justify-center w-11/12 ">
-                            <div class="flex gap-3 w-full h-56 ">
-                                <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                                <div class="flex flex-col justify-between w-full border border-black rounded">
-                                    <div class="flex flex-row justify-evenly mt-3">
-                                        <div class="">
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">
-                                                <h1 class="text-center font-bold">Boston <br> Bruins</h1>
+                        <div class="flex flex-wrap justify-center w-11/12">
+                        
+                                    <div class="flex gap-3 w-full h-56 ">
+                                        <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
+                                            <h1 class="font-bold text-base mt-3"> </h1>
+                                            <div class="flex flex-row items-center gap-2">
+                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                <p class="text-[11px] font-bold"> </p>
+                                            </div>
+                                            <img src=" " class="w-40" alt="">
+                                        </div>
+                                        <div class="flex flex-col justify-between w-full border border-black rounded">
+                                            <div class="flex flex-row justify-evenly mt-3">
+                                                <div class="">
+                                                    <div class="flex flex-col items-center gap-2">
+                                                        <img class="w-12 " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">
+                                                        <h1 class="text-center font-bold">Boston <br> Bruins</h1>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="flex flex-col items-center gap-2">
+                                                        <img class="w-12 " src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt="">
+                                                        <h1 class="text-center  font-bold">Florida <br> Panthers</h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-sm text-center font-semibold text-[#9da8af]">
+                                                <p>Jan 24, 7pm EST</p>
+                                                <p>Bridgestone Arena</p>
+                                            </div>
+                                            <div class="w-full flex justify-center m-1">
+                                                <button class="border border-black font-bold px-3 py-1 rounded w-40">
+                                                    Game Odds
+                                                </button>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt="">
-                                                <h1 class="text-center  font-bold">Florida <br> Panthers</h1>
+                                        <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
+                                            <h1 class="font-bold text-base mt-3"> </h1>
+                                            <div class="flex flex-row items-center gap-2">
+                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                <p class="text-[11px] font-bold"> </p>
                                             </div>
+                                            <img src=" " class="w-40" alt="">
                                         </div>
                                     </div>
-                                    <div class="text-sm text-center font-semibold text-[#9da8af]">
-                                        <p>Jan 24, 7pm EST</p>
-                                        <p>Bridgestone Arena</p>
-                                    </div>
-                                    <div class="w-full flex justify-center m-1">
-                                        <button class="border border-black font-bold px-3 py-1 rounded w-40">
-                                            Game Odds
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="border border-black flex flex-col items-center  justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base  mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-center w-11/12 ">
-                            <div class="flex gap-3 w-full h-56 ">
-                                <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                                <div class="flex flex-col justify-between w-full border border-black rounded">
-                                    <div class="flex flex-row justify-evenly mt-3">
-                                        <div class="">
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt="">
-                                                <h1 class="text-center font-bold">Edmonton<br>Oilers</h1>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">
-                                                <h1 class="text-center  font-bold">Toronto<br>Maples</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm text-center font-semibold text-[#9da8af]">
-                                        <p>Jan 24, 7pm EST</p>
-                                        <p>Bridgestone Arena</p>
-                                    </div>
-                                    <div class="w-full flex justify-center m-1">
-                                        <button class="border border-black font-bold px-3 py-1 rounded w-40">
-                                            Game Odds
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="border border-black flex flex-col items-center  justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base  mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-center w-11/12 ">
-                            <div class="flex gap-3 w-full h-56 ">
-                                <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                                <div class="flex flex-col justify-between w-full border border-black rounded">
-                                    <div class="flex flex-row justify-evenly mt-3">
-                                        <div class="">
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">
-                                                <h1 class="text-center font-bold">Boston <br> Bruins</h1>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt="">
-                                                <h1 class="text-center  font-bold">Florida <br> Panthers</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm text-center font-semibold text-[#9da8af]">
-                                        <p>Jan 24, 7pm EST</p>
-                                        <p>Bridgestone Arena</p>
-                                    </div>
-                                    <div class="w-full flex justify-center m-1">
-                                        <button class="border border-black font-bold px-3 py-1 rounded w-40">
-                                            Game Odds
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="border border-black flex flex-col items-center  justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base  mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-center w-11/12 ">
-                            <div class="flex gap-3 w-full h-56 ">
-                                <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                                <div class="flex flex-col justify-between w-full border border-black rounded">
-                                    <div class="flex flex-row justify-evenly mt-3">
-                                        <div class="">
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">
-                                                <h1 class="text-center font-bold">Boston <br> Bruins</h1>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt="">
-                                                <h1 class="text-center  font-bold">Florida <br> Panthers</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm text-center font-semibold text-[#9da8af]">
-                                        <p>Jan 24, 7pm EST</p>
-                                        <p>Bridgestone Arena</p>
-                                    </div>
-                                    <div class="w-full flex justify-center m-1">
-                                        <button class="border border-black font-bold px-3 py-1 rounded w-40">
-                                            Game Odds
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="border border-black flex flex-col items-center  justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base  mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-center w-11/12 ">
-                            <div class="flex gap-3 w-full h-56 ">
-                                <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                                <div class="flex flex-col justify-between w-full border border-black rounded">
-                                    <div class="flex flex-row justify-evenly mt-3">
-                                        <div class="">
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">
-                                                <h1 class="text-center font-bold">Boston <br> Bruins</h1>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="flex flex-col items-center gap-2">
-                                                <img class="w-12 " src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt="">
-                                                <h1 class="text-center  font-bold">Florida <br> Panthers</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-sm text-center font-semibold text-[#9da8af]">
-                                        <p>Jan 24, 7pm EST</p>
-                                        <p>Bridgestone Arena</p>
-                                    </div>
-                                    <div class="w-full flex justify-center m-1">
-                                        <button class="border border-black font-bold px-3 py-1 rounded w-40">
-                                            Game Odds
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="border border-black flex flex-col items-center  justify-between w-full rounded-lg">
-                                    <h1 class="font-bold text-base  mt-3">Players Name</h1>
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                        <p class="text-[11px] font-bold">Confirmed</p>
-                                    </div>
-                                    <img src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" class="w-40" alt="">
-                                </div>
-                            </div>
+                                 
+                        
+                            
                         </div>
                         <div class="flex flex-col w-full gap-2">
                             <div class="flex flex-col ">

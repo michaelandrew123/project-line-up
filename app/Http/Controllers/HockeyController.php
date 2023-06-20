@@ -153,7 +153,24 @@ class HockeyController extends Controller
     public function nhlstartingGoaliesv2(){
         $client = new \GuzzleHttp\Client();
 
-
+        $starting_goalies = $client->get(
+             
+            'https://api.projectedlineups.com/v1/lineups/nhl/starting-goalies',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+                'query' => [
+                    'f[game_date]' => '2022-11-15',
+                ],
+            ]
+        );
+        $starting_goalies_body = $starting_goalies->getBody();
+        $team_starting_goalies = json_decode($starting_goalies_body);
+        // print_r(json_decode((string) $body));
+        
+        // dd($team_goalies);
         $article = $client->get(
             'https://api.projectedlineups.com/v1/content/cards/cards',
             [
@@ -188,7 +205,7 @@ class HockeyController extends Controller
         // print_r(json_decode((string) $body));
 
         // dd($team_result);
-        return view('pages/nhlstarting-goaliesv2')->with([ 'team' => $team_result, 'article' => $team_article ]);
+        return view('pages/nhlstarting-goaliesv2')->with([ 'team' => $team_result, 'article' => $team_article, 'starting_goalies' => $team_starting_goalies->data ]);
     }
     public function nhlstartingGoaliesv1(){
         $client = new \GuzzleHttp\Client();
