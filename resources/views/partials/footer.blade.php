@@ -94,7 +94,7 @@
     </div>
 </footer>
 <!-- Old Footer End-->
-<div class="w-full flex justify-center">
+<div style=" " class="w-full flex justify-center">
     <div class="max-w-screen-2xl xl:w-full w-11/12 pt-10 pb-10 bg-sky-500 mt-8 xl:block lg:block hidden">
         <div class="flex flex-row justify-evenly w-full">
             <div>
