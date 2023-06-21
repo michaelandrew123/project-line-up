@@ -2,7 +2,7 @@
 
 @section('content')
     @foreach($starting_goalies as $key=>$val)
-            {{$val->game->game_date->full}}
+        {{$val->game->name}}
     @endforeach
     <div class="w-full flex flex-col items-center">
         <div class="max-w-screen-2xl smm-hidden  xl:w-full">

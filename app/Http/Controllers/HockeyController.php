@@ -7,6 +7,14 @@ use Illuminate\Http\Request;
 class HockeyController extends Controller
 {
     //
+    public function index(){
+        
+        return view('pages/index') ;
+    }
+    public function learn(){
+        
+        return view('pages/learn') ;
+    }
     public function homePage(){
 
 
@@ -170,7 +178,7 @@ class HockeyController extends Controller
         $team_starting_goalies = json_decode($starting_goalies_body);
         // print_r(json_decode((string) $body));
         
-        // dd($team_goalies);
+        // dd( $team_starting_goalies);
         $article = $client->get(
             'https://api.projectedlineups.com/v1/content/cards/cards',
             [

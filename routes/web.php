@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/',  [App\Http\Controllers\HockeyController::class, 'index']);
+Route::get('/learn',  [App\Http\Controllers\HockeyController::class, 'learn']);
 Route::get('/home',  [App\Http\Controllers\HockeyController::class, 'homepage']);
 Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'lineCombos']);
 Route::get('/todays-game',  [App\Http\Controllers\HockeyController::class, 'todaysGame']);
@@ -28,7 +29,6 @@ Route::get('/nfl/home',  [App\Http\Controllers\HockeyController::class, 'nflhome
 Route::get('/starting-goaliesv1',  [App\Http\Controllers\HockeyController::class, 'startingGoaliesv1'])->name('starting-goaliesv1');
 Route::get('/starting-goalies', [App\Http\Controllers\HockeyController::class, 'startingGoalies'])->name('starting-goalies');
 Route::get('/posts/article',  [App\Http\Controllers\HockeyController::class, 'postsarticle'])->name('posts.article');
-
 
 Route::prefix('nhl')->group(function () {
     Route::get('/home',  [App\Http\Controllers\HockeyController::class, 'nhlhome'])->name('nhl.home');
