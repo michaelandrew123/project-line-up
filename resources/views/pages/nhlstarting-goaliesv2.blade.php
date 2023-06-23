@@ -2,19 +2,21 @@
 
 @section('content')
     @foreach($starting_goalies as $key=>$val)
-        {{$val->game->name}}
+        @if(isset($val->team->slug))
+            {{$val->game->game_date->full}}
+        @endif
     @endforeach
     <div class="w-full flex flex-col items-center">
         <div class="max-w-screen-2xl smm-hidden  xl:w-full">
                <div class="flex flex-row justify-evenly mt-10 w-full">   
                    <div class="flex flex-col items-center xl:w-8/12 lg:w-8/12 md:w-4/5  ">
                         <div class="w-full">
-                            <div id="carouselExampleCaptions3" class="relative" data-te-carousel-init data-te-carousel-slide>
+                            <div id="carouselExampleCaptions1" class="relative" data-te-carousel-init data-te-carousel-slide>
                                 <div class="absolute right-0 -bottom-10 left-0 z-[2] mx-[15%]  mb-4 flex list-none justify-center p-0 z-[-1]"
                                     data-te-carousel-indicators>
                                     <button
                                         type="button"
-                                        data-te-target="#carouselExampleCaptions3"
+                                        data-te-target="#carouselExampleCaptions1"
                                         data-te-slide-to="0"
                                         data-te-carousel-active
                                         class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
@@ -22,13 +24,13 @@
                                         aria-label="Slide 1"></button>
                                     <button
                                         type="button"
-                                        data-te-target="#carouselExampleCaptions3"
+                                        data-te-target="#carouselExampleCaptions1"
                                         data-te-slide-to="1"
                                         class="mx-[3px] box-content h-h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
                                         aria-label="Slide 2"></button>
                                     <button
                                         type="button"
-                                        data-te-target="#carouselExampleCaptions3"
+                                        data-te-target="#carouselExampleCaptions1"
                                         data-te-slide-to="2"
                                         class="mx-[3px] box-content h-h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
                                         aria-label="Slide 3"></button>
@@ -36,13 +38,11 @@
                                 <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
                                     @php
                                         $nhl_goalies = 0;
-                                    @endphp
-                                    
+                                    @endphp                                   
                                     @foreach($starting_goalies as $key=>$val)
-                                  
                                         @if(isset($val->game->game_date))      
-                                            @if($nhl_goalies == 0 )   
-                                                <div class="relative float-left -mr-[100%] w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                                            @if($nhl_goalies == 0)   
+                                                <div class="relative float-left -mr-[100%]  w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
                                                     data-te-carousel-active
                                                     data-te-carousel-item
                                                     style="backface-visibility: hidden">
@@ -56,58 +56,36 @@
                                                     $nhl_goalies++;
                                                 @endphp
                                             @else 
-                                         
-                                                <div class="relative float-left -mr-[100%] hidden w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                                                <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
                                                     data-te-carousel-item
                                                     style="backface-visibility: hidden">
                                                     <div class="flex flex-row justify-center items-center">
                                                     <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                            <h1 class="text-2xl font-bold text-white ">hello world {{$val->game->game_date->full}} {{$nhl_goalies}} </h1>
+                                                            <h1 class="text-2xl font-bold text-white ">{{$val->game->game_date->full}}</h1>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div>    
                                                 @php
                                                     $nhl_goalies++;
-                                                @endphp
+                                                @endphp     
                                             @endif
                                             
-                                            <!-- <div class="relative float-left -mr-[100%] hidden w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
-                                                data-te-carousel-item
-                                                style="backface-visibility: hidden">
-                                                <div class="flex flex-row justify-center items-center">
-                                                <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                        <h1 class="text-2xl font-bold text-white ">NHL Starting Goalies Tuesday, January 24 </h1>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="relative float-left -mr-[100%] hidden w-full  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
-                                                data-te-carousel-item
-                                                style="backface-visibility: hidden">
-                                                <div class="flex flex-row justify-center items-center">
-                                                <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                        <h1 class="text-2xl font-bold text-white "> NHL Starting Goalies Tuesday, January 24 </h1>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                         
                                         @endif
                                     @endforeach
-                                    
                                 </div>
-                
                             <button
-                            class="absolute left-0  top-0 z-[1] flex  items-center justify-center border-0 bg-none p-0 text-center text-white transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                            class=" absolute left-0 top-0 z-[1] flex items-center justify-center border-0 bg-none p-0 text-center text-white   transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                             type="button"
-                            data-te-target="#carouselExampleCaptions3"
+                            data-te-target="#carouselExampleCaptions1"
                             data-te-slide="prev">
                             <div class="flex items-center justify-center h-14 w-14  border border-black bg-white rounded-lg">
                                 <img class="w-[30px] h-[30px] rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">
                             </div>                 
                             </button>
                             <button
-                            class=" absolute right-0 top-0 z-[1] flex flex    items-center justify-center border-0 bg-none p-0 text-center text-white   transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                            class=" absolute right-0 top-0 z-[1] flex items-center justify-center border-0 bg-none p-0 text-center text-white   transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                             type="button"
-                            data-te-target="#carouselExampleCaptions3"
+                            data-te-target="#carouselExampleCaptions1"
                             data-te-slide="next"> 
                                 <div class="flex items-center justify-center  h-14 w-14 border border-black bg-white rounded-lg">
                                     <img class="w-[30px] h-[30px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="">                                       
@@ -116,54 +94,56 @@
                         </div>
                     </div> 
                     <div class="flex flex-col items-center mt-2 gap-5 w-full">
-                        <div class="flex flex-wrap justify-center w-11/12">
-                        
-                                    <div class="flex gap-3 w-full h-56 ">
-                                        <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
-                                            <h1 class="font-bold text-base mt-3"> </h1>
-                                            <div class="flex flex-row items-center gap-2">
-                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                <p class="text-[11px] font-bold"> </p>
+                        <div class="flex flex-wrap justify-center w-11/12 gap-5">
+                            @foreach($starting_goalies as $key=>$val)
+                                @if(isset($val->team->name))
+                                  
+                                        <div class="flex gap-3 w-full h-56">
+                                            <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
+                                                <h1 class="font-bold text-base mt-3"> </h1>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-[11px] font-bold"> </p>
+                                                </div>
+                                                <img src=" " class="w-40" alt="">
                                             </div>
-                                            <img src=" " class="w-40" alt="">
-                                        </div>
-                                        <div class="flex flex-col justify-between w-full border border-black rounded">
-                                            <div class="flex flex-row justify-evenly mt-3">
-                                                <div class="">
-                                                    <div class="flex flex-col items-center gap-2">
-                                                        <img class="w-12 " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">
-                                                        <h1 class="text-center font-bold">Boston <br> Bruins</h1>
+                                            <div class="flex flex-col justify-between w-full border border-black rounded">
+                                                <div class="flex flex-row justify-evenly mt-3">
+                                                    <div class="">
+                                                        <div class="flex flex-col items-center gap-2">
+                                                            <img class="w-12 " src="{{ asset('/images/teamlogo-svg/ .svg') }}" alt="">
+                                                            <h1 class="text-center font-bold">{{$val->team->name }}</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="flex flex-col items-center gap-2">
+                                                            <img class="w-12 " src="{{ asset('/images/teamlogo-svg/ .svg') }}" alt="">
+                                                            <h1 class="text-center  font-bold">{{$val->team->name }}</h1>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div class="flex flex-col items-center gap-2">
-                                                        <img class="w-12 " src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt="">
-                                                        <h1 class="text-center  font-bold">Florida <br> Panthers</h1>
-                                                    </div>
+                                                <div class="text-sm text-center font-semibold text-[#9da8af]">
+                                                    <p>Jan 24, 7pm EST</p>
+                                                    <p>Bridgestone Arena</p>
+                                                </div>
+                                                <div class="w-full flex justify-center m-1">
+                                                    <button class="border border-black font-bold px-3 py-1 rounded w-40">
+                                                        Game Odds
+                                                    </button>
                                                 </div>
                                             </div>
-                                            <div class="text-sm text-center font-semibold text-[#9da8af]">
-                                                <p>Jan 24, 7pm EST</p>
-                                                <p>Bridgestone Arena</p>
-                                            </div>
-                                            <div class="w-full flex justify-center m-1">
-                                                <button class="border border-black font-bold px-3 py-1 rounded w-40">
-                                                    Game Odds
-                                                </button>
+                                            <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
+                                                <h1 class="font-bold text-base mt-3"> </h1>
+                                                <div class="flex flex-row items-center gap-2">
+                                                    <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                                    <p class="text-[11px] font-bold"> </p>
+                                                </div>
+                                                <img src=" " class="w-40" alt="">
                                             </div>
                                         </div>
-                                        <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
-                                            <h1 class="font-bold text-base mt-3"> </h1>
-                                            <div class="flex flex-row items-center gap-2">
-                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                <p class="text-[11px] font-bold"> </p>
-                                            </div>
-                                            <img src=" " class="w-40" alt="">
-                                        </div>
-                                    </div>
-                                 
-                        
-                            
+                                    
+                                @endif
+                            @endforeach 
                         </div>
                         <div class="flex flex-col w-full gap-2">
                             <div class="flex flex-col ">
@@ -982,7 +962,7 @@
                     data-te-carousel-indicators>
                     <button
                         type="button"
-                        data-te-target="#carouselExampleCaptions3"
+                        data-te-target="#carouselExampleCaptions4"
                         data-te-slide-to="0"
                         data-te-carousel-active
                         class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
@@ -990,13 +970,13 @@
                         aria-label="Slide 1"></button>
                     <button
                         type="button"
-                        data-te-target="#carouselExampleCaptions3"
+                        data-te-target="#carouselExampleCaptions4"
                         data-te-slide-to="1"
                         class="mx-[3px] box-content h-h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
                         aria-label="Slide 2"></button>
                     <button
                         type="button"
-                        data-te-target="#carouselExampleCaptions3"
+                        data-te-target="#carouselExampleCaptions4"
                         data-te-slide-to="2"
                         class="mx-[3px] box-content h-h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent  bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
                         aria-label="Slide 3"></button>
