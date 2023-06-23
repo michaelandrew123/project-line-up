@@ -160,7 +160,21 @@ class HockeyController extends Controller
     }
     public function nhlstartingGoaliesv2(){
         $client = new \GuzzleHttp\Client();
-
+        
+        $goalies_schedule = $client->get(
+            'https://api.projectedlineups.com/v1/schedules/nhl/seasons/2022-2023/games',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+        $goalies_sched_body = $goalies_schedule->getBody();
+        $team_goalies_sched = json_decode($goalies_sched_body);
+        // print_r(json_decode((string) $body));
+            // dd($team_goalies_sched);
+ 
         $starting_goalies = $client->get(
             'https://api.projectedlineups.com/v1/lineups/nhl/starting-goalies',
             [
@@ -173,15 +187,15 @@ class HockeyController extends Controller
         );
         $starting_goalies_body = $starting_goalies->getBody();
         $team_starting_goalies = json_decode($starting_goalies_body);
-        $team_current_name = array();
-        foreach($team_starting_goalies as $values){
-            $key=$values['game'];
-            $team_current_name[$key][]=$values;
-        }
+        // $team_current_name = array();
+        // foreach($team_starting_goalies as $values){
+        //     $key=$values['game'];
+        //     $team_current_name[$key][]=$values;
+        // }
        
-        $team_current_name = array_values($team_current_name);
-        // print_r(json_decode((string) $body));
-        dd($team_current_name);
+        // $team_current_name = array_values($team_current_name);
+        // // print_r(json_decode((string) $body));
+        // dd($team_current_name);
         // dd($team_starting_goalies);
 
         $article = $client->get(
@@ -218,7 +232,7 @@ class HockeyController extends Controller
         // print_r(json_decode((string) $body));
 
         // dd($team_result);
-        return view('pages/nhlstarting-goaliesv2')->with([ 'team' => $team_result, 'article' => $team_article, 'starting_goalies' => $team_starting_goalies->data  ]);
+        return view('pages/nhlstarting-goaliesv2')->with([ 'team' => $team_result, 'article' => $team_article, 'starting_goalies' => $team_starting_goalies->data, 'goalies_schedule' => $team_goalies_sched]);
     }
     public function nhlstartingGoaliesv1(){
         $client = new \GuzzleHttp\Client();

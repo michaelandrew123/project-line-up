@@ -1,11 +1,11 @@
 @extends('layouts.master-nhl')
 
 @section('content')
-    @foreach($starting_goalies as $key=>$val)
+    <!-- @foreach($starting_goalies as $key=>$val)
         @if(isset($val->team->slug))
             {{$val->game->game_date->full}}
         @endif
-    @endforeach
+    @endforeach -->
     <div class="w-full flex flex-col items-center">
         <div class="max-w-screen-2xl smm-hidden  xl:w-full">
                <div class="flex flex-row justify-evenly mt-10 w-full">   
@@ -39,8 +39,8 @@
                                     @php
                                         $nhl_goalies = 0;
                                     @endphp                                   
-                                    @foreach($starting_goalies as $key=>$val)
-                                        @if(isset($val->game->game_date))      
+                                    @foreach($goalies_schedule->data as $key=>$val)
+                                      
                                             @if($nhl_goalies == 0)   
                                                 <div class="relative float-left -mr-[100%]  w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
                                                     data-te-carousel-active
@@ -48,29 +48,27 @@
                                                     style="backface-visibility: hidden">
                                                     <div class="flex flex-row justify-center items-center">
                                                         <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                            <h1 class="text-2xl font-bold text-white ">{{$val->game->game_date->full}}</h1>
+                                                            <h1 class="text-2xl font-bold text-white "> {{$val->game_date->full}}</h1>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                @php
-                                                    $nhl_goalies++;
-                                                @endphp
+                                      
                                             @else 
                                                 <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
                                                     data-te-carousel-item
                                                     style="backface-visibility: hidden">
                                                     <div class="flex flex-row justify-center items-center">
                                                     <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                            <h1 class="text-2xl font-bold text-white ">{{$val->game->game_date->full}}</h1>
+                                                            <h1 class="text-2xl font-bold text-white ">{{$val->game_date->full}}</h1>
                                                         </div>
                                                     </div>
                                                 </div>    
-                                                @php
-                                                    $nhl_goalies++;
-                                                @endphp     
+                                                 
                                             @endif
-                                            
-                                        @endif
+                                            @php
+                                                $nhl_goalies++;
+                                            @endphp  
+                                      
                                     @endforeach
                                 </div>
                             <button
@@ -95,55 +93,67 @@
                     </div> 
                     <div class="flex flex-col items-center mt-2 gap-5 w-full">
                         <div class="flex flex-wrap justify-center w-11/12 gap-5">
-                            @foreach($starting_goalies as $key=>$val)
-                                @if(isset($val->team->name))
-                                  
-                                        <div class="flex gap-3 w-full h-56">
-                                            <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
-                                                <h1 class="font-bold text-base mt-3"> </h1>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-[11px] font-bold"> </p>
-                                                </div>
-                                                <img src=" " class="w-40" alt="">
+                            @foreach($goalies_schedule->data as $key=>$val)  
+                                <div class="flex gap-3 w-full h-56">
+                                    <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
+                                        @if(!empty($val->starting_goalies->home->player->full_name))
+                                            <h1 class="font-bold text-base mt-3">{{$val->starting_goalies->home->player->full_name}}</h1>
+                                        @endif
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                            <p class="text-[11px] font-bold">{{$val->starting_goalies->home->status->name}}</p>
+                                        </div>
+                                        @if(!empty($val->starting_goalies->home->player->images->uniform))
+                                            <div class="flex flex-row items-center gap-2">
+                                                <img class="w-[9rem]" src="{{$val->starting_goalies->home->player->images->uniform}}">
+                                                <p class="text-[11px] font-bold"> </p>
                                             </div>
-                                            <div class="flex flex-col justify-between w-full border border-black rounded">
-                                                <div class="flex flex-row justify-evenly mt-3">
-                                                    <div class="">
-                                                        <div class="flex flex-col items-center gap-2">
-                                                            <img class="w-12 " src="{{ asset('/images/teamlogo-svg/ .svg') }}" alt="">
-                                                            <h1 class="text-center font-bold">{{$val->team->name }}</h1>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="flex flex-col items-center gap-2">
-                                                            <img class="w-12 " src="{{ asset('/images/teamlogo-svg/ .svg') }}" alt="">
-                                                            <h1 class="text-center  font-bold">{{$val->team->name }}</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-sm text-center font-semibold text-[#9da8af]">
-                                                    <p>Jan 24, 7pm EST</p>
-                                                    <p>Bridgestone Arena</p>
-                                                </div>
-                                                <div class="w-full flex justify-center m-1">
-                                                    <button class="border border-black font-bold px-3 py-1 rounded w-40">
-                                                        Game Odds
-                                                    </button>
+                                        @endif
+                                        <img src=" " class="w-40" alt="">
+                                    </div>
+                                    <div class="flex flex-col justify-between w-full border border-black rounded">
+                                        <div class="flex flex-row justify-evenly mt-3">
+                                            <div class="">
+                                                <div class="flex flex-col items-center gap-2">
+                                                    <img class="w-12 " src="{{ asset('/images/teamlogo-svg/ .svg') }}" alt="">
+                                                    <h1 class="text-center font-bold">{{$val->home_team->name}}</h1>
                                                 </div>
                                             </div>
-                                            <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
-                                                <h1 class="font-bold text-base mt-3"> </h1>
-                                                <div class="flex flex-row items-center gap-2">
-                                                    <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                    <p class="text-[11px] font-bold"> </p>
+                                            <div>
+                                                <div class="flex flex-col items-center gap-2">
+                                                    <img class="w-12 " src="{{ asset('/images/teamlogo-svg/ .svg') }}" alt="">
+                                                    <h1 class="text-center  font-bold">{{$val->away_team->name}}</h1>
                                                 </div>
-                                                <img src=" " class="w-40" alt="">
                                             </div>
                                         </div>
-                                    
-                                @endif
-                            @endforeach 
+                                        <div class="text-sm text-center font-semibold text-[#9da8af]">
+                                            <p>Jan 24, 7pm EST</p>
+                                            <p>Bridgestone Arena</p>
+                                        </div>
+                                        <div class="w-full flex justify-center m-1">
+                                            <button class="border border-black font-bold px-3 py-1 rounded w-40">
+                                                Game Odds
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="border border-black flex flex-col items-center justify-between w-full rounded-lg">
+                                        @if(!empty($val->starting_goalies->away->player->full_name))
+                                            <h1 class="font-bold text-base mt-3">{{$val->starting_goalies->away->player->full_name}}</h1>
+                                        @endif
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
+                                            <p class="text-[11px] font-bold">{{$val->starting_goalies->home->status->name}}</p>
+                                        </div>
+                                        @if(!empty($val->starting_goalies->away->player->images->uniform))
+                                            <div class="flex flex-row items-center gap-2">
+                                                <img class="w-[9rem]" src="{{$val->starting_goalies->away->player->images->uniform}}">
+                                                <p class="text-[11px] font-bold"> </p>
+                                            </div>
+                                        @endif
+                                        <img src=" " class="w-40" alt="">
+                                    </div>
+                                </div> 
+                             @endforeach 
                         </div>
                         <div class="flex flex-col w-full gap-2">
                             <div class="flex flex-col ">
