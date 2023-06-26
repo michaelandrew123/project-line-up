@@ -1,10 +1,10 @@
-@extends('layouts.master-learn')
+@extends('layouts.master-nhl')
 
 @section('content')
 
     <div class="w-full flex justify-center">
         <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center w-full gap-[5rem] max-w-screen-2xl ">
-           <div class="flex flex-row justify-between items-end flex w-full my-5">
+            <!-- <div class="flex flex-row justify-between items-end flex w-full my-5">
                 <div class="flex gap-1 items-end">
                     <img class="w-[99px]" src="{{ asset('/images/line-combos/logo/matthew_tkachuk.png') }}" alt="">
                     <div class="flex">
@@ -27,18 +27,15 @@
                         </svg>
                     </a>
                 </div>
-            </div>
-            <div class=" w-full flex flex-col items-center">
+            </div> -->
+            <div class="w-full flex flex-col items-center">
                 <div class="flex flex-row w-full justify-evenly">
-                    <img class="w-[15rem] " src="{{ asset('/images/menu-icon/player-3.png') }}" alt="">
-                    <img class="w-[15rem] " src="{{ asset('/images/menu-icon/player-2.png') }}" alt="">
-                    <img class="w-[15rem] " src="{{ asset('/images/menu-icon/player-3.png') }}" alt="">
-                    <img class="w-[15rem] " src="{{ asset('/images/menu-icon/player-2.png') }}" alt="">
+                    <img class="w-full" src="{{ asset('/images/menu-icon/players.png') }}" alt="">
                 </div>
                 <div class="relative w-full">
-                    <input class="w-full border border-2 border-black text-center text-lg font-bold rounded h-14" type="text" value="Search Projected Lineups">
-                    <a class="absolute top-0 right-0" href="">
-                      <img class="w-[65px] " src="{{ asset('/images/menu-icon/search.png') }}" alt="">
+                    <input class="w-full border border-4 border-[#4d4d4d] text-center text-xl text-[#4d4d4d] font-bold rounded h-14" type="text" placeholder="Search Projected Lineups">
+                    <a class="absolute top-1 right-1" href="">
+                      <img class="w-[50px]" src="{{ asset('/images/menu-icon/icons8-search-48.png') }}" alt="">
                    </a> 
                 </div>
             </div>
@@ -46,7 +43,7 @@
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
                       <img class="w-12" src="{{ asset('/images/menu-icon/puck icon 40x40.png') }}" alt="">
-                      <h1 class="text-4xl font-bold">NHL</h1>
+                      <h1 class="text-4xl font-extrabold text-black">NHL</h1>
                     </div>
                     <ul class="flex flex-col gap-2">
                         <li><a class="text-xl font-bold text-[#39b6ff]" href="">Line Combinations</a></li>
@@ -59,7 +56,7 @@
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
                         <img class="w-10" src="{{ asset('/images/menu-icon/baskball icon 40x40.png') }}" alt="">
-                        <h1 class="text-4xl font-bold">NBA</h1>
+                        <h1 class="text-4xl font-extrabold text-black">NBA</h1>
                     </div>
                     <ul class="flex flex-col gap-2">
                         <li><a class="text-xl font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
@@ -72,7 +69,7 @@
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
                         <img class="w-11 -rotate-45" src="{{ asset('/images/menu-icon/football icon 40x40.png') }}" alt="">
-                        <h1 class="text-4xl font-bold">NFL</h1>
+                        <h1 class="text-4xl font-extrabold text-black">NFL</h1>
                     </div>
                     <ul class="flex flex-col gap-2">
                         <li><a class="text-xl font-bold text-[#39b6ff]" href="">Depth Charts</a></li>
@@ -85,7 +82,7 @@
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
                     <img class="w-10" src="{{ asset('/images/menu-icon/soccer icon 40x40.png') }}" alt="">
-                    <h1 class="text-4xl font-bold">EPL-MLS</h1>
+                    <h1 class="text-4xl font-extrabold text-black">EPL-MLS</h1>
                     </div>
                     <ul class="flex flex-col gap-2">
                         <li><a class="text-xl font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
@@ -97,8 +94,9 @@
                 </div>
             </div>
             <div class="w-full  flex flex-col  mt-16 gap-6  ">
-                <h1 class="text-2xl font-bold">What is the importance using projected luneups?</h1>
-                <p class="text-xl">
+                <h1 class="text-6xl font-bold text-center text-black">Your destination for fantasy sports <br> players and bettors</h1>
+                <h1 class="text-2xl font-medium">What is the importance using projected luneups?</h1>
+                <p class="text-2xl font-medium">
                     Projected Lineups can help give you the edge in all types of fantasy sports or sports betting;
                     having an idea of who is playing before your competition is always going to put you step  ahead.
                     All confirmed lineups are updated as soon as team or reliable source has confirmed the lineup 
@@ -107,27 +105,27 @@
                     covered. You can also find updated rosters for several sports, including updated NBA rosters as well 
                     as MLB and nfl rosters.
                 </p>
-                <p class="text-xl">
+                <p class="text-2xl font-medium">
                     Between Twitter, Instagram, and the dozens of hte social and informational sites, the  barriers for 
                     information between teams, reporters, and the public have fallen. Lineups.com does the job of searching
                     and colllectingthis information from trusted sources and providing it to you instantly. For example ,
                     you can get up to the second news on all NBA starting lineups right here.   
                 </p>
-                <p class="text-xl">
+                <p class="text-2xl font-medium">
                     When it comes to injuries, we are now able to get constant updates through social media and 
                     other platforms, so the question of who is playing or when someone will return lineups can 
                     be more accurate and more useful when it comes to fantasy sports, sports wagering, or any 
                     purpose it is needed for. Another crucial thing i peace of mind, and you get itr with us, as 
                     we validate all our information against our list of trusted sources.
                 </p>
-                <p class="text-xl">
+                <p class="text-2xl font-medium">
                     Starting  lineups and rosters are just small slice of the overall content and information you can 
                     expect to find. we can also provide tons of analytic statistic and data for your fantasy football 
                     selections, such as target share, snap counts., and more. These fantasy football stats are critical 
                     to not only setting your season-long line-up but also creating yor daily fantasy team in hope of
                     dominating.
                 </p>
-                <p class="text-xl">
+                <p class="text-2xl font-medium">
                     Another element to consider is the weather, which we can provide up -to-date information
                     on. On top of this, you can find player projections, which are base on more than simple 
                     plug-and-play formula. Tons of data analysis go into our unique fantasy football projections to 

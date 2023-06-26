@@ -16,6 +16,8 @@
     @if(URL::current()==route('nhl.props')) style="display:none !important;" @endif
     @if(URL::current()==route('nhl.player-news')) style="display:none !important;" @endif
     @if(URL::current()==route('posts.article')) style="display:none !important;" @endif
+    @if(URL::current()==route('posts.article')) style="display:none !important;" @endif
+  
     >
     
         <div class="bg-[#545454] w-full h-[6rem] gap-1 flex justify-center  ">

@@ -1,6 +1,6 @@
   
     <div class="w-full mb-3 flex flex-row justify-center block smm-hidden ">
-        <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center justify-between   w-full  border-black m-4 gap-5 max-w-screen-2xl border-b-2 border-slate-300 pb-[20px]">
+        <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center justify-between   w-full m-4 gap-5 max-w-screen-2xl  pb-[20px]">
             <div class="flex flex-row justify-between items-end flex w-full">
                 <div class="flex gap-1 items-end">
                     <img class="w-[99px]" src="{{ asset('/images/line-combos/logo/matthew_tkachuk.png') }}" alt="">
@@ -9,7 +9,7 @@
                         <h1 class="text-[50px]  font-regular text-[#39b6ff]" style="font-family: 'Mouse Memoirs'">lineups</h1>
                     </div>
                 </div>
-                <div class="flex flex-row items-center  w-8/12   justify-between">
+                <div class="flex flex-row items-center w-8/12 justify-between">
                     <div class="flex gap-6">
                         <a href="{{url('/nhl/home')}}" class="text-[24px] font-bold bg-[#38b6ff] text-[#ffffff]  px-4 py-px rounded-md">NHL</a>
                         <a href="" class="text-[24px]  font-bold  text-[#38b6ff] px-4 py-px border border-[#38b6ff] rounded-md hover:bg-sky-500/50 hover:border-sky-50 hover:text-white active:bg-[#38b6ff] active:text-[#ffffff]">NBA</a>
@@ -33,21 +33,19 @@
                     </a>
                 </div>
             </div>
-            
-                <ul  class="flex flex-row justify-between w-full" >
+            <div class="flex flex-col w-full gap-3" style="{{ Request::is('/') == ('/') ? 'display:none':'' }}">
+                <ul  class="flex flex-row justify-between w-full ">
                     <li class="nav-itms {{Request::is('nhl/starting-goaliesv2') ? 'active':'' }}">
                         <a href="{{url('nhl/starting-goaliesv2')}}" style="{{Request::is('nhl/starting-goaliesv2') ? 'background-color:transparent':'' }}" class="button-header text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black  px-2 mx-px rounded-lg text-center hover:bg-neutral-300 active:bg-[#38b6ff]  ">
                             Starting Goalies
                         </a>
                     </li>
-                
-                        <li class="nav-itms   {{Request::is('nhl/line-combos') ? 'active':'' }}">
-                            <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'background-color:transparent':'' }} " 
-                            class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold  bg-[#ebece9]  px-2 py-px rounded-lg text-center">
-                                Line Combinations
-                            </a>
-                        </li>
-                
+                    <li class="nav-itms   {{Request::is('nhl/line-combos') ? 'active':'' }}">
+                        <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'background-color:transparent':'' }} " 
+                        class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold  bg-[#ebece9]  px-2 py-px rounded-lg text-center">
+                            Line Combinations
+                        </a>
+                    </li>
                     <li class="nav-itms   {{Request::is('nhl/projections') ? 'active':'' }}">
                         <a href="{{url('nhl/projections')}}" style="{{Request::is('nhl/projections') ? 'background-color:transparent':'' }}" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 mx-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff]  ">
                             DFS Projections
@@ -58,11 +56,11 @@
                             Player News
                         </a>
                     </li>
-                    <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
+                    <!-- <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
                         <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 mx-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff] ">
                             Props & Odds
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
                         <a href="" class="  text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2  mx-px rounded-lg text-center hover:bg-neutral-300   active:bg-[#38b6ff] ">
                             Lineup Study
@@ -87,43 +85,36 @@
                         @endforeach
                     </ul>
                 </div>
-                <!-- <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
-                    <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">
-                        {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}
-                    </a>
-                    <div class="drp-dwn hidden flex flex-col  w-full p-2 bg-slate-50 absolute top-12 overflow-y-auto h-[21rem]">
-                        @foreach($team->data as $key=>$val)
-                            <div class="flex flex-row items-center gap-10">
-                                <a class="teams text-2xl font-semibold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
-                                <div class="flex flex-col">
-                                    <img class="w-7 flex " src="{{$val->logo->src}}" alt="">
-                                </div>
+            </div>
+            <!-- <div id="head-drp" class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center">
+                <a href="#" class="w-[28rem] text-4xl text-[#9fa0a0] font-semibold">
+                    {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}
+                </a>
+                <div class="drp-dwn hidden flex flex-col  w-full p-2 bg-slate-50 absolute top-12 overflow-y-auto h-[21rem]">
+                    @foreach($team->data as $key=>$val)
+                        <div class="flex flex-row items-center gap-10">
+                            <a class="teams text-2xl font-semibold text-[#9fa0a0]" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                            <div class="flex flex-col">
+                                <img class="w-7 flex " src="{{$val->logo->src}}" alt="">
                             </div>
-                        @endforeach
-                    </div>
-                    <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
-                        <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
-                    </a>
-                </div> -->
-                <!-- <div id="head-drp" >
-                    <select class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center" name="" id="">
-                        @foreach($team->data as $key=>$val)
-                            <option class="" value="">
-                                <a href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
-                            </option>
-                        @endforeach
-                    </select>
-                    <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
-                        <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
-                    </a>
-                </div> -->
-             
-                
-         
-                 
-                
-          
-        
-       
+                        </div>
+                    @endforeach
+                </div>
+                <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
+                    <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
+                </a>
+            </div> -->
+            <!-- <div id="head-drp" >
+                <select class="relative border border-[#9fa0a0] w-full h-[3rem] rounded-lg flex flex-col justify-center items-center" name="" id="">
+                    @foreach($team->data as $key=>$val)
+                        <option class="" value="">
+                            <a href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                        </option>
+                    @endforeach
+                </select>
+                <a class="absolute right-[15px] top-[8px] rotate-[271deg] arrw-v1" href="">
+                    <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
+                </a>
+            </div> -->
         </div>
     </div>
