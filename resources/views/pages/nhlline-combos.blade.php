@@ -12,7 +12,7 @@
             <div class="flex flex-row items-center justify-between m-3">
                 <div class="flex flex-row items-center gap-7">
                     <!-- <img class="w-[4rem] rounded-lg" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
-                    <div class="flex flex-wrap gap-2">
+                        <div class="flex flex-wrap gap-2">
                         <p class="text-2xl font-extrabold">Toronto Maple Leafs</p>
                         <p class="text-2xl font-extrabold">Line Combinations</p>
                     </div> -->
@@ -82,11 +82,11 @@
             <img class="w-[728px]" src="{{ asset('/images/line-combos/pd_by_betway.png') }}">
         </div>
     </div>  
-    <div class="flex flex-row items-center w-11/12  justify-center  mt-[20px] gap-3 text-slate-500  block smm-hidden max-w-screen-2xl" id="sub-hed">
-        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md l-ups text-black bg-[#38b6ff] text-[#ffffff]">
+    <div class="flex flex-row items-center w-11/12  justify-center  mt-[20px] gap-3 block smm-hidden max-w-screen-2xl" id="sub-hed">
+        <button class="w-36 bg-[#38b6ff] text-[16px] text-[#ffffff] font-bold rounded-md l-ups text-black">
             Lineups
         </button>
-        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black d-kings flex justify-center items-center gap-3">
+        <button class="w-36  bg-[#ebece9] text-[16px] font-bold rounded-md text-black d-kings flex justify-center items-center gap-3">
             <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
             Draftkings
         </button>
@@ -96,11 +96,12 @@
         <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black sts">
             Stats
         </button>
-        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black prp">
+        <!-- <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black prp">
             Props
-        </button>
+        </button> -->
         <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md   text-black shp">
-            Shop</button>
+            Shop
+        </button>
         <button class="w-36 bg-green-600 text-[16px] font-bold rounded-md text-black">Create</button>
     </div> 
     <div class="props flex w-11/12 my-5 gap-5 block smm-hidden max-w-screen-2xl hidden ">
