@@ -1,7 +1,7 @@
   
-    <div class="w-full mb-3 flex flex-row justify-center block smm-hidden ">
-        <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center justify-between   w-full m-4 gap-5 max-w-screen-2xl  pb-[20px]">
-            <div class="flex flex-row justify-between items-end flex w-full">
+    <div class="w-full flex flex-row justify-center block smm-hidden">
+        <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center justify-between w-full m-4 gap-5 max-w-screen-2xl">
+            <div class="flex flex-row justify-between items-end flex w-full  pb-3 border-[d9d9d9] border-b-2">
                 <div class="flex gap-1 items-end">
                     <img class="w-[99px]" src="{{ asset('/images/line-combos/logo/matthew_tkachuk.png') }}" alt="">
                     <div class="flex">
@@ -9,7 +9,7 @@
                         <h1 class="text-[50px]  font-regular text-[#39b6ff]" style="font-family: 'Mouse Memoirs'">lineups</h1>
                     </div>
                 </div>
-                <div class="flex flex-row items-center w-8/12 justify-between">
+                <div class="flex flex-row items-center w-8/12 justify-between ">
                     <div class="flex gap-6">
                         <a href="{{url('/nhl/home')}}" class="text-[24px] font-bold bg-[#38b6ff] text-[#ffffff]  px-4 py-px rounded-md">NHL</a>
                         <a href="" class="text-[24px]  font-bold  text-[#38b6ff] px-4 py-px border border-[#38b6ff] rounded-md hover:bg-sky-500/50 hover:border-sky-50 hover:text-white active:bg-[#38b6ff] active:text-[#ffffff]">NBA</a>
@@ -33,26 +33,26 @@
                     </a>
                 </div>
             </div>
-            <div class="flex flex-col w-full gap-3" style="{{ Request::is('/') == ('/') ? 'display:none':'' }}">
-                <ul  class="flex flex-row justify-between w-full ">
+            <div class="flex flex-col w-full gap-1" style="{{ Request::is('/') == ('/') ? 'display:none':'' }}">
+                <ul  class="flex flex-row justify-between w-10/12  ">
                     <li class="nav-itms {{Request::is('nhl/starting-goaliesv2') ? 'active':'' }}">
-                        <a href="{{url('nhl/starting-goaliesv2')}}" style="{{Request::is('nhl/starting-goaliesv2') ? 'background-color:transparent':'' }}" class="button-header text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black  px-2 mx-px rounded-lg text-center hover:bg-neutral-300 active:bg-[#38b6ff]  ">
+                        <a href="{{url('nhl/starting-goaliesv2')}}" style="{{Request::is('nhl/starting-goaliesv2') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             Starting Goalies
                         </a>
                     </li>
                     <li class="nav-itms   {{Request::is('nhl/line-combos') ? 'active':'' }}">
-                        <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'background-color:transparent':'' }} " 
-                        class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold  bg-[#ebece9]  px-2 py-px rounded-lg text-center">
+                        <a  href="{{url('nhl/line-combos')}}" style="{{Request::is('nhl/line-combos') ? 'text-color:transparent':'' }} " 
+                        class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             Line Combinations
                         </a>
                     </li>
                     <li class="nav-itms   {{Request::is('nhl/projections') ? 'active':'' }}">
-                        <a href="{{url('nhl/projections')}}" style="{{Request::is('nhl/projections') ? 'background-color:transparent':'' }}" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 mx-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff]  ">
+                        <a href="{{url('nhl/projections')}}" style="{{Request::is('nhl/projections') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             DFS Projections
                         </a>
                     </li>
                     <li class="nav-itms {{Request::is('nhl/player-news') ? 'active':'' }}">
-                        <a href="{{url('nhl/player-news')}}" style="{{Request::is('nhl/player-news') ? 'background-color:transparent':'' }}" class="header-btn text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] px-2 mx-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff]  ">
+                        <a href="{{url('nhl/player-news')}}" style="{{Request::is('nhl/player-news') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             Player News
                         </a>
                     </li>
@@ -62,17 +62,19 @@
                         </a>
                     </li> -->
                     <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
-                        <a href="" class="  text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2  mx-px rounded-lg text-center hover:bg-neutral-300   active:bg-[#38b6ff] ">
+                        <a href="" class="  text-xl xl:text-lg lg:text-base md:text-sm font-bold  text-black text-center ">
                             Lineup Study
                         </a>
                     </li>
                     <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
-                        <a href="" class="  flex items-center text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 mx-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff] active:text-[#ffffff]">
-                        <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List
+                        <a href="" class="  flex items-center text-xl xl:text-lg lg:text-base md:text-sm font-bold  text-black text-center  ">
+                            News
+                        <!-- <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List -->
                         </a>
                     </li>
                 </ul>
-                <div class="w-full relative mb-7">
+                <div class="bg-slate-100 w-full h-1 mt-2"></div>
+                <div class="w-full relative mb-5">
                     <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute">
                         @foreach($team->data as $key=>$val)
                             @if(!empty($val->logo->src))
@@ -116,5 +118,7 @@
                     <img class="w-[2.5rem] " src="{{ asset('/images/menu-icon/arrowgrey.png') }}" alt="">
                 </a>
             </div> -->
+           
         </div>
+        
     </div>

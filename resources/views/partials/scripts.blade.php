@@ -184,47 +184,15 @@
     // nhl line-combos sub link end
 
     // NHL LINE-COMBOS
-    $('.d-kings').on('click', function(){
-      $('.d-kings').removeClass('bg-[#ebece9]');
-      $('.d-kings').addClass('bg-[#38b6ff]');
-      $('.d-kings').addClass('text-[#ffffff]');
-      $('.l-ups, .fnl, .sts, .nws, .prp, .shp').addClass('bg-[#ebece9]');
-      $('.l-ups, .fnl, .sts, .nws, .prp, .shp').removeClass('bg-[#38b6ff]');
-      $('.l-ups, .fnl, .sts, .nws, .prp, .shp').removeClass('text-[#ffffff]');
-     });
-     $('#sub-hed > .l-ups').on('click', function(){
-      $('.l-ups').removeClass('bg-[#ebece9]');
-      $('.l-ups').addClass('bg-[#38b6ff]');
-      $('.l-ups').addClass('text-[#ffffff]');
-      $('.sts, .fnl, .nws, .d-kings, .prp, .shp').addClass('bg-[#ebece9]');
-      $('.sts, .fnl, .nws, .d-kings, .prp, .shp').removeClass('bg-[#38b6ff]');
-      $('.sts, .fnl, .nws, .d-kings, .prp, .shp').removeClass('text-[#ffffff]');
-     });
-     $('#sub-hed > .fnl').on('click', function(){
-      $('.fnl').removeClass('bg-[#ebece9]');
-      $('.fnl').addClass('bg-[#38b6ff]');
-      $('.fnl').addClass('text-[#ffffff]');
-      $('.sts,  .l-ups, .nws, .d-kings, .prp, .shp').addClass('bg-[#ebece9]');
-      $('.sts, .l-ups, .nws, .d-kings, .prp, .shp').removeClass('bg-[#38b6ff]');
-      $('.sts, .l-ups, .nws, .d-kings, .prp, .shp').removeClass('text-[#ffffff]');
-     });
-     $('#sub-hed > .sts').on('click', function(){
-      $('.sts').removeClass('bg-[#ebece9]');
-      $('.sts').addClass('bg-[#38b6ff]');
-      $('.sts').addClass('text-[#ffffff]');
-      $('.nws, .l-ups, .fnl, .d-kings, .prp, .shp').addClass('bg-[#ebece9]');
-      $('.nws, .l-ups, .fnl, .d-kings, .prp, .shp').removeClass('bg-[#38b6ff]');
-      $('.nws, .l-ups, .fnl, .d-kings, .prp, .shp').removeClass('text-[#ffffff]');
-     });
-     $('#sub-hed > .shp').on('click', function(){
-      $('.shp').removeClass('bg-[#ebece9]');
-      $('.shp').addClass('bg-[#38b6ff]');
-      $('.shp').addClass('text-[#ffffff]');
-      $('.nws, .l-ups, .fnl, .d-kings, .prp, .sts').addClass('bg-[#ebece9]');
-      $('.nws, .l-ups, .fnl, .d-kings, .prp, .sts').removeClass('bg-[#38b6ff]');
-      $('.nws, .l-ups, .fnl, .d-kings, .prp, .sts').removeClass('text-[#ffffff]');
-     });
-     
+    // $('.bckgrnd').on('click', function(){
+    //    $(this).css("color","red");      
+    //  });
+    $('.bckgrnd').click(function() {
+     var navbg = $(this).data('navbg');
+      $('.bckgrnd').removeClass('active');
+      $(this).addClass('active');
+      $('div#sub-hed').css('backgroundColor', navbg);
+    });
      
      $('.fnl, .shp, .d-kings, .nws, .sts, .prp').on('click', function(){
       $('#p-box > div.frstrow').addClass('w-[69%]');
@@ -237,12 +205,12 @@
   
      $('#lc-btn').on('click', function(){
       $('#lc-dropdown').toggleClass('hidden');
-    
      });
 
     //  $('#sub-hed > l-ups').on('click', function(){
     //   $('#lu-body').removeClass('hidden');
     //  });
+
     $('#sub-hed > .l-ups').on('click', function(){
       $('#drf-shp').addClass('hidden');
       $('#lu-body').removeClass('hidden');
@@ -269,7 +237,15 @@
      });
      $('#sub-hed > .l-ups').on('click', function(){
       $(' .drftking, .fduel, .shop, .stats, .fl-price, .dk-price, .props').addClass('hidden');
-     });
+    });
+
+     $('.background').click(function() {
+     var navbg = $(this).data('navbg');
+      $('.bckgrnd').removeClass('active');
+      $(this).addClass('active');
+      $('div#sub-hed').css('backgroundColor', navbg);
+    });
+
 
 
       

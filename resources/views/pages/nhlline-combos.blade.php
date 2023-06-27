@@ -7,10 +7,10 @@
 
 <div class="">
 <div class="w-full flex flex-col items-center ">
-    <div class="w-11/12 flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl border-b-2 border-slate-300 pb-[20px] ">
+    <div class="w-11/12 flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-slate-200 px-2 py-2">
         <div class="w-full flex flex-col gap-2 ">
-            <div class="flex flex-row items-center justify-between m-3">
-                <div class="flex flex-row items-center gap-7">
+            <div class="flex flex-row items-center justify-between ">
+                <div class="flex flex-row items-center">
                     <!-- <img class="w-[4rem] rounded-lg" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__2_-removebg-preview.png') }}" >
                         <div class="flex flex-wrap gap-2">
                         <p class="text-2xl font-extrabold">Toronto Maple Leafs</p>
@@ -24,85 +24,80 @@
                             <div class="teams text-4xl font-bold text-black">
                                 {{  ( !empty($current_name) ? $current_name: 'Anaheim Ducks')  }}
                             </div>
-                            <div class="teams text-2xl font-bold text-black">line combinations</div>
+                            <div class="teams text-lg font-bold text-black">line combinations</div>
                         </div>
                     </div>
                 </div>         
             </div>
-            <div class="mx-3">
-                <div class="flex flex-row items-center justify-left gap-10">
-                    <div class="flex flex-row gap-2 items-center">  
-                        <!-- <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt=""> -->
-                        <div>
-                            <a href="{{ $result->data->source->url  }}" class=" " target="_blank">
-                                <p class="text-[13px] font-semibold">{{ $result->data->source->name  }}</p>
-                            </a>
-                            <p class="text-[13px] font-semibold">{{ $result->data->updated_at->date  }} | {{ $result->data->updated_at->time  }}</p>
-                            {{--<p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>--}}   
-                        </div>
+            <div class="flex flex-row items-center justify-left items-end">
+                    <!-- <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt=""> -->
+                    <div class="flex flex-row gap-10 items-center">
+                        <a href="{{ $result->data->source->url  }}" class=" " target="_blank">
+                            <p class="text-[13px] font-semibold">{{ $result->data->source->name  }}</p>
+                        </a>
+                        <p class="text-[13px] font-semibold">{{ $result->data->updated_at->date  }} | {{ $result->data->updated_at->time  }}</p>
+                        {{--<p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>--}}
+                        <div class="flex gap-2 justify-center items-center">
+                            <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-4 h-4  rounded-full ">
+                            <h1 class="text-[13px] font-semibold uppercase">{{ $result->data->status->name }}</h1>
+                        </div>      
                     </div>
-                    <div class="flex gap-2 justify-center items-center">
-                        <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-5 h-5  rounded-full ml-2">
-                        <h1 class="text-[13px] font-bold uppercase">{{ $result->data->status->name }}</h1>
-                    </div>   
-                    <div class="relative hidden">
-                        <button id="" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
-                            {{--<select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">--}}
-                                {{--<option class="xl:text-lg text-md font-semibold" value="1"><a class="nhl" href="">TORONTO MAPLE LEAFS</a></option>--}}
-                                {{--<option id="mlb" class="xl:text-lg text-md font-semibold" value="2">TORONTO MAPLE LEAFS</option>--}}
-                                {{--<option id="nfl" class="xl:text-lg text-md font-semibold" value="3">TORONTO MAPLE LEAFS</option>--}}
-                                {{--<option id="nba" class="xl:text-lg text-md font-semibold" value="4">TORONTO MAPLE LEAFS</option>--}}
-                                {{--<option id="soc" class="xl:text-lg text-md font-semibold" value="5">TORONTO MAPLE LEAFS</option>--}}
-                            {{--</select>--}}
-                            <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow">
-                        </button> 
-                    </div>
-                    <div class="border border-slate-300 w-[13rem] rounded-full bg-slate-300 relative hidden">
-                        <select name="" id="team-name" style="-webkit-appearance: none;" class="bg-slate-300 rounded-full  px-2 w-full">
-                           {{ $team->data[0]->name }}
-                           @foreach($team->data as $key=>$val)                                    
-                              <option value="{{$val->name}}" >{{$val->name}}</option>
-                           @endforeach  
-                        </select>
-                        <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow absolute right-[5px] top-[4px] arrw2">
-                    </div>
-                    <div class="relative hidden">
-                        <a href="#" id="head-drp" class="text-lg font-bold border border-slate-300 w-[13rem] rounded-full bg-slate-300"> {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
-                        <div class="drp-dwn hidden flex flex-col bg-slate-300 w-[13rem] p-2 absolute">
-                            @foreach($team->data as $key=>$val)
-                              <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
-                            @endforeach
-                        </div>
+                <div class="relative hidden">
+                    <button id="" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
+                        {{--<select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">--}}
+                            {{--<option class="xl:text-lg text-md font-semibold" value="1"><a class="nhl" href="">TORONTO MAPLE LEAFS</a></option>--}}
+                            {{--<option id="mlb" class="xl:text-lg text-md font-semibold" value="2">TORONTO MAPLE LEAFS</option>--}}
+                            {{--<option id="nfl" class="xl:text-lg text-md font-semibold" value="3">TORONTO MAPLE LEAFS</option>--}}
+                            {{--<option id="nba" class="xl:text-lg text-md font-semibold" value="4">TORONTO MAPLE LEAFS</option>--}}
+                            {{--<option id="soc" class="xl:text-lg text-md font-semibold" value="5">TORONTO MAPLE LEAFS</option>--}}
+                        {{--</select>--}}
+                        <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow">
+                    </button> 
+                </div>
+                <div class=" w-[13rem] rounded-full relative hidden">
+                    <select name="" id="team-name" style="-webkit-appearance: none;" class="bg-slate-300 rounded-full  px-2 w-full">
+                        {{ $team->data[0]->name }}
+                        @foreach($team->data as $key=>$val)                                    
+                            <option value="{{$val->name}}" >{{$val->name}}</option>
+                        @endforeach  
+                    </select>
+                    <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow absolute right-[5px] top-[4px] arrw2">
+                </div>
+                <div class="relative hidden">
+                    <a href="#" id="head-drp" class="text-lg font-bold  w-[13rem] rounded-full bg-slate-300"> {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
+                    <div class="drp-dwn hidden flex flex-col bg-slate-300 w-[13rem] p-2 absolute">
+                        @foreach($team->data as $key=>$val)
+                            <a class="teams" href="/nhl/line-combos/{{$val->slug}}">{{$val->name}}</a>
+                        @endforeach
                     </div>
                 </div>
             </div>
-            <div class="bg-slate-300 h-[2px] w-full hidden"></div>
-        </div>
-        <div class="w-full flex justify-end">
-            <img class="w-[728px]" src="{{ asset('/images/line-combos/pd_by_betway.png') }}">
         </div>
     </div>  
-    <div class="flex flex-row items-center w-11/12  justify-center  mt-[20px] gap-3 block smm-hidden max-w-screen-2xl" id="sub-hed">
-        <button class="w-36 bg-[#38b6ff] text-[16px] text-[#ffffff] font-bold rounded-md l-ups text-black">
+    <div class="flex flex-row items-center w-11/12 mt-[20px] gap-3 block smm-hidden max-w-screen-2xl" id="sub-hed">
+        <button class="w-36  text-[24px] text-black font-bold rounded-md l-ups bckgrnd active flex justify-center">
             Lineups
         </button>
-        <button class="w-36  bg-[#ebece9] text-[16px] font-bold rounded-md text-black d-kings flex justify-center items-center gap-3">
-            <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt="">
+        <button class="w-36   text-[24px] font-bold rounded-md text-black bckgrnd create flex justify-center gap-3">
+            <img class="w-9" src="{{ asset('/images/menu-icon/icons8-create-50.png') }}" alt="">
+            Create
+        </button>
+        <button class="w-36  text-[24px] font-bold rounded-md text-black bckgrnd d-kings flex justify-center   gap-3">
             Draftkings
         </button>
-        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black fnl flex justify-center gap-3">
-            <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__4_-removebg-preview.png') }}" alt="">Fanduel
+        <button class="w-36 text-[24px] font-bold rounded-md text-black bckgrnd fnl flex justify-center gap-3">
+           Fanduel
         </button>
-        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black sts">
+        <button class="w-36 text-[24px] font-bold rounded-md text-black bckgrnd sts flex justify-center">
             Stats
         </button>
         <!-- <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black prp">
             Props
         </button> -->
-        <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md   text-black shp">
+        <button class="w-36   text-[24px] font-bold rounded-md text-black bckgrnd shp flex justify-center">
             Shop
         </button>
-        <button class="w-36 bg-green-600 text-[16px] font-bold rounded-md text-black">Create</button>
+        <!-- <button class="w-36 bg-green-600 text-[16px] font-bold rounded-md text-black">Create</button> -->
     </div> 
     <div class="props flex w-11/12 my-5 gap-5 block smm-hidden max-w-screen-2xl hidden ">
         <ul class="flex flex-row justify-between w-9/12 ml-[5rem] text-lg font-bold text-slate-500 ">
@@ -114,8 +109,9 @@
     </div>
     <!-- Line-ups  -->
     <div id="lu-body" class="w-full flex flex-row justify-evenly gap-7  max-w-screen-2xl">
-        <div class="xl:w-7/12 lg:w-8/12 md:w-10/12  block smm-hidden"> 
-            <div id="shirt-footer"  class="flex flex-col gap-2 my-3">
+        <div class="xl:w-7/12 lg:w-8/12 md:w-10/12 block smm-hidden">
+            <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
+            <div id="shirt-footer"  class="flex flex-col gap-2 my-1">
                 <div class="flex flex-col gap-2 w-full">
                     <h1 class="text-center font-extrabold text-md mt-5 ">FORWARDS</h1>
                         <div class="flex flex-row mt-10 gap-3">
@@ -127,7 +123,7 @@
                                               <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class=" px-3" alt="">
                                             </div>
                                         </div>
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">  {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">  {{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>
                                     </div>
                                 @endif
                                 @if($key == 'c1')
@@ -135,7 +131,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'rw1')
@@ -143,7 +139,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                             @endforeach
@@ -155,7 +151,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'c2')
@@ -163,7 +159,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'rw2')
@@ -171,7 +167,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                             @endforeach
@@ -183,7 +179,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'c3')
@@ -191,7 +187,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'rw3')
@@ -199,7 +195,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                             @endforeach
@@ -211,7 +207,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'c4')
@@ -219,7 +215,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                                 @if($key == 'rw4')
@@ -227,7 +223,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                             @endforeach
@@ -243,7 +239,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'rd1')
@@ -251,7 +247,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                         @endforeach
@@ -264,7 +260,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'rd2')
@@ -272,7 +268,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
 
@@ -287,7 +283,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'rd3')
@@ -295,7 +291,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
 
@@ -313,7 +309,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'sg2')
@@ -321,7 +317,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
 
@@ -338,7 +334,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'pp12')
@@ -346,7 +342,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'pp13')
@@ -354,7 +350,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
 
@@ -367,7 +363,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'pp15')
@@ -375,7 +371,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
 
@@ -391,7 +387,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'pp22')
@@ -399,7 +395,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
 
@@ -408,7 +404,7 @@
                                         <div class="w-[200px] h-[200px]">
                                             <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                         </div>       
-                                        <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                     </div>
                                 @endif
                         @endforeach
@@ -420,7 +416,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'pp25')
@@ -428,7 +424,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                         @endforeach
@@ -444,7 +440,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'b2')
@@ -452,7 +448,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'b3')
@@ -460,7 +456,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                         @endforeach
@@ -472,7 +468,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'b5')
@@ -480,7 +476,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                             @if($key == 'b6')
@@ -488,7 +484,7 @@
                                     <div class="w-[200px] h-[200px]">
                                         <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                     </div>       
-                                    <p class="text-center text-sm py-0.5 px-4 border rounded-md font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
+                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{ ( !empty($item->full_name) ? $item->full_name : '')  }}</p>                            
                                 </div>
                             @endif
                         @endforeach
