@@ -16,6 +16,9 @@
     .txt-logo{
         font-family: 'Mouse Memoirs', sans-serif
     }
+    .bckgrnd.active {
+        color: #9d9d9d;
+    }
     /* .skeleton {   
         animation: skeleton-loading 1s linear infinite  ;
     }
@@ -32,11 +35,7 @@
     } */
      /* nhl.header button*/
      .nav-itms.active {
-        background-color: #38b6ff ; 
-        color: white;
-        border-radius: 20px;
-      
-        
+        color:#38b6ff;
      }
     /* Arrow holder */
     .arrowed {
