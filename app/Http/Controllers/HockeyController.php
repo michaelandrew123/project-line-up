@@ -122,9 +122,6 @@ class HockeyController extends Controller
     public function projections(){
         return view('pages/projections');
     }
-    public function nflHome(){
-        return view('pages/nflhome');
-    }
     public function nhlHome(){
         
         $client = new \GuzzleHttp\Client();
@@ -448,9 +445,6 @@ class HockeyController extends Controller
         
     //   dd($result);
 
-     
-
-
     return view('pages/nhlline-combos')->with(['result' => $result , 'team' => $team_result, 'current_name' =>  $current_team, 'current_logo' =>  $current_logo, 'article' => $team_article]);
     }
     public function nhlteamNews(){
@@ -686,5 +680,98 @@ class HockeyController extends Controller
 
         return view('pages/nhlprojections')->with([ 'team' => $team_result, 'article' => $team_article, 'projections' => $projections_result ]);
     }
+    public function nflHome(){
+        return view('pages/nflhome');
+    }
+    public function nfllineCombos(){
+        $client = new \GuzzleHttp\Client();
+
+ 
+
+
     
+        $team = $client->get(
+            'https://api.projectedlineups.com/v1/sports/teams?l=0',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+
+        $team_body = $team->getBody();
+        $team_result = json_decode($team_body);
+
+        
+        // print_r(json_decode((string) $body));
+
+        // dd($team_result);
+
+       
+        $response = $client->get(
+            'https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+        $body = $response->getBody();
+
+        $result = json_decode($body);
+
+
+       
+
+        return view('pages/nflline-combos')->with(['result' => $result , 'team' => $team_result ]);
+
+        
+    }
+    public function nbalineCombos(){
+
+        $client = new \GuzzleHttp\Client();
+
+ 
+
+
+    
+        $team = $client->get(
+            'https://api.projectedlineups.com/v1/sports/teams?l=0',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+
+        $team_body = $team->getBody();
+        $team_result = json_decode($team_body);
+
+        
+        // print_r(json_decode((string) $body));
+
+        // dd($team_result);
+
+       
+        $response = $client->get(
+            'https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+        $body = $response->getBody();
+
+        $result = json_decode($body);
+
+
+
+
+        return view('pages/nbaline-combos')->with(['result' => $result , 'team' => $team_result ]);
+    }
 }

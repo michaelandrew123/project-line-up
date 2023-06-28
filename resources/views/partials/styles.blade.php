@@ -19,6 +19,12 @@
     .bckgrnd.active {
         color: #9d9d9d;
     }
+    .nfl-bckgrnd.active {
+        color: #38b6ff;
+    }
+    .nba-bckgrnd.active {
+        color: #00bf63;
+    }
     /* .skeleton {   
         animation: skeleton-loading 1s linear infinite  ;
     }

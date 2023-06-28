@@ -194,6 +194,22 @@
       $('div#sub-hed').css('backgroundColor', navbg);
     });
      
+    $('.nfl-bckgrnd').click(function() {
+     var navbg = $(this).data('navbg');
+      $('.nfl-bckgrnd').removeClass('active');
+      $(this).addClass('active');
+      $('div#sub-hed').css('backgroundColor', navbg);
+    });
+     
+    $('.nba-bckgrnd').click(function() {
+     var navbg = $(this).data('navbg');
+      $('.nba-bckgrnd').removeClass('active');
+      $(this).addClass('active');
+      $('div#sub-hed').css('backgroundColor', navbg);
+    });
+
+
+
      $('.fnl, .shp, .d-kings, .nws, .sts, .prp').on('click', function(){
       $('#p-box > div.frstrow').addClass('w-[69%]');
       $('#p-box > div.scondrow').addClass('w-[65%]');
@@ -238,14 +254,7 @@
      $('#sub-hed > .l-ups').on('click', function(){
       $(' .drftking, .fduel, .shop, .stats, .fl-price, .dk-price, .props').addClass('hidden');
     });
-
-     $('.background').click(function() {
-     var navbg = $(this).data('navbg');
-      $('.bckgrnd').removeClass('active');
-      $(this).addClass('active');
-      $('div#sub-hed').css('backgroundColor', navbg);
-    });
-
+ 
 
 
       
