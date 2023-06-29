@@ -1,7 +1,7 @@
-        <div class="w-3/12 mt-5 block smm-hidden relative  ">
+<div class="w-3/12 mt-5 block smm-hidden relative  ">
             <div class="relative sticky top-0 ">
                 <div class="flex flex-col gap-5 mt-9 ">
-                    <div class="flex justify-center border w-full rounded py-2 bg-[#00bf63]">
+                    <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
                         <h1 class="font-bold">Injury Report</h1>
                     </div>
                     <div id="injury" class="flex flex-col gap-2 w-full">
@@ -22,7 +22,7 @@
                                     <p class=" font-normal text-[12px]"></p>   
                                 </div>
                             </div>
-                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/nba-uniform-removebg-preview.png') }}" alt="">
+                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" alt="">
                         </div>
                         <div class="flex flex-row items-start gap-2.5 w-full" style=" ">       
                             <div class="w-full flex flex-col justify-between ">
@@ -41,7 +41,7 @@
                                     <p class=" font-normal text-[12px]"></p>   
                                 </div>
                             </div>
-                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/nba-uniform-removebg-preview.png') }}" alt="">
+                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" alt="">
                         </div>
                         <div class="flex flex-row items-start gap-2.5 w-full" style=" ">       
                             <div class="w-full flex flex-col justify-between ">
@@ -60,7 +60,7 @@
                                     <p class=" font-normal text-[12px]"></p>   
                                 </div>
                             </div>
-                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/nba-uniform-removebg-preview.png') }}" alt="">
+                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" alt="">
                         </div>
                         <div class="flex flex-row items-start gap-2.5 w-full" style=" ">       
                             <div class="w-full flex flex-col justify-between ">
@@ -79,7 +79,7 @@
                                     <p class=" font-normal text-[12px]"></p>   
                                 </div>
                             </div>
-                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/nba-uniform-removebg-preview.png') }}" alt="">
+                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" alt="">
                         </div>    
                     </div>
                     <div class="w-full flex justify-center">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-5 mt-9">
-                    <div class="flex justify-center border w-full rounded py-2 bg-[#00bf63]">
+                    <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
                         <h1 class="font-bold">Team News</h1>
                     </div>
                     <div class="flex flex-row items-start gap-2.5 w-full" style=" ">       
@@ -107,7 +107,7 @@
                                     <p class=" font-normal text-[12px]"></p>   
                                 </div>
                             </div>
-                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/nba-uniform-removebg-preview.png') }}" alt="">
+                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" alt="">
                         </div>
                         <div class="flex flex-row items-start gap-2.5 w-full" style=" ">       
                             <div class="w-full flex flex-col justify-between ">
@@ -126,7 +126,7 @@
                                     <p class=" font-normal text-[12px]"></p>   
                                 </div>
                             </div>
-                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/nba-uniform-removebg-preview.png') }}" alt="">
+                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" alt="">
                         </div>
                         <div class="flex flex-row items-start gap-2.5 w-full" style=" ">       
                             <div class="w-full flex flex-col justify-between ">
@@ -145,7 +145,7 @@
                                     <p class=" font-normal text-[12px]"></p>   
                                 </div>
                             </div>
-                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/nba-uniform-removebg-preview.png') }}" alt="">
+                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" alt="">
                         </div>
                         <div class="flex flex-row items-start gap-2.5 w-full" style=" ">       
                             <div class="w-full flex flex-col justify-between ">
@@ -164,11 +164,11 @@
                                     <p class=" font-normal text-[12px]"></p>   
                                 </div>
                             </div>
-                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/nba-uniform-removebg-preview.png') }}" alt="">
+                            <img class="w-14  " style=" " src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" alt="">
                         </div>
                 </div>
                 <div class="flex flex-col gap-5 mt-9">
-                    <div class="flex justify-center border w-full rounded py-2 bg-[#00bf63]">
+                    <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
                         <h1 class="font-bold">Articles</h1>
                     </div>
                     <div class="flex flex-col gap-2 ml-3">

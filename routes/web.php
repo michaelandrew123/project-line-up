@@ -53,6 +53,9 @@ Route::prefix('nfl')->group(function () {
 Route::prefix('nba')->group(function () {
     Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'nbalineCombos'])->name('nba.line-combos');
 });
+Route::prefix('soc')->group(function () {
+    Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'soclineCombos'])->name('soc.line-combos');
+});
 // Route::get('/hockey',  'HockeyController@index');
 
 
