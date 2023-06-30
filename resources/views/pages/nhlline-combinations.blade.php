@@ -48,20 +48,19 @@
                 <div class="flex flex-col w-full  mt-7">  
                     <div class="flex flex-col ">
                         <ul class="w-full flex flex-wrap gap-5">
-                        @foreach($team->data as $key=>$val)
-                          @if($val->league->slug == 'nhl')
-
-                            <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white gap-px">
-                                    <div class="flex flex-row items-center w-auto gap-2">
-                                        <img class="w-[2.5rem]" src="{{$val->logo->src}}" alt="">
-                                        <h1 class="text-lg font-bold">{{$val->name}}</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            @endif
-                        @endforeach
+                            @foreach($team->data as $key=>$val)
+                                @if($val->league->slug == 'nhl')
+                                    <li class="flex flex-row justify-between gap-3">
+                                        <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white gap-px">
+                                            <div class="flex flex-row items-center w-auto gap-2">
+                                                <img class="w-[2.5rem]" src="{{$val->logo->src}}" alt="">
+                                                <h1 class="text-lg font-bold">{{$val->name}}</h1>
+                                            </div>
+                                            <p class="text-sm font-bold mb-2">Line Combinations</p>
+                                        </button>
+                                    </li>
+                                @endif
+                            @endforeach
                             <!-- <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
                                 <div class="flex flex-row items-center w-auto">
                                     <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
