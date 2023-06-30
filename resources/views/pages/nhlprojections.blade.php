@@ -47,8 +47,7 @@
                     <td class="flex justify-center items-center border  w-[20%] border border-slate-200 text-[12px] font-semibold "><a class=" text-md font-medium underline" href="#">PIM</a></td>
                 </tr>
                 @foreach($projections->data as $key=>$val)
-                <tr class="flex justify-between h-[3rem] bg-white">
-                    
+                    <tr class="flex justify-between h-[3rem] bg-white">
                         <td class="flex flex-col justify-center  border border-slate-200 justify-start w-full ">
                             <div class="flex flex-row  gap-2 ml-2">
                                 <div class="flex flex-col">
@@ -71,8 +70,7 @@
                         <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.31</p></td>
                         <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">20.7</p></td>
                         <td class="flex justify-center items-center w-[20%] border border-slate-200 text-[12px] font-semibold"><p class="text-md font-medium">0.57</p></td>
-                   
-                </tr>
+                    </tr>
                 @endforeach
                 <!-- <tr class="flex justify-between h-[3rem] bg-stone-100 ">
                     <td class="flex flex-col justify-center  border border-slate-200 justify-start w-full ">

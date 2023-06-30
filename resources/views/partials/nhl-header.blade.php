@@ -73,7 +73,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="bg-slate-100 w-full h-1 mt-2"></div>
+                <div class="bg-[#d9d9d9] w-full h-px mt-2"></div>
                 <div class="w-full relative mb-5">
                     <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute">
                         @foreach($team->data as $key=>$val)

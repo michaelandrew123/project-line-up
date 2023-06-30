@@ -48,11 +48,7 @@
                     <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
                 <div class="flex md:flex-row justify-center gap-3">
-
-
-
                     @foreach($contentPosts as $key=>$item)
-
                         {{--{{ $item->category->slug }}--}}
                         @if($item->category->slug === 'morning-skate')
                             <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
@@ -104,37 +100,30 @@
                                 </div>
                             </div>
                         @endif
-
-
-
-                       {{----}}
-                         
-                            <!-- <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72  relative ml-5 mr-5 border border-slate-200 rounded-xl flex justify-center bg-white">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
-                                        <h1 class="font-extrabold">Top Tracks</h1>
-                                    </div>
-                                    <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-[15rem]">
-                                    <p class="text-[12px] font-extrabold">Edmonton on the list  of top stacks to play tonight</p>
-                                    <div class="flex w-full justify-end mt-4">
-                                        <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                    </div>
+                       {{----}}                 
+                        <!-- <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72  relative ml-5 mr-5 border border-slate-200 rounded-xl flex justify-center bg-white">
+                            <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
+                                <div class="flex flex-row items-center gap-2">
+                                    <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
+                                    <h1 class="font-extrabold">Top Tracks</h1>
+                                </div>
+                                <img src="{{ asset('/images/home-page/45909_a11.jpg') }}" class="w-[15rem]">
+                                <p class="text-[12px] font-extrabold">Edmonton on the list  of top stacks to play tonight</p>
+                                <div class="flex w-full justify-end mt-4">
+                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
                             </div>
-                       
-                      
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72  relative border border-slate-200  rounded-xl flex justify-center bg-white">
-                                <div class="m-1 mt-6 w-[15rem] flex flex-col gap-2">
-                                    <h1 class="font-bold "><span class="text-white bg-green-500 text-base px-3 py-2 rounded-full mr-2">$</span>Props and Odds</h1>
-                                    <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-[15rem]">
-                                    <p class="text-[12px] font-extrabold">Edmonton on the list  of top stacks to play tonight</p>
-                                    <div class="flex w-full justify-end mt-4">
-                                        <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                    </div>
+                        </div>                  
+                        <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-72  relative border border-slate-200  rounded-xl flex justify-center bg-white">
+                            <div class="m-1 mt-6 w-[15rem] flex flex-col gap-2">
+                                <h1 class="font-bold "><span class="text-white bg-green-500 text-base px-3 py-2 rounded-full mr-2">$</span>Props and Odds</h1>
+                                <img src="{{ asset('/images/home-page/45966_a11.jpg') }}" class="w-[15rem]">
+                                <p class="text-[12px] font-extrabold">Edmonton on the list  of top stacks to play tonight</p>
+                                <div class="flex w-full justify-end mt-4">
+                                    <img class="w-[21px] h-[25px]" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                 </div>
-                            </div> -->
-                       
+                            </div>
+                        </div> -->                  
                     @endforeach
                 </div>
                 <!-- <div class="">
@@ -176,14 +165,14 @@
                         </ul>
                     </div>
                 </div> -->
-                <div class="w-full flex justify-center">
+                <div class="w-full flex justify-center my-5">
                     <div class="w-11/12">
-                        <div class="flex items-center">
+                        <!-- <div class="flex items-center">
                             <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                             <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
                                 Hightlights
                             </h1>
-                        </div>
+                        </div> -->
                         <div class="bg-[#045473] w-full mb-2">
                             <p class="text-white text-[15px] font-semibold p-0.5 mx-1">NHL Highlights: Blues 6, Maple Leafs 5 (SO)</p>
                         </div>
@@ -217,6 +206,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Starting goailies w/ API
                 <div class="flex flex-col ">
                     <div class="flex items-center">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
@@ -228,7 +218,7 @@
                             @foreach($goalies->data as $key=>$val)
                                @if(isset($val->metafields->goalie_status))
                                     @if($val->metafields->goalie_status->name === 'Confirmed')  
-                                       <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                                       <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white mb-3">
                                             <div class="flex m-3 mt-5 ">
                                                 <img class="xl:w-24 lg:w-[4.5rem] xl:h-24 lg:h-[5rem] md:w-[4rem] md:h-[5rem] " src="{{$val->player->images->uniform}}">
                                                 <div class="flex flex-col ml-2 gap-3">
@@ -266,7 +256,7 @@
                                     @endif
                                @endif     
                             @endforeach
-                        </div> 
+                        </div>  -->
                         <!-- @if(count($goalies->data) % 2 == 0)
                             even
                             @endif
@@ -470,13 +460,13 @@
                                 </div>
                             </div> 
                         </div> -->
-                    <div class="relative">
-                        <a href="" class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
+                    <!-- <div class="w-full flex justify-center">
+                        <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NHL News</a>
                     </div>
-                </div>
-                <div class="flex justify-center">
+                </div> -->
+                <!-- <div class="flex justify-center">
                     <img class="w-[70%] h-80" src="{{ asset('/images/menu-icon/adds-new1.png') }}">
-                </div>
+                </div> -->
                 <!-- NHL combinations penguins -->
                 <!-- <div class="flex flex-col">
                     <div class="flex items-center">
@@ -706,35 +696,37 @@
                     <div class="flex flex-row w-full flex-wrap xl:justify-evenly lg:justify-between md:justify-between mb-3">
                         @foreach($goalies->data as $key=>$val)
                             @if(isset($val->type))
-                                @if($val->type->slug === 'line-change'  )    
-                                    <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
-                                        <div class="flex m-2 mt-5 ">
-                                            <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
-                                            <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
-                                                <div class="flex flex-row gap-2">
-                                                    <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                                    <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                               @if(!empty($val->type->slug))
+                                    @if($val->type->slug === 'line-change'  )    
+                                        <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
+                                            <div class="flex m-2 mt-5 ">
+                                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
+                                                <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
+                                                    <div class="flex flex-row gap-2">
+                                                        <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                                        <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                                    </div>
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
+                                                        <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                                    </div>                                                                      
                                                 </div>
-                                                <div class="flex flex-col">
-                                                    <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
-                                                    <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
-                                                </div>                                                                      
+                                            </div>
+                                            <div class=" m-2">
+                                                <p class="text-[14px] font-bold mb-2">{{$val->title}}</p>
+                                                <p class="text-[9px] font-semibold">{{$val->description}}</p>
+                                            </div>
+                                            <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                                <a href="{{$val->source->url}}">
+                                                    <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                                </a>
+                                                <div>
+                                                    <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                                    <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class=" m-2">
-                                            <p class="text-[14px] font-bold mb-2">{{$val->title}}</p>
-                                            <p class="text-[9px] font-semibold">{{$val->description}}</p>
-                                        </div>
-                                        <div class="flex flex-row items-center absolute left-3 bottom-2">
-                                            <a href="{{$val->source->url}}">
-                                              <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                            </a>
-                                            <div>
-                                                <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
-                                                <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endif
                                 @endif
                             @endif
                         @endforeach
@@ -820,10 +812,71 @@
                         </div> -->
                     </div>
                 </div>
-                <div class="flex flex-row w-full justify-center gap-24">
+                <div class="flex flex-row w-full justify-center gap-24 my-5">
                     <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
                     <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div> 
+                <div class="flex items-center">
+                        <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                        <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
+                            Latest Articles
+                        </h1>
+                    </div>
+                <div class="flex md:flex-row justify-center gap-3">
+                    @foreach($contentPosts as $key=>$item)
+                        {{--{{ $item->category->slug }}--}}
+                        @if($item->category->slug === 'morning-skate')
+                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
+                                    <div class="flex flex-row items-center gap-2">
+                                        <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                        <h1 class="font-extrabold">{{$item->category->name}}</h1>
+                                    </div>
+                                    <img src="  {{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                </div>
+                                <div class="w-full ">
+                                    <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                </div>
+                            </div>
+                        @endif
+                        @if($item->category->slug === 'top-stacks')
+                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
+                                    <div class="flex flex-row items-center gap-2">
+                                        <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
+                                        <h1 class="font-extrabold">{{$item->category->name}}</h1>
+                                    </div>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                </div>
+                                <div class=" w-full ">
+                                    <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                </div>
+                            </div>
+                        @endif
+                        @if($item->category->slug === 'props-and-odds')
+                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
+                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
+                                    <div class="flex flex-row items-center gap-2">
+                                        <div class="w-7 h-7 bg-green-600 rounded-full flex justify-center items-center">
+                                            <p class="text-xl font-bold text-white">$</p>
+                                        </div>
+                                        <h1 class="font-extrabold">{{$item->category->name}}</h1>
+                                    </div>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                </div>
+                                <div class="w-full ">
+                                    <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                </div>
+                            </div>
+                        @endif           
+                    @endforeach
+                </div>
                 <div class="flex flex-col w-full  mt-10 hidden">  
                     <div class="flex flex-col gap-9">
                         <div class="flex items-center">
@@ -1093,11 +1146,10 @@
                     <h1 class="text-md font-semibold">Latest Articles </h1>
                 </div>
                 <hr> 
-                    <div class="flex flex-col gap-1">
-                        <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">{{$articles->data->title}}</h1>
-                        <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">{{$articles->data->published_at->datetime}} <span class="ml-2">Yahoo Sports</span></p>
-                    </div>
-               
+                <div class="flex flex-col gap-1">
+                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">{{$articles->data->title}}</h1>
+                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">{{$articles->data->published_at->datetime}} <span class="ml-2">Yahoo Sports</span></p>
+                </div>
                 <!-- <div class="flex flex-col gap-1">
                     <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
                     <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, <span class="ml-2">2023 ESPN</span></p>
@@ -1756,7 +1808,9 @@
         </div>
     </div>
     </div>
+
 </div>
+<!-- Mobile design -->
     <div class="w-full flex justify-center hidden smm-block">
         <div class="flex flex-row justify-between items-center">
             <div class="flex flex-row items-center gap-1.5">

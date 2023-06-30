@@ -90,7 +90,7 @@
                             @if(empty($current_name))
                                 @if($val->team->slug == 'anaheim-ducks')
                                     @php
-                                        $article_count++
+                                      $team_count++
                                     @endphp
                                     <div class="flex flex-row items-start justify-between" style="{{ $team_count  > 10 ? 'display: none' : ''}}">
                                         <div class="flex flex-col">
@@ -106,7 +106,7 @@
                             @elseif(!empty($current_name))
                                 @if($current_name == $val->team->name)
                                     @php
-                                        $article_count++
+                                      $team_count++
                                     @endphp
                                      <div class="flex flex-row items-start justify-between" style="{{ $team_count  > 10 ? 'display: none' : ''}}">
                                         <div class="flex flex-col">
