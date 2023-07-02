@@ -816,67 +816,235 @@
                     <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
                     <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div> 
-                <div class="flex items-center">
+                     <div class="flex items-center">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
                             Latest Articles
                         </h1>
                     </div>
-                <div class="flex md:flex-row justify-center gap-3">
-                    @foreach($contentPosts as $key=>$item)
-                        {{--{{ $item->category->slug }}--}}
-                        @if($item->category->slug === 'morning-skate')
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                        <h1 class="font-extrabold">{{$item->category->name}}</h1>
-                                    </div>
-                                    <img src="  {{$item->metafields->featured_image->url }}" class="w-[16rem]">
-                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
-                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                </div>
-                                <div class="w-full ">
-                                    <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                </div>
-                            </div>
-                        @endif
-                        @if($item->category->slug === 'top-stacks')
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
-                                    <div class="flex flex-row items-center gap-2">
-                                        <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
-                                        <h1 class="font-extrabold">{{$item->category->name}}</h1>
-                                    </div>
-                                    <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
-                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
-                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
-                                </div>
-                                <div class=" w-full ">
-                                    <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
-                                </div>
-                            </div>
-                        @endif
-                        @if($item->category->slug === 'props-and-odds')
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
-                                    <div class="flex flex-row items-center gap-2">
-                                        <div class="w-7 h-7 bg-green-600 rounded-full flex justify-center items-center">
-                                            <p class="text-xl font-bold text-white">$</p>
+                    <div class="flex md:flex-row justify-center gap-3">
+                        @foreach($contentPosts as $key=>$item)
+                            {{--{{ $item->category->slug }}--}}
+                            @if($item->category->slug === 'morning-skate')
+                                <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                    <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                            <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                         </div>
-                                        <h1 class="font-extrabold">{{$item->category->name}}</h1>
+                                        <img src="  {{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                        <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                        <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
                                     </div>
-                                    <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
-                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
-                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                    <div class="w-full ">
+                                        <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
                                 </div>
-                                <div class="w-full ">
-                                    <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                            @endif
+                            @if($item->category->slug === 'top-stacks')
+                                <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                    <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
+                                            <h1 class="font-extrabold">{{$item->category->name}}</h1>
+                                        </div>
+                                        <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                        <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                        <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                    </div>
+                                    <div class=" w-full ">
+                                        <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
                                 </div>
-                            </div>
-                        @endif           
-                    @endforeach
-                </div>
+                            @endif
+                            @if($item->category->slug === 'props-and-odds')
+                                <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
+                                    <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
+                                        <div class="flex flex-row items-center gap-2">
+                                            <div class="w-7 h-7 bg-green-600 rounded-full flex justify-center items-center">
+                                                <p class="text-xl font-bold text-white">$</p>
+                                            </div>
+                                            <h1 class="font-extrabold">{{$item->category->name}}</h1>
+                                        </div>
+                                        <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
+                                        <p class="text-[12px] font-extrabold">{{$item->title}}</p>
+                                        <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                    </div>
+                                    <div class="w-full ">
+                                        <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div>
+                            @endif           
+                        @endforeach
+                    </div>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                        <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
+                            Projections for October 12, 2023
+                        </h1>
+                    </div>
+                    <table>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-bold">Player</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-bold ">Pos </td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Salary </td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Team </td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Opp </td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Time </td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Win % </td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">ML </td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Q/U </td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-bold ">Team Goal </td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-bold ">Opp Goal </td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Start/line </td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">PP Unit </td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-bold ">Projections </td>
+                        </tr>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">John Kingberg</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">D</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4000</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">MIN</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">DAL</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">9:30 pm</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">40.0</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">+150</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">5.5</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.45</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.05</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold "> </td>
+                        </tr>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Nick Bjugstad</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">3400</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">EDM</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">LAK</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">10:00 pm</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">66.10</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-159</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.84</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.66</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">7.27</td>
+                        </tr>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Shayne Gostisbehere</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">D</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4400</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">CAR</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">NYI</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:00 pm</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">62.30</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-165</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">5.5</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.12</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.38</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">7.04</td>
+                        </tr>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Taylor Hail</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4400</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">7.22</td>
+                        </tr>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">David Krejci</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4500</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">9.46</td>
+                        </tr>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">David Pastrnak</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">9600</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">25.58</td>
+                        </tr>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Pavel Zacha</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4000</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">9.72</td>
+                        </tr>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Patrice Bergeron</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6100</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold "> </td>
+                        </tr>
+                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Jake Debrusk</td>
+                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">5700</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">16.01</td>
+                        </tr>
+                    </table>
                 <div class="flex flex-col w-full  mt-10 hidden">  
                     <div class="flex flex-col gap-9">
                         <div class="flex items-center">
