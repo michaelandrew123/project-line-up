@@ -23,7 +23,7 @@
                 </div>
             </div>  
             <div class="flex flex-row items-center w-full mt-[10px] gap-3 block smm-hidden max-w-screen-2xl" id="sub-hed">
-                <a href=" " class="w-36  text-[24px] text-black font-bold rounded-md l-ups bckgrnd flex justify-center">
+                <a href="{{url('/nhl/line-combos')}}" class="w-36  text-[24px] text-black font-bold rounded-md l-ups bckgrnd flex justify-center">
                     Lineups
                 </a>
                 <a href="" class="w-36   text-[24px] font-bold rounded-md text-black bckgrnd create flex justify-center gap-3">

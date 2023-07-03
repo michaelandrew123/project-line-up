@@ -4,7 +4,7 @@
 
  
 <div class="flex justify-center">
-    <div class=" flex xl:block lg:block md:block  hidden w-full mx-2 bg-slate-100 max-w-screen-2xl">
+    <div class=" flex xl:block lg:block md:block  hidden w-full mx-2  max-w-screen-2xl">
     <!-- <div class="w-full flex justify-center  ">
         <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5">
             <div class="flex flex-row justify-between items-center">
@@ -811,6 +811,9 @@
                             </div>
                         </div> -->
                     </div>
+                    <div class="w-full flex justify-center my-5">
+                        <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NHL News</a>
+                    </div>
                 </div>
                 <div class="flex flex-row w-full justify-center gap-24 my-5">
                     <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
@@ -877,6 +880,9 @@
                             @endif           
                         @endforeach
                     </div>
+                    <div class="w-full flex justify-center my-5">
+                        <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NHL Articles</a>
+                    </div>
                     <div class="flex items-center">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
@@ -884,167 +890,173 @@
                         </h1>
                     </div>
                     <table>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-bold">Player</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-bold ">Pos </td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Salary </td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Team </td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Opp </td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Time </td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Win % </td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">ML </td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Q/U </td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-bold ">Team Goal </td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-bold ">Opp Goal </td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">Start/line </td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-bold ">PP Unit </td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-bold ">Projections </td>
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
+                            <td class="flex justify-start items-center w-full border border-slate-200 text-[11px] font-bold">Player</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-bold ">Pos </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Salary </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Team </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Opp </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Time </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Win % </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">ML </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Q/U </td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-bold ">Team Goal </td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-bold ">Opp Goal </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Start/line </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">PP Unit </td>
+                            <td class="flex justify-center items-center w-full border border-slate-200 text-[11px] font-bold ">Projections </td>
                         </tr>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">John Kingberg</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">D</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4000</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">MIN</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">DAL</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">9:30 pm</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">40.0</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">+150</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">5.5</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.45</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.05</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold "> </td>
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
+                            <td class="flex justify-start items-center w-full border border-slate-200 text-[11px] font-semibold">John Kingberg</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">D</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4000</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">MIN</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">DAL</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">9:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">40.0</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">+150</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">5.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.45</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.05</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-full border border-slate-200 text-[11px] font-semibold "> </td>
                         </tr>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
                             <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Nick Bjugstad</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">3400</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">EDM</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">LAK</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">10:00 pm</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">66.10</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-159</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.84</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.66</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">3400</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">EDM</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">LAK</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">10:00 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">66.10</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-159</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.84</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.66</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
                             <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">7.27</td>
                         </tr>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
                             <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Shayne Gostisbehere</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">D</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4400</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">CAR</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">NYI</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:00 pm</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">62.30</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-165</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">5.5</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.12</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.38</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">D</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4400</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">CAR</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">NYI</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:00 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">62.30</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-165</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">5.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.12</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.38</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
                             <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">7.04</td>
                         </tr>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
                             <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Taylor Hail</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4400</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4400</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
                             <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">7.22</td>
                         </tr>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
                             <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">David Krejci</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4500</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4500</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
                             <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">9.46</td>
                         </tr>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
                             <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">David Pastrnak</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">9600</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">9600</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
                             <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">25.58</td>
                         </tr>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
                             <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Pavel Zacha</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">4000</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4000</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
                             <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">9.72</td>
                         </tr>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
                             <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Patrice Bergeron</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6100</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6100</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
                             <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold "> </td>
                         </tr>
-                        <tr class="flex flex-row justify-between h-[1.5rem] bg-slate-100">
+                        <tr class="flex flex-row justify-between h-[1.5rem] ">
                             <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Jake Debrusk</td>
-                            <td class="flex justify-center items-center border  w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">5700</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center border  w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">5700</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
                             <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">16.01</td>
                         </tr>
                     </table>
+                    <div class="w-full flex justify-center my-5">
+                        <a href="" class="text-[#1d9bf0] font-bold text-sm">Full NHL Projections</a>
+                    </div>
+                    <div class="flex justify-center my-5">
+                        <img class="w-[70%] h-80" src="{{ asset('/images/menu-icon/adds-new1.png') }}">
+                    </div>
                 <div class="flex flex-col w-full  mt-10 hidden">  
                     <div class="flex flex-col gap-9">
                         <div class="flex items-center">
@@ -1306,677 +1318,755 @@
             </div>
         </div>   
         <!-- Articles  -->
-        <div class=" flex flex-col xl:w-60 xl:w-[11rem] lg:w-[8rem] gap-8  ">
-            <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
-            <div class="flex flex-col gap-3 ml-5">
-                <div class="flex flex-row ">
-                    <img src="{{ asset('/images/menu-icon/ .png') }}" alt="">
-                    <h1 class="text-md font-semibold">Latest Articles </h1>
+        <div class=" flex flex-col xl:w-10/12">
+            <div class="flex flex-col gap-5 mt-9 ">
+                <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
+                    <h1 class="font-bold">Starting Goalies</h1>
                 </div>
-                <hr> 
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">{{$articles->data->title}}</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">{{$articles->data->published_at->datetime}} <span class="ml-2">Yahoo Sports</span></p>
-                </div>
-                <!-- <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, <span class="ml-2">2023 ESPN</span></p>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, <span class="ml-2">2023 ESPN</span></p>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold ">Canuck's Ilya Mikheyev out <br> for the season, will undergo <br>ACL surgery</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, <span class="ml-2">2023 ESPN</span></p>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold underline underline-offset-1">Montgomery thriving with <br> Bruins in 2nd chance as NHL <br>coach</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">January 27, 2023 <span class="ml-2">NHL.COM</span></p>
-                </div>
-                <div class="flex flex-col gap-1">
-                    <h1 class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-bold">Which NHL All-Star jersey is <br> the greatest of all-time?</h1>
-                    <p class="xl:text-[10px] lg:text-[10px] md:text-[9px]">january 27, 2023  <span class="ml-2">Yahoo Sports</span></p>
-                </div> -->
-            </div>
-            <img class="mt-[28rem] w-[17rem] h-[35rem]" src="{{ asset('/images/menu-icon/adds1.png') }}">
-        </div>    
-        <div class="flex flex-row relative xl:justify-between lg:justify-center hidden">  
-            <div class="flex flex-col xl:w-[67%] lg:w-auto ">  
-                <div class="flex flex-col">
-                    <div class="flex items-center">
-                        <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
-                        <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
-                            NHL Player News
-                        </h1>
-                    </div>
-                    <div class="flex flex-row w-full justify-between mb-3">
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
-                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
-                            <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
-                                <div class="ml-2">
-                                    <div class="flex flex-row gap-2">
-                                        <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                        <p class="text-[11px] font-bold">Injury</p>
-                                    </div>
-                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p> 
-                                </div>
+                <div id=" " class="flex flex-col gap-4 w-full">
+                    <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                        <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                        <div class="flex flex-col">
+                            <div class="flex flex-col justify-center">
+                                <p class="font-bold text-sm">
+                                    Linus Ullmark - BOS
+                                </p>
                             </div>
-                            <div class=" ml-1">
-                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                            </div>
-                            <div class="flex flex-row items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
-                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
-                            <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
-                                <div class="ml-2">
-                                    <div class="flex flex-row gap-2">
-                                        <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                        <p class="text-[11px] font-bold">Injury</p>
-                                    </div>
-                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
-                                </div>
-                            </div>
-                            <div class=" ml-1">
-                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                            </div>
-                            <div class="flex flex-row items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
-                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
-                            <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
-                                <div class="ml-2">
-                                    <div class="flex flex-row gap-2">
-                                        <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                        <p class="text-[11px] font-bold">Injury</p>
-                                    </div>
-                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
-                                    
-                                </div>
-                            </div>
-                            <div class=" ml-1">
-                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                            </div>
-                            <div class="flex flex-row items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                </div>
-                            </div>
+                            <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
+                            <p class="text-[12px] text-slate-500">30 min ago</p>
                         </div>
                     </div>
-                    <div class="flex flex-row w-full justify-between">
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
-                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
-                            <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
-                                <div class="ml-2">
-                                    <div class="flex flex-row gap-2">
-                                        <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                        <p class="text-[11px] font-bold">Injury</p>
-                                    </div>
-                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
-                                    
-                                </div>
+                    <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                        <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                        <div class="flex flex-col">
+                            <div class="flex flex-col justify-center">
+                                <p class="font-bold text-sm">
+                                    Linus Ullmark - BOS
+                                </p>
                             </div>
-                            <div class=" ml-1">
-                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                            </div>
-                            <div class="flex flex-row items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
-                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
-                            <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
-                                <div class="ml-2">
-                                    <div class="flex flex-row gap-2">
-                                        <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                        <p class="text-[11px] font-bold">Injury</p>
-                                    </div>
-                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
-                                </div>
-                            </div>
-                            <div class=" ml-1">
-                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                            </div>
-                            <div class="flex flex-row items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
-                           <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
-                            <div class="flex m-1 mt-5 ">
-                                <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
-                                <div class="ml-2">
-                                    <div class="flex flex-row gap-2">
-                                        <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                        <p class="text-[11px] font-bold">Injury</p>
-                                    </div>
-                                    <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
-                                    <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
-                                    
-                                </div>
-                            </div>
-                            <div class=" ml-1">
-                                <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                            </div>
-                            <div class="flex flex-row items-center">
-                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                <div>
-                                    <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
-                                    <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                                </div>
-                            </div>
+                            <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
+                            <p class="text-[12px] text-slate-500">30 min ago</p>
                         </div>
                     </div>
-                    <div class="relative">
-                        <a href="" class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
+                    <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                        <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                        <div class="flex flex-col">
+                            <div class="flex flex-col justify-center">
+                                <p class="font-bold text-sm">
+                                    Linus Ullmark - BOS
+                                </p>
+                            </div>
+                            <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
+                            <p class="text-[12px] text-slate-500">30 min ago</p>
+                        </div>
                     </div>
-                </div>      
-                <div class="flex flex-row justify-center">
+                    <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                        <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                        <div class="flex flex-col">
+                            <div class="flex flex-col justify-center">
+                                <p class="font-bold text-sm">
+                                    Linus Ullmark - BOS
+                                </p>
+                            </div>
+                            <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
+                            <p class="text-[12px] text-slate-500">30 min ago</p>
+                        </div>
+                    </div> 
+                    <div class="w-full flex justify-center">
+                        <a class="font-semibold text-sm text-[#38b6ff]" href="">View Today's Starting Goalies</a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img class="w-10/12" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                </div>  
+                <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
+                    <h1 class="font-bold">Line Combinations</h1>
+                </div>
+                <div id="" class="flex flex-col gap-4 w-full">
+                    <div class="flex flex-row items-center w-full" style=" ">   
+                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-evenly">
+                            <div class="flex flex-col gap-px">
+                                <p class="font-bold text-[12px]">
+                                    Toronto Maple Leafs
+                                </p>
+                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                            </div>
+                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center w-full" style=" ">   
+                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-evenly">
+                            <div class="flex flex-col gap-px">
+                                <p class="font-bold text-[12px]">
+                                    Edmonton Oilers
+                                </p>
+                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                            </div>
+                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center w-full" style=" ">   
+                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-evenly">
+                            <div class="flex flex-col gap-px">
+                                <p class="font-bold text-[12px]">
+                                    Boston Bruins
+                                </p>
+                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                            </div>
+                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center w-full" style=" ">   
+                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-evenly">
+                            <div class="flex flex-col gap-px">
+                                <p class="font-bold text-[12px]">
+                                    ST.Louis Blues
+                                </p>
+                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                            </div>
+                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center w-full" style=" ">   
+                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-evenly">
+                            <div class="flex flex-col gap-px">
+                                <p class="font-bold text-[12px]">
+                                    Vegas Golden Knights
+                                </p>
+                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                            </div>
+                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-center">
+                        <a class="font-semibold text-sm text-[#38b6ff]" href="">View NHL Line Combinations</a>
+                    </div>
+                </div>
+            </div>  
+            <div class="flex flex-row relative xl:justify-between lg:justify-center hidden">  
+                <div class="flex flex-col xl:w-[67%] lg:w-auto ">  
                     <div class="flex flex-col">
-                        <div class="flex items-center ">
-                            <img class="w-14 h-14" src="{{ asset('/images/home-page/graph-logo.png') }}">
+                        <div class="flex items-center">
+                            <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                             <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
-                                Projections
+                                NHL Player News
                             </h1>
                         </div>
-                        <div class="flex flex-row overflow-x-clip mx-1 ">
-                                <table class="tbl table-fixed flex flex-row ">
-                                    <tr>
-                                        <th class="relative ">First
-                                        <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1 text-[#8bbf9b]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                        <div class="flex flex-row w-full justify-between mb-3">
+                            <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                                <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">Injury</p>
                                         </div>
-                                        </th >
-                                        <th class="relative">Last
-                                        <div class="absolute right-0 bottom-1  ">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                        <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p> 
+                                    </div>
+                                </div>
+                                <div class=" ml-1">
+                                    <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                    <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                                <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">Injury</p>
                                         </div>
-                                        </th>
-                                        <th class="relative">Pos
-                                        <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                        <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                    </div>
+                                </div>
+                                <div class=" ml-1">
+                                    <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                    <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                                <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">Injury</p>
                                         </div>
-                                        </th >
-                                        <th class="relative">Team
-                                        <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                        <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                        
+                                    </div>
+                                </div>
+                                <div class=" ml-1">
+                                    <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                    <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row w-full justify-between">
+                            <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                                <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">Injury</p>
                                         </div>
-                                        </th>
-                                        <th class="relative">Opp
-                                        <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                        <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                        
+                                    </div>
+                                </div>
+                                <div class=" ml-1">
+                                    <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                    <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                                <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">Injury</p>
                                         </div>
-                                        </th>
-                                        <th class="relative" style="width:9%;">Start/line
-                                        <div class="absolute right-px bottom-1">
-                                                <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-4 h-4 relative bottom-px right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                        <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
+                                    </div>
+                                </div>
+                                <div class=" ml-1">
+                                    <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                    <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-[32%] h-[21rem] border border-black  rounded-xl ">
+                                <!-- <img class="w-[3rem] " src="{{ asset('/images/menu-icon/player-uniform5.png') }}"> -->
+                                <div class="flex m-1 mt-5 ">
+                                    <img class="lg:w-20 lg:h-24 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/player-uniform5.png') }}">
+                                    <div class="ml-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">Injury</p>
                                         </div>
-                                        </th>
-                                        <th class="relative" style="width:8%;">PP Unit 
-                                        <!-- <div class="absolute right-0 bottom-1">
-                                                <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-4 h-4 relative bottom-1 right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                        </div> -->
-                                        <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                        </div>
-                                        </th>
-                                        <th class="tblGoals relative">Goals
-                                            <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                        </div>
-                                        </th>
-                                        <th class="tblWin relative">Win%
-                                            <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                        </div>
-                                        </th>
-                                        <th class="tblSalary relative" style=" width:9%; font-size:14px;">DK Salary
-                                        <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                        </div>
-                                        </th>
-                                        <th class="tblProj relative" style=" width:9%; font-size:14px;">DK PROJ
-                                        <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                        </div>
-                                        </th>
-                                        <th class="tblSalary2 relative" style=" width:9%; font-size:14px;">FD Salary
-                                        <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                        </div>
-                                        </th>
-                                        <th class="tblProj2 relative" style=" width:9%; font-size:14px;">FD PROJ
-                                        <div class="absolute right-0 bottom-1">
-                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                        </div>
-                                        </th>
+                                        <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
+                                        <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
                                         
-                                    </tr>
-                                    <tr>
-                                        <td>Auston</td>
-                                        <td>Mathew</td>
-                                        <td>C</td>
-                                        <td>TQR</td>
-                                        <td>@ DET</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.73</td>
-                                        <td class="tblWin">63.2</td>
-                                        <td class="tblSalary">9200</td>
-                                        <td class="tblProj">29.9</td>
-                                        <td class="tblSalary2">10200</td>
-                                        <td class="tblProj2">34.99</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Jonathan</td>
-                                        <td>Huberdaeu</td>
-                                        <td >W</td>
-                                        <td>FLA</td>
-                                        <td>vs. EDM</td>
-                                        <td class="bg-[#ffd966] text-center">2</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">4.19</td>
-                                        <td class="tblWin">67.5</td>
-                                        <td class="tblSalary">7100</td>
-                                        <td class="tblProj">25.39</td>
-                                        <td class="tblSalary2">8800</td>
-                                        <td class="tblProj2">32.65</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Alexander</td>
-                                        <td>Barkov</td>
-                                        <td >C</td>
-                                        <td>FLA</td>
-                                        <td>vs. EDM</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">4.19</td>
-                                        <td class="tblWin">67.5</td>
-                                        <td class="tblSalary">7500</td>
-                                        <td class="tblProj">25.15</td>
-                                        <td class="tblSalary2">9900</td>
-                                        <td class="tblProj2">30.62</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Nathan</td>
-                                        <td>Mackinnon</td>
-                                        <td >C</td>
-                                        <td>COL</td>
-                                        <td>@ JVK</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.27</td>
-                                        <td class="tblWin">58.3</td>
-                                        <td class="tblSalary">8700</td>
-                                        <td class="tblProj">23.68</td>
-                                        <td class="tblSalary2">9800</td>
-                                        <td class="tblProj2">27.18</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Charlie</td>
-                                        <td>McAvoy</td>
-                                        <td >D</td>
-                                        <td>BOS</td>
-                                        <td>@ SJ</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.05</td>
-                                        <td class="tblWin">60</td>
-                                        <td class="tblSalary">5900</td>
-                                        <td class="tblProj">10.44</td>
-                                        <td class="tblSalary2">5400</td>
-                                        <td class="tblProj2">12.52</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Sam</td>
-                                        <td>Reinhart</td>
-                                        <td >W</td>
-                                        <td>FLA</td>
-                                        <td>vs.EDM</td>
-                                        <td class="bg-[#e06666] text-center">3</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">4.19</td>
-                                        <td class="tblWin">67.5</td>
-                                        <td class="tblSalary">5000</td>
-                                        <td class="tblProj">21.26</td>
-                                        <td class="tblSalary2">6500</td>
-                                        <td class="tblProj2">26.79</td>
-                                    
-                                    </tr>
-                                    <tr>
-                                        <td>Mikko</td>
-                                        <td>Rantanen</td>
-                                        <td >W</td>
-                                        <td>COL</td>
-                                        <td>@ VGK</td>
-                                        <td class="tblsLine">2</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.27</td>
-                                        <td class="tblWin">58.3</td>
-                                        <td class="tblSalary">7300</td>
-                                        <td class="tblProj">20.72</td>
-                                        <td class="tblSalary2">9100</td>
-                                        <td class="tblProj2">25.33</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Sam</td>
-                                        <td>Bennet</td>
-                                        <td >C</td>
-                                        <td>FLA</td>
-                                        <td>vs.EDM</td>
-                                        <td class="bg-[#ffd966] text-center">2</td>
-                                        <td class="text-center">2</td>
-                                        <td class="tblGoals">4.19</td>
-                                        <td class="tblGoals">67.5</td>
-                                        <td class="tblSalary">5000</td>
-                                        <td class="tblProj">20.18</td>
-                                        <td class="tblSalary2">6800</td>
-                                        <td class="tblProj2">23.37</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Matt</td>
-                                        <td>Grzelcyk</td>
-                                        <td >D</td>
-                                        <td>BOS</td>
-                                        <td>@ SJ</td>
-                                        <td class="bg-[#ffd966] text-center">1</td>
-                                        <td class="text-center">2</td>
-                                        <td class="tblGoals">3.05</td>
-                                        <td class="tblGoals">60</td>
-                                        <td class="tblSalary">4500</td>
-                                        <td class="tblProj">8.04</td>
-                                        <td class="tblSalary2">4300</td>
-                                        <td class="tblProj2">9.96</td>
-                                        
-                                    
-                                    </tr>
-                                    <tr>
-                                        <td>Mitche</td>
-                                        <td>Mamer</td>
-                                        <td >W</td>
-                                        <td>TOR</td>
-                                        <td>@ DET</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.73</td>
-                                        <td class="tblWin">63.2</td>
-                                        <td class="tblSalary">8000</td>
-                                        <td class="tblProj">19.7</td>
-                                        <td class="tblSalary2">8200</td>
-                                        <td class="tblProj2">24.18</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Alex</td>
-                                        <td>Overchkin</td>
-                                        <td >W</td>
-                                        <td>WSH</td>
-                                        <td>@ PHI</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.36</td>
-                                        <td class="tblWin">60.8</td>
-                                        <td class="tblSalary">8300</td>
-                                        <td class="tblProj">18.35</td>
-                                        <td class="tblSalary2">9900</td>
-                                        <td class="tblProj2">21.42</td>
-                                    
-                                    </tr>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Gaudreu</td>
-                                        <td >W</td>
-                                        <td>CGY</td>
-                                        <td>vs. MIN</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.32</td>
-                                        <td class="tblWin">59.8</td>
-                                        <td class="tblSalary">7200</td>
-                                        <td class="tblProj">18.34</td>
-                                        <td class="tblSalary2">8400</td>
-                                        <td class="tblProj2">22.28</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Nikita</td>
-                                        <td>Kusherov</td>
-                                        <td >W</td>
-                                        <td>TB</td>
-                                        <td>@ NSH</td>
-                                        <td class="tblsLine">2</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.34</td>
-                                        <td class="tblWin">60.2</td>
-                                        <td class="tblSalary">8700</td>
-                                        <td class="tblProj">18.33</td>
-                                        <td class="tblSalary2">9800</td>
-                                        <td class="tblProj2">22.87</td>
-                                        
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Nazem</td>
-                                        <td>Kadri</td>
-                                        <td >C</td>
-                                        <td>COL</td>
-                                        <td>@ VJK</td>
-                                        <td class="bg-[#ffd966] text-center">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.27</td>
-                                        <td class="tblWin">58.3</td>
-                                        <td class="tblSalary">7200</td>
-                                        <td class="tblProj">18.24</td>
-                                        <td class="tblSalary2">9400</td>
-                                        <td class="tblProj2">21.82</td>
-                                    
-                                    </tr>
-                                    <tr>
-                                        <td>Brady</td>
-                                        <td>Tkachuk</td>
-                                        <td>W</td>
-                                        <td>OTT</td>
-                                        <td>vs. MTL</td>
-                                        <td class="tblsLine">2</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.45</td>
-                                        <td class="tblWin">36.6</td>
-                                        <td class="tblSalary">6500</td>
-                                        <td class="tblProj">18.1</td>
-                                        <td class="tblSalary2">6800</td>
-                                        <td class="tblProj2">20.41</td>
-                                    
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Gabriel</td>
-                                        <td>Landeskog</td>
-                                        <td >W</td>
-                                        <td>COL</td>
-                                        <td>@ VJK</td>
-                                        <td class="bg-[#ffd966] text-center">2</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.27</td>
-                                        <td class="tblWin">58.3</td>
-                                        <td class="tblSalary">6400</td>
-                                        <td class="tblProj">18.07</td>
-                                        <td class="tblSalary2">9000</td>
-                                        <td class="tblProj2">22.72</td>
-                                    
-                                    </tr>
-                                    <tr>
-                                        <td>David</td>
-                                        <td>Pastmak</td>
-                                        <td >W</td>
-                                        <td>BOS</td>
-                                        <td>@ SJ</td>
-                                        <td class="bg-[#ffd966] text-center">2</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.05</td>
-                                        <td class="tblWin">60</td>
-                                        <td class="tblSalary">8300</td>
-                                        <td class="tblProj">18.02</td>
-                                        <td class="tblSalary2">8600</td>
-                                        <td class="tblProj2">20.78</td>
-                                    
-                                    </tr>
-                                    <tr>
-                                        <td>William</td>
-                                        <td>Nylander</td>
-                                        <td >W</td>
-                                        <td>TOR</td>
-                                        <td>@ DET</td>
-                                        <td class="bg-[#ffd966] text-center">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.73</td>
-                                        <td class="tblWin">63.2</td>
-                                        <td class="tblSalary">6100</td>
-                                        <td class="tblProj">17.85</td>
-                                        <td class="tblSalary2">7200</td>
-                                        <td class="tblProj2">22.06</td>
-                                    
-                                    </tr>
-                                    <tr>
-                                        <td>Mathew</td>
-                                        <td>Tkachuk</td>
-                                        <td >W</td>
-                                        <td>CGY</td>
-                                        <td>vs. MIN</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.32</td>
-                                        <td class="tblWin">59.8</td>
-                                        <td class="tblSalary">6300</td>
-                                        <td class="tblProj">17.4</td>
-                                        <td class="tblSalary2">8300</td>
-                                        <td class="tblProj2">21.86</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Kirill</td>
-                                        <td>Kaprizov</td>
-                                        <td >W</td>
-                                        <td>MIN</td>
-                                        <td>@ CGY</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">2.68</td>
-                                        <td class="tblWin">40.2</td>
-                                        <td class="tblSalary">8700</td>
-                                        <td class="tblProj">17.21</td>
-                                        <td class="tblSalary2">9200</td>
-                                        <td class="tblProj2">21.19</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>Brad</td>
-                                        <td>Marchand</td>
-                                        <td >W</td>
-                                        <td>BOS</td>
-                                        <td>@ SJ</td>
-                                        <td class="tblsLine">1</td>
-                                        <td class="tblUnit">1</td>
-                                        <td class="tblGoals">3.05</td>
-                                        <td class="tblWin">60</td>
-                                        <td class="tblSalary">7500</td>
-                                        <td class="tblProj">17.19</td>
-                                        <td class="tblSalary2">8700</td>
-                                        <td class="tblProj2">20.36</td>
-                                    
-                                    </tr>
-
-                                </table>
+                                    </div>
+                                </div>
+                                <div class=" ml-1">
+                                    <p class="text-[14px] font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
+                                    <p class="text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                </div>
+                                <div class="flex flex-row items-center">
+                                    <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">Vince Marcaroni</h3>
+                                        <p class="text-[9px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="relative">
-                            <a href="" class="text-black font-semibold flex justify-end mr-2">see all</a>
+                            <a href="" class="text-black font-semibold flex justify-end mr-[13px]">see all</a>
+                        </div>
+                    </div>      
+                    <div class="flex flex-row justify-center">
+                        <div class="flex flex-col">
+                            <div class="flex items-center ">
+                                <img class="w-14 h-14" src="{{ asset('/images/home-page/graph-logo.png') }}">
+                                <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
+                                    Projections
+                                </h1>
+                            </div>
+                            <div class="flex flex-row overflow-x-clip mx-1 ">
+                                    <table class="tbl table-fixed flex flex-row ">
+                                        <tr>
+                                            <th class="relative ">First
+                                            <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1 text-[#8bbf9b]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th >
+                                            <th class="relative">Last
+                                            <div class="absolute right-0 bottom-1  ">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="relative">Pos
+                                            <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th >
+                                            <th class="relative">Team
+                                            <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="relative">Opp
+                                            <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="relative" style="width:9%;">Start/line
+                                            <div class="absolute right-px bottom-1">
+                                                    <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-4 h-4 relative bottom-px right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="relative" style="width:8%;">PP Unit 
+                                            <!-- <div class="absolute right-0 bottom-1">
+                                                    <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-4 h-4 relative bottom-1 right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div> -->
+                                            <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="tblGoals relative">Goals
+                                                <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="tblWin relative">Win%
+                                                <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="tblSalary relative" style=" width:9%; font-size:14px;">DK Salary
+                                            <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="tblProj relative" style=" width:9%; font-size:14px;">DK PROJ
+                                            <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="tblSalary2 relative" style=" width:9%; font-size:14px;">FD Salary
+                                            <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            <th class="tblProj2 relative" style=" width:9%; font-size:14px;">FD PROJ
+                                            <div class="absolute right-0 bottom-1">
+                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                            </div>
+                                            </th>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Auston</td>
+                                            <td>Mathew</td>
+                                            <td>C</td>
+                                            <td>TQR</td>
+                                            <td>@ DET</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.73</td>
+                                            <td class="tblWin">63.2</td>
+                                            <td class="tblSalary">9200</td>
+                                            <td class="tblProj">29.9</td>
+                                            <td class="tblSalary2">10200</td>
+                                            <td class="tblProj2">34.99</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Huberdaeu</td>
+                                            <td >W</td>
+                                            <td>FLA</td>
+                                            <td>vs. EDM</td>
+                                            <td class="bg-[#ffd966] text-center">2</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">4.19</td>
+                                            <td class="tblWin">67.5</td>
+                                            <td class="tblSalary">7100</td>
+                                            <td class="tblProj">25.39</td>
+                                            <td class="tblSalary2">8800</td>
+                                            <td class="tblProj2">32.65</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Alexander</td>
+                                            <td>Barkov</td>
+                                            <td >C</td>
+                                            <td>FLA</td>
+                                            <td>vs. EDM</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">4.19</td>
+                                            <td class="tblWin">67.5</td>
+                                            <td class="tblSalary">7500</td>
+                                            <td class="tblProj">25.15</td>
+                                            <td class="tblSalary2">9900</td>
+                                            <td class="tblProj2">30.62</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Nathan</td>
+                                            <td>Mackinnon</td>
+                                            <td >C</td>
+                                            <td>COL</td>
+                                            <td>@ JVK</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.27</td>
+                                            <td class="tblWin">58.3</td>
+                                            <td class="tblSalary">8700</td>
+                                            <td class="tblProj">23.68</td>
+                                            <td class="tblSalary2">9800</td>
+                                            <td class="tblProj2">27.18</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Charlie</td>
+                                            <td>McAvoy</td>
+                                            <td >D</td>
+                                            <td>BOS</td>
+                                            <td>@ SJ</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.05</td>
+                                            <td class="tblWin">60</td>
+                                            <td class="tblSalary">5900</td>
+                                            <td class="tblProj">10.44</td>
+                                            <td class="tblSalary2">5400</td>
+                                            <td class="tblProj2">12.52</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Sam</td>
+                                            <td>Reinhart</td>
+                                            <td >W</td>
+                                            <td>FLA</td>
+                                            <td>vs.EDM</td>
+                                            <td class="bg-[#e06666] text-center">3</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">4.19</td>
+                                            <td class="tblWin">67.5</td>
+                                            <td class="tblSalary">5000</td>
+                                            <td class="tblProj">21.26</td>
+                                            <td class="tblSalary2">6500</td>
+                                            <td class="tblProj2">26.79</td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td>Mikko</td>
+                                            <td>Rantanen</td>
+                                            <td >W</td>
+                                            <td>COL</td>
+                                            <td>@ VGK</td>
+                                            <td class="tblsLine">2</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.27</td>
+                                            <td class="tblWin">58.3</td>
+                                            <td class="tblSalary">7300</td>
+                                            <td class="tblProj">20.72</td>
+                                            <td class="tblSalary2">9100</td>
+                                            <td class="tblProj2">25.33</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Sam</td>
+                                            <td>Bennet</td>
+                                            <td >C</td>
+                                            <td>FLA</td>
+                                            <td>vs.EDM</td>
+                                            <td class="bg-[#ffd966] text-center">2</td>
+                                            <td class="text-center">2</td>
+                                            <td class="tblGoals">4.19</td>
+                                            <td class="tblGoals">67.5</td>
+                                            <td class="tblSalary">5000</td>
+                                            <td class="tblProj">20.18</td>
+                                            <td class="tblSalary2">6800</td>
+                                            <td class="tblProj2">23.37</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Matt</td>
+                                            <td>Grzelcyk</td>
+                                            <td >D</td>
+                                            <td>BOS</td>
+                                            <td>@ SJ</td>
+                                            <td class="bg-[#ffd966] text-center">1</td>
+                                            <td class="text-center">2</td>
+                                            <td class="tblGoals">3.05</td>
+                                            <td class="tblGoals">60</td>
+                                            <td class="tblSalary">4500</td>
+                                            <td class="tblProj">8.04</td>
+                                            <td class="tblSalary2">4300</td>
+                                            <td class="tblProj2">9.96</td>
+                                            
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td>Mitche</td>
+                                            <td>Mamer</td>
+                                            <td >W</td>
+                                            <td>TOR</td>
+                                            <td>@ DET</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.73</td>
+                                            <td class="tblWin">63.2</td>
+                                            <td class="tblSalary">8000</td>
+                                            <td class="tblProj">19.7</td>
+                                            <td class="tblSalary2">8200</td>
+                                            <td class="tblProj2">24.18</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Alex</td>
+                                            <td>Overchkin</td>
+                                            <td >W</td>
+                                            <td>WSH</td>
+                                            <td>@ PHI</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.36</td>
+                                            <td class="tblWin">60.8</td>
+                                            <td class="tblSalary">8300</td>
+                                            <td class="tblProj">18.35</td>
+                                            <td class="tblSalary2">9900</td>
+                                            <td class="tblProj2">21.42</td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td>John</td>
+                                            <td>Gaudreu</td>
+                                            <td >W</td>
+                                            <td>CGY</td>
+                                            <td>vs. MIN</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.32</td>
+                                            <td class="tblWin">59.8</td>
+                                            <td class="tblSalary">7200</td>
+                                            <td class="tblProj">18.34</td>
+                                            <td class="tblSalary2">8400</td>
+                                            <td class="tblProj2">22.28</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Nikita</td>
+                                            <td>Kusherov</td>
+                                            <td >W</td>
+                                            <td>TB</td>
+                                            <td>@ NSH</td>
+                                            <td class="tblsLine">2</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.34</td>
+                                            <td class="tblWin">60.2</td>
+                                            <td class="tblSalary">8700</td>
+                                            <td class="tblProj">18.33</td>
+                                            <td class="tblSalary2">9800</td>
+                                            <td class="tblProj2">22.87</td>
+                                            
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Nazem</td>
+                                            <td>Kadri</td>
+                                            <td >C</td>
+                                            <td>COL</td>
+                                            <td>@ VJK</td>
+                                            <td class="bg-[#ffd966] text-center">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.27</td>
+                                            <td class="tblWin">58.3</td>
+                                            <td class="tblSalary">7200</td>
+                                            <td class="tblProj">18.24</td>
+                                            <td class="tblSalary2">9400</td>
+                                            <td class="tblProj2">21.82</td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td>Brady</td>
+                                            <td>Tkachuk</td>
+                                            <td>W</td>
+                                            <td>OTT</td>
+                                            <td>vs. MTL</td>
+                                            <td class="tblsLine">2</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.45</td>
+                                            <td class="tblWin">36.6</td>
+                                            <td class="tblSalary">6500</td>
+                                            <td class="tblProj">18.1</td>
+                                            <td class="tblSalary2">6800</td>
+                                            <td class="tblProj2">20.41</td>
+                                        
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Gabriel</td>
+                                            <td>Landeskog</td>
+                                            <td >W</td>
+                                            <td>COL</td>
+                                            <td>@ VJK</td>
+                                            <td class="bg-[#ffd966] text-center">2</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.27</td>
+                                            <td class="tblWin">58.3</td>
+                                            <td class="tblSalary">6400</td>
+                                            <td class="tblProj">18.07</td>
+                                            <td class="tblSalary2">9000</td>
+                                            <td class="tblProj2">22.72</td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td>David</td>
+                                            <td>Pastmak</td>
+                                            <td >W</td>
+                                            <td>BOS</td>
+                                            <td>@ SJ</td>
+                                            <td class="bg-[#ffd966] text-center">2</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.05</td>
+                                            <td class="tblWin">60</td>
+                                            <td class="tblSalary">8300</td>
+                                            <td class="tblProj">18.02</td>
+                                            <td class="tblSalary2">8600</td>
+                                            <td class="tblProj2">20.78</td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td>William</td>
+                                            <td>Nylander</td>
+                                            <td >W</td>
+                                            <td>TOR</td>
+                                            <td>@ DET</td>
+                                            <td class="bg-[#ffd966] text-center">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.73</td>
+                                            <td class="tblWin">63.2</td>
+                                            <td class="tblSalary">6100</td>
+                                            <td class="tblProj">17.85</td>
+                                            <td class="tblSalary2">7200</td>
+                                            <td class="tblProj2">22.06</td>
+                                        
+                                        </tr>
+                                        <tr>
+                                            <td>Mathew</td>
+                                            <td>Tkachuk</td>
+                                            <td >W</td>
+                                            <td>CGY</td>
+                                            <td>vs. MIN</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.32</td>
+                                            <td class="tblWin">59.8</td>
+                                            <td class="tblSalary">6300</td>
+                                            <td class="tblProj">17.4</td>
+                                            <td class="tblSalary2">8300</td>
+                                            <td class="tblProj2">21.86</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Kirill</td>
+                                            <td>Kaprizov</td>
+                                            <td >W</td>
+                                            <td>MIN</td>
+                                            <td>@ CGY</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">2.68</td>
+                                            <td class="tblWin">40.2</td>
+                                            <td class="tblSalary">8700</td>
+                                            <td class="tblProj">17.21</td>
+                                            <td class="tblSalary2">9200</td>
+                                            <td class="tblProj2">21.19</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Brad</td>
+                                            <td>Marchand</td>
+                                            <td >W</td>
+                                            <td>BOS</td>
+                                            <td>@ SJ</td>
+                                            <td class="tblsLine">1</td>
+                                            <td class="tblUnit">1</td>
+                                            <td class="tblGoals">3.05</td>
+                                            <td class="tblWin">60</td>
+                                            <td class="tblSalary">7500</td>
+                                            <td class="tblProj">17.19</td>
+                                            <td class="tblSalary2">8700</td>
+                                            <td class="tblProj2">20.36</td>
+                                        
+                                        </tr>
+
+                                    </table>
+                            </div>
+                            <div class="relative">
+                                <a href="" class="text-black font-semibold flex justify-end mr-2">see all</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- <div class=" flex items-end xl:block lg:hidden md:hidden">
+                    <img class="" src="{{ asset('/images/menu-icon/adds5.png') }}">
+                </div>  -->
             </div>
-            <!-- <div class=" flex items-end xl:block lg:hidden md:hidden">
-                <img class="" src="{{ asset('/images/menu-icon/adds5.png') }}">
-            </div>  -->
         </div>
     </div>
-    </div>
-
 </div>
 <!-- Mobile design -->
     <div class="w-full flex justify-center hidden smm-block">
