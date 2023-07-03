@@ -38,7 +38,7 @@
             </div>
         </div>
     </div> -->
-    <div class="w-full flex justify-center bg-slate-100 ">
+    <!-- <div class="w-full flex justify-center bg-slate-100 ">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-row justify-between xl:gap-3 gap-1 block smm-hidden max-w-screen-2xl">
             <div class="flex flex-col  xl:w-9/12 lg:w-10/12 gap-5">
                 <div class=" w-full bg-[#d9d9d9] flex flex-row items-center rounded-md">
@@ -356,7 +356,381 @@
                 </div>
             </div>
         </div>
+    </div>    -->
+
+    <div class="w-full flex justify-center bg-slate-100">
+        <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col block smm-hidden max-w-screen-2xl">
+            <div class="w-full flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl ">
+                <div class="w-full bg-[#062ea6] h-32 flex flex-row items-end  ">
+                   <div class="w-full flex items-center justify-evenly">
+                      <h1 class="text-4xl font-bold text-white">John Tavares</h1>
+                      <img class="w-28 h-28" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+                   </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-center text-lg font-bold">Auston Matthews has played 7 seasons for the Maple Leafs. He has 299 goals, 243 assists and a <br>
+                 plus-minus of +109 in 481 games. He has won the Calder Trophy</h1>
+            </div>
+            <div class="w-full flex justify-center">
+              <img class="w-8/12 my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}">
+            </div>
+            <div class="flex flex-col w-full gap-5 mt-3">
+                <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                        <div class="flex m-3 mt-5 ">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="flex flex-col ml-2 gap-3">
+                                <div class="flex flex-row gap-2">
+                                    <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                    <p class="text-[11px] font-bold">
+                                      Injury
+                                    </p>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                            <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                            <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                        </div>
+                        <div class="w-full absolute bottom-1">
+                            <div class="w-full flex flex-row items-center ">
+                                <a href="">
+                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                </a>
+                                <div>
+                                    <h3 class="text-[13px]">Chris Benn</h3>
+                                    <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                        <div class="flex m-3 mt-5 ">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="flex flex-col ml-2 gap-3">
+                                <div class="flex flex-row gap-2">
+                                    <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                    <p class="text-[11px] font-bold">
+                                      Injury
+                                    </p>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                            <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                            <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                        </div>
+                        <div class="w-full absolute bottom-1">
+                            <div class="w-full flex flex-row items-center ">
+                                <a href="">
+                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                </a>
+                                <div>
+                                    <h3 class="text-[13px]">Chris Benn</h3>
+                                    <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                        <div class="flex m-3 mt-5 ">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="flex flex-col ml-2 gap-3">
+                                <div class="flex flex-row gap-2">
+                                    <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                    <p class="text-[11px] font-bold">
+                                      Injury
+                                    </p>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                            <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                            <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                        </div>
+                        <div class="w-full absolute bottom-1">
+                            <div class="w-full flex flex-row items-center ">
+                                <a href="">
+                                <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                </a>
+                                <div>
+                                    <h3 class="text-[13px]">Chris Benn</h3>
+                                    <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="w-full flex justify-center my-5">
+                    <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NHL News</a>
+                </div>
+            </div>   
+            <table class="w-full mb-5">
+                <div class="w-full flex justify-between">
+                   <p class="text-[#00215e] font-bold text-sm">Stats</p>
+                   <a class="text-[#1d9bf0] font-bold text-sm" href="">See all</a>
+                </div>
+                <tr class="flex flex-row justify-between h-[1.5rem] text-white bg-[#00215e] rounded">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0"> </td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">GP</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">G</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">A</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">P</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">+/-</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">PIM</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">PPG</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">PPA</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">SHG</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">SHA</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">GWG</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">OTG</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">S</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">S%</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">TOI/GP</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem] border-b-2 border-slate-400 ">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0">2022-23 Regular Season</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">74</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">40</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">45</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">85</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">+31</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">20</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">13</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">15</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">8</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">327</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">12.2</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">20:17</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem] border-b-2 border-slate-400 ">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0">2022-23 Playoffs</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">11</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">5</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">6</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">11</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">+3</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">7</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">3</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">48</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">10.4</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">22:56</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem] border-b-2 border-slate-400 ">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0">Career Regular Season</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">481</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">299</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">243</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">542</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">+109</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">94</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">76</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">73</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">53</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">9</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">1,904</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">15.7</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">19:36</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem]  ">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0">Career Playoffs</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">50</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">22</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">22</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">44</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">+1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">9</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">5</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">8</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">5</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">214</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">10.3</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">21:40</td>
+                </tr>
+            </table> 
+            <table class="w-full">
+                 <div class="w-full flex justify-between">
+                   <p class="text-[#00215e] font-bold text-sm">Recent Games</p>
+                   <a class="text-[#1d9bf0] font-bold text-sm" href="">See all</a>
+                </div>
+                <tr class="flex flex-row justify-between h-[1.5rem] text-white bg-[#00215e] rounded">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0">DATE</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">TM</td>
+                    <td class="flex justify-end items-center w-[60%] text-[11px] font-bold border-0">OPP</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">SCORE</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">G</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">A</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">P</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">+/-</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">PIM</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">PPG</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">PPA</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">SHG</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">SHA</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">GWG</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">OTG</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">S</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">5%</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">TOI/GP</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem] border-b-2 border-slate-400">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0 text-[#1d9bf0]">Fri 5/12</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">TOR</td>
+                    <td class="flex justify-end items-center w-[60%] text-[11px] font-bold border-0 text-[#1d9bf0] gap-1">vs 
+                        <img class="w-4" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""> FLA</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">L  2-3</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">8</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0.0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">29.28</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem] border-b-2 border-slate-400">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0 text-[#1d9bf0]">Wed 5/10</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">TOR</td>
+                    <td class="flex justify-end items-center w-[60%] text-[11px] font-bold border-0 text-[#1d9bf0] gap-1">@ 
+                        <img class="w-4" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""> FLA</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">W  2-1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">+1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">4</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0.0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">20.37</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem] border-b-2 border-slate-400">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0 text-[#1d9bf0]">Sun 5/7</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">TOR</td>
+                    <td class="flex justify-end items-center w-[60%] text-[11px] font-bold border-0 text-[#1d9bf0] gap-1">@ 
+                        <img class="w-4" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""> FLA</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">L  2-3</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">-1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">2</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0.0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">20.22</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem] border-b-2 border-slate-400">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0 text-[#1d9bf0]">Thu 5/4</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">TOR</td>
+                    <td class="flex justify-end items-center w-[60%] text-[11px] font-bold border-0 text-[#1d9bf0] gap-1">vs 
+                        <img class="w-4" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""> FLA</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">L  2-3</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">2</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">5</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0.0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">26.01</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem] border-b-2 border-slate-400">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0 text-[#1d9bf0]">Tue 5/2</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">TOR</td>
+                    <td class="flex justify-end items-center w-[60%] text-[11px] font-bold border-0 text-[#1d9bf0] gap-1">vs 
+                        <img class="w-4" src="{{ asset('/images/teamlogo-svg/florida-panthers.svg') }}" alt=""> FLA</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]">L  2-4</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">6</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0.0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">24.13</td>
+                </tr>
+                <tr class="flex flex-row justify-between h-[1.5rem]">
+                    <td class="flex justify-start items-center w-full text-[11px] font-bold border-0 text-black">Total</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]"></td>
+                    <td class="flex justify-end items-center w-[60%] text-[11px] font-bold border-0 text-[#1d9bf0] gap-1">  
+                        <img class="" src=" " alt="">  </td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0 text-[#1d9bf0]"> </td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">2</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">2</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">2</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">1</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">25</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">0.0</td>
+                    <td class="flex justify-center items-center w-[40%] text-[11px] font-bold border-0">24.08</td>
+                </tr>
+            </table>       
+        </div>
     </div>
+
+
+
     <div class="w-full flex flex-col items-center ">
     <div class="w-full  smm-block hidden  ">
         <div class="flex flex-col mx-1">
@@ -391,8 +765,7 @@
         <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search players"> 
         <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
     </div>
- 
-<div class="flex flex-col gap-1 hidden smm-block ">
+    <div class="flex flex-col gap-1 hidden smm-block ">
     <img class="w-full my-1.5 mx-1" src="{{ asset('/images/menu-icon/adds_header.png') }}" >  
     <div id="" class=" my-3 mx-1 hidden smm-block ">
         <div class="w-full h-20  flex items-center gap-[10rem] border-slate-300 border-b-2 my-4">       
@@ -685,6 +1058,6 @@
             <img class="h-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
         </div>                   
     </div>
-</div>
+    </div>
 
 @endsection
