@@ -358,13 +358,13 @@
         </div>
     </div>    -->
 
-    <div class="w-full flex justify-center bg-slate-100">
+    <div class="w-full flex justify-center">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col block smm-hidden max-w-screen-2xl">
             <div class="w-full flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl ">
-                <div class="w-full bg-[#062ea6] h-32 flex flex-row items-end  ">
-                   <div class="w-full flex items-center justify-evenly">
-                      <h1 class="text-4xl font-bold text-white">John Tavares</h1>
-                      <img class="w-28 h-28" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+                <div class="w-full bg-[#062ea6] h-36 flex flex-row items-end  justify-center">
+                   <div class="w-9/12 flex items-center justify-between">
+                      <h1 class="text-5xl font-bold text-white  ">John Tavares</h1>
+                      <img class="w-28 h-28   " src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
                    </div>
                 </div>
             </div>
@@ -377,7 +377,7 @@
             </div>
             <div class="flex flex-col w-full gap-5 mt-3">
                 <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
                         <div class="flex m-3 mt-5 ">
                            <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                             <div class="flex flex-col ml-2 gap-3">
@@ -409,7 +409,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
                         <div class="flex m-3 mt-5 ">
                            <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                             <div class="flex flex-col ml-2 gap-3">
@@ -441,7 +441,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
                         <div class="flex m-3 mt-5 ">
                            <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                             <div class="flex flex-col ml-2 gap-3">
@@ -475,7 +475,7 @@
                     </div>
                 </div> 
                 <div class="w-full flex justify-center my-5">
-                    <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NHL News</a>
+                    <a href="" class="text-[#1d9bf0] font-bold text-sm">View More</a>
                 </div>
             </div>   
             <table class="w-full mb-5">
