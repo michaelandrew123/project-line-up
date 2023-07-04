@@ -95,7 +95,445 @@
             </div>
             <div class="w-full  flex flex-col  mt-16 gap-6  ">
                 <h1 class="text-6xl font-bold text-center text-black">Your destination for fantasy sports <br> players and bettors</h1>
-                <h1 class="text-2xl font-medium">What is the importance using projected luneups?</h1>
+                <div class="flex flex-col w-full">
+                    <div class="flex flex-row gap-3">
+                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                        <h1 class="text-4xl font-bold">NHL</h1>
+                    </div>
+                    <div class="flex flex-col w-full gap-5 mt-3">
+                        <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="w-full flex justify-center my-5">
+                            <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NHL News</a>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="flex flex-col w-full">
+                    <div class="flex flex-row gap-3">
+                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                        <h1 class="text-4xl font-bold">NBA</h1>
+                    </div>
+                    <div class="flex flex-col w-full gap-5 mt-3">
+                        <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 ">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="w-full flex justify-center my-5">
+                            <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NBA News</a>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="flex flex-col w-full">
+                    <div class="flex flex-row gap-3">
+                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                        <h1 class="text-4xl font-bold">NFL</h1>
+                    </div>
+                    <div class="flex flex-col w-full gap-5 mt-3">
+                        <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="w-full flex justify-center my-5">
+                            <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NFL News</a>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="flex flex-col w-full">
+                    <div class="flex flex-row gap-3">
+                        <img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                        <h1 class="text-4xl font-bold">EPL</h1>
+                    </div>
+                    <div class="flex flex-col w-full gap-5 mt-3">
+                        <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
+                                <div class="flex m-3 mt-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
+                                            <p class="text-[11px] font-bold">
+                                            Injury
+                                            </p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Auston Mathews</h1>
+                                            <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1">
+                                    <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-3">Mathews out for three weeks with a lower body injury</p>
+                                    <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
+                                </div>
+                                <div class="w-full absolute bottom-1">
+                                    <div class="w-full flex flex-row items-center ">
+                                        <a href="">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                        </a>
+                                        <div>
+                                            <h3 class="text-[13px]">Chris Benn</h3>
+                                            <p class="xl:text-[9px] lg:text-[9px] md:text-[8px] font-bold">11/30/2012 | 12:59 pm EST</p>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="w-full flex justify-center my-5">
+                            <a href="" class="text-[#1d9bf0] font-bold text-sm">View All EPL News</a>
+                        </div>
+                    </div>  
+                </div> 
+                
+
+                <!-- <h1 class="text-2xl font-medium">What is the importance using projected luneups?</h1>
                 <p class="text-2xl font-medium">
                     Projected Lineups can help give you the edge in all types of fantasy sports or sports betting;
                     having an idea of who is playing before your competition is always going to put you step  ahead.
@@ -132,7 +570,7 @@
                     provide you most accurate numbers as possible. you can also findanalytic articles from our 
                     knowledgeable staff and tons of sports, fantasy, and betting news. We also provide up-to-date 
                     betting information, including lines. spread, and statistic on NFL games each and every week.  
-                </p>
+                </p> -->
             </div>
         </div>
     </div>

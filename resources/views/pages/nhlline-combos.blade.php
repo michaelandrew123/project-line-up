@@ -6,8 +6,8 @@
 
 
 <div class="">
-<div class="w-full flex flex-col items-center ">
-    <div class="w-11/12 flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-slate-200 px-2 py-2">
+<div class="w-full flex flex-col items-center mt-5">
+    <div class="w-11/12 flex justify-center gap-3   items-center block smm-hidden max-w-screen-2xl  bg-slate-200 px-2 h-36">
         <div class="w-full flex flex-col gap-2 ">
             <div class="flex flex-row items-center justify-between ">
                 <div class="flex flex-row items-center">
@@ -91,9 +91,9 @@
         <button class="w-36 text-[24px] font-bold rounded-md text-black bckgrnd sts flex justify-center">
             Stats
         </button>
-        <!-- <button class="w-36 bg-[#ebece9] text-[16px] font-bold rounded-md text-black prp">
-            Props
-        </button> -->
+        <a href="{{url('/nhl/team-news')}}" class="w-40 text-[24px] font-bold rounded-md text-black bckgrnd flex justify-center">
+            PLayer News
+        </a>
         <button class="w-36   text-[24px] font-bold rounded-md text-black bckgrnd shp flex justify-center">
             Shop
         </button>

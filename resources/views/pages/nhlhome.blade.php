@@ -3,8 +3,8 @@
 @section('content')
 
  
-<div class="flex justify-center">
-    <div class=" flex xl:block lg:block md:block  hidden w-full mx-2  max-w-screen-2xl">
+<div class="flex justify-center max-w-screen-2xl">
+    
     <!-- <div class="w-full flex justify-center  ">
         <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col border-black m-4 gap-5">
             <div class="flex flex-row justify-between items-center">
@@ -41,17 +41,17 @@
             </div>
         </div> 
     </div> -->
-    <div class="flex flex-row justify-center w-full xl:gap-3 lg:gap-2 ">
+    <div class="w-11/12 flex flex-row justify-between ">
         <div class="flex flex-col xl:w-[77%] lg:w-9/12 md:w-full">
             <div class="flex flex-col w-full">
                 <div class="flex justify-center mb-5">
                     <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
-                <div class="flex md:flex-row justify-center gap-3">
+                <div class="flex  flex-row justify-center gap-3">
                     @foreach($contentPosts as $key=>$item)
                         {{--{{ $item->category->slug }}--}}
                         @if($item->category->slug === 'morning-skate')
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                            <div class="w-[18rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
                                 <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
                                     <div class="flex flex-row items-center gap-2">
                                         <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
@@ -67,7 +67,7 @@
                             </div>
                         @endif
                         @if($item->category->slug === 'top-stacks')
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                            <div class="w-[18rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
                                 <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
                                     <div class="flex flex-row items-center gap-2">
                                         <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
@@ -83,7 +83,7 @@
                             </div>
                         @endif
                         @if($item->category->slug === 'props-and-odds')
-                            <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
+                            <div class="w-[18rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
                                 <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
                                     <div class="flex flex-row items-center gap-2">
                                         <div class="w-7 h-7 bg-green-600 rounded-full flex justify-center items-center">
@@ -685,20 +685,20 @@
                     </div>
                 </div> -->
             </div>
-            <div class="flex flex-col xl:w-full lg:w-11/12">  
+            <div class="flex flex-col w-full">  
                 <div class="flex flex-col">
-                   <div class="flex items-center">
+                   <div class="flex items-center ml-[2rem]">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
-                        <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
+                        <h1 class="text-2xl font-bold pt-5 pb-5  ">
                             NHL Player News
                         </h1>
                     </div>
-                    <div class="flex flex-row w-full flex-wrap xl:justify-evenly lg:justify-between md:justify-between mb-3">
+                    <div class="flex  flex-wrap justify-center gap-3">
                         @foreach($goalies->data as $key=>$val)
                             @if(isset($val->type))
                                @if(!empty($val->type->slug))
                                     @if($val->type->slug === 'line-change'  )    
-                                        <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
+                                        <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]  md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
                                             <div class="flex m-2 mt-5 ">
                                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
                                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
@@ -730,7 +730,119 @@
                                 @endif
                             @endif
                         @endforeach
-                            <div class="flex flex-col gap-3 w-[31%] xl:h-[21rem] lg:h-[21rem] md:w-[32%] md:h-[18rem]  rounded-xl bg-white relative">
+                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                                <div class="flex m-2 mt-5 ">
+                                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
+                                    <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
+                                            <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                        </div>                                                                      
+                                    </div>
+                                </div>
+                                <div class=" m-2">
+                                    <p class="text-[14px] font-bold mb-2">{{$val->title}}</p>
+                                    <p class="text-[9px] font-semibold">{{$val->description}}</p>
+                                </div>
+                                <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                    <a href="{{$val->source->url}}">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    </a>
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                        <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                                <div class="flex m-2 mt-5 ">
+                                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
+                                    <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
+                                            <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                        </div>                                                                      
+                                    </div>
+                                </div>
+                                <div class=" m-2">
+                                    <p class="text-[14px] font-bold mb-2">{{$val->title}}</p>
+                                    <p class="text-[9px] font-semibold">{{$val->description}}</p>
+                                </div>
+                                <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                    <a href="{{$val->source->url}}">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    </a>
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                        <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                                <div class="flex m-2 mt-5 ">
+                                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
+                                    <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
+                                            <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                        </div>                                                                      
+                                    </div>
+                                </div>
+                                <div class=" m-2">
+                                    <p class="text-[14px] font-bold mb-2">{{$val->title}}</p>
+                                    <p class="text-[9px] font-semibold">{{$val->description}}</p>
+                                </div>
+                                <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                    <a href="{{$val->source->url}}">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    </a>
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                        <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                                <div class="flex m-2 mt-5 ">
+                                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
+                                    <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
+                                        <div class="flex flex-row gap-2">
+                                            <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
+                                            <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                        </div>                                                                      
+                                    </div>
+                                </div>
+                                <div class=" m-2">
+                                    <p class="text-[14px] font-bold mb-2">{{$val->title}}</p>
+                                    <p class="text-[9px] font-semibold">{{$val->description}}</p>
+                                </div>
+                                <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                    <a href="{{$val->source->url}}">
+                                        <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-10 md:h-10" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                    </a>
+                                    <div>
+                                        <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                        <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
                                 <div class="flex m-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
                                     <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
@@ -819,7 +931,7 @@
                     <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
                     <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div> 
-                     <div class="flex items-center">
+                     <div class="flex items-center ml-[2rem]">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
                             Latest Articles
@@ -829,7 +941,7 @@
                         @foreach($contentPosts as $key=>$item)
                             {{--{{ $item->category->slug }}--}}
                             @if($item->category->slug === 'morning-skate')
-                                <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="w-[18rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
                                     <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
                                         <div class="flex flex-row items-center gap-2">
                                             <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
@@ -845,7 +957,7 @@
                                 </div>
                             @endif
                             @if($item->category->slug === 'top-stacks')
-                                <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="w-[18rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
                                     <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
                                         <div class="flex flex-row items-center gap-2">
                                             <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
@@ -861,7 +973,7 @@
                                 </div>
                             @endif
                             @if($item->category->slug === 'props-and-odds')
-                                <div class="xl:w-[23rem] lg:w-[17rem] md:w-[13rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
+                                <div class="w-[18rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
                                     <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
                                         <div class="flex flex-row items-center gap-2">
                                             <div class="w-7 h-7 bg-green-600 rounded-full flex justify-center items-center">
@@ -1318,7 +1430,7 @@
             </div>
         </div>   
         <!-- Articles  -->
-        <div class=" flex flex-col xl:w-10/12">
+        <div class=" flex flex-col w-64">
             <div class="flex flex-col gap-5 mt-9 ">
                 <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
                     <h1 class="font-bold">Starting Goalies</h1>
@@ -1384,8 +1496,8 @@
                 </div>
                 <div id="" class="flex flex-col gap-4 w-full">
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">    
-                        <div class="w-full flex flex-row justify-evenly">
+                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">    
+                        <div class="w-full flex flex-row gap-2">
                             <div class="flex flex-col gap-px">
                                 <p class="font-bold text-[12px]">
                                     Toronto Maple Leafs
@@ -1396,8 +1508,8 @@
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt="">    
-                        <div class="w-full flex flex-row justify-evenly">
+                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt="">    
+                        <div class="w-full flex flex-row gap-2">
                             <div class="flex flex-col gap-px">
                                 <p class="font-bold text-[12px]">
                                     Edmonton Oilers
@@ -1408,8 +1520,8 @@
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">    
-                        <div class="w-full flex flex-row justify-evenly">
+                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">    
+                        <div class="w-full flex flex-row gap-2">
                             <div class="flex flex-col gap-px">
                                 <p class="font-bold text-[12px]">
                                     Boston Bruins
@@ -1420,8 +1532,8 @@
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt="">    
-                        <div class="w-full flex flex-row justify-evenly">
+                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt="">    
+                        <div class="w-full flex flex-row gap-2">
                             <div class="flex flex-col gap-px">
                                 <p class="font-bold text-[12px]">
                                     ST.Louis Blues
@@ -1432,8 +1544,8 @@
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-14" style=" " src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt="">    
-                        <div class="w-full flex flex-row justify-evenly">
+                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt="">    
+                        <div class="w-full flex flex-row gap-2">
                             <div class="flex flex-col gap-px">
                                 <p class="font-bold text-[12px]">
                                     Vegas Golden Knights

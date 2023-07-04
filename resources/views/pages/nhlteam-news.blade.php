@@ -1,9 +1,9 @@
 @extends('layouts.master-nhl')
 
 @section('content')
-    <div class="w-full flex justify-center bg-slate-100">
+    <div class="w-full flex justify-center bg-slate-100  mt-5">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col block smm-hidden max-w-screen-2xl">
-            <div class="w-full flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-slate-200 px-2 py-2">
+            <div class="w-full flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-slate-200 px-2 h-36">
                 <div class="w-full flex flex-col gap-2 ">
                     <div class="flex flex-row items-center justify-between ">
                         <div class="flex flex-row items-center">
@@ -22,30 +22,30 @@
                     </div>
                 </div>
             </div>  
-            <div class="flex flex-row items-center w-full mt-[10px] gap-3 block smm-hidden max-w-screen-2xl" id="sub-hed">
-                <a href="{{url('/nhl/line-combos')}}" class="w-36  text-[24px] text-black font-bold rounded-md l-ups bckgrnd flex justify-center">
+            <div class="flex flex-row justify-evenly items-center w-full mt-[10px]  block smm-hidden max-w-screen-2xl" id="sub-hed">
+                <a href="{{url('/nhl/line-combos')}}" class="  text-[24px] text-black font-bold rounded-md l-ups bckgrnd  ">
                     Lineups
                 </a>
-                <a href="" class="w-36   text-[24px] font-bold rounded-md text-black bckgrnd create flex justify-center gap-3">
+                <a href="" class="w-36  text-[24px] font-bold rounded-md text-black bckgrnd create flex justify-center">
                     <img class="w-9" src="{{ asset('/images/menu-icon/icons8-create-50.png') }}" alt="">
                     Create
                 </a>
-                <a href="" class="w-36  text-[24px] font-bold rounded-md text-black bckgrnd d-kings flex justify-center   gap-3">
+                <a href="" class="  text-[24px] font-bold rounded-md text-black bckgrnd d-kings ">
                     Draftkings
                 </a>
-                <a href="" class="w-36 text-[24px] font-bold rounded-md text-black bckgrnd fnl flex justify-center gap-3">
+                <a href="" class="  text-[24px] font-bold rounded-md text-black bckgrnd fnl  ">
                     Fanduel
                 </a>
-                <a href="" class="w-36 text-[24px] font-bold rounded-md text-black bckgrnd sts flex justify-center">
+                <a href="" class=" text-[24px] font-bold rounded-md text-black bckgrnd sts  ">
                     Stats
                 </a>
-                <a href="" class="w-36   text-[24px] font-bold rounded-md text-black bckgrnd active shp flex justify-center">
-                    News
+                <a href="" class=" text-[24px] font-bold rounded-md text-black bckgrnd active shp  ">
+                    Player News
                 </a>
-                <a href="" class="w-36   text-[24px] font-bold rounded-md text-black bckgrnd shp flex justify-center">
+                <a href="" class="text-[24px] font-bold rounded-md text-black bckgrnd shp  ">
                     Team Stats
                 </a>
-                <a href="" class="w-36   text-[24px] font-bold rounded-md text-black bckgrnd shp flex justify-center">
+                <a href="" class="text-[24px] font-bold rounded-md text-black bckgrnd shp">
                     Shop
                 </a>
             </div>
