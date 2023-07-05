@@ -193,7 +193,12 @@
       $(this).addClass('active');
       $('div#sub-hed').css('backgroundColor', navbg);
     });
-     
+    $('.apn-bckgrnd').click(function() {
+     var navbg = $(this).data('navbg');
+      $('.apn-bckgrnd').removeClass('active');
+      $(this).addClass('active');
+      $('div#sub-hed').css('backgroundColor', navbg);
+    });
     $('.nfl-bckgrnd').click(function() {
      var navbg = $(this).data('navbg');
       $('.nfl-bckgrnd').removeClass('active');

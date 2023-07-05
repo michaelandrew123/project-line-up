@@ -1,5 +1,5 @@
         <div class="w-3/12 mt-5 block smm-hidden relative  ">
-            <div class="relative sticky top-0 ">
+            <div class="">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-[#00bf63]">
                         <h1 class="font-bold">Injury Report</h1>

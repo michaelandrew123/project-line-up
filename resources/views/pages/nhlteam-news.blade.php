@@ -1,10 +1,10 @@
 @extends('layouts.master-nhl')
 
 @section('content')
-    <div class="w-full flex justify-center bg-slate-100  mt-5">
+    <div class="w-full flex justify-center bg-slate-100  mt-9">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col block smm-hidden max-w-screen-2xl">
-            <div class="w-full flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-slate-200 px-2 h-36">
-                <div class="w-full flex flex-col gap-2 ">
+            <div class="w-full flex justify-center gap-3 items-end block smm-hidden max-w-screen-2xl  bg-slate-200 px-2 h-36">
+                <div class="w-full flex flex-row justify-between mx-10 justify-end">
                     <div class="flex flex-row items-center justify-between ">
                         <div class="flex flex-row items-center">
                             <div class="flex flex-row items-center gap-5">
@@ -19,6 +19,11 @@
                                 </div>
                             </div>
                         </div>         
+                    </div>
+                    <div class="relative w-[18rem]  flex justify-center">
+                        <img class="w-32 h-32 absolute right-1" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+                        <img class="w-32 h-32  z-10" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+                        <img class="w-32 h-32 absolute left-1" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
                     </div>
                 </div>
             </div>  

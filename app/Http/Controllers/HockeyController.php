@@ -665,6 +665,17 @@ class HockeyController extends Controller
 
         // print_r(json_decode((string) $body));
         // dd( $projections_result);
+        $home = $client->get(
+            'https://api.projectedlineups.com/v1/content/posts',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+        $first_cards = $home->getBody();
+        $home_cards = json_decode($first_cards);
 
 
         $article = $client->get(
@@ -715,7 +726,7 @@ class HockeyController extends Controller
         $name_projections = $projections->getBody();
         $projections_result = json_decode( $name_projections);
 
-        return view('pages/nhlprojections')->with([ 'team' => $team_result, 'article' => $team_article, 'projections' => $projections_result ]);
+        return view('pages/nhlprojections')->with([ 'team' => $team_result, 'article' => $team_article, 'projections' => $projections_result,'contentPosts' => $home_cards->data ]);
     }
     public function nflHome(){
         return view('pages/nflhome');
@@ -867,5 +878,45 @@ class HockeyController extends Controller
         return view('pages/socline-combos')->with(['result' => $result , 'team' => $team_result ]);
 
         
+    }
+    public function nhllineupStudy(){
+        $client = new \GuzzleHttp\Client();
+
+ 
+
+
+    
+        $team = $client->get(
+            'https://api.projectedlineups.com/v1/sports/teams?l=0',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+
+        $team_body = $team->getBody();
+        $team_result = json_decode($team_body);
+
+        
+        // print_r(json_decode((string) $body));
+
+        // dd($team_result);
+
+       
+        $response = $client->get(
+            'https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+        $body = $response->getBody();
+
+        $result = json_decode($body);
+        return view('pages/nhllineup-study')->with(['result' => $result , 'team' => $team_result ]);
     }
 }
