@@ -1496,63 +1496,63 @@
                 </div>
                 <div id="" class="flex flex-col gap-4 w-full">
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">    
-                        <div class="w-full flex flex-row gap-2">
+                        <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-between  gap-2">
                             <div class="flex flex-col gap-px">
-                                <p class="font-bold text-[12px]">
+                                <p class="font-bold text-[11px]">
                                     Toronto Maple Leafs
                                 </p>
-                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                                <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt="">    
-                        <div class="w-full flex flex-row gap-2">
+                        <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-between  gap-2">
                             <div class="flex flex-col gap-px">
                                 <p class="font-bold text-[12px]">
                                     Edmonton Oilers
                                 </p>
-                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                                <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">    
-                        <div class="w-full flex flex-row gap-2">
+                        <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-between  gap-2">
                             <div class="flex flex-col gap-px">
-                                <p class="font-bold text-[12px]">
+                                <p class="font-bold text-[11px]">
                                     Boston Bruins
                                 </p>
-                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                                <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt="">    
-                        <div class="w-full flex flex-row gap-2">
+                        <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-between  gap-2">
                             <div class="flex flex-col gap-px">
-                                <p class="font-bold text-[12px]">
+                                <p class="font-bold text-[11px]">
                                     ST.Louis Blues
                                 </p>
-                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                                <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
-                        <img class="w-12" style=" " src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt="">    
-                        <div class="w-full flex flex-row gap-2">
+                        <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt="">    
+                        <div class="w-full flex flex-row justify-between gap-2">
                             <div class="flex flex-col gap-px">
-                                <p class="font-bold text-[12px]">
+                                <p class="font-bold text-[11px]">
                                     Vegas Golden Knights
                                 </p>
-                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                                <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[12px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="w-full flex justify-center">

@@ -1,6 +1,6 @@
   
     <div class="w-full flex flex-row justify-center block smm-hidden">
-        <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center justify-between w-full m-4 gap-1 max-w-screen-2xl">
+        <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center justify-between w-full  gap-1 max-w-screen-2xl">
             <div class="flex flex-row justify-between items-end flex w-full  pb-3 border-[d9d9d9] border-b-2">
                 <div class="flex gap-1 items-end">
                     <img class="w-[99px]" src="{{ asset('/images/line-combos/logo/matthew_tkachuk.png') }}" alt="">
@@ -51,21 +51,26 @@
                             DFS Projections
                         </a>
                     </li>
-                        <li class="nav-itms {{Request::is('nhl/team-news') ? 'active':'' }}">
-                           
-                            <a href="{{url('nhl/player-news')}}" style=" {{Request::is('nhl/team-news') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center active">
+                    @if(Request::is('nhl/team-news') != ('nhl/team-news') && Request::is('nhl/player-news') != ('nhl/player-news') && Request::is('nhl/individual-player-news') != ('nhl/individual-player-news') && Request::is('nhl/all-player-news') != ('nhl/all-player-news'))
+                        <li class="">
+                            <a href="{{url('nhl/player-news')}}" style=" " class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
                                 Player News
                             </a>
                         </li>
-              
-           
+                    @else
+                        <li class="">
+                            <a href="{{url('nhl/player-news')}}" style="color:#38b6ff;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                                Player News
+                            </a>
+                        </li>
+                    @endif
                     <!-- <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
                         <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 mx-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff] ">
                             Props & Odds
                         </a>
                     </li> -->
-                    <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
-                        <a href="" class="  text-xl xl:text-lg lg:text-base md:text-sm font-bold  text-black text-center ">
+                    <li class="nav-itms {{Request::is('nhl/lineup-study') ? 'active':'' }}">
+                        <a href="{{url('nhl/lineup-study')}}" style="{{Request::is('nhl/lineup-study') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             Lineup Study
                         </a>
                     </li>
@@ -76,12 +81,16 @@
                         </a>
                     </li>
                 </ul>
-                <div class="bg-[#d9d9d9] w-full h-px "></div>
+                @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combos/{team}') != ('nhl/line-combos/{team}') && Request::is('nhl/team-news') != ('nhl/team-news'))
+                  <div class=""></div>
+                @else            
+                 <div class="bg-[#d9d9d9] w-full h-px"></div>
+                @endif
                 <div class="w-full relative">
                     <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute ">
                         @foreach($team->data as $key=>$val)
                             @if(!empty($val->logo->src))
-                                @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/team-news') != ('nhl/team-news'))
+                                @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combos/{team}') != ('nhl/line-combos/{team}') && Request::is('nhl/team-news') != ('nhl/team-news') && Request::is('nhl/line-combinations') != ('nhl/line-combinations'))
                                     <li class="lc-team-logo " style="display:none;"   value="">
                                         <a class=""  href="/nhl/line-combos/{{$val->slug}}">
                                         <img class="w-10 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">

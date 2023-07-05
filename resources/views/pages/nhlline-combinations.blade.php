@@ -39,7 +39,162 @@
             </div>
         </div>
     </div> -->
-    <div class="w-full flex justify-center bg-slate-100 ">
+    <div class="w-full flex justify-center bg-slate-100 mt-10">
+       <div class="w-11/12 flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
+          <div class="flex flex-col  w-9/12 gap-5">
+                <div class="w-full bg-[#1d9bf0] flex flex-row  items-center rounded-md">
+                    <h1 class="text-center py-10 text-3xl font-bold w-full">  NHL Line Combinations</h1>
+                </div>
+                <table class="">
+                    @foreach($team->data as $key=>$val)
+                        @if($val->league->slug == 'nhl')
+                            <tr class="w-full flex justify-between border-b-2 border-slate-200 ">
+                                <td class="flex items-center gap-2 border-0">
+                                    <img class="w-7" src="{{$val->logo->src}}" alt="">
+                                    <h1 class="text-base font-bold">{{$val->name}}</h1>
+                                </td>
+                                <td class="text-base font-bold text-[#1d9bf0] border-0" href="">Forward</td>
+                                <td class="text-base font-bold text-[#1d9bf0] border-0" href="">Defence</td>
+                                <td class="text-base font-bold text-[#1d9bf0]  border-0" href="">Goalie</td>
+                                <td class="text-base font-bold text-[#1d9bf0]  border-0" href="">Power Play</td>
+                            </tr>
+                        @endif
+                    @endforeach
+                </table>
+           </div>
+           <div class=" flex flex-col w-64">
+                <div class="flex flex-col gap-5 mt-9 ">
+                    <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
+                        <h1 class="font-bold">Starting Goalies</h1>
+                    </div>
+                    <div id=" " class="flex flex-col gap-4 w-full">
+                        <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                            <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                            <div class="flex flex-col">
+                                <div class="flex flex-col justify-center">
+                                    <p class="font-bold text-sm">
+                                        Linus Ullmark - BOS
+                                    </p>
+                                </div>
+                                <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
+                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                            <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                            <div class="flex flex-col">
+                                <div class="flex flex-col justify-center">
+                                    <p class="font-bold text-sm">
+                                        Linus Ullmark - BOS
+                                    </p>
+                                </div>
+                                <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
+                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                            <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                            <div class="flex flex-col">
+                                <div class="flex flex-col justify-center">
+                                    <p class="font-bold text-sm">
+                                        Linus Ullmark - BOS
+                                    </p>
+                                </div>
+                                <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
+                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                            <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                            <div class="flex flex-col">
+                                <div class="flex flex-col justify-center">
+                                    <p class="font-bold text-sm">
+                                        Linus Ullmark - BOS
+                                    </p>
+                                </div>
+                                <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
+                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                            </div>
+                        </div> 
+                        <div class="w-full flex justify-center">
+                            <a class="font-semibold text-sm text-[#38b6ff]" href="">View Today's Starting Goalies</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <img class="w-10/12" src="{{ asset('/images/menu-icon/adds3.png') }}">
+                    </div>  
+                    <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
+                        <h1 class="font-bold">Line Combinations</h1>
+                    </div>
+                    <div id="" class="flex flex-col gap-4 w-full">
+                        <div class="flex flex-row items-center w-full" style=" ">   
+                            <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/toronto-maple-leafs.svg') }}" alt="">    
+                            <div class="w-full flex flex-row justify-between  gap-2">
+                                <div class="flex flex-col gap-px">
+                                    <p class="font-bold text-[11px]">
+                                        Toronto Maple Leafs
+                                    </p>
+                                    <p class="text-[11px] text-slate-500">30 min ago</p>
+                                </div>
+                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center w-full" style=" ">   
+                            <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/edmonton-oilers.svg') }}" alt="">    
+                            <div class="w-full flex flex-row justify-between  gap-2">
+                                <div class="flex flex-col gap-px">
+                                    <p class="font-bold text-[12px]">
+                                        Edmonton Oilers
+                                    </p>
+                                    <p class="text-[11px] text-slate-500">30 min ago</p>
+                                </div>
+                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center w-full" style=" ">   
+                            <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">    
+                            <div class="w-full flex flex-row justify-between  gap-2">
+                                <div class="flex flex-col gap-px">
+                                    <p class="font-bold text-[11px]">
+                                        Boston Bruins
+                                    </p>
+                                    <p class="text-[11px] text-slate-500">30 min ago</p>
+                                </div>
+                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center w-full" style=" ">   
+                            <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/st-louis-blues.svg') }}" alt="">    
+                            <div class="w-full flex flex-row justify-between  gap-2">
+                                <div class="flex flex-col gap-px">
+                                    <p class="font-bold text-[11px]">
+                                        ST.Louis Blues
+                                    </p>
+                                    <p class="text-[11px] text-slate-500">30 min ago</p>
+                                </div>
+                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center w-full" style=" ">   
+                            <img class="w-11" style=" " src="{{ asset('/images/teamlogo-svg/vegas-golden-knights.svg') }}" alt="">    
+                            <div class="w-full flex flex-row justify-between gap-2">
+                                <div class="flex flex-col gap-px">
+                                    <p class="font-bold text-[11px]">
+                                        Vegas Golden Knights
+                                    </p>
+                                    <p class="text-[11px] text-slate-500">30 min ago</p>
+                                </div>
+                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-center">
+                            <a class="font-semibold text-sm text-[#38b6ff]" href="">View NHL Line Combinations</a>
+                        </div>
+                    </div>
+                </div> 
+                </div> 
+    </div>
+    <!-- <div class="w-full flex justify-center bg-slate-100 ">
        <div class="w-11/12 flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
           <div class="flex flex-col  w-9/12 gap-5">
                 <div class="w-full bg-[#d9d9d9] flex flex-row  items-center rounded-md">
@@ -61,243 +216,7 @@
                                     </li>
                                 @endif
                             @endforeach
-                            <!-- <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                <div class="flex flex-row items-center w-auto">
-                                    <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                    <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                </div>
-                                <p class="text-sm font-bold mb-2">Line Combinations</p>
-                            </button>
-                            <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                <div class="flex flex-row items-center w-auto">
-                                    <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                    <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                </div>
-                                <p class="text-sm font-bold mb-2">Line Combinations</p>
-                            </button> -->
-                            <!-- <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            <li class="flex flex-row justify-between gap-3">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li>
-                            <li class="flex flex-row justify-evenly">
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                                <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white">
-                                    <div class="flex flex-row items-center w-auto">
-                                        <img class="w-[3rem]" src="{{ asset('/images/teamlogo-svg/pittsburgh-penguins.svg') }}" alt="">
-                                        <h1 class="text-lg font-bold">Pittsburgh Penguins</h1>
-                                    </div>
-                                    <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                </button>
-                            </li> -->
+                           
                         </ul>
                     </div>
                 </div> 
@@ -415,7 +334,7 @@
                    </div>
            </div>
            @include('partials.nhl-sidebar')
-    </div>
+    </div> -->
 <!-- End of Design -->
 
 
