@@ -41,25 +41,25 @@
             </div>
         </div> 
     </div> -->
-    <div class="w-11/12 flex flex-row justify-between ">
-        <div class="flex flex-col xl:w-[77%] lg:w-9/12 md:w-full">
+    <div class="xl:w-11/12 lg:w-full flex flex-row justify-between ">
+        <div class="flex flex-col xl:w-[77%] lg:w-[76%] md:8/12">
             <div class="flex flex-col w-full">
                 <div class="flex justify-center mb-5">
                     <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
-                <div class="flex  flex-row justify-center gap-3">
+                <div class="flex flex-row justify-center gap-3">
                     @foreach($contentPosts as $key=>$item)
                         {{--{{ $item->category->slug }}--}}
                         @if($item->category->slug === 'morning-skate')
-                            <div class="w-[18rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
+                            <div class="xl:w-[18rem] lg:w-[16rem] xl:h-80 lg:h-[17rem] border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="m-1 mt-4 xl:w-[15rem] lg:w-[13rem]  flex flex-col xl:items-start lg:items-center gap-1">
                                     <div class="flex flex-row items-center gap-2">
-                                        <img class="w-8" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                        <img class="xl:w-8 lg:w-6" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
-                                    <img src="  {{$item->metafields->featured_image->url }}" class="w-[16rem]">
-                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
-                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="xl:w-[16rem] lg:w-[10rem]">
+                                    <p class="text-[13px] xl:text-start lg:text-center  xl:font-extrabold lg:font-bold">{{$item->title}}</p>
+                                    <p class="text-[13px] xl:font-extrabold lg:font-bold">{{$item->published_at->datetime}}</p>
                                 </div>
                                 <div class="w-full ">
                                     <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
@@ -67,15 +67,15 @@
                             </div>
                         @endif
                         @if($item->category->slug === 'top-stacks')
-                            <div class="w-[18rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1 ">
+                            <div class="xl:w-[18rem] lg:w-[16rem] xl:h-80 lg:h-[17rem]  border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="m-1 mt-4 xl:w-[15rem] lg:w-[13rem]  flex flex-col xl:items-start lg:items-center gap-1 ">
                                     <div class="flex flex-row items-center gap-2">
-                                        <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
+                                        <img class="xl:w-8 lg:w-6" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
-                                    <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
-                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
-                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="xl:w-[16rem] lg:w-[10rem]">
+                                    <p class="text-[13px] xl:text-start lg:text-center  xl:font-extrabold lg:font-bold">{{$item->title}}</p>
+                                    <p class="text-[13px] xl:font-extrabold lg:font-bold">{{$item->published_at->datetime}}</p>
                                 </div>
                                 <div class=" w-full ">
                                     <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
@@ -83,17 +83,17 @@
                             </div>
                         @endif
                         @if($item->category->slug === 'props-and-odds')
-                            <div class="w-[18rem] h-80 border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
-                                <div class="m-1 mt-4 w-[15rem] flex flex-col gap-1">
+                            <div class="xl:w-[18rem] lg:w-[16rem] xl:h-80 lg:h-[17rem] border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
+                                <div class="m-1 mt-4 xl:w-[15rem] lg:w-[13rem] flex flex-col xl:items-start lg:items-center gap-1">
                                     <div class="flex flex-row items-center gap-2">
-                                        <div class="w-7 h-7 bg-green-600 rounded-full flex justify-center items-center">
-                                            <p class="text-xl font-bold text-white">$</p>
+                                        <div class="xl:w-7 xl:h-7 lg:w-5 lg:h-5 bg-green-600 rounded-full flex justify-center items-center">
+                                            <p class="xl:text-xl lg:text-lg font-bold text-white">$</p>
                                         </div>
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
-                                    <img src="{{$item->metafields->featured_image->url }}" class="w-[16rem]">
-                                    <p class="text-[12px] font-extrabold">{{$item->title}}</p>
-                                    <p class="text-[12px] font-extrabold">{{$item->published_at->datetime}}</p>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="xl:w-[16rem] lg:w-[10rem]">
+                                    <p class="text-[13px] xl:text-start lg:text-center  xl:font-extrabold lg:font-bold">{{$item->title}}</p>
+                                    <p class="text-[13px] xl:font-extrabold lg:font-bold">{{$item->published_at->datetime}}</p>
                                 </div>
                                 <div class="w-full ">
                                     <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
@@ -165,7 +165,7 @@
                         </ul>
                     </div>
                 </div> -->
-                <div class="w-full flex justify-center my-5">
+                <div class="w-full flex justify-center my-5  ">
                     <div class="w-11/12">
                         <!-- <div class="flex items-center">
                             <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
@@ -224,7 +224,7 @@
                                                 <div class="flex flex-col ml-2 gap-3">
                                                     <div class="flex flex-row gap-2">
                                                         <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                                        <p class="text-[11px] font-bold">
+                                                        <p class="xl:text-[11px] lg:text-[9px] font-bold">
                                                         {{$val->metafields->goalie_status->name}}
                                                         </p>
                                                     </div>
@@ -271,7 +271,7 @@
                                     <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                            <p class="text-[11px] font-bold">Confirmed</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Confirmed</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
@@ -303,7 +303,7 @@
                                     <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                            <p class="text-[11px] font-bold">Confirmed</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Confirmed</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
@@ -335,7 +335,7 @@
                                     <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                            <p class="text-[11px] font-bold">Confirmed</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Confirmed</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
@@ -369,7 +369,7 @@
                                     <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                            <p class="text-[11px] font-bold">Confirmed</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Confirmed</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
@@ -401,7 +401,7 @@
                                     <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                            <p class="text-[11px] font-bold">Confirmed</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Confirmed</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
@@ -433,7 +433,7 @@
                                     <div class="flex flex-col ml-2 gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
-                                            <p class="text-[11px] font-bold">Confirmed</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Confirmed</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class="xl:text-xl lg:text-xl md:text-base font-extrabold">Igor Shesterkin</h1>
@@ -685,26 +685,26 @@
                     </div>
                 </div> -->
             </div>
-            <div class="flex flex-col w-full">  
+            <div class="flex flex-col w-full ">  
                 <div class="flex flex-col">
-                   <div class="flex items-center ml-[2rem]">
+                   <div class="flex items-center  ">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5  ">
                             NHL Player News
                         </h1>
                     </div>
-                    <div class="flex  flex-wrap justify-center gap-3">
+                    <div class="flex  flex-wrap justify-center xl:gap-3 lg:gap-1">
                         @foreach($goalies->data as $key=>$val)
                             @if(isset($val->type))
                                @if(!empty($val->type->slug))
                                     @if($val->type->slug === 'line-change'  )    
-                                        <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]  md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                                        <div class="flex flex-col gap-3 xl:w-[18rem] lg:w-[16rem] xl:h-[21rem] lg:h-[21rem]  md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
                                             <div class="flex m-2 mt-5 ">
                                                 <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
                                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                                     <div class="flex flex-row gap-2">
                                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                                        <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                                        <p class="xl:text-[11px] lg:text-[9px] font-bold">{{$val->type->name}}</p>
                                                     </div>
                                                     <div class="flex flex-col">
                                                         <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
@@ -730,13 +730,13 @@
                                 @endif
                             @endif
                         @endforeach
-                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                            <div class="flex flex-col gap-3 xl:w-[18rem] lg:w-[16rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
                                 <div class="flex m-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
                                     <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">{{$val->type->name}}</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
@@ -758,13 +758,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                            <div class="flex flex-col gap-3 xl:w-[18rem] lg:w-[16rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
                                 <div class="flex m-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
                                     <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">{{$val->type->name}}</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
@@ -786,13 +786,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                            <div class="flex flex-col gap-3 xl:w-[18rem] lg:w-[16rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
                                 <div class="flex m-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
                                     <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">{{$val->type->name}}</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
@@ -814,13 +814,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                            <div class="flex flex-col gap-3 xl:w-[18rem] lg:w-[16rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
                                 <div class="flex m-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
                                     <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">{{$val->type->name}}</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
@@ -842,13 +842,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-3 w-[18rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
+                            <div class="flex flex-col gap-3 xl:w-[18rem] lg:w-[16rem] xl:h-[21rem] lg:h-[21rem]   md:h-[18rem] border border-black rounded-xl bg-white relative mb-3">
                                 <div class="flex m-2 mt-5 ">
                                     <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{$val->player->images->uniform}}">
                                     <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                            <p class="text-[11px] font-bold">{{$val->type->name}}</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">{{$val->type->name}}</p>
                                         </div>
                                         <div class="flex flex-col">
                                             <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">{{$val->player->full_name}}</h1>
@@ -876,7 +876,7 @@
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                        <p class="text-[11px] font-bold">Line Changes</p>
+                                        <p class="xl:text-[11px] lg:text-[9px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
                                         <h1 class=" xl:text-xl lg:text-lg md:text-base  font-extrabold">John Tavares</h1>
@@ -902,7 +902,7 @@
                                 <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-2">
                                     <div class="flex flex-row gap-2">
                                         <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                        <p class="text-[11px] font-bold">Line Changes</p>
+                                        <p class="xl:text-[11px] lg:text-[9px] font-bold">Line Changes</p>
                                     </div>
                                     <div class="flex flex-col">
                                         <h1 class="xl:text-xl lg:text-lg md:text-base  font-extrabold">Connor Mcdavid</h1>
@@ -931,9 +931,9 @@
                     <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
                     <img class="xl:w-96 lg:w-80 md:w-64" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div> 
-                     <div class="flex items-center ml-[2rem]">
+                     <div class="flex items-center ">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
-                        <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
+                        <h1 class="text-2xl font-bold pt-5 pb-5 ">
                             Latest Articles
                         </h1>
                     </div>
@@ -1003,164 +1003,164 @@
                     </div>
                     <table>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center w-full border border-slate-200 text-[11px] font-bold">Player</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-bold ">Pos </td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Salary </td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Team </td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Opp </td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Time </td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Win % </td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">ML </td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Q/U </td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-bold ">Team Goal </td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-bold ">Opp Goal </td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">Start/line </td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-bold ">PP Unit </td>
-                            <td class="flex justify-center items-center w-full border border-slate-200 text-[11px] font-bold ">Projections </td>
+                            <td class="flex justify-start items-center w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold">Player</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Pos </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Salary </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Team </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Opp </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Time </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Win % </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">ML </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Q/U </td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Team Goal </td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Opp Goal </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Start/line </td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">PP Unit </td>
+                            <td class="flex justify-center items-center w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-bold ">Projections </td>
                         </tr>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center w-full border border-slate-200 text-[11px] font-semibold">John Kingberg</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">D</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4000</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">MIN</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">DAL</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">9:30 pm</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">40.0</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">+150</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">5.5</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.45</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.05</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-full border border-slate-200 text-[11px] font-semibold "> </td>
+                            <td class="flex justify-start items-center w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold">John Kingberg</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">D</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">4000</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">MIN</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">DAL</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">9:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">40.0</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">+150</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">5.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">2.45</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3.05</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold "> </td>
                         </tr>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Nick Bjugstad</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">3400</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">EDM</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">LAK</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">10:00 pm</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">66.10</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-159</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.84</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.66</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">7.27</td>
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold">Nick Bjugstad</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3400</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">EDM</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">LAK</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">10:00 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">66.10</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-159</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3.84</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">2.66</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7.27</td>
                         </tr>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Shayne Gostisbehere</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">D</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4400</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">CAR</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">NYI</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:00 pm</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">62.30</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-165</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">5.5</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.12</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.38</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">7.04</td>
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold">Shayne Gostisbehere</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">D</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">4400</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">CAR</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">NYI</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7:00 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">62.30</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-165</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">5.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3.12</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">2.38</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7.04</td>
                         </tr>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Taylor Hail</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4400</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">7.22</td>
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold">Taylor Hail</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">W</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">4400</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7.22</td>
                         </tr>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">David Krejci</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4500</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">9.46</td>
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold">David Krejci</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">4500</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">9.46</td>
                         </tr>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">David Pastrnak</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">9600</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">25.58</td>
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold">David Pastrnak</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">W</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">9600</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">25.58</td>
                         </tr>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Pavel Zacha</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">4000</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">9.72</td>
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold">Pavel Zacha</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">4000</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">9.72</td>
                         </tr>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Patrice Bergeron</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">C</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6100</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold "> </td>
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold">Patrice Bergeron</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">C</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">6100</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold "> </td>
                         </tr>
                         <tr class="flex flex-row justify-between h-[1.5rem] ">
-                            <td class="flex justify-start items-center border  w-full border border-slate-200 text-[11px] font-semibold">Jake Debrusk</td>
-                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 text-[11px] font-semibold ">W</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">5700</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">BOS</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">FLA</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">7:30 pm</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">69.20</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-225</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">6.5</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">3.06</td>
-                            <td class="flex justify-center items-center w-[60%] border border-slate-200 text-[11px] font-semibold ">2.54</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center w-[40%] border border-slate-200 text-[11px] font-semibold ">-</td>
-                            <td class="flex justify-center items-center border  w-full border border-slate-200 text-[11px] font-semibold ">16.01</td>
+                            <td class="flex justify-start items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold">Jake Debrusk</td>
+                            <td class="flex justify-center items-center w-[40%]  border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">W</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">5700</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">BOS</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">FLA</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">7:30 pm</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">69.20</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-225</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">6.5</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">3.06</td>
+                            <td class="flex justify-center items-center w-[60%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">2.54</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center w-[40%] border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">-</td>
+                            <td class="flex justify-center items-center border  w-full border border-slate-200 xl:text-[11px] lg:text-[9px] font-semibold ">16.01</td>
                         </tr>
                     </table>
                     <div class="w-full flex justify-center my-5">
@@ -1430,7 +1430,7 @@
             </div>
         </div>   
         <!-- Articles  -->
-        <div class=" flex flex-col w-64">
+        <div class=" flex flex-col xl:w-64 lg:w-52">
             <div class="flex flex-col gap-5 mt-9 ">
                 <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
                     <h1 class="font-bold">Starting Goalies</h1>
@@ -1504,7 +1504,7 @@
                                 </p>
                                 <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="xl:text-[11px] lg:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
@@ -1516,7 +1516,7 @@
                                 </p>
                                 <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="xl:text-[11px] lg:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
@@ -1528,7 +1528,7 @@
                                 </p>
                                 <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="xl:text-[11px] lg:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
@@ -1540,7 +1540,7 @@
                                 </p>
                                 <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="xl:text-[11px] lg:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full" style=" ">   
@@ -1552,7 +1552,7 @@
                                 </p>
                                 <p class="text-[11px] text-slate-500">30 min ago</p>
                             </div>
-                            <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                            <p class="xl:text-[11px] lg:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                         </div>
                     </div>
                     <div class="w-full flex justify-center">
@@ -1577,7 +1577,7 @@
                                     <div class="ml-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                            <p class="text-[11px] font-bold">Injury</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Injury</p>
                                         </div>
                                         <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
                                         <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p> 
@@ -1602,7 +1602,7 @@
                                     <div class="ml-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                            <p class="text-[11px] font-bold">Injury</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Injury</p>
                                         </div>
                                         <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
                                         <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
@@ -1627,7 +1627,7 @@
                                     <div class="ml-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                            <p class="text-[11px] font-bold">Injury</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Injury</p>
                                         </div>
                                         <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
                                         <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
@@ -1655,7 +1655,7 @@
                                     <div class="ml-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                            <p class="text-[11px] font-bold">Injury</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Injury</p>
                                         </div>
                                         <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
                                         <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
@@ -1681,7 +1681,7 @@
                                     <div class="ml-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                            <p class="text-[11px] font-bold">Injury</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Injury</p>
                                         </div>
                                         <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
                                         <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
@@ -1706,7 +1706,7 @@
                                     <div class="ml-2">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]  " src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                            <p class="text-[11px] font-bold">Injury</p>
+                                            <p class="xl:text-[11px] lg:text-[9px] font-bold">Injury</p>
                                         </div>
                                         <h1 class=" text-xl font-extrabold">Pascal Francouz</h1>
                                         <p class="text-[10px] font-semibold">Pittsburgh Penguins - D</p>
@@ -2533,7 +2533,7 @@
                                             </div>
                                             <div class=" mx-2 mb-2 pb-1">
                                                 <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
-                                                <p class="text-[11px] font-semibold">{{$val->description}}</p>
+                                                <p class="xl:text-[11px] lg:text-[9px] font-semibold">{{$val->description}}</p>
                                             </div>
                                             <div class="flex items-center justify-between absolute bottom-2 w-full">
                                                 <div class="flex flex-row items-center mx-2">
@@ -2572,7 +2572,7 @@
                                             </div>
                                             <div class=" mx-2 mb-2 pb-1">
                                                 <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
-                                                <p class="text-[11px] font-semibold">{{$val->description}}</p>
+                                                <p class="xl:text-[11px] lg:text-[9px] font-semibold">{{$val->description}}</p>
                                             </div>
                                             <div class="flex items-center justify-between  absolute bottom-2 w-full">
                                                 <div class="flex flex-row items-center mx-2">
@@ -2676,7 +2676,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-md font-extrabold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[11px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                <p class="xl:text-[11px] lg:text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -2706,7 +2706,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-md font-extrabold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[11px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                <p class="xl:text-[11px] lg:text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -2736,7 +2736,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-md font-extrabold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[11px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                <p class="xl:text-[11px] lg:text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -2824,7 +2824,7 @@
                                             </div>
                                             <div class="mx-2 ">
                                                 <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
-                                                <p class="text-[11px] font-semibold">{{$val->description}}</p>
+                                                <p class="xl:text-[11px] lg:text-[9px] font-semibold">{{$val->description}}</p>
                                             </div>
                                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -2858,7 +2858,7 @@
                                             </div>
                                             <div class="mx-2">
                                                 <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
-                                                <p class="text-[11px] font-semibold">{{$val->description}}</p>
+                                                <p class="xl:text-[11px] lg:text-[9px] font-semibold">{{$val->description}}</p>
                                             </div>
                                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -2898,7 +2898,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-md font-extrabold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[11px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                <p class="xl:text-[11px] lg:text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
@@ -2931,7 +2931,7 @@
                             </div>
                             <div class=" ml-1">
                                 <p class="text-md font-extrabold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                                <p class="text-[11px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
+                                <p class="xl:text-[11px] lg:text-[9px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
                             </div>
                             <div class="flex flex-row items-center absolute left-3 bottom-2">
                                 <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
