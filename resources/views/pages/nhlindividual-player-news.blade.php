@@ -364,7 +364,7 @@
                 <div class="w-full bg-[#062ea6] h-36 flex flex-row items-end  justify-center">
                    <div class="w-9/12 flex items-center justify-between">
                       <h1 class="text-5xl font-bold text-white  ">John Tavares</h1>
-                      <img class="w-28 h-28   " src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+                      <img class="w-28 h-28" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
                    </div>
                 </div>
             </div>

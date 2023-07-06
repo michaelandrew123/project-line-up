@@ -2,8 +2,8 @@
 
 @section('content')
 
-    <div class="w-full flex justify-center">
-        <div class="xl:w-11/12 lg:w-11/12 md:w-full flex flex-col items-center w-full gap-[5rem] max-w-screen-2xl ">
+    <div class="w-full flex justify-center block smm-hidden ">
+        <div class="xl:w-full lg:w-full  md:w-full flex flex-col items-center gap-[5rem] max-w-screen-2xl ">
             <!-- <div class="flex flex-row justify-between items-end flex w-full my-5">
                 <div class="flex gap-1 items-end">
                     <img class="w-[99px]" src="{{ asset('/images/line-combos/logo/matthew_tkachuk.png') }}" alt="">
@@ -42,69 +42,69 @@
             <div class="w-full flex justify-between">
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
-                      <img class="w-12" src="{{ asset('/images/menu-icon/puck icon 40x40.png') }}" alt="">
-                      <h1 class="text-4xl font-extrabold text-black">NHL</h1>
+                      <img class="xl:w-12 lg:w-12 md:w-10" src="{{ asset('/images/menu-icon/puck icon 40x40.png') }}" alt="">
+                      <h1 class="xl:text-4xl lg:text-4xl md:text-3xl font-extrabold text-black">NHL</h1>
                     </div>
-                    <ul class="flex flex-col gap-2">
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Line Combinations</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="{{url('/nhl/')}}">Starting goalies</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">DFS Projections</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Latest Articles</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Player News</a></li>
+                    <ul class="flex flex-col gap-2 xl:text-xl lg:text-xl md:text-lg">
+                        <li><a class=" font-bold text-[#39b6ff]" href="">Line Combinations</a></li>
+                        <li><a class=" font-bold text-[#39b6ff]" href="{{url('/nhl/')}}">Starting goalies</a></li>
+                        <li><a class="  font-bold text-[#39b6ff]" href="">DFS Projections</a></li>
+                        <li><a class="  font-bold text-[#39b6ff]" href="">Latest Articles</a></li>
+                        <li><a class=" font-bold text-[#39b6ff]" href="">Player News</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
-                        <img class="w-10" src="{{ asset('/images/menu-icon/baskball icon 40x40.png') }}" alt="">
-                        <h1 class="text-4xl font-extrabold text-black">NBA</h1>
+                        <img class="xl:w-12 lg:w-12 md:w-10" src="{{ asset('/images/menu-icon/baskball icon 40x40.png') }}" alt="">
+                        <h1 class="xl:text-4xl lg:text-4xl md:text-3xl font-extrabold text-black">NBA</h1>
                     </div>
-                    <ul class="flex flex-col gap-2">
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Matchups</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">DFS Projections</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Latest Articles</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Player News</a></li>
+                    <ul class="flex flex-col gap-2  xl:text-xl lg:text-xl md:text-lg">
+                        <li><a class="font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">Matchups</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">DFS Projections</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">Latest Articles</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">Player News</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
-                        <img class="w-11 -rotate-45" src="{{ asset('/images/menu-icon/football icon 40x40.png') }}" alt="">
-                        <h1 class="text-4xl font-extrabold text-black">NFL</h1>
-                    </div>
-                    <ul class="flex flex-col gap-2">
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Depth Charts</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Matchups</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">DFS Projections</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Latest Articles</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Player News</a></li>
+                        <img class="xl:w-11 lg:w-11 md:w-10 -rotate-45" src="{{ asset('/images/menu-icon/football icon 40x40.png') }}" alt="">
+                        <h1 class="xl:text-4xl lg:text-4xl md:text-3xl font-extrabold text-black">NFL</h1>
+                    </div> 
+                    <ul class="flex flex-col gap-2  xl:text-xl lg:text-xl md:text-lg">
+                        <li><a class="font-bold text-[#39b6ff]" href="">Depth Charts</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">Matchups</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">DFS Projections</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">Latest Articles</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">Player News</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
-                    <img class="w-10" src="{{ asset('/images/menu-icon/soccer icon 40x40.png') }}" alt="">
-                    <h1 class="text-4xl font-extrabold text-black">EPL-MLS</h1>
+                    <img class="xl:w-10 lg:w-10 md:w-9" src="{{ asset('/images/menu-icon/soccer icon 40x40.png') }}" alt="">
+                    <h1 class="xl:text-4xl lg:text-4xl md:text-3xl font-extrabold text-black">EPL-MLS</h1>
                     </div>
-                    <ul class="flex flex-col gap-2">
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Matchups</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">DFS Projections</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Latest Articles</a></li>
-                        <li><a class="text-xl font-bold text-[#39b6ff]" href="">Player News</a></li>
+                    <ul class="flex flex-col gap-2  xl:text-xl lg:text-xl md:text-lg">
+                        <li><a class="font-bold text-[#39b6ff]" href="">Starting Lineups</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">Matchups</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">DFS Projections</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">Latest Articles</a></li>
+                        <li><a class="font-bold text-[#39b6ff]" href="">Player News</a></li>
                     </ul>
                 </div>
             </div>
             <div class="w-full  flex flex-col  mt-16 gap-6  ">
-                <h1 class="text-6xl font-bold text-center text-black">Your destination for fantasy sports <br> players and bettors</h1>
+                <h1 class="xl:text-6xl lg:text-5xl md:text-5xl font-bold text-center text-black">Your destination for fantasy sports <br> players and bettors</h1>
                 <div class="flex flex-col w-full">
                     <div class="flex flex-row gap-3">
                         <img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
-                        <h1 class="text-4xl font-bold">NHL</h1>
+                        <h1 class="xl:text-4xl lg:text-3xl md:text-2xl font-bold">NHL</h1>
                     </div>
-                    <div class="flex flex-col w-full gap-5 mt-3">
+                    <div class="flex flex-col w-full xl:gap-5 lg:gap-3 md:gap-2 mt-3">
                         <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -134,9 +134,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -166,9 +166,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -207,13 +207,13 @@
                 <div class="flex flex-col w-full">
                     <div class="flex flex-row gap-3">
                         <img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
-                        <h1 class="text-4xl font-bold">NBA</h1>
+                        <h1 class="xl:text-4xl lg:text-3xl md:text-2xl font-bold">NBA</h1>
                     </div>
-                    <div class="flex flex-col w-full gap-5 mt-3">
+                    <div class="flex flex-col w-full xl:gap-5 lg:gap-5 md:gap-1 mt-3">
                         <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
-                                <div class="flex m-3 mt-5 ">
-                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -243,9 +243,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -275,9 +275,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -316,13 +316,13 @@
                 <div class="flex flex-col w-full">
                     <div class="flex flex-row gap-3">
                         <img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
-                        <h1 class="text-4xl font-bold">NFL</h1>
+                        <h1 class="xl:text-4xl lg:text-3xl md:text-2xl font-bold">NFL</h1>
                     </div>
-                    <div class="flex flex-col w-full gap-5 mt-3">
+                    <div class="flex flex-col w-full xl:gap-5 lg:gap-5 md:gap-1 mt-3">
                         <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -352,9 +352,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -384,9 +384,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -425,13 +425,13 @@
                 <div class="flex flex-col w-full">
                     <div class="flex flex-row gap-3">
                         <img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
-                        <h1 class="text-4xl font-bold">EPL</h1>
+                        <h1 class="xl:text-4xl lg:text-3xl md:text-2xl font-bold">EPL</h1>
                     </div>
-                    <div class="flex flex-col w-full gap-5 mt-3">
+                    <div class="flex flex-col w-full xl:gap-5 lg:gap-5 md:gap-1 mt-3">
                         <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -461,9 +461,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -493,9 +493,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white  border">
-                                <div class="flex m-3 mt-5 ">
-                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
+                            <div class="xl:w-[30%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white border">
+                                <div class="flex m-3 mt-5 gap-2">
+                                   <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}">
                                     <div class="flex flex-col gap-3">
                                         <div class="flex flex-row gap-2">
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">

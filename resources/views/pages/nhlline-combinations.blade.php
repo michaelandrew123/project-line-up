@@ -42,21 +42,29 @@
     <div class="w-full flex justify-center bg-slate-100 mt-10">
        <div class="w-11/12 flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
           <div class="flex flex-col  w-9/12 gap-5">
-                <div class="w-full bg-[#1d9bf0] flex flex-row  items-center rounded-md">
+                <div class="w-full bg-[#38b6ff] flex flex-row  items-center rounded-md">
                     <h1 class="text-center py-10 text-3xl font-bold w-full">  NHL Line Combinations</h1>
                 </div>
                 <table class="">
                     @foreach($team->data as $key=>$val)
                         @if($val->league->slug == 'nhl')
-                            <tr class="w-full flex justify-between border-b-2 border-slate-200 ">
-                                <td class="flex items-center gap-2 border-0">
+                            <tr class="w-full flex  items-center border-b-2 border-slate-200 h-12">
+                                <td class="w-full flex items-center gap-2 border-0">
                                     <img class="w-7" src="{{$val->logo->src}}" alt="">
                                     <h1 class="text-base font-bold">{{$val->name}}</h1>
                                 </td>
-                                <td class="text-base font-bold text-[#1d9bf0] border-0" href="">Forward</td>
-                                <td class="text-base font-bold text-[#1d9bf0] border-0" href="">Defence</td>
-                                <td class="text-base font-bold text-[#1d9bf0]  border-0" href="">Goalie</td>
-                                <td class="text-base font-bold text-[#1d9bf0]  border-0" href="">Power Play</td>
+                                <td class="w-[60%] border-0" href="">
+                                 <a class="text-base font-bold text-[#38b6ff]" href="">Forward</a>   
+                                </td>
+                                <td class="w-[60%] border-0" href="">
+                                 <a class="text-base font-bold text-[#38b6ff]" href="">Defence</a>   
+                                </td>
+                                <td class="w-[60%] border-0" href="">
+                                 <a class="text-base font-bold text-[#38b6ff]" href="">Goalie</a>   
+                                </td>
+                                <td class="w-[60%] border-0" href="">
+                                 <a class="text-base font-bold text-[#38b6ff]" href="">Power Play</a>   
+                                </td>
                             </tr>
                         @endif
                     @endforeach
