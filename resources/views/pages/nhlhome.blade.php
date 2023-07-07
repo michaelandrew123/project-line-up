@@ -41,25 +41,25 @@
             </div>
         </div> 
     </div> -->
-    <div class="xl:w-11/12 lg:w-full flex flex-row justify-between ">
+    <div class="xl:w-11/12 lg:w-full flex flex-row xl:justify-between lg:justify-evenly">
         <div class="flex flex-col xl:w-[77%] lg:w-[76%] md:8/12">
             <div class="flex flex-col w-full">
                 <div class="flex justify-center mb-5">
                     <img class="w-10/12 h-20" src="{{ asset('/images/menu-icon/adds_header.png') }}">
                 </div>
-                <div class="flex flex-row justify-center gap-3">
+                <div class="flex flex-row justify-center xl:gap-3 lg:gap-3 md:gap-2">
                     @foreach($contentPosts as $key=>$item)
                         {{--{{ $item->category->slug }}--}}
                         @if($item->category->slug === 'morning-skate')
-                            <div class="xl:w-[18rem] lg:w-[16rem] xl:h-80 lg:h-[17rem] border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
-                                <div class="m-1 mt-4 xl:w-[15rem] lg:w-[13rem]  flex flex-col xl:items-start lg:items-center gap-1">
+                            <div class="xl:w-[18rem] lg:w-[16rem] xl:h-80 lg:h-[17rem] md:h-[15rem] border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="m-1 xl:mt-4 lg:mt-4 md:mt-1 xl:w-[15rem] lg:w-[13rem]  md:w-[11rem] flex flex-col xl:items-start items-center gap-1  ">
                                     <div class="flex flex-row items-center gap-2">
-                                        <img class="xl:w-8 lg:w-6" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                        <img class="xl:w-8 lg:w-6 md:w-6" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
-                                    <img src="{{$item->metafields->featured_image->url }}" class="xl:w-[16rem] lg:w-[10rem]">
-                                    <p class="text-[13px] xl:text-start lg:text-center  xl:font-extrabold lg:font-bold">{{$item->title}}</p>
-                                    <p class="text-[13px] xl:font-extrabold lg:font-bold">{{$item->published_at->datetime}}</p>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="xl:w-[16rem] lg:w-[10rem] md:w-[9rem]">
+                                    <p class="xl:text-[13px] lg:text-[13px] md:text-[11px] xl:text-start text-center  xl:font-extrabold  font-bold">{{$item->title}}</p>
+                                    <p class="xl:text-[13px] lg:text-[13px] md:text-[11px] xl:font-extrabold font-bold">{{$item->published_at->datetime}}</p>
                                 </div>
                                 <div class="w-full ">
                                     <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
@@ -67,15 +67,15 @@
                             </div>
                         @endif
                         @if($item->category->slug === 'top-stacks')
-                            <div class="xl:w-[18rem] lg:w-[16rem] xl:h-80 lg:h-[17rem]  border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
-                                <div class="m-1 mt-4 xl:w-[15rem] lg:w-[13rem]  flex flex-col xl:items-start lg:items-center gap-1 ">
+                            <div class="xl:w-[18rem] lg:w-[16rem] xl:h-80 lg:h-[17rem] md:h-[15rem] border border-slate-200  rounded-xl flex flex-col items-center bg-white relative">
+                                <div class="m-1 xl:mt-4 lg:mt-4 md:mt-1 xl:w-[15rem] lg:w-[13rem] md:w-[11rem]  flex flex-col xl:items-start items-center gap-1  ">
                                     <div class="flex flex-row items-center gap-2">
-                                        <img class="xl:w-8 lg:w-6" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
+                                        <img class="xl:w-8 lg:w-6 md:w-6" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
-                                    <img src="{{$item->metafields->featured_image->url }}" class="xl:w-[16rem] lg:w-[10rem]">
-                                    <p class="text-[13px] xl:text-start lg:text-center  xl:font-extrabold lg:font-bold">{{$item->title}}</p>
-                                    <p class="text-[13px] xl:font-extrabold lg:font-bold">{{$item->published_at->datetime}}</p>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="xl:w-[16rem] lg:w-[10rem] md:w-[9rem]">
+                                    <p class="xl:text-[13px] lg:text-[13px] md:text-[11px] xl:text-start text-center  xl:font-extrabold  font-bold">{{$item->title}}</p>
+                                    <p class="xl:text-[13px] lg:text-[13px] md:text-[11px] xl:font-extrabold font-bold">{{$item->published_at->datetime}}</p>
                                 </div>
                                 <div class=" w-full ">
                                     <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
@@ -83,17 +83,17 @@
                             </div>
                         @endif
                         @if($item->category->slug === 'props-and-odds')
-                            <div class="xl:w-[18rem] lg:w-[16rem] xl:h-80 lg:h-[17rem] border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
-                                <div class="m-1 mt-4 xl:w-[15rem] lg:w-[13rem] flex flex-col xl:items-start lg:items-center gap-1">
+                            <div class="xl:w-[18rem] lg:w-[16rem] xl:h-80 lg:h-[17rem] md:h-[15rem] border border-slate-200  rounded-xl flex flex-col items-center bg-white  relative">
+                                <div class="m-1 xl:mt-4 lg:mt-4 md:mt-1 xl:w-[15rem] lg:w-[13rem]  md:w-[11rem] flex flex-col xl:items-start items-center gap-1 ">
                                     <div class="flex flex-row items-center gap-2">
-                                        <div class="xl:w-7 xl:h-7 lg:w-5 lg:h-5 bg-green-600 rounded-full flex justify-center items-center">
+                                        <div class="xl:w-7 xl:h-7 w-5 h-5 bg-green-600 rounded-full flex justify-center items-center">
                                             <p class="xl:text-xl lg:text-lg font-bold text-white">$</p>
                                         </div>
                                         <h1 class="font-extrabold">{{$item->category->name}}</h1>
                                     </div>
-                                    <img src="{{$item->metafields->featured_image->url }}" class="xl:w-[16rem] lg:w-[10rem]">
-                                    <p class="text-[13px] xl:text-start lg:text-center  xl:font-extrabold lg:font-bold">{{$item->title}}</p>
-                                    <p class="text-[13px] xl:font-extrabold lg:font-bold">{{$item->published_at->datetime}}</p>
+                                    <img src="{{$item->metafields->featured_image->url }}" class="xl:w-[16rem] lg:w-[10rem] md:w-[9rem]">
+                                    <p class="xl:text-[13px] lg:text-[13px] md:text-[11px]  xl:text-start text-center  xl:font-extrabold  font-bold">{{$item->title}}</p>
+                                    <p class="xl:text-[13px] lg:text-[13px] md:text-[11px] xl:font-extrabold font-bold">{{$item->published_at->datetime}}</p>
                                 </div>
                                 <div class="w-full ">
                                     <img class="w-[21px] h-[25px] absolute bottom-3 right-5" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
@@ -165,7 +165,8 @@
                         </ul>
                     </div>
                 </div> -->
-                <div class="w-full flex justify-center my-5  ">
+                <div class="w-full
+                flex justify-center my-5  hidden">
                     <div class="w-11/12">
                         <!-- <div class="flex items-center">
                             <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
@@ -685,7 +686,7 @@
                     </div>
                 </div> -->
             </div>
-            <div class="flex flex-col w-full ">  
+            <div class="flex flex-col w-full hidden">  
                 <div class="flex flex-col">
                    <div class="flex items-center  ">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
@@ -993,7 +994,7 @@
                         @endforeach
                     </div>
                     <div class="w-full flex justify-center my-5">
-                        <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NHL Articles</a>
+                        <a href="" class="text-[#1d9bf0] font-bold xl:text-sm lg:text-[13px]">View All NHL Articles</a>
                     </div>
                     <div class="flex items-center">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
@@ -1430,62 +1431,62 @@
             </div>
         </div>   
         <!-- Articles  -->
-        <div class=" flex flex-col xl:w-64 lg:w-52">
+        <div class=" flex flex-col xl:w-64 lg:w-52 md:w-40">
             <div class="flex flex-col gap-5 mt-9 ">
                 <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
                     <h1 class="font-bold">Starting Goalies</h1>
                 </div>
                 <div id=" " class="flex flex-col gap-4 w-full">
                     <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                        <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                        <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                         <div class="flex flex-col">
                             <div class="flex flex-col justify-center">
-                                <p class="font-bold text-sm">
+                                <p class="font-bold xl:text-sm lg:text-sm md:text-[12px]">
                                     Linus Ullmark - BOS
                                 </p>
                             </div>
-                            <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
-                            <p class="text-[12px] text-slate-500">30 min ago</p>
+                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
+                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                        <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                        <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                         <div class="flex flex-col">
                             <div class="flex flex-col justify-center">
-                                <p class="font-bold text-sm">
+                                <p class="font-bold xl:text-sm lg:text-sm md:text-[12px]">
                                     Linus Ullmark - BOS
                                 </p>
                             </div>
-                            <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
-                            <p class="text-[12px] text-slate-500">30 min ago</p>
+                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
+                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                        <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                        <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                         <div class="flex flex-col">
                             <div class="flex flex-col justify-center">
-                                <p class="font-bold text-sm">
+                                <p class="font-bold xl:text-sm lg:text-sm md:text-[12px]">
                                     Linus Ullmark - BOS
                                 </p>
                             </div>
-                            <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
-                            <p class="text-[12px] text-slate-500">30 min ago</p>
+                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
+                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                         </div>
                     </div>
                     <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                        <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                        <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                         <div class="flex flex-col">
                             <div class="flex flex-col justify-center">
-                                <p class="font-bold text-sm">
+                                <p class="font-bold xl:text-sm lg:text-sm md:text-[12px]">
                                     Linus Ullmark - BOS
                                 </p>
                             </div>
-                            <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
-                            <p class="text-[12px] text-slate-500">30 min ago</p>
+                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
+                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                         </div>
                     </div> 
                     <div class="w-full flex justify-center">
-                        <a class="font-semibold text-sm text-[#38b6ff]" href="">View Today's Starting Goalies</a>
+                        <a class="font-semibold xl:text-sm lg:text-sm md:text-[13px] text-[#38b6ff]" href="">View Today's Starting Goalies</a>
                     </div>
                 </div>
                 <div class="flex justify-center">
@@ -1556,7 +1557,7 @@
                         </div>
                     </div>
                     <div class="w-full flex justify-center">
-                        <a class="font-semibold text-sm text-[#38b6ff]" href="">View NHL Line Combinations</a>
+                        <a class="font-semibold xl:text-sm lg:text-sm md:text-[13px] text-[#38b6ff]" href="">View NHL Line Combinations</a>
                     </div>
                 </div>
             </div>  

@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="flex flex-col w-full gap-1" style="{{ Request::is('/') == ('/') ? 'display:none':'' }}">
-                <ul  class="flex flex-row items-center justify-between w-11/12  ">
+                <ul  class="flex flex-row items-center justify-between w-11/12  ml-1">
                     <li class="nav-itms {{Request::is('nhl/starting-goaliesv2') ? 'active':'' }}">
                         <a href="{{url('nhl/starting-goaliesv2')}}" style="{{Request::is('nhl/starting-goaliesv2') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             Starting Goalies
@@ -42,7 +42,7 @@
                     </li>
                     @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combinations') != ('nhl/line-combinations'))
                         <li class="">
-                            <a href="{{url('nhl/line-combos')}}" style="color:#38b6ff;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                            <a href="{{url('nhl/line-combos')}}" style="" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
                                 Line combinations
                             </a>
                         </li>

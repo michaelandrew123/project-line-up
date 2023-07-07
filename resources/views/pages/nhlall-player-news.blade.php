@@ -399,26 +399,26 @@
                         </div>         
                     </div>
                     <div class="relative w-[18rem]  flex justify-center">
-                        <img class="w-32 h-32 absolute right-1" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
-                        <img class="w-32 h-32  z-10" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
-                        <img class="w-32 h-32 absolute left-1" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+                        <img class="xl:w-32 xl:h-32 lg:w-23 lg:h-32 md:w-28 md:h-28 absolute right-1" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+                        <img class="xl:w-32 xl:h-32 lg:w-23 lg:h-32 md:w-28 md:h-28  z-10" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+                        <img class="xl:w-32 xl:h-32 lg:w-23 lg:h-32 md:w-28 md:h-28 absolute left-1" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
                     </div>
                 </div>
             </div>  
             <div class="flex flex-row justify-evenly items-center w-9/12 mt-[10px]  block smm-hidden max-w-screen-2xl" id="sub-hed">
-                <a href=" " class="  text-[24px] text-black font-bold rounded-md l-ups apn-bckgrnd active ">
+                <a href=" " class="xl:text-[24px] lg:text-[20px] md:text-[18px] text-black font-bold rounded-md l-ups apn-bckgrnd active ">
                     All
                 </a>
-                <a href="" class="  text-[24px] font-bold rounded-md text-black apn-bckgrnd">
+                <a href="" class="xl:text-[24px] lg:text-[20px] md:text-[18px] font-bold rounded-md text-black apn-bckgrnd">
                     Line Changes
                 </a>
-                <a href="" class="  text-[24px] font-bold rounded-md text-black apn-bckgrnd">
+                <a href="" class="xl:text-[24px] lg:text-[20px] md:text-[18px] font-bold rounded-md text-black apn-bckgrnd">
                     Injury
                 </a>
-                <a href="" class=" text-[24px] font-bold rounded-md text-black apn-bckgrnd">
+                <a href="" class="xl:text-[24px] lg:text-[20px] md:text-[18px] font-bold rounded-md text-black apn-bckgrnd">
                     Moves
                 </a>
-                <a href="" class=" text-[24px] font-bold rounded-md text-black apn-bckgrnd">
+                <a href="" class="xl:text-[24px] lg:text-[20px] md:text-[18px] font-bold rounded-md text-black apn-bckgrnd">
                     Signings
                 </a>
             </div>
@@ -427,9 +427,9 @@
             </div>
             <div class="flex flex-col w-full gap-5 mt-3">
                 <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -459,9 +459,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -491,9 +491,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -525,9 +525,9 @@
                     </div>
                 </div> 
                 <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -558,9 +558,9 @@
                         </div>
                     </div>
                     <img class="w-[31%]" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -592,9 +592,9 @@
                     </div>
                 </div> 
                 <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -624,9 +624,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -656,9 +656,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -690,9 +690,9 @@
                     </div>
                 </div> 
                 <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -723,9 +723,9 @@
                         </div>
                     </div>
                     <img class="w-[31%]" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -757,9 +757,9 @@
                     </div>
                 </div> 
                 <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -789,9 +789,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -821,9 +821,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -855,9 +855,9 @@
                     </div>
                 </div> 
                 <div class="flex w-full md:flex-row flex-wrap justify-center xl:justify-evenly lg:justify-between md:justify-between mb-3 ">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -888,9 +888,9 @@
                         </div>
                     </div>
                     <img class="w-[31%]" src="{{ asset('/images/menu-icon/adds3.png') }}">
-                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[31%] md:h-[18rem] relative rounded-xl bg-white ">
+                    <div class="w-[31%] xl:h-[22rem] lg:h-[20rem] md:w-[32%] md:h-[17rem] relative rounded-xl bg-white ">
                         <div class="flex m-3 mt-5 ">
-                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
+                           <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
                             <div class="flex flex-col ml-2 gap-3">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
@@ -921,7 +921,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div class="w-full flex justify-center my-5">
               <a class="font-semibold text-sm text-[#38b6ff]" href="">View more</a>
             </div>          
