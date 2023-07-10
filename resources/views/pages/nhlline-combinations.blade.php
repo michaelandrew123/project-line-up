@@ -40,7 +40,7 @@
         </div>
     </div> -->
     <div class="w-full flex justify-center bg-slate-100 mt-10">
-       <div class="w-11/12 flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
+       <div class="xl:w-11/12 lg:w-full md:w-full flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
           <div class="flex flex-col  w-9/12 gap-5">
                 <div class="w-full bg-[#38b6ff] flex flex-row  items-center rounded-md">
                     <h1 class="text-center py-10 text-3xl font-bold w-full">  NHL Line Combinations</h1>
@@ -51,81 +51,81 @@
                             <tr class="w-full flex  items-center border-b-2 border-slate-200 h-12">
                                 <td class="w-full flex items-center gap-2 border-0">
                                     <img class="w-7" src="{{$val->logo->src}}" alt="">
-                                    <h1 class="text-base font-bold">{{$val->name}}</h1>
+                                    <h1 class="xl:text-base lg:text-base md:text-sm font-bold">{{$val->name}}</h1>
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="text-base font-bold text-[#38b6ff]" href="">Forward</a>   
+                                 <a class="xl:text-base lg:text-base md:text-sm font-bold text-[#38b6ff]" href="">Forward</a>   
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="text-base font-bold text-[#38b6ff]" href="">Defence</a>   
+                                 <a class="xl:text-base lg:text-base md:text-sm font-bold text-[#38b6ff]" href="">Defence</a>   
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="text-base font-bold text-[#38b6ff]" href="">Goalie</a>   
+                                 <a class="xl:text-base lg:text-base md:text-sm font-bold text-[#38b6ff]" href="">Goalie</a>   
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="text-base font-bold text-[#38b6ff]" href="">Power Play</a>   
+                                 <a class="xl:text-base lg:text-base md:text-sm font-bold text-[#38b6ff]" href="">Power Play</a>   
                                 </td>
                             </tr>
                         @endif
                     @endforeach
                 </table>
            </div>
-           <div class=" flex flex-col w-64">
+           <div class=" flex flex-col  xl:w-64 lg:w-52 md:w-52">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
                         <h1 class="font-bold">Starting Goalies</h1>
                     </div>
                     <div id=" " class="flex flex-col gap-4 w-full">
                         <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                            <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                            <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                             <div class="flex flex-col">
                                 <div class="flex flex-col justify-center">
-                                    <p class="font-bold text-sm">
+                                    <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
                                         Linus Ullmark - BOS
                                     </p>
                                 </div>
-                                <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
-                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
+                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                             </div>
                         </div>
                         <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                            <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                            <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                             <div class="flex flex-col">
                                 <div class="flex flex-col justify-center">
-                                    <p class="font-bold text-sm">
+                                    <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
                                         Linus Ullmark - BOS
                                     </p>
                                 </div>
-                                <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
-                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
+                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                             </div>
                         </div>
                         <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                            <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                            <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                             <div class="flex flex-col">
                                 <div class="flex flex-col justify-center">
-                                    <p class="font-bold text-sm">
+                                    <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
                                         Linus Ullmark - BOS
                                     </p>
                                 </div>
-                                <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
-                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
+                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                             </div>
                         </div>
                         <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                            <img class="w-16" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
+                            <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                             <div class="flex flex-col">
                                 <div class="flex flex-col justify-center">
-                                    <p class="font-bold text-sm">
+                                    <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
                                         Linus Ullmark - BOS
                                     </p>
                                 </div>
-                                <p class="text-[12px] font-semibold">Ullmark was the first goalie off the ice</p>
-                                <p class="text-[12px] text-slate-500">30 min ago</p>
+                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
+                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                             </div>
                         </div> 
                         <div class="w-full flex justify-center">
-                            <a class="font-semibold text-sm text-[#38b6ff]" href="">View Today's Starting Goalies</a>
+                            <a class="font-semibold xl:text-sm lg:text-sm md:text-[8px] text-[#38b6ff]" href="">View Today's Starting Goalies</a>
                         </div>
                     </div>
                     <div class="flex justify-center">
@@ -144,7 +144,7 @@
                                     </p>
                                     <p class="text-[11px] text-slate-500">30 min ago</p>
                                 </div>
-                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                                <p class="xl:text-[11px] lg:text-[9px] md:text-[7px] md:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                             </div>
                         </div>
                         <div class="flex flex-row items-center w-full" style=" ">   
@@ -156,7 +156,7 @@
                                     </p>
                                     <p class="text-[11px] text-slate-500">30 min ago</p>
                                 </div>
-                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                                <p class="xl:text-[11px] lg:text-[9px] md:text-[7px] md:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                             </div>
                         </div>
                         <div class="flex flex-row items-center w-full" style=" ">   
@@ -168,7 +168,7 @@
                                     </p>
                                     <p class="text-[11px] text-slate-500">30 min ago</p>
                                 </div>
-                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                                <p class="xl:text-[11px] lg:text-[9px] md:text-[7px] md:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                             </div>
                         </div>
                         <div class="flex flex-row items-center w-full" style=" ">   
@@ -180,7 +180,7 @@
                                     </p>
                                     <p class="text-[11px] text-slate-500">30 min ago</p>
                                 </div>
-                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                                <p class="xl:text-[11px] lg:text-[9px] md:text-[7px] md:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                             </div>
                         </div>
                         <div class="flex flex-row items-center w-full" style=" ">   
@@ -192,15 +192,15 @@
                                     </p>
                                     <p class="text-[11px] text-slate-500">30 min ago</p>
                                 </div>
-                                <p class="text-[11px] font-semibold text-[#1d9bf0]">Morning Skate</p>
+                                <p class="xl:text-[11px] lg:text-[9px] md:text-[7px] md:text-[9px] font-semibold text-[#1d9bf0]">Morning Skate</p>
                             </div>
                         </div>
                         <div class="w-full flex justify-center">
-                            <a class="font-semibold text-sm text-[#38b6ff]" href="">View NHL Line Combinations</a>
+                            <a class="font-semibold xl:text-sm lg:text-sm md:text-[8px] text-[#38b6ff]" href="">View NHL Line Combinations</a>
                         </div>
                     </div>
                 </div> 
-                </div> 
+            </div> 
     </div>
     <!-- <div class="w-full flex justify-center bg-slate-100 ">
        <div class="w-11/12 flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
