@@ -47,15 +47,15 @@ Route::prefix('nhl')->group(function () {
 });
 
 Route::prefix('nfl')->group(function () {
-    Route::get('/home',  [App\Http\Controllers\HockeyController::class, 'nflhome'])->name('nfl.home');
-    Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'nfllineCombos'])->name('nfl.line-combos');
+    Route::get('/home',  [App\Http\Controllers\FootballController::class, 'nflhome'])->name('nfl.home');
+    Route::get('/line-combos',  [App\Http\Controllers\FootballController::class, 'nfllineCombos'])->name('nfl.line-combos');
 
 });
 Route::prefix('nba')->group(function () {
-    Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'nbalineCombos'])->name('nba.line-combos');
+    Route::get('/line-combos',  [App\Http\Controllers\BasketballController::class, 'nbalineCombos'])->name('nba.line-combos');
 });
 Route::prefix('soc')->group(function () {
-    Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'soclineCombos'])->name('soc.line-combos');
+    Route::get('/line-combos',  [App\Http\Controllers\SoccerController::class, 'soclineCombos'])->name('soc.line-combos');
 });
 // Route::get('/hockey',  'HockeyController@index');
 
