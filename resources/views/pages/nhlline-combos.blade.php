@@ -6039,8 +6039,8 @@
         </div>  
     </div>
 </div> -->
-<div class="hidden smm-block">
-    <div class="flex flex-col mx-1">
+<div class="hidden ">
+    <div class="flex flex-col ">
         <div class="flex flex-row justify-between items-center mb-1">
             <div class="flex flex-row items-center gap-1">
                 <img class="sm:w-[3rem] w-10" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}" alt="">
@@ -8802,6 +8802,21 @@
             </div>
         </div>  
     </div>
+</div>
+<div class="mx-1">
+  <div class="flex flex-col w-full">
+    <img class="w-full my-1" src="{{ asset('/images/menu-icon/adds_header.png') }}" >   
+    <div class="flex flex-col items-center bg-[#ffa100] h-80 gap-2">
+       <img class="w-32" src="{{ asset('/images/teamlogo-svg/boston-bruins.svg') }}" alt="">
+       <h1 class="text-lg text-black font-normal">Boston Bruins</h1>
+       <h1 class="text-xl text-black font-normal">NHL Line Combinations</h1>
+       <div class="relative w-[18rem]  flex justify-center">
+            <img class=" w-20  h-20 absolute right-12" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+            <img class=" w-20  h-20  z-10" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+            <img class=" w-20  h-20 absolute left-12" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
+        </div>
+    </div>
+  </div>
 </div>
 <!-- Mobile end -->
 @endsection
