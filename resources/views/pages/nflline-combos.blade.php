@@ -4,7 +4,7 @@
 
 <div class="">
 <div class="w-full flex flex-col items-center ">
-    <div class="w-11/12 flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#38b6ff] px-2 py-2">
+    <div class="xl:w-11/12 lg:w-full md:w-full  flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#38b6ff] px-2 py-2">
         <div class="w-full flex flex-col gap-2 ">
             <div class="flex flex-row items-center justify-between ">
                 <div class="flex flex-row items-center">
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>  
-    <div class="flex flex-row items-center w-11/12 mt-[20px] gap-3 block smm-hidden max-w-screen-2xl" id="sub-hed">
+    <div class="flex flex-row items-center xl:w-11/12 lg:w-11/12 md:w-full mt-[20px] gap-3 block smm-hidden max-w-screen-2xl" id="sub-hed">
         <button class="w-36  text-[24px] text-black font-bold rounded-md l-ups nfl-bckgrnd active flex justify-center">
             Lineups
         </button>
@@ -58,7 +58,7 @@
     </div> 
     <!-- Line-ups  -->
     <div id="lu-body" class="w-full flex flex-row justify-evenly gap-7  max-w-screen-2xl">
-        <div class="xl:w-7/12 lg:w-8/12 md:w-10/12 block smm-hidden">
+        <div class="xl:w-7/12 lg:w-8/12 md:w-7/12 block smm-hidden">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
             <div id=""  class="flex flex-col gap-2 my-1">
                 <div class="flex flex-col gap-2 w-full">
@@ -66,10 +66,10 @@
                     <div class="flex flex-row mt-10 gap-3">
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">WR1</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">WR1</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -77,10 +77,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">WR2</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">WR2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -88,10 +88,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">WR3</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">WR3</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -101,10 +101,10 @@
                     <div class="flex flex-row mt-10 gap-3">
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">RB</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">RB</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -112,10 +112,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">QB</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">QB</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -123,10 +123,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">TE</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">TE</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -140,10 +140,10 @@
                     <div class="flex flex-row mt-10 gap-3">
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">QB2</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -151,10 +151,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#0076B6] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px] ">QB2</p>
+                                <div class="bg-[#0076B6] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px] ">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -162,10 +162,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#0076B6] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px] ">QB2</p>
+                                <div class="bg-[#0076B6] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px] ">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -175,10 +175,10 @@
                     <div class="flex flex-row mt-10 gap-3">
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">QB2</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -186,10 +186,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#0076B6] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px] ">QB2</p>
+                                <div class="bg-[#0076B6] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px] ">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -197,10 +197,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#0076B6] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px] ">QB2</p>
+                                <div class="bg-[#0076B6] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px] ">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -210,10 +210,10 @@
                     <div class="flex flex-row mt-10 gap-3">
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">QB2</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -221,10 +221,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#0076B6] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px] ">QB2</p>
+                                <div class="bg-[#0076B6] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px] ">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -232,10 +232,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#0076B6] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px] ">QB2</p>
+                                <div class="bg-[#0076B6] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px] ">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -245,10 +245,10 @@
                     <div class="flex flex-row mt-10 gap-3">
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#b0b7bc] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px]">QB2</p>
+                                <div class="bg-[#b0b7bc] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px]">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -256,10 +256,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#0076B6] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px] ">QB2</p>
+                                <div class="bg-[#0076B6] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px] ">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>
@@ -267,10 +267,10 @@
                         </div>
                         <div class="flex flex-col items-center w-[32%]">     
                             <div class="relative ">
-                                <div class="bg-[#0076B6] w-9 h-9 rounded-full flex justify-center items-center absolute bottom-2 left-3.5">
-                                    <p class="font-bold text-[12px] ">QB2</p>
+                                <div class="bg-[#0076B6] xl:w-9 xl:h-9 lg:w-9 lg:h-9 md:w-7 md:h-7 rounded-full flex justify-center items-center absolute bottom-2 xl:left-3.5 lg:left-3.5 md:left-2">
+                                    <p class="font-bold xl:text-[12px] lg:text-[12px] md:text-[9px] ">QB2</p>
                                 </div>
-                                <div class="w-[200px]">
+                                <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
                                 </div>
                             </div>

@@ -1,4 +1,4 @@
-<div class="w-3/12 mt-5 block smm-hidden relative  ">
+       <div class="xl:w-3/12 lg:w-3/12 md:w-4/12 mt-5 block smm-hidden relative  ">
             <div class="relative sticky top-0 ">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-slate-200">

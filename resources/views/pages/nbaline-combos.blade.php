@@ -4,7 +4,7 @@
 
 <div class="">
 <div class="w-full flex flex-col items-center ">
-    <div class="xl:w-11/12 lg:w-11/12 md:w-full flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#00bf63] px-2 py-2">
+    <div class="xl:w-11/12 lg:w-full md:w-full flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#00bf63] px-2 py-2">
         <div class="w-full flex flex-col gap-2 ">
             <div class="flex flex-row items-center justify-between ">
                 <div class="flex flex-row items-center">

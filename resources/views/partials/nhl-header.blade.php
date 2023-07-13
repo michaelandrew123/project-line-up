@@ -1,5 +1,5 @@
   
-    <div class="w-full flex flex-row justify-center block smm-hidden">
+    <div class="w-full flex flex-row justify-center block smm-hidden ">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col items-center justify-between gap-1 max-w-screen-2xl ">
             <div class="flex flex-row justify-between items-end flex w-full  pb-3 border-[d9d9d9] border-b-2">
                 <div class="flex gap-1 items-end">
@@ -162,7 +162,7 @@
         </div>
     </div>
     <div class="smm-block hidden relative">
-        <div class="sticky top-0">
+        <div class="fixed top-0 w-full bg-white z-30">
             <!-- Main navigation container -->
             <nav
                 class="flex-no-wrap relative  flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4"
