@@ -8816,20 +8816,17 @@
                 <img class=" w-20  h-20  z-10" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
                 <img class=" w-20  h-20 absolute left-12" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}" alt="">
             </div>
-            <select class="w-10/12 border border-black rounded-md text-[13px] py-0.75  hidden" name="" id="">
-                @foreach($team->data as $key=>$val)                                    
-                    <option  value="">
-                       <a href="/nhl/line-combos/{{$val->slug}}" class="text-[13px] text-center">
-                           {{$val->name}} 
-                       </a>
-                    </option>         
-                @endforeach  
-            </select>
             <div class="relative w-full flex justify-center ">
-                <button id="tml_btn" class="cursor-pointer w-10/12 border border-black rounded-md text-[13px] py-0.75 bg-white ">
+                <button id="tml_btn" class="cursor-pointer   relative w-10/12 border border-black rounded-md text-[13px] py-0.75 bg-white ">
                     <p class="text-[13px]">{{  ( !empty($current_name) ? $current_name: 'Anaheim Ducks')  }}</p>
+                    <div class="absolute bottom-1 right-0">
+                        <div class="flex flex-col relative">
+                            <img class="h-5 rotate-180 relative top-0" src="{{ asset('/images/menu-icon/down-chevron (1).png') }}" alt="">
+                            <img class="h-5 absolute top-[9px]" src="{{ asset('/images/menu-icon/down-chevron (1).png') }}" alt="">
+                        </div>    
+                    </div>        
                 </button> 
-                <ul id="drop_down" class="absolute bg-white w-10/12 bg-white py-2 hidden top-[22px] z-20">
+                <ul id="drop_down" class="absolute bg-white w-10/12 bg-white py-2 hidden top-[22px] z-20 overflow-y-scroll h-40">
                     @foreach($team->data as $key=>$val)
                         @if($val->league->slug == 'nhl')
                            <li class="text-center">  
@@ -8840,16 +8837,6 @@
                         @endif
                     @endforeach 
                 </ul>
-            </div>
-            <div class="w-10/12 flex flex-col bg-white border border-black rounded-md text-[13px] py-0.75 hidden">
-                <input class="border border-black w-11/12 h-10" type="button">
-                @foreach($team->data as $key=>$val)
-                    @if($val->league->slug == 'nhl')
-                        <a href="/nhl/line-combos/{{$val->slug}}" class="text-[13px] text-center">
-                          {{$val->name}} 
-                        </a>
-                    @endif
-                @endforeach  
             </div>
             <div class="w-10/12">
                 <div class="flex gap-2 justify-start items-center">
