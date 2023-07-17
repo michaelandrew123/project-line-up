@@ -212,8 +212,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Starting goailies w/ API
-                <div class="flex flex-col ">
+                Starting goailies w/ API
+                <div class="flex flex-col hidden">
                     <div class="flex items-center">
                         <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
@@ -689,7 +689,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="flex flex-col w-full ">  
                 <div class="flex flex-col">
@@ -702,7 +702,7 @@
                     <div class="flex  flex-wrap justify-center xl:gap-3 lg:gap-1 md:gap-1">
                         @foreach($goalies->data as $key=>$val)
                             @if(isset($val->type))
-                               @if(!empty($val->type->slug))
+                                @if(!empty($val->type->slug))
                                     @if($val->type->slug === 'line-change'  )    
                                         <div class="flex flex-col xl:gap-3 lg:gap-3 md:gap-1 xl:w-[18rem] lg:w-[16rem] md:w-[12rem] xl:h-[21rem] lg:h-[21rem]  md:h-[16em] border border-black rounded-xl bg-white relative mb-3">
                                             <div class="flex m-2 mt-5 ">
@@ -1438,7 +1438,7 @@
                         </ul>
                     </div>
                 </div>                
-            </div>
+            <!-- </div> -->
         </div>   
         <!-- Articles  -->
         <div class=" flex flex-col xl:w-64 lg:w-52 md:w-52">
@@ -1446,8 +1446,26 @@
                 <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
                     <h1 class="font-bold">Starting Goalies</h1>
                 </div>
-                <div id=" " class="flex flex-col gap-4 w-full">
-                    <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                <div id="" class="flex flex-col gap-4 w-full">
+                @foreach($goalies->data as $key=>$val)
+                    @if(isset($val->metafields->goalie_status))
+                        @if($val->metafields->goalie_status->name === 'Confirmed')  
+                            <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                                <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{$val->player->images->uniform}}" alt="">    
+                                <div class="flex flex-col">
+                                    <div class="flex flex-col justify-center">
+                                        <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
+                                          {{$val->metafields->goalie_status->name}}
+                                        </p>
+                                    </div>
+                                    <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">{{$val->title}}</p>
+                                    <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
+                                </div>
+                            </div>
+                        @endif
+                    @endif     
+                @endforeach
+                    <!-- <div class="flex flex-row items-center gap-2 w-full" style=" ">   
                         <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                         <div class="flex flex-col">
                             <div class="flex flex-col justify-center">
@@ -1482,21 +1500,9 @@
                             <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
                             <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                         </div>
-                    </div>
-                    <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                        <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
-                        <div class="flex flex-col">
-                            <div class="flex flex-col justify-center">
-                                <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
-                                    Linus Ullmark - BOS
-                                </p>
-                            </div>
-                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
-                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
-                        </div>
-                    </div> 
+                    </div>  -->
                     <div class="w-full flex justify-center">
-                        <a class="font-semibold xl:text-sm lg:text-sm md:text-[8px] text-[#38b6ff]" href="">View Today's Starting Goalies</a>
+                        <a class="font-semibold xl:text-sm lg:text-sm md:text-[8px] text-[#38b6ff]" href="{{url('nhl/starting-goaliesv2')}}">View Today's Starting Goalies</a>
                     </div>
                 </div>
                 <div class="flex justify-center">
@@ -1567,7 +1573,7 @@
                         </div>
                     </div>
                     <div class="w-full flex justify-center">
-                        <a class="font-semibold xl:text-sm lg:text-sm md:text-[8px] text-[#38b6ff]" href="">View NHL Line Combinations</a>
+                        <a class="font-semibold xl:text-sm lg:text-sm md:text-[8px] text-[#38b6ff]" href="{{url('nhl/line-combinations')}}">View NHL Line Combinations</a>
                     </div>
                 </div>
             </div>  
@@ -1750,433 +1756,433 @@
                                 </h1>
                             </div>
                             <div class="flex flex-row overflow-x-clip mx-1 ">
-                                    <table class="tbl table-fixed flex flex-row ">
-                                        <tr>
-                                            <th class="relative ">First
+                                <table class="tbl table-fixed flex flex-row ">
+                                    <tr>
+                                        <th class="relative ">First
+                                        <div class="absolute right-0 bottom-1">
+                                                <img class="w-3 h-1 relative top-1 text-[#8bbf9b]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th >
+                                        <th class="relative">Last
+                                        <div class="absolute right-0 bottom-1  ">
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="relative">Pos
+                                        <div class="absolute right-0 bottom-1">
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th >
+                                        <th class="relative">Team
+                                        <div class="absolute right-0 bottom-1">
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="relative">Opp
+                                        <div class="absolute right-0 bottom-1">
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="relative" style="width:9%;">Start/line
+                                        <div class="absolute right-px bottom-1">
+                                                <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-4 h-4 relative bottom-px right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="relative" style="width:8%;">PP Unit 
+                                        <!-- <div class="absolute right-0 bottom-1">
+                                                <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-4 h-4 relative bottom-1 right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div> -->
+                                        <div class="absolute right-0 bottom-1">
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="tblGoals relative">Goals
                                             <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1 text-[#8bbf9b]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th >
-                                            <th class="relative">Last
-                                            <div class="absolute right-0 bottom-1  ">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="relative">Pos
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="tblWin relative">Win%
                                             <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th >
-                                            <th class="relative">Team
-                                            <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="relative">Opp
-                                            <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="relative" style="width:9%;">Start/line
-                                            <div class="absolute right-px bottom-1">
-                                                    <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-4 h-4 relative bottom-px right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="relative" style="width:8%;">PP Unit 
-                                            <!-- <div class="absolute right-0 bottom-1">
-                                                    <img class="w-2 h-1 relative top-3 rotate-[88deg]" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-4 h-4 relative bottom-1 right-1"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div> -->
-                                            <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="tblGoals relative">Goals
-                                                <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="tblWin relative">Win%
-                                                <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="tblSalary relative" style=" width:9%; font-size:14px;">DK Salary
-                                            <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="tblProj relative" style=" width:9%; font-size:14px;">DK PROJ
-                                            <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="tblSalary2 relative" style=" width:9%; font-size:14px;">FD Salary
-                                            <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            <th class="tblProj2 relative" style=" width:9%; font-size:14px;">FD PROJ
-                                            <div class="absolute right-0 bottom-1">
-                                                    <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
-                                                    <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
-                                            </div>
-                                            </th>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Auston</td>
-                                            <td>Mathew</td>
-                                            <td>C</td>
-                                            <td>TQR</td>
-                                            <td>@ DET</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.73</td>
-                                            <td class="tblWin">63.2</td>
-                                            <td class="tblSalary">9200</td>
-                                            <td class="tblProj">29.9</td>
-                                            <td class="tblSalary2">10200</td>
-                                            <td class="tblProj2">34.99</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Jonathan</td>
-                                            <td>Huberdaeu</td>
-                                            <td >W</td>
-                                            <td>FLA</td>
-                                            <td>vs. EDM</td>
-                                            <td class="bg-[#ffd966] text-center">2</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">4.19</td>
-                                            <td class="tblWin">67.5</td>
-                                            <td class="tblSalary">7100</td>
-                                            <td class="tblProj">25.39</td>
-                                            <td class="tblSalary2">8800</td>
-                                            <td class="tblProj2">32.65</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Alexander</td>
-                                            <td>Barkov</td>
-                                            <td >C</td>
-                                            <td>FLA</td>
-                                            <td>vs. EDM</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">4.19</td>
-                                            <td class="tblWin">67.5</td>
-                                            <td class="tblSalary">7500</td>
-                                            <td class="tblProj">25.15</td>
-                                            <td class="tblSalary2">9900</td>
-                                            <td class="tblProj2">30.62</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Nathan</td>
-                                            <td>Mackinnon</td>
-                                            <td >C</td>
-                                            <td>COL</td>
-                                            <td>@ JVK</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.27</td>
-                                            <td class="tblWin">58.3</td>
-                                            <td class="tblSalary">8700</td>
-                                            <td class="tblProj">23.68</td>
-                                            <td class="tblSalary2">9800</td>
-                                            <td class="tblProj2">27.18</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Charlie</td>
-                                            <td>McAvoy</td>
-                                            <td >D</td>
-                                            <td>BOS</td>
-                                            <td>@ SJ</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.05</td>
-                                            <td class="tblWin">60</td>
-                                            <td class="tblSalary">5900</td>
-                                            <td class="tblProj">10.44</td>
-                                            <td class="tblSalary2">5400</td>
-                                            <td class="tblProj2">12.52</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Sam</td>
-                                            <td>Reinhart</td>
-                                            <td >W</td>
-                                            <td>FLA</td>
-                                            <td>vs.EDM</td>
-                                            <td class="bg-[#e06666] text-center">3</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">4.19</td>
-                                            <td class="tblWin">67.5</td>
-                                            <td class="tblSalary">5000</td>
-                                            <td class="tblProj">21.26</td>
-                                            <td class="tblSalary2">6500</td>
-                                            <td class="tblProj2">26.79</td>
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="tblSalary relative" style=" width:9%; font-size:14px;">DK Salary
+                                        <div class="absolute right-0 bottom-1">
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="tblProj relative" style=" width:9%; font-size:14px;">DK PROJ
+                                        <div class="absolute right-0 bottom-1">
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="tblSalary2 relative" style=" width:9%; font-size:14px;">FD Salary
+                                        <div class="absolute right-0 bottom-1">
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
+                                        <th class="tblProj2 relative" style=" width:9%; font-size:14px;">FD PROJ
+                                        <div class="absolute right-0 bottom-1">
+                                                <img class="w-3 h-1 relative top-1" src="{{ asset('/images/home-page/minus-removebg-preview.png') }}">
+                                                <img class="w-3 h-3"  src="{{ asset('/images/home-page/downward-arrow__1_-removebg-preview.png') }}">
+                                        </div>
+                                        </th>
                                         
-                                        </tr>
-                                        <tr>
-                                            <td>Mikko</td>
-                                            <td>Rantanen</td>
-                                            <td >W</td>
-                                            <td>COL</td>
-                                            <td>@ VGK</td>
-                                            <td class="tblsLine">2</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.27</td>
-                                            <td class="tblWin">58.3</td>
-                                            <td class="tblSalary">7300</td>
-                                            <td class="tblProj">20.72</td>
-                                            <td class="tblSalary2">9100</td>
-                                            <td class="tblProj2">25.33</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Sam</td>
-                                            <td>Bennet</td>
-                                            <td >C</td>
-                                            <td>FLA</td>
-                                            <td>vs.EDM</td>
-                                            <td class="bg-[#ffd966] text-center">2</td>
-                                            <td class="text-center">2</td>
-                                            <td class="tblGoals">4.19</td>
-                                            <td class="tblGoals">67.5</td>
-                                            <td class="tblSalary">5000</td>
-                                            <td class="tblProj">20.18</td>
-                                            <td class="tblSalary2">6800</td>
-                                            <td class="tblProj2">23.37</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Matt</td>
-                                            <td>Grzelcyk</td>
-                                            <td >D</td>
-                                            <td>BOS</td>
-                                            <td>@ SJ</td>
-                                            <td class="bg-[#ffd966] text-center">1</td>
-                                            <td class="text-center">2</td>
-                                            <td class="tblGoals">3.05</td>
-                                            <td class="tblGoals">60</td>
-                                            <td class="tblSalary">4500</td>
-                                            <td class="tblProj">8.04</td>
-                                            <td class="tblSalary2">4300</td>
-                                            <td class="tblProj2">9.96</td>
-                                            
+                                    </tr>
+                                    <tr>
+                                        <td>Auston</td>
+                                        <td>Mathew</td>
+                                        <td>C</td>
+                                        <td>TQR</td>
+                                        <td>@ DET</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.73</td>
+                                        <td class="tblWin">63.2</td>
+                                        <td class="tblSalary">9200</td>
+                                        <td class="tblProj">29.9</td>
+                                        <td class="tblSalary2">10200</td>
+                                        <td class="tblProj2">34.99</td>
                                         
-                                        </tr>
-                                        <tr>
-                                            <td>Mitche</td>
-                                            <td>Mamer</td>
-                                            <td >W</td>
-                                            <td>TOR</td>
-                                            <td>@ DET</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.73</td>
-                                            <td class="tblWin">63.2</td>
-                                            <td class="tblSalary">8000</td>
-                                            <td class="tblProj">19.7</td>
-                                            <td class="tblSalary2">8200</td>
-                                            <td class="tblProj2">24.18</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Alex</td>
-                                            <td>Overchkin</td>
-                                            <td >W</td>
-                                            <td>WSH</td>
-                                            <td>@ PHI</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.36</td>
-                                            <td class="tblWin">60.8</td>
-                                            <td class="tblSalary">8300</td>
-                                            <td class="tblProj">18.35</td>
-                                            <td class="tblSalary2">9900</td>
-                                            <td class="tblProj2">21.42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jonathan</td>
+                                        <td>Huberdaeu</td>
+                                        <td >W</td>
+                                        <td>FLA</td>
+                                        <td>vs. EDM</td>
+                                        <td class="bg-[#ffd966] text-center">2</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">4.19</td>
+                                        <td class="tblWin">67.5</td>
+                                        <td class="tblSalary">7100</td>
+                                        <td class="tblProj">25.39</td>
+                                        <td class="tblSalary2">8800</td>
+                                        <td class="tblProj2">32.65</td>
                                         
-                                        </tr>
-                                        <tr>
-                                            <td>John</td>
-                                            <td>Gaudreu</td>
-                                            <td >W</td>
-                                            <td>CGY</td>
-                                            <td>vs. MIN</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.32</td>
-                                            <td class="tblWin">59.8</td>
-                                            <td class="tblSalary">7200</td>
-                                            <td class="tblProj">18.34</td>
-                                            <td class="tblSalary2">8400</td>
-                                            <td class="tblProj2">22.28</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Nikita</td>
-                                            <td>Kusherov</td>
-                                            <td >W</td>
-                                            <td>TB</td>
-                                            <td>@ NSH</td>
-                                            <td class="tblsLine">2</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.34</td>
-                                            <td class="tblWin">60.2</td>
-                                            <td class="tblSalary">8700</td>
-                                            <td class="tblProj">18.33</td>
-                                            <td class="tblSalary2">9800</td>
-                                            <td class="tblProj2">22.87</td>
-                                            
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Nazem</td>
-                                            <td>Kadri</td>
-                                            <td >C</td>
-                                            <td>COL</td>
-                                            <td>@ VJK</td>
-                                            <td class="bg-[#ffd966] text-center">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.27</td>
-                                            <td class="tblWin">58.3</td>
-                                            <td class="tblSalary">7200</td>
-                                            <td class="tblProj">18.24</td>
-                                            <td class="tblSalary2">9400</td>
-                                            <td class="tblProj2">21.82</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alexander</td>
+                                        <td>Barkov</td>
+                                        <td >C</td>
+                                        <td>FLA</td>
+                                        <td>vs. EDM</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">4.19</td>
+                                        <td class="tblWin">67.5</td>
+                                        <td class="tblSalary">7500</td>
+                                        <td class="tblProj">25.15</td>
+                                        <td class="tblSalary2">9900</td>
+                                        <td class="tblProj2">30.62</td>
                                         
-                                        </tr>
-                                        <tr>
-                                            <td>Brady</td>
-                                            <td>Tkachuk</td>
-                                            <td>W</td>
-                                            <td>OTT</td>
-                                            <td>vs. MTL</td>
-                                            <td class="tblsLine">2</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.45</td>
-                                            <td class="tblWin">36.6</td>
-                                            <td class="tblSalary">6500</td>
-                                            <td class="tblProj">18.1</td>
-                                            <td class="tblSalary2">6800</td>
-                                            <td class="tblProj2">20.41</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nathan</td>
+                                        <td>Mackinnon</td>
+                                        <td >C</td>
+                                        <td>COL</td>
+                                        <td>@ JVK</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.27</td>
+                                        <td class="tblWin">58.3</td>
+                                        <td class="tblSalary">8700</td>
+                                        <td class="tblProj">23.68</td>
+                                        <td class="tblSalary2">9800</td>
+                                        <td class="tblProj2">27.18</td>
                                         
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Gabriel</td>
-                                            <td>Landeskog</td>
-                                            <td >W</td>
-                                            <td>COL</td>
-                                            <td>@ VJK</td>
-                                            <td class="bg-[#ffd966] text-center">2</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.27</td>
-                                            <td class="tblWin">58.3</td>
-                                            <td class="tblSalary">6400</td>
-                                            <td class="tblProj">18.07</td>
-                                            <td class="tblSalary2">9000</td>
-                                            <td class="tblProj2">22.72</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charlie</td>
+                                        <td>McAvoy</td>
+                                        <td >D</td>
+                                        <td>BOS</td>
+                                        <td>@ SJ</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.05</td>
+                                        <td class="tblWin">60</td>
+                                        <td class="tblSalary">5900</td>
+                                        <td class="tblProj">10.44</td>
+                                        <td class="tblSalary2">5400</td>
+                                        <td class="tblProj2">12.52</td>
                                         
-                                        </tr>
-                                        <tr>
-                                            <td>David</td>
-                                            <td>Pastmak</td>
-                                            <td >W</td>
-                                            <td>BOS</td>
-                                            <td>@ SJ</td>
-                                            <td class="bg-[#ffd966] text-center">2</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.05</td>
-                                            <td class="tblWin">60</td>
-                                            <td class="tblSalary">8300</td>
-                                            <td class="tblProj">18.02</td>
-                                            <td class="tblSalary2">8600</td>
-                                            <td class="tblProj2">20.78</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sam</td>
+                                        <td>Reinhart</td>
+                                        <td >W</td>
+                                        <td>FLA</td>
+                                        <td>vs.EDM</td>
+                                        <td class="bg-[#e06666] text-center">3</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">4.19</td>
+                                        <td class="tblWin">67.5</td>
+                                        <td class="tblSalary">5000</td>
+                                        <td class="tblProj">21.26</td>
+                                        <td class="tblSalary2">6500</td>
+                                        <td class="tblProj2">26.79</td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>Mikko</td>
+                                        <td>Rantanen</td>
+                                        <td >W</td>
+                                        <td>COL</td>
+                                        <td>@ VGK</td>
+                                        <td class="tblsLine">2</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.27</td>
+                                        <td class="tblWin">58.3</td>
+                                        <td class="tblSalary">7300</td>
+                                        <td class="tblProj">20.72</td>
+                                        <td class="tblSalary2">9100</td>
+                                        <td class="tblProj2">25.33</td>
                                         
-                                        </tr>
-                                        <tr>
-                                            <td>William</td>
-                                            <td>Nylander</td>
-                                            <td >W</td>
-                                            <td>TOR</td>
-                                            <td>@ DET</td>
-                                            <td class="bg-[#ffd966] text-center">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.73</td>
-                                            <td class="tblWin">63.2</td>
-                                            <td class="tblSalary">6100</td>
-                                            <td class="tblProj">17.85</td>
-                                            <td class="tblSalary2">7200</td>
-                                            <td class="tblProj2">22.06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sam</td>
+                                        <td>Bennet</td>
+                                        <td >C</td>
+                                        <td>FLA</td>
+                                        <td>vs.EDM</td>
+                                        <td class="bg-[#ffd966] text-center">2</td>
+                                        <td class="text-center">2</td>
+                                        <td class="tblGoals">4.19</td>
+                                        <td class="tblGoals">67.5</td>
+                                        <td class="tblSalary">5000</td>
+                                        <td class="tblProj">20.18</td>
+                                        <td class="tblSalary2">6800</td>
+                                        <td class="tblProj2">23.37</td>
                                         
-                                        </tr>
-                                        <tr>
-                                            <td>Mathew</td>
-                                            <td>Tkachuk</td>
-                                            <td >W</td>
-                                            <td>CGY</td>
-                                            <td>vs. MIN</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.32</td>
-                                            <td class="tblWin">59.8</td>
-                                            <td class="tblSalary">6300</td>
-                                            <td class="tblProj">17.4</td>
-                                            <td class="tblSalary2">8300</td>
-                                            <td class="tblProj2">21.86</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Kirill</td>
-                                            <td>Kaprizov</td>
-                                            <td >W</td>
-                                            <td>MIN</td>
-                                            <td>@ CGY</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">2.68</td>
-                                            <td class="tblWin">40.2</td>
-                                            <td class="tblSalary">8700</td>
-                                            <td class="tblProj">17.21</td>
-                                            <td class="tblSalary2">9200</td>
-                                            <td class="tblProj2">21.19</td>
-                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Brad</td>
-                                            <td>Marchand</td>
-                                            <td >W</td>
-                                            <td>BOS</td>
-                                            <td>@ SJ</td>
-                                            <td class="tblsLine">1</td>
-                                            <td class="tblUnit">1</td>
-                                            <td class="tblGoals">3.05</td>
-                                            <td class="tblWin">60</td>
-                                            <td class="tblSalary">7500</td>
-                                            <td class="tblProj">17.19</td>
-                                            <td class="tblSalary2">8700</td>
-                                            <td class="tblProj2">20.36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matt</td>
+                                        <td>Grzelcyk</td>
+                                        <td >D</td>
+                                        <td>BOS</td>
+                                        <td>@ SJ</td>
+                                        <td class="bg-[#ffd966] text-center">1</td>
+                                        <td class="text-center">2</td>
+                                        <td class="tblGoals">3.05</td>
+                                        <td class="tblGoals">60</td>
+                                        <td class="tblSalary">4500</td>
+                                        <td class="tblProj">8.04</td>
+                                        <td class="tblSalary2">4300</td>
+                                        <td class="tblProj2">9.96</td>
                                         
-                                        </tr>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>Mitche</td>
+                                        <td>Mamer</td>
+                                        <td >W</td>
+                                        <td>TOR</td>
+                                        <td>@ DET</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.73</td>
+                                        <td class="tblWin">63.2</td>
+                                        <td class="tblSalary">8000</td>
+                                        <td class="tblProj">19.7</td>
+                                        <td class="tblSalary2">8200</td>
+                                        <td class="tblProj2">24.18</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Alex</td>
+                                        <td>Overchkin</td>
+                                        <td >W</td>
+                                        <td>WSH</td>
+                                        <td>@ PHI</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.36</td>
+                                        <td class="tblWin">60.8</td>
+                                        <td class="tblSalary">8300</td>
+                                        <td class="tblProj">18.35</td>
+                                        <td class="tblSalary2">9900</td>
+                                        <td class="tblProj2">21.42</td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>John</td>
+                                        <td>Gaudreu</td>
+                                        <td >W</td>
+                                        <td>CGY</td>
+                                        <td>vs. MIN</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.32</td>
+                                        <td class="tblWin">59.8</td>
+                                        <td class="tblSalary">7200</td>
+                                        <td class="tblProj">18.34</td>
+                                        <td class="tblSalary2">8400</td>
+                                        <td class="tblProj2">22.28</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Nikita</td>
+                                        <td>Kusherov</td>
+                                        <td >W</td>
+                                        <td>TB</td>
+                                        <td>@ NSH</td>
+                                        <td class="tblsLine">2</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.34</td>
+                                        <td class="tblWin">60.2</td>
+                                        <td class="tblSalary">8700</td>
+                                        <td class="tblProj">18.33</td>
+                                        <td class="tblSalary2">9800</td>
+                                        <td class="tblProj2">22.87</td>
+                                        
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Nazem</td>
+                                        <td>Kadri</td>
+                                        <td >C</td>
+                                        <td>COL</td>
+                                        <td>@ VJK</td>
+                                        <td class="bg-[#ffd966] text-center">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.27</td>
+                                        <td class="tblWin">58.3</td>
+                                        <td class="tblSalary">7200</td>
+                                        <td class="tblProj">18.24</td>
+                                        <td class="tblSalary2">9400</td>
+                                        <td class="tblProj2">21.82</td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>Brady</td>
+                                        <td>Tkachuk</td>
+                                        <td>W</td>
+                                        <td>OTT</td>
+                                        <td>vs. MTL</td>
+                                        <td class="tblsLine">2</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.45</td>
+                                        <td class="tblWin">36.6</td>
+                                        <td class="tblSalary">6500</td>
+                                        <td class="tblProj">18.1</td>
+                                        <td class="tblSalary2">6800</td>
+                                        <td class="tblProj2">20.41</td>
+                                    
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Gabriel</td>
+                                        <td>Landeskog</td>
+                                        <td >W</td>
+                                        <td>COL</td>
+                                        <td>@ VJK</td>
+                                        <td class="bg-[#ffd966] text-center">2</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.27</td>
+                                        <td class="tblWin">58.3</td>
+                                        <td class="tblSalary">6400</td>
+                                        <td class="tblProj">18.07</td>
+                                        <td class="tblSalary2">9000</td>
+                                        <td class="tblProj2">22.72</td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>David</td>
+                                        <td>Pastmak</td>
+                                        <td >W</td>
+                                        <td>BOS</td>
+                                        <td>@ SJ</td>
+                                        <td class="bg-[#ffd966] text-center">2</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.05</td>
+                                        <td class="tblWin">60</td>
+                                        <td class="tblSalary">8300</td>
+                                        <td class="tblProj">18.02</td>
+                                        <td class="tblSalary2">8600</td>
+                                        <td class="tblProj2">20.78</td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>William</td>
+                                        <td>Nylander</td>
+                                        <td >W</td>
+                                        <td>TOR</td>
+                                        <td>@ DET</td>
+                                        <td class="bg-[#ffd966] text-center">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.73</td>
+                                        <td class="tblWin">63.2</td>
+                                        <td class="tblSalary">6100</td>
+                                        <td class="tblProj">17.85</td>
+                                        <td class="tblSalary2">7200</td>
+                                        <td class="tblProj2">22.06</td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>Mathew</td>
+                                        <td>Tkachuk</td>
+                                        <td >W</td>
+                                        <td>CGY</td>
+                                        <td>vs. MIN</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.32</td>
+                                        <td class="tblWin">59.8</td>
+                                        <td class="tblSalary">6300</td>
+                                        <td class="tblProj">17.4</td>
+                                        <td class="tblSalary2">8300</td>
+                                        <td class="tblProj2">21.86</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Kirill</td>
+                                        <td>Kaprizov</td>
+                                        <td >W</td>
+                                        <td>MIN</td>
+                                        <td>@ CGY</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">2.68</td>
+                                        <td class="tblWin">40.2</td>
+                                        <td class="tblSalary">8700</td>
+                                        <td class="tblProj">17.21</td>
+                                        <td class="tblSalary2">9200</td>
+                                        <td class="tblProj2">21.19</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Brad</td>
+                                        <td>Marchand</td>
+                                        <td >W</td>
+                                        <td>BOS</td>
+                                        <td>@ SJ</td>
+                                        <td class="tblsLine">1</td>
+                                        <td class="tblUnit">1</td>
+                                        <td class="tblGoals">3.05</td>
+                                        <td class="tblWin">60</td>
+                                        <td class="tblSalary">7500</td>
+                                        <td class="tblProj">17.19</td>
+                                        <td class="tblSalary2">8700</td>
+                                        <td class="tblProj2">20.36</td>
+                                    
+                                    </tr>
 
-                                    </table>
+                                </table>
                             </div>
                             <div class="relative">
                                 <a href="" class="text-black font-semibold flex justify-end mr-2">see all</a>
@@ -2955,136 +2961,136 @@
                     </div>
                 </div> -->
            </div>
-	  <button
-	    class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-	    type="button"
-	    data-te-target="#carouselExampleCaptions1"
-	    data-te-slide="prev">
-	    <span class="inline-block h-8 w-8">
-	     
-	    </span>
-	    <span
-	      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-	      >Previous</span
-	    >
-	  </button>
-	  <button
-            class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-            type="button"
-            data-te-target="#carouselExampleCaptions1"
-            data-te-slide="next">
-            <span class="inline-block h-8 w-8">
+            <button
+                class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                type="button"
+                data-te-target="#carouselExampleCaptions1"
+                data-te-slide="prev">
+                <span class="inline-block h-8 w-8">
+                
+                </span>
+                <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                >Previous</span
+                >
+            </button>
+            <button
+                    class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button"
+                    data-te-target="#carouselExampleCaptions1"
+                    data-te-slide="next">
+                    <span class="inline-block h-8 w-8">
+                    
+                    </span>
+                <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                >Next</span
+                >
+            </button>
+            </div>
+            <!-- <div id="carouselExampleCaptions1" class="relative" data-te-carousel-init data-te-carousel-slide>
+                <div class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                    data-te-carousel-indicators>
+                    <button
+                    type="button"
+                    data-te-target="#carouselExampleCaptions1"
+                    data-te-slide-to="0"
+                    data-te-carousel-active
+                    class="mx-[3px] box-content h-[10px] w-[10px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+                    <button
+                    type="button"
+                    data-te-target="#carouselExampleCaptions1"
+                    data-te-slide-to="1"
+                    class="mx-[3px] box-content h-[10px] w-[10px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                    aria-label="Slide 2"></button>
+                    <button
+                    type="button"
+                    data-te-target="#carouselExampleCaptions1"
+                    data-te-slide-to="2"
+                    class="mx-[3px] box-content h-[10px] w-[10px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                    <div
+                    class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-active
+                    data-te-carousel-item
+                    style="backface-visibility: hidden">
+                    <img
+                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
+                        class="block w-full"
+                        alt="..." />
+                    <div
+                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                        <h5 class="text-xl">First slide label</h5>
+                        <p>
+                        Some representative placeholder content for the first slide.
+                        </p>
+                    </div>
+                    </div>
+                    <div
+                    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item
+                    style="backface-visibility: hidden">
+                    <img
+                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
+                        class="block w-full"
+                        alt="..." />
+                    <div
+                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                        <h5 class="text-xl">Second slide label</h5>
+                        <p>
+                        Some representative placeholder content for the second slide.
+                        </p>
+                    </div>
+                    </div>
+                    <div
+                    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                    data-te-carousel-item
+                    style="backface-visibility: hidden">
+                    <img
+                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
+                        class="block w-full"
+                        alt="..." />
+                    <div
+                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                        <h5 class="text-xl">Third slide label</h5>
+                        <p>
+                        Some representative placeholder content for the third slide.
+                        </p>
+                    </div>
+                    </div>
+            </div>
+            <button
+                class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                type="button"
+                data-te-target="#carouselExampleCaptions1"
+                data-te-slide="prev">
+                <span class="inline-block h-8 w-8">
+                
+                </span>
+                <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                >Previous</span
+                >
+            </button>
+            <button
+                class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                type="button"
+                data-te-target="#carouselExampleCaptions1"
+                data-te-slide="next">
+                <span class="inline-block h-8 w-8">
+                
+                </span>
+                <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                >Next</span
+                >
+            </button>
+            </div> -->
             
-            </span>
-	    <span
-	      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-	      >Next</span
-	    >
-	  </button>
-	</div>
-    <!-- <div id="carouselExampleCaptions1" class="relative" data-te-carousel-init data-te-carousel-slide>
-	    <div class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-		    data-te-carousel-indicators>
-		    <button
-		      type="button"
-		      data-te-target="#carouselExampleCaptions1"
-		      data-te-slide-to="0"
-		      data-te-carousel-active
-		      class="mx-[3px] box-content h-[10px] w-[10px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-		      aria-current="true"
-		      aria-label="Slide 1"></button>
-		    <button
-		      type="button"
-		      data-te-target="#carouselExampleCaptions1"
-		      data-te-slide-to="1"
-		      class="mx-[3px] box-content h-[10px] w-[10px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-		      aria-label="Slide 2"></button>
-		    <button
-		      type="button"
-		      data-te-target="#carouselExampleCaptions1"
-		      data-te-slide-to="2"
-		      class="mx-[3px] box-content h-[10px] w-[10px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-		      aria-label="Slide 3"></button>
-		</div>
-	    <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-		    <div
-		      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-		      data-te-carousel-active
-		      data-te-carousel-item
-		      style="backface-visibility: hidden">
-		      <img
-		        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-		        class="block w-full"
-		        alt="..." />
-		      <div
-		        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-		        <h5 class="text-xl">First slide label</h5>
-		        <p>
-		          Some representative placeholder content for the first slide.
-		        </p>
-		      </div>
-		    </div>
-		    <div
-		      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-		      data-te-carousel-item
-		      style="backface-visibility: hidden">
-		      <img
-		        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
-		        class="block w-full"
-		        alt="..." />
-		      <div
-		        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-		        <h5 class="text-xl">Second slide label</h5>
-		        <p>
-		          Some representative placeholder content for the second slide.
-		        </p>
-		      </div>
-		    </div>
-		    <div
-		      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-		      data-te-carousel-item
-		      style="backface-visibility: hidden">
-		      <img
-		        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
-		        class="block w-full"
-		        alt="..." />
-		      <div
-		        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-		        <h5 class="text-xl">Third slide label</h5>
-		        <p>
-		          Some representative placeholder content for the third slide.
-		        </p>
-		      </div>
-		    </div>
-	   </div>
-	  <button
-	    class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-	    type="button"
-	    data-te-target="#carouselExampleCaptions1"
-	    data-te-slide="prev">
-	    <span class="inline-block h-8 w-8">
-	     
-	    </span>
-	    <span
-	      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-	      >Previous</span
-	    >
-	  </button>
-	  <button
-	    class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-	    type="button"
-	    data-te-target="#carouselExampleCaptions1"
-	    data-te-slide="next">
-	    <span class="inline-block h-8 w-8">
-	      
-	    </span>
-	    <span
-	      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-	      >Next</span
-	    >
-	  </button>
-	</div> -->
-
 </div>
 
 

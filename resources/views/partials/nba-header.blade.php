@@ -109,22 +109,17 @@
                     <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute ">
                         @foreach($team->data as $key=>$val)
                             @if(!empty($val->logo->src))
-                                @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combos/{team}') != ('nhl/line-combos/{team}') && Request::is('nhl/team-news') != ('nhl/team-news') && Request::is('nhl/line-combinations') != ('nhl/line-combinations'))
-                                    <li class="lc-team-logo " style="display:none;"   value="">
-                                        <a class=""  href="/nhl/line-combos/{{$val->slug}}">
-                                        <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
+                                @if($val->league->slug == 'nba')
+                                    <li class="lc-team-logo "  
+                                        style="" value="">
+                                        <a class=""  href=" ">
+                                            <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title=" ">
                                         </a>
                                     </li> 
-                                @else 
-                                   <li class="lc-team-logo "  
-                                        style=" " value="">
-                                        <a class=""  href="/nhl/line-combos/{{$val->slug}}">
-                                        <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
-                                        </a>
-                                     </li> 
                                 @endif 
-                            @endif 
+                            @endif
                         @endforeach
+                        
                     </ul>
                 </div>
             </div>
