@@ -40,35 +40,31 @@
                                         $nhl_goalies = 0;
                                     @endphp                                   
                                     @foreach($goalies_schedule->data as $key=>$val)
-                                      
-                                            @if($nhl_goalies == 0)   
-                                                <div class="relative float-left -mr-[100%]  w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
-                                                    data-te-carousel-active
-                                                    data-te-carousel-item
-                                                    style="backface-visibility: hidden">
-                                                    <div class="flex flex-row justify-center items-center">
-                                                        <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                            <h1 class="text-2xl font-bold text-white "> {{$val->game_date->full}}</h1>
-                                                        </div>
+                                        @if($nhl_goalies == 0)   
+                                            <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                                                data-te-carousel-active
+                                                data-te-carousel-item
+                                                style="backface-visibility: hidden">
+                                                <div class="flex flex-row justify-center items-center">
+                                                    <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
+                                                        <h1 class="text-2xl font-bold text-white "> {{$val->game_date->full}}</h1>
                                                     </div>
                                                 </div>
-                                      
-                                            @else 
-                                                <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-2]"
-                                                    data-te-carousel-item
-                                                    style="backface-visibility: hidden">
-                                                    <div class="flex flex-row justify-center items-center">
-                                                    <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                            <h1 class="text-2xl font-bold text-white ">{{$val->game_date->full}}</h1>
-                                                        </div>
+                                            </div>
+                                        @else 
+                                            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-1]"
+                                                data-te-carousel-item
+                                                style="backface-visibility: hidden">
+                                                <div class="flex flex-row justify-center items-center">
+                                                <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
+                                                        <h1 class="text-2xl font-bold text-white ">{{$val->game_date->full}}</h1>
                                                     </div>
-                                                </div>    
-                                                 
-                                            @endif
-                                            @php
-                                                $nhl_goalies++;
-                                            @endphp  
-                                      
+                                                </div>
+                                            </div>      
+                                        @endif
+                                        @php
+                                            $nhl_goalies++;
+                                        @endphp  
                                     @endforeach
                                 </div>
                             <button
@@ -218,8 +214,6 @@
                     <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 </div>
             </div>
-                                    
-        
         </div>
     </div>
 

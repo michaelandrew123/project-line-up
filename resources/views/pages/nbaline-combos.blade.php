@@ -10,7 +10,7 @@
                 <div class="flex flex-row items-center">
                     <div class="flex flex-row items-center gap-5">
                         <div class="flex flex-col">
-                            <img class="w-20 flex" src="{{ asset('/images/teamlogo-svg/calgary-flames.svg') }}" alt="">
+                            <img class="w-20 flex" src="{{  ( !empty($current_logo) ? $current_logo: 'https://media.projectedlineups.com/sports/hockey/leagues/nhl/teams/boston-bruins/logos/logo.svg') }}" alt="">
                         </div>
                         <div>
                             <div class="teams text-4xl font-bold text-black">
@@ -29,7 +29,7 @@
                     <p class="text-[13px] font-semibold">full date/time</p>
                     <div class="flex gap-2 justify-center items-center">
                         <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-4 h-4  rounded-full ">
-                        <h1 class="text-[13px] font-semibold uppercase">status->name</h1>
+                        <h1 class="text-[13px] font-semibold uppercase">{{status->name}}</h1>
                     </div>      
                 </div>
             </div>
