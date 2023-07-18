@@ -609,7 +609,20 @@ class HockeyController extends Controller
     }
     public function nhllineCombinations(){
         $client = new \GuzzleHttp\Client();
-
+        
+        $goalies = $client->get(
+            'https://api.projectedlineups.com/v1/content/cards/cards',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+       
+       
+         $player= $goalies->getBody();
+         $player_news = json_decode($player);
 
         $article = $client->get(
             'https://api.projectedlineups.com/v1/content/cards/cards',
@@ -653,7 +666,7 @@ class HockeyController extends Controller
 
         
 
-        return view('pages/nhlline-combinations')->with([ 'team' => $team_result, 'article' => $team_article ] );
+        return view('pages/nhlline-combinations')->with([ 'team' => $team_result, 'article' => $team_article, 'goalies' => $player_news] );
     }
     public function postsarticle(){
         return view('pages/postsarticle');

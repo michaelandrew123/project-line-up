@@ -26,10 +26,10 @@
                     <a href="#" class=" " target="_blank">
                         <p class="text-[13px] font-semibold">{{ $result->data->source->name  }}</p>
                     </a>
-                    <p class="text-[13px] font-semibold">full date/time</p>
+                    <p class="text-[13px] font-semibold">{{full date/time}}</p>
                     <div class="flex gap-2 justify-center items-center">
                         <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-4 h-4  rounded-full ">
-                        <h1 class="text-[13px] font-semibold uppercase">status->name</h1>
+                        <h1 class="text-[13px] font-semibold uppercase">{{status->name}}</h1>
                     </div>      
                 </div>
             </div>

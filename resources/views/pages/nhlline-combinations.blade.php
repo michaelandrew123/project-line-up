@@ -41,7 +41,7 @@
     </div> -->
     <div class="w-full flex justify-center bg-slate-100 mt-10">
        <div class="xl:w-11/12 lg:w-full md:w-full flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
-          <div class="flex flex-col  w-9/12 gap-5">
+            <div class="flex flex-col  w-9/12 gap-5">
                 <div class="w-full bg-[#38b6ff] flex flex-row  items-center rounded-md">
                     <h1 class="text-center py-10 text-3xl font-bold w-full">  NHL Line Combinations</h1>
                 </div>
@@ -69,14 +69,32 @@
                         @endif
                     @endforeach
                 </table>
-           </div>
+            </div>
            <div class=" flex flex-col  xl:w-64 lg:w-52 md:w-52">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
                         <h1 class="font-bold">Starting Goalies</h1>
                     </div>
                     <div id=" " class="flex flex-col gap-4 w-full">
-                        <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                        @foreach($goalies->data as $key=>$val)
+                            @if(isset($val->metafields->goalie_status))
+                                @if($val->metafields->goalie_status->name === 'Confirmed')  
+                                    <div class="flex flex-row items-center gap-2 w-full" style=" ">   
+                                        <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{$val->player->images->uniform}}" alt="">    
+                                        <div class="flex flex-col">
+                                            <div class="flex flex-col justify-center">
+                                                <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
+                                                {{$val->player->full_name}} 
+                                                </p>
+                                            </div>
+                                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">{{$val->title}}</p>
+                                            <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
+                                        </div>
+                                    </div>
+                                @endif
+                            @endif     
+                        @endforeach
+                        <!-- <div class="flex flex-row items-center gap-2 w-full" style=" ">   
                             <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
                             <div class="flex flex-col">
                                 <div class="flex flex-col justify-center">
@@ -111,21 +129,9 @@
                                 <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
                                 <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
                             </div>
-                        </div>
-                        <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                            <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
-                            <div class="flex flex-col">
-                                <div class="flex flex-col justify-center">
-                                    <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
-                                        Linus Ullmark - BOS
-                                    </p>
-                                </div>
-                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
-                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
-                            </div>
-                        </div> 
+                        </div>  -->
                         <div class="w-full flex justify-center">
-                            <a class="font-semibold xl:text-sm lg:text-sm md:text-[8px] text-[#38b6ff]" href="">View Today's Starting Goalies</a>
+                            <a class="font-semibold xl:text-sm lg:text-sm md:text-[8px] text-[#38b6ff]" href="{{url('nhl/starting-goaliesv2')}}">View Today's Starting Goalies</a>
                         </div>
                     </div>
                     <div class="flex justify-center">
