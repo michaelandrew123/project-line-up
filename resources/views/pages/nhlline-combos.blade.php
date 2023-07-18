@@ -108,7 +108,7 @@
         </ul>
     </div>
     <!-- Line-ups  -->
-    <div id="lu-body" class="w-full flex flex-row justify-evenly gap-7  max-w-screen-2xl">
+    <div id="lu-body" class="w-full flex flex-row justify-evenly gap-7  max-w-screen-2xl ">
         <div class="xl:w-7/12 lg:w-8/12 md:w-7/12 block smm-hidden">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
             <div id="shirt-footer" class="flex flex-col gap-2 my-1">
@@ -655,7 +655,7 @@
     </div> 
     
     <!-- End of Line-ups -->
-   <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden">
+   <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden ">
         <div class="w-11/12 md:w-full flex flex-col items-center gap-6 max-w-screen-2xl">
                 <h1 class="text-center font-extrabold text-md mt-5 mb-10 bg-slate-300 p-0.5 border rounded-lg">FORWARDS</h1>
                 <div class="flex flex-row justify-between xl:w-11/12 lg:w-full gap-3.5 md:gap-0">

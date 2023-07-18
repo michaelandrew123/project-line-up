@@ -50,7 +50,7 @@
       $('.drp-dwn-mob').toggleClass('hidden');
       $('.arrw-v1-mob').toggleClass('rotate-[271deg]');
     });
-  //  header input 
+  //  header input old design
     $('#SN').on('change', function(){
     	var demovalue = $(this).val(); 
         if(demovalue == 'val1'){
@@ -84,12 +84,9 @@
           $('#basket').addClass('hidden');
           $('#rugby').addClass('hidden');
         }else{
-
         }
     });
     
-    
- 
     $('#SN').on('change', function(){
     	var demovalue = $(this).val();
         if(demovalue == 'val1'){
@@ -479,6 +476,7 @@
                 $('.forward-icon-fanduel').addClass('hidden');
                 $('.forward-icon-draftking').addClass('hidden'); 
             } 
+
             }else if($(this).text() == 'NEWS'){
                 $('#scrollbar').removeClass('hidden'); 
                 $('#ldf, #img').addClass('hidden');
@@ -1016,4 +1014,7 @@ const data = {
       ctx.stroke();
       ctx.closepath();
     }
+
+
+    
 </script>

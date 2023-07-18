@@ -1455,7 +1455,7 @@
                                 <div class="flex flex-col">
                                     <div class="flex flex-col justify-center">
                                         <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
-                                          {{$val->metafields->goalie_status->name}}
+                                         {{$val->player->full_name}} 
                                         </p>
                                     </div>
                                     <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">{{$val->title}}</p>
@@ -2536,7 +2536,7 @@
                                     <div class="flex flex-row justify-center">
                                         <div class="w-[23rem] h-[23rem]  relative rounded-xl bg-white border border-black relative">
                                             <div class="flex mx-2 mt-5 ">
-                                                 <img class="h-28 w-28" src="{{$val->player->images->uniform}}">
+                                                 <img class="w-24" src="{{$val->player->images->uniform}}">
                                                 <div class="flex flex-col ml-2 gap-3">
                                                     <div class="flex flex-row gap-2">
                                                         <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
@@ -2550,7 +2550,7 @@
                                             </div>
                                             <div class=" mx-2 mb-2 pb-1">
                                                 <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
-                                                <p class="xl:text-[11px] lg:text-[9px] md:text-[7px] font-semibold">{{$val->description}}</p>
+                                                <p class="text-[10px] font-semibold">{{$val->description}}</p>
                                             </div>
                                             <div class="flex items-center justify-between absolute bottom-2 w-full">
                                                 <div class="flex flex-row items-center mx-2">
@@ -2575,7 +2575,7 @@
                                     <div class="flex flex-row justify-center">
                                         <div class="w-[23rem] h-[23rem]  relative rounded-xl bg-white border border-black">
                                             <div class="flex mx-2 mt-5 ">
-                                                <img class="h-28 w-28" src="{{$val->player->images->uniform}}">
+                                                <img class="w-24" src="{{$val->player->images->uniform}}">
                                                 <div class="flex flex-col ml-2 gap-3">
                                                     <div class="flex flex-row gap-2">
                                                         <img class="w-[20px] h-[20px]" src="{{ asset('/images/menu-icon/green-checked.png') }}">
@@ -2589,7 +2589,7 @@
                                             </div>
                                             <div class=" mx-2 mb-2 pb-1">
                                                 <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
-                                                <p class="xl:text-[11px] lg:text-[9px] md:text-[7px] font-semibold">{{$val->description}}</p>
+                                                <p class="text-[10px] font-semibold">{{$val->description}}</p>
                                             </div>
                                             <div class="flex items-center justify-between  absolute bottom-2 w-full">
                                                 <div class="flex flex-row items-center mx-2">
@@ -2787,38 +2787,38 @@
         <div class="flex justify-center">
            <img class="w-6/12 " src="{{ asset('/images/menu-icon/adds3.png') }}" alt="">
         </div> -->
-    <div id="carouselExampleCaptions1" class="relative" data-te-carousel-init data-te-carousel-slide>
-	    <div class="absolute right-0 -bottom-10 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 z-[-3]"
-		    data-te-carousel-indicators>
-		    <button
-		      type="button"
-		      data-te-target="#carouselExampleCaptions1"
-		      data-te-slide-to="0"
-		      data-te-carousel-active
-		      class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-		      aria-current="true"
-		      aria-label="Slide 1"></button>
-		    <button
-		      type="button"
-		      data-te-target="#carouselExampleCaptions1"
-		      data-te-slide-to="1"
-		      class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-		      aria-label="Slide 2"></button>
-		    <button
-		      type="button"
-		      data-te-target="#carouselExampleCaptions1"
-		      data-te-slide-to="2"
-		      class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-		      aria-label="Slide 3"></button>
-		</div>     
+       <div id="carouselExampleCaptions1" class="relative hidden" data-te-carousel-init data-te-carousel-slide>
+            <div class="absolute right-0 -bottom-10 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 z-[-3]"
+                data-te-carousel-indicators>
+                <button
+                type="button"
+                data-te-target="#carouselExampleCaptions1"
+                data-te-slide-to="0"
+                data-te-carousel-active
+                class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+                <button
+                type="button"
+                data-te-target="#carouselExampleCaptions1"
+                data-te-slide-to="1"
+                class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                aria-label="Slide 2"></button>
+                <button
+                type="button"
+                data-te-target="#carouselExampleCaptions1"
+                data-te-slide-to="2"
+                class="mx-[3px] box-content h-[15px] w-[15px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-current bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
+                aria-label="Slide 3"></button>
+            </div>     
             <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] ">
                 @php
-                   $nhl_player_news = 0;
+                   $nhl_starting = 0;
                 @endphp
                 @foreach($goalies->data as $key=>$val)
-                   @if(isset($val->type))
-                        @if($val->type->slug === 'line-change'  )
-                            @if($nhl_player_news == 0)
+                    @if(isset($val->metafields->goalie_status))
+                        @if($val->metafields->goalie_status->name === 'Confirmed')  
+                            @if($nhl_starting == 0)
                                 <div
                                     class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none z-[-3]"
                                     data-te-carousel-active
@@ -2889,7 +2889,7 @@
                                 </div>
                             @endif
                             @php
-                              $nhl_player_news++;
+                              $nhl_starting++;
                             @endphp
                         @endif
                     @endif
@@ -2988,108 +2988,147 @@
                 >
             </button>
             </div>
-            <!-- <div id="carouselExampleCaptions1" class="relative" data-te-carousel-init data-te-carousel-slide>
-                <div class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-                    data-te-carousel-indicators>
-                    <button
-                    type="button"
-                    data-te-target="#carouselExampleCaptions1"
-                    data-te-slide-to="0"
-                    data-te-carousel-active
-                    class="mx-[3px] box-content h-[10px] w-[10px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-                    aria-current="true"
-                    aria-label="Slide 1"></button>
-                    <button
-                    type="button"
-                    data-te-target="#carouselExampleCaptions1"
-                    data-te-slide-to="1"
-                    class="mx-[3px] box-content h-[10px] w-[10px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-                    aria-label="Slide 2"></button>
-                    <button
-                    type="button"
-                    data-te-target="#carouselExampleCaptions1"
-                    data-te-slide-to="2"
-                    class="mx-[3px] box-content h-[10px] w-[10px] flex-initial cursor-pointer border-1 border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none rounded-full"
-                    aria-label="Slide 3"></button>
-                </div>
-                <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-                    <div
-                    class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                    data-te-carousel-active
-                    data-te-carousel-item
-                    style="backface-visibility: hidden">
-                    <img
-                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
-                        class="block w-full"
-                        alt="..." />
-                    <div
-                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                        <h5 class="text-xl">First slide label</h5>
-                        <p>
-                        Some representative placeholder content for the first slide.
-                        </p>
-                    </div>
-                    </div>
-                    <div
-                    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                    data-te-carousel-item
-                    style="backface-visibility: hidden">
-                    <img
-                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
-                        class="block w-full"
-                        alt="..." />
-                    <div
-                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                        <h5 class="text-xl">Second slide label</h5>
-                        <p>
-                        Some representative placeholder content for the second slide.
-                        </p>
-                    </div>
-                    </div>
-                    <div
-                    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                    data-te-carousel-item
-                    style="backface-visibility: hidden">
-                    <img
-                        src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
-                        class="block w-full"
-                        alt="..." />
-                    <div
-                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                        <h5 class="text-xl">Third slide label</h5>
-                        <p>
-                        Some representative placeholder content for the third slide.
-                        </p>
-                    </div>
-                    </div>
+            <div
+            id="carouselExampleControls"
+            class="relative"
+            data-te-carousel-init
+            data-te-carousel-slide>
+            <!--Carousel items-->
+            <div
+                class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+                @php
+                   $nhl_player = 0;
+                @endphp
+                @foreach($goalies->data as $key=>$val)
+                   @if(isset($val->type))
+                        @if($val->type->slug === 'line-change'  )
+                            @if($nhl_player == 0)
+                                <!--First item-->
+                                <div
+                                class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-item
+                                data-te-carousel-active>
+                                    <div class="flex flex-row justify-center">
+                                        <div class="flex flex-col gap-3 w-[23rem] h-[23rem]  rounded-xl bg-white relative border border-black mx-5">
+                                            <div class="flex mx-2 mt-5 ">
+                                                <img class="w-20 h-20" src="{{$val->player->images->uniform}}">
+                                                <div class="flex flex-col ml-2 gap-3">
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[20px] h-[20px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                                        <p class="text-md font-bold">{{$val->type->name}}</p>
+                                                    </div>
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-3xl font-extrabold">{{$val->player->full_name}}</h1>
+                                                        <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                                    </div>                                                                      
+                                                </div>
+                                            </div>
+                                            <div class="mx-2 ">
+                                                <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
+                                                <p class="xl:text-[11px] lg:text-[9px] md:text-[7px] font-semibold">{{$val->description}}</p>
+                                            </div>
+                                            <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                                <div>
+                                                    <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                                    <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                               @else
+                                <div
+                                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                                data-te-carousel-item>
+                                   <div class="flex flex-row justify-center">
+                                        <div class="flex flex-col gap-3 w-[23rem] h-[23rem]  rounded-xl bg-white relative border border-black mx-5">
+                                            <div class="flex mx-2 mt-5 ">
+                                                <img class="w-20 h-20" src="{{$val->player->images->uniform}}">
+                                                <div class="flex flex-col ml-2 gap-3">
+                                                    <div class="flex flex-row items-center gap-2">
+                                                        <img class="w-[20px] h-[20px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                                        <p class="text-md font-bold">{{$val->type->name}}</p>
+                                                    </div>
+                                                    <div class="flex flex-col">
+                                                        <h1 class=" text-3xl font-extrabold">{{$val->player->full_name}}</h1>
+                                                        <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                                    </div>                                                                      
+                                                </div>
+                                            </div>
+                                            <div class="mx-2 ">
+                                                <p class="text-md font-extrabold mb-2">{{$val->title}}</p>
+                                                <p class="xl:text-[11px] lg:text-[9px] md:text-[7px] font-semibold">{{$val->description}}</p>
+                                            </div>
+                                            <div class="flex flex-row items-center absolute left-3 bottom-2">
+                                                <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                                <div>
+                                                    <h3 class="text-[13px] font-extrabold">{{$val->source->name}}</h3>
+                                                    <p class="text-[9px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            @endif
+                            @php
+                              $nhl_player++;
+                            @endphp
+                        @endif
+                    @endif
+                @endforeach    
             </div>
-            <button
-                class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                type="button"
-                data-te-target="#carouselExampleCaptions1"
-                data-te-slide="prev">
-                <span class="inline-block h-8 w-8">
-                
-                </span>
-                <span
-                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                >Previous</span
-                >
-            </button>
-            <button
-                class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                type="button"
-                data-te-target="#carouselExampleCaptions1"
-                data-te-slide="next">
-                <span class="inline-block h-8 w-8">
-                
-                </span>
-                <span
-                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                >Next</span
-                >
-            </button>
-            </div> -->
+
+  <!--Carousel controls - prev item-->
+        <button
+            class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleControls"
+            data-te-slide="prev">
+            <span class="inline-block h-8 w-8">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6">
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+            </span>
+            <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Previous</span
+            >
+        </button>
+    <!--Carousel controls - next item-->
+        <button
+            class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-te-target="#carouselExampleControls"
+            data-te-slide="next">
+            <span class="inline-block h-8 w-8">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6">
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+            </span>
+            <span
+            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+            >Next</span
+            >
+        </button>
+    </div>
             
 </div>
 

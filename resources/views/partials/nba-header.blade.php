@@ -112,7 +112,7 @@
                                 @if($val->league->slug == 'nba')
                                     <li class="lc-team-logo "  
                                         style="" value="">
-                                        <a class=""  href=" ">
+                                        <a class=""  href="">
                                             <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title=" ">
                                         </a>
                                     </li> 
