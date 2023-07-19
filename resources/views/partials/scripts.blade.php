@@ -732,16 +732,7 @@ const data = {
         
              
             
-        // image:[
-        // 'logo/edmonton-oilers.svg',
-        // 'logo/detroit-red-wings.svg',
-        // 'logo/columbus-blue-jackets.svg',
-        // 'logo/colorado-avalanche.svg',
-        // 'logo/chicago-blackhawks.svg',
-        // 'logo/boston-bruins.svg',
-        // 'logo/buffalo-sabres.svg',
-        // 'logo/calgary-flames.svg'
-        // ]
+       
       },
     ]
     };
