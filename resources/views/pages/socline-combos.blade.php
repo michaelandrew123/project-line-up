@@ -58,7 +58,7 @@
     </div> 
     <!-- Line-ups  -->
     <div id="lu-body" class="w-full flex flex-row justify-evenly gap-7  max-w-screen-2xl">
-        <div class="xl:w-7/12 lg:w-6/12 md:w-6/12  ">
+        <div class="xl:w-7/12 lg:w-6/12 md:w-6/12  hidden">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
             <div id=""  class="flex flex-col gap-2 my-1">
                 <div class="flex flex-col  gap-2 w-full">
@@ -526,6 +526,181 @@
                             <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Mitch Marner</p>
                         </div>
                     </div> 
+                    <div class="flex flex-row justify-center mt-10">
+                        <div class="flex flex-col items-center w-[32%]  ">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Auston Matthews</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Mitch Marner</p>
+                        </div>
+                    </div> 
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="bg-[#d9d9d9] w-full h-1"></div>                
+           </div>
+       </div> 
+       <!-- formation 4-1-4-1 -->
+       <div class="xl:w-7/12 lg:w-6/12 md:w-6/12  ">
+            <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
+            <div id=""  class="flex flex-col gap-2 my-1">
+                <div class="flex flex-col  gap-2 w-full">
+                    <div class="w-full flex items-center justify-center mt-5">
+                      <h1 class="h-8 w-52  bg-[#38b6ff] rounded justify-center flex items-center font-extrabold text-md text-[#ffffff] ">FORMATION 4-1-4-1</h1>
+                    </div>
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Auston Matthews</p>
+                        </div>
+                    </div>                 
+                    <div class="flex flex-row justify-center mt-10">
+                        <div class="flex flex-col items-center w-[32%]  ">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Auston Matthews</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Mitch Marner</p>
+                        </div>
+                    </div> 
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-center mt-10">
+                        <div class="flex flex-col items-center w-[32%]  ">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Auston Matthews</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Mitch Marner</p>
+                        </div>
+                    </div> 
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="bg-[#d9d9d9] w-full h-1"></div>                
+           </div>
+       </div> 
+       <div class="xl:w-7/12 lg:w-6/12 md:w-6/12  hidden">
+            <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
+            <div id=""  class="flex flex-col gap-2 my-1">
+                <div class="flex flex-col  gap-2 w-full">
+                    <div class="w-full flex items-center justify-center mt-5">
+                      <h1 class="h-8 w-52  bg-[#38b6ff] rounded justify-center flex items-center font-extrabold text-md text-[#ffffff] ">FORMATION 4-2-3-1</h1>
+                    </div>
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Auston Matthews</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row mt-10 gap-3">
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Auston Matthews</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Mitch Marner</p>
+                        </div>
+                    </div> 
+                    <div class="flex flex-row justify-center mt-10 gap-3">
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">Auston Matthews</p>
+                        </div>
+                        <div class="flex flex-col items-center w-[32%]">     
+                            <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
+                                <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class="  px-3" alt="">
+                            </div>
+                            <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">Alexander Kerfoot</p>
+                        </div>
+                    </div>                  
                     <div class="flex flex-row justify-center mt-10">
                         <div class="flex flex-col items-center w-[32%]  ">     
                             <div class="xl:w-[200px] lg:w-[200px] md:w-[150px]">
