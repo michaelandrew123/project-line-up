@@ -4292,8 +4292,7 @@
             </div>           
     </div>
 </div> -->
-<!--Desktop end -->
-<!-- Mobile old Design -->
+ 
 <!-- <div class="hidden smm-block">
     <div class="flex flex-col mx-1">
         <div class="flex flex-row justify-between items-center mb-1">

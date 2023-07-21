@@ -574,6 +574,6 @@
             </div>
         </div>
     </div>
-
+    <!-- API link  https://api.projectedlineups.com/v1/sports/leagues -->
 @endsection
         
