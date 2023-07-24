@@ -194,7 +194,7 @@ class HockeyController extends Controller
     public function nhlProps(){
         return view('pages/nhlprops');
     }
-    public function nhlstartingGoaliesv2(){
+    public function nhlstartingGoalies(){
         $client = new \GuzzleHttp\Client();
         
         $goalies_schedule = $client->get(
@@ -268,7 +268,7 @@ class HockeyController extends Controller
         // print_r(json_decode((string) $body));
 
         // dd($team_result);
-        return view('pages/nhlstarting-goaliesv2')->with([ 'team' => $team_result, 'article' => $team_article, 'starting_goalies' => $team_starting_goalies->data, 'goalies_schedule' => $team_goalies_sched]);
+        return view('pages/nhlstarting-goalies')->with([ 'team' => $team_result, 'article' => $team_article, 'starting_goalies' => $team_starting_goalies->data, 'goalies_schedule' => $team_goalies_sched]);
     }
     public function nhlstartingGoaliesv1(){
         $client = new \GuzzleHttp\Client();

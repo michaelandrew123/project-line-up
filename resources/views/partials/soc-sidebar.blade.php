@@ -1,4 +1,4 @@
-        <div class="xl:w-3/12 lg:w-3/12 md:w-3/12 mt-5 block smm-hidden relative  hidden">
+        <div class="xl:w-3/12 lg:w-3/12 md:w-[32%] mt-5 block smm-hidden relative   ">
             <div class="relative sticky top-0 ">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
@@ -192,7 +192,7 @@
             </div>          
         </div>
         <!-- sidebar 4321 -->
-        <div class="xl:w-3/12 lg:w-3/12 md:w-3/12 mt-5 block smm-hidden relative    hidden">
+        <div class="xl:w-3/12 lg:w-3/12 md:w-4/12 mt-5 block smm-hidden relative hidden ">
             <div class="relative sticky top-0 ">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
@@ -386,7 +386,7 @@
             </div>          
         </div>
          <!-- sidebar 4-3-3 -->
-        <div class="xl:w-3/12 lg:w-3/12 md:w-3/12 mt-5 block smm-hidden relative ">
+        <div class="xl:w-3/12 lg:w-3/12 md:w-[32%] mt-5 block smm-hidden relative hidden">
             <div class="relative sticky top-0 ">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
@@ -580,7 +580,7 @@
             </div>          
         </div>
         <!-- sidebar 4-4-2 -->
-        <div class="xl:w-3/12 lg:w-3/12 md:w-3/12 mt-5 block smm-hidden relative  hidden ">
+        <div class="xl:w-3/12 lg:w-3/12 md:w-[32%] mt-5 block smm-hidden relative  hidden ">
             <div class="relative sticky top-0 ">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
@@ -774,7 +774,7 @@
             </div>          
         </div>
          <!-- sidebar 4-5-1 -->
-         <div class="xl:w-3/12 lg:w-3/12 md:w-3/12 mt-5 block smm-hidden relative   hidden">
+         <div class="xl:w-3/12 lg:w-3/12 md:w-[32%] mt-5 block smm-hidden relative   hidden">
             <div class="relative sticky top-0 ">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">

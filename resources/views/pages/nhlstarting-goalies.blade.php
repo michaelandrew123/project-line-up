@@ -47,7 +47,7 @@
                                                 style="backface-visibility: hidden">
                                                 <div class="flex flex-row justify-center items-center">
                                                     <div class="flex justify-center items-center border border-black bg-[#38b6ff] rounded-lg h-14 w-10/12">
-                                                        <h1 class="text-2xl font-bold text-white "> {{$val->game_date->full}}</h1>
+                                                        <h1 class="text-2xl font-bold text-white ">{{$val->game_date->full}}</h1>
                                                     </div>
                                                 </div>
                                             </div>
@@ -159,7 +159,6 @@
                             <img class="w-full h-32 border border-black" src="{{ asset('/images/menu-icon/.png') }}">
                         </div> 
                     </div>
-                    
                 </div>  
                 <div class=" flex flex-col w-1/5 gap-8">
                     <img class="w-full" src="{{ asset('/images/menu-icon/adds3.png') }}">
