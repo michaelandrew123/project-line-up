@@ -129,14 +129,13 @@
                     </ul>
                 </div>
             </div>
-             
         </div>
     </div>
-    <div class="smm-block hidden relative">
+    <div class=" smm-block hidden relative mb-5 w-full py-2">
         <div class="fixed top-0 w-full bg-white z-30">
             <!-- Main navigation container -->
             <nav
-                class="flex-no-wrap relative  flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4"
+                class="flex-no-wrap relative flex w-full items-center justify-between bg-[#f3f5f9] rounded-md shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10  "
                 data-te-navbar-ref>
                 <div class="flex w-full flex-row items-center justify-between px-3">
                     <!-- Hamburger button for mobile view -->
