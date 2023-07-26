@@ -577,7 +577,7 @@
     <!-- API link  https://api.projectedlineups.com/v1/sports/leagues -->
     <!-- Mobile design -->
     <div class="w-full smm-block hidden">
-        <img class="w-full mt-14 mb-5" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
+        <img class="w-full mb-5" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
         <div class="w-full">
             <div class="w-full h-auto flex justify-center relative">
                 <img class="w-[45%] z-0 absolute left-0 bottom-0" src="{{ asset('/images/menu-icon/auston matthews (1).png') }}" alt="">
