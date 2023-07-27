@@ -169,8 +169,7 @@
                             </ul>
                         </div>
                     </div> -->
-                    <div class="w-full
-                    flex justify-center my-5">
+                    <div class="w-full flex justify-center my-5">
                         <div class="w-11/12">
                             <!-- <div class="flex items-center">
                                 <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
@@ -2196,9 +2195,9 @@
             </div>
         </div>
     </div>
-<!-- Mobile design -->
+    <!-- Mobile design -->
     <!-- New update design -->
-    <div class="w-full flex flex-col gap-2.5 smm-block hidden">   
+    <div class="w-full flex flex-col gap-2.5 mx-1 smm-block hidden">   
         <img class="w-full mb-5" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
         <div class="flex flex-row justify-evenly gap-2.5">
             <a href="" class="h-[10rem] bg-[#333333] w-full flex flex-col items-center justify-center rounded-lg  gap-2">

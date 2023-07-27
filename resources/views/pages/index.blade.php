@@ -576,7 +576,7 @@
     </div>
     <!-- API link  https://api.projectedlineups.com/v1/sports/leagues -->
     <!-- Mobile design -->
-    <div class="w-full smm-block hidden">
+    <div class="w-full smm-block hidden ">
         <img class="w-full mb-5" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
         <div class="w-full">
             <div class="w-full h-auto flex justify-center relative">
@@ -603,7 +603,7 @@
                       <img class="w-[48%]" src="{{ asset('/images/menu-icon/player4.png') }}" alt="">
                     </div>
                 </a>
-                <a class="w-full flex flex-col bg-[#15d869] border rounded-lg " href="">
+                <a class="w-full flex flex-col bg-[#15d869] border rounded-lg" href="">
                     <div class="flex flex-row justify-between w-6/12 ml-[10%] py-3">
                       <img class="w-10 h-10 -rotate-45" src="{{ asset('/images/menu-icon/football icon 40x40.png') }}" alt="">
                       <h1 class="text-3xl font-bold text-white">NFL</h1>
