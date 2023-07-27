@@ -217,7 +217,7 @@
     </div>
 
     <!-- Mobile design -->
-    <div class="w-full flex flex-col items-center ">
+    <div class="w-full flex flex-col items-center hidden">
         <div class="w-full  smm-block hidden">
             <div class="flex flex-col mx-1">
                 <div class="flex flex-row justify-between items-center mb-1">
