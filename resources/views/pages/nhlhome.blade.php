@@ -2197,107 +2197,108 @@
     </div>
     <!-- Mobile design -->
     <!-- New update design -->
-    <div class="w-full flex flex-col gap-2.5 mx-1 smm-block hidden">   
-        <img class="w-full mb-5" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
-        <div class="flex flex-row justify-evenly gap-2.5">
-            <a href="" class="h-[10rem] bg-[#333333] w-full flex flex-col items-center justify-center rounded-lg  gap-2">
-                <h1 class="text-xl font-bold text-white">Starting Goalies</h1>
-                <img class="w-[34%]" src="{{ asset('/images/menu-icon/starting-goalie.png') }}" alt="">
-            </a>
-            <a href="" class="h-[10rem] bg-[#333333] w-full flex flex-col items-center justify-center rounded-lg gap-2.5">
-                <h1 class=" text-xl font-bold text-white">Line Combinations</h1>
-                <img class="w-[34%]" src="{{ asset('/images/menu-icon/line-combinations.png') }}" alt="">
-            </a>
-        </div>
-        <div class="flex flex-row gap-2.5 mt-2.5">
-            @foreach($contentPosts as $key=>$item)
-                @if($item->category->slug === 'top-stacks')
-                    <a href="" class="h-[10rem] bg-[#ffa100] w-full flex flex-col items-center justify-center rounded-lg gap-2.5">
-                        <h1 class="text-xl font-bold text-white">{{$item->category->name}}</h1>
-                        <img class="w-[57%]" src="{{$item->metafields->featured_image->url }}" alt="">
-                    </a>
-                @endif
-                @if($item->category->slug === 'morning-skate')
-                    <a href="" class="h-[10rem] bg-[#56aeff] w-full flex flex-col items-center justify-center rounded-lg  gap-2.5">
-                        <h1 class="text-xl font-bold text-white">{{$item->category->name}}</h1>
-                        <img class="w-[57%]" src="{{$item->metafields->featured_image->url }}" alt="">
-                    </a>
-                @endif
-            @endforeach
-        </div>
-        <div class="w-full mt-2.5">
-            @foreach($contentPosts as $key=>$item)
-                @if($item->category->slug === 'props-and-odds')
-                    <a href="" class="h-[10rem] bg-[#f41823] w-full flex flex-col items-center justify-center rounded-lg gap-2.5">
-                        <h1 class=" text-xl font-bold text-white">{{$item->category->name}}</h1>
-                        <img class="w-[30%]" src="{{$item->metafields->featured_image->url }}" alt="">
-                    </a>
-                @endif
-            @endforeach
-        </div>
-        <div class="">
-            <div class="flex flex-col mt-2.5 gap-1">
-                <h1 class=" bg-[#38b6ff] py-1.5 rounded-md text-base text-center font-bold">Starting Goalies</h1>
-                <div class="w-full flex flex-col  gap-5 bg-[#f4f5f4] mx-2 gap-2">
-                    @foreach($goalies->data as $key=>$val)
-                        @if(isset($val->metafields->goalie_status))
-                            @if($val->metafields->goalie_status->name === 'Confirmed')  
-                                <div class="flex flex-row items-center gap-2 w-full mt-2">   
-                                    <img class=" w-14" style=" " src="{{$val->player->images->uniform}}" alt="">    
-                                    <div class="flex flex-col">
-                                        <div class="flex flex-col justify-center">
-                                            <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
-                                            {{$val->player->full_name}} 
-                                            </p>
-                                        </div>
-                                        <p class=" text-[10px] font-semibold">{{$val->title}}</p>
-                                        <p class=" text-[10px] text-slate-500">30 min ago</p>
-                                    </div>
-                                </div>
-                            @endif
-                        @endif     
-                    @endforeach
-                </div>
+    <div class="w-full smm-block hidden">   
+        <div class="flex flex-col items-center py-2 mx-2">
+            <img class="w-full my-3" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
+            <div class="flex flex-row w-full justify-between gap-2.5">
+                <a href="" class="h-[12rem] smm-h-[9rem] bg-[#333333] w-full flex flex-col items-center justify-center text-center rounded-lg gap-2 p-3">
+                    <h1 class="text-2xl font-bold text-white">Starting Goalies</h1>
+                    <img class="w-[44%]" src="{{ asset('/images/menu-icon/starting-goalie.png') }}" alt="">
+                </a>
+                <a href="" class="h-[12rem] smm-h-[9rem] bg-[#333333] w-full flex flex-col items-center justify-center text-center  rounded-lg gap-2 p-3">
+                    <h1 class=" text-2xl font-bold text-white">Line Combinations</h1>
+                    <img class="w-[44%]" src="{{ asset('/images/menu-icon/line-combinations.png') }}" alt="">
+                </a>
             </div>
-            <div class="flex flex-col mt-2.5 gap-1">
-                <h1 class=" bg-[#38b6ff] py-1.5 rounded-md text-base text-center font-bold">Player News</h1>
-                <div class="w-full flex flex-col  gap-5 bg-[#f4f5f4] mx-2  gap-2">
-                    @php
-                        $article_injury_count = 0; 
-                    @endphp 
-                    @foreach($article->data as $key=>$val)
-                        @if(isset($val->league))
-                            @if($val->league->slug === 'nhl')
-                                @php 
-                                    $article_injury_count++ 
-                                @endphp 
-                                <div class="flex flex-row items-center gap-2 w-full mt-2" style="{{ $article_injury_count  > 7 ? 'display: none' : ''}}">   
-                                    <img class=" w-14" style=" " src="{{$val->player->images->uniform}}" alt="">    
-                                    <div class="flex flex-col">
-                                        <div class="flex flex-col justify-center">
-                                            <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
-                                            {{$val->player->full_name}} 
-                                            </p>
-                                        </div>
-                                        <p class=" text-[10px] font-semibold">{{$val->title}}</p>
-                                        <p class=" text-[10px] text-slate-500">30 min ago</p>
-                                    </div>
-                                </div>
-                            @endif
-                        @endif     
-                    @endforeach
-                </div>
+            <div class="flex flex-row gap-2.5 mt-2.5 ">
+                @foreach($contentPosts as $key=>$item)
+                    @if($item->category->slug === 'top-stacks')
+                        <a href="" class="h-[12rem] smm-h-[9rem] bg-[#ffa100] w-full flex flex-col items-center justify-between text-center rounded-lg gap-2.5 ">
+                            <h1 class="text-2xl font-bold text-white mt-2">{{$item->category->name}}</h1>
+                            <img class="w-[63%]" src="{{$item->metafields->featured_image->url }}" alt="">
+                        </a>
+                    @endif
+                    @if($item->category->slug === 'morning-skate')
+                        <a href="" class="h-[12rem] smm-h-[9rem] bg-[#56aeff] w-full flex flex-col items-center justify-between text-center rounded-lg  gap-2.5 ">
+                            <h1 class="text-2xl font-bold text-white mt-2">{{$item->category->name}}</h1>
+                            <img class="w-[63%]" src="{{$item->metafields->featured_image->url }}" alt="">
+                        </a>
+                    @endif
+                @endforeach
             </div>
-            <img class="w-full mt-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
+            <div class="w-full mt-3">
+                @foreach($contentPosts as $key=>$item)
+                    @if($item->category->slug === 'props-and-odds')
+                        <a href="" class="h-[12rem] smm-h-[9rem] bg-[#f41823] w-full flex items-end  rounded-lg gap-2.5">
+                            <div class="w-full mx-5 mt-2 flex flex-row items-start justify-between">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-9 h-9 bg-green-600 rounded-full flex justify-center items-center">
+                                        <p class="text-2xl font-bold text-white">$</p>
+                                    </div>
+                                    <h1 class=" text-2xl font-bold text-black ">{{$item->category->name}}</h1>
+                                </div>
+                                <img class="w-[40%]" src="{{$item->metafields->featured_image->url }}" alt="">
+                            </div>
+                        </a>
+                    @endif
+                @endforeach
+            </div>
+            <div class="">
+                <div class="flex flex-col mt-2.5 gap-1">
+                    <h1 class=" bg-[#38b6ff] py-1.5 rounded-md text-base text-center font-bold">Starting Goalies</h1>
+                    <div class="w-full flex flex-col  gap-5 bg-[#f4f5f4] mx-2 gap-2">
+                        @foreach($goalies->data as $key=>$val)
+                            @if(isset($val->metafields->goalie_status))
+                                @if($val->metafields->goalie_status->name === 'Confirmed')  
+                                    <div class="flex flex-row items-center gap-2 w-full mt-2">   
+                                        <img class=" w-14" style=" " src="{{$val->player->images->uniform}}" alt="">    
+                                        <div class="flex flex-col">
+                                            <div class="flex flex-col justify-center">
+                                                <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
+                                                {{$val->player->full_name}} 
+                                                </p>
+                                            </div>
+                                            <p class=" text-[10px] font-semibold">{{$val->title}}</p>
+                                            <p class=" text-[10px] text-slate-500">30 min ago</p>
+                                        </div>
+                                    </div>
+                                @endif
+                            @endif     
+                        @endforeach
+                    </div>
+                </div>
+                <div class="flex flex-col mt-2.5 gap-1">
+                    <h1 class=" bg-[#38b6ff] py-1.5 rounded-md text-base text-center font-bold">Player News</h1>
+                    <div class="w-full flex flex-col  gap-5 bg-[#f4f5f4] mx-2  gap-2">
+                        @php
+                            $article_injury_count = 0; 
+                        @endphp 
+                        @foreach($article->data as $key=>$val)
+                            @if(isset($val->league))
+                                @if($val->league->slug === 'nhl')
+                                    @php 
+                                        $article_injury_count++ 
+                                    @endphp 
+                                    <div class="flex flex-row items-center gap-2 w-full mt-2" style="{{ $article_injury_count  > 7 ? 'display: none' : ''}}">   
+                                        <img class=" w-14" style=" " src="{{$val->player->images->uniform}}" alt="">    
+                                        <div class="flex flex-col">
+                                            <div class="flex flex-col justify-center">
+                                                <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
+                                                {{$val->player->full_name}} 
+                                                </p>
+                                            </div>
+                                            <p class=" text-[10px] font-semibold">{{$val->title}}</p>
+                                            <p class=" text-[10px] text-slate-500">30 min ago</p>
+                                        </div>
+                                    </div>
+                                @endif
+                            @endif     
+                        @endforeach
+                    </div>
+                </div>
+                <img class="w-full mt-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
+            </div>
         </div>
-
     </div>
    
-            
- 
-
-
-
-
-
 @endsection

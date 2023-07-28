@@ -958,7 +958,7 @@
                 
         </div>
     </div> -->
-    <div class="flex flex-col items-center  w-full smm-block hidden  ">
+    <div class="flex flex-col items-center  w-full smm-block hidden">
         <div class="w-full">
             <div id="carouselExampleCaptions4" class="relative" data-te-carousel-init data-te-carousel-slide>
                 <div class="absolute right-0 -bottom-10 left-0 z-[2] mx-[15%]  mb-4 flex list-none justify-center p-0 z-[-1]"
