@@ -12,7 +12,19 @@ public function soclineCombos(){
         $client = new \GuzzleHttp\Client();
 
  
-
+        $formations = $client->get(
+            'https://api.projectedlineups.com/v1/sports/sports/soccer/formations',
+            [
+                'headers' => [
+                    'Content-Type' => 'application/json',
+                    'Accept' => 'application/json',
+                ],
+            ]
+        );
+        $formations_body = $formations->getBody();
+        $formations_result = json_decode($formations_body);
+        // print_r(json_decode((string) $body));
+        //  dd($formations_result);
 
     
         $team = $client->get(
@@ -50,7 +62,7 @@ public function soclineCombos(){
 
        
 
-        return view('pages/socline-combos')->with(['result' => $result , 'team' => $team_result ]);
+        return view('pages/socline-combos')->with(['result' => $result , 'team' => $team_result, 'formations' => $formations_result ]);
 
         
     }

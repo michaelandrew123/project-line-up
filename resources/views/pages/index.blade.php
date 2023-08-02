@@ -40,6 +40,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-between">
+                
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
                       <img class="xl:w-12 lg:w-12 md:w-10" src="{{ asset('/images/menu-icon/puck icon 40x40.png') }}" alt="">

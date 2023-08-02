@@ -4,8 +4,8 @@
 
 <div class="">
 <div class="w-full flex flex-col items-center ">
-    <div class="xl:w-11/12 lg:w-full md:w-full  flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#38b6ff] px-2 py-2">
-        <div class="w-full flex flex-col gap-2 ">
+    <div class="xl:w-11/12 lg:w-full md:w-full flex justify-between gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#38b6ff] px-2 py-2">
+        <div class="w-full flex flex-col h-40 justify-evenly gap-2 mr-5">
             <div class="flex flex-row items-center justify-between ">
                 <div class="flex flex-row items-center">
                     <div class="flex flex-row items-center gap-5">
@@ -34,6 +34,11 @@
                 </div>
             </div>
         </div>
+        <div class="w-7/12 h-auto flex justify-center relative mr-5">
+          <img class="w-44 h-40 z-10 absolute left-0 bottom-0" src="{{ asset('/images/menu-icon/connor mcdavid (1).png') }}" alt="">
+          <img class="w-44 h-40 z-20" src="{{ asset('/images/menu-icon/connor mcdavid (1).png') }}" alt="">
+          <img class="w-44 h-40 z-0 absolute right-0 bottom-0" src="{{ asset('/images/menu-icon/connor mcdavid (1).png') }}" alt="">
+        </div>
     </div>  
     <div class="flex flex-row items-center xl:w-11/12 lg:w-11/12 md:w-full mt-[20px] gap-3 block smm-hidden max-w-screen-2xl" id="sub-hed">
         <button class="w-36  xl:text-[24px] lg:text-[24px] md:text-[20px] text-black font-bold rounded-md l-ups nfl-bckgrnd active flex justify-center">
@@ -58,12 +63,14 @@
     </div> 
     <!-- Line-ups  -->
     <div id="lu-body" class="w-full flex flex-row justify-evenly gap-7  max-w-screen-2xl">
-       <div class="xl:w-7/12 lg:w-6/12 md:w-[63%] hidden">
+    @if(Request::is('soc/line-combos'))
+        <!-- formations 4-3-2-1 -->
+       <div class="xl:w-7/12 lg:w-6/12 md:w-[63%]">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
             <div id=""  class="flex flex-col gap-2 my-1">
                 <div class="flex flex-col  gap-2 w-full">
                     <div class="w-full flex items-center justify-center mt-5">
-                      <h1 class="h-8 w-52  bg-[#38b6ff] rounded justify-center flex items-center font-extrabold text-md text-[#ffffff] ">FORMATION 4-3-2-1</h1>
+                      <h1 class="h-8 w-52  bg-[#38b6ff] rounded justify-center flex items-center font-extrabold text-md text-[#ffffff]">FORMATION 4-3-2-1</h1>
                     </div>
                     <div class="flex flex-row justify-center mt-10 gap-3">
                         <div class="flex flex-col items-center w-[32%]">     
@@ -144,8 +151,10 @@
                 </div> 
                 <div class="bg-[#d9d9d9] w-full h-1"></div>                
            </div>
-       </div> 
-       <!-- formation 4-3-2-1 -->
+       </div>
+   
+    @elseif(Request::is('soc/line-combos/formations 4-3-2-1 ')) 
+       <!-- formation 4-3-2-1 player uniform v2-->
        <div class="xl:w-7/12 lg:w-6/12 md:w-7/12  hidden">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
             <div id=""  class="flex flex-col gap-2 my-1">
@@ -298,6 +307,7 @@
                 </div>          
            </div>
        </div> 
+    @elseif(Request::is('soc/line-combos/formations 4-3-3 ')) 
        <!-- formation 4-3-3 -->
        <div class="xl:w-7/12 lg:w-6/12 md:w-[63%]   hidden">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
@@ -383,7 +393,8 @@
                 </div> 
                 <div class="bg-[#d9d9d9] w-full h-1"></div>                
            </div>
-       </div> 
+       </div>
+    @elseif(Request::is('soc/line-combos/formations 4-3-3 ')) 
        <!-- formation 4-4-2 -->
        <div class="xl:w-7/12 lg:w-6/12 md:w-[63%] hidden">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
@@ -478,6 +489,7 @@
                 <div class="bg-[#d9d9d9] w-full h-1"></div>                
            </div>
        </div> 
+    @elseif(Request::is('soc/line-combos/formations 4-5-1 ')) 
        <!-- formation 4-5-1 -->
        <div class="xl:w-7/12 lg:w-6/12 md:w-[63%] hidden">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
@@ -564,6 +576,7 @@
                 <div class="bg-[#d9d9d9] w-full h-1"></div>                
            </div>
        </div> 
+    @elseif(Request::is('soc/line-combos/formations 4-1-4-1 '))
        <!-- formation 4-1-4-1 -->
        <div class="xl:w-7/12 lg:w-6/12 md:w-[63%] hidden">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
@@ -652,8 +665,9 @@
                 <div class="bg-[#d9d9d9] w-full h-1"></div>                
            </div>
        </div> 
+    @elseif(Request::is('soc/line-combos/formations 4-2-3-1 '))  
        <!-- formation 4-2-3-1 -->
-       <div class="xl:w-7/12 lg:w-6/12 md:w-[63%] ">
+       <div class="xl:w-7/12 lg:w-6/12 md:w-[63%] hidden">
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
             <div id=""  class="flex flex-col gap-2 my-1">
                 <div class="flex flex-col  gap-2 w-full">
@@ -740,6 +754,7 @@
                 <div class="bg-[#d9d9d9] w-full h-1"></div>                
            </div>
        </div> 
+    @endif
        @include('partials.soc-sidebar')
        <!-- End of Line-ups -->
         <div id="drf-shp" class="hidden w-full flex flex-col items-center block smm-hidden">
@@ -2568,222 +2583,222 @@
                     <div class="w-full flex flex-col items-center  gap-8 max-w-screen-2xl">
                         <h1 class="text-center font-extrabold text-md mt-5 mb-10 bg-slate-300 p-0.5 border rounded-lg w-[6rem] ">PLAYER-2</h1>  
                         <div class="flex flex-col w-11/12 md:w-full gap-5">                    
-                        <div class="flex flex-row justify-between xl:w-11/12 w-full gap-3.5 md:gap-0">
-                            <div class="flex flex-row items-center gap-2 w-8/12 ">
-                                <div class="w-11/12 flex flex-col items-center">
-                                    <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
-                                    <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
-                                </div>              
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="flex flex-row justify-between xl:w-11/12 w-full gap-3.5 md:gap-0">
+                                <div class="flex flex-row items-center gap-2 w-8/12 ">
+                                    <div class="w-11/12 flex flex-col items-center">
+                                        <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
+                                        <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
+                                    </div>              
+                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                        <div class="flex flex-col gap-4 mt-1.5">
+                                            <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
+                                            <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
+                                        </div>
+                                        <div class="bg-[#ffa100] w-full py-3 border rounded-lg">
+                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
+                                        </div>
+                                    </div>
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="flex flex-col gap-3 mt-1.5">
+                                            <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
+                                            <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
+                                        </div>
+                                        <div class="bg-[#1d9bf0] w-full py-3 border rounded-lg">
+                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
+                                        </div>
+                                    </div>
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="flex flex-col gap-3 mt-1.5">
+                                            <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
+                                            <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
+                                        </div>
+                                        <div class="bg-[#ffa100] flex justify-center w-full py-3 border rounded-lg">
+                                        <h3 class="xl:text-xl text-md font-semibold text-center">CHART</h3>
+                                        <img class="xl:w-7 w-[1.5rem]" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                        <div class="flex flex-col gap-3 mt-1.5">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="bg-[#ffa100] w-f ull py-3 border rounded-lg">
+                                            <h3 class="text-xl font-bold text-center">BUY</h3>
+                                            <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                    <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
+                                            <p>Start per Game</p>
+                                            <div class="flex flex-row w-full justify-evenly">
+                                                <div class="xl:text-sm lg:text-sm text-[10px]">
+                                                <p>Goals</p>
+                                                <p>Assist</p>
+                                                <p>Points</p>
+                                                <p>Shots</p>
+                                                <p>Blocks</p>
+                                                <p>TOI</p>
+                                                <p>PP TQI</p>
+                                                </div>
+                                                <div class="xl:text-sm lg:text-sm text-[10px]">
+                                                <p>.45</p>
+                                                <p>.35</p>
+                                                <p>.80</p>
+                                                <p>2.76</p>
+                                                <p>1.2</p>
+                                                <p>16:53</p>
+                                                <p>2.12</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-[#ffa100] w-full xl:py-3 py-1 border rounded-lg">
+                                            <h3 class="xl:text-xl lg:text-xl md:text-md font-semibold text-center">Last 5</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row items-center w-8/12 gap-2 ">
+                                    <div class="w-11/12 flex flex-col items-center">
+                                        <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">AUSTON MATTHEWS</p>
+                                        <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
+                                    </div>               
+                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
                                     <div class="flex flex-col gap-4 mt-1.5">
-                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
-                                        <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
+                                            <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
+                                            <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
+                                        </div>
+                                        <div class="bg-[#ffa100] w-full py-3 border rounded-lg">
+                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
+                                        </div>
                                     </div>
-                                    <div class="bg-[#ffa100] w-full py-3 border rounded-lg">
-                                    <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="flex flex-col gap-3 mt-1.5">
+                                            <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
+                                            <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
+                                        </div>
+                                        <div class="bg-[#1d9bf0] w-full py-3 border rounded-lg">
+                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="flex flex-col gap-3 mt-1.5">
+                                            <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
+                                            <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
+                                        </div>
+                                        <div class="bg-[#ffa100] flex justify-center w-full py-3 border rounded-lg">
+                                        <h3 class="xl:text-xl text-md font-semibold text-center">CHART</h3>
+                                        <img class="xl:w-7 w-[1.5rem]" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
                                     <div class="flex flex-col gap-3 mt-1.5">
-                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
-                                        <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
-                                    </div>
-                                    <div class="bg-[#1d9bf0] w-full py-3 border rounded-lg">
-                                    <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                    <div class="flex flex-col gap-3 mt-1.5">
-                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
-                                        <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
-                                    </div>
-                                    <div class="bg-[#ffa100] flex justify-center w-full py-3 border rounded-lg">
-                                    <h3 class="xl:text-xl text-md font-semibold text-center">CHART</h3>
-                                    <img class="xl:w-7 w-[1.5rem]" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                    <div class="flex flex-col gap-3 mt-1.5">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="bg-[#ffa100] w-f ull py-3 border rounded-lg">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="bg-[#ffa100]  w-full py-3 border rounded-lg">
                                         <h3 class="text-xl font-bold text-center">BUY</h3>
                                         <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
-                                        <p>Start per Game</p>
-                                        <div class="flex flex-row w-full justify-evenly">
-                                            <div class="xl:text-sm lg:text-sm text-[10px]">
-                                            <p>Goals</p>
-                                            <p>Assist</p>
-                                            <p>Points</p>
-                                            <p>Shots</p>
-                                            <p>Blocks</p>
-                                            <p>TOI</p>
-                                            <p>PP TQI</p>
-                                            </div>
-                                            <div class="xl:text-sm lg:text-sm text-[10px]">
-                                            <p>.45</p>
-                                            <p>.35</p>
-                                            <p>.80</p>
-                                            <p>2.76</p>
-                                            <p>1.2</p>
-                                            <p>16:53</p>
-                                            <p>2.12</p>
-                                            </div>
                                         </div>
                                     </div>
-                                    <div class="bg-[#ffa100] w-full xl:py-3 py-1 border rounded-lg">
-                                        <h3 class="xl:text-xl lg:text-xl md:text-md font-semibold text-center">Last 5</h3>
+                                    <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                    <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
+                                            <p>Start per Game</p>
+                                            <div class="flex flex-row w-full justify-evenly">
+                                                <div class="xl:text-sm lg:text-sm text-[10px]">
+                                                <p>Goals</p>
+                                                <p>Assist</p>
+                                                <p>Points</p>
+                                                <p>Shots</p>
+                                                <p>Blocks</p>
+                                                <p>TOI</p>
+                                                <p>PP TQI</p>
+                                                </div>
+                                                <div class="xl:text-sm lg:text-sm text-[10px]">
+                                                <p>.45</p>
+                                                <p>.35</p>
+                                                <p>.80</p>
+                                                <p>2.76</p>
+                                                <p>1.2</p>
+                                                <p>16:53</p>
+                                                <p>2.12</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-[#ffa100] w-full xl:py-3 py-1 border rounded-lg">
+                                            <h3 class="xl:text-xl lg:text-xl md:text-md font-semibold text-center">Last 5</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row items-center w-8/12 gap-2 ">
+                                    <div class="w-11/12 flex flex-col items-center">
+                                        <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">MITCH MARNER</p>
+                                        <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
+                                    </div>               
+                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                        <div class="flex flex-col gap-4 mt-1.5">
+                                            <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
+                                            <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
+                                        </div>
+                                        <div class="bg-[#ffa100] w-full py-3 border rounded-lg">
+                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
+                                        </div>
+                                    </div>
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="flex flex-col gap-3 mt-1.5">
+                                            <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
+                                            <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
+                                        </div>
+                                        <div class="bg-[#1d9bf0] w-full py-3 border rounded-lg">
+                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
+                                        </div>
+                                    </div>
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="flex flex-col gap-3 mt-1.5">
+                                            <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
+                                            <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
+                                        </div>
+                                        <div class="bg-[#ffa100] flex justify-center w-full py-3 border rounded-lg">
+                                        <h3 class="xl:text-xl text-md font-semibold text-center">CHART</h3>
+                                        <img class="xl:w-7 w-[1.5rem]" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
+                                    <div class="flex flex-col gap-3 mt-1.5">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="bg-[#ffa100]  w-full py-3 border rounded-lg">
+                                        <h3 class="text-xl font-bold text-center">BUY</h3>
+                                        <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                    <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
+                                            <p>Start per Game</p>
+                                            <div class="flex flex-row w-full justify-evenly">
+                                                <div class="xl:text-sm lg:text-sm text-[10px]">
+                                                <p>Goals</p>
+                                                <p>Assist</p>
+                                                <p>Points</p>
+                                                <p>Shots</p>
+                                                <p>Blocks</p>
+                                                <p>TOI</p>
+                                                <p>PP TQI</p>
+                                                </div>
+                                                <div class="xl:text-sm lg:text-sm text-[10px]">
+                                                <p>.45</p>
+                                                <p>.35</p>
+                                                <p>.80</p>
+                                                <p>2.76</p>
+                                                <p>1.2</p>
+                                                <p>16:53</p>
+                                                <p>2.12</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-[#ffa100] w-full xl:py-3 py-1 border rounded-lg">
+                                            <h3 class="xl:text-xl lg:text-xl md:text-md font-semibold text-center">Last 5</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex flex-row items-center w-8/12 gap-2 ">
-                                <div class="w-11/12 flex flex-col items-center">
-                                    <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">AUSTON MATTHEWS</p>
-                                    <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
-                                </div>               
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
-                                <div class="flex flex-col gap-4 mt-1.5">
-                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
-                                        <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
-                                    </div>
-                                    <div class="bg-[#ffa100] w-full py-3 border rounded-lg">
-                                    <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                    <div class="flex flex-col gap-3 mt-1.5">
-                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
-                                        <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
-                                    </div>
-                                    <div class="bg-[#1d9bf0] w-full py-3 border rounded-lg">
-                                    <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                    <div class="flex flex-col gap-3 mt-1.5">
-                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
-                                        <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
-                                    </div>
-                                    <div class="bg-[#ffa100] flex justify-center w-full py-3 border rounded-lg">
-                                    <h3 class="xl:text-xl text-md font-semibold text-center">CHART</h3>
-                                    <img class="xl:w-7 w-[1.5rem]" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                <div class="flex flex-col gap-3 mt-1.5">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="bg-[#ffa100]  w-full py-3 border rounded-lg">
-                                    <h3 class="text-xl font-bold text-center">BUY</h3>
-                                    <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
-                                        <p>Start per Game</p>
-                                        <div class="flex flex-row w-full justify-evenly">
-                                            <div class="xl:text-sm lg:text-sm text-[10px]">
-                                            <p>Goals</p>
-                                            <p>Assist</p>
-                                            <p>Points</p>
-                                            <p>Shots</p>
-                                            <p>Blocks</p>
-                                            <p>TOI</p>
-                                            <p>PP TQI</p>
-                                            </div>
-                                            <div class="xl:text-sm lg:text-sm text-[10px]">
-                                            <p>.45</p>
-                                            <p>.35</p>
-                                            <p>.80</p>
-                                            <p>2.76</p>
-                                            <p>1.2</p>
-                                            <p>16:53</p>
-                                            <p>2.12</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="bg-[#ffa100] w-full xl:py-3 py-1 border rounded-lg">
-                                        <h3 class="xl:text-xl lg:text-xl md:text-md font-semibold text-center">Last 5</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-row items-center w-8/12 gap-2 ">
-                                <div class="w-11/12 flex flex-col items-center">
-                                    <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">MITCH MARNER</p>
-                                    <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
-                                </div>               
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
-                                    <div class="flex flex-col gap-4 mt-1.5">
-                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
-                                        <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
-                                    </div>
-                                    <div class="bg-[#ffa100] w-full py-3 border rounded-lg">
-                                    <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
-                                    <div class="flex flex-col gap-3 mt-1.5">
-                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
-                                        <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
-                                    </div>
-                                    <div class="bg-[#1d9bf0] w-full py-3 border rounded-lg">
-                                    <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
-                                    <div class="flex flex-col gap-3 mt-1.5">
-                                        <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
-                                        <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
-                                    </div>
-                                    <div class="bg-[#ffa100] flex justify-center w-full py-3 border rounded-lg">
-                                    <h3 class="xl:text-xl text-md font-semibold text-center">CHART</h3>
-                                    <img class="xl:w-7 w-[1.5rem]" src="{{ asset('/images/menu-icon/lock (1).png') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden shop">
-                                <div class="flex flex-col gap-3 mt-1.5">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="bg-[#ffa100]  w-full py-3 border rounded-lg">
-                                    <h3 class="text-xl font-bold text-center">BUY</h3>
-                                    <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                                <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
-                                        <p>Start per Game</p>
-                                        <div class="flex flex-row w-full justify-evenly">
-                                            <div class="xl:text-sm lg:text-sm text-[10px]">
-                                            <p>Goals</p>
-                                            <p>Assist</p>
-                                            <p>Points</p>
-                                            <p>Shots</p>
-                                            <p>Blocks</p>
-                                            <p>TOI</p>
-                                            <p>PP TQI</p>
-                                            </div>
-                                            <div class="xl:text-sm lg:text-sm text-[10px]">
-                                            <p>.45</p>
-                                            <p>.35</p>
-                                            <p>.80</p>
-                                            <p>2.76</p>
-                                            <p>1.2</p>
-                                            <p>16:53</p>
-                                            <p>2.12</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="bg-[#ffa100] w-full xl:py-3 py-1 border rounded-lg">
-                                        <h3 class="xl:text-xl lg:text-xl md:text-md font-semibold text-center">Last 5</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-row justify-between  xl:w-[61%] w-[67%] gap-3.5 md:gap-0">
+                            <div class="flex flex-row justify-between  xl:w-[61%] w-[67%] gap-3.5 md:gap-0">
                             <div class="flex flex-row items-center w-8/12 gap-2 ">
                                 <div class="w-11/12 flex flex-col items-center">
                                     <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
@@ -2928,7 +2943,7 @@
                             </div>
                         </div>      
                     </div>
-                        <div class="bg-slate-300 h-[2px] w-9/12 flex  my-5"></div>
+                    <div class="bg-slate-300 h-[2px] w-9/12 flex  my-5"></div>
                     <div class="flex flex-col items-center w-9/12 gap-5">
                         <h1 class="text-center font-extrabold text-md mt-5 mb-10">PRESS BOX</h1>
                         <div class="flex flex-row justify-between w-full">

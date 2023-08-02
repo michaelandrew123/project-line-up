@@ -4,8 +4,8 @@
 
 <div class="">
 <div class="w-full flex flex-col items-center ">
-    <div class="xl:w-11/12 lg:w-full md:w-full  flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#38b6ff] px-2 py-2">
-        <div class="w-full flex flex-col gap-2 ">
+    <div class="xl:w-11/12 lg:w-full md:w-full  flex justify-between gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#38b6ff] px-2 py-2">
+        <div class="w-full flex flex-col h-40 justify-evenly gap-2 ml-5">
             <div class="flex flex-row items-center justify-between ">
                 <div class="flex flex-row items-center">
                     <div class="flex flex-row items-center gap-5">
@@ -33,6 +33,11 @@
                     </div>      
                 </div>
             </div>
+        </div>
+        <div class="w-7/12 h-auto flex justify-center relative mr-5">
+          <img class="w-44 h-40 z-10 absolute left-0 bottom-0" src="{{ asset('/images/menu-icon/connor mcdavid (1).png') }}" alt="">
+          <img class="w-44 h-40 z-20" src="{{ asset('/images/menu-icon/connor mcdavid (1).png') }}" alt="">
+          <img class="w-44 h-40 z-0 absolute right-0 bottom-0" src="{{ asset('/images/menu-icon/connor mcdavid (1).png') }}" alt="">
         </div>
     </div>  
     <div class="flex flex-row items-center xl:w-11/12 lg:w-11/12 md:w-full mt-[20px] gap-3 block smm-hidden max-w-screen-2xl" id="sub-hed">
