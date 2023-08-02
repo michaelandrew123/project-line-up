@@ -1997,7 +1997,7 @@
                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
                             </div>
                             <div class="bg-[#ffa100] w-full py-3 border rounded-lg">
-                            <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
+                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                             </div>
                         </div>
                         <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
@@ -2171,7 +2171,7 @@
                             </div>
                         </div>
                         <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                        <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
+                            <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                 <p>Start per Game</p>
                                 <div class="flex flex-row w-full justify-evenly">
                                     <div class="xl:text-sm lg:text-sm text-[10px]">
@@ -2392,7 +2392,7 @@
                             </div>
                         </div>
                         <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                        <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
+                            <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                 <p>Start per Game</p>
                                 <div class="flex flex-row w-full justify-evenly">
                                     <div class="xl:text-sm lg:text-sm text-[10px]">
@@ -2463,7 +2463,7 @@
                             </div>
                         </div>
                         <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
-                        <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
+                            <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                 <p>Start per Game</p>
                                 <div class="flex flex-row w-full justify-evenly">
                                     <div class="xl:text-sm lg:text-sm text-[10px]">
