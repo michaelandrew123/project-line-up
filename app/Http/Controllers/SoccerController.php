@@ -62,7 +62,7 @@ public function soclineCombos(){
 
        
 
-        return view('pages/socline-combos')->with(['result' => $result , 'team' => $team_result, 'formations' => $formations_result ]);
+        return view('pages/socline-combos')->with(['result' => $result , 'team' => $team_result, 'formation' => $formations_result ]);
 
         
     }

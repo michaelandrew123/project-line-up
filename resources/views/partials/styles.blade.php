@@ -22,12 +22,16 @@
     .nfl-bckgrnd.active {
         color: #38b6ff;
     }
+    .nfl-bckgrnd {
+        visibility: visible;
+    }
     .nba-bckgrnd.active {
         color: #00bf63;
     }
     .apn-bckgrnd.active {
         color: #38b6ff;
     }
+    
     /* .skeleton {   
         animation: skeleton-loading 1s linear infinite  ;
     }
@@ -106,7 +110,7 @@
          padding: 8px;
          
     }
-      .linecomb-input-mob{
+    .linecomb-input-mob{
          text-align: center;
          font-size: 20px;
          font-weight: bold;

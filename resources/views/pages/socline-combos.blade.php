@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="">
+<div class="block smm-hidden">
 <div class="w-full flex flex-col items-center ">
     <div class="xl:w-11/12 lg:w-full md:w-full flex justify-between gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#38b6ff] px-2 py-2">
         <div class="w-full flex flex-col h-40 justify-evenly gap-2 mr-5">
@@ -55,7 +55,7 @@
            Fanduel
         </button>
         <button class="w-36  xl:text-[24px] lg:text-[24px] md:text-[20px] font-bold rounded-md text-black nfl-bckgrnd sts flex justify-center">
-            Stats
+            Stats nfl
         </button>
         <button class="w-36  xl:text-[24px] lg:text-[24px] md:text-[20px] font-bold rounded-md text-black nfl-bckgrnd shp flex justify-center">
             Shop
@@ -66,8 +66,15 @@
     @if(Request::is('soc/line-combos'))
         <!-- formations 4-3-2-1 -->
        <div class="xl:w-7/12 lg:w-6/12 md:w-[63%]">
+            @foreach($formation->data as $key=>$val)
+                @if($val->slug === '4-4-2')
+                    <p class="text-lg font-bold text-black">
+                        {{$val->description}}
+                    </p>  
+                @endif
+            @endforeach
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
-            <div id=""  class="flex flex-col gap-2 my-1">
+            <div id="" class="flex flex-col gap-2 my-1">
                 <div class="flex flex-col  gap-2 w-full">
                     <div class="w-full flex items-center justify-center mt-5">
                       <h1 class="h-8 w-52  bg-[#38b6ff] rounded justify-center flex items-center font-extrabold text-md text-[#ffffff]">FORMATION 4-3-2-1</h1>
@@ -152,7 +159,6 @@
                 <div class="bg-[#d9d9d9] w-full h-1"></div>                
            </div>
        </div>
-   
     @elseif(Request::is('soc/line-combos/formations 4-3-2-1 ')) 
        <!-- formation 4-3-2-1 player uniform v2-->
        <div class="xl:w-7/12 lg:w-6/12 md:w-7/12  hidden">
@@ -766,7 +772,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>              
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -775,7 +781,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -784,7 +790,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -803,7 +809,7 @@
                                     <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -837,7 +843,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>               
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -846,7 +852,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -855,7 +861,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -874,7 +880,7 @@
                                 <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -908,7 +914,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>               
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -917,7 +923,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -926,7 +932,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -945,7 +951,7 @@
                                 <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -983,7 +989,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>              
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -992,7 +998,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -1001,7 +1007,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1020,7 +1026,7 @@
                                     <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -1054,7 +1060,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>               
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1063,7 +1069,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -1072,7 +1078,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1091,7 +1097,7 @@
                                 <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -1125,7 +1131,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>               
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1134,7 +1140,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -1143,7 +1149,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1162,7 +1168,7 @@
                                 <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -1200,7 +1206,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>              
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1209,7 +1215,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -1218,7 +1224,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1237,7 +1243,7 @@
                                     <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -1271,7 +1277,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>               
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1280,7 +1286,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -1289,7 +1295,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1308,7 +1314,7 @@
                                 <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -1342,7 +1348,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>               
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1351,7 +1357,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -1360,7 +1366,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1379,7 +1385,7 @@
                                 <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -1417,7 +1423,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>              
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1426,7 +1432,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -1435,7 +1441,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1454,7 +1460,7 @@
                                     <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -1488,7 +1494,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>               
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1497,7 +1503,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -1506,7 +1512,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1525,7 +1531,7 @@
                                 <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -1559,7 +1565,7 @@
                                 <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">MITCH MARNER</p>
                                 <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                             </div>               
-                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                            <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1568,7 +1574,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -1577,7 +1583,7 @@
                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                            <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                     <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1596,7 +1602,7 @@
                                 <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                            <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                     <p>Start per Game</p>
                                     <div class="flex flex-row w-full justify-evenly">
@@ -1639,7 +1645,7 @@
                                             <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                             <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                         </div>               
-                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1648,7 +1654,7 @@
                                             <h3 class="xl:text-2xl text-xl  font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1657,7 +1663,7 @@
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div> 
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1676,7 +1682,7 @@
                                             <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                         <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                                 <p>Start per Game</p>
                                                 <div class="flex flex-row w-full justify-evenly">
@@ -1710,7 +1716,7 @@
                                             <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                             <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                         </div>               
-                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1719,7 +1725,7 @@
                                             <h3 class="text-2xl font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1728,7 +1734,7 @@
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1747,7 +1753,7 @@
                                             <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                             <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                                 <p>Start per Game</p>
                                                 <div class="flex flex-row w-full justify-evenly">
@@ -1783,7 +1789,7 @@
                                             <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                             <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                         </div>               
-                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1792,7 +1798,7 @@
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1801,7 +1807,7 @@
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div> 
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1820,7 +1826,7 @@
                                             <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                         <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                                 <p>Start per Game</p>
                                                 <div class="flex flex-row w-full justify-evenly">
@@ -1854,7 +1860,7 @@
                                             <p class="w-[10rem] text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                             <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                         </div>               
-                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1863,7 +1869,7 @@
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1872,7 +1878,7 @@
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1891,7 +1897,7 @@
                                             <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                             <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                                 <p>Start per Game</p>
                                                 <div class="flex flex-row w-full justify-evenly">
@@ -1927,7 +1933,7 @@
                                             <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                             <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                         </div>               
-                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1936,7 +1942,7 @@
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -1945,7 +1951,7 @@
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div> 
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -1964,7 +1970,7 @@
                                             <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                             <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                                     <p>Start per Game</p>
                                                     <div class="flex flex-row w-full justify-evenly">
@@ -1998,7 +2004,7 @@
                                         <p class="w-[10rem] text-center text-sm bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                         <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                     </div>               
-                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2007,7 +2013,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2016,7 +2022,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2035,7 +2041,7 @@
                                         <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                    <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                     <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                             <p>Start per Game</p>
                                             <div class="flex flex-row w-full justify-evenly">
@@ -2074,7 +2080,7 @@
                                             <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                             <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                         </div>               
-                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2083,7 +2089,7 @@
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2092,7 +2098,7 @@
                                                 <h3 class="text-2xl font-semibold text-center">7500</h3>
                                             </div> 
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2111,7 +2117,7 @@
                                             <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                         <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                                 <p>Start per Game</p>
                                                 <div class="flex flex-row w-full justify-evenly">
@@ -2145,7 +2151,7 @@
                                             <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                             <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                         </div>               
-                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                        <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2154,7 +2160,7 @@
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2163,7 +2169,7 @@
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                        <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                             <div class="flex flex-col gap-3 mt-1.5">
                                                 <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                                 <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2182,7 +2188,7 @@
                                             <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                             </div>
                                         </div>
-                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                        <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                             <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                                 <p>Start per Game</p>
                                                 <div class="flex flex-row w-full justify-evenly">
@@ -2226,7 +2232,7 @@
                                     <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                 </div>              
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                     <div class="flex flex-col gap-4 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2235,7 +2241,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -2244,7 +2250,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2263,7 +2269,7 @@
                                         <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                         <p>Start per Game</p>
                                         <div class="flex flex-row w-full justify-evenly">
@@ -2297,7 +2303,7 @@
                                     <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                 </div>               
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                 <div class="flex flex-col gap-4 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2306,7 +2312,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -2315,7 +2321,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2334,7 +2340,7 @@
                                     <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                         <p>Start per Game</p>
                                         <div class="flex flex-row w-full justify-evenly">
@@ -2368,7 +2374,7 @@
                                     <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">MITCH MARNER</p>
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                 </div>               
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                     <div class="flex flex-col gap-4 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2377,7 +2383,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -2386,7 +2392,7 @@
                                     <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2405,7 +2411,7 @@
                                     <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                 <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                         <p>Start per Game</p>
                                         <div class="flex flex-row w-full justify-evenly">
@@ -2441,7 +2447,7 @@
                                     <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                 </div>               
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2450,7 +2456,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2459,7 +2465,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                     </div> 
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2478,7 +2484,7 @@
                                         <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                     <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                         <p>Start per Game</p>
                                         <div class="flex flex-row w-full justify-evenly">
@@ -2512,7 +2518,7 @@
                                     <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                 </div>               
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2521,7 +2527,7 @@
                                     <h3 class="text-2xl font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl  font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2530,7 +2536,7 @@
                                     <h3 class="xl:text-2xl text-xl  font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2549,7 +2555,7 @@
                                     <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                     <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                         <p>Start per Game</p>
                                         <div class="flex flex-row w-full justify-evenly">
@@ -2589,7 +2595,7 @@
                                         <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">ALEXANDER KERFOOT</p>
                                         <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                     </div>              
-                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                         <div class="flex flex-col gap-4 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2598,7 +2604,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -2607,7 +2613,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2626,7 +2632,7 @@
                                             <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                         </div>
                                     </div>
-                                    <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                    <div class="w-[50%]  h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                     <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                             <p>Start per Game</p>
                                             <div class="flex flex-row w-full justify-evenly">
@@ -2660,7 +2666,7 @@
                                         <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                         <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                     </div>               
-                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                     <div class="flex flex-col gap-4 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2669,7 +2675,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -2678,7 +2684,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2697,7 +2703,7 @@
                                         <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                    <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                     <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                             <p>Start per Game</p>
                                             <div class="flex flex-row w-full justify-evenly">
@@ -2731,7 +2737,7 @@
                                         <p class=" text-center xl:text-sm text-[12px] bg-slate-300 px-2 py-1 border rounded-lg font-bold">MITCH MARNER</p>
                                         <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                     </div>               
-                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                    <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                         <div class="flex flex-col gap-4 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2740,7 +2746,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">5.3</h1>
@@ -2749,7 +2755,7 @@
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">7500</h3>
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                    <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                         <div class="flex flex-col gap-3 mt-1.5">
                                             <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                             <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2768,7 +2774,7 @@
                                         <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                         </div>
                                     </div>
-                                    <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                    <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                     <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                             <p>Start per Game</p>
                                             <div class="flex flex-row w-full justify-evenly">
@@ -2804,7 +2810,7 @@
                                     <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">AUSTON MATTHEWS</p>
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                 </div>               
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2813,7 +2819,7 @@
                                         <h3 class="xl:text-2xl text-xl  font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl  font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2822,7 +2828,7 @@
                                         <h3 class="xl:text-2xl text-xl  font-semibold text-center">7500</h3>
                                     </div> 
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2841,7 +2847,7 @@
                                         <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                     <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                         <p>Start per Game</p>
                                         <div class="flex flex-row w-full justify-evenly">
@@ -2875,7 +2881,7 @@
                                     <p class="w-[10rem] text-center xl:text-sm text-[12px] bg-slate-300 p-0.5 border rounded-lg font-bold">MITCH MARNER</p>
                                     <img src="{{ asset('/images/menu-icon/sample-uniform-removebg-preview.png') }}" class=" px-3" alt="">
                                 </div>               
-                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking">
+                                <div class="hidden w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg drftking nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl  font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2884,7 +2890,7 @@
                                     <h3 class="xl:text-2xl text-xl  font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden fduel nfl">
                                 <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl  font-semibold text-center">Proj.</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">12.3</h1>
@@ -2893,7 +2899,7 @@
                                     <h3 class="xl:text-2xl text-xl  font-semibold text-center">7500</h3>
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props">
+                                <div class="w-[50%] h-[95%] bg-slate-300 flex flex-col justify-between border rounded-lg hidden props nfl">
                                     <div class="flex flex-col gap-3 mt-1.5">
                                         <h3 class="xl:text-2xl text-xl font-semibold text-center">SHOTS</h3>
                                         <h1 class="xl:text-5xl text-4xl font-extrabold text-center">2.5</h1>
@@ -2912,7 +2918,7 @@
                                     <img class="w-7" src="{{ asset('/images/menu-icon/.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats">
+                                <div class="w-[50%] h-[95%]  bg-slate-300 flex flex-col justify-between border rounded-lg hidden stats nfl">
                                     <div class="flex flex-col  xl:gap-5 gap-1 items-center mt-1.5 xl:text-sm lg:text-sm text-[11px] font-semibold">
                                         <p>Start per Game</p>
                                         <div class="flex flex-row w-full justify-evenly">

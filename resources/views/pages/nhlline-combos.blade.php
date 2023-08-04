@@ -82,7 +82,7 @@
             <img class="xl:w-9 lg:w-9 md:w-7" src="{{ asset('/images/menu-icon/icons8-create-50.png') }}" alt="">
             Create
         </button>
-        <button class="w-36 xl:text-[24px] lg:text-[20px] md:text-[16px] font-bold rounded-md text-black bckgrnd d-kings flex justify-center   gap-3">
+        <button class="w-36 xl:text-[24px] lg:text-[20px] md:text-[16px] font-bold rounded-md text-black bckgrnd d-kings flex justify-center gap-3">
             Draftkings
         </button>
         <button class="w-36 xl:text-[24px] lg:text-[20px] md:text-[16px] font-bold rounded-md text-black bckgrnd fnl flex justify-center gap-3">
@@ -8717,7 +8717,7 @@
         </div>
         <img class="w-full my-1" src="{{ asset('/images/menu-icon/adds_header.png') }}" >   
         <div class="flex flex-col gap-2 mb-5">
-           <h1 class="w-full bg-[#ffa100] py-1.5 rounded-md text-base text-center font-medium">FORWARDS</h1>
+            <h1 class="w-full bg-[#ffa100] py-1.5 rounded-md text-base text-center font-medium">FORWARDS</h1>
             <div class="flex flex-row mt-4 gap-3">
                 @foreach($result->data->slots as $key=>$item)
                     @if($key == 'lw1')

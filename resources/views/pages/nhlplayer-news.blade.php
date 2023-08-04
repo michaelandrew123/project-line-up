@@ -43,32 +43,71 @@
         </div>
     </div> -->
  <div class="flex justify-center mt-8 block smm-hidden w-full">
-    <div class="flex flex-row justify-between gap-1 lg:gap-2 md:gap-1 xl:w-full lg:w-11/12 md:w-full  max-w-screen-2xl">
-        <div class="flex flex-col xl:w-w-full lg:w-9/12 md:w-11/12   ">
+    <div class="flex flex-row justify-between gap-1 lg:gap-2 md:gap-1 w-full max-w-screen-2xl">
+        <div class="flex flex-col w-full ">
             <div class="flex flex-col">
                 <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
-                    <div class="flex flex-col items-center gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">                        
-                        <div class="flex flex-col justify-center mx-5  xl:gap-20 lg:gap-14 md:gap-16 mt-5">
+                    <div class="flex flex-col items-center gap-3 w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[14rem] rounded-xl bg-white border border-black relative">                        
+                        <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-14 md:gap-5 xl:mt-5 lg:mt-5 md:mt-2">
                             <div class="flex flex-row gap-2">
-                                <img class="w-7 " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                <img class="xl:w-7 lg:w-7 md:w-5" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                 <p class="xl:text-lg lg:text-lg md:text-base font-extrabold">Morning Skate</p>
                             </div>
-                            <div class="w-full flex flex-col items-center gap-5  ">
-                                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">                                   
-                                    <p class="xl:text-base lg:text-base md:text-sm font-bold ">San Jose changes up their top line as they face Rangers</p>                                                                                          
-                                <div class="text-sm lg:text-[12px] md:text-[9px] w-full flex flex-row items-end justify-between">
+                            <div class="w-full flex flex-col items-center gap-5  bottom-0">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">                                   
+                                <p class="xl:text-base lg:text-base md:text-[10px] font-bold  text-center">San Jose changes up their top line as they face Rangers</p>                                                                                          
+                                <div class="text-sm lg:text-[10px] md:text-[7px] w-full flex flex-row items-end justify-evenly absolute bottom-5 ">
                                     <p>January 27, 2023</p>
                                     <div class="flex items-center gap-2">
                                         <p>projectedlineup.com</p>
-                                        <img class="w-4" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                        <img class="xl:w-4 lg:w-4 md:w-2" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
                                     </div>
                                 </div> 
                             </div>                                       
                         </div> 
                     </div>
-                    <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
+                    <div class="flex flex-col items-center gap-3 w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[14rem] rounded-xl bg-white border border-black relative">                        
+                        <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-14 md:gap-5 xl:mt-5 lg:mt-5 md:mt-2">
+                            <div class="flex flex-row gap-2">
+                                <img class="xl:w-7 lg:w-7 md:w-5" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
+                                <p class="xl:text-lg lg:text-lg md:text-base font-extrabold">Top Tracks</p>
+                            </div>
+                            <div class="w-full flex flex-col items-center gap-5 ">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">                                   
+                                <p class="xl:text-base lg:text-base md:text-[10px] font-bold  text-center">Edmonton on the list of top stacks to play tonight</p>                                                                                          
+                                <div class="text-sm lg:text-[10px] md:text-[7px] w-full flex flex-row items-end justify-evenly absolute bottom-5">
+                                    <p>January 27, 2023</p>
+                                    <div class="flex items-center gap-2">
+                                        <p>projectedlineup.com</p>
+                                        <img class="xl:w-4 lg:w-4 md:w-2" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div> 
+                            </div>                                       
+                        </div> 
+                    </div>
+                    <div class="flex flex-col items-center gap-3 w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[14rem] rounded-xl bg-white border border-black relative">                        
+                        <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-14 md:gap-5 xl:mt-5 lg:mt-5 md:mt-3">
+                            <div class="flex flex-row gap-2">
+                                <h1 class="xl:text-lg lg:text-lg md:text-[15px] font-extrabold ">
+                                    <span class="text-white bg-green-500 px-1.5 py-0.5 rounded-full mr-2">$</span>Props and Odds
+                                </h1>
+                            </div>
+                            <div class="w-full flex flex-col items-center gap-5">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">                                   
+                                <p class="xl:text-base lg:text-base md:text-[10px] font-bold  text-center">Edmonton on the list of top stacks to play tonight</p>                                                                                          
+                                <div class="text-sm lg:text-[10px] md:text-[7px] w-full flex flex-row items-end justify-evenly absolute bottom-5">
+                                    <p>January 27, 2023</p>
+                                    <div class="flex items-center gap-2">
+                                        <p>projectedlineup.com</p>
+                                        <img class="xl:w-4 lg:w-4 md:w-2" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div> 
+                            </div>                                       
+                        </div> 
+                    </div>
+                    <div class="hidden flex flex-col gap-3 w-[32%] w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[19rem]   rounded-xl bg-white border border-black relative">
                         <div class="flex mt-5 ">
-                            <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-[4.5rem] md:gap-16">
+                            <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-[4.5rem] md:gap-14">
                                 <div class="flex flex-row gap-2">
                                    <img class="w-8" src="{{ asset('/images/menu-icon/top stack icon (80 × 80 px).png') }}">
                                     <p class="xl:text-lg lg:text-lg md:text-base font-extrabold">Top Tracks</p>
@@ -87,9 +126,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
+                    <div class="hidden flex flex-col gap-3 w-[32%] w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[19rem] rounded-xl bg-white border border-black relative">
                         <div class="flex m-1 mt-5 ">
-                            <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-[4.5rem] md:gap-16">
+                            <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-[4.5rem] md:gap-14">
                                 <div class="flex flex-row gap-2">
                                     <h1 class="xl:text-lg lg:text-lg md:text-base font-extrabold "><span class="text-white bg-green-500 text-base px-1.5 py-0.5 rounded-full mr-2">$</span>Props and Odds</h1>
                                 </div>
@@ -109,47 +148,50 @@
                     </div>
                 </div>
                 <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
-                    <div class="flex flex-col items-center gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
-                        <div class="flex flex-col items-center w-11/12 justify-center gap-20 mx-5 mt-5">
-                            <h1 class="xl:text-lg lg:text-lg md:text-base font-extrabold text-center">Marner extends point <br> steak to 19 games</h1>
-                            <div class="w-full flex flex-col items-center gap-12">
-                                <div class="flex flex-row">
-                                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                </div>                                                                                         
-                                <div class="text-[12px] w-full flex flex-row justify-between">
+                   <div class="flex flex-col items-center gap-3 w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[14rem] rounded-xl bg-white border border-black relative">                        
+                        <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-14 md:gap-5 xl:mt-5 lg:mt-5 md:mt-2">
+                        <h1 class="xl:text-lg lg:text-lg md:text-[13px] font-extrabold text-center">Marner extends point <br> steak to 19 games</h1>
+                            <div class="w-full flex flex-col items-center gap-5  bottom-0">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">                                                                                                                         
+                                <div class="text-sm lg:text-[10px] md:text-[7px] w-full flex flex-row items-end justify-evenly absolute bottom-5 ">
                                     <p>January 27, 2023</p>
-                                    <p>projectedlineup.com</p>    
+                                    <div class="flex items-center gap-2">
+                                        <p>projectedlineup.com</p>
+                                        <img class="xl:w-4 lg:w-4 md:w-2" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
                                 </div> 
                             </div>                                       
-                        </div>
+                        </div> 
+                    </div> 
+                    <div class="flex flex-col items-center gap-3 w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[14rem] rounded-xl bg-white border border-black relative">                        
+                        <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-14 md:gap-5 xl:mt-5 lg:mt-5 md:mt-2">
+                        <h1 class="xl:text-lg lg:text-lg md:text-[13px] font-extrabold text-center">Who is the best current <br> NHL player you'd trade <br> for Connor Bedard</h1>
+                            <div class="w-full flex flex-col items-center gap-5  bottom-0">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">                                                                                                                         
+                                <div class="text-sm lg:text-[10px] md:text-[7px] w-full flex flex-row items-end justify-evenly absolute bottom-5 ">
+                                    <p>January 27, 2023</p>
+                                    <div class="flex items-center gap-2">
+                                        <p>projectedlineup.com</p>
+                                        <img class="xl:w-4 lg:w-4 md:w-2" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
+                                </div> 
+                            </div>                                       
+                        </div> 
                     </div>
-                    <div class="flex flex-col items-center gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
-                        <div class="flex flex-col items-center w-11/12 justify-center gap-14 mx-5   mt-5">
-                            <h1 class="xl:text-lg lg:text-lg md:text-base font-extrabold text-center">Who is the best current <br> NHL player you'd trade <br> for Connor Bedard</h1>
-                            <div class="w-full flex flex-col items-center gap-12">
-                                <div class="flex flex-row">
-                                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                </div>                                                                                         
-                                <div class="text-[12px] w-full flex flex-row justify-between">
+                    <div class="flex flex-col items-center gap-3 w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[14rem] rounded-xl bg-white border border-black relative">                        
+                        <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-14 md:gap-5 xl:mt-5 lg:mt-5 md:mt-2">
+                        <h1 class="xl:text-lg lg:text-lg md:text-[13px] font-extrabold text-center">Sidney Crosby still <br> in fine form  </h1>
+                            <div class="w-full flex flex-col items-center gap-5  bottom-0">
+                                <img class="lg:w-20 lg:h-20 md:w-16 md:h-16" src="{{ asset('/images/menu-icon/.png') }}">                                                                                                                         
+                                <div class="text-sm lg:text-[10px] md:text-[7px] w-full flex flex-row items-end justify-evenly absolute bottom-5 ">
                                     <p>January 27, 2023</p>
-                                    <p>projectedlineup.com</p>    
+                                    <div class="flex items-center gap-2">
+                                        <p>projectedlineup.com</p>
+                                        <img class="xl:w-4 lg:w-4 md:w-2" src="{{ asset('/images/menu-icon/arrow-download.png') }}">
+                                    </div>
                                 </div> 
                             </div>                                       
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
-                        <div class="flex flex-col items-center w-11/12 justify-center gap-20  mx-5 mt-5">
-                            <h1 class="xl:text-lg lg:text-lg md:text-base font-extrabold text-center">Sidney Crosby still <br> in fine form  </h1>
-                            <div class="w-full flex flex-col items-center gap-12">
-                                <div class="flex flex-row">
-                                    <img class="lg:w-20 lg:h-20 md:w-16 md:h-20" src="{{ asset('/images/menu-icon/.png') }}">
-                                </div>                                                                                         
-                                <div class="text-[12px] w-full flex flex-row justify-between">
-                                    <p>January 27, 2023</p>
-                                    <p>projectedlineup.com</p>    
-                                </div> 
-                            </div>                                       
-                        </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="relative">
@@ -173,10 +215,10 @@
                                 @php 
                                     $article_injury_count++ 
                                 @endphp 
-                                <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative mt-5" style="{{ $article_injury_count  > 6 ? 'display: none' : ''}}">
+                                <div class="flex flex-col gap-3 w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[18rem] rounded-xl bg-white border border-black relative mt-5" style="{{ $article_injury_count  > 6 ? 'display: none' : ''}}">
                                     <div class="flex mx-4 mt-5">
-                                        <img class="lg:w-20 lg:h-20 md:w-13 md:h-16" src="{{$val->player->images->uniform}}">
-                                        <div class="flex flex-col ml-2 gap-3">
+                                        <img class="lg:w-20 lg:h-20 md:w-13 md:h-[3rem]" src="{{$val->player->images->uniform}}">
+                                        <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-1">
                                             <div class="flex flex-row gap-2">
                                                 <img class="w-[18px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
                                                 <p class="text-[11px] font-bold"> {{ !empty($val->metafields->goalie_status->value) ? $val->metafields->goalie_status->value : ''}}</p>
@@ -188,12 +230,12 @@
                                         </div>
                                     </div>
                                     <div class="mx-2">
-                                        <p class="xl:text-[14px] lg:text-[13px] md:text-[12px] font-bold mb-1">{{$val->title}}</p>
-                                        <p class="xl:text-[11px] lg:text-[10px] md:text-[10px] font-semibold">{{ !empty($val->description) ? $val->description : ''}}</p>
+                                        <p class="xl:text-[14px] lg:text-[13px] md:text-[10px] font-bold mb-1">{{$val->title}}</p>
+                                        <p class="xl:text-[11px] lg:text-[10px] md:text-[8px] font-semibold">{{ !empty($val->description) ? $val->description : ''}}</p>
                                     </div>
                                     <div class="flex flex-row items-center absolute left-1 bottom-0 ">
                                         <a href="{{$val->source->url}}">
-                                          <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                          <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-12 md::h-12" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
                                         </a>
                                         <div>
                                             <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">{{$val->source->name}}</h3>
@@ -346,8 +388,8 @@
                 <img class="w-96 lg:w-64 md:w-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
             </div>                
         </div>   
-        <div class="flex justify-center">
-            <div class="flex flex-col  gap-8 block smm-hidden ">
+        <div class="xl:w-3/12 lg:w-3/12 md:w-4/12 flex justify-center">
+            <div class="flex flex-col gap-8 block smm-hidden ">
                 <img class="w-96 lg:w-64 md:w-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 <div class="flex flex-col gap-3 ml-5">
                     <div class="flex flex-row ">

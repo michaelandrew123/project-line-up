@@ -197,7 +197,6 @@
       $(this).addClass('active');
       $('div#sub-hed').css('backgroundColor', navbg);
     });
-     
     $('.nba-bckgrnd').click(function() {
      var navbg = $(this).data('navbg');
       $('.nba-bckgrnd').removeClass('active');
@@ -418,8 +417,8 @@
         //     }
         // }
 
-        $('#sub-menu > ul.active').removeClass('active');
-        $('.'+data).addClass('active');
+      $('#sub-menu > ul.active').removeClass('active');
+      $('.'+data).addClass('active');
     })
 
     $('#tml_btn').on('touchstart', function(){
@@ -459,8 +458,7 @@
 
         // var data = $(this).attr('rel');
         // $('.'+data).addClass('active');
-        if($(this).text() == 'LINEUPS' || $(this).text() == 'DRAFTKINGS' || $(this).text() == 'FANDUEL'){
-                
+        if($(this).text() == 'LINEUPS' || $(this).text() == 'DRAFTKINGS' || $(this).text() == 'FANDUEL'){      
             $('#scrollbar').addClass('hidden'); 
             $('#ldf').removeClass('hidden');
 
