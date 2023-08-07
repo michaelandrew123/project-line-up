@@ -3,14 +3,14 @@
 @section('content')
 
 <div class="">
-<div class="w-full flex flex-col items-center ">
+<div class="w-full flex flex-col items-center mt-9">
     <div class="xl:w-11/12 lg:w-full md:w-full flex justify-center gap-3 items-center block smm-hidden max-w-screen-2xl  bg-[#00bf63] px-2 py-2">
         <div class="w-full h-40 flex flex-col justify-evenly gap-2 ml-5">
             <div class="flex flex-row items-center justify-between ">
                 <div class="flex flex-row items-center">
                     <div class="flex flex-row items-center gap-5">
                         <div class="flex flex-col">
-                            <img class="w-20 flex" src="{{  ( !empty($current_logo) ? $current_logo: 'https://media.projectedlineups.com/sports/hockey/leagues/nhl/teams/boston-bruins/logos/logo.svg') }}" alt="">
+                            <img class="w-20 flex" src="{{  ( !empty($current_logo) ? $current_logo: 'https://media.projectedlineups.com/sports/basketball/leagues/nba/teams/boston-celtics/logos/logo.svg') }}" alt="">
                         </div>
                         <div>
                             <div class="teams text-4xl font-bold text-black">

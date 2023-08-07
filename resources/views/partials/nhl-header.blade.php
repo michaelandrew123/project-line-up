@@ -104,26 +104,28 @@
                 @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combos/{team}') != ('nhl/line-combos/{team}') && Request::is('nhl/team-news') != ('nhl/team-news'))
                   <div class=""></div>
                 @else            
-                 <div class="bg-[#d9d9d9] w-full h-px"></div>
+                  <div class="bg-[#d9d9d9] w-full h-px"></div>
                 @endif
                 <div class="w-full relative">
                     <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute ">
                         @foreach($team->data as $key=>$val)
                             @if(!empty($val->logo->src))
-                                @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combos/{team}') != ('nhl/line-combos/{team}') && Request::is('nhl/team-news') != ('nhl/team-news') && Request::is('nhl/line-combinations') != ('nhl/line-combinations'))
-                                    <li class="lc-team-logo " style="display:none;"   value="">
-                                        <a class=""  href="/nhl/line-combos/{{$val->slug}}">
-                                        <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
-                                        </a>
-                                    </li> 
-                                @else 
-                                   <li class="lc-team-logo "  
-                                        style=" " value="">
-                                        <a class=""  href="/nhl/line-combos/{{$val->slug}}">
-                                        <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
-                                        </a>
-                                     </li> 
-                                @endif 
+                                @if($val->league->slug == 'nhl')    
+                                    @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combos/{team}') != ('nhl/line-combos/{team}') && Request::is('nhl/team-news') != ('nhl/team-news') && Request::is('nhl/line-combinations') != ('nhl/line-combinations'))
+                                        <li class="lc-team-logo " style="display:none;"   value="">
+                                            <a class=""  href="/nhl/line-combos/{{$val->slug}}">
+                                            <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
+                                            </a>
+                                        </li> 
+                                    @else 
+                                        <li class="lc-team-logo "  
+                                            style=" " value="">
+                                            <a class=""  href="/nhl/line-combos/{{$val->slug}}">
+                                            <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
+                                            </a>
+                                        </li> 
+                                    @endif 
+                                @endif
                             @endif 
                         @endforeach
                     </ul>
