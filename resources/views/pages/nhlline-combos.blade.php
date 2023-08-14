@@ -30,38 +30,17 @@
                 </div>         
             </div>
             <div class="flex flex-row items-center justify-left items-end">
-                    <!-- <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt=""> -->
-                    <div class="flex flex-row gap-10 items-center">
-                        <a href="{{ $result->data->source->url  }}" class=" " target="_blank">
-                            <p class="text-[13px] font-semibold">{{ $result->data->source->name  }}</p>
-                        </a>
-                        <p class="text-[13px] font-semibold">{{ $result->data->updated_at->date  }} | {{ $result->data->updated_at->time  }}</p>
-                        {{--<p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>--}}
-                        <div class="flex gap-2 justify-center items-center">
-                            <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-4 h-4  rounded-full ">
-                            <h1 class="text-[13px] font-semibold uppercase">{{ $result->data->status->name }}</h1>
-                        </div>      
-                    </div>
-                <div class="relative hidden">
-                    <button id="" class="cursor-pointer flex flex-row justify-center items-center bg-slate-300 h-10 w-[11.5rem] rounded-full ">
-                        {{--<select id="SN" style="-webkit-appearance: none;" class="bg-[#545454] xl:w-[8rem] lg:w-[4rem] h-[41px]  text-black text-lg font-semibold xl:text-center lg:text-left xl:pl-0 pl-1.5">--}}
-                            {{--<option class="xl:text-lg text-md font-semibold" value="1"><a class="nhl" href="">TORONTO MAPLE LEAFS</a></option>--}}
-                            {{--<option id="mlb" class="xl:text-lg text-md font-semibold" value="2">TORONTO MAPLE LEAFS</option>--}}
-                            {{--<option id="nfl" class="xl:text-lg text-md font-semibold" value="3">TORONTO MAPLE LEAFS</option>--}}
-                            {{--<option id="nba" class="xl:text-lg text-md font-semibold" value="4">TORONTO MAPLE LEAFS</option>--}}
-                            {{--<option id="soc" class="xl:text-lg text-md font-semibold" value="5">TORONTO MAPLE LEAFS</option>--}}
-                        {{--</select>--}}
-                        <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow">
-                    </button> 
-                </div>
-                <div class=" w-[13rem] rounded-full relative hidden">
-                    <select name="" id="team-name" style="-webkit-appearance: none;" class="bg-slate-300 rounded-full  px-2 w-full">
-                        {{ $team->data[0]->name }}
-                        @foreach($team->data as $key=>$val)                                    
-                            <option value="{{$val->name}}" >{{$val->name}}</option>
-                        @endforeach  
-                    </select>
-                    <img src="{{ asset('/images/starting-goalies/arrow_blue.png') }}" class="w-4 h-4 rounded-full ml-2 fill-cyan-400 arrow absolute right-[5px] top-[4px] arrw2">
+                <!-- <img class="w-11 h-11" src="{{ asset('/images/menu-icon/twitter icon.png') }}" alt=""> -->
+                <div class="flex flex-row gap-10 items-center">
+                    <a href="{{ $result->data->source->url  }}" class=" " target="_blank">
+                        <p class="text-[13px] font-semibold">{{ $result->data->source->name  }}</p>
+                    </a>
+                    <p class="text-[13px] font-semibold">{{ $result->data->updated_at->date  }} | {{ $result->data->updated_at->time  }}</p>
+                    {{--<p class="text-[13px] font-semibold">09/22/2022 | 4:21pm EST</p>--}}
+                    <div class="flex gap-2 justify-center items-center">
+                        <img src="{{ asset('/images/starting-goalies/blue_cheked.png') }}" class="w-4 h-4  rounded-full ">
+                        <h1 class="text-[13px] font-semibold uppercase">{{ $result->data->status->name }}</h1>
+                    </div>      
                 </div>
                 <div class="relative hidden">
                     <a href="#" id="head-drp" class="text-lg font-bold  w-[13rem] rounded-full bg-slate-300"> {{  ( !empty($drp_name) ? $drp_name: 'Anaheim Ducks')  }}</a>
@@ -516,8 +495,6 @@
                 </p>
             </div>
         </div>
-       
-         
         @include('partials.nhl-sidebar')
     </div> 
     

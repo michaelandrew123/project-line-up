@@ -1,4 +1,4 @@
-<div class="w-full flex flex-row justify-center block smm-hidden">
+    <div class="w-full flex flex-row justify-center block smm-hidden">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col items-center justify-between gap-1 max-w-screen-2xl">
             <div class="flex flex-row justify-between items-end flex w-full  pb-3 border-[d9d9d9] border-b-2">
                 <div class="flex gap-1 items-end">
@@ -103,7 +103,7 @@
                 @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combos/{team}') != ('nhl/line-combos/{team}') && Request::is('nhl/team-news') != ('nhl/team-news'))
                   <div class=""></div>
                 @else            
-                 <div class="bg-[#d9d9d9] w-full h-px"></div>
+                  <div class="bg-[#d9d9d9] w-full h-px"></div>
                 @endif
                 <div class="w-full relative">
                     <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 absolute ">
@@ -113,13 +113,12 @@
                                     <li class="lc-team-logo "  
                                         style="" value="">
                                         <a class=""  href="">
-                                            <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title=" ">
+                                            <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
                                         </a>
                                     </li> 
                                 @endif 
                             @endif
                         @endforeach
-                        
                     </ul>
                 </div>
             </div>

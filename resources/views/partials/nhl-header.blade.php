@@ -47,8 +47,8 @@
             </div>
             <div class="flex flex-col w-full gap-1" style="{{ Request::is('/') == ('/') ? 'display:none':'' }}">
                 <ul  class="flex flex-row items-center justify-between w-11/12  ml-1">
-                    <li class="nav-itms {{Request::is('nhl/starting-goaliesv2') ? 'active':'' }}">
-                        <a href="{{url('nhl/starting-goaliesv2')}}" style="{{Request::is('nhl/starting-goaliesv2') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                    <li class="nav-itms {{Request::is('nhl/starting-goalies') ? 'active':'' }}">
+                        <a href="{{url('nhl/starting-goalies')}}" style="{{Request::is('nhl/starting-goalies') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             Starting Goalies
                         </a>
                     </li>
