@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-    <div class="smm-block hidden relative mb-14 py-2" >
+    <div class="smm-block hidden relative mb-12 py-2" >
         <!-- <div class="fixed top-0 w-full bg-red-700 z-30 hidden"> 
             <nav class="flex items-center bg-gray-50 dark:bg-gray-800 dark:border-gray-700 h-14 relative">
                 <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
