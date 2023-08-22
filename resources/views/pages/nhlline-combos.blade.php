@@ -8700,7 +8700,7 @@
             <div class="flex flex-row mt-4 gap-3">
                 @foreach($result->data->slots as $key=>$item)
                     @if($key == 'lw1')
-                        <div class="flex flex-col items-center w-[32%] border border-black">     
+                        <div class="flex flex-col items-center w-[32%] ">     
                             <div class="">
                                 <div class="">
                                     <img src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3" alt="">

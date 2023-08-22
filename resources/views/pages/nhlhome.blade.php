@@ -2250,15 +2250,15 @@
                         @foreach($goalies->data as $key=>$val)
                             @if(isset($val->metafields->goalie_status))
                                 @if($val->metafields->goalie_status->name === 'Confirmed')  
-                                    <div class="flex flex-row items-center gap-2 w-full mt-2">   
-                                        <img class=" w-14" style=" " src="{{$val->player->images->uniform}}" alt="">    
+                                    <div class="flex flex-row items-center gap-4 w-full mt-2">   
+                                        <img class="w-[20%]" style=" " src="{{$val->player->images->uniform}}" alt="">    
                                         <div class="flex flex-col">
                                             <div class="flex flex-col justify-center">
-                                                <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
-                                                {{$val->player->full_name}} 
+                                                <p class="font-bold text-lg">
+                                                 {{$val->player->full_name}} 
                                                 </p>
                                             </div>
-                                            <p class=" text-[10px] font-semibold">{{$val->title}}</p>
+                                            <p class=" text-[15px] font-semibold">{{$val->title}}</p>
                                             <p class=" text-[10px] text-slate-500">30 min ago</p>
                                         </div>
                                     </div>
@@ -2280,14 +2280,14 @@
                                         $article_injury_count++ 
                                     @endphp 
                                     <div class="flex flex-row items-center gap-2 w-full mt-2" style="{{ $article_injury_count  > 7 ? 'display: none' : ''}}">   
-                                        <img class=" w-14" style=" " src="{{$val->player->images->uniform}}" alt="">    
+                                        <img class=" w-[20%]" style=" " src="{{$val->player->images->uniform}}" alt="">    
                                         <div class="flex flex-col">
                                             <div class="flex flex-col justify-center">
-                                                <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
+                                                <p class="font-bold text-[15px]">
                                                 {{$val->player->full_name}} 
                                                 </p>
                                             </div>
-                                            <p class=" text-[10px] font-semibold">{{$val->title}}</p>
+                                            <p class=" text-[15px] font-semibold">{{$val->title}}</p>
                                             <p class=" text-[10px] text-slate-500">30 min ago</p>
                                         </div>
                                     </div>

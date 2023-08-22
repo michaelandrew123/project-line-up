@@ -8,9 +8,8 @@ class SoccerController extends Controller
 {
 
 
-public function soclineCombos(){
+    public function soclineCombos(){
         $client = new \GuzzleHttp\Client();
- 
         $formations = $client->get(
             'https://api.projectedlineups.com/v1/lineups/epl/formations',
             [
@@ -78,4 +77,5 @@ public function soclineCombos(){
 
         
     }
+    
 }
