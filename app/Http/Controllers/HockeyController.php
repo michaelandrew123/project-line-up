@@ -750,8 +750,6 @@ class HockeyController extends Controller
 
         return view('pages/nhlprojections')->with([ 'team' => $team_result, 'article' => $team_article, 'projections' => $projections_result,'contentPosts' => $home_cards->data ]);
     }
-
-
     public function nhllineupStudy(){
         $client = new \GuzzleHttp\Client();
 
