@@ -43,9 +43,11 @@
         </div>
     </div> -->
  <div class="flex justify-center mt-8 block smm-hidden w-full">
-    <div class="flex flex-row justify-between gap-1 lg:gap-2 md:gap-1 w-full max-w-screen-2xl">
+
+
+    <div class="xl:w-11/12 lg:w-full md:w-full flex flex-row justify-between gap-1 lg:gap-2 md:gap-1 w-full max-w-screen-2xl">
         <div class="flex flex-col w-full ">
-            <div class="flex flex-col">
+            <div class="flex flex-col hidden">
                 <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
                     <div class="flex flex-col items-center gap-3 w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[14rem] rounded-xl bg-white border border-black relative">                        
                         <div class="flex flex-col justify-center mx-5 xl:gap-20 lg:gap-14 md:gap-5 xl:mt-5 lg:mt-5 md:mt-2">
@@ -197,13 +199,88 @@
                 <div class="relative">
                     <a href="" class="text-black font-semibold text-base flex justify-end mr-[13px]">see all</a>
                 </div>
-            </div>  
+            </div>
+
+
+
             <div class="flex flex-col">
-                <div class="flex items-center">
-                    <img class="w-12 h-12" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
-                    <h1 class="text-2xl font-bold pt-5 pb-5 ml-5">
-                        NHL Player News
-                    </h1>
+                <div>
+                    <div class="relative flex items-center h-[220px]  mb-8 bg-[#38b6ff]">
+                        <img class="w-12 h-12 ml-8 hidden" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
+                        <h1 class="text-2xl font-extrabold pt-5 pb-5 ml-5 ml-8" >
+                            NHL Player News
+                        </h1>
+
+
+                        <div class="absolute bottom-0 right-32">
+                            <div class="flex flex-row"  >
+
+                                <img class="w-52 relative left-6 z-0" src="{{ asset('/images/nhl-player-news/IMG_0621.png') }}">
+
+                                <img class="w-52 relative z-10" src="{{ asset('/images/nhl-player-news/IMG_0622.png') }}">
+
+                                <img class="w-52 relative right-6 z-0" src="{{ asset('/images/nhl-player-news/IMG_0623.png') }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="flex flex-row gap-5">
+                            {{--{{Request::is('nhl/starting-goalies') ? 'active':'' }}--}}
+                            {{--{{ request()->fullUrl() }}--}}
+
+
+
+                            {{--@php--}}
+                                {{--$queryParams = request()->query();--}}
+                            {{--@endphp--}}
+
+                            {{--@if (!empty($queryParams))--}}
+                                {{--<p>URL Parameters:</p>--}}
+                                {{--<ul>--}}
+                                    {{--@foreach ($queryParams as $key => $value)--}}
+                                        {{--<li>{{ $key }}: {{ $value }}</li>--}}
+                                    {{--@endforeach--}}
+                                {{--</ul>--}}
+                            {{--@else--}}
+                                {{--<p>No URL parameters found.</p>--}}
+                            {{--@endif--}}
+                            {{----}}
+
+                            {{--{{ request()->path() }}--}}
+
+                            @if (request()->path() == 'nhl/player-news' || request()->path() == 'nhl/player-news/')
+
+                                <li  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center "  style="color:#38b6ff;" >
+                                    <a href="/nhl/player-news/">All</a>
+                                </li>
+
+                            @else
+                                <li  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center "    >
+                                    <a href="/nhl/player-news/">All</a>
+                                </li>
+
+                            @endif
+
+
+                            @foreach($type_names as $key=>$type)
+                                {{--{{$key}}--}}
+                                {{--{{ Request::is('/nhl/player-news/'. $key) ? 'color:#38b6ff;' : 'dasdasdd' }}--}}
+                                @php
+                                    $path = 'nhl/player-news/'. $key
+                                @endphp
+                                @if(request()->path() == $path)
+                                    <li  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  " style="color:#38b6ff">
+                                        <a href="{{  url('/nhl/player-news/' . $key) }}"> {{$type}} </a>
+                                    </li>
+                                @else
+                                    <li  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                                        <a href="{{  url('/nhl/player-news/' . $key) }}"> {{$type}} </a>
+                                    </li>
+                                @endif
+                            @endforeach
+
+                        </ul>
+                    </div>
                 </div>
                 <div class="flex flex-wrap w-full justify-evenly md:justify-between mb-3">
                     @php
@@ -215,172 +292,89 @@
                                 @php 
                                     $article_injury_count++ 
                                 @endphp 
-                                <div class="flex flex-col gap-3 w-[32%] xl:h-[21rem] lg:h-[21rem] md:h-[18rem] rounded-xl bg-white border border-black relative mt-5" style="{{ $article_injury_count  > 6 ? 'display: none' : ''}}">
-                                    <div class="flex mx-4 mt-5">
-                                        <img class="lg:w-20 lg:h-20 md:w-13 md:h-[3rem]" src="{{$val->player->images->uniform}}">
-                                        <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-1">
-                                            <div class="flex flex-row gap-2">
-                                                <img class="w-[18px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                                <p class="text-[11px] font-bold"> {{ !empty($val->metafields->goalie_status->value) ? $val->metafields->goalie_status->value : ''}}</p>
+                                <div class="flex flex-col gap-5 w-[32%] rounded-xl justify-between bg-white border border-[#38b6ff] relative mt-5 {{ ($article_injury_count  > 6) ? 'hidden' : '' }} card-container" >
+                                    <div>
+                                        <div class="flex mx-4 mt-5 gap-4   pb-5">
+                                            <img class="lg:w-20 lg:h-20 md:w-13 md:h-[3rem]" src="{{$val->player->images->uniform}}">
+                                            <div class="flex flex-col ml-2 xl:gap-3 lg:gap-3 md:gap-1 w-full">
+
+                                                <div class="flex flex-row justify-between w-full">
+                                                    <div class="flex flex-row gap-2">
+                                                        @if( !empty($val->type->name))
+                                                            @if($val->type->name == 'Starting Goalie')
+                                                                <img class="w-12" src="{{ asset('/images/nhl-player-news/starting_goalie_icon.png') }}">
+                                                                <button class="btn btn-primary text-[11px] font-bold"> {{ !empty($val->type->name) ? $val->type->name : ''}} </button>
+                                                            @elseif($val->type->name == 'Line Change')
+                                                                <img class="w-12" src="{{ asset('/images/nhl-player-news/line_change_icon.png') }}">
+                                                                <button class="btn btn-primary text-[11px] font-bold"> {{ !empty($val->type->name) ? $val->type->name : ''}} </button>
+                                                            @elseif($val->type->name == 'Injury')
+                                                                <img class="w-12" src="{{ asset('/images/nhl-player-news/injury_icon.png') }}">
+                                                                <button class="btn btn-primary text-[11px] font-bold"> {{ !empty($val->type->name) ? $val->type->name : ''}} </button>
+                                                            @else
+                                                                <img class="w-12" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
+                                                                <button class="btn btn-primary text-[11px] font-bold"> {{ !empty($val->type->name) ? $val->type->name : ''}} </button>
+                                                            @endif
+                                                        @endif
+                                                    </div>
+
+                                                    <div class="flex items-center">
+                                                        @if(isset($val->metafields->goalie_status) )
+                                                            @if($val->metafields->goalie_status->name == 'Expected')
+                                                                <div class=" bg-yellow-500 font-medium text-white text-base  px-2 rounded-md">{{ (isset($val->metafields->goalie_status->name) ? $val->metafields->goalie_status->name : " ")  }} </div>
+                                                            @elseif($val->metafields->goalie_status->name == 'Confirmed')
+                                                                <div class=" bg-green-500  font-medium text-white text-base  px-2 rounded-md">{{ (isset($val->metafields->goalie_status->name) ? $val->metafields->goalie_status->name : " ")  }} </div>
+                                                            @else
+                                                                <div class=" bg-blue-500 font-medium text-white text-base  px-2 rounded-md">{{ (isset($val->metafields->goalie_status->name) ? $val->metafields->goalie_status->name : " ")  }} </div>
+                                                            @endif
+                                                        @endif
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex flex-col">
+                                                    <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold"> {{$val->player->full_name}}</h1>
+                                                    <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
+                                                </div>
                                             </div>
-                                            <div class="flex flex-col">
-                                                <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">{{$val->player->full_name}}</h1>
-                                                <p class="text-[10px] font-semibold">{{$val->team->name}}</p>
-                                            </div>                                                                      
+
+                                        </div>
+                                        <div>
+
+                                            <div class="mx-2">
+                                                <p class="xl:text-[14px] lg:text-[13px] md:text-[10px] font-black mb-1">{{$val->title}}</p>
+                                                <p class="xl:text-[11px] lg:text-[10px] md:text-[8px] font-semibold">{{ !empty($val->description) ? $val->description : ''}}</p>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="mx-2">
-                                        <p class="xl:text-[14px] lg:text-[13px] md:text-[10px] font-bold mb-1">{{$val->title}}</p>
-                                        <p class="xl:text-[11px] lg:text-[10px] md:text-[8px] font-semibold">{{ !empty($val->description) ? $val->description : ''}}</p>
-                                    </div>
-                                    <div class="flex flex-row items-center absolute left-1 bottom-0 ">
-                                        <a href="{{$val->source->url}}">
-                                          <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-12 md::h-12" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                                        </a>
-                                        <div>
-                                            <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">{{$val->source->name}}</h3>
-                                            <p class="text-[10px]   font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                    <div class="flex flex-row items-center justify-between ">
+                                        <div  class="flex flex-row items-center ">
+
+                                            <a href="{{$val->source->url}}">
+                                              <img class="xl:w-14 xl:h-14 lg:w-14 lg:h-14 md:w-12 md::h-12" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
+                                            </a>
+
+                                            <div>
+                                                <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" target=”_blank”  href="{{$val->source->url}}">{{$val->source->name}}</a>
+                                                <p class="text-[10px] font-bold">{{$val->source->retrieved_at->datetime}}</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="">
+                                            {{--bg-[#38b6ff] font-medium text-white text-base  mx-2 dark:text-blue-500 hover:underline p-2 rounded-md"--}}
+                                            <a href="#" class="" >
+                                                <img class="w-12 mx-2  p-2" src="{{ asset('/images/footer/share_icon.png') }}" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             @endif
                         @endif
                     @endforeach
-                    <!-- <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white border border-black relative">
-                        <div class="flex  mx-4 mt-5 ">
-                            <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
-                            <div class="flex flex-col ml-2 gap-3">
-                                <div class="flex flex-row gap-2">
-                                    <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                    <p class="text-[11px] font-bold">Line Changes</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">Mark Stone</h1>
-                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
-                                </div>                                                                      
-                            </div>
-                        </div>
-                        <div class=" mx-4">
-                            <p class="text-base xl:text-base lg:text-base md:text-sm font-bold mb-2">Stone out with a lower body injury</p>
-                            <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                        </div>
-                        <div class="flex flex-row items-center absolute left-1 bottom-2">
-                            <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                            <div>
-                                <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
-                                <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
-                        <div class="flex  mx-4 mt-5 ">
-                            <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
-                            <div class="flex flex-col ml-2 gap-3">
-                                <div class="flex flex-row gap-2">
-                                    <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                    <p class="text-[11px] font-bold">Line Changes</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">Connor Mcdavid</h1>
-                                    <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
-                                </div>                                                                      
-                            </div>
-                        </div>
-                        <div class=" mx-4">
-                            <p class="text-base xl:text-base lg:text-base md:text-sm font-bold mb-2">Stone out with a lower body injury</p>
-                            <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                        </div>
-                        <div class="flex flex-row items-center absolute left-3 bottom-2">
-                            <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                            <div>
-                                <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
-                                <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                            </div>
-                        </div>
-                    </div> -->
+
                 </div>
-                <!-- <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
-                    <div class="flex flex-col gap-3 w-[32%] h-[21rem] rounded-xl bg-white border border-black relative">
-                        <div class="flex  mx-4 mt-5">
-                            <img class="lg:w-20 lg:h-20 md:w-13 md:h-16" src="{{ asset('/images/menu-icon/John Tavares (1).png') }}">
-                            <div class="flex flex-col ml-2 gap-3">
-                                <div class="flex flex-row gap-2">
-                                    <img class="w-[18px]" src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                    <p class="text-[11px] font-bold">Line Changes</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">John Tavares</h1>
-                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs  - C</p>
-                                </div>                                                                      
-                            </div>
-                        </div>
-                        <div class=" mx-4">
-                            <p class="text-base md:text-sm font-bold mb-2">Kris Letang out indefinitely after suffering stroke</p>
-                            <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                        </div>
-                        <div class="flex flex-row items-center absolute left-1 bottom-2">
-                            <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                            <div>
-                                <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
-                                <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-3 w-[32%] h-[21rem]   rounded-xl bg-white border border-black relative">
-                        <div class="flex  mx-4 mt-5 ">
-                            <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
-                            <div class="flex flex-col ml-2 gap-3">
-                                <div class="flex flex-row gap-2">
-                                    <img class="w-[18px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">
-                                    <p class="text-[11px] font-bold">Injury</p>
-                                </div>
-                                <div>
-                                    <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">Auston Matthews</h1>
-                                    <p class="text-[10px] font-semibold">Toronto Maple Leafs - C</p>
-                                </div>   
-                            </div>
-                        </div>
-                        <div class=" mx-4">
-                            <p class="text-base md:text-sm font-bold mb-2">Mathews out for three weeks with a lower body injury</p>
-                            <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Mathews would be out for atleast three weeks after suffering a sprained knee Wednesday versus the Rangers.</p>
-                        </div>
-                        <div class="flex flex-row items-center absolute left-1 bottom-2">
-                            <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                            <div>
-                                <h3 class=" text-xl md:text-base  font-extrabold">Chris Benn</h3>
-                                <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-3 w-[32%] h-[21rem]  rounded-xl bg-white border border-black relative">
-                        <div class="flex  mx-4 mt-5 ">
-                            <img class="lg:w-20 lg:h-20 md:w-16 md:h-[4rem]" src="{{ asset('/images/menu-icon/.png') }}">
-                            <div class="flex flex-col ml-2 gap-3">
-                                <div class="flex flex-row gap-2">
-                                    <img class="w-[18px] " src="{{ asset('/images/home-page/679-6790349_espn-fantasy-hockey-logo-hd-png-download-removebg-preview.png') }}">
-                                    <p class="text-[11px] font-bold">Line Changes</p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <h1 class="xl:text-xl lg:text-lg md:text-base font-extrabold">Connor Mcdavid</h1>
-                                    <p class="text-[10px] font-semibold">Vegas Golden Knights - W</p>
-                                </div>                                                                      
-                            </div>
-                        </div>
-                        <div class=" mx-4">
-                            <p class="text-base xl:text-base lg:text-base md:text-sm font-bold mb-2">Stone out with a lower body injury</p>
-                            <p class="text-[12px] lg:text-[12px] md:text-[10px] font-semibold">The Pittsburgh Penguins have announce that defenseman Kris Letang will be out indefinitely after sufffering a stroke. The team said Letang is 'not experiencing any lasting effect"and will continue to undergo test over the next few day.</p>
-                        </div>
-                        <div class="flex flex-row items-center absolute left-1 bottom-2">
-                            <img class="w-14 h-14" src="{{ asset('/images/starting-goalies/twitter-removebg-preview.png') }}">
-                            <div>
-                                <h3 class="xl:text-[13px] lg:text-[13px] md:text-[12px] font-extrabold">Chris Benn</h3>
-                                <p class="text-[10px] font-bold">11/30/2012 | 12:59 pm EST</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+
                 <div class="relative">
-                    <a href="" class="text-black text-base  font-semibold flex justify-end mr-[13px]">see all</a>
+                    <div class="text-black text-base  font-semibold flex justify-end mr-[13px] cursor-pointer" id="see-all-player-news">see all</div>
                 </div>
             </div>
             <div class="flex flex-row w-full justify-center gap-24 md:gap-14">
@@ -388,7 +382,7 @@
                 <img class="w-96 lg:w-64 md:w-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
             </div>                
         </div>   
-        <div class="xl:w-3/12 lg:w-3/12 md:w-4/12 flex justify-center">
+        <div class="xl:w-3/12 lg:w-3/12 md:w-4/12 flex justify-center hidden">
             <div class="flex flex-col gap-8 block smm-hidden ">
                 <img class="w-96 lg:w-64 md:w-48" src="{{ asset('/images/menu-icon/adds3.png') }}">
                 <div class="flex flex-col gap-3 ml-5">

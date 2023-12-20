@@ -12,6 +12,7 @@
                         <div class="flex flex-col">
                             <img class="w-20 flex" src="{{  ( !empty($current_logo) ? $current_logo: 'https://media.projectedlineups.com/sports/basketball/leagues/nba/teams/boston-celtics/logos/logo.svg') }}" alt="">
                         </div>
+
                         <div>
                             <div class="teams text-4xl font-bold text-black">
                               {{  ( !empty($current_name) ? $current_name: 'Boston Celtics')  }}

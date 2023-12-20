@@ -10,7 +10,210 @@
 
 
 <script>
-     
+
+
+
+    // $(document).ready(function() {
+    //
+    //
+    //
+    // });
+
+
+    // const url = 'https://api.projectedlineups.com/v1/lineups/nhl/starting-goalies?f[game_date]=2023-10-18';
+    //
+    //
+    //
+    //
+    // // fetch(url)
+    // //     .then((response) => {
+    // //     return response.json();
+    // // })
+    // // .then((data) => {
+    // //     let authors = data;
+    // //
+    // // authors.map(function(author) {
+    // //     let li = document.createElement('li');
+    // //     let name = document.createElement('h2');
+    // //     let email = document.createElement('span');
+    // //
+    // //     name.innerHTML = `${author.name}`;
+    // //     email.innerHTML = `${author.email}`;
+    // //
+    // //     li.appendChild(name);
+    // //     li.appendChild(email);
+    // //     list.appendChild(li);
+    // // });
+    // // })
+    // //
+    // // ul.appendChild(list);
+    // //
+    //
+    // const dateDisplay = document.getElementById('date-display');
+    // const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    //
+    // // let convertCurrentDate = new Date();
+    // // var date_= `${convertCurrentDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
+    // // console.log('last date ', date_)
+    // //
+    // //
+    // // var convertedYear = date_.getFullYear();
+    // // var convertedMonth = (date_.getMonth() + 1).toString().padStart(2, '0'); // Months are zero-based, so we add 1
+    // // var convertedDay = date_.getDate().toString().padStart(2, '0');
+    // //
+    // // // Create the formatted date string
+    // // var convertedDayFormattedDate = convertedYear + '-' + convertedMonth + '-' + convertedDay;
+    // //
+    // // console.log('last date ', convertedDayFormattedDate)
+    //
+    //
+    // var dataList = $('#starting-goalies-content');
+    //
+    // let currentDate = new Date();
+    // function updateDateDisplay() {
+    //     const dayOfWeek = daysOfWeek[currentDate.getDay()];
+    //
+    //
+    //     // const date_= `${currentDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
+    //     const formattedDate = `${currentDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
+    //     const formattedStringDay = `${dayOfWeek}`;
+    //
+    //     dateDisplay.innerText = formattedStringDay + ', ' +formattedDate;
+    //
+    //
+    //
+    //
+    //     var convertedYear = currentDate.getFullYear();
+    //     var convertedMonth = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+    //     var convertedDay = currentDate.getDate().toString().padStart(2, '0');
+    //     var convertedDayFormattedDate = convertedYear + '-' + convertedMonth + '-' + convertedDay;
+    //
+    //       let game_date = '2023-10-30';
+    //
+    //       window.location.href="/nhl/starting-goalies/" + convertedDayFormattedDate;
+    //         console.log('hello world ',convertedDayFormattedDate);
+    //
+    //     fetch('https://api.projectedlineups.com/v1/lineups/nhl/starting-goalies?f[game_date]=' + game_date)
+    //         .then((response) => {
+    //             return response.json();
+    //         }).then((data) => {
+    //             let players = data.data;
+    //
+    //             players.map(function(player) {
+    //
+    //                 // dataList.append('<li>New item hello world</li>');
+    //                 console.log(player.game.slug);
+    //                 console.log(player.game.slug);
+    //
+    //
+    //
+    //                 // let ul = document.createElement('ul');
+    //                 //             ul.addClass('flex gap-2 w-full');
+    //                 // if (myObject !== null && typeof myObject === 'object' && myObject.hasOwnProperty('images')) {
+    //                 //     // Access the 'images' property of myObject
+    //                 //     const images = myObject.images;
+    //                 //     // Rest of your code here
+    //                 // } else {
+    //                 //     // Handle the case where myObject is null or doesn't have the 'images' property
+    //                 //     console.error("myObject is null or doesn't have the 'images' property");
+    //                 // }
+    //                 // dataList.append(
+    //                 //     '<div class="flex gap-2 w-full">'
+    //                 //         + '<div class="border border-black flex flex-col items-center justify-between w-full ">'
+    //                 //             + '<h1 class="font-bold text-sm mt-2 player" >'+  player.player.full_name +'</h1>'
+    //                 //             + ' <img src="'+ player.player.images.uniform +'"  class="w-32" alt="">'
+    //                 //         +'</div>' +
+    //                 //     '</div>')
+    //                 //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //                 // let li1 = document.createElement('li');
+    //                 //             li1.addClass('border border-black flex flex-col items-center justify-between w-full rounded-lg')
+    //                 //             ul.appendChild(li1);
+    //                 // let h11 = document.createElement('li');
+    //                 //             h11.addClass('font-bold text-sm mt-2 player')
+    //                 //             h11.innerHTML = `${player.full_name}`;
+    //                 //             li1.appendChild(h11);
+    //                 // let div1 = document.createElement('div');
+    //                 //             div1.addClass('flex flex-row items-center gap-2')
+    //                 //             ul.appendChild(div1);
+    //                 // let img1 = document.createElement('img');
+    //                 //             img1.addClass('w-[15px] h-[15px]')
+    //                 //             img1.attr("src", `${player.images.uniform}`);
+    //                 //             div1.appendChild(img1);
+    //                 //
+    //                 //
+    //                 // let p1 = document.createElement('p');
+    //                 //             p1.addClass('text-[11px] font-bold')
+    //                 //
+    //                 // console.log(ul)
+    //                 // dataList.append(ul);
+    //                 // let li2 = document.createElement('li');
+    //                 // let li3 = document.createElement('li');
+    //                 // let centerHeder = document.createElement('h2');
+    //                 // let email = document.createElement('span');
+    //                 //
+    //                 // centerHeder.innerHTML = `${player.game.game_date.full}`;
+    //                 // email.innerHTML = `${player.email}`;
+    //                 //
+    //                 // li.appendChild(name);
+    //                 // li.appendChild(email);
+    //                 // list.appendChild(li);
+    //             });
+    //         })
+    //         .catch(function(e) {
+    //             console.log(e)
+    //         });
+    //
+    //
+    // }
+    //
+    // document.getElementById('decrement-button').addEventListener('click', () => {
+    //     currentDate.setDate(currentDate.getDate() - 1);
+    // updateDateDisplay();
+    // });
+    //
+    // document.getElementById('increment-button').addEventListener('click', () => {
+    //     currentDate.setDate(currentDate.getDate() + 1);
+    // updateDateDisplay();
+    // });
+    //
+    //
+    // // Initialize date display with the current date
+    // updateDateDisplay();
+
+
+
+    $('.nhl-linecombos_, #line-combos_, #line-combos-div_').click(function(){
+
+        // alert("Hello world");
+
+          $('#line-combos_').removeClass('hidden');
+        //
+        // $('.nhl-linecombos_ > a').css({'color': '#38b6ff'});
+    });
+
+    $('.nhl-linecombos_,  #line-combos_, #line-combos-div_').mouseleave(function(){
+        // $('#line-combos-div_').addClass('hidden');
+        //
+        // $('.nhl-linecombos_ > a').css({'color': '#000'});
+    });
+
+
+    $('#see-all-player-news').click(function(){
+        $('.card-container.hidden').removeClass('hidden');
+        $(this).addClass('hidden')
+    });
+
     // let headers = new Headers();
     //
     // headers.append('Content-Type', 'application/json');
@@ -430,6 +633,13 @@
         $('#drop_down').toggleClass('hidden');
         
     });
+    $('.line-combos-items').on('touchstart clcik', function(){
+
+        var data = $(this).attr('rel');
+        window.location.href=data;
+
+    });
+
     // nhl line-combos select option
     $('#team-name').on('click', function(){
       $('.arrw2').toggleClass('rotate-[90deg]');
@@ -561,7 +771,9 @@
         $('#table-1').removeClass('hidden');
         $('#table-2').addClass('hidden');
     });
-        
+
+
+
     $('.owl-carousel').owlCarousel({
         loop:true,
         gap:5,

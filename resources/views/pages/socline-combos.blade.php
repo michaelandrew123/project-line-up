@@ -91,109 +91,144 @@
             <img class="w-full my-2" src="{{ asset('/images/menu-icon/adds_header.png') }}"> 
             <div id="" class="flex flex-col gap-2 my-1">
                 <div class="flex flex-col  gap-2 w-full">
-                    @foreach($formation->data->slots as $key=>$item)
-                        @if($val->slug == 'nottingham-forest')
+                    @foreach($formation->data as $key=>$values)
+                        @if($values->team->slug == 'nottingham-forest')
                             <div class="w-full flex items-center justify-center mt-5">
-                              <h1 class="h-8 w-52  bg-[#38b6ff] rounded justify-center flex items-center font-extrabold text-md text-[#ffffff] ">FORMATION 4-3-3</h1>
+                                <h1 class="h-8 w-52  bg-[#38b6ff] rounded justify-center flex items-center font-extrabold text-md text-[#ffffff] ">FORMATION 4-3-3</h1>
                             </div>
-                            <div class="flex flex-row mt-10 gap-3">
-                                @if($key == 'starter-11')
-                                    <div class="flex flex-col items-center w-[32%]">     
-                                        <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                            <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                        </div>
-                                        <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>
+                            @foreach($values->slots as $key1=>$val1)
+                                    <div class="flex flex-row mt-10 gap-3">
+                                        @if($key == 'starter-11')
+                                            <div class="flex flex-col items-center w-[32%]">
+                                                <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
+                                                    <img src="{{$val1->images->uniform}}" class="  px-3" alt="">
+                                                </div>
+                                                <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>
+                                            </div>
+                                        @endif
+                                        @if($key == 'starter-10')
+                                            <div class="flex flex-col items-center w-[32%]">
+                                                <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
+                                                    <img src="{{$val1->images->uniform}}" class="  px-3" alt="">
+                                                </div>
+                                                <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{$item->full_name}}</p>
+                                            </div>
+                                        @endif
+                                        @if($key == 'starter-9')
+                                            <div class="flex flex-col items-center w-[32%]">
+                                                <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
+                                                    <img src="{{$val1->images->uniform}}" class="  px-3" alt="">
+                                                </div>
+                                                <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>
+                                            </div>
+                                        @endif
                                     </div>
-                                @endif
-                                @if($key == 'starter-10')
-                                    <div class="flex flex-col items-center w-[32%]">     
-                                        <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                            <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                        </div>
-                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{$item->full_name}}</p>
-                                    </div>
-                                @endif
-                                @if($key == 'starter-9')
-                                    <div class="flex flex-col items-center w-[32%]">     
-                                        <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                            <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                        </div>
-                                        <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>
-                                    </div>
-                                @endif
-                            </div> 
-                            <div class="flex flex-row mt-10 gap-3">
-                                @if($key == 'starter-8')
-                                    <div class="flex flex-col items-center w-[32%]">     
-                                        <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                            <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                        </div>
-                                        <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>
-                                    </div>
-                                @endif
-                                @if($key == 'starter-7')
-                                    <div class="flex flex-col items-center w-[32%]">     
-                                        <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                            <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                        </div>
-                                        <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{$item->full_name}}</p>
-                                    </div>
-                                @endif
-                                @if($key == 'starter-6')
-                                    <div class="flex flex-col items-center w-[32%]">     
-                                        <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                            <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                        </div>
-                                        <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>
-                                    </div>
-                                @endif
-                            </div> 
-                            <div class="flex flex-row justify-center mt-10">
-                                @if($key == 'starter-5')
-                                    <div class="flex flex-col items-center w-[32%]  ">     
-                                        <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                            <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                        </div>
-                                        <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>
-                                    </div>
-                                @endif
-                                @if($key == 'starter-4')
-                                <div class="flex flex-col items-center w-[32%]">     
-                                    <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                        <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                    </div>
-                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{$item->full_name}}</p>
-                                </div>
-                                @endif
-                                @if($key == 'starter-3')
-                                <div class="flex flex-col items-center w-[32%]">     
-                                    <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                        <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                    </div>
-                                    <p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{$item->full_name}}</p>
-                                </div>
-                                @endif
-                                @if($key == 'starter-2')
-                                <div class="flex flex-col items-center w-[32%]">     
-                                    <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                        <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                    </div>
-                                    <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>
-                                </div>
-                                @endif
-                            </div> 
-                            @if($key == 'goalkeeper')
-                                <div class="flex flex-row justify-center mt-10 gap-3">
-                                    <div class="flex flex-col items-center w-[32%]">     
-                                        <div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">
-                                            <img src="{{$item->images->uniform}}" class="  px-3" alt="">
-                                        </div>
-                                        <p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>
-                                    </div>
-                                </div>
+                                @endforeach
                             @endif
-                        @endif
-                    @endforeach
+                        @endforeach
+
+                        {{--@if($val1->team->slug == 'nottingham-forest')--}}
+                            {{--<div class="w-full flex items-center justify-center mt-5">--}}
+                              {{--<h1 class="h-8 w-52  bg-[#38b6ff] rounded justify-center flex items-center font-extrabold text-md text-[#ffffff] ">FORMATION 4-3-3</h1>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row mt-10 gap-3">--}}
+                                {{--@if($key == 'starter-11')--}}
+                                    {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                        {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                            {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                        {{--</div>--}}
+                                        {{--<p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>--}}
+                                    {{--</div>--}}
+                                {{--@endif--}}
+                                {{--@if($key == 'starter-10')--}}
+                                    {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                        {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                            {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                        {{--</div>--}}
+                                        {{--<p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{$item->full_name}}</p>--}}
+                                    {{--</div>--}}
+                                {{--@endif--}}
+                                {{--@if($key == 'starter-9')--}}
+                                    {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                        {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                            {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                        {{--</div>--}}
+                                        {{--<p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>--}}
+                                    {{--</div>--}}
+                                {{--@endif--}}
+                            {{--</div> --}}
+                            {{--<div class="flex flex-row mt-10 gap-3">--}}
+                                {{--@if($key == 'starter-8')--}}
+                                    {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                        {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                            {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                        {{--</div>--}}
+                                        {{--<p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>--}}
+                                    {{--</div>--}}
+                                {{--@endif--}}
+                                {{--@if($key == 'starter-7')--}}
+                                    {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                        {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                            {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                        {{--</div>--}}
+                                        {{--<p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{$item->full_name}}</p>--}}
+                                    {{--</div>--}}
+                                {{--@endif--}}
+                                {{--@if($key == 'starter-6')--}}
+                                    {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                        {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                            {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                        {{--</div>--}}
+                                        {{--<p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>--}}
+                                    {{--</div>--}}
+                                {{--@endif--}}
+                            {{--</div> --}}
+                            {{--<div class="flex flex-row justify-center mt-10">--}}
+                                {{--@if($key == 'starter-5')--}}
+                                    {{--<div class="flex flex-col items-center w-[32%]  ">     --}}
+                                        {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                            {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                        {{--</div>--}}
+                                        {{--<p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>--}}
+                                    {{--</div>--}}
+                                {{--@endif--}}
+                                {{--@if($key == 'starter-4')--}}
+                                {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                    {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                        {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                    {{--</div>--}}
+                                    {{--<p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{$item->full_name}}</p>--}}
+                                {{--</div>--}}
+                                {{--@endif--}}
+                                {{--@if($key == 'starter-3')--}}
+                                {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                    {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                        {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                    {{--</div>--}}
+                                    {{--<p class="text-center text-sm py-0.5 px-4  font-bold uppercase">{{$item->full_name}}</p>--}}
+                                {{--</div>--}}
+                                {{--@endif--}}
+                                {{--@if($key == 'starter-2')--}}
+                                {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                    {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                        {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                    {{--</div>--}}
+                                    {{--<p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>--}}
+                                {{--</div>--}}
+                                {{--@endif--}}
+                            {{--</div> --}}
+                            {{--@if($key == 'goalkeeper')--}}
+                                {{--<div class="flex flex-row justify-center mt-10 gap-3">--}}
+                                    {{--<div class="flex flex-col items-center w-[32%]">     --}}
+                                        {{--<div class="xl:w-[200px] lg:w-[200px] md:w-[127px]">--}}
+                                            {{--<img src="{{$item->images->uniform}}" class="  px-3" alt="">--}}
+                                        {{--</div>--}}
+                                        {{--<p class="text-center text-sm py-0.5 px-4 font-bold uppercase">{{$item->full_name}}</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--@endif--}}
+                        {{--@endif--}}
+                    {{--@endforeach--}}
                 </div> 
                 <div class="bg-[#d9d9d9] w-full h-1"></div>                
             </div>

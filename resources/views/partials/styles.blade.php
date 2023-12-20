@@ -4,11 +4,16 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
     body{
         max-width: 1280px;
         margin: auto;
-        font-family:  'Maven Pro', sans-serif 
+        /*font-family:  'Maven Pro', sans-serif */
+        font-family: 'Roboto', sans-serif;
+        background-color: #F4F5F7 !important;
+
     }
     li.lc-team-logo > a > img:hover{
         width: 50px;
@@ -304,7 +309,16 @@
     }
   
     @media (max-width: 768px) {
+        .nhl-images{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            inset: 0px;
+            object-fit: cover;
+            object-position: center top;
+            color: transparent;
 
+        }
         
         ul#mobile-2nd-mnav li:first-child{
             /* border-left: none !important;     */
@@ -343,7 +357,17 @@
         .smm-flex-row{
             flex-direction: row;
         }
+        html{
+            /*position: relative;*/
+        }
+        body{
+            /*position: absolute;*/
+            /*transform: translate(50%);*/
+            /*right: 50%;*/
 
+
+
+        }
         .smm-flex-row-reverse{flex-direction: row-reverse;}
 
         .smm-flex-col{

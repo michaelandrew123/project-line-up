@@ -3,9 +3,9 @@
             <div class="flex flex-row justify-between items-end flex w-full  pb-3 border-[d9d9d9] border-b-2">
                 <div class="flex gap-1 items-end">
                     <img class="xl:w-[99px] lg:w-[99px] md:w-[80px]" src="{{ asset('/images/line-combos/logo/matthew_tkachuk.png') }}" alt="">
-                    <div class="flex">
-                        <h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular" style="font-family: 'Mouse Memoirs'">projected</h1>
-                        <h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular text-[#39b6ff]" style="font-family: 'Mouse Memoirs'">lineups</h1>
+                    <div class="flex items-end">
+                        <h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular" style="line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>
+                        <h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular text-[#39b6ff]" style="line-height: 1; font-family: 'Mouse Memoirs'">lineups</h1>
                     </div>
                 </div>
                 <div class="flex flex-row items-center xl:w-8/12 lg:w-8/12 md:w-7/12 xl:justify-between lg:justify-between md:justify-between ">
@@ -16,7 +16,7 @@
                         <a href="" class="xl:text-[24px] lg:text-[22px] md:text-[20px] font-bold  text-[#38b6ff] xl:px-4 lg:px-4 md:px-2 py-px border border-[#38b6ff] rounded-md hover:bg-sky-500/50 hover:border-sky-50 hover:text-white active:bg-[#38b6ff] active:text-[#ffffff]">
                             NBA
                         </a>
-                        <a href="{{url('/nfl/home')}}" class="xl:text-[24px] lg:text-[22px] md:text-[20px] font-bold bg-[#38b6ff] text-[#ffffff]  xl:px-4 lg:px-4 md:px-2 py-px rounded-md">
+                        <a href="{{url('/soc/home')}}" class="xl:text-[24px] lg:text-[22px] md:text-[20px] font-bold bg-[#38b6ff] text-[#ffffff]  xl:px-4 lg:px-4 md:px-2 py-px rounded-md">
                             SOC
                         </a>
                         <a href="{{url('/nfl/home')}}" class="xl:text-[24px] lg:text-[22px] md:text-[20px] font-bold text-[#38b6ff] xl:px-4 lg:px-4 md:px-2 py-px border border-[#38b6ff]  rounded-md hover:bg-sky-500/50 hover:border-sky-50  hover:text-white active:bg-[#38b6ff] active:text-[#ffffff]">
@@ -47,30 +47,30 @@
             <div class="flex flex-col w-full gap-1" style="{{ Request::is('/') == ('/') ? 'display:none':'' }}">
                 <ul  class="flex flex-row items-center justify-between w-11/12  ml-1">
                     <li class="nav-itms {{Request::is('nhl/starting-goaliesv2') ? 'active':'' }}">
-                        <a href="{{url('nhl/starting-goaliesv2')}}" style="{{Request::is('nhl/starting-goaliesv2') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                        <a href="{{url('soc/starting-goaliesv2')}}" style="{{Request::is('nhl/starting-goaliesv2') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             Starting Goalies
                         </a>
                     </li>
                     @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combinations') != ('nhl/line-combinations'))
                         <li class="">
-                            <a href="{{url('nhl/line-combos')}}" style="" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                            <a href="{{url('soc/line-combos')}}" style="" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
                                 Line combinations
                             </a>
                         </li>
                     @else
                         <li class=" ">
-                            <a  href="{{url('nhl/line-combos')}}" style="color:#38b6ff;" 
+                            <a  href="{{url('soc/line-combos')}}" style="color:#38b6ff;"
                             class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                                 Line Combinations
                             </a>
                         </li>
                     @endif
                     <li class="nav-itms   {{Request::is('nhl/projections') ? 'active':'' }}">
-                        <a href="{{url('nhl/projections')}}" style="{{Request::is('nhl/projections') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                        <a href="{{url('soc/projections')}}" style="{{Request::is('nhl/projections') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             DFS Projections
                         </a>
                     </li>
-                    @if(Request::is('nhl/team-news') != ('nhl/team-news') && Request::is('nhl/player-news') != ('nhl/player-news') && Request::is('nhl/individual-player-news') != ('nhl/individual-player-news') && Request::is('nhl/all-player-news') != ('nhl/all-player-news'))
+                    @if(Request::is('soc/team-news') != ('nhl/team-news') && Request::is('nhl/player-news') != ('nhl/player-news') && Request::is('nhl/individual-player-news') != ('nhl/individual-player-news') && Request::is('nhl/all-player-news') != ('nhl/all-player-news'))
                         <li class="">
                             <a href="{{url('nhl/player-news')}}" style=" " class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
                                 Player News
@@ -78,7 +78,7 @@
                         </li>
                     @else
                         <li class="">
-                            <a href="{{url('nhl/player-news')}}" style="color:#38b6ff;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                            <a href="{{url('soc/player-news')}}" style="color:#38b6ff;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
                                 Player News
                             </a>
                         </li>
@@ -88,7 +88,7 @@
                             Props & Odds
                         </a>
                     </li> -->
-                    <li class="nav-itms {{Request::is('nhl/lineup-study') ? 'active':'' }}">
+                    <li class="nav-itms {{Request::is('soc/lineup-study') ? 'active':'' }}">
                         <a href="{{url('nhl/lineup-study')}}" style="{{Request::is('nhl/lineup-study') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                             Lineup Study
                         </a>
@@ -100,7 +100,7 @@
                         </a>
                     </li>
                 </ul>
-                @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combos/{team}') != ('nhl/line-combos/{team}') && Request::is('nhl/team-news') != ('nhl/team-news'))
+                @if(Request::is('soc/line-combos') != ('soc/line-combos') && Request::is('soc/line-combos/{team}') != ('soc/line-combos/{team}') && Request::is('soc/team-news') != ('soc/team-news'))
                   <div class=""></div>
                 @else            
                  <div class="bg-[#d9d9d9] w-full h-px"></div>
@@ -110,13 +110,13 @@
                         @foreach($team->data as $key=>$val)
                             @if(!empty($val->logo->src))
                                 @if($val->league->slug == 'soccer')
-                                    <li class="lc-team-logo "  
+                                    <li class="lc-team-logo "
                                         style="" value="">
                                         <a class=""  href="">
                                             <img class="xl:w-10 lg:w-10 md:w-7 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title=" ">
                                         </a>
-                                    </li> 
-                                @endif 
+                                    </li>
+                                @endif
                             @endif
                         @endforeach
                     </ul>

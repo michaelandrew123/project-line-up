@@ -2,80 +2,36 @@
 
 namespace App\Http\Controllers;
 
+
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use App\Traits\APITrait;
 
 class SoccerController extends Controller
 {
-
+    use APITrait;
 
     public function soclineCombos(){
-        $client = new \GuzzleHttp\Client();
-        $formations = $client->get(
-            'https://api.projectedlineups.com/v1/lineups/epl/formations',
-            [
-                'headers' => [
-                    'Content-Type' => 'application/json',
-                    'Accept' => 'application/json',
-                ],
-            ]
-        );
-
-        $formations_body = $formations->getBody();
-        $formations_result = json_decode($formations_body);
-
-        // $formations = $client->get(
-        //     'https://api.projectedlineups.com/v1/sports/sports/soccer/formations',
-        //     [
-        //         'headers' => [
-        //             'Content-Type' => 'application/json',
-        //             'Accept' => 'application/json',
-        //         ],
-        //     ]
-        // );
-        // $formations_body = $formations->getBody();
-        // $formations_result = json_decode($formations_body);
-        // print_r(json_decode((string) $body));
-        //  dd($formations_result);
-
-    
-        $team = $client->get(
-            'https://api.projectedlineups.com/v1/sports/teams?l=0',
-            [
-                'headers' => [
-                    'Content-Type' => 'application/json',
-                    'Accept' => 'application/json',
-                ],
-            ]
-        );
-
-        $team_body = $team->getBody();
-        $team_result = json_decode($team_body);
-
-        
-        // print_r(json_decode((string) $body));
-
-        // dd($team_result);
-
-       
-        $response = $client->get(
-            'https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation',
-            [
-                'headers' => [
-                    'Content-Type' => 'application/json',
-                    'Accept' => 'application/json',
-                ],
-            ]
-        );
-        $body = $response->getBody();
-
-        $result = json_decode($body);
-
-
-       
-
-        return view('pages/socline-combos')->with(['result' => $result , 'team' => $team_result, 'formation' => $formations_result ]);
-
-        
+        $team_result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
+        $formations_result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/lineups/epl/formations');
+        $result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation');
+        return view('pages/socline-combos')->with(['result' => $result ,'team' => $team_result, 'formation' => $formations_result ]);
     }
-    
+
+    public function getSoccer($slug){
+        if(empty($slug)){
+            $slug='epl';
+        }
+        $team_results = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
+        $formations_result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/lineups/'.$slug.'/formations');
+        $result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation');
+        $soccer1 = [];
+        foreach($team_results->data as $key=>$val){
+            if($val->sport->slug == 'soccer'){
+                $soccer1[]=$val;
+            }
+        }
+        return view('pages/socline-combos')->with([ 'result' => $result ,'teams' => $team_results, 'formation' => $formations_result ]);
+    }
 }

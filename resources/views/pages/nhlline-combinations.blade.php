@@ -39,7 +39,7 @@
             </div>
         </div>
     </div> -->
-    <div class="w-full flex justify-center bg-slate-100 mt-10">
+    <div class="w-full flex justify-center  mt-10">
        <div class="xl:w-11/12 lg:w-full md:w-full flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
             <div class="flex flex-col  w-9/12 gap-5">
                 <div class="w-full bg-[#38b6ff] flex flex-row  items-center rounded-md">
@@ -50,20 +50,22 @@
                         @if($val->league->slug == 'nhl')
                             <tr class="w-full flex  items-center border-b-2 border-slate-200 h-12">
                                 <td class="w-full flex items-center gap-2 border-0">
-                                    <img class="w-7" src="{{$val->logo->src}}" alt="">
-                                    <h1 class="xl:text-base lg:text-base md:text-sm font-bold">{{$val->name}}</h1>
+                                    <a class="flex flex-row" href="../../nhl/line-combos/{{ $val->slug }}">
+                                        <img class="w-7" src="{{$val->logo->src}}" alt="">
+                                        <h1 class="xl:text-base lg:text-base md:text-sm font-bold">{{$val->name}}</h1>
+                                    </a>
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="xl:text-base lg:text-base md:text-sm font-bold text-[#38b6ff]" href="">Forward</a>   
+                                    <a class="xl:text-base lg:text-base md:text-sm text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#forwards">Forward</a>
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="xl:text-base lg:text-base md:text-sm font-bold text-[#38b6ff]" href="">Defence</a>   
+                                    <a class="xl:text-base lg:text-base md:text-sm  text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#defence">Defence</a>
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="xl:text-base lg:text-base md:text-sm font-bold text-[#38b6ff]" href="">Goalie</a>   
+                                 <a class="xl:text-base lg:text-base md:text-sm text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#goalie">Goalie</a>
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="xl:text-base lg:text-base md:text-sm font-bold text-[#38b6ff]" href="">Power Play</a>   
+                                 <a class="xl:text-base lg:text-base md:text-sm  text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#power">Power Play</a>
                                 </td>
                             </tr>
                         @endif
@@ -94,42 +96,7 @@
                                 @endif
                             @endif     
                         @endforeach
-                        <!-- <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                            <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
-                            <div class="flex flex-col">
-                                <div class="flex flex-col justify-center">
-                                    <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
-                                        Linus Ullmark - BOS
-                                    </p>
-                                </div>
-                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
-                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                            <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
-                            <div class="flex flex-col">
-                                <div class="flex flex-col justify-center">
-                                    <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
-                                        Linus Ullmark - BOS
-                                    </p>
-                                </div>
-                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
-                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-row items-center gap-2 w-full" style=" ">   
-                            <img class="xl:w-16 lg:w-16 md:w-14" style=" " src="{{ asset('/images/menu-icon/Copy_of_jersey.png') }}" alt="">    
-                            <div class="flex flex-col">
-                                <div class="flex flex-col justify-center">
-                                    <p class="font-bold xl:text-sm lg:text-sm md:text-[10px]">
-                                        Linus Ullmark - BOS
-                                    </p>
-                                </div>
-                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] font-semibold">Ullmark was the first goalie off the ice</p>
-                                <p class="xl:text-[12px] lg:text-[12px] md:text-[10px] text-slate-500">30 min ago</p>
-                            </div>
-                        </div>  -->
+
                         <div class="w-full flex justify-center">
                             <a class="font-semibold xl:text-sm lg:text-sm md:text-[8px] text-[#38b6ff]" href="{{url('nhl/starting-goaliesv2')}}">View Today's Starting Goalies</a>
                         </div>
@@ -208,149 +175,6 @@
                 </div> 
             </div> 
     </div>
-    <!-- <div class="w-full flex justify-center bg-slate-100 ">
-       <div class="w-11/12 flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
-          <div class="flex flex-col  w-9/12 gap-5">
-                <div class="w-full bg-[#d9d9d9] flex flex-row  items-center rounded-md">
-                    <h1 class="text-center py-10 text-3xl font-bold w-full">  NHL Line Combinations</h1>
-                </div>
-                <div class="flex flex-col w-full  mt-7">  
-                    <div class="flex flex-col ">
-                        <ul class="w-full flex flex-wrap gap-5">
-                            @foreach($team->data as $key=>$val)
-                                @if($val->league->slug == 'nhl')
-                                    <li class="flex flex-row justify-between gap-3">
-                                        <button class="flex flex-col justify-end w-[17rem] h-[6rem] items-center border border-black rounded-xl bg-white gap-px">
-                                            <div class="flex flex-row items-center w-auto gap-2">
-                                                <img class="w-[2.5rem]" src="{{$val->logo->src}}" alt="">
-                                                <h1 class="text-lg font-bold">{{$val->name}}</h1>
-                                            </div>
-                                            <p class="text-sm font-bold mb-2">Line Combinations</p>
-                                        </button>
-                                    </li>
-                                @endif
-                            @endforeach
-                           
-                        </ul>
-                    </div>
-                </div> 
-                <div class="flex flex-row w-full ">
-                   <img class="w-full h-32 border border-black" src="{{ asset('/images/menu-icon/.png') }}">
-                </div>               
-                    <p class="text-xl my-5">
-                        In fantasy sports betting, <span class="font-semibold"> line combinations</span> can be used to analyze 
-                        player performance and make informed decisions. In fantasy sports, understanding
-                        player statistics and tendencies, as well as their role in the team's line combinations,
-                        can help in determining the most valuable players to draft for fantasy team. In
-                        and weaknesses, and can be used to make more informed predictions about the 
-                        outcome of the game. This information can be also be used to determine which players
-                        are likely to have a significant impact on the game, which can be used to make
-                        more accurate picks for player props or fantasy sports contests. Overall, line
-                        combinations play a crucial role in both fantasy sports and sports betting, as they 
-                        provide valuable information that can used to make informed decisions.
-                    </p>
-                   <div class="flex flex-col w-full my-5">
-                      <h1 class="text-xl font-extrabold">
-                          10 reason why using  projectedlineups.com to view updated line combinations is important in fantasy sports
-                      </h1>
-                       <ol class="text-xl list-decimal ml-10 gap-3">
-                            <li>Better decision making: Projected lineups provide valuable information that can 
-                              help you make informed decisions about which players 
-                              to start or sit in your fantasy lineup.
-                            </li>
-                            <li>
-                                Avoiding inactive players: Projected lineups can help you avoid starting inactive 
-                               players, which can hurt your team's chances of winning.
-                            </li>
-                            <li>
-                              Injuries & suspensions: Knowing a player's projected role in the lineup can help you 
-                              stay up-to-date on any changes due to injury or suspension.
-                            </li>
-                            <li>
-                              Maximize production: Projected lineups can give you an idea of a player's 
-                              expected playing tme, helping you maximize your team's production.
-                            </li>
-                            <li>
-                              Better lineup construction: By using projected lineups, you can make more 
-                              informed decision about which  players to draft and build a stronger overall
-                              lineup.
-                            </li>
-                            <li>
-                               Improved flexibility: Projected lineups can give you more flexibility in making 
-                              lineup decisios, as you can adjust your team based on the latest information.
-                            </li>
-                            <li>
-                              Increased competitiveness: With access to the most up-to-date projected
-                              lineups, you can stay onne step ahead of your competition, giving you a better 
-                              chance of winning. 
-                            </li>
-                            <li>
-                              Monitor trends: Projected lineups can help you identify player trends and
-                              make more informed decisions based on the past performance.
-                            </li>
-                            <li>
-                              Improved matchups: By using projected lineups, you can gain insight into 
-                              favorable and unfavorable matchups, helping you make more strategic lineup
-                              decisions.
-                            </li>
-                            <li>
-                              Reduces stress: Having access to projected lineups can reduce the stress of
-                              making lineup decisions, as you will have more information at your disposal.
-                            </li>
-                        </ol>
-                   </div>
-                   <div class="flex flex-col w-full gap-3">
-                      <h1 class="text-xl font-extrabold">
-                           10 reasons why using projectedlineups.com for updates line combinations is important in gambling
-                      </h1>
-                       <ol class="text-xl list-decimal ml-10">
-                            <li>
-                                Improved odds: Projected lineups provide accurate information that can help
-                                 you make more informed decisions, giving you an edge in betting.
-                            </li>
-                            <li>
-                               Injuries & suspensions: Projected lineups can help you stay up-to-date wit any 
-                               changes in player's availability due to injury or suspension.
-                            </li>
-                            <li>
-                              Strategy: Knowing the starting lineup can inform your betting strategy, helpng
-                              you take advantage matchups and player tendencies.
-                            </li>
-                            <li>
-                               Trends: Projected lineups can give you insight into a team's recent performance 
-                               and trends, which can help you make more accurate predictions.
-                            </li>
-                            <li>
-                               Value: By using projected lineups, you can identify players who are undervalued
-                               or overvalued, helping you find value in your bets.
-                            </li>
-                            <li>
-                               Improved odds: Having accurate information on player's role in the lineup can
-                                help you get better odds on your bets, making it easier to win.
-                            </li>
-                            <li>
-                               Optimal lineups:  Projected lineups can provide valued information for those 
-                               using DFS (daily fantasy sports) sites, allowing for more optimized lineups.
-                            </li>
-                            <li>
-                               Late-breaking news: Having access to the most up-to-date projected lineups
-                               can help you react quickly to any last-minute changes, giving  you an advantage.
-                            </li>
-                            <li>
-                               Consistency : With projected lineups, you can tracka player's performance over
-                               time, helping you make more consistent betting decisions.
-                            </li>
-                            <li>
-                               Betting opportunities:  Projected lineups can open up new betting opportunities,
-                               giving you the chance to make more profitable wagers.  
-                            </li>
-                        </ol>
-                   </div>
-           </div>
-           @include('partials.nhl-sidebar')
-    </div> -->
-<!-- End of Design -->
-
 
 <!-- Mobile Design -->
 <div class="w-full hidden smm-block">
@@ -390,7 +214,7 @@
     <div class="flex flex-col mx-2">
         <img class="w-full my-1.5 " src="{{ asset('/images/menu-icon/adds_header.png') }}" >         
         <div class="w-full h-20 bg-[#d9d9d9] flex border rounded-lg justify-center items-center ">
-            <h1 class="text-xl font-bold text-black ">NHL Line Combinations</h1>
+            <h1 class="text-xl font-bold text-black ">NHL Line Combinations </h1>
         </div>
         <div class="mx-1 my-3 flex flex-col gap-3">
             <div class="w-full flex flex-row justify-evenly gap-3">

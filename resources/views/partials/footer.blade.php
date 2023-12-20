@@ -6,7 +6,7 @@
             <div>
                 <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" />
                 <p class="max-w-xs mt-4 text-sm text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium. sdasdasdsd
                 </p>
                 <div class="flex mt-8 space-x-6 text-gray-600">
                     <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
@@ -95,9 +95,9 @@
 </footer>
 <!-- Old Footer End-->
 <div style=" " class="w-full flex justify-center">
-    <div class="max-w-screen-2xl xl:11/12 w-full pt-10 pb-10 bg-sky-500 mt-8 xl:block lg:block hidden">
-        <div class="flex flex-row justify-evenly w-full">
-            <div>
+    <div class="max-w-screen-2xl xl:11/12 w-full p-10 bg-gray-100 mt-8 xl:block lg:block hidden">
+        <div class="flex flex-row w-full">
+            <div class="flex flex-col justify-between w-5/12">
                 <!-- <div>
                     <img class="w-10 h-10 hover:bg-[url('/images/menu-icon/PROJECTED LINEUPS (1) (1).png')]" src="{{ asset('/images/menu-icon/PROJECTED LINEUPS (1) (1).png') }}" alt="">
                 </div> -->
@@ -105,70 +105,96 @@
                     <img src="{{ asset('/images/menu-icon/PROJECTED LINEUPS (1) (1).png') }}" class="w-36 h-16" alt="">
                     <img src="{{ asset('/images/menu-icon/PROJECTED LINEUPS=BLUE (1).png') }}" class="absolute top-0 left-0 w-36 h-16 hidden" alt="">
                 </div> -->
-                <div class="relative border rounded-full bg-black w-32">
-                    <a href="">
-                        <img src="{{ asset('/images/menu-icon/PROJECTED_LINEUPS_LOGO_NEW (1).png') }}" alt="" class="w-32 ">
-                    </a>
-                    <a href=""><p class="text-[#35b6fe] text-[11px] font-extrabold ml-1.5 hover:text-slate-50 absolute bottom-1.5 left-11">PROJECTED<br>LINEUPS</p></a>
+                <div class="flex flex-row items-center">
+
+                    <h1 class="text-6xl font-regular text-black" style="  line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>
+
+                    <h1 class="text-6xl font-regular  text-[#38b6ff]" style="line-height: 1;  font-family: 'Mouse Memoirs'">lineups</h1>
+
+
+
+                    {{--<a href="">--}}
+                        {{--<img src="{{ asset('/images/menu-icon/PROJECTED_LINEUPS_LOGO_NEW (1).png') }}" alt="" class="w-32 ">--}}
+                    {{--</a>--}}
+                    {{--<a href=""><p class="text-[#35b6fe] text-[11px] font-extrabold ml-1.5 hover:text-slate-50 absolute bottom-1.5 left-11">PROJECTED<br>LINEUPS</p></a>--}}
                 </div>
-                <p class="text-sm mt-7">Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Voluptas, accusantium.</p>
-                <ul class="flex flex-row mt-7">
-                    <li class="list-none"><a href="#"><img class="w-6 h-6 " src="{{ asset('/images/menu-icon/instagram icon.png') }}"></a></li>
-                    <li class="list-none"><a href="#"><img class="w-6 h-6 ml-6" src="{{ asset('/images/menu-icon/tiktok icon.png') }}"></a></li>
-                    <li class="list-none"><a href="#"><img class="w-6 h-6 ml-6" src="{{ asset('/images/menu-icon/twitter icon.png') }}"></a></li>
-                    <li class="list-none"><a href="#"><img class="w-6 h-6 ml-6" src="{{ asset('/images/menu-icon/facebook.jpg') }}"></a></li>
-                </ul>
+                <p class=" font-bold">The destination for fantasy sports players and bettors</p>
+                <div class="flex flex-col gap-2">
+                    <div class="font-bold text-lg ">
+                        Follow Us on Social
+                    </div>
+                    <div class="flex flex-row gap-2">
+
+                        <div class="list-none"><a href="#"><img class="w-14 h-14 " src="{{ asset('/images/menu-icon/instagram icon.png') }}"></a></div>
+                        <div class="list-none"><a href="#"><img class="w-14 h-14 " src="{{ asset('/images/menu-icon/tiktok icon.png') }}"></a></div>
+                        <div class="list-none"><a href="#"><img class="w-14 h-14 " src="{{ asset('/images/menu-icon/twitter icon.png') }}"></a></div>
+                        <div class="list-none"><a href="#"><img class="w-14 h-14 " src="{{ asset('/images/menu-icon/facebook.jpg') }}"></a></div>
+
+                    </div>
+                </div>
             </div>
-            <div>
-                <ul class="flex flex-col list-none">
-                    <h1 class="font-bold text-slate-900 text-[14px] mb-2">DAILY FANTASY</h1>
-                    <li class="mt-2 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Team News</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Team News</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300" >Starting Goalies</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Line Combination</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">DFS Projections</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Articles</a></li>
-                    <li class="mt-0.5 "><a href="" class="text-[13px] font-bold  hover:text-slate-300">DFS Projection</a></li>       
-                </ul>
+
+            <div class="flex flex-col flex-wrap w-7/12 gap-5">
+                <div class="flex flex-row w-full">
+                    <div class="w-4/12">
+                        <ul class="flex flex-col list-none">
+                            <h1 class="font-bold  text-[#38b6ff]">NHL</h1>
+                            <li class="mt-2 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Starting Goalies</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Line Combinations</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300" >Player News</a></li>
+                         </ul>
+                    </div>
+                    <div class="w-4/12">
+                        <ul class="flex flex-col list-none">
+                            <h1 class="font-bold text-[#38b6ff]">NBA</h1>
+                            <li class="mt-2 mb-1"><a href="" class="  font-bold mt-2 hover:text-slate-300 ">Matchups</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Starting Lineups</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Player News</a></li>
+                         </ul>
+                    </div>
+                    <div class="w-4/12">
+                        <ul class="list-none flex flex-col">
+                            <h1 class="font-bold  text-[#38b6ff]">NFL</h1>
+                            <li class="mt-2 mb-1"><a href="" class=" font-bold mt-2 hover:text-slate-300">Matchups</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Depth Charts</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Player News</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-row w-full">
+
+                    <div class="w-4/12">
+                        <ul class="list-none flex flex-col">
+                            <h1 class="font-bold  text-[#38b6ff]">LEARN</h1>
+                            <li class="mt-2 mb-1"><a href="" class=" font-bold mt-2 hover:text-slate-300">Betting Strategy</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">DFS Strategy</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Optimizer Sites</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-4/12">
+                        <ul class="list-none flex flex-col">
+                            <h1 class="font-bold  text-[#38b6ff]">About</h1>
+                            <li class="mt-2 mb-1"><a href="" class=" font-bold mt-2 hover:text-slate-300">Privacy Policy</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Terms of Service</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-4/12">
+                        <ul class="list-none flex flex-col">
+                            <h1 class="font-bold  text-[#38b6ff]">SOC</h1>
+                            <li class="mt-2 mb-1"><a href="" class="  font-bold mt-2 hover:text-slate-300">Matchups</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class=" font-bold  hover:text-slate-300">Predicted Lineups</a></li>
+                            <li class="mt-0.5 mb-1"><a href="" class="  font-bold  hover:text-slate-300">Player News</a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            <div>
-                <ul class="flex flex-col list-none">
-                    <h1 class="font-bold text-slate-900 text-[14px] mb-2">LEARN</h1>
-                    <li class="mt-2 mb-1"><a href="" class="text-[13px] font-bold mt-2 hover:text-slate-300">Betting Strategy</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">DFS Strategy</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Optimizing Sites</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Your paragraph text</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Your paragraph text</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Your paragraph text</a></li>
-                    <li class="mt-0.5"><a href="" class="text-[13px] font-bold hover:text-slate-300">Your paragraph text</a></li>       
-                </ul>
-            </div>
-            <div>
-                <ul class="list-none flex flex-col">
-                    <h1 class="font-bold text-slate-900 text-[14px] mb-2">BETTING</h1>
-                    <li class="mt-2 mb-1"><a href="" class="text-[13px] font-bold hover:text-slate-300">Odds</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Players Props</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Sports Books</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Betting Guide</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Betting Terms</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold hover:text-slate-300">Bonuses</a></li>
-                    <li class="mt-0.5 "> <a href="" class="text-[13px] font-bold  hover:text-slate-300">Your paragraph text</a></li>        
-                </ul>
-            </div>
-            <div>
-                <ul class="list-none flex flex-col">
-                    <h1 class="font-bold text-slate-900 text-[14px] mb-2">ABOUT</h1>
-                    <li class="mt-2 mb-1"><a href="" class="text-[13px] font-bold mt-2 hover:text-slate-300">Advertise with Us</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Privacy Policy</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold hover:text-slate-300">Terms of Service</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold hover:text-slate-300">Contact</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold  hover:text-slate-300">Your paragraph text</a></li>
-                    <li class="mt-0.5 mb-1"><a href="" class="text-[13px] font-bold hover:text-slate-300">Your paragraph text</a></li>
-                    <li class="mt-0.5 "><a href="" class="text-[13px] font-bold hover:text-slate-300">Your paragraph text</a></li>        
-                </ul>
-            </div>
+
+
         </div>
-        <p class="ml-24 text-xs py-8">© 2022 Project Lineup- All Right Reserved</p>
+        <p class="  mt-10 w-full text-center">© 2022 Project Lineup- All Right Reserved</p>
     </div>
 </div>
 <div class="footer bg-sky-500 mt-5 xl:hidden lg:hidden md:block sm:block smm-block ">
