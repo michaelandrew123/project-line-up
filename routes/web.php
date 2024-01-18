@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/home',  [App\Http\Controllers\HomeController::class, 'index']);
 
 
-Route::get('/',  [App\Http\Controllers\HockeyController::class, 'index']);
+Route::get('/',  [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/learn',  [App\Http\Controllers\HockeyController::class, 'learn']);
 Route::get('/line-combos',  [App\Http\Controllers\HockeyController::class, 'lineCombos']);
 Route::get('/todays-game',  [App\Http\Controllers\HockeyController::class, 'todaysGame']);
@@ -35,7 +35,8 @@ Route::get('/starting-goalies', [App\Http\Controllers\HockeyController::class, '
 Route::get('/posts/article',  [App\Http\Controllers\HockeyController::class, 'postsarticle'])->name('posts.article');
 
 Route::prefix('nhl')->group(function () {
-    Route::get('/home',  [App\Http\Controllers\HockeyController::class, 'nhlhome'])->name('nhl.home');
+//    Route::get('/home',  [App\Http\Controllers\HockeyController::class, 'nhlhome'])->name('nhl.home');
+    Route::get('/home',  [App\Http\Controllers\HockeyController::class, 'nhlHome'])->name('nhl.home');
     Route::get('/props',  [App\Http\Controllers\HockeyController::class, 'nhlprops'])->name('nhl.props');
     Route::get('/all-player-news',  [App\Http\Controllers\HockeyController::class, 'nhlallplayerNews'])->name('nhl.all-player-news');
     Route::get('/player-news',  [App\Http\Controllers\HockeyController::class, 'nhlplayerNews'])->name('nhl.player-news');

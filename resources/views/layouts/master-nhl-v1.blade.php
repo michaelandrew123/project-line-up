@@ -42,7 +42,7 @@
 </head>
 <body>
 
-@include('partials.header')
+@include('partials.nhl-header-v1')
 
 
 

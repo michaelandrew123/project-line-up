@@ -54,21 +54,32 @@ class HockeyController extends Controller
         return view('pages/projections');
     }
     public function nhlHome(){
-        $team_article = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
-        $team_results = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
-        $home_cards = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/posts');
-        $result_article = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/posts/7');
-         $player_news = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
+
+        //old nhl home
+//        $team_article = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
+//        $team_results = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
+//        $home_cards = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/posts');
+//        $result_article = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/posts/7');
+//         $player_news = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
 //
-//        $player_news = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/lineups/nhl/player-news');
+//        $starting_goalies = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/lineups/nhl/starting-goalies');
 
-//        $team_result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
+//        return view('pages/nhlhome')->with(['articles' => $result_article, 'teams' => $team_results, 'contentPosts' => $home_cards->data, 'goalies' => $starting_goalies, 'player_news' => $player_news, 'article' => $team_article] );;
 
-//        $result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation');
-//     dd($result);
-        $starting_goalies = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/lineups/nhl/starting-goalies');
 
-        return view('pages/nhlhome')->with(['articles' => $result_article, 'teams' => $team_results, 'contentPosts' => $home_cards->data, 'goalies' => $starting_goalies, 'player_news' => $player_news, 'article' => $team_article] );;
+        //        $data = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
+//
+//        return view('pages/home-page')->with('slug', $data);
+
+        $team_nhl = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nhl');
+        $result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
+
+        $team_results = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
+
+        return view('pages/nhl-home')->with([ 'teams' => $team_results, 'nhl_results' => $team_nhl,]);
+
+
+
     }
 
 
@@ -212,7 +223,8 @@ class HockeyController extends Controller
         $current_logo = 'https://media.projectedlineups.com/sports/hockey/leagues/nhl/teams/anaheim-ducks/logos/logo.svg';
         $team_article = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
 //        $team_result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks');
-        $team_result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams/edmonton-oilers');
+        $team_result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks');
+        $team_results = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
 
         $result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks/formation');
 
@@ -224,7 +236,7 @@ class HockeyController extends Controller
 //
 ////
 //          dd($team_result);
-        return view('pages/nhlline-combos')->with(['current_logo' =>  $current_logo, 'team_color' => $team_color, 'team_slug'=>$this->team_slug, 'ext' => $this->ext, 'result' => $result , 'team' => $team_result, 'article' => $team_article] );
+        return view('pages/nhlline-combos')->with(['current_logo' =>  $current_logo, 'team_color' => $team_color, 'team_slug'=>$this->team_slug, 'ext' => $this->ext, 'result' => $result , 'team' => $team_result, 'teams' => $team_results, 'article' => $team_article] );
     }
 
     public function nhllineCombosTeam($team_slug){
@@ -326,8 +338,9 @@ class HockeyController extends Controller
         $player_news = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
         $team_article = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
         $team_results = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
+        $team_result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams/anaheim-ducks');
 
-        return view('pages/nhlline-combinations')->with([ 'teams' => $team_results, 'article' => $team_article, 'goalies' => $player_news] );
+        return view('pages/nhlline-combinations')->with([ 'teams' => $team_results, 'team' => $team_result, 'article' => $team_article, 'goalies' => $player_news] );
     }
     public function postsarticle(){
         return view('pages/postsarticle');

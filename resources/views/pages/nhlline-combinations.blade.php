@@ -1,9 +1,9 @@
 
-@extends('layouts.master-nhl')
+@extends('layouts.master-nhl-v1')
 
 @section('content')
 <!-- Desktop design -->
-    <!-- <div class="w-full flex justify-center ">
+    <div class="w-full flex justify-center hidden">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col border-black m-4 gap-5 block  smm-hidden max-w-screen-2xl">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">
@@ -34,48 +34,49 @@
                 <a href="" class="xl:text-2xl lg:text-lg font-bold bg-[#ebece9] text-black xl:px-11 px-6  py-2 rounded-md">PROPS & ODDS</a>
             </div>
             <div class="relative">
-                <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players"> 
+                <input class="border border-[#9fa0a0] w-full h-[3rem] rounded-lg startgoal-input" type="" value="Search team projected lineups or players">
                 <a class="absolute right-[15px] top-[7px]" href=""><img class=" w-[35px]" src="{{ asset('/images/menu-icon/search2.png') }}" alt=""></a>
             </div>
         </div>
-    </div> -->
+    </div>
     <div class="w-full flex justify-center  mt-10">
-       <div class="xl:w-11/12 lg:w-full md:w-full flex flex-row justify-between gap-3 block  smm-hidden max-w-screen-2xl">
-            <div class="flex flex-col  w-9/12 gap-5">
-                <div class="w-full bg-[#38b6ff] flex flex-row  items-center rounded-md">
-                    <h1 class="text-center py-10 text-3xl font-bold w-full">  NHL Line Combinations</h1>
+       <div class="xl:w-11/12 lg:w-full md:w-full flex flex-row justify-between gap-3    max-w-screen-2xl">
+            <div class="flex flex-col  w-full gap-5">
+                <div class="w-full bg-white flex flex-row  items-center rounded-lg" style="border: 1px solid #38B6FF">
+                    <h1 class="text-center py-10 text-3xl font-bold w-full">  NHL Line Combinations  </h1>
                 </div>
                 <table class="">
-                    @foreach($team->data as $key=>$val)
-                        @if($val->league->slug == 'nhl')
+
+                    @foreach($teams->data as $key=>$val)
+                        @if(isset($val->league->slug) && $val->league->slug == 'nhl')
                             <tr class="w-full flex  items-center border-b-2 border-slate-200 h-12">
                                 <td class="w-full flex items-center gap-2 border-0">
-                                    <a class="flex flex-row" href="../../nhl/line-combos/{{ $val->slug }}">
+                                    <a class="flex flex-row gap-4" href="../../nhl/line-combos/{{ $val->slug }}">
                                         <img class="w-7" src="{{$val->logo->src}}" alt="">
                                         <h1 class="xl:text-base lg:text-base md:text-sm font-bold">{{$val->name}}</h1>
                                     </a>
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                    <a class="xl:text-base lg:text-base md:text-sm text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#forwards">Forward</a>
+                                    <a class="xl:text-base font-bold lg:text-base md:text-sm text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#forwards">Forward</a>
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                    <a class="xl:text-base lg:text-base md:text-sm  text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#defence">Defence</a>
+                                    <a class="xl:text-base font-bold lg:text-base md:text-sm  text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#defence">Defence</a>
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="xl:text-base lg:text-base md:text-sm text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#goalie">Goalie</a>
+                                 <a class="xl:text-base font-bold lg:text-base md:text-sm text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#goalie">Goalie</a>
                                 </td>
                                 <td class="w-[60%] border-0" href="">
-                                 <a class="xl:text-base lg:text-base md:text-sm  text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#power">Power Play</a>
+                                 <a class="xl:text-base font-bold lg:text-base md:text-sm  text-[#38b6ff]" href="/nhl/line-combos/{{ $val->slug }}#power">Power Play</a>
                                 </td>
                             </tr>
                         @endif
                     @endforeach
                 </table>
             </div>
-           <div class=" flex flex-col  xl:w-64 lg:w-52 md:w-52">
+            <div class=" flex flex-col  xl:w-64 lg:w-52 md:w-52  hidden ">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center border w-full rounded py-2 bg-[#38b6ff]">
-                        <h1 class="font-bold">Starting Goalies</h1>
+                        <h1 class="font-bold">Starting Goalies  </h1>
                     </div>
                     <div id=" " class="flex flex-col gap-4 w-full">
                         @foreach($goalies->data as $key=>$val)

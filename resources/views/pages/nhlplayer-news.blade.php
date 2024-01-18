@@ -1,5 +1,5 @@
    
-@extends('layouts.master-nhl')
+@extends('layouts.master-nhl-v1')
 
 @section('content')
  
@@ -205,7 +205,7 @@
 
             <div class="flex flex-col">
                 <div>
-                    <div class="relative flex items-center h-[220px]  mb-8 bg-[#38b6ff]">
+                    <div class="relative flex items-center h-[220px]  mb-8 bg-white">
                         <img class="w-12 h-12 ml-8 hidden" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">
                         <h1 class="text-2xl font-extrabold pt-5 pb-5 ml-5 ml-8" >
                             NHL Player News
@@ -270,11 +270,11 @@
                                 @endphp
                                 @if(request()->path() == $path)
                                     <li  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  " style="color:#38b6ff">
-                                        <a href="{{  url('/nhl/player-news/' . $key) }}"> {{$type}} </a>
+                                        <a href="{{  url('/nhl/player-news/' . $key) }}"> {{$type}}  </a>
                                     </li>
                                 @else
                                     <li  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
-                                        <a href="{{  url('/nhl/player-news/' . $key) }}"> {{$type}} </a>
+                                        <a href="{{  url('/nhl/player-news/' . $key) }}"> {{$type}}   </a>
                                     </li>
                                 @endif
                             @endforeach

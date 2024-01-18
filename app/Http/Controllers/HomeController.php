@@ -24,8 +24,8 @@ class HomeController extends Controller
         $result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
 
         $team_results = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
-//       dd($team_nhl);
-        return view('pages/projectedlineup-home')->with([ 'teams' => $team_results, 'nhl_results' => $team_nhl,]);
+//         dd($team_results);
+        return view('pages/home')->with([ 'teams' => $team_results, 'nhl_results' => $team_nhl,]);
 
 
     }

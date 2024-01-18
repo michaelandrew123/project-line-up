@@ -1,9 +1,61 @@
-  
+
+<style>
+
+    .i {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+    .i div {
+        position: absolute;
+        border: 4px solid #38B6FF;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    .i div:nth-child(2) {
+        animation-delay: -0.5s;
+    }
+    @keyframes lds-ripple {
+        0% {
+            top: 36px;
+            left: 36px;
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+        4.9% {
+            top: 36px;
+            left: 36px;
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+        5% {
+            top: 36px;
+            left: 36px;
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+        100% {
+            top: 0px;
+            left: 0px;
+            width: 72px;
+            height: 72px;
+            opacity: 0;
+        }
+    }
+
+
+</style>
+
     <div class="w-full flex flex-row justify-center block smm-hidden ">
         <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col items-center justify-between gap-1 max-w-screen-2xl ">
-            <div class="flex flex-row justify-between items-end flex w-full  pb-3 border-[d9d9d9] border-b-2">
-                <div class="flex gap-1 items-end">
-                    <img class="xl:w-[99px] lg:w-[99px] md:w-[80px]" src="{{  ( !empty($team_color['data']['featured_player_1']['images']['photo']) ? $team_color['data']['featured_player_1']['images']['photo'] :  '')  }}" alt="">
+            <div class="flex flex-row justify-between items-center flex w-full  py-3  ">
+                <div class="flex gap-1 items-end justify-start">
+                    <img class="xl:w-[99px] lg:w-[99px] md:w-[80px] hidden" src="{{  ( !empty($team_color['data']['featured_player_1']['images']['photo']) ? $team_color['data']['featured_player_1']['images']['photo'] :  '')  }}" alt="">
                     <div class="flex items-end">
                         {{--                        {{  ( !empty($color1) ? $color1: '#f5f5f5')  }}--}}
 
@@ -43,23 +95,26 @@
                             @endforeach
                         @endif
 
-                        @if(isset($color2))
-                            @if($color2 == '#FFFFFF')
-                                <h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular" style="color: {{  ( !empty($projectedColor) ? $projectedColor: '#000')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #000; text-stroke: 1px  #000; line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>
+                        {{--@if(isset($color2))--}}
+                            {{--@if($color2 == '#FFFFFF')--}}
+                                {{--<h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular" style="color: {{  ( !empty($projectedColor) ? $projectedColor: '#000')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #000; text-stroke: 1px  #000; line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>--}}
 
-                            @else
+                            {{--@else--}}
 
-                                <h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular" style="color: {{  ( !empty($projectedColor) ? $projectedColor: '#000')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: {{  ( !empty($color2) ? $color2: '')  }}; text-stroke: 1px {{  ( !empty($color2) ? $color2: '')  }}; line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>
+                                {{--<h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular" style="color: {{  ( !empty($projectedColor) ? $projectedColor: '#000')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: {{  ( !empty($color2) ? $color2: '')  }}; text-stroke: 1px {{  ( !empty($color2) ? $color2: '')  }}; line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>--}}
 
-                            @endif
-                        @else
+                            {{--@endif--}}
+                        {{--@else--}}
 
-                            <h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular" style="  line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>
+                            {{--<h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular" style="  line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>--}}
 
-                        @endif
+                        {{--@endif--}}
 
 
-                         <h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular  " style="color: {{  ( !empty($lineUpsColor) ? $lineUpsColor: '#39b6ff')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: {{  ( !empty($color1) ? $color1: '')  }}; text-stroke: 1px {{  ( !empty($color1) ? $color1: '')  }}; line-height: 1;  font-family: 'Mouse Memoirs'">lineups</h1>
+                         {{--<h1 class="xl:text-[50px] lg:text-[50px] md:text-[40px] font-regular  " style="color: {{  ( !empty($lineUpsColor) ? $lineUpsColor: '#39b6ff')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: {{  ( !empty($color1) ? $color1: '')  }}; text-stroke: 1px {{  ( !empty($color1) ? $color1: '')  }}; line-height: 1;  font-family: 'Mouse Memoirs'">lineup</h1>--}}
+
+
+                        <img  src="{{ asset('/images/projectedlineup_logo.png') }}" />
                     </div>
                 </div>
                 <div class="flex flex-row items-center xl:w-8/12 lg:w-8/12 md:w-7/12 xl:justify-between lg:justify-between md:justify-between ">
@@ -98,144 +153,167 @@
                     </a>
                 </div>
             </div>
-            <div class="flex flex-col w-full" style="{{ Request::is('/') == ('/') ? 'display:none':'' }}">
-                <ul  class="flex flex-row items-center xl:gap-6 lg:gap-5 md:gap-2 w-11/12  ml-1">
-                    <li class="nav-itms {{Request::is('nhl/starting-goalies') ? 'active':'' }}">
-                        <a href="{{url('nhl/starting-goalies')}}" style="{{Request::is('nhl/starting-goalies') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
-                            Starting Goalies
+
+            <div class="w-10/12 flex flex-col items-center">
+                <div class="flex flex-row w-full justify-evenly">
+
+
+                    {{--<img class="w-full" src="{{ asset('/images/menu-icon/players.png') }}" alt="">--}}
+
+                    <div class="w-full h-auto flex justify-center relative">
+                        <img class="w-[32%] z-20 absolute" src="{{ asset('/images/home-page/connor-mcdavid.png') }}" alt="">
+                        <img class="w-[32%] z-0 " src="{{ asset('/images/home-page/auston-matthews.png') }}" alt="">
+                        <img class="w-[32%] z-10 " src="{{ asset('/images/home-page/mohamed-salah.png') }}" alt="">
+                    </div>
+                </div>
+
+
+                <div class="relative w-10/12">
+                    <div class="relative ">
+
+
+                        {{--border-2 border-[#38B6FF]--}}
+                        {{--<input class="w-full border-2 border-rose-600 text-center text-xl text-[#4d4d4d] rounded h-14" type="text" placeholder="Search Projected Lineups">--}}
+                        <input type="text" class="w-full  text-center text-xl text-[#4d4d4d] rounded h-14 " id="search-nhl-home" placeholder="Search Projected Lineups" style="border: 2px solid #38B6FF">
+
+                        {{--<input class="border-2 border-rose-600 ...">--}}
+
+
+                        <a class="absolute top-1 right-3" href="">
+                            <img class="w-[50px]" src="{{ asset('/images/search.png') }}" alt="">
                         </a>
-                    </li>
 
 
-                    @if(Request::is('nhl/line-combos') != ('nhl/line-combos') && Request::is('nhl/line-combinations') != ('nhl/line-combinations'))
-                        <li class="nhl-linecombos_ nav-itms {{Request::is('nhl/line-combos') ? 'active':'' }}" style="padding: 1px; z-index: 2; {{ (isset($team_slug) ? 'color: #38b6ff;':'') }}" >
-                            {{--<a href="{{url('nhl/line-combos')}}"  style="  z-index: 1;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">--}}
-                            <a   style="  z-index: 1; cursor:pointer" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
-                                Line combinations
+
+
+                    </div>
+                    <div id="search-nhl-home-content" class="relative hidden">
+
+
+                        <div class="absolute bg-white z-10 w-full text-center rounded-b-lg border border-y border-b border-[#38B6FF]">
+
+                            <div class="i hidden" id="loading_"><div></div><div></div></div>
+                            <ul id="item-content">
+                            <!--  content... -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="flex flex-col w-10/12" style="{{ Request::is('/') == ('/') ? 'display:none':'' }}">
+                    <ul  class="flex flex-row items-center xl:gap-6 lg:gap-5 md:gap-2 w-11/12  ">
+                        <li class="nav-itms {{Request::is('nhl/starting-goalies') ? 'active':'' }}">
+                            <a href="{{url('nhl/starting-goalies')}}" style="{{Request::is('nhl/starting-goalies') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                                Starting Goalies
                             </a>
                         </li>
-                    @else
-                        <li class="nhl-linecombos_ nav-itms {{Request::is('nhl/line-combos') ? 'active':'' }}"  style="padding: 1px;  z-index: 2; {{ (isset($team_slug) ? 'color: #38b6ff;':'') }}" >
-                            {{--<a  href="{{url('nhl/line-combos')}}" style=" z-index: 1;"  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">--}}
-                            <a   style=" z-index: 1; cursor:pointer"  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                        {{--bg-[#38b6ff] text-[#ffffff]--}}
 
+                        @if(Request::is('nhl/line-combinations') != ('nhl/line-combinations') && Request::is('nhl/line-combinations') != ('nhl/line-combinations'))
+                            <li class="nhl-linecombos_ nav-itms  {{Request::is('nhl/line-combinations') ? 'active':'' }}" style="padding: 1px; z-index: 2; {{ (isset($team_slug) ? 'color: #38b6ff;':'') }}" >
+                                {{--<a href="{{url('nhl/line-combos')}}"  style="  z-index: 1;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">--}}
+                                <a href="{{url('nhl/line-combinations')}}"  style="  z-index: 1; cursor:pointer" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                                    Line combinations
+                                </a>
+                            </li>
+                        @else
+                            <li class="nhl-linecombos_ nav-itms {{Request::is('nhl/line-combinations') ? 'active':'' }}"  style="padding: 1px;  z-index: 2; {{ (isset($team_slug) ? 'color: #38b6ff;':'') }}" >
+                                {{--<a  href="{{url('nhl/line-combos')}}" style=" z-index: 1;"  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">--}}
+                                <a  href="{{url('nhl/line-combinations')}}" style=" z-index: 1; cursor:pointer"  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
 
-                               Line Combinations
-                            </a>
-                        </li>
-                    @endif
+                                    Line Combinations
+                                </a>
+                            </li>
+                        @endif
                         <li class="nav-itms hidden {{Request::is('nhl/projections') ? 'active':'' }}">
                             <a href="{{url('nhl/projections')}}" style="{{Request::is('nhl/projections') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
                                 DFS Projections
                             </a>
                         </li>
-                    {{--@if(Request::is('nhl/team-news') != ('nhl/team-news') && Request::is('nhl/player-news') != ('nhl/player-news') && Request::is('nhl/individual-player-news') != ('nhl/individual-player-news') && Request::is('nhl/all-player-news') != ('nhl/all-player-news'))--}}
+                        {{--@if(Request::is('nhl/team-news') != ('nhl/team-news') && Request::is('nhl/player-news') != ('nhl/player-news') && Request::is('nhl/individual-player-news') != ('nhl/individual-player-news') && Request::is('nhl/all-player-news') != ('nhl/all-player-news'))--}}
                         {{--<li class="">--}}
-                            {{--<a href="{{url('nhl/player-news')}}" style=" " class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">--}}
-                                {{--Player News--}}
-                            {{--</a>--}}
+                        {{--<a href="{{url('nhl/player-news')}}" style=" " class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">--}}
+                        {{--Player News--}}
+                        {{--</a>--}}
                         {{--</li>--}}
-                    {{--@else--}}
+                        {{--@else--}}
                         {{--<li class="">--}}
-                            {{--<a href="{{url('nhl/player-news')}}" style="color:#38b6ff;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">--}}
-                                {{--Player News--}}
-                            {{--</a>--}}
+                        {{--<a href="{{url('nhl/player-news')}}" style="color:#38b6ff;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">--}}
+                        {{--Player News--}}
+                        {{--</a>--}}
                         {{--</li>--}}
-                    {{--@endif--}}
+                        {{--@endif--}}
 
 
-                @if (request()->path() == 'nhl/player-news' || request()->path() == 'nhl/player-news/')
+                        @if (request()->path() == 'nhl/player-news' || request()->path() == 'nhl/player-news/')
 
-                        <li class="">
-                            <a href="{{url('nhl/player-news')}}" style="color:#38b6ff;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
-                                Player News
-                            </a>
-                        </li>
-                @else
-                        <li class="">
-                            <a href="{{url('nhl/player-news')}}" style=" " class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
-                                Player News
-                            </a>
-                        </li>
-                @endif
+                            <li class="">
+                                <a href="{{url('nhl/player-news')}}" style="color:#38b6ff;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                                    Player News
+                                </a>
+                            </li>
+                        @else
+                            <li class="">
+                                <a href="{{url('nhl/player-news')}}" style=" " class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                                    Player News
+                                </a>
+                            </li>
+                        @endif
 
                     <!-- <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
                         <a href="" class=" text-xl xl:text-lg lg:text-base md:text-sm font-bold bg-[#ebece9] text-black px-2 mx-px rounded-lg text-center hover:bg-neutral-300  active:bg-[#38b6ff] ">
                             Props & Odds
                         </a>
                     </li> -->
-                    <li class="nav-itms hidden {{Request::is('nhl/lineup-study') ? 'active':'' }}">
-                        <a href="{{url('nhl/lineup-study')}}" style="{{Request::is('nhl/lineup-study') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
-                            Lineup Study
-                        </a>
-                    </li>
-                    <li class="nav-itms {{Request::is(' ') ? 'active':'' }}">
-                        <a href="" class="  flex items-center text-xl xl:text-lg lg:text-base md:text-sm font-bold  text-black text-center  ">
-                            News
-                        <!-- <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List -->
-                        </a>
-                    </li>
-                </ul>
+                        <li class="nav-itms hidden {{Request::is('nhl/lineup-study') ? 'active':'' }}">
+                            <a href="{{url('nhl/lineup-study')}}" style="{{Request::is('nhl/lineup-study') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                                Lineup Study
+                            </a>
+                        </li>
 
-                <div id="line-combos-div_  "  >
-                    @php
+                        @if (request()->path() == 'nhl/player-news' || request()->path() == 'nhl/player-news/')
+                            <li class="nav-itms {{Request::is('nhl/news') ? 'active':'' }}">
+                                <a href="/news" class="  flex items-center text-xl xl:text-lg lg:text-base md:text-sm font-bold  text-black text-center  ">
+                                    News
+                                <!-- <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List -->
+                                </a>
+                            </li>
+                        @else
+                            <li class="nav-itms ">
+                                <a href="/news" class="  flex items-center text-xl xl:text-lg lg:text-base md:text-sm font-bold     text-center  ">
+                                    News
+                                <!-- <img class="w-6" src="{{ asset('/images/menu-icon/mobile-_line_combo-DFS.pdf-1__3_-removebg-preview.png') }}" alt=""> GPP Money List -->
+                                </a>
+                            </li>
+                        @endif
+                    </ul>
 
-                        if(!isset($team_slug)){
-                            $team_slug = '';
-                        }
+                    <div id="line-combos-div_  "  >
+                        @php
 
-                    @endphp
-                    @if(Request::is('nhl/line-combos/'. $team_slug ))
+                            if(!isset($team_slug)){
+                                $team_slug = '';
+                            }
 
-                        <div class=""></div>
-                        <div class="w-full relative">
-                            <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 pt-2" style="background-color:white " >
+                        @endphp
+                        @if(Request::is('nhl/line-combos/'. $team_slug ))
 
-                                @foreach($teams->data as $key=>$val)
-                                    @if(!empty($val->logo->src))
-
-                                        @if($val->league->slug == 'nhl')
-                                            <li class="lc-team-logo "  value="">
-                                                <a class=""  href="/nhl/line-combos/{{$val->slug}}">
-                                                    <img class="xl:w-15 lg:w-15 md:w-12 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
-                                                </a>
-                                            </li>
-                                        @endif
-                                    @endif
-                                @endforeach
-                            </ul>
-                        </div>
-
-                    @elseif(Request::is('nhl/line-combos'))
-                      <div class=""></div>
-                        <div class="w-full relative">
-                            <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 pt-2"  style="background-color:white " >
-
-                                @foreach($teams->data as $key=>$val)
-                                    @if(!empty($val->logo->src))
-                                        @if($val->league->slug == 'nhl')
-                                            <li class="lc-team-logo "  value="">
-                                                <a class=""  href="/nhl/line-combos/{{$val->slug}}">
-                                                    <img class="xl:w-15 lg:w-15 md:w-12 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
-                                                </a>
-                                            </li>
-                                        @endif
-                                    @endif
-                                @endforeach
-                            </ul>
-                        </div>
-                    @else
-                        <div id="line-combos_" class="hidden">
                             <div class=""></div>
                             <div class="w-full relative">
-                                <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 pt-2"  style="background-color:white " >
+                                <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 pt-2"  >
 
                                     @foreach($teams->data as $key=>$val)
                                         @if(!empty($val->logo->src))
+
                                             @if($val->league->slug == 'nhl')
                                                 <li class="lc-team-logo "  value="">
                                                     <a class=""  href="/nhl/line-combos/{{$val->slug}}">
-                                                      <img class="xl:w-15 lg:w-15 md:w-12 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
+                                                        <img class="xl:w-15 lg:w-15 md:w-12 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
                                                     </a>
                                                 </li>
                                             @endif
@@ -243,19 +321,60 @@
                                     @endforeach
                                 </ul>
                             </div>
-                        </div>
-                    @endif
+
+                        @elseif(Request::is('nhl/line-combinations'))
+                            <div class=""></div>
+                            <div class="w-full relative">
+                                <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 pt-2"    >
+
+                                    @foreach($teams->data as $key=>$val)
+                                        @if(!empty($val->logo->src))
+                                            @if($val->league->slug == 'nhl')
+                                                <li class="lc-team-logo "  value="">
+                                                    <a class=""  href="/nhl/line-combos/{{$val->slug}}">
+                                                        <img class="xl:w-15 lg:w-15 md:w-12 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
+                                                    </a>
+                                                </li>
+                                            @endif
+                                        @endif
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @else
+                            <div id="line-combos_" class="hidden">
+                                <div class=""></div>
+                                <div class="w-full relative">
+                                    <ul id="" class="flex flex-row items-center xl:gap-2 lg:gap-1 pt-2"  >
+
+                                        @foreach($teams->data as $key=>$val)
+                                            @if(!empty($val->logo->src))
+                                                @if($val->league->slug == 'nhl')
+                                                    <li class="lc-team-logo "  value="">
+                                                        <a class=""  href="/nhl/line-combos/{{$val->slug}}">
+                                                            <img class="xl:w-15 lg:w-15 md:w-12 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
+                                                        </a>
+                                                    </li>
+                                                @endif
+                                            @endif
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        @endif
+
+                    </div>
+
+                    {{--@if (@if(request()->route()->getName()) === 'top')--}}
+                    {{--<title>You are on the top page</title>--}}
+                    {{--@else--}}
+                    {{--<title>You are on the article page</title>--}}
+                    {{--@endif--}}
+                    {{--{{Request::is('nhl/line-combos') }}--}}
 
                 </div>
-
-                {{--@if (@if(request()->route()->getName()) === 'top')--}}
-                    {{--<title>You are on the top page</title>--}}
-                {{--@else--}}
-                    {{--<title>You are on the article page</title>--}}
-                {{--@endif--}}
-                {{--{{Request::is('nhl/line-combos') }}--}}
-
             </div>
+
+
         </div>
     </div>
     <div class="smm-block hidden relative mb-12 py-2" >
@@ -290,7 +409,7 @@
 
                 </ul>
                 <div class="w-full flex justify-center">
-                    <div class="flex">
+                    <div class="flex items-center  ">
                         {{--<h1 class="text-4xl font-regular text-black" style="line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>--}}
                         {{--<h1 class="text-4xl font-regular text-[#39b6ff]" style="line-height: 1; font-family: 'Mouse Memoirs'">lineups</h1>--}}
                         @php
@@ -298,35 +417,36 @@
                                 $team_slug = '';
                             }
                         @endphp
-                        @if(Request::is('nhl/line-combos/'. $team_slug ))
+                        {{--@if(Request::is('nhl/line-combos/'. $team_slug ))--}}
 
-                            @if(isset($color2))
-                                @if($color2 == '#FFFFFF')
+                            {{--@if(isset($color2))--}}
+                                {{--@if($color2 == '#FFFFFF')--}}
 
-                                    <h1 class="text-4xl font-regular" style="color: {{  ( !empty($projectedColor) ? $projectedColor: '#000')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #000; text-stroke: 1px  #000; line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>
+                                    {{--<h1 class="text-4xl font-regular" style="color: {{  ( !empty($projectedColor) ? $projectedColor: '#000')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #000; text-stroke: 1px  #000; line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>--}}
 
-                                @else
+                                {{--@else--}}
 
-                                    <h1 class="text-4xl font-regular" style="color: {{  ( !empty($projectedColor) ? $projectedColor: '#000')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: {{  ( !empty($color2) ? $color2: '')  }}; text-stroke: 1px {{  ( !empty($color2) ? $color2: '')  }}; line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>
+                                    {{--<h1 class="text-4xl font-regular" style="color: {{  ( !empty($projectedColor) ? $projectedColor: '#000')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: {{  ( !empty($color2) ? $color2: '')  }}; text-stroke: 1px {{  ( !empty($color2) ? $color2: '')  }}; line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>--}}
 
-                                @endif
-                            @else
+                                {{--@endif--}}
+                            {{--@else--}}
 
-                                <h1 class="text-4xl font-regular" style="  line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>
+                                {{--<h1 class="text-4xl font-regular" style="  line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>--}}
 
-                            @endif
-
-
-                            <h1 class="text-4xl font-regular  " style="color: {{  ( !empty($lineUpsColor) ? $lineUpsColor: '#38b6ff')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: {{  ( !empty($color1) ? $color1: '')  }}; text-stroke: 1px {{  ( !empty($color1) ? $color1: '')  }}; line-height: 1;  font-family: 'Mouse Memoirs'">lineups</h1>
-
-                        @else
-                            <h1 class="text-4xl font-regular text-black" style="  line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>
-
-                            <h1 class="text-4xl font-regular  text-[#38b6ff]" style="line-height: 1;  font-family: 'Mouse Memoirs'">lineups</h1>
-
-                        @endif
+                            {{--@endif--}}
 
 
+                            {{--<h1 class="text-4xl font-regular  " style="color: {{  ( !empty($lineUpsColor) ? $lineUpsColor: '#38b6ff')  }};  -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: {{  ( !empty($color1) ? $color1: '')  }}; text-stroke: 1px {{  ( !empty($color1) ? $color1: '')  }}; line-height: 1;  font-family: 'Mouse Memoirs'">lineups</h1>--}}
+
+                        {{--@else--}}
+                            {{--<h1 class="text-4xl font-regular text-black" style="  line-height: 1; font-family: 'Mouse Memoirs'">projected</h1>--}}
+
+                            {{--<h1 class="text-4xl font-regular  text-[#38b6ff]" style="line-height: 1;  font-family: 'Mouse Memoirs'">lineups</h1>--}}
+
+                        {{--@endif--}}
+
+
+                        <img  src="{{ asset('/images/projectedlineup_logo.png') }}" />
                     </div>
                 </div>
             </section>

@@ -1,4 +1,4 @@
-@extends('layouts.master-nhl')
+@extends('layouts.master-nhl-v1')
 
 @section('content')
 
@@ -205,21 +205,35 @@
 
         <div class="absolute bottom-0  right-0">
             <div class="relative flex flex-row">
+
+
+
+
+
+
+
                 @if(isset($team->data->featured_player_1))
-                    <div class="relative flex items-end left-24">
-                        <img class=" xl:w-56 lg:w-56 md:w-52  " src="{{  ( !empty($team->data->featured_player_1->images->photo) ? $team->data->featured_player_1->images->photo :  '' )  }}" alt="">
-                    </div>
+                    @if(!isset($team->data->featured_player_3) || !isset($team->data->featured_player_2)){
+                    <img class="xl:w-56 lg:w-56 md:w-52  relative " src="{{  ( !empty($team->data->featured_player_1->images->photo) ? $team->data->featured_player_1->images->photo :  '' )  }}" alt="">
+                    @else
+                        <img class="xl:w-56 lg:w-56 md:w-52  relative left-40" src="{{  ( !empty($team->data->featured_player_1->images->photo) ? $team->data->featured_player_1->images->photo :  '' )  }}" alt="">
+                    @endif
                 @endif
                 @if(isset($team->data->featured_player_2))
-                    <div class="relative flex items-end  z-10">
-                        <img class=" xl:w-56 lg:w-56 md:w-52  " src="{{  ( !empty($team->data->featured_player_2->images->photo) ? $team->data->featured_player_2->images->photo :  '' )  }}" alt="">
-                    </div>
+                    @if(!isset($team->data->featured_player_3) || !isset($team->data->featured_player_1)){
+                    <img class="xl:w-56 lg:w-56 md:w-52 relative " src="{{  ( !empty($team->data->featured_player_2->images->photo) ? $team->data->featured_player_2->images->photo :  '' )  }}" alt="">
+                    @else
+                        <img class="xl:w-56 lg:w-56 md:w-52 relative left-20" src="{{  ( !empty($team->data->featured_player_2->images->photo) ? $team->data->featured_player_2->images->photo :  '' )  }}" alt="">
+                    @endif
                 @endif
                 @if(isset($team->data->featured_player_3))
-                    <div class="relative flex items-end right-24">
-                            <img class=" xl:w-56 lg:w-56 md:w-52  " src="{{  ( !empty($team->data->featured_player_3->images->photo) ? $team->data->featured_player_3->images->photo :  '' )  }}" alt="">
-                    </div>
+                    @if(!isset($team->data->featured_player_2) || !isset($team->data->featured_player_1)){
+                    <img class=" xl:w-56 lg:w-56 md:w-52   " src="{{  ( !empty($team->data->featured_player_3->images->photo) ? $team->data->featured_player_3->images->photo :  '' )  }}" alt="">
+                    @else
+                        <img class=" xl:w-56 lg:w-56 md:w-52 " src="{{  ( !empty($team->data->featured_player_3->images->photo) ? $team->data->featured_player_3->images->photo :  '' )  }}" alt="">
+                    @endif
                 @endif
+           
             </div>
         </div>
     </div>
@@ -519,7 +533,7 @@
                 <div class="h-[2px] w-full my-10 hidden"></div>
                 <div class="flex flex-col w-full mt-10">
                     <div class="py-2 rounded-lg" style=" background-color: {{  ( !empty($color1) ? $color1: '#f5f5f5')  }}">
-                        <h1 class="text-center font-extrabold text-md  " style=" color: {{  ( !empty($color2) ? $color2: 'black')  }}">PLAYER 1</h1>
+                        <h1 class="text-center font-extrabold text-md  " style=" color: {{  ( !empty($color2) ? $color2: 'black')  }}">POWER PLAY 1</h1>
                     </div>
                     <div class="flex flex-row  mt-10 gap-3 justify-center">
                         @foreach($result->data->slots as $key=>$item)
@@ -575,7 +589,7 @@
                 <div class="flex flex-col w-full mt-10">
 
                     <div class="py-2 rounded-lg" style=" background-color: {{  ( !empty($color1) ? $color1: '#f5f5f5')  }}">
-                        <h1 class="text-center font-extrabold text-md " style=" color: {{  ( !empty($color2) ? $color2: 'black')  }}">PLAYER 2</h1>
+                        <h1 class="text-center font-extrabold text-md " style=" color: {{  ( !empty($color2) ? $color2: 'black')  }}">POWER PLAY 2</h1>
                     </div>
                     <div class="flex flex-row  mt-10 gap-3 justify-center">
                         @foreach($result->data->slots as $key=>$item)
@@ -689,7 +703,7 @@
                         @endforeach
                     </div>
                 </div>
-                <ul class="flex justify-evenly items-center text-base font-medium gap-2 w-full">
+                <ul class="flex justify-evenly items-center text-base font-medium gap-2 w-full hidden">
                     <li>Badges:</li>
                     <li class="flex items-center gap-1"><img class="w-7 h-7 border border-black" src="{{ asset('/images/menu-icon/ ') }}" alt="">Game-time Decision</li>
                     <li class="flex items-center gap-1"><p class="px-1.5 py-px border rounded-md bg-red-600 text-white font-light">IR</p> Injured Reserved list</li>
@@ -8867,8 +8881,6 @@
 <div class="mx-1.5 smm-block  hidden">
     <div class="flex flex-col w-full ">
 
-
-
         <div id="line-combos-div_  "  class=" ">
             @php
 
@@ -8891,29 +8903,34 @@
                                 <img class="w-40" src="{{  ( !empty($current_logo) ? $current_logo: ' ') }}" alt="">
                             </div>
 
-                            <div class="relative h-[9rem] w-[83%] flex justify-center ">
 
-
-
-
-
+                            <div class="relative w-[83%] flex justify-center ">
 
                                 {{--<div class="absolute bottom-0  right-0">--}}
                                     {{--<div class="relative flex flex-row">--}}
+
+
+
                                         @if(isset($team->data->featured_player_1))
-                                            <div class="relative flex items-end left-24">
-                                                <img class=" xl:w-56 lg:w-56 md:w-52  " src="{{  ( !empty($team->data->featured_player_1->images->photo) ? $team->data->featured_player_1->images->photo :  '' )  }}" alt="">
-                                            </div>
+                                            @if(!isset($team->data->featured_player_3) || !isset($team->data->featured_player_2)){
+                                                <img class="w-[40%]  relative " src="{{  ( !empty($team->data->featured_player_1->images->photo) ? $team->data->featured_player_1->images->photo :  '' )  }}" alt="">
+                                            @else
+                                                <img class="w-[40%]  relative left-10" src="{{  ( !empty($team->data->featured_player_1->images->photo) ? $team->data->featured_player_1->images->photo :  '' )  }}" alt="">
+                                            @endif
                                         @endif
                                         @if(isset($team->data->featured_player_2))
-                                            <div class="relative flex items-end  z-10">
-                                                <img class=" xl:w-56 lg:w-56 md:w-52  " src="{{  ( !empty($team->data->featured_player_2->images->photo) ? $team->data->featured_player_2->images->photo :  '' )  }}" alt="">
-                                            </div>
+                                            @if(!isset($team->data->featured_player_3) || !isset($team->data->featured_player_1)){
+                                                <img class="w-[40%]  relative  " src="{{  ( !empty($team->data->featured_player_2->images->photo) ? $team->data->featured_player_2->images->photo :  '' )  }}" alt="">
+                                            @else
+                                                <img class="w-[40%]  relative z-10" src="{{  ( !empty($team->data->featured_player_2->images->photo) ? $team->data->featured_player_2->images->photo :  '' )  }}" alt="">
+                                            @endif
                                         @endif
                                         @if(isset($team->data->featured_player_3))
-                                            <div class="relative flex items-end right-24">
-                                                <img class=" xl:w-56 lg:w-56 md:w-52  " src="{{  ( !empty($team->data->featured_player_3->images->photo) ? $team->data->featured_player_3->images->photo :  '' )  }}" alt="">
-                                            </div>
+                                            @if(!isset($team->data->featured_player_2) || !isset($team->data->featured_player_1)){
+                                                <img class="w-[40%] relative   " src="{{  ( !empty($team->data->featured_player_3->images->photo) ? $team->data->featured_player_3->images->photo :  '' )  }}" alt="">
+                                            @else
+                                                <img class="w-[40%] relative  right-10" src="{{  ( !empty($team->data->featured_player_3->images->photo) ? $team->data->featured_player_3->images->photo :  '' )  }}" alt="">
+                                            @endif
                                         @endif
                                     {{--</div>--}}
                                 {{--</div>--}}
@@ -8960,15 +8977,15 @@
                                         Winnipeg Jets
                                     </a>
                                 </option>
-                                {{--@foreach($team->data as $key=>$val)--}}
-                                    @if($team->data->league->slug == 'nhl')
-                                        <option value="{{ url('/nhl/line-combos/'. $team->data->slug ) }}"  class="border border-1 border-bottom border-dark line-combos-items">
+                                @foreach($teams->data as $key=>$val)
+                                    @if($val->league->slug == 'nhl')
+                                        <option value="{{ url('/nhl/line-combos/'. $val->slug ) }}"  class="border border-1 border-bottom border-dark line-combos-items">
                                             {{--<a href="/nhl/line-combos/{{$val->slug}}" style="width:100% !important; color: black">--}}
-                                                {{$team->data->name}}
+                                                {{$val->name}}
                                              {{--</a>--}}
                                         </option>
                                     @endif
-                                {{--@endforeach--}}
+                                @endforeach
 
                             </select>
 
@@ -8985,18 +9002,21 @@
                 <div class="w-full relative flex justify-center  ">
                     <ul id="" class="flex flex-wrap items-center xl:gap-2 lg:gap-1 pt-2 justify-center gap-2"  style="background-color:white " >
 
-{{--                        @foreach($team->data as $key=>$val)--}}
-                            @if(!empty($team->data->logo->src))
-                                @if($team->data->league->slug == 'nhl')
+                        @foreach($teams->data as $key=>$val)
+                            @if(!empty($val->logo->src))
+                                @if($val->league->slug == 'nhl')
                                     <li class="lc-team-logo "  value="">
-                                        <a class=""  href="/nhl/line-combos/{{$team->data->slug}}">
-                                            <img class=" w-12 flex " src="{{$team->data->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $team->data->name }}">
+                                        <a class=""  href="/nhl/line-combos/{{$val->slug}}">
+                                            <img class=" w-12 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
                                         </a>
                                     </li>
                                 @endif
                             @endif
-                        {{--@endforeach--}}
+                        @endforeach
                     </ul>
+                </div>
+                <div class="p-2 text-xs mt-5">
+                    We understand the vital importance of having the latest NHL line combinations at your fingertips. For fantasy sports enthusiasts and sports betting aficionados alike, timely and accurate information on player lineups is not just a convenience—it's a game-changer. Staying updated with the most current line combinations empowers you to make informed decisions, elevating your strategy in fantasy hockey leagues and sports betting markets. Our platform ensures you're always ahead of the curve with real-time updates, deep insights, and expert analysis. Dive into the dynamic world of NHL with ProjectedLineup.com, where every shift and strategy counts towards your victory!
                 </div>
             @else
                 <div id="line-combos_" class=" ">
@@ -9004,17 +9024,17 @@
                     <div class="w-full relative flex justify-center">
                         <ul id="" class="flex  flex-wrap items-center xl:gap-2 lg:gap-1 pt-2 justify-center  gap-2"  style="background-color:white " >
 
-{{--                            @foreach($team->data as $key=>$val)--}}
-                                @if(!empty($team->data->logo->src))
-                                    @if($team->data->league->slug == 'nhl')
+                            @foreach($teams->data as $key=>$val)
+                                @if(!empty($val->logo->src))
+                                    @if($val->league->slug == 'nhl')
                                         <li class="lc-team-logo "  value="">
-                                            <a class=""  href="/nhl/line-combos/{{$team->data->slug}}">
-                                                <img class="w-12 flex " src="{{$team->data->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $team->data->name }}">
+                                            <a class=""  href="/nhl/line-combos/{{$val->slug}}">
+                                                <img class="w-12 flex " src="{{$val->logo->src}}" alt=""  data-te-toggle="tooltip" title="{{ $val->name }}">
                                             </a>
                                         </li>
                                     @endif
                                 @endif
-                            {{--@endforeach--}}
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -9036,7 +9056,7 @@
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
                                     <div class="">
-                                        <div class="relative  h-20 w-20 xl:h-32 xl:w-32">
+                                        <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                             <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw"  alt="">
                                         </div>
                                     </div>
@@ -9050,7 +9070,7 @@
                         @if($key == 'c1')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9064,7 +9084,7 @@
                         @if($key == 'rw1')
                                 <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                     <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                        <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                        <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                             <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                         </div>
                                         <div class="">
@@ -9081,7 +9101,7 @@
                         @if($key == 'lw2')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9095,7 +9115,7 @@
                         @if($key == 'c2')
                                 <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                     <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                        <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                        <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                             <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                         </div>
 
@@ -9109,7 +9129,7 @@
                         @if($key == 'rw2')
                                 <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                     <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                        <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                        <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                             <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                         </div>
 
@@ -9128,7 +9148,7 @@
                         @if($key == 'lw3')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9142,7 +9162,7 @@
                         @if($key == 'c3')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9156,7 +9176,7 @@
                         @if($key == 'rw3')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9175,7 +9195,7 @@
                         @if($key == 'lw4')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9189,7 +9209,7 @@
                         @if($key == 'c4')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9203,7 +9223,7 @@
                         @if($key == 'rw4')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9230,7 +9250,7 @@
                         @if($key == 'ld1')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="" style=" height: 100%; width: 100%; inset: 0px; object-fit: cover; object-position: center top; color: transparent;">
                                     </div>
 
@@ -9244,7 +9264,7 @@
                         @if($key == 'rd1')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center   ">
                                 <div class="flex flex-col items-center  h-auto gap-2 w-32   ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images"  src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9263,7 +9283,7 @@
                         @if($key == 'ld2')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center   ">
                                 <div class="flex flex-col items-center  h-auto gap-2 w-32   ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images"  src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9277,7 +9297,7 @@
                         @if($key == 'rd2')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center   ">
                                 <div class="flex flex-col items-center  h-auto gap-2 w-32   ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images"   src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9296,7 +9316,7 @@
                         @if($key == 'ld3')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center   ">
                                 <div class="flex flex-col items-center  h-auto gap-2 w-32   ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images"  src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9310,7 +9330,7 @@
                         @if($key == 'rd3')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center   ">
                                 <div class="flex flex-col items-center  h-auto gap-2 w-32   ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images"  src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
 
                                     </div>
@@ -9338,7 +9358,7 @@
                         @if($key == 'sg1')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9352,7 +9372,7 @@
                         @if($key == 'sg2')
                                 <div class="w-1/2 text-center xl:w-48 flex justify-center">
                                     <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                        <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                        <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                             <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                         </div>
 
@@ -9376,7 +9396,7 @@
                         @if($key == 'pp11')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9390,7 +9410,7 @@
                         @if($key == 'pp12')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9404,7 +9424,7 @@
                         @if($key == 'pp13')
                                 <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                     <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                        <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                        <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                             <img class="nhl-images"src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                         </div>
 
@@ -9423,7 +9443,7 @@
                         @if($key == 'pp14')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}"sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9437,7 +9457,7 @@
                         @if($key == 'pp15')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9461,7 +9481,7 @@
                         @if($key == 'pp21')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9475,7 +9495,7 @@
                         @if($key == 'pp22')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9489,7 +9509,7 @@
                         @if($key == 'pp23')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9507,7 +9527,7 @@
                         @if($key == 'pp24')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9521,7 +9541,7 @@
                         @if($key == 'pp25')
                             <div class="w-1/2 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9545,7 +9565,7 @@
                         @if($key == 'b1')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9559,7 +9579,7 @@
                         @if($key == 'b2')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9573,7 +9593,7 @@
                         @if($key == 'b3')
                             <div class="w-1/3 text-center xl:w-48 flex justify-center">
                                 <div class="flex flex-col items-center h-auto gap-2 w-32  ">
-                                    <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                    <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                         <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" alt="">
                                     </div>
 
@@ -9590,7 +9610,7 @@
                     @foreach($result->data->slots as $key=>$item)
                         @if($key == 'b4')
                             <div class="flex flex-col items-center w-[32%] gap-2 w-1/3">
-                                <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                     <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" class="mb-2.5 px-3 " alt="">
                                 </div>
 
@@ -9602,7 +9622,7 @@
                         @endif
                         @if($key == 'b5')
                             <div class="flex flex-col items-center w-[32%] gap-2 w-1/3">
-                                <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                     <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}"  alt="">
                                 </div>
 
@@ -9614,7 +9634,7 @@
                         @endif
                         @if($key == 'b6')
                             <div class="flex flex-col items-center w-[32%] gap-2 w-1/3">
-                                <div class="relative h-20 w-20 xl:h-32 xl:w-32">
+                                <div class="relative h-28 w-28 xl:h-32 xl:w-32">
                                     <img class="nhl-images" src="{{  ( !empty($item->images->uniform) ? $item->images->uniform : '')    }}" alt="">
                                 </div>
 
@@ -9668,7 +9688,7 @@
                                     <div class="flex flex-row gap-4 items-start  justify-evenly items-center" style="{{ $team_count  > 10 ? 'display: none' : ''}}">
 
                                         <div class="w-1/2 text-center xl:w-48 flex justify-center">
-                                            <div class="relative flex flex-col items-center h-32 w-32  ">
+                                            <div class="relative flex flex-col items-center h-28 w-28  ">
                                                 <img  class="nhl-images" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" style=" " src="{{$val->player->images->uniform}}"  alt="">
                                             </div>
                                         </div>

@@ -47,7 +47,6 @@
 
 
 <main class="container-none">
-
  @yield('content')
 </main>
  

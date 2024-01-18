@@ -1,4 +1,4 @@
-@extends('layouts.master-nhl')
+@extends('layouts.master-nhl-v1')
 
 @section('content')
 
@@ -34,7 +34,7 @@
                                    href="{{ route('nhl.get-starting-goalies', ['date' => Carbon\Carbon::parse($date)->subDay()->format('Y-m-d')]) }}"
                                    class="absolute left-0  top-0 z-[1] flex  items-center justify-center border-0 bg-none p-0 text-center text-white transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                                    type="button" >
-                                   <div class="flex items-center justify-center h-14 w-14  border border-black bg-white rounded-lg">
+                                   <div class="flex items-center justify-center h-14 w-14  border border-[#38b6ff] bg-white rounded-lg">
                                        <img class="w-[30px] h-[30px] rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}"  alt="">
                                    </div>
                                </a>
@@ -43,7 +43,7 @@
                                    class=" absolute right-0 top-0 z-[1] flex flex    items-center justify-center border-0 bg-none p-0 text-center text-white   transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
                                    type="button" >
 
-                                   <div class="flex items-center justify-center  h-14 w-14 border border-black bg-white rounded-lg">
+                                   <div class="flex items-center justify-center  h-14 w-14 border border-[#38b6ff] bg-white rounded-lg">
                                        <img class="w-[30px] h-[30px] -rotate-90" src="{{ asset('/images/starting-goalies/arrow-down.png') }}" alt="" >
                                    </div>
                                </a>
@@ -142,9 +142,9 @@
                                 <div class="flex flex-col gap-4 w-full rounded-lg">
                                     {{--<div class="w-full text-center items-center bg-[#38B6FF] font-bold py-2"> {{ $season->game_date->full  }}</div>--}}
                                     <div class="flex flex-row justify-evenly w-full gap-6 px-6">
-                                        <div class="flex flex-col items-center justify-between   py-5  w-2/12 ">
+                                        <div class="flex flex-col items-center justify-between   w-2/12 ">
 {{--                                            <h1 class="font-bold text-lg mt-2 player" >{{ (isset($season->starting_goalies->home->player->full_name) ? $season->starting_goalies->home->player->full_name : " ")  }}</h1>--}}
-                                            <div class="flex flex-col gap-4 bg-white w-full p-4 justify-center text-center items-center w-34">
+                                            <div class="flex flex-col gap-4 bg-white w-full p-4 justify-center text-center items-center w-34 rounded-lg">
                                                 <img class="w-full" src="{{ (isset($season->starting_goalies->home->player->images->uniform ) ? $season->starting_goalies->home->player->images->uniform : " ")  }}" class="w-44" alt="">
                                                 @if(isset($season->starting_goalies->home->status->name))
                                                     <div class="flex flex-row p-1 items-center font-bold w-full text-center">
@@ -163,7 +163,7 @@
 
 
                                             <div class="text-sm font-bold p-2" >
-                                                {{ (isset($season->starting_goalies->home->source->name) ?   $season->starting_goalies->home->source->name : " ")  }}
+                                                {{ (isset($season->starting_goalies->home->player->full_name) ?   $season->starting_goalies->home->player->full_name : " ")  }}
                                             </div>
 
 
@@ -177,7 +177,7 @@
 
                                         </div>
 
-                                        <div class="flex flex-col justify-between w-8/12 " >
+                                        <div class="flex flex-col justify-between w-8/12 bg-white rounder-lg" >
                                             <div class="flex flex-col gap-5 h-full">
 
                                                 <div class="flex flex-col justify-evenly h-full">
@@ -188,15 +188,17 @@
                                                                     <img class="w-10" src="{{ (isset($season->starting_goalies->home->team->logo->src ) ? $season->starting_goalies->home->team->logo->src : " ")  }}" alt="">
                                                                 </div>
                                                                 <div class="flex flex-row text-center  text-[#38b6ff] font-bold   items-center">
-                                                                    <div class="text-base">
-                                                                        {{ (isset($season->starting_goalies->home->game->game_date->date)
-                                                                        ?
-                                                                         $season->starting_goalies->home->game->game_date->date : " ")  }}
-                                                                    </div>
-                                                                     <div class="text-sm">
-                                                                        {{ (isset($season->starting_goalies->home->game->game_date->time)
-                                                                        ?
-                                                                         $season->starting_goalies->home->game->game_date->time : " ")  }}
+                                                                    <div class="text-base flex flex-col">
+                                                                        <div>
+                                                                            {{ (isset($season->starting_goalies->home->game->game_date->date)
+                                                                            ?
+                                                                             $season->starting_goalies->home->game->game_date->date : " ")  }}
+                                                                        </div>
+                                                                        <div>
+                                                                            {{ (isset($season->starting_goalies->home->game->game_date->time)
+                                                                            ?
+                                                                             $season->starting_goalies->home->game->game_date->time : " ")  }}
+                                                                        </div>
                                                                       </div>
                                                                 </div>
                                                                 <div class="flex flex-row items-center gap-1">
@@ -205,33 +207,33 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="flex flex-row justify-evenly bg-slate-300 rounded-lg px-6 py-4">
-                                                                <div class="flex flex-row justify-evenly w-full text-center">
-                                                                    <div class="p-2 gap-2 w-full">
-                                                                        <div class="text-black text-sm font-bold">GOALS</div>
-                                                                        <div class="bg-green-500 text-white rounded-full w-full p-2">{{ (isset($season->home_team->odds->team_goal) ? $season->home_team->odds->team_goal : "")  }}</div>
+                                                            <div class="flex flex-row justify-between    px-6 py-4">
+                                                                <div class="flex flex-row justify-evenly gap-4 text-center">
+                                                                    <div class="p-2 gap-2  ">
+                                                                        <div class="text-black text-sm  ">GOALS</div>
+                                                                        <div class="bg-[#F4F5F7]   p-6 rounded-lg  font-bold">{{ (isset($season->home_team->odds->team_goal) ? $season->home_team->odds->team_goal : "")  }}</div>
                                                                     </div>
-                                                                    <div class="p-2 gap-2 w-full">
-                                                                        <div class="text-black text-sm font-boldfont-bold">WIN %</div>
-                                                                        <div class="bg-green-500 text-white rounded-full w-full p-2 ">{{ (isset($season->home_team->odds->win_percentage) ? $season->home_team->odds->win_percentage : "")  }}</div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="flex flex-row justify-evenly w-full text-center">
-                                                                    <div class="p-2 gap-2 w-full">
-                                                                        <div class="text-black text-sm font-bold">0/U</div>
-                                                                        <div class="bg-black text-white rounded-full w-full p-2 ">{{ (isset($season->home_team->odds->over_under) ? $season->home_team->odds->over_under : "")  }}</div>
+                                                                    <div class="p-2 gap-2  ">
+                                                                        <div class="text-black text-sm  ">WIN %</div>
+                                                                        <div class="bg-[#F4F5F7]  p-6 rounded-lg  font-bold">{{ (isset($season->home_team->odds->win_percentage) ? $season->home_team->odds->win_percentage : "")  }}</div>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="flex flex-row justify-evenly w-full text-center" >
-                                                                    <div class="p-2 gap-2 w-full">
-                                                                        <div class="text-black text-sm font-bold">WIN %</div>
-                                                                        <div class="bg-red-500 text-white rounded-full w-full p-2">{{ (isset($season->away_team->odds->win_percentage) ? $season->away_team->odds->win_percentage : "")  }}</div>
+                                                                <div class="flex flex-row justify-evenly text-center">
+                                                                    <div class="p-2 gap-2 ">
+                                                                        <div class="text-black text-sm ">0/U</div>
+                                                                        <div class="bg-[#F4F5F7]  p-6 rounded-lg  font-bold">{{ (isset($season->home_team->odds->over_under) ? $season->home_team->odds->over_under : "")  }}</div>
                                                                     </div>
-                                                                    <div class="p-2 gap-2 w-full">
-                                                                        <div class="text-black text-sm font-bold">GOALS</div>
-                                                                        <div class="bg-red-500 text-white rounded-full w-full p-2">{{ (isset($season->away_team->odds->team_goal) ? $season->away_team->odds->team_goal : "")  }}</div>
+                                                                </div>
+
+                                                                <div class="flex flex-row justify-evenly gap-4 text-center" >
+                                                                    <div class="p-2 gap-2  ">
+                                                                        <div class="text-black text-sm ">WIN %</div>
+                                                                        <div class="bg-[#F4F5F7] p-6 rounded-lg  font-bold">{{ (isset($season->away_team->odds->win_percentage) ? $season->away_team->odds->win_percentage : "")  }}</div>
+                                                                    </div>
+                                                                    <div class="p-2 gap-2 w-full ">
+                                                                        <div class="text-black text-sm">GOALS</div>
+                                                                        <div class="bg-[#F4F5F7]  p-6 rounded-lg  font-bold">{{ (isset($season->away_team->odds->team_goal) ? $season->away_team->odds->team_goal : "")  }}</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -242,13 +244,13 @@
                                                                 <div class="flex flex-row gap-4">
                                                                     <div class="flex flex-row p-2 rounded-lg gap-2 border border-[#38b6ff]">
                                                                         <img  class="w-6" src="{{ (isset($season->starting_goalies->home->team->logo->src ) ? $season->starting_goalies->home->team->logo->src : " ")  }}">
-                                                                        <div class="text-[#38b6ff]"><a href="/nhl/line-combos/{{$season->starting_goalies->home->team->slug }}">line Combinations</a></div>
+                                                                        <div class="text-[#38b6ff] font-bold"><a href="/nhl/line-combos/{{$season->starting_goalies->home->team->slug }}">line Combinations</a></div>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="flex flex-row gap-4">
-                                                                    <div class="flex flex-row  p-2 items-center justify-center rounded-lg gap-2 border border-[#38b6ff]  ">
-                                                                         <div class="text-[#38b6ff]"><a href="/nhl/line-combos/{{$season->starting_goalies->away->team->slug }}">matchup</a></div>
+                                                                <div class="flex flex-row gap-4 w-1/3">
+                                                                    <div class="flex flex-row  p-2 items-center justify-center rounded-lg gap-2 border border-[#38b6ff] w-full ">
+                                                                         <div class="text-[#38b6ff] font-bold"><a href="/nhl/line-combos/{{$season->starting_goalies->away->team->slug }}">matchup</a></div>
                                                                     </div>
                                                                 </div>
 
@@ -256,7 +258,7 @@
                                                                 <div class="flex flex-row gap-4">
                                                                     <div class="flex flex-row p-2 rounded-lg gap-2 border border-[#38b6ff]">
                                                                         <img class="w-6" src="{{ (isset($season->starting_goalies->away->team->logo->src ) ? $season->starting_goalies->away->team->logo->src : " ")  }}">
-                                                                        <div class="text-[#38b6ff]"><a href="/nhl/line-combos/{{$season->starting_goalies->away->team->slug }}">line Combinations</a></div>
+                                                                        <div class="text-[#38b6ff] font-bold"><a href="/nhl/line-combos/{{$season->starting_goalies->away->team->slug }}">line Combinations</a></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -265,9 +267,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="flex flex-col items-center justify-between   py-5  w-2/12 ">
+                                        <div class="flex flex-col items-center justify-between    w-2/12 ">
                                             {{--                                            <h1 class="font-bold text-lg mt-2 player" >{{ (isset($season->starting_goalies->home->player->full_name) ? $season->starting_goalies->home->player->full_name : " ")  }}</h1>--}}
-                                            <div class="flex flex-col gap-4 bg-white w-full p-4 justify-center text-center items-center w-34">
+                                            <div class="flex flex-col gap-4 bg-white w-full p-4 justify-center text-center items-center w-34 rounded-lg">
                                                 <img class="w-full" src="{{ (isset($season->starting_goalies->away->player->images->uniform ) ? $season->starting_goalies->away->player->images->uniform : " ")  }}" class="w-44" alt="">
                                                 @if(isset($season->starting_goalies->away->status->name))
                                                     <div class="flex flex-row p-1 items-center font-bold w-full text-center">
@@ -286,7 +288,7 @@
 
 
                                             <div class="text-sm font-bold p-2" >
-                                                {{ (isset($season->starting_goalies->away->source->name) ?   $season->starting_goalies->away->source->name : " ")  }}
+                                                {{ (isset($season->starting_goalies->away->player->full_name) ?   $season->starting_goalies->away->player->full_name : " ")  }}
                                             </div>
 
 
