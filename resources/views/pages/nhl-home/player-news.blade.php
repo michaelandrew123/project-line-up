@@ -14,23 +14,23 @@
 
 
     <div class="flex flex-col w-full xl:gap-5 lg:gap-3 md:gap-2 mt-3 ">
-        {{--justify-between xl:justify-evenly lg:justify-between md:justify-between--}}
+     
         <div class=" w-full   mb-3 ">
-            <div class="container-header">
+            <div class="nhl-pn-container-header container-header">
 
-                <div class="container-slider">
-                    <div class="slider-wrapper">
+                <div class="nhl-pn-container-slider container-slider">
+                    <div class="nhl-pn-slider-wrapper slider-wrapper">
                         <!-- Slider controls -->
-                        <button type="button" id="prev-slide" class=" slide-button absolute start-0 z-30   items-center justify-center  cursor-pointer group focus:outline-none" data-carousel-prev>
-                                            <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                                                </svg>
-                                                <span class="sr-only">Previous</span>
-                                            </span>
+                        <button type="button" id="prev-slide" class="nhl-pn-slide-button slide-button absolute start-0 z-30   items-center justify-center  cursor-pointer group focus:outline-none" data-carousel-prev>
+                            <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
                         </button>
 
-                        <div  class="image-list">
+                        <div  class="nhl-pn-image-list image-list">
                             @php
                                 $nhl_count = 0;
                                 $nhl_bg_color = '';
@@ -42,7 +42,7 @@
                                 @endphp
                                 {{--{{ ($nhl_count  > 6) ? 'hidden' : '' }}--}}
 
-                                <div class="nhl-image-item" >
+                                <div class="nhl-pn-image-item image-item" >
                                     {{--<div class="flex flex-col   -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">--}}
 
                                     <div class="  bg-white border rounded-[13px] border border-[#d9d9d9]">
@@ -260,20 +260,20 @@
                             @endforeach
 
                         </div>
-                        <button type="button" id="next-slide" class=" slide-button absolute  end-0 z-30  items-center justify-center  cursor-pointer group focus:outline-none right-0"  data-carousel-next>
-                                            <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                                                </svg>
-                                                <span class="sr-only">Next</span>
-                                            </span>
+                        <button type="button" id="next-slide" class="nhl-pn-slide-button slide-button absolute  end-0 z-30  items-center justify-center  cursor-pointer group focus:outline-none right-0"  data-carousel-next>
+                            <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
                         </button>
                     </div>
 
 
-                    <div class="slider-scrollbar" style="visibility: hidden">
+                    <div class="nhl-pn-slider-scrollbar slider-scrollbar" style="visibility: hidden">
                         <div class="scrollbar-track">
-                            <div class="scrollbar-thumb"></div>
+                            <div class="nhl-pn-scrollbar-thumb scrollbar-thumb"></div>
                         </div>
                     </div>
 

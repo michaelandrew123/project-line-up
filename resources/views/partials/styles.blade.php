@@ -377,14 +377,27 @@
     }
 
     .slider-wrapper .image-list .nhl-image-item,
-    .slider-wrapper .image-list .nba-image-item {
+    .slider-wrapper .image-list .nba-image-item,
+    .slider-wrapper .image-list .nhl-lc-image-item,
+    .slider-wrapper .image-list .nhl-sg-image-item,
+    .slider-wrapper .image-list .nhl-pn-image-item {
         width: 210px;
         object-fit: cover;
+    }
+    
+    .nhl-image-item {
+        height: 344px;
     }
     .nba-image-item {
         height: 392px;
     }
-    .nhl-image-item {
+    .nhl-lc-image-item {
+        height: 344px;
+    }
+    .nhl-sg-image-item {
+        height: 344px;
+    }
+    .nhl-pn-image-item {
         height: 344px;
     }
 
