@@ -76,35 +76,31 @@
             </div>
         </div>
 
-        <div class="w-10/12 flex flex-col items-center">
-
+        <div class="w-10/12 flex flex-col items-center  ">
             <div class="flex flex-row w-full justify-evenly">
                 <div class="w-full h-auto flex justify-center relative">
                     <img class="w-[32%] z-20 absolute" src="{{ asset('/images/home-page/connor-mcdavid.png') }}" alt="">
                     <img class="w-[32%] z-0 " src="{{ asset('/images/home-page/auston-matthews.png') }}" alt="">
                     <img class="w-[32%] z-10 " src="{{ asset('/images/home-page/mohamed-salah.png') }}" alt="">
                 </div>
-
             </div>
-
-
-            {{--<div class="relative">--}}
-                <div class="relative w-10/12">
-                    {{--border-2 border-[#38B6FF]--}}
-                    {{--<input class="w-full border-2 border-rose-600 text-center text-xl text-[#4d4d4d] rounded h-14" type="text" placeholder="Search Projected Lineups">--}}
-                    <input type="text" class="w-full  text-center text-xl text-[#4d4d4d] rounded h-14 search" type="text" placeholder="Search Projected Lineups" style="border: 2px solid #38B6FF">
-
-                    {{--<input class="border-2 border-rose-600 ...">--}}
-                    <a class="absolute top-1 right-3" href="">
-                        <img class="w-[50px]" src="{{ asset('/images/search.png') }}" alt="">
+            <div class="relative w-10/12">
+                <div class="relative ">
+                    <input type="text" class="w-full  text-left text-xl text-[#4d4d4d] rounded-[13px] h-14 " id="search-nhl-home" placeholder="Search Projected Lineups" style="border: 2px solid #38B6FF">
+                    <a class="absolute top-2 right-3" href="">
+                        <img class="w-[40px]" src="{{ asset('/images/search.png') }}" alt="">
                     </a>
                 </div>
+                <div id="search-nhl-home-content" class="relative hidden">
+                    <div class="absolute bg-white z-10 w-full text-center rounded-b-lg border border-y border-b border-[#38B6FF]">
 
-                {{--<div id="search-nhl-home-content">--}}
-                    {{--<div>Search Result</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-
+                        <div class="i hidden" id="loading_"><div></div><div></div></div>
+                        <ul id="item-content">
+                            <!--  content... -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

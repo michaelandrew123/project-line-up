@@ -16,16 +16,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-//        $data = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
-//
-//        return view('pages/home-page')->with('slug', $data);
-
         $team_nhl = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nhl');
         $result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
 
         $team_results = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
-//         dd($team_results);
-        return view('pages/home')->with([ 'teams' => $team_results, 'nhl_results' => $team_nhl,]);
+
+        $team_nba = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nba');
+        $team_nfl = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nfl');
+        $team_mlb = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=mlb');
+        return view('pages/home')->with([ 'teams' => $team_results, 'nhl_results' => $team_nhl, 'nba_results'=> $team_nba]);
 
 
     }

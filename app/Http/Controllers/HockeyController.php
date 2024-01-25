@@ -71,15 +71,17 @@ class HockeyController extends Controller
 //
 //        return view('pages/home-page')->with('slug', $data);
 
+        $team_nba = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nba');
         $team_nhl = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nhl');
-        $result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
+        $starting_goalies = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nhl&f[type]=starting-goalie');
+        $line_combinations = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nhl&f[type]=line-combination');
 
+//        dd($line_combinations);
+        $result = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards');
         $team_results = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/sports/teams?l=0');
 
-        return view('pages/nhl-home')->with([ 'teams' => $team_results, 'nhl_results' => $team_nhl,]);
 
-
-
+        return view('pages/nhl-home')->with([ 'teams' => $team_results, 'nhl_results' => $team_nhl, 'nba_results'=> $team_nba, 'starting_goalies'=>$starting_goalies, 'line_combinations'=>$line_combinations]);
     }
 
 

@@ -10,85 +10,25 @@
 
 
 <script>
-
-    const initSlider = () => {
-        const imageList = document.querySelector(".slider-wrapper .image-list");
-
-        const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
-        const sliderScrollbar = document.querySelector(".container-slider .slider-scrollbar");
-        const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
-        const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
-
-        // Handle scrollbar thumb drag
-        scrollbarThumb.addEventListener("mousedown", (e) => {
-            const startX = e.clientX;
-            const thumbPosition = scrollbarThumb.offsetLeft;
-            const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
-
-            // Update thumb position on mouse move
-            const handleMouseMove = (e) => {
-                const deltaX = e.clientX - startX;
-                const newThumbPosition = thumbPosition + deltaX;
-                // Ensure the scrollbar thumb stays within bounds
-                const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
-                const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
-
-                scrollbarThumb.style.left = `${boundedPosition}px`;
-                imageList.scrollLeft = scrollPosition;
-            }
-            // Remove event listeners on mouse up
-            const handleMouseUp = () => {
-                document.removeEventListener("mousemove", handleMouseMove);
-                document.removeEventListener("mouseup", handleMouseUp);
-            }
-            // Add event listeners for drag interaction
-            document.addEventListener("mousemove", handleMouseMove);
-            document.addEventListener("mouseup", handleMouseUp);
-        });
-        // Slide images according to the slide button clicks
-        slideButtons.forEach(button => {
-            button.addEventListener("click", () => {
-                const direction = button.id === "prev-slide" ? -1 : 1;
-                const scrollAmount = imageList.clientWidth * direction;
-                imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
-            });
-        });
-        // Show or hide slide buttons based on scroll position
-        const handleSlideButtons = () => {
-            slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
-            slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
-        }
-        // Update scrollbar thumb position based on image scroll
-        const updateScrollThumbPosition = () => {
-            const scrollPosition = imageList.scrollLeft;
-            const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
-            scrollbarThumb.style.left = `${thumbPosition}px`;
-        }
-        // Call these two functions when image list scrolls
-        imageList.addEventListener("scroll", () => {
-            updateScrollThumbPosition();
-            handleSlideButtons();
-        });
-    }
-    window.addEventListener("resize", initSlider);
-    window.addEventListener("load", initSlider);
-
-    // grid-template-columns: repeat(nhlImageItemCount, 1fr);
-    /*columns: repeat(auto-fill, minmax(280px, 1fr));*/
-
-    var nhlImageItemCount = $('.nhl-image-item').length;
-    $('.slider-wrapper .image-list').css({'grid-template-columns': 'repeat(' + nhlImageItemCount + ', 1fr)'});
-
-
-
-    //view news
+    //view news nhl
     $('.nhl-view-news').on('touchstart click', function(){
              var data = $(this).attr('rel');
-        //  $('.nhl-view-news').addClass('hidden');
-        // $('.nhl-view-news-desc').removeClass('hidden');
-
         $('.modalNhl').addClass('hidden');
         $('#' + data).removeClass('hidden');
+    })
+
+    $('.nhlsg-view-news').on('touchstart click', function(){
+        var data = $(this).attr('rel');
+        $('.modalNhlSg').addClass('hidden');
+        $('#' + data).removeClass('hidden');
+    })
+
+    //view news nba
+    $('.nba-view-news').on('touchstart click', function(){
+        var data = $(this).attr('rel');
+        $('.modalNba').addClass('hidden');
+        $('#' + data).removeClass('hidden');
+
     })
 
     $('.close-modal').click('touchstart click', function(){
@@ -101,23 +41,42 @@
     $('#search-nhl-home').on("keyup", function(e) {
             $('#loading_').addClass('i');
         if($(this).val()){
-            $('#item-content').html('');
-            fetch(`https://api.projectedlineups.com/v1/search?q=${$(this).val()}`)
-                .then((response) => {
-                return response.json();
+
+            // console.log(this).val());
+            let items = '';
+            fetch(`https://api.projectedlineups.com/v1/search?q=${$(this).val()}`).then((response) => {
+                    return response.json();
             })
             .then((data) => {
+                // $('#item-content').html('');
                 $('#loading_').removeClass('i');
-                let items = data;
-                items.data.map(function(item) {
-                    $('#item-content').append('<li class="flex flex-row gap-2 items-center py-2 items-center justify-center" >' +
-                            '<div> <img class="items-avatar w-10 h-10 rounded-full" src="'+ item.item.image +'" alt=""..." />  </div>' +
-                            '<div class="items-desc">'
-                                + item.name +
-                            '</div>' +
+                // items = data;
+                $('#item-content').empty();
+
+                console.log(data);
+                data.data.map(function(item) {
+
+                    console.log('items ', item);
+                    console.log('items ', item.type);
+                    let urlType="";
+                    if(item.item.type == 'team'){
+                        urlType=item.item.metadata.league.slug +'/line-combos/' + item.item.metadata.team.slug;
+                    }else{
+                        urlType='';
+                    }
+
+
+                    $('#item-content').append('<li class="flex flex-row gap-2 items-center py-2 items-center justify-letf px-2" >' +
+                        '<a href="/'+urlType+'" class="flex flex-row gap-2"> <div> <img class="items-avatar w-6 h-6 rounded-full" src="'+ item.item.image +'" alt=""..." />  </div>' +
+                        '<div class="capitalize font-bold">  '
+                        + item.name +
+                        '</div></a>' +
                         '</li>'
                     )
+
                 });
+
+
             }).catch(function(e) {
                 console.log(e)
             });
@@ -319,6 +278,19 @@
     //     //
     //     // $('.nhl-linecombos_ > a').css({'color': '#000'});
     // });
+
+
+    $('.nhl-linecombos_,  #line-combos_, #line-combos-div_ ').mouseleave(function(){
+
+        $('#line-combos_').addClass('hidden');
+    });
+    $('.nhl-linecombos_,  #line-combos_, #line-combos-div_ ').mouseover(function(){
+
+        // $('.nhl-linecombos_ > a').css({'color': '#38b6ff'});
+
+        $('#line-combos_').removeClass('hidden');
+        // $('.nhl-linecombos_ > a').css({'color': '#000'});
+    });
 
 
     $('#see-all-player-news').click(function(){

@@ -12,6 +12,7 @@
         margin: auto;
         /*font-family:  'Maven Pro', sans-serif */
         font-family: 'Roboto', sans-serif;
+
         background-color: #F4F5F7 !important;
 
     }
@@ -307,7 +308,236 @@
     .deactive{
         display:none;
     }
-  
+
+
+
+
+    .container-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*min-height: 100vh;*/
+    }
+
+    .container-slider {
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .slider-wrapper {
+        position: relative;
+    }
+
+    .slider-wrapper .slide-button {
+        position: absolute;
+        top: 50%;
+        outline: none;
+        border: none;
+        height: 50px;
+        width: 50px;
+        z-index: 5;
+        color: #fff;
+        display: flex;
+        cursor: pointer;
+        font-size: 2.2rem;
+        background: #9f9f9f;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+    .slider-wrapper .slide-button:hover {
+        background: #404040;
+    }
+
+    .slider-wrapper .slide-button#prev-slide {
+        left: -25px;
+        display: none;
+    }
+
+    .slider-wrapper .slide-button#next-slide {
+        right: -25px;
+    }
+
+    .slider-wrapper .image-list {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        /*columns: repeat(auto-fill, minmax(280px, 1fr));*/
+        gap: 10px;
+        font-size: 0;
+        list-style: none;
+        margin-bottom: 30px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .slider-wrapper .image-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider-wrapper .image-list .nhl-image-item,
+    .slider-wrapper .image-list .nba-image-item {
+        width: 210px;
+        object-fit: cover;
+    }
+    .nba-image-item {
+        height: 392px;
+    }
+    .nhl-image-item {
+        height: 344px;
+    }
+
+    .container .slider-scrollbar {
+        height: 24px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .slider-scrollbar .scrollbar-track {
+        background: #ccc;
+        width: 100%;
+        height: 2px;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .slider-scrollbar:hover .scrollbar-track {
+        height: 4px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+        position: absolute;
+        background: #000;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
+        cursor: grab;
+        border-radius: inherit;
+    }
+
+    .slider-scrollbar .scrollbar-thumb:active {
+        cursor: grabbing;
+        height: 8px;
+        top: -2px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        bottom: -10px;
+    }
+    .modalNhl, .modalNba{
+        Entering: "ease-out duration-300";
+        From: "opacity-0";
+        To: "opacity-100";
+        Leaving: "ease-in duration-200";
+        From: "opacity-100";
+        To: "opacity-0";
+    }
+    /*.close {*/
+    /*position: absolute;*/
+    /*right: 12px;*/
+    /*top: 20px;*/
+    /*!*width: 50px;*!*/
+    /*!*height: 50px;*!*/
+    /*!*z-index: 1;*!*/
+    /*!*border: 4px solid #333;*!*/
+    /*!*border-radius: 50%;*!*/
+    /*opacity: 0.3;*/
+    /*}*/
+    /*.close:hover {*/
+    /*opacity: 1;*/
+    /*}*/
+    /*.close:before, .close:after {*/
+    /*position: absolute;*/
+    /*left: 15px;*/
+    /*content: ' ';*/
+    /*height: 33px;*/
+    /*width: 2px;*/
+    /*background-color: #333;*/
+    /*}*/
+
+
+    /*.close:before {*/
+    /*transform: rotate(45deg);*/
+    /*}*/
+    /*.close:after {*/
+    /*transform: rotate(-45deg);*/
+    /*}*/
+
+    div.close-modal {
+        border-radius: 50%;
+        padding: 0.5em;
+        width: 30px;
+        height: 30px;
+        border: 2px solid #C9C7C7;
+        color: #C9C7C7;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        z-index: 1;
+    }
+    div.close-modal:hover {
+        border: 2px solid #C9C7C7;
+        color: #ffffff;
+    }
+
+    div.close-modal::before {
+        content: " ";
+        position: absolute;
+        display: block;
+        background-color: #C9C7C7;
+        width: 2px;
+        left: 12px;
+        top: 5px;
+        bottom: 5px;
+        transform: rotate(45deg);
+    }
+    div.close-modal::after {
+        content: " ";
+        position: absolute;
+        display: block;
+        background-color: #C9C7C7;
+        height: 2px;
+        top:12px;
+        left: 5px;
+        right: 5px;
+        transform: rotate(45deg);
+    }
+
+
+    /* Styles for mobile and tablets */
+    @media only screen and (max-width: 1023px) {
+        .slider-wrapper .slide-button {
+            display: none !important;
+        }
+
+        .slider-wrapper .image-list {
+            gap: 10px;
+            margin-bottom: 15px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .slider-wrapper .image-list .nhl-image-item,
+        .slider-wrapper .image-list .nba-image-item {
+            width: 280px;
+            height: 380px;
+        }
+
+        .slider-scrollbar .scrollbar-thumb {
+            width: 20%;
+        }
+    }
+
+
     @media (max-width: 768px) {
         .nhl-images{
             position: absolute;

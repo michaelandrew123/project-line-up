@@ -55,6 +55,6 @@
 @include('partials.footer')
 
 @include('partials.scripts')
-
+@include('partials.script-slider')
 </body>
 </html>
