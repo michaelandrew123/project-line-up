@@ -49,3 +49,10 @@
   nhl-desktop-tablet-mobile-v12[m
   nhl-desktop-tablet-mobile-v13[m
   nhl-desktop-tablet-mobile-v14[m
+
+
+docs for laravel, vue and vuex
+composer require laravel/ui
+php artisan ui vue --auth
+npm install
+npm install vue-template-compiler vue-loader vue-router vuex axios vue-axios --save-dev --legacy-peer-deps

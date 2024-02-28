@@ -20,24 +20,6 @@
  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
 
 
-
-  
-<!--  
-<script src="https://cdn.tailwindcss.com"></script> -->
-<!-- <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          sans: ['Inter', 'sans-serif'],
-        },
-      }
-    }
-  }
-    
-</script> -->
-
-
     @include('partials.styles')
 </head>
 <body>

@@ -42,9 +42,10 @@
                             @endif
                         @endforeach
                     @endif
+                    <a href="/">
+                        <img  src="{{ asset('/images/projectedlineup_logo.png') }}" />
+                    </a>
 
-
-                    <img  src="{{ asset('/images/projectedlineup_logo.png') }}" />
                 </div>
             </div>
             <div class="flex flex-row items-center xl:w-8/12 lg:w-8/12 md:w-7/12 xl:justify-between lg:justify-between md:justify-between ">
@@ -56,7 +57,7 @@
                         NBA
                     </a>
                     <a href="{{url('/soc/line-combos')}}" class="xl:text-[24px] lg:text-[22px] md:text-[20px] font-bold text-[#38b6ff] xl:px-4 lg:px-4 md:px-2 py-px border border-[#38b6ff]  rounded-md hover:bg-sky-500/50 hover:border-sky-50 hover:text-white active:bg-[#38b6ff] active:text-[#ffffff]">
-                        SOC
+                        MLB
                     </a>
                     <a href="{{url('/nfl/home')}}" class="xl:text-[24px] lg:text-[22px] md:text-[20px] font-bold text-[#38b6ff] xl:px-4 lg:px-4 md:px-2 py-px border border-[#38b6ff]  rounded-md hover:bg-sky-500/50 hover:border-sky-50  hover:text-white active:bg-[#38b6ff] active:text-[#ffffff]">
                         NFL
@@ -79,7 +80,6 @@
 
         <div class="relative w-10/12">
             <div class="relative ">
-
 
                 {{--border-2 border-[#38B6FF]--}}
                 {{--<input class="w-full border-2 border-rose-600 text-center text-xl text-[#4d4d4d] rounded h-14" type="text" placeholder="Search Projected Lineups">--}}
@@ -112,9 +112,9 @@
 
 
         <div class="flex flex-col w-full" style="{{ Request::is('/') == ('/') ? 'display:none':'' }}">
-            <ul  class="flex flex-row items-center xl:gap-6 lg:gap-5 md:gap-2 w-11/12  ml-1">
+            <ul  class="flex flex-row items-center xl:gap-6 lg:gap-5 md:gap-2 w-11/12  ml-1 flex-wrap">
                 <li class="nav-itms {{Request::is('nhl/starting-goalies') ? 'active':'' }}">
-                    <a href="{{url('nhl/starting-goalies')}}" style="{{Request::is('nhl/starting-goalies') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                    <a href="{{url('nhl/starting-goalies')}}" style="{{Request::is('nhl/starting-goalies') ? 'text-color:transparent':'' }}" class=" xl:text-lg lg:text-base md:text-base text-sm  font-bold text-center">
                         Starting Goalies
                     </a>
                 </li>
@@ -123,40 +123,40 @@
                 @if(Request::is('nhl/line-combinations') != ('nhl/line-combinations') && Request::is('nhl/line-combinations') != ('nhl/line-combinations'))
                     <li class="nhl-linecombos_ nav-itms  {{Request::is('nhl/line-combinations') ? 'active':'' }}" style="padding: 1px; z-index: 2; {{ (isset($team_slug) ? 'color: #38b6ff;':'') }}" >
                         {{--<a href="{{url('nhl/line-combos')}}"  style="  z-index: 1;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">--}}
-                        <a href="{{url('nhl/line-combinations')}}"  style="  z-index: 1; cursor:pointer" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                        <a href="{{url('nhl/line-combinations')}}"  style="  z-index: 1; cursor:pointer" class="xl:text-lg lg:text-base md:text-base text-sm  font-bold text-center  ">
                             Line combinations
                         </a>
                     </li>
                 @else
                     <li class="nhl-linecombos_ nav-itms {{Request::is('nhl/line-combinations') ? 'active':'' }}"  style="padding: 1px;  z-index: 2; {{ (isset($team_slug) ? 'color: #38b6ff;':'') }}" >
                         {{--<a  href="{{url('nhl/line-combos')}}" style=" z-index: 1;"  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">--}}
-                        <a  href="{{url('nhl/line-combinations')}}" style=" z-index: 1; cursor:pointer"  class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                        <a  href="{{url('nhl/line-combinations')}}" style=" z-index: 1; cursor:pointer"  class="xl:text-lg lg:text-base md:text-base text-sm  font-bold text-center">
 
                             Line Combinations
                         </a>
                     </li>
                 @endif
                 <li class="nav-itms hidden {{Request::is('nhl/projections') ? 'active':'' }}">
-                    <a href="{{url('nhl/projections')}}" style="{{Request::is('nhl/projections') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                    <a href="{{url('nhl/projections')}}" style="{{Request::is('nhl/projections') ? 'text-color:transparent':'' }}" class="xl:text-lg lg:text-base md:text-base text-sm  font-bold text-center">
                         DFS Projections
                     </a>
                 </li>
                 @if (request()->path() == 'nhl/player-news' || request()->path() == 'nhl/player-news/')
 
                     <li class="">
-                        <a href="{{url('nhl/player-news')}}" style="color:#38b6ff;" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                        <a href="{{url('nhl/player-news')}}" style="color:#38b6ff;" class="xl:text-lg lg:text-base md:text-base text-sm  font-bold text-center  ">
                             Player News
                         </a>
                     </li>
                 @else
                     <li class="">
-                        <a href="{{url('nhl/player-news')}}" style=" " class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center  ">
+                        <a href="{{url('nhl/player-news')}}" style=" " class="xl:text-lg lg:text-base md:text-base text-sm  font-bold text-center  ">
                             Player News
                         </a>
                     </li>
                 @endif
                 <li class="nav-itms hidden {{Request::is('nhl/lineup-study') ? 'active':'' }}">
-                    <a href="{{url('nhl/lineup-study')}}" style="{{Request::is('nhl/lineup-study') ? 'text-color:transparent':'' }}" class="text-xl xl:text-lg lg:text-base md:text-sm font-bold text-center">
+                    <a href="{{url('nhl/lineup-study')}}" style="{{Request::is('nhl/lineup-study') ? 'text-color:transparent':'' }}" class="xl:text-lg lg:text-base md:text-base text-sm  font-bold text-center">
                         Lineup Study
                     </a>
                 </li>
@@ -251,6 +251,9 @@
         </div>
     </div>
 </div>
+
+
+
 <div class="smm-block hidden relative mb-12 py-2" >
     <div class="fixed top-0 w-full z-30">
         <section class="top-nav">
@@ -271,7 +274,7 @@
                 </li>
                 <li  class="xl:text-[24px] lg:text-[22px] md:text-[20px] font-bold text-[#38b6ff] xl:px-4 lg:px-4 md:px-2 py-px  hover:bg-sky-500/50 hover:border-sky-50 hover:text-white ">
                     <a href="{{url('/soc/line-combos')}}" class="w-full">
-                        SOC
+                        MLB
                     </a>
                 </li>
                 <li class="xl:text-[24px] lg:text-[22px] md:text-[20px] font-bold text-[#38b6ff] xl:px-4 lg:px-4 md:px-2 py-px  hover:bg-sky-500/50 hover:border-sky-50  hover:text-white ">

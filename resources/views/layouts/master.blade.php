@@ -21,7 +21,6 @@
 
 
 
-
     <!--
     <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- <script>
@@ -41,6 +40,8 @@
     @include('partials.styles')
 </head>
 <body>
+
+
 
 @include('partials.header')
 

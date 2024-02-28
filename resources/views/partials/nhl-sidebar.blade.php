@@ -23,12 +23,27 @@
                                 <div class="flex flex-row items-start justify-between" style="{{ $team_count  > 10 ? 'display: none' : ''}}">
                                     <div class="flex flex-col">
                                         <div class="flex flex-col mb-2">
-                                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                            <p class="font-semibold text-sm">
+
+                                                {{  ( !empty($val->player->full_name) ? $val->player->full_name : '')     }}
+                                            </p>
                                             <p class="text-[12px]  text-slate-500">{{$val->source->retrieved_at->date}}</p>
                                         </div>
-                                        <p class="text-sm">{{$val->title}}</p>
+                                        <p class="text-sm">
+
+
+                                            @if($val->type->slug == 'lineup-update')
+
+                                                {{--{{$val->title}}--}}
+                                            @else
+
+                                                {{$val->title}}
+
+                                            @endif
+
+                                        </p>
                                     </div>
-                                    <img class="w-14  " style=" " src="{{$val->player->images->uniform}}" alt="">
+                                    <img class="w-14  " style=" " src="{{ ( !empty($val->player->images->uniform) ? $val->player->images->uniform : '')     }}" alt="">
                                 </div>
                             @endif
                         @elseif(!empty($current_name))
@@ -39,12 +54,26 @@
                                 <div class="flex flex-row items-start justify-between" style="{{ $team_count  > 10 ? 'display: none' : ''}}">
                                     <div class="flex flex-col">
                                         <div class="flex flex-col mb-2">
-                                            <p class="font-semibold text-sm">{{$val->player->full_name}}</p>
+                                            <p class="font-semibold text-sm">
+
+                                                {{  ( !empty($val->player->full_name) ? $val->player->full_name : '')     }}
+                                            </p>
                                             <p class="text-[12px]  text-slate-500">{{$val->source->retrieved_at->date}}</p>
                                         </div>
-                                        <p class="text-sm">{{$val->title}}</p>
+                                        <p class="text-sm">
+
+                                            @if($val->type->slug == 'lineup-update')
+
+                                                {{--{{$val->title}}--}}
+                                            @else
+
+                                                {{$val->title}}
+
+                                            @endif
+
+                                        </p>
                                     </div>
-                                    <img class="w-14" style=" " src="{{$val->player->images->uniform}}" alt="">
+                                    <img class="w-14" style=" " src="{{ ( !empty($val->player->images->uniform) ? $val->player->images->uniform : '')     }}" alt="">
                                 </div>
                             @endif
                         @endif
@@ -80,7 +109,7 @@
                                                         <div class="flex flex-col mb-2">
                                                             <div class="flex items-center">
                                                                 <p class="font-semibold text-sm">
-                                                                {{$val->player->full_name}}
+                                                                    {{  ( !empty($val->player->full_name) ? $val->player->full_name : '')     }}
                                                                 </p>
                                                                 <p class="font-semibold text-[10px] italic hidden">({{$val->player->position->name}})</p>
                                                             </div>
@@ -95,7 +124,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <img class="w-14  " style=" " src="{{$val->player->images->uniform}}" alt="">
+                                                <img class="w-14  " style=" " src="{{ ( !empty($val->player->images->uniform) ? $val->player->images->uniform : '')     }}" alt="">
                                             </div>
                                         @endif
                                     @elseif(!empty($current_name))  
@@ -109,7 +138,7 @@
                                                         <div class="flex flex-col mb-2">
                                                             <div class="flex items-center">
                                                                 <p class="font-semibold text-sm">
-                                                                {{$val->player->full_name}}
+                                                                    {{  ( !empty($val->player->full_name) ? $val->player->full_name : '')     }}
                                                                 </p>
                                                                 <p class="font-semibold text-[10px] italic hidden">({{$val->player->position->name}})</p>
                                                             </div>
@@ -124,7 +153,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <img class="w-14  " style=" " src="{{$val->player->images->uniform}}" alt="">
+                                                <img class="w-14  " style=" " src="{{ ( !empty($val->player->images->uniform) ? $val->player->images->uniform : '')     }}" alt="">
                                             </div>                                               
                                         @endif                                            
                                     @endif     
@@ -161,7 +190,7 @@
                         <p class="text-sm">Looking at today's slate DFS top stacks for  <br>Draftkings</p>
                     </div>
                 </div>
-                <div class="flex flex-col gap-6 items-center mt-6">
+                <div class="flex flex-col gap-6 items-center mt-6 hidden">
                     <img class="w-full h-60 skeleton" src="{{ asset('/images/menu-icon/adds3.png') }}">
                     <img class="w-10/12 h- skeleton" src="{{ asset('/images/menu-icon/adds6.png') }}">
                     <img class="w-full h-60 skeleton" src="{{ asset('/images/menu-icon/adds3.png') }}">

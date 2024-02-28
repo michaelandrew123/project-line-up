@@ -3,9 +3,6 @@
 @section('content')
 
  <!-- Desktop nhl/Line combos -->
-
-
-
  @if(isset($team_color))
      @foreach($team_color['data']['colors']['types'] as $key=>$val)
          @if($key == 'color-1')
@@ -27,11 +24,9 @@
  @endif
 
 
-
-
 <div class="">
 <div class="w-full flex flex-col items-center mt-5 smm-hidden ">
-    <div class="relative xl:w-11/12 lg:w-full md:w-full flex flex-row justify-center gap-3 items-center block max-w-screen-2xl h-auto   " style="background-color: {{  ( !empty($color1) ? $color1: '#f5f5f5')  }}   ">
+    <div class="relative flex flex-row justify-center gap-3 items-center  xl:w-11/12 lg:w-11/12  md:w-11/12 sm:w-11/12  w-11/12 md:max-w-screen-2xl h-auto" style="background-color: {{  ( !empty($color1) ? $color1: '#f5f5f5')  }}   ">
         <div class="w-full flex flex-col gap-5 p-8">
             <div class="flex flex-row items-center justify-between ">
                 <div class="flex flex-row items-center w-full">
@@ -203,15 +198,8 @@
 
         {{--<div class=" absolute bottom-0  right-32">--}}
 
-        <div class="absolute bottom-0  right-0">
+        <div class="absolute bottom-0  right-0 hidden">
             <div class="relative flex flex-row">
-
-
-
-
-
-
-
                 @if(isset($team->data->featured_player_1))
                     @if(!isset($team->data->featured_player_3) || !isset($team->data->featured_player_2)){
                     <img class="xl:w-56 lg:w-56 md:w-52  relative " src="{{  ( !empty($team->data->featured_player_1->images->photo) ? $team->data->featured_player_1->images->photo :  '' )  }}" alt="">
@@ -8896,7 +8884,7 @@
                         <div class="  flex flex-col gap-16 items-center justify-between   rounded-md" style=" background-color: {{  ( !empty($color1) ? $color1: '#f5f5f5')  }}">
                             <div class="flex flex-col items-center py-5  " style=" background-color: {{  ( !empty($color1) ? $color1: '#f5f5f5')  }}">
                                 <h1 class="text-2xl text-black font-medium " style=" color: {{  ( !empty($color2) ? $color2: 'black')  }}">{{  ( !empty($current_name) ? $current_name: 'Anaheim Ducks')  }}</h1>
-                                <h1 class="text-2xl text-white font-bold " style=" color: {{  ( !empty($color2) ? $color2: 'black')  }}">  NHL Line Combinations</h1>
+                                <h1 class="text-2xl text-white font-bold " style=" color: {{  ( !empty($color2) ? $color2: 'black')  }}">  NHL Line Combinations </h1>
                             </div>
 
                             <div class="flex flex-col items-center  ">
@@ -9689,12 +9677,12 @@
 
                                         <div class="w-1/2 text-center xl:w-48 flex justify-center">
                                             <div class="relative flex flex-col items-center h-28 w-28  ">
-                                                <img  class="nhl-images" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" style=" " src="{{$val->player->images->uniform}}"  alt="">
+                                                <img  class="nhl-images" sizes=" (max-width: 768px) 50vw, (max-width: 1200p) 10vw, 50vw" style=" " src="{{ ( !empty($val->player->images->uniform) ? $val->player->images->uniform : '')     }}"  alt="">
                                             </div>
                                         </div>
 
                                         <div class="w-1/2 text-center xl:w-48 flex flex-col justify-center">
-                                            <p class="font-semibold text-base">{{$val->player->full_name}}</p>
+                                            <p class="font-semibold text-base"> {{ ( !empty($val->player->full_name) ? $val->player->full_name : '')     }}</p>
                                             <p class="text-[12px]">{{$val->title}}</p>
                                         </div>
 

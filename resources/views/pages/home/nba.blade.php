@@ -1,12 +1,12 @@
 
 <div class="flex flex-col w-full">
     <div class="flex flex-row gap-3 w-full">
-        <div class="flex flex-row justify-between items-center w-full">
-            <div class="flex flex-row gap-4">
+        <div class="flex flex-row justify-between items-center w-full items-center">
+            <div class="flex flex-row sm:gap-4 gap-2 items-center">
                 <div class="bg-[#38B6FF] w-1 pt-4 pb-4"></div>
                 <h1 class="text-xl xl:text-lg lg:text-base md:text-sm  font-bold">NBA  </h1>
             </div>
-            <div class=" flex justify-center my-5">
+            <div class=" flex justify-center my-5 items-center">
                 <a href="" class="text-[#1d9bf0] font-bold text-sm">View All NBA News</a>
             </div>
         </div>
@@ -16,12 +16,12 @@
     <div class="flex flex-col w-full xl:gap-5 lg:gap-3 md:gap-2 mt-3 ">
         {{--justify-between xl:justify-evenly lg:justify-between md:justify-between--}}
         <div class=" w-full   mb-3 ">
-            <div class="container-header">
+            <div class="container-header nba-container-header">
 
                 <div class="container-slider nba-container-slider">
                     <div class="slider-wrapper nba-slider-wrapper">
                         <!-- Slider controls -->
-                        <button type="button" id="prev-slide" class=" nba-slide-button absolute start-0 z-30   items-center justify-center  cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <button type="button" id="prev-slide" class=" nba-slide-button slide-button absolute start-0 z-30   items-center justify-center  cursor-pointer group focus:outline-none" data-carousel-prev>
                             <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                                 <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
@@ -42,72 +42,89 @@
                                 @endphp
                                 {{--{{ ($nba_count  > 6) ? 'hidden' : '' }}--}}
 
-                                <div class="nba-image-item" >
+                                <div class="nba-image-item image-item" >
                                     {{--<div class="flex flex-col   -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">--}}
 
-                                    <div class="  bg-white border rounded-[13px] border border-[#d9d9d9]">
-                                        <div class="flex flex-col mx-3 my-5 gap-2 items-center justify-center">
-                                            <img class="w-36" src="{{  ( !empty($val->player->images->uniform) ? $val->player->images->uniform : '')     }}">
+                                    <div class=" card-wd bg-white border rounded-[13px] border border-[#d9d9d9]">
+                                        <div class="flex flex-col gap-4 items-center justify-center relative">
 
-                                            @if($val->type->slug == 'available')
+                                            <div class=" px-3 pt-5">
+                                                @if(!empty($val->type->slug) && $val->type->slug == 'lineup-update')
+                                                    <img class="md:w-36 sm:w-28" src="{{  ( !empty($val->team->front_uniform->src) ? $val->team->front_uniform->src : '')     }}">
+                                                @else
+                                                    <img class="md:w-36 sm:w-28" src="{{  ( !empty($val->player->images->uniform) ? $val->player->images->uniform : '')     }}">
+                                                @endif
+                                            </div>
+
+                                            @if($val->type->slug == 'injury' || $val->type->slug == 'send-down' || $val->type->slug == 'suspension' || $val->type->slug == 'ruled-out' || $val->type->slug == 'healthy-scratch')
                                                 @php
-                                                    $nba_type_icon ='/images/line-combos/6523-information-6.png';
-                                                    $nba_bg_color = 'bg-green-500';
+                                                    $nba_bg_color = 'bg-[#F10000]';
                                                 @endphp
-                                            @elseif($val->type->slug == 'out')
+                                                @if($val->type->slug == 'injury')
+                                                    @php
+                                                        $nba_type_icon ='';
+                                                    @endphp
+                                                @else
+                                                    @php
+                                                        $nba_type_icon ='';
+                                                    @endphp
+                                                @endif
+                                            @elseif($val->type->slug == 'confirmed' || $val->type->slug == 'available' || $val->type->slug == 'call-up' || $val->type->slug == 'will-play')
                                                 @php
                                                     $nba_type_icon ='';
-                                                    $nba_bg_color = 'bg-red-500';
+                                                    $nba_bg_color = 'bg-[#15D869]';
                                                 @endphp
-                                            @elseif($val->type->slug == 'gtd')
+                                            @elseif($val->type->slug == 'expected' || $val->type->slug == 'probable')
                                                 @php
                                                     $nba_type_icon ='';
-                                                    $nba_bg_color = 'bg-black';
+                                                    $nba_bg_color = 'bg-[#FFCC00]';
+                                                @endphp
+                                            @elseif($val->type->slug == 'doubtful' || $val->type->slug == 'questionable')
+                                                @php
+                                                    $nba_bg_color = 'bg-[#FE6601]';
+                                                    $nba_type_icon ='';
+                                                @endphp
+                                            @elseif($val->type->slug == 'game-time-decision')
+                                                @php
+                                                    $nba_bg_color = 'bg-[#000000]';
+                                                    $nba_type_icon ='';
+                                                @endphp
+                                            @else
+                                                @php
+                                                    $nba_bg_color = 'bg-[#38B6FF]';
+                                                    $nba_type_icon ='';
                                                 @endphp
                                             @endif
-                                            <div class="flex flex-row justify-center gap-3 {{ $nba_bg_color }} p-2 text-white items-center w-10/12 rounded-[13px]">
-                                                {{--<img class="w-[15px] h-[15px]" src="{{ asset('/images/menu-icon/injury icon.png') }}">--}}
 
-                                                @if(!empty($nba_type_icon))
-                                                    <img class="w-[15px] h-[15px]" src="{{ asset($nba_type_icon) }}">
-                                                @endif
-
+                                            <div class="flex flex-row justify-center gap-3 {{ $nba_bg_color }} p-2 text-white items-center w-full rounded-b-[13px] ">
 
                                                 <p class="text-sm font-bold">
                                                     {{  ( !empty($val->type->name) ? $val->type->name : '')     }}
                                                 </p>
                                             </div>
-
-
-
                                         </div>
                                     </div>
 
                                     <div>
                                         <div class="flex flex-row items-center gap-2 justify-center my-2">
-
-
                                             @foreach($teams->data as $team)
                                                 @if($team->slug == $val->team->slug)
                                                     <img class="w-5" src="{{ $team->logo->src }}">
                                                 @endif
                                             @endforeach
-                                            <h1 class="text-base ">
+                                            <h1 class="sm:text-base text-sm">
                                                 {{  ( !empty($val->player->full_name) ? $val->player->full_name : '')     }}
                                             </h1>
                                         </div>
                                     </div>
                                     <div class="">
-                                        <div class="flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer nba-view-news " rel="modalNba-{{$val->id}}" >
+                                        <div class="card-wd flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer nba-view-news view-news" rel="modalNba-{{$val->id}}" >
                                             <img class="w-[15px] " src="{{ asset('/images/home-page/plus.png') }}">
                                             <h1 class="text-base ">
                                                 view news
-
                                             </h1>
                                         </div>
                                         <div class="h-full nba-view-news-desc  hidden" id="nba-{{$val->id}}">
-
-
                                             <div  class="flex flex-col gap-2 items-start p-[12%]   bg-white h-full  justify-between text-wrap w-auto rounded-lg" >
                                                 <div class="text-sm">{{$val->description}}</div>
 
@@ -161,9 +178,9 @@
                                                     From: "opacity-100 translate-y-0 sm:scale-100"
                                                     To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                                                 -->
-                                                <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                                                <div class="modal-center relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
 
-                                                    <div class="close-modal" rel="modalNba-{{$val->id}}"></div>
+                                                    <div class="close-modal cursor-pointer" rel="modalNba-{{$val->id}}"></div>
 
 
                                                     {{--<div class="relative">--}}
@@ -224,9 +241,9 @@
                                                                     </div>
                                                                 </div>
 
-                                                                <div class=" ">
-                                                                    <img class="w-44" src="{{ asset('/images/projectedlineup_logo.png') }}">
-                                                                </div>
+                                                                {{--<div class=" ">--}}
+                                                                    {{--<img class="w-44" src="{{ asset('/images/projectedlineup_logo.png') }}">--}}
+                                                                {{--</div>--}}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -249,7 +266,7 @@
                             @endforeach
 
                         </div>
-                        <button type="button" id="next-slide" class=" nba-slide-button absolute  end-0 z-30  items-center justify-center  cursor-pointer group focus:outline-none right-0"  data-carousel-next>
+                        <button type="button" id="next-slide" class=" nba-slide-button slide-button absolute  end-0 z-30  items-center justify-center  cursor-pointer group focus:outline-none right-0"  data-carousel-next>
                             <span class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                                 <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>

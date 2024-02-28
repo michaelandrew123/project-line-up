@@ -10,12 +10,43 @@
 
 
 <script>
-    //view news nhl
-    $('.nhl-view-news').on('touchstart click', function(){
-             var data = $(this).attr('rel');
-        $('.modalNhl').addClass('hidden');
-        $('#' + data).removeClass('hidden');
+
+
+    $('body').addClass('dark');
+
+    // var copy = document.querySelector(".marquee").cloneNode(true);
+    //
+    // console.log(copy);
+    //
+    // document.querySelector(".marquee-parent").appendChild(copy);
+
+
+
+    $('#logo-matchup > .home-away-logo').on('touchstart click', function(){
+        // console.log('hello ', $(this).attr('rel'));
+
+        var data = $(this).attr('rel');
+
+        // if(!$('.home-away-starting-goalies').hasClass('hidden')){
+            $('.home-away-starting-goalies').addClass('hidden');
+            $('#'+data).removeClass('hidden');
+        // }
     })
+
+  window.assetUrl = '{{ asset(config('app.asset_url')) }}';
+    // $(".col-md-4").slice(0, 3).show();
+    // $("body").on('click touchstart', '.load-more', function (e) {
+    //     e.preventDefault();
+    //     $(".col-md-4:hidden").slice(0, 3).slideDown();
+    //     if ($(".col-md-4:hidden").length == 0) {
+    //         $(".load-more").css('visibility', 'hidden');
+    //     }
+    //     $('html,body').animate({
+    //         scrollTop: $(this).offset().top
+    //     }, 1000);
+    // });
+
+    //view news nhl
 
     $('.nhlsg-view-news').on('touchstart click', function(){
         var data = $(this).attr('rel');
@@ -35,6 +66,182 @@
         var data = $(this).attr('rel');
         $('#' + data).addClass('hidden');
     })
+    $('#pn-load-more').on('touchstart click', function(){
+
+    })
+
+    if($('.pn-all').length <= 20){
+        $('#pn-load-more').addClass('hidden');
+    }else{
+        $('#pn-load-more').removeClass('hidden');
+    }
+    $('ul#nhl-sub-items > li').on('touchstart click', function(){
+
+        $('#nhl-pn-loading_').removeClass('hidden');
+        // $('#pn-item-content').empty();
+        var type = $(this).attr('rel');
+        $('.pn-sub-active').removeClass('pn-sub-active');
+
+        $('.'+type).addClass('pn-sub-active');
+
+        $('.nhl-pn-sub-image-item').addClass('hidden');
+        $('.pn-'+type).removeClass('hidden');
+
+
+        if($('.pn-'+type).length <= 20){
+            $('#pn-load-more').addClass('hidden');
+        }else{
+            $('#pn-load-more').removeClass('hidden');
+        }
+        {{--pn-{{$val->type->slug}} lenght --}}
+        $('#nhl-pn-loading_').addClass('hidden');
+        //
+        // fetch(`https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nhl&f[type]=${type}`).then((response) => {
+        //     return response.json();
+        // })
+        // .then((data) => {
+        //     console.log('images ', data.data)
+        //     $('#nhl-pn-loading_').addClass('hidden');
+        //     let typeStatus ='';
+        //     data.data.map(function(item) {
+        //
+        //         if(item.type.slug != '' && item.type.slug != null && item.type.slug == 'lineup-update'){
+        //              typeStatus = item.metafields.lineup_status.name
+        //         }else{
+        //              typeStatus = item.type.name
+        //         }
+        //         $('#pn-item-content').append('' +
+        //                 '<div class="nhl-pn-sub-image-item image-item"  >' +
+        //                     '<div class="  bg-white border rounded-[13px] border border-[#d9d9d9]">' +
+        //                         '<div class="flex flex-col gap-4 items-center justify-center relative"> ' +
+        //                             '<div class=" px-3 pt-5">' +
+        //                                 '<img class="w-44" src="'+item.team.front_uniform.src+'">' +
+        //                             '</div>' +
+        //                             '<div class="flex flex-row justify-center gap-3  bg-yellow-500 p-2 text-white items-center w-full rounded-b-[13px]">' +
+        //                                 '<p class="text-sm font-bold">'+
+        //
+        //                                     typeStatus +
+        //
+        //                                 '</p>' +
+        //                             '</div>' +
+        //                         '</div>' +
+        //                     '</div>' +
+        //
+        //                     '<div>' +
+        //                         '<div class="flex flex-row items-center gap-2 justify-center my-2">' +
+        //                             '<img class="w-5" src="'+ item.team.logo.src+'">' +
+        //                             ' <h1 class="text-base ">' +
+        //                                 item.team.name +
+        //                             '</h1>' +
+        //                         '</div>' +
+        //                     '</div>' +
+        //                     '<div class="">' +
+        //                         '<div class="flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer nhl-view-news " rel="modalNhl-'+item.id +'}}" >' +
+        //                             '<img class="w-[15px] h-[15px]" src="/images/home-page/plus.png">' +
+        //                             '<h1 class="text-base ">' +
+        //                                 'view news' +
+        //                             '</h1>' +
+        //                         '</div>' +
+        //                     '</div>' +
+        //                 '</div>'
+        //                 // '<div class="absolute">' +
+        //                 //     '<div class="relative z-30 hidden modalNhlSg '+ item.id +'ease-out duration-300" id="modalNhlSg-' +item.id +'" aria-labelledby="modal-title" role="dialog" aria-modal="true">' +
+        //                 //         '<div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>' +
+        //                 //         '<div class="fixed inset-0 z-10 w-screen overflow-y-auto">' +
+        //                 //             '<div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">' +
+        //                 //                 '<div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">'+
+        //                 //                     '<div class="close-modal" rel="modalNhlSg-'+item.id +'"></div>'+
+        //                 //                     '<div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">' +
+        //                 //                         '<div class="flex flex-col gap-4 w-full h-full relative rounded-xl bg-white  ">' +
+        //                 //                             '<div class="flex m-3 mt-5 gap-5">' +
+        //                 //                                 '<img class="w-[150px] " src="' +  (item.player.images.uniform) ? item.player.images.uniform : ''  + '">' +
+        //                 //                                 '<div class="flex flex-col gap-3">' +
+        //                 //                                     '<div class="flex flex-row gap-2">' +
+        //                 //                                         '<img class="w-[15px] h-[15px]" src="' + ($sg_type_icon) ? $sg_type_icon : '' +'">' +
+        //                 //                                         '<p class="text-sm font-bold">' +
+        //                 //                                             (item.metafields.goalie_status.name) ? item.metafields.goalie_status.name : '' +
+        //                 //                                         '</p>' +
+        //                 //                                     '</div>' +
+        //                 //
+        //                 //                                     '<div class="flex flex-col">' +
+        //                 //                                         '<h1 class="text-2xl font-bold">' +
+        //                 //                                             (item.player.full_name) ? item.player.full_name : '' +
+        //                 //                                         '</h1>' +
+        //                 //                                         '<p class="text-[12px] font-semibold">' +
+        //                 //                                             (item.team.name) ? item.team.name : '' +
+        //                 //                                         '</p>' +
+        //                 //                                     '</div>' +
+        //                 //                                 '</div>' +
+        //                 //                             '</div>' +
+        //                 //                             '<div class=" m-3 mb-2 lg:pb-3 md:pb-1 flex flex-col gap-4">' +
+        //                 //                                 '<div class="modal-title text-sm font-bold">' + item.title + '</div>'+
+        //                 //                                 '<div class="text-sm">' + item.description + '</div>'+
+        //                 //                             '</div>' +
+        //                 //                             '<div class="m-3 flex  flex-col gap-4 items-center">' +
+        //                 //                                 '<div class="flex flex-row justify-between gap-2  w-full">' +
+        //                 //                                     '<div  >' +
+        //                 //                                         '<a class="  flex flex-row items-center gap-2" href="'+item.source.url+'">' +
+        //                 //                                             '<img class="w-7 h-7" src="/images/twitter.png">' +
+        //                 //                                             '<div>' +
+        //                 //                                                 '<h3 class="text-xs font-extrabold">'+item.source.name+'</h3>' +
+        //                 //                                             '</div>' +
+        //                 //                                         '</a>' +
+        //                 //                                     '</div>' +
+        //                 //                                     '<div class="  flex flex-row items-center gap-2 ">' +
+        //                 //                                         '<a href="'+item.source.url+'">' +
+        //                 //                                             '<img class="w-7 h-7" src="/images/6523-information-5.png">' +
+        //                 //                                         '</a>' +
+        //                 //                                         '<div>' +
+        //                 //                                             '<p class="text-xs font-bold">'+item.published_at.date+' | '+item.published_at.time+'</p>' +
+        //                 //                                         '</div>' +
+        //                 //                                     '</div>' +
+        //                 //                                 '</div>' +
+        //                 //                             '</div>' +
+        //                 //                         '</div>' +
+        //                 //                     '</div>' +
+        //                 //                 '</div>' +
+        //                 //             '</div>' +
+        //                 //         '</div>' +
+        //                 //     '</div>' +
+        //                 // '</div>'
+        //         )
+        //     });
+        // }).catch(function(e) {
+        //     console.log(e)
+        // });
+    });
+
+    $('.nhl-view-news').on('touchstart click', function(){
+        var data = $(this).attr('rel');
+
+        $('.modalNhl').addClass('hidden');
+        $('#' + data).removeClass('hidden');
+    })
+
+    $('.nfl-view-news').on('touchstart click', function(){
+        var data = $(this).attr('rel');
+        $('.modalNfl').addClass('hidden');
+        $('#' + data).removeClass('hidden');
+    })
+    //NHL PN
+    $('.view-news').on('touchstart click', function(){
+        var data = $(this).attr('rel');
+
+        $('.modalPn').addClass('hidden');
+        $('#' + data).removeClass('hidden');
+    })
+    $('.starting-goalies-view-card').on('touchstart click', function(){
+        var data = $(this).attr('rel');
+
+          $('.sg-modal-view-card-home').addClass('hidden');
+          $('#' + data).removeClass('hidden');
+    })
+    $('.starting-goalies-away-view-card').on('touchstart click', function(){
+        var data = $(this).attr('rel');
+
+        $('.sg-modal-view-card-away').addClass('hidden');
+        $('#' + data).removeClass('hidden');
+    })
 
 
     // $('#search-nhl-home').on('keydown')
@@ -53,18 +260,13 @@
                 // items = data;
                 $('#item-content').empty();
 
-                console.log(data);
                 data.data.map(function(item) {
-
-                    console.log('items ', item);
-                    console.log('items ', item.type);
                     let urlType="";
                     if(item.item.type == 'team'){
                         urlType=item.item.metadata.league.slug +'/line-combos/' + item.item.metadata.team.slug;
                     }else{
                         urlType='';
                     }
-
 
                     $('#item-content').append('<li class="flex flex-row gap-2 items-center py-2 items-center justify-letf px-2" >' +
                         '<a href="/'+urlType+'" class="flex flex-row gap-2"> <div> <img class="items-avatar w-6 h-6 rounded-full" src="'+ item.item.image +'" alt=""..." />  </div>' +
@@ -1142,165 +1344,165 @@ const data = {
     
 
     // render init block
-    const myChart = new Chart(
-      document.getElementById('myChart'),
-      config
-    );
-    myChart.canvas.addEventListener('mousemove', (e) => {
-      crosshair(myChart, e);
-    })
-     
-    function crosshair(chart, mousemove){
-      chart.update('none');
-      console.log(mousemove)
-      const x = mousemove.offsetX;
-      const y = mousemove.offsetY;
-
-      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
-      ctx.save();
-
-      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
-      ctx.lineWidth = 2;
-
-      ctx.beginPath();
-      ctx.moveTo(left, mousemove.offsetY);
-      ctx.lineTo(right, mousemove.offsetY);
-      ctx.stroke();
-      ctx.closepath();
-    }
-
-
-    const newChart = new Chart(
-      document.getElementById('newChart'),
-      config
-    );
-    newChart.canvas.addEventListener('mousemove', (e) => {
-      crosshair(newChart, e);
-    })
-     
-    function crosshair(chart, mousemove){
-      chart.update('none');
-      console.log(mousemove)
-      const x = mousemove.offsetX;
-      const y = mousemove.offsetY;
-
-      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
-      ctx.save();
-
-      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
-      ctx.lineWidth = 2;
-
-      ctx.beginPath(left,  mousemove.offsetY);
-      ctx.moveTo(left,  mousemove.offsetY);
-      ctx.lineTo(right, mousemove.offsetY);
-      ctx.stroke();
-      ctx.closepath();
-    }
-
-    const newChart2 = new Chart(
-      document.getElementById('newChart2'),
-      config
-    );
-    newChart2.canvas.addEventListener('mousemove', (e) => {
-      crosshair(newChart2, e);
-    })
-     
-    function crosshair(chart, mousemove){
-      chart.update('none');
-      console.log(mousemove)
-      const x = mousemove.offsetX;
-      const y = mousemove.offsetY;
-
-      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
-      ctx.save();
-
-      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
-      ctx.lineWidth = 2;
-
-      ctx.beginPath(left,  mousemove.offsetY);
-      ctx.moveTo(left,  mousemove.offsetY);
-      ctx.lineTo(right, mousemove.offsetY);
-      ctx.stroke();
-      ctx.closepath();
-    }
-    const newChart3 = new Chart(
-      document.getElementById('newChart3'),
-      config
-    );
-    newChart3.canvas.addEventListener('mousemove', (e) => {
-      crosshair(newChart3, e);
-    })
-     
-    function crosshair(chart, mousemove){
-      chart.update('none');
-      console.log(mousemove)
-      const x = mousemove.offsetX;
-      const y = mousemove.offsetY;
-
-      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
-      ctx.save();
-
-      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
-      ctx.lineWidth = 2;
-
-      ctx.beginPath(left,  mousemove.offsetY);
-      ctx.moveTo(left,  mousemove.offsetY);
-      ctx.lineTo(right, mousemove.offsetY);
-      ctx.stroke();
-      ctx.closepath();
-    }
-    const newChart4 = new Chart(
-      document.getElementById('newChart4'),
-      config
-    );
-    newChart4.canvas.addEventListener('mousemove', (e) => {
-      crosshair(newChart4, e);
-    })
-     
-    function crosshair(chart, mousemove){
-      chart.update('none');
-      console.log(mousemove)
-      const x = mousemove.offsetX;
-      const y = mousemove.offsetY;
-
-      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
-      ctx.save();
-
-      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
-      ctx.lineWidth = 2;
-
-      ctx.beginPath(left,  mousemove.offsetY);
-      ctx.moveTo(left,  mousemove.offsetY);
-      ctx.lineTo(right, mousemove.offsetY);
-      ctx.stroke();
-      ctx.closepath();
-    }
-    const newChart5 = new Chart(
-      document.getElementById('newChart5'),
-      config
-    );
-    newChart5.canvas.addEventListener('mousemove', (e) => {
-      crosshair(newChart5, e);
-    })
-     
-    function crosshair(chart, mousemove){
-      chart.update('none');
-      console.log(mousemove)
-      const x = mousemove.offsetX;
-      const y = mousemove.offsetY;
-
-      const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
-      ctx.save();
-
-      ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
-      ctx.lineWidth = 2;
-
-      ctx.beginPath(left,  mousemove.offsetY);
-      ctx.moveTo(left,  mousemove.offsetY);
-      ctx.lineTo(right, mousemove.offsetY);
-      ctx.stroke();
-      ctx.closepath();
-    }
+    // const myChart = new Chart(
+    //   document.getElementById('myChart'),
+    //   config
+    // );
+    // myChart.canvas.addEventListener('mousemove', (e) => {
+    //   crosshair(myChart, e);
+    // })
+    //
+    // function crosshair(chart, mousemove){
+    //   chart.update('none');
+    //   console.log(mousemove)
+    //   const x = mousemove.offsetX;
+    //   const y = mousemove.offsetY;
+    //
+    //   const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+    //   ctx.save();
+    //
+    //   ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+    //   ctx.lineWidth = 2;
+    //
+    //   ctx.beginPath();
+    //   ctx.moveTo(left, mousemove.offsetY);
+    //   ctx.lineTo(right, mousemove.offsetY);
+    //   ctx.stroke();
+    //   ctx.closepath();
+    // }
+    //
+    //
+    // const newChart = new Chart(
+    //   document.getElementById('newChart'),
+    //   config
+    // );
+    // newChart.canvas.addEventListener('mousemove', (e) => {
+    //   crosshair(newChart, e);
+    // })
+    //
+    // function crosshair(chart, mousemove){
+    //   chart.update('none');
+    //   console.log(mousemove)
+    //   const x = mousemove.offsetX;
+    //   const y = mousemove.offsetY;
+    //
+    //   const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+    //   ctx.save();
+    //
+    //   ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+    //   ctx.lineWidth = 2;
+    //
+    //   ctx.beginPath(left,  mousemove.offsetY);
+    //   ctx.moveTo(left,  mousemove.offsetY);
+    //   ctx.lineTo(right, mousemove.offsetY);
+    //   ctx.stroke();
+    //   ctx.closepath();
+    // }
+    //
+    // const newChart2 = new Chart(
+    //   document.getElementById('newChart2'),
+    //   config
+    // );
+    // newChart2.canvas.addEventListener('mousemove', (e) => {
+    //   crosshair(newChart2, e);
+    // })
+    //
+    // function crosshair(chart, mousemove){
+    //   chart.update('none');
+    //   console.log(mousemove)
+    //   const x = mousemove.offsetX;
+    //   const y = mousemove.offsetY;
+    //
+    //   const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+    //   ctx.save();
+    //
+    //   ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+    //   ctx.lineWidth = 2;
+    //
+    //   ctx.beginPath(left,  mousemove.offsetY);
+    //   ctx.moveTo(left,  mousemove.offsetY);
+    //   ctx.lineTo(right, mousemove.offsetY);
+    //   ctx.stroke();
+    //   ctx.closepath();
+    // }
+    // const newChart3 = new Chart(
+    //   document.getElementById('newChart3'),
+    //   config
+    // );
+    // newChart3.canvas.addEventListener('mousemove', (e) => {
+    //   crosshair(newChart3, e);
+    // })
+    //
+    // function crosshair(chart, mousemove){
+    //   chart.update('none');
+    //   console.log(mousemove)
+    //   const x = mousemove.offsetX;
+    //   const y = mousemove.offsetY;
+    //
+    //   const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+    //   ctx.save();
+    //
+    //   ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+    //   ctx.lineWidth = 2;
+    //
+    //   ctx.beginPath(left,  mousemove.offsetY);
+    //   ctx.moveTo(left,  mousemove.offsetY);
+    //   ctx.lineTo(right, mousemove.offsetY);
+    //   ctx.stroke();
+    //   ctx.closepath();
+    // }
+    // const newChart4 = new Chart(
+    //   document.getElementById('newChart4'),
+    //   config
+    // );
+    // newChart4.canvas.addEventListener('mousemove', (e) => {
+    //   crosshair(newChart4, e);
+    // })
+    //
+    // function crosshair(chart, mousemove){
+    //   chart.update('none');
+    //   console.log(mousemove)
+    //   const x = mousemove.offsetX;
+    //   const y = mousemove.offsetY;
+    //
+    //   const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+    //   ctx.save();
+    //
+    //   ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+    //   ctx.lineWidth = 2;
+    //
+    //   ctx.beginPath(left,  mousemove.offsetY);
+    //   ctx.moveTo(left,  mousemove.offsetY);
+    //   ctx.lineTo(right, mousemove.offsetY);
+    //   ctx.stroke();
+    //   ctx.closepath();
+    // }
+    // const newChart5 = new Chart(
+    //   document.getElementById('newChart5'),
+    //   config
+    // );
+    // newChart5.canvas.addEventListener('mousemove', (e) => {
+    //   crosshair(newChart5, e);
+    // })
+    //
+    // function crosshair(chart, mousemove){
+    //   chart.update('none');
+    //   console.log(mousemove)
+    //   const x = mousemove.offsetX;
+    //   const y = mousemove.offsetY;
+    //
+    //   const { ctx, chartArea: { top, bottom, left, right, width } } = chart;
+    //   ctx.save();
+    //
+    //   ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+    //   ctx.lineWidth = 2;
+    //
+    //   ctx.beginPath(left,  mousemove.offsetY);
+    //   ctx.moveTo(left,  mousemove.offsetY);
+    //   ctx.lineTo(right, mousemove.offsetY);
+    //   ctx.stroke();
+    //   ctx.closepath();
+    // }
 
 
     

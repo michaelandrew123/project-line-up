@@ -1,22 +1,15 @@
-@extends('layouts.master-nhl')
-
+{{--@extends('layouts.master-nhl')--}}
+@extends('layouts.master-nhl-v1')
 @section('content')
-
-
+ 
 <style>
 
     body{
         background-color: #f5f5f5;
     }
 </style>
-
-
-
-
-
-
-    <div class="w-full flex justify-center block smm-hidden  ">
-        <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col items-center gap-10 max-w-screen-2xl ">
+    <div class="w-full flex justify-center block  ">
+        <div class="  flex flex-col items-center gap-10 xl:w-11/12 lg:w-11/12  md:w-11/12 sm:w-11/12 smm-w-11-12 md:max-w-screen-2xl ">
 
 
 
@@ -78,20 +71,27 @@
 
 
 
-            <div class="w-full  flex flex-col  mt-10 gap-6  ">
-                <h1 class="xl:text-6xl lg:text-5xl md:text-5xl font-bold text-center text-black hidden">Your destination for fantasy sports <br> players and bettors</h1>
+            <div class="w-full  flex flex-col  mt-10 sm:gap-6 gap-4 ">
+                <div id="vue-nhl-home">
+                    <trending-today></trending-today>
+                </div>
                 @include('pages.nhl-home.player-news')
                 @include('pages.nhl-home.line-combination')
                 @include('pages.nhl-home.starting-goalies')
+                <div class="hidden">
+                    <h1 class="xl:text-6xl lg:text-5xl md:text-5xl font-bold text-center text-black hidden">Your destination for fantasy sports <br> players and bettors</h1>
+
+
+                </div>
             </div>
         </div>
     </div>
     <!-- API link  https://api.projectedlineups.com/v1/sports/leagues -->
     <!-- Mobile design -->
-    <div class="w-full smm-block hidden">
+    <div class="w-full hidden">
         <div class="flex flex-col items-center mx-2">
             <img class="w-full mb-5 hidden" src="{{ asset('/images/menu-icon/adds_header.png') }}">
-            <div class="w-full">
+            <div class="w-full hidden">
                 <div class="w-full h-auto flex justify-center relative">
                     <img class="w-[45%] z-0 absolute left-0 bottom-0" src="{{ asset('/images/menu-icon/auston matthews (1).png') }}" alt="">
                     <img class="w-[42%] z-20" src="{{ asset('/images/menu-icon/player4.png') }}" alt="">
@@ -105,7 +105,7 @@
                 </div>
             </div>
             <h1 class="text-3xl font-bold text-center text-black my-5">Your destination for fantasy sports  players and bettors</h1>
-            <div class="w-full flex flex-col">
+            <div class="w-full flex flex-col hidden">
                 <div class="w-full flex flex-row gap-2">
                     <a class="w-full flex flex-col bg-[#ff3131] border rounded-lg" href="">
                         <div class="flex flex-row justify-between w-6/12 ml-[10%] py-3">
@@ -149,7 +149,4 @@
             </div>
         </div>
     </div>
-
-
-
 @endsection
