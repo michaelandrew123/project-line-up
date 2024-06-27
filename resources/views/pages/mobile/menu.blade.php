@@ -8,6 +8,7 @@
                 <div class='menu-button'></div>
             </label>
             <ul class="menu">
+
                 <li class="xl:text-[24px] lg:text-[22px] md:text-[20px] font-bold bg-[#38b6ff] text-[#ffffff]  xl:px-4 lg:px-4 md:px-2  py-2  hover:bg-sky-500/50 hover:border-sky-50 hover:text-white">
                     <a href="{{url('/nhl/home')}}" class="w-full ">
                         NHL

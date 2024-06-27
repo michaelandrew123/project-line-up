@@ -6,21 +6,207 @@
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-
-
+{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>--}}
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
 <script>
 
 
-    $('body').addClass('dark');
-
-    // var copy = document.querySelector(".marquee").cloneNode(true);
-    //
-    // console.log(copy);
-    //
-    // document.querySelector(".marquee-parent").appendChild(copy);
 
 
+
+
+    var scrolling = false;
+    var longPress = false;
+
+    var scrollEndTimer = null;
+    $('.nba-image-list, .nhl-image-list, .nfl-image-list, .mlb-image-list, .nhl-sg-image-list, .nhl-pn-image-list, .nhl-lc-image-list').scroll(function() {
+        scrolling = true;
+
+        clearTimeout(scrollEndTimer);
+        scrollEndTimer = setTimeout(function() {
+            scrolling = false;
+        }, 250);
+
+        console.log('scrool status ', scrolling);
+    });
+
+
+
+
+    $(window).scroll(function() {
+        scrolling = true;
+        clearTimeout($.data(this, 'scrollTimer'));
+        $.data(this, 'scrollTimer', setTimeout(function() {
+            scrolling = false;
+        }, 250)); // Adjust the debounce time as needed
+
+
+
+
+        // $('#nba-image-list').
+    });
+
+    var touchDuration = 0;
+    var touchStartTime;
+    // var scrolling = false; // Assuming scrolling status is determined elsewhere
+    var timeoutID;
+
+    $('.nhl-view-news, .view-news, .nhlsg-view-news, .nba-view-news, .nfl-view-news, .mlb-view-news, .epl-view-news').on('touchstart', function(event){
+        touchStartTime = new Date().getTime();
+
+        timeoutID = setTimeout(function(){
+            var touchEndTime = new Date().getTime();
+            touchDuration = touchEndTime - touchStartTime;
+
+            if (touchDuration >= 1000) {
+                // Long press detected, do nothing
+                longPress = true;
+                console.log("Long press detected, touchstart ignored");
+            }
+        }, 1000);
+    });
+
+    $('.nhl-view-news').on('touchend click', function(event){
+        clearTimeout(timeoutID);
+
+        if(!scrolling && touchDuration < 1000) {
+            // Regular touchstart, perform action
+            // Your regular touchstart action code here
+            var data = $(this).attr('rel');
+            $('body').addClass('overflow-hidden');
+            $('.modalNhl').addClass('hidden');
+            $('#' + data).removeClass('hidden');
+        }
+        touchDuration = 0;
+    });
+    $('.view-news').on('touchend click', function(event){
+        clearTimeout(timeoutID);
+
+        if(!scrolling && touchDuration < 1000) {
+            // Regular touchstart, perform action
+            // Your regular touchstart action code here
+            var data = $(this).attr('rel');
+            $('body').addClass('overflow-hidden');
+            $('.modal').addClass('hidden');
+            $('#' + data).removeClass('hidden');
+        }
+        touchDuration = 0;
+    });
+    //view news nhl
+    $('.nhlsg-view-news').on('touchend click', function(){
+        clearTimeout(timeoutID);
+        event.preventDefault();
+
+        if(!scrolling && touchDuration < 1000) {
+            var data = $(this).attr('rel');
+            $('body').addClass('overflow-hidden');
+            $('.modalNhlSg').addClass('hidden');
+            $('#' + data).removeClass('hidden');
+        }
+        touchDuration = 0;
+    })
+
+    //view news nba
+    $('.nba-view-news').on('touchend click', function(){
+
+        clearTimeout(timeoutID);
+        event.preventDefault();
+        if(!scrolling && touchDuration < 1000) {
+            var data = $(this).attr('rel');
+            $('body').addClass('overflow-hidden');
+            $('.modalNba').addClass('hidden');
+            $('#' + data).removeClass('hidden');
+        }
+        // else{
+        //     // If scrolling is in progress, defer the action
+        //     console.log('Scrolling is in progress. Deferring action...');
+        //     return;
+        // }
+
+
+        touchDuration = 0;
+    })
+
+
+
+
+    $('.nfl-view-news').on('touchend click', function(event){
+        clearTimeout(timeoutID);
+        event.preventDefault();
+
+        if(!scrolling && touchDuration < 1000) {
+            $('body').addClass('overflow-hidden');
+            var data = $(this).attr('rel');
+            $('.modalNfl').addClass('hidden');
+            $('#' + data).removeClass('hidden');
+        }
+        touchDuration = 0;
+    })
+
+
+    $('.mlb-view-news').on('touchend click', function(event){
+        clearTimeout(timeoutID);
+        event.preventDefault();
+        if(!scrolling && touchDuration < 1000) {
+            var data = $(this).attr('rel');
+            $('body').addClass('overflow-hidden');
+            $('.modalMbl').addClass('hidden');
+            $('#' + data).removeClass('hidden');
+        }
+        touchDuration = 0;
+    })
+
+    $('.epl-view-news').on('touchend click', function(event){
+        clearTimeout(timeoutID);
+        event.preventDefault();
+        if(!scrolling && touchDuration < 1000) {
+            var data = $(this).attr('rel');
+            $('body').addClass('overflow-hidden');
+            $('.modalMbl').addClass('hidden');
+            $('#' + data).removeClass('hidden');
+        }
+        touchDuration = 0;
+    })
+
+
+
+
+    if (window.matchMedia("(max-width: 639px)").matches) {
+        var $footerMenu = $('#mobile-footer-menu-123');
+
+        $('.modal-center').css('margin-bottom', ($footerMenu.height() + 10) + 'px')
+        $('.container-none').css('margin-bottom', ($footerMenu.height() + 10) + 'px');
+        // $footerMenu.addClass('fixed');
+        // $footerMenu.addClass('bottom-0');
+    }
+
+
+    let currentScroll = 0;
+    let isScrollingDown = true;
+
+    let tween = gsap.to(".marquee__part", {xPercent: -100, repeat: -1, duration: 50, ease: "linear"}).totalProgress(0.5);
+
+    gsap.set(".marquee__inner", {xPercent: -50});
+
+    window.addEventListener("scroll", function(){
+
+        if ( window.pageYOffset > currentScroll ) {
+            isScrollingDown = true;
+        } else {
+            isScrollingDown = false;
+        }
+
+        gsap.to(tween, {
+            timeScale: isScrollingDown ? 1 : -1
+        });
+
+        currentScroll = window.pageYOffset
+    });
+
+
+     // $('body').addClass('dark');
+    $('#marquee-parent').width($('#marquee1').width());
 
     $('#logo-matchup > .home-away-logo').on('touchstart click', function(){
         // console.log('hello ', $(this).attr('rel'));
@@ -46,27 +232,17 @@
     //     }, 1000);
     // });
 
-    //view news nhl
 
-    $('.nhlsg-view-news').on('touchstart click', function(){
-        var data = $(this).attr('rel');
-        $('.modalNhlSg').addClass('hidden');
-        $('#' + data).removeClass('hidden');
-    })
-
-    //view news nba
-    $('.nba-view-news').on('touchstart click', function(){
-        var data = $(this).attr('rel');
-        $('.modalNba').addClass('hidden');
-        $('#' + data).removeClass('hidden');
-
-    })
 
     $('.close-modal').click('touchstart click', function(){
         var data = $(this).attr('rel');
+        $('body').removeClass('overflow-hidden');
         $('#' + data).addClass('hidden');
     })
-    $('#pn-load-more').on('touchstart click', function(){
+
+
+
+    $('#pn-load-more').on('pointerdown click', function(){
 
     })
 
@@ -93,163 +269,58 @@
         }else{
             $('#pn-load-more').removeClass('hidden');
         }
-        {{--pn-{{$val->type->slug}} lenght --}}
         $('#nhl-pn-loading_').addClass('hidden');
-        //
-        // fetch(`https://api.projectedlineups.com/v1/content/cards/cards?f[league]=nhl&f[type]=${type}`).then((response) => {
-        //     return response.json();
-        // })
-        // .then((data) => {
-        //     console.log('images ', data.data)
-        //     $('#nhl-pn-loading_').addClass('hidden');
-        //     let typeStatus ='';
-        //     data.data.map(function(item) {
-        //
-        //         if(item.type.slug != '' && item.type.slug != null && item.type.slug == 'lineup-update'){
-        //              typeStatus = item.metafields.lineup_status.name
-        //         }else{
-        //              typeStatus = item.type.name
-        //         }
-        //         $('#pn-item-content').append('' +
-        //                 '<div class="nhl-pn-sub-image-item image-item"  >' +
-        //                     '<div class="  bg-white border rounded-[13px] border border-[#d9d9d9]">' +
-        //                         '<div class="flex flex-col gap-4 items-center justify-center relative"> ' +
-        //                             '<div class=" px-3 pt-5">' +
-        //                                 '<img class="w-44" src="'+item.team.front_uniform.src+'">' +
-        //                             '</div>' +
-        //                             '<div class="flex flex-row justify-center gap-3  bg-yellow-500 p-2 text-white items-center w-full rounded-b-[13px]">' +
-        //                                 '<p class="text-sm font-bold">'+
-        //
-        //                                     typeStatus +
-        //
-        //                                 '</p>' +
-        //                             '</div>' +
-        //                         '</div>' +
-        //                     '</div>' +
-        //
-        //                     '<div>' +
-        //                         '<div class="flex flex-row items-center gap-2 justify-center my-2">' +
-        //                             '<img class="w-5" src="'+ item.team.logo.src+'">' +
-        //                             ' <h1 class="text-base ">' +
-        //                                 item.team.name +
-        //                             '</h1>' +
-        //                         '</div>' +
-        //                     '</div>' +
-        //                     '<div class="">' +
-        //                         '<div class="flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer nhl-view-news " rel="modalNhl-'+item.id +'}}" >' +
-        //                             '<img class="w-[15px] h-[15px]" src="/images/home-page/plus.png">' +
-        //                             '<h1 class="text-base ">' +
-        //                                 'view news' +
-        //                             '</h1>' +
-        //                         '</div>' +
-        //                     '</div>' +
-        //                 '</div>'
-        //                 // '<div class="absolute">' +
-        //                 //     '<div class="relative z-30 hidden modalNhlSg '+ item.id +'ease-out duration-300" id="modalNhlSg-' +item.id +'" aria-labelledby="modal-title" role="dialog" aria-modal="true">' +
-        //                 //         '<div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>' +
-        //                 //         '<div class="fixed inset-0 z-10 w-screen overflow-y-auto">' +
-        //                 //             '<div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">' +
-        //                 //                 '<div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">'+
-        //                 //                     '<div class="close-modal" rel="modalNhlSg-'+item.id +'"></div>'+
-        //                 //                     '<div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">' +
-        //                 //                         '<div class="flex flex-col gap-4 w-full h-full relative rounded-xl bg-white  ">' +
-        //                 //                             '<div class="flex m-3 mt-5 gap-5">' +
-        //                 //                                 '<img class="w-[150px] " src="' +  (item.player.images.uniform) ? item.player.images.uniform : ''  + '">' +
-        //                 //                                 '<div class="flex flex-col gap-3">' +
-        //                 //                                     '<div class="flex flex-row gap-2">' +
-        //                 //                                         '<img class="w-[15px] h-[15px]" src="' + ($sg_type_icon) ? $sg_type_icon : '' +'">' +
-        //                 //                                         '<p class="text-sm font-bold">' +
-        //                 //                                             (item.metafields.goalie_status.name) ? item.metafields.goalie_status.name : '' +
-        //                 //                                         '</p>' +
-        //                 //                                     '</div>' +
-        //                 //
-        //                 //                                     '<div class="flex flex-col">' +
-        //                 //                                         '<h1 class="text-2xl font-bold">' +
-        //                 //                                             (item.player.full_name) ? item.player.full_name : '' +
-        //                 //                                         '</h1>' +
-        //                 //                                         '<p class="text-[12px] font-semibold">' +
-        //                 //                                             (item.team.name) ? item.team.name : '' +
-        //                 //                                         '</p>' +
-        //                 //                                     '</div>' +
-        //                 //                                 '</div>' +
-        //                 //                             '</div>' +
-        //                 //                             '<div class=" m-3 mb-2 lg:pb-3 md:pb-1 flex flex-col gap-4">' +
-        //                 //                                 '<div class="modal-title text-sm font-bold">' + item.title + '</div>'+
-        //                 //                                 '<div class="text-sm">' + item.description + '</div>'+
-        //                 //                             '</div>' +
-        //                 //                             '<div class="m-3 flex  flex-col gap-4 items-center">' +
-        //                 //                                 '<div class="flex flex-row justify-between gap-2  w-full">' +
-        //                 //                                     '<div  >' +
-        //                 //                                         '<a class="  flex flex-row items-center gap-2" href="'+item.source.url+'">' +
-        //                 //                                             '<img class="w-7 h-7" src="/images/twitter.png">' +
-        //                 //                                             '<div>' +
-        //                 //                                                 '<h3 class="text-xs font-extrabold">'+item.source.name+'</h3>' +
-        //                 //                                             '</div>' +
-        //                 //                                         '</a>' +
-        //                 //                                     '</div>' +
-        //                 //                                     '<div class="  flex flex-row items-center gap-2 ">' +
-        //                 //                                         '<a href="'+item.source.url+'">' +
-        //                 //                                             '<img class="w-7 h-7" src="/images/6523-information-5.png">' +
-        //                 //                                         '</a>' +
-        //                 //                                         '<div>' +
-        //                 //                                             '<p class="text-xs font-bold">'+item.published_at.date+' | '+item.published_at.time+'</p>' +
-        //                 //                                         '</div>' +
-        //                 //                                     '</div>' +
-        //                 //                                 '</div>' +
-        //                 //                             '</div>' +
-        //                 //                         '</div>' +
-        //                 //                     '</div>' +
-        //                 //                 '</div>' +
-        //                 //             '</div>' +
-        //                 //         '</div>' +
-        //                 //     '</div>' +
-        //                 // '</div>'
-        //         )
-        //     });
-        // }).catch(function(e) {
-        //     console.log(e)
-        // });
     });
 
-    $('.nhl-view-news').on('touchstart click', function(){
-        var data = $(this).attr('rel');
+    $('ul#line-change-items > li').on('touchstart click', function(){
 
-        $('.modalNhl').addClass('hidden');
-        $('#' + data).removeClass('hidden');
-    })
+        var type = $(this).attr('rel');
+        $('.line-change-active').removeClass('line-change-active');
+        $(this).addClass('line-change-active');
 
-    $('.nfl-view-news').on('touchstart click', function(){
-        var data = $(this).attr('rel');
-        $('.modalNfl').addClass('hidden');
-        $('#' + data).removeClass('hidden');
-    })
+        // $('.'+type).removeClass('hidden');
+        // color: #38b6ff !important;
+        if(type == 'all-line-change'){
+            $('.all-line-change').removeClass('hidden');
+        }else{
+            $('.all-line-change').addClass('hidden');
+            $('.'+type).removeClass('hidden');
+        }
+
+    });
+
     //NHL PN
-    $('.view-news').on('touchstart click', function(){
-        var data = $(this).attr('rel');
+    // $('.view-news').on('pointerdown click', function(event){
+    //     event.preventDefault();
+    //     $('body').addClass('overflow-hidden');
+    //     var data = $(this).attr('rel');
+    //
+    //     $('.modalPn').addClass('hidden');
+    //     $('#' + data).removeClass('hidden');
+    // })
 
-        $('.modalPn').addClass('hidden');
-        $('#' + data).removeClass('hidden');
-    })
-    $('.starting-goalies-view-card').on('touchstart click', function(){
-        var data = $(this).attr('rel');
+    //nfl starting goalies
+    $('.starting-goalies-home-view-card').on('pointerdown click', function(event){
 
+        event.preventDefault();
+        $('body').addClass('overflow-hidden');
+        var data = $(this).attr('rel');
           $('.sg-modal-view-card-home').addClass('hidden');
           $('#' + data).removeClass('hidden');
     })
-    $('.starting-goalies-away-view-card').on('touchstart click', function(){
+    $('.starting-goalies-away-view-card').on('pointerdown click', function(event){
+        event.preventDefault();
+        $('body').addClass('overflow-hidden');
         var data = $(this).attr('rel');
 
         $('.sg-modal-view-card-away').addClass('hidden');
         $('#' + data).removeClass('hidden');
     })
 
-
     // $('#search-nhl-home').on('keydown')
-    $('#search-nhl-home').on("keyup", function(e) {
+    $('#search-nhl-home, #search-home').on("keyup input touchend", function(e) {
             $('#loading_').addClass('i');
         if($(this).val()){
-
-            // console.log(this).val());
             let items = '';
             fetch(`https://api.projectedlineups.com/v1/search?q=${$(this).val()}`).then((response) => {
                     return response.json();
@@ -259,22 +330,51 @@
                 $('#loading_').removeClass('i');
                 // items = data;
                 $('#item-content').empty();
-
+                // console.log('items ', data.data)
                 data.data.map(function(item) {
-                    let urlType="";
+                    let urlType=null;
                     if(item.item.type == 'team'){
-                        urlType=item.item.metadata.league.slug +'/line-combos/' + item.item.metadata.team.slug;
+
+                        switch(item.item.metadata.league.slug){
+                            case 'nhl':
+                                urlType=item.item.metadata.league.slug +'/line-combinations/' + item.item.metadata.team.slug;
+                                break;
+                            case 'nba':
+                                urlType=item.item.metadata.league.slug +'/starting-lineups/' + item.item.metadata.team.slug;
+                                break;
+                            case 'mlb':
+                                urlType=item.item.metadata.league.slug +'/starting-lineups/' + item.item.metadata.team.slug;
+                                break;
+                                case 'nfl':
+                                urlType=item.item.metadata.league.slug +'/starting-lineups/' + item.item.metadata.team.slug;
+                                break;
+                            case 'epl':
+                                urlType=item.item.metadata.league.slug +'/predicted-lineups/' + item.item.metadata.team.slug;
+                                break;
+                            // default:
+                            //     console.log('Search not found');
+                        }
+
+
                     }else{
                         urlType='';
                     }
-
-                    $('#item-content').append('<li class="flex flex-row gap-2 items-center py-2 items-center justify-letf px-2" >' +
-                        '<a href="/'+urlType+'" class="flex flex-row gap-2"> <div> <img class="items-avatar w-6 h-6 rounded-full" src="'+ item.item.image +'" alt=""..." />  </div>' +
+                    $('#item-content, #item-search-content').append('<li class="flex flex-row gap-2 items-center py-2 items-center justify-letf px-2" >' +
+                        '<a href="'+urlType+'" class="flex flex-row gap-2"> <div> <img class="items-avatar w-6 h-6 rounded-full" src="'+ item.item.image +'" alt=""..." />  </div>' +
                         '<div class="capitalize font-bold">  '
                         + item.name +
                         '</div></a>' +
                         '</li>'
                     )
+
+
+                    // $('#item-content').append('<li class="flex flex-row gap-2 items-center py-2 items-center justify-letf px-2" >' +
+                    //     '<a href="/'+urlType+'" class="flex flex-row gap-2"> <div> <img class="items-avatar w-6 h-6 rounded-full" src="'+ item.item.image +'" alt=""..." />  </div>' +
+                    //     '<div class="capitalize font-bold">  '
+                    //     + item.name +
+                    //     '</div></a>' +
+                    //     '</li>'
+                    // )
 
                 });
 

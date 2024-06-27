@@ -9,12 +9,8 @@
     }
 </style>
     <div class="w-full flex justify-center block  ">
-        <div class="  flex flex-col items-center gap-10 xl:w-11/12 lg:w-11/12  md:w-11/12 sm:w-11/12 smm-w-11-12 md:max-w-screen-2xl ">
-
-
-
+        <div class=" xl:w-10/12 lg:w-10/12 md:w-10/12 sm:w-10/12 w-11/12 flex flex-col justify-center items-center gap-10  md:max-w-screen-2xl sm:mb-0 ">
             <div class="w-full flex justify-between hidden">
-
                 <div class="flex flex-col gap-3">
                     <div class="flex flex-row items-center gap-4">
                         <img class="xl:w-12 lg:w-12 md:w-10" src="{{ asset('/images/menu-icon/puck icon 40x40.png') }}" alt="">
@@ -69,18 +65,165 @@
                 </div>
             </div>
 
+            <div class="w-full  flex flex-col  sm:mt-10 mt-0  sm:gap-2 gap-5">
+                {{--<section class="spacer"></section>--}}
 
+                {{--<section class="marquee hidden">--}}
+                    {{--<div class="marquee__inner" aria-hidden="true" ref="inner">--}}
+                        {{--<div class="marquee__part flex flex-row gap-2">--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_net_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./starting-goalies" class="cursor-pointer text-sm font-bold " >Who are todays starting goalies? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px]  gap-2 p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_icon.png') }}"   alt="Image">--}}
+                                {{--<a href="./line-combinations" class="cursor-pointer text-sm font-bold">What are the latest nhl line combination? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-2">--}}
+                                {{--<img class="w-6"  src="{{ asset('/images/nhl-home/news_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./player-news" class="cursor-pointer text-sm font-bold">What is the latest NHL player news? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/matchup_icon_.png') }}"   alt="Image">--}}
+                                {{--<a href="./matchups" class="cursor-pointer text-sm font-bold">What are today's NHL matchups?</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/projection_icon.png') }}" alt="Image">--}}
+                                {{--<a href="./projections" class="cursor-pointer text-sm font-bold">What are todays DFS player projections? </a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="marquee__part  flex flex-row gap-2">--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_net_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./starting-goalies" class="cursor-pointer text-sm font-bold " >Who are todays starting goalies? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_icon.png') }}"   alt="Image">--}}
+                                {{--<a href="./line-combinations" class="cursor-pointer text-sm font-bold">What are the latest nhl line combination? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2">--}}
+                                {{--<img class="w-6"  src="{{ asset('/images/nhl-home/news_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./player-news" class="cursor-pointer text-sm font-bold">What is the latest NHL player news? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/matchup_icon_.png') }}"   alt="Image">--}}
+                                {{--<a href="./matchups" class="cursor-pointer text-sm font-bold">What are today's NHL matchups?</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/projection_icon.png') }}" alt="Image">--}}
+                                {{--<a href="./projections" class="cursor-pointer text-sm font-bold">What are todays DFS player projections? </a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="marquee__part  flex flex-row gap-2 ">--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-3">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_net_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./starting-goalies" class="cursor-pointer text-sm font-bold " >Who are todays starting goalies? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-3">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_icon.png') }}"   alt="Image">--}}
+                                {{--<a href="./line-combinations" class="cursor-pointer text-sm font-bold">What are the latest nhl line combination? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-3">--}}
+                                {{--<img class="w-6"  src="{{ asset('/images/nhl-home/news_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./player-news" class="cursor-pointer text-sm font-bold">What is the latest NHL player news? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-3">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/matchup_icon_.png') }}"   alt="Image">--}}
+                                {{--<a href="./matchups" class="cursor-pointer text-sm font-bold">What are today's NHL matchups?</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-3">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/projection_icon.png') }}" alt="Image">--}}
+                                {{--<a href="./projections" class="cursor-pointer text-sm font-bold">What are todays DFS player projections? </a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="marquee__part  flex flex-row gap-2">--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_net_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./starting-goalies" class="cursor-pointer text-sm font-bold " >Who are todays starting goalies? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_icon.png') }}"   alt="Image">--}}
+                                {{--<a href="./line-combinations" class="cursor-pointer text-sm font-bold">What are the latest nhl line combination? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-2">--}}
+                                {{--<img class="w-6"  src="{{ asset('/images/nhl-home/news_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./player-news" class="cursor-pointer text-sm font-bold">What is the latest NHL player news? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/matchup_icon_.png') }}"   alt="Image">--}}
+                                {{--<a href="./matchups" class="cursor-pointer text-sm font-bold">What are today's NHL matchups?</a>--}}
+                            {{--</div >--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2 p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/projection_icon.png') }}" alt="Image">--}}
+                                {{--<a href="./projections" class="cursor-pointer text-sm font-bold">What are todays DFS player projections? </a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="marquee__part  flex flex-row gap-2" >--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_net_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./starting-goalies" class="cursor-pointer text-sm font-bold " >Who are todays starting goalies? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/hockey_icon.png') }}"   alt="Image">--}}
+                                {{--<a href="./line-combinations" class="cursor-pointer text-sm font-bold">What are the latest nhl line combination? </a>--}}
+                            {{--</div  >--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2">--}}
+                                {{--<img class="w-6"  src="{{ asset('/images/nhl-home/news_icon.png') }}"  alt="Image">--}}
+                                {{--<a href="./player-news" class="cursor-pointer text-sm font-bold">What is the latest NHL player news? </a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2" >--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/matchup_icon_.png') }}"   alt="Image">--}}
+                                {{--<a href="./matchups" class="cursor-pointer text-sm font-bold">What are today's NHL matchups?</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="flex flex-row justify-center items-center rounded-[13px] gap-2  p-2">--}}
+                                {{--<img class="w-6" src="{{ asset('/images/nhl-home/projection_icon.png') }}" alt="Image">--}}
+                                {{--<a href="./projections" class="cursor-pointer text-sm font-bold">What are todays DFS player projections? </a>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</section>--}}
 
-            <div class="w-full  flex flex-col  mt-10 sm:gap-6 gap-4 ">
-                <div id="vue-nhl-home">
-                    <trending-today></trending-today>
-                </div>
-                @include('pages.nhl-home.player-news')
-                @include('pages.nhl-home.line-combination')
-                @include('pages.nhl-home.starting-goalies')
+                {{--<section class="spacer"></section>--}}
+
+                @if(count($starting_goalies->data) > 0)
+                    @include('pages.nhl-home.starting-goalies')
+                @endif
+                @if(count($player_news->data) > 0)
+                    @if(request()->segment(1) != 'nfl')
+                        @include('pages.nhl-home.player-news')
+                    @endif
+                @endif
+                @if(request()->segment(1) == 'nfl')
+                    @include('pages.nhl-home.nfl.quarterback')
+                    @include('pages.nhl-home.nfl.running-back')
+                    @include('pages.nhl-home.nfl.wide-receiver')
+                    @include('pages.nhl-home.nfl.tight-end')
+                    @if(count($lineman) > 0)
+                        @include('pages.nhl-home.nfl.lineman')
+                    @endif
+                    @if(count($defence) > 0)
+                        @include('pages.nhl-home.nfl.defence')
+                    @endif
+                    {{--@include('pages.nhl-home.depth-chart')--}}
+                @endif
+                @if(request()->segment(1) == 'mlb')
+                    @include('pages.nhl-home.starting-fitcher')
+                @endif
+
+                {{--@include('pages.nhl-home.offensive') --}}
+                {{--@include('pages.nhl-home.defensive')--}}
+
+                @if(count($line_combinations->data) > 0)
+                    @include('pages.nhl-home.line-combination')
+                @endif
+
+                @if(count($team_movement->data) > 0)
+                    @include('pages.nhl-home.lineup-movement')
+                @endif
                 <div class="hidden">
-                    <h1 class="xl:text-6xl lg:text-5xl md:text-5xl font-bold text-center text-black hidden">Your destination for fantasy sports <br> players and bettors</h1>
-
+                    <h1 class="xl:text-6xl lg:text-5xl md:text-5xl font-bold text-center text-black hidden">
+                        Your destination for fantasy sports <br> players and bettors
+                    </h1>
 
                 </div>
             </div>

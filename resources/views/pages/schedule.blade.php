@@ -1271,7 +1271,7 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col justify-between border border-slate-200 w-64 xl:block lg:hidden  relative">
+    <div class="flex flex-col justify-between border border-slate-200 w-64    hidden  relative">
         <div class="relative sticky top-0">
             <div class="w-full border border-slate-200 h-[18rem] bg-slate-400">
               <img class="w-full h-full" src="{{ asset('/images/menu-icon/adds2.png') }}">
@@ -1311,7 +1311,7 @@
     </div>
 </div>
 <div class="flex flex-row justify-center w-full">
-  <div class=" bg-slate-800 w-[92%] flex flex-row justify-between w-full max-w-screen-2xl">
+  <div class=" bg-slate-800 w-[92%] flex flex-row justify-between w-full max-w-screen-2xl hidden">
      <h1 class=" text-white p-3">COPYRIGHT &#169 THE NATONAL NETWORK LTD</h1>
      <div class="flex items-center">
         <a class="text-white p-3" href="">CONTACT</a>

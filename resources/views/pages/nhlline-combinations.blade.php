@@ -10,7 +10,7 @@
 
 {{--flex justify-center mt-8   w-full--}}
     <div class="w-full flex justify-center hidden">
-        <div class="xl:w-11/12 lg:w-full md:w-full flex flex-col border-black m-4 gap-5 block  smm-hidden max-w-screen-2xl">
+        <div class="xl:w-10/12 lg:w-10/12  md:w-10/12 sm:w-10/12 w-11/12 flex flex-col border-black m-4 gap-5 block  smm-hidden max-w-screen-2xl">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex gap-3">
                     <img class="w-10 h-10" src="{{ asset('/images/menu-icon/.png') }}" alt="">
@@ -48,8 +48,8 @@
 
 
 <div class="">
-    <div class="w-full flex flex-col items-center mt-5 ">
-        <div class="relative flex flex-row justify-center gap-3 items-center  xl:w-11/12 lg:w-11/12  md:w-11/12 sm:w-11/12  w-full md:max-w-screen-2xl h-auto" style="background-color: {{  ( !empty($color1) ? $color1: '#f5f5f5')  }}   ">
+    <div class="w-full flex flex-col items-center sm:mt-5 mt-0">
+        <div class="relative flex flex-row justify-center gap-3 items-center  xl:w-10/12 lg:w-10/12 md:w-10/12 sm:w-10/12 w-11/12  w-full md:max-w-screen-2xl h-auto"  >
             @include('pages.combination.combo')
         </div>
     </div>

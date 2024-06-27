@@ -26,9 +26,19 @@ class HomeController extends Controller
 
 //        dd($team_nfl);
         $team_mlb = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=mlb');
+        $team_epl = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/content/cards/cards?f[league]=epl');
 
-//        dd($team_nhl);
-        return view('pages/home')->with([ 'teams' => $team_results, 'nhl_results' => $team_nhl, 'nba_results'=> $team_nba, 'nfl_results'=> $team_nfl]);
+//        $team_search = $this->apiRepository->getAPIs('https://api.projectedlineups.com/v1/search?q=tor');
+
+ 
+        return view('pages/home')->with([
+            'teams' => $team_results,
+            'nhl_results' => $team_nhl,
+            'nba_results'=> $team_nba,
+            'nfl_results'=> $team_nfl,
+            'mlb_results'=>$team_mlb,
+            'epl_results'=>$team_epl
+        ]);
 
 
     }

@@ -86,9 +86,7 @@ const store = createStore({
 
                     // commit('setNhlMatchupImageItemCount', $('.nhl-matchup-image-list > .nhl-matchup-image-item').length);
 
-                var nhlMatch = $('.nhl-matchup-image-list > .nhl-matchup-image-item').length;
-
-
+                    var nhlMatch = $('.nhl-matchup-image-list > .nhl-matchup-image-item').length;
 
 
                     // var nhlMatchupImageItemCount = $('.nhl-matchup-image-list > .nhl-matchup-image-item').length;
@@ -118,6 +116,23 @@ const store = createStore({
                 const shuffledArray = await dispatch("shuffleArray", {array: dataHome.concat(dataAway)});
                 var nhlMatchupImageItemCount = shuffledArray.length;
                 //
+
+                // this.$nextTick(() => {
+                // //     const itemDataElements = this.$refs.parentDiv.querySelectorAll('.nhl-matchup-image-list');
+                // //     //
+                // //     // console.log(' parentDiv', this.$refs.parentDiv);
+                // //     console.log('items data ', itemDataElements);
+                // //
+                // //     // const nhlMatchupImageItemCount = itemDataElements.length;
+                // //     // console.log('items data ', nhlMatchupImageItemCount);
+                // //
+                // //     // this.$refs.parentDiv.style.color = 'red';
+                // //     // this.$refs.parentDiv.style.gridTemplateColumns = `repeat(${nhlMatchupImageItemCount}, 1fr)`;
+                // //
+                // //     // this.shuffleTwoTeamPlayer();
+                // });
+
+
                 // let nhlMatchupCount = $('.nhl-matchup-image-list > .nhl-matchup-image-item').length;
                 // $('.nhl-matchup-slider-wrapper .nhl-matchup-image-list').css({'grid-template-columns': 'repeat(' + nhlMatchupCount + ', 1fr)'});
                 // console.log('fetch Nhl Season Id ', nhlMatchupCount);

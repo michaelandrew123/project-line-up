@@ -1027,7 +1027,7 @@
             <div class=" flex flex-col xl:w-64 lg:w-52 md:w-52 hidden">
                 <div class="flex flex-col gap-5 mt-9 ">
                     <div class="flex justify-center w-full rounded py-2  ">
-                        <h1 class="w-full bg-[#38b6ff] py-1.5 rounded-md text-base text-center font-medium">Starting Goalies ddddddd</h1>
+                        <h1 class="w-full bg-[#38b6ff] py-1.5 rounded-md text-base text-center font-medium">Starting Goalies</h1>
                     </div>
                     <div id="" class="flex flex-col gap-4 w-full">
                     @foreach($goalies->data as $key=>$val)

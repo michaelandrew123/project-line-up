@@ -3,8 +3,8 @@
 
 @section('content')
 
-    <div class="flex justify-center mt-8   w-full">
-        <div class="xl:w-11/12 lg:w-11/12  md:w-11/12 sm:w-11/12  smm-w-11-12 flex flex-row justify-between gap-1 lg:gap-2 md:gap-1 md:max-w-screen-2xl">
+    <div class="flex justify-center  sM:mt-8 mt-4  w-full">
+        <div class="xl:w-10/12 lg:w-10/12  md:w-10/12 sm:w-10/12 smm-w-11-12 flex flex-row justify-between gap-1 lg:gap-2 md:gap-1 md:max-w-screen-2xl">
             <div class="flex flex-col w-full ">
                 <div class="flex flex-col hidden">
                     <div class="flex flex-row w-full justify-evenly md:justify-between mb-3">
@@ -159,35 +159,29 @@
                         <a href="" class="text-black font-semibold text-base flex justify-end mr-[13px]">see all</a>
                     </div>
                 </div>
-
-
-
-                <div class="flex flex-col gap-2">
-
-
-                    {{--<div id="vue-nhl-player-news">--}}
-                        {{--<nhl-player-news></nhl-player-news>--}}
-                    {{--</div>--}}
-
-
-
+                <div class="flex flex-col sm:gap-5 gap-2">
                     <div>
                         <div class="relative flex items-center gap-2">
-                            <img class="w-12 h-12  " src="{{ asset('/images/nhl.png') }}">
-                            <h1 class="lg:text-2xl md:text-base text-base font-extrabold pt-5 pb-5 " >
-                                NHL Player News
-                            </h1>
+{{--                            <img class="w-12 h-12  " src="{{ asset('/images/nhl.png') }}">--}}
+
+                            <div class="w-8">
+                                <img class="w-auto" src="{{ asset('/images/league/' . request()->segment(1) .'.png') }}">
+                            </div>
+                            <div class="text-xl xl:text-lg lg:text-base md:text-sm  font-bold  font-blue flex flex-row gap-2 " >
+                                <div class="uppercase">{{request()->segment(1) }}</div>
+                                <div> Player News   </div>
+                            </div>
                         </div>
-                        <div>
-                            <ul class="flex flex-row gap-5 flex-wrap" id="nhl-sub-items">
-                                <li  class="sm:text-sm xl:text-lg lg:text-base md:text-sm text-sm font-bold text-center md:p-4 sm:p-3 p-2 rounded-lg pn-sub-active border border-gray-300 all cursor-pointer"  rel="all">
+                        <div class="mt-3">
+                            <ul class="flex flex-row sm:gap-2 gap-2 flex-wrap" id="nhl-sub-items">
+                                <li  class="sm:text-sm xl:text-lg lg:text-base md:text-sm text-sm font-bold flex text-center text-center md:p-2 sm:p-2 p-2 rounded-lg pn-sub-active border border-gray-300 all cursor-pointer"  rel="all">
                                     <span >All</span>
                                 </li>
 
                                 @foreach($type_names as $key=>$type)
                                     @if($key != 'lineup-update')
-                                        <li  class="sm:text-sm xl:text-lg lg:text-base md:text-sm text-sm font-bold text-center md:p-4 sm:p-3 p-2 rounded-lg {{$key}} border border-gray-300 cursor-pointer" rel="{{$key}}">
-                                            <span > {{$type}}   </span>
+                                        <li  class="sm:text-sm xl:text-lg lg:text-base md:text-sm text-sm font-bold flex text-center text-center md:p-2 sm:p-2 p-2 rounded-lg {{$key}} border border-gray-300 cursor-pointer" rel="{{$key}}">
+                                            <span > {{$type}} </span>
                                         </li>
                                      @endif
                                 @endforeach
@@ -199,15 +193,12 @@
 
                     <div class="flex flex-wrap w-full justify-evenly md:justify-between mb-3 mt-5 sm:mt-0  ">
                         <div class="nhl-pn-sub-container-header container-header">
-
                             <div class="nhl-pn-sub-container-slider container-slider">
                                 <div class="nhl-pn-sub-slider-wrapper slider-wrapper  ">
-
                                     <div class="w-full flex justify-center items-center hidden text-center" id="nhl-pn-loading_">
                                         <div class="i" ><div></div><div></div></div>
                                     </div>
-                                    <div  class="grid nhl-pn-sub-image-list image-list  md:grid-cols-5 sm:grid-cols-4 grid-cols-2"   id="pn-item-content">
-
+                                    <div  class="grid nhl-pn-sub-image-list image-list  md:grid-cols-5 sm:grid-cols-4 grid-cols-3"   id="pn-item-content">
                                         @php
                                             $lc_count = 0;
                                             $lc_bg_color = '';
@@ -254,11 +245,6 @@
                                                     $lc_type_icon ='';
                                                 @endphp
                                             @endif
-
-
-
-                                            {{--{{ ($nhl_count  > 6) ? 'hidden' : '' }}--}}
-
                                             {{--{{ ($lc_count  > 20) ? 'hidden' : '' }}--}}
                                             @if( (!empty($val->type->slug)) && $val->type->slug != 'lineup-update')
                                                 <div  class=" grid place-items-stretch nhl-pn-sub-image-item image-item pn-all pn-{{$val->type->slug}}"  >
@@ -267,11 +253,16 @@
                                                         $lc_count++
                                                     @endphp
                                                     {{--<div class="flex flex-col   -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">--}}
-                                                    <div class="player-card bg-white border rounded-[13px] border border-[#d9d9d9]">
-                                                        <div class="flex flex-col gap-4 items-center justify-center relative">
+                                                    <div class="card-wd  player-card bg-white rounded-[13px]  ">
+                                                        <div class="flex flex-col gap-4 items-center justify-between relative" style="height: 100%">
+
+                                                            @if(Carbon\Carbon::parse($val->published_at->date)->format('Y-m-d') == \Carbon\Carbon::now()->format('Y-m-d'))
+
+                                                                <div class="text-base absolute top-1 right-1 badge-sample">
+                                                                    <img class="w-10" src="{{ asset('/images/badge/new-badge.png') }}" />
+                                                                </div>
+                                                            @endif
                                                             <div class=" px-3 pt-5">
-
-
                                                                 @if(isset($val->player) && $val->player->images)
                                                                     <img class="md:w-44 sm:w-36 w-24" src="{{$val->player->images->uniform}}">
                                                                 @else
@@ -289,7 +280,7 @@
                                                                         {{  ( !empty($val->metafields->goalie_status->name) ? $val->metafields->goalie_status->name: '')     }}
                                                                     @else
                                                                         {{--{{  ( !empty($val->type->name) ? $val->id : '')     }}--}}
-                                                                        {{ $val->type->slug}}
+                                                                        {{ $val->type->name}}
                                                                     @endif
                                                                 </p>
                                                             </div>
@@ -301,30 +292,47 @@
                                                             @foreach($teams->data as $team)
                                                                 @if($team->slug == $val->team->slug)
                                                                     <img class="w-5" src="{{ $team->logo->src }}">
-                                                                    <div class="flex flex-col sm:flex-row block sm:hidden">
-
-                                                                        <div class="sm:text-base text-sm">
-                                                                            {{  ( !empty($team->location_name) ? $team->location_name : '')     }}
-                                                                        </div>
-                                                                        <div class="sm:text-base text-sm">
-                                                                            {{  ( !empty($team->team_name) ? $team->team_name : '')     }}
-                                                                        </div>
-                                                                    </div>
                                                                 @endif
                                                             @endforeach
-                                                            <h1 class="text-base hidden sm:block">
-                                                                {{  ( !empty($val->team->name) ? $val->team->name : '')     }}
+                                                            <h1 class="sm:text-base text-sm sm:block hidden">
+                                                                {{  ( !empty($val->player->full_name) ? $val->player->full_name : '')     }}
                                                             </h1>
+                                                            <div class="flex flex-col sm:flex-row sm:hidden block">
+
+                                                                <div class="sm:text-base text-sm">
+                                                                    {{  ( !empty($val->player->first_name) ? $val->player->first_name : '')     }}
+                                                                </div>
+                                                                <div class="sm:text-base text-sm">
+                                                                    {{  ( !empty($val->player->last_name) ? $val->player->last_name : '')     }}
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="">
+                                                        {{--{{$val->type->slug  }} --}}
+                                                        @if(!empty($val->type->slug) && $val->type->slug == 'lineup-update')
 
-                                                        <div class="flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer view-news " rel="modalPn-{{ $val->id }}" >
-                                                            <img class="w-[15px] h-[15px]" src="{{ asset('/images/home-page/plus.png') }}">
-                                                            <h1 class="text-base ">
-                                                                view news
-                                                            </h1>
-                                                        </div>
+                                                            <a href="/nhl/line-combinations/{{ ( !empty($val->team->slug) ? $val->team->slug : '') }}" class=" card-wd flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer  "  >
+                                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/home-page/plus.png') }}">
+                                                                <h1 class="text-base ">
+                                                                    Line Combo
+                                                                </h1>
+                                                            </a>
+
+                                                        @else
+                                                            <div class="card-wd flex flex-row items-center sm:gap-2 gap-1 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer nhl-view-news  " rel="modalPn-{{ $val->id }}">
+                                                                <img class="w-[15px] h-[15px]" src="{{ asset('/images/home-page/plus.png') }}">
+                                                                <h1 class="text-base ">
+                                                                    view news
+                                                                </h1>
+                                                            </div>
+                                                        @endif
+                                                        {{--<div class="card-wd  border border-[#d9d9d9] flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px]   bg-white cursor-pointer   " rel="modalPn-{{ $val->id }}" >--}}
+                                                            {{--<img class="w-[15px] h-[15px]" src="{{ asset('/images/home-page/plus.png') }}">--}}
+                                                            {{--<h1 class="text-base ">--}}
+                                                                {{--view news--}}
+                                                            {{--</h1>--}}
+                                                        {{--</div>--}}
 
                                                         {{----}}
                                                         {{----}}
@@ -337,133 +345,115 @@
                                                     </div>
                                                     {{--</div>--}}
                                                 </div>
-                                                <div class="absolute">
-                                            <div class="relative z-30 hidden modalPn {{$val->id}} ease-out duration-300" id="modalPn-{{$val->id}}" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-                                                <!--
-                                                  Background backdrop, show/hide based on modal state.
 
-                                                  Entering: "ease-out duration-300"
-                                                    From: "opacity-0"
-                                                    To: "opacity-100"
-                                                  Leaving: "ease-in duration-200"
-                                                    From: "opacity-100"
-                                                    To: "opacity-0"
-                                                -->
-                                                <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+                                                    <div class="absolute">
+                                                        <div class="relative z-30 hidden modalPn {{$val->id}} ease-out duration-300" id="modalPn-{{$val->id}}" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+                                                            <!--
+                                                              Background backdrop, show/hide based on modal state.
 
-                                                <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
-                                                    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                                                        <!--
-                                                          Modal panel, show/hide based on modal state.
+                                                              Entering: "ease-out duration-300"
+                                                                From: "opacity-0"
+                                                                To: "opacity-100"
+                                                              Leaving: "ease-in duration-200"
+                                                                From: "opacity-100"
+                                                                To: "opacity-0"
+                                                            -->
+                                                            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
-                                                          Entering: "ease-out duration-300"
-                                                            From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                                            To: "opacity-100 translate-y-0 sm:scale-100"
-                                                          Leaving: "ease-in duration-200"
-                                                            From: "opacity-100 translate-y-0 sm:scale-100"
-                                                            To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                                                        -->
-                                                        <div style=" " class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg modal-center">
+                                                            <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+                                                                <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                                                                    <!--
+                                                                      Modal panel, show/hide based on modal state.
 
-                                                            <div class="close-modal cursor-pointer" rel="modalPn-{{$val->id}}"></div>
+                                                                      Entering: "ease-out duration-300"
+                                                                        From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                                        To: "opacity-100 translate-y-0 sm:scale-100"
+                                                                      Leaving: "ease-in duration-200"
+                                                                        From: "opacity-100 translate-y-0 sm:scale-100"
+                                                                        To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                                                    -->
+                                                                    <div class="modal-center relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
 
-
-                                                            {{--<div class="relative">--}}
-                                                            {{--<div   class="close close-modal" rel="modalNhl-{{$val->id}}" style="z-index: 1"> </div>--}}
-                                                            {{--</div>--}}
-
-                                                            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-
-                                                                <div class="flex flex-col gap-4 w-full h-full relative rounded-xl bg-white  ">
-                                                                    <div class="flex m-3 mt-5 gap-5">
-                                                                        <img class="w-[150px]  " src="{{  ( !empty($val->player->images->uniform) ? $val->player->images->uniform : '')     }}">
-                                                                        <div class="flex flex-col gap-3">
-                                                                            <div class="flex flex-row gap-2">
-                                                                                <p class="text-sm font-bold">
-                                                                                    {{  ( !empty($val->type->name) ? $val->type->name : '')     }}
-                                                                                </p>
-                                                                            </div>
-                                                                            <div class="flex flex-col">
-                                                                                <h1 class="text-2xl font-bold">
-                                                                                    {{  ( !empty($val->player->full_name) ? $val->player->full_name : '')     }}
-
-                                                                                </h1>
-                                                                                {{--@if(!empty($val->type->slug) && $val->type->slug == 'starting-goalie')--}}
-                                                                                                        {{--Goolies--}}
+                                                                        <div class="close-modal cursor-pointer" rel="modalPn-{{$val->id}}"></div>
 
 
+                                                                        {{--<div class="relative">--}}
+                                                                        {{--<div   class="close close-modal" rel="modalPn-{{$val->id}}" style="z-index: 1"> </div>--}}
+                                                                        {{--</div>--}}
 
+                                                                        <div class=" px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
 
-                                                                                {{--@endif--}}
+                                                                            <div class="flex flex-col gap-4 w-full h-full relative rounded-xl ">
+                                                                                <div class="flex m-3 mt-5 gap-5">
+                                                                                    <img class="w-[150px]  " src="{{  ( !empty($val->player->images->uniform) ? $val->player->images->uniform : '')     }}">
+                                                                                    <div class="flex flex-col gap-3">
+                                                                                        <div class="flex flex-row gap-2">
+                                                                                            <p class="text-sm font-bold">
+                                                                                                {{  ( !empty($val->type->name) ? $val->type->name : '')     }}
+                                                                                            </p>
+                                                                                        </div>
+                                                                                        <div class="flex flex-col">
+                                                                                            <h1 class="text-2xl font-bold">
+                                                                                                {{  ( !empty($val->player->full_name) ? $val->player->full_name : '')     }}
+                                                                                            </h1>
 
-                                                                                @foreach($teams->data as $team)
-                                                                                    @if($team->slug == $val->team->slug)
-                                                                                        <p class="text-[12px] font-semibold">{{ $team->name }}</p> fasda
-                                                                                    @endif
-                                                                                @endforeach
-                                                                                @if( !empty($val->metafields->goalie_status->name) && $val->metafields->goalie_status->name == "Confirmed")
-                                                                                    <span class="rounded-lg w-auto bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                                                                                            @foreach($teams->data as $team)
+                                                                                                @if($team->slug == $val->team->slug)
+                                                                                                    <p class="text-[12px] font-semibold">{{ $team->name }}</p>
+                                                                                                @endif
+                                                                                            @endforeach
 
-
-                                                                                          {{  $val->metafields->goalie_status->name     }}
-
-
-                                                                                    </span>
-
-                                                                                 @endif
-
-
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class=" m-3 mb-2 lg:pb-3 md:pb-1 flex flex-col gap-4">
-                                                                        <div class="modal-title text-sm font-bold">{{$val->title}}</div>
-                                                                        <div class="text-sm">{{$val->description}}</div>
-                                                                    </div>
-                                                                    <div class="m-3 flex  flex-col gap-4 items-center">
-                                                                        <div class="flex flex-row justify-between gap-2  w-full">
-                                                                            <div  >
-                                                                                <a class="  flex flex-row items-center gap-2  " href="{{$val->source->url}}">
-                                                                                    <img class="w-7 h-7" src="{{ asset('/images/twitter.png') }}">
-
-                                                                                    <div>
-                                                                                        <h3 class="text-xs font-extrabold">{{$val->source->name}}</h3>
+                                                                                        </div>
                                                                                     </div>
-                                                                                </a>
-                                                                            </div>
+                                                                                </div>
+                                                                                <div class=" m-3 mb-2 lg:pb-3 md:pb-1 flex flex-col gap-4">
+                                                                                    <div class="modal-title text-sm font-bold">{{$val->title}}</div>
+                                                                                    <div class="text-sm">{{$val->description}}</div>
+                                                                                </div>
+                                                                                <div class="m-3 flex  flex-col gap-4 items-center">
+                                                                                    <div class="flex flex-row justify-between gap-2  w-full">
+                                                                                        <div  >
+                                                                                            <a class="  flex flex-row items-center gap-2  " href="{{$val->source->url}}">
+                                                                                                <img class="w-7 h-7" src="{{ asset('/images/twitter.png') }}">
 
-                                                                            <div class="  flex flex-row items-center gap-2 ">
-                                                                                <a href="{{$val->source->url}}">
-                                                                                    <img class="w-7 h-7" src="{{ asset('/images/6523-information-5.png') }}">
-                                                                                </a>
-                                                                                <div>
-                                                                                    <p class="text-xs font-bold">{{$val->published_at->date}} | {{$val->published_at->time}}</p>
+                                                                                                <div>
+                                                                                                    <h3 class="text-xs font-extrabold">{{$val->source->name}}</h3>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+
+                                                                                        <div class="  flex flex-row items-center gap-2 ">
+                                                                                            <a href="{{$val->source->url}}">
+                                                                                                <img class="w-7 h-7" src="{{ asset('/images/6523-information-5.png') }}">
+                                                                                            </a>
+                                                                                            <div>
+                                                                                                <p class="text-xs font-bold">{{$val->published_at->date}} | {{$val->published_at->time}}</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    {{--<div class=" ">--}}
+                                                                                    {{--<img class="w-44" src="{{ asset('/images/projectedlineup_logo.png') }}">--}}
+                                                                                    {{--</div>--}}
                                                                                 </div>
                                                                             </div>
                                                                         </div>
 
-                                                                        {{--<div class=" ">--}}
-                                                                        {{--<img class="w-44" src="{{ asset('/images/projectedlineup_logo.png') }}">--}}
-                                                                        {{--</div>--}}
+                                                                        <div class="aa de dn md aue avb bxn hidden">
+                                                                            <button type="button" class="adu alo axp bkx bmz bne bnq bog">
+                                                                                <span class="t">Close</span>
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="oc se w-[1.5rem] h-[1.5rem]">
+                                                                                    </path>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div>
+
+
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="aa de dn md aue avb bxn hidden">
-                                                                <button type="button" class="adu alo axp bkx bmz bne bnq bog">
-                                                                    <span class="t">Close</span>
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="oc se w-[1.5rem] h-[1.5rem]">
-                                                                        </path>
-                                                                    </svg>
-                                                                </button>
-                                                            </div>
-
-
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                             @endif
                                         @endforeach
 

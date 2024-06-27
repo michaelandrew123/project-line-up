@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4" ref="parentDiv">
 
         <div class="w-full ">
             <!-- corouser example caption 4 -->
@@ -41,7 +41,7 @@
             <!--matchup-logo-list grid sm:grid-cols-10 grid-cols-5-->
             <div class="flex flex-row gap-4 gap-4 flex-wrap" id="logo-matchup" >
                 <!--sm:gap-4 gap-2 py-2 px-2-->
-                <div class="flex flex-col items-center  rounded-lg border border-[#000000]  cursor-pointer justify-center"  :class="{ 'pointer-events-none': isLoadingLogo }" v-if="getMatchupLogo.length != 0" v-for="logo in getMatchupLogo" v-key="logo.id" @click="fetchNhlSeasonId({id: logo.id})"  >
+                <div class="matchup-border-dark-mode flex flex-col p-2 items-center  rounded-lg border border-[#000000]  cursor-pointer justify-center"  :class="{ 'pointer-events-none': isLoadingLogo }" v-if="getMatchupLogo.length != 0" v-for="logo in getMatchupLogo" v-key="logo.id" @click="fetchNhlSeasonId({id: logo.id})"  >
                     <div class="w-10">
                         <img :src="logo.starting_goalies.home.team.logo.src" class="w-auto  py-2 px-2">
                     </div>
@@ -63,10 +63,133 @@
                     <div> No Data Available...</div>
                 </div>
                 <div  v-else >
-                    <div class="flex sm:flex-row flex-col justify-evenly w-full gap-6 "  >
+
+
+                    <div class="flex flex-col justify-evenly w-full gap-6 sm:hidden mb-5 ">
+
+
+
+                        <div class="flex flex-col justify-evenly gap-4 header-starting-goalies-mobile p-4">
+
+                            <div class="flex flex-row gap-2 items-center">
+                                <div class="text-center text-4xl  ">  {{ matchup.starting_goalies.home.team.name ? matchup.starting_goalies.home.team.name  : '' }} at  {{ matchup.starting_goalies.away.team.name ? matchup.starting_goalies.away.team.name  : '' }}</div>
+
+                            </div>
+
+                            <div class="flex flex-col text-center  text-[#38b6ff] font-bold   items-center">
+                                <div class="text-base flex flex-col">
+                                    <div>
+
+                                        <div>
+                                            {{ matchup.starting_goalies.home.game.game_date.date ? matchup.starting_goalies.home.game.game_date.date  : '' }}
+                                        </div>
+                                        <div>
+                                            {{ matchup.starting_goalies.home.game.game_date.time ? matchup.starting_goalies.home.game.game_date.time  : '' }}
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex flex-row justify-evenly w-full gap-6" >
+                            <div class="flex flex-col items-center justify-between gap-2 sm:w-2/12  w-full ">
+                                <div class=" card-wd player-card flex flex-col gap-4 bg-white w-full justify-center text-center items-center w-34 rounded-[13px]">
+
+
+                                    <div class="p-4 " v-if="matchup.starting_goalies.home.player">
+                                        <img :src="matchup.starting_goalies.home.player.images.uniform ? matchup.starting_goalies.home.player.images.uniform : ''" class="w-44" alt="...">
+                                    </div>
+
+                                    <div v-if="matchup.starting_goalies.home.status.name == 'Expected'" class=" bg-[#FFCC00]  text-black p-2 w-full rounded-b-[13px]">
+                                        {{ matchup.starting_goalies.home.status.name  ? matchup.starting_goalies.home.status.name : '' }}
+                                    </div>
+                                    <div v-else-if="matchup.starting_goalies.home.status.name == 'Confirmed'" class="bg-[#15D869] text-black p-2 w-full rounded-b-[13px]">
+                                        {{ matchup.starting_goalies.home.status.name  ? matchup.starting_goalies.home.status.name : '' }}
+                                    </div>
+                                    <div class="bg-[#38B6FF] text-black p-2 w-full rounded-b-[13px]"  v-else>
+                                        {{ matchup.starting_goalies.home.status.name  ? matchup.starting_goalies.home.status.name : '' }}
+                                    </div>
+                                </div>
+
+                                <h1 class="text-base " v-if="matchup.starting_goalies.home.player && matchup.starting_goalies.home.player.full_name">
+                                    {{ matchup.starting_goalies.home.player.full_name ? matchup.starting_goalies.home.player.full_name :'' }}
+                                </h1>
+                                <div @click="openSgModal(matchup.starting_goalies.home.id, 'home')" class=" card-wd  border border-[#d9d9d9] flex flex-row items-center justify-center gap-2 text-sm font-bold bg-white  border border-black rounded-lg w-full p-2 text-center   cursor-pointer " rel="sg-view-card-home-{{matchup.starting_goalies.home->id}}" >
+                                    <img class="w-5 h-5"  :src="assetUrl + 'images/home-page/plus.png'"    />
+                                    <h1 class="text-base ">
+                                        view news
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center justify-between gap-2 sm:w-2/12  w-full ">
+                                 <div class=" card-wd player-card flex flex-col gap-4 bg-white w-full justify-center text-center items-center w-34 rounded-[13px]">
+
+
+                                     <div class="p-4 " v-if="matchup.starting_goalies.away.player">
+                                         <img :src="matchup.starting_goalies.away.player.images.uniform ? matchup.starting_goalies.away.player.images.uniform : ''" class="w-44" alt="...">
+                                     </div>
+
+
+                                     <div v-if="matchup.starting_goalies.away.status.name == 'Expected'" class=" bg-[#FFCC00]  text-black p-2 w-full rounded-b-[13px]">
+                                         {{ matchup.starting_goalies.away.status.name  ? matchup.starting_goalies.away.status.name : '' }}
+                                     </div>
+                                     <div v-else-if="matchup.starting_goalies.away.status.name == 'Confirmed'" class="bg-[#15D869] text-black p-2 w-full rounded-b-[13px]">
+                                         {{ matchup.starting_goalies.away.status.name  ? matchup.starting_goalies.away.status.name : '' }}
+                                     </div>
+                                     <div class="bg-[#38B6FF] text-black p-2 w-full rounded-b-[13px]"  v-else>
+                                         {{ matchup.starting_goalies.away.status.name  ? matchup.starting_goalies.away.status.name : '' }}
+                                     </div>
+
+
+                                </div>
+                                <h1 class="text-base " v-if="matchup.starting_goalies.away.player && matchup.starting_goalies.away.player.full_name">
+                                    {{ matchup.starting_goalies.away.player.full_name ? matchup.starting_goalies.away.player.full_name :'' }}
+                                </h1>
+
+                                <div @click="openSgModal(matchup.starting_goalies.away.id, 'away')" class="card-wd  border border-[#d9d9d9] flex flex-row items-center justify-center gap-2 text-sm font-bold bg-white  border border-black rounded-lg w-full p-2 text-center cursor-pointer  " rel="sg-view-card-away-{{$season->starting_goalies->away->id}}"  >
+                                    <img  class="w-5 h-5" :src="assetUrl + 'images/home-page/plus.png'"  />
+                                    <h1 class="text-base ">
+                                        view news
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex flex-col justify-evenly w-full gap-4">
+                            <div class="flex flex-row gap-4">
+                                <div class="flex flex-row p-2 rounded-lg gap-2 border border-[#38b6ff] items-center w-full justify-center">
+
+                                    <div class="w-6">
+
+                                        <img  class="w-auto" :src="matchup.starting_goalies.home.team.logo.src ? matchup.starting_goalies.home.team.logo.src : ''">
+
+                                    </div>
+                                    <div class="text-[#38b6ff] font-bold  "><a href="/nhl/line-combos/{{matchup.starting_goalies.home.team.slug }}">line Combinations</a></div>
+
+                                </div>
+                            </div>
+                            <div class="flex flex-row gap-4">
+                                <div class="flex flex-row p-2 rounded-lg gap-2 border border-[#38b6ff] items-center w-full justify-center">
+                                    <div class="w-6">
+                                        <img class="w-auto" :src="matchup.starting_goalies.away.team.logo.src  ? matchup.starting_goalies.away.team.logo.src : ''">
+                                    </div>
+
+
+                                    <div class="text-[#38b6ff] font-bold  "><a href="/nhl/line-combos/{{matchup.starting_goalies.away.team.slug }}">line Combinations</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="sm:flex hidden sm:flex-row flex-col justify-evenly w-full gap-6 "  >
 
                         <div class="flex flex-col items-center justify-between gap-2 sm:w-2/12  w-full ">
-                            <div class="flex flex-col gap-4 bg-white w-full justify-center text-center items-center w-34 rounded-lg">
+                            <div class=" card-wd flex flex-col gap-4 bg-white w-full justify-center text-center items-center w-34 rounded-lg">
                                 <div class="p-4 " v-if="matchup.starting_goalies.home.player">
                                     <img :src="matchup.starting_goalies.home.player.images.uniform ? matchup.starting_goalies.home.player.images.uniform : ''" class="w-44" alt="...">
                                 </div>
@@ -86,25 +209,25 @@
                                 {{ matchup.starting_goalies.home.player.full_name ? matchup.starting_goalies.home.player.full_name :'' }}
                             </h1>
 
-                            <div class="flex flex-row flex-wrap items-center justify-center gap-2 text-sm font-bold bg-white  border border-black rounded-lg w-full p-2 text-center starting-goalies-view-card cursor-pointer view-news" :rel="'sg-view-card' + matchup.starting_goalies.home.id" >
+                            <div @click="openSgModal(matchup.starting_goalies.home.id, 'home')" class=" card-wd  border border-[#d9d9d9] flex flex-row flex-wrap items-center justify-center gap-2 text-sm font-bold bg-white  border border-black rounded-lg w-full p-2 text-center   cursor-pointer" :rel="'sg-view-card' + matchup.starting_goalies.home.id" >
                                 <img class="w-5 h-5" :src="assetUrl + 'images/home-page/plus.png'"   />
-                                <span class="text-black">
-                                    view card
-                                </span>
+                                <h1 class="text-base ">
+                                    view news
+                                </h1>
                             </div>
 
                         </div>
 
 
 
-                        <div class="flex flex-col justify-between sm:w-8/12 w-full bg-white rounder-lg" >
+                        <div class="card-wd flex flex-col justify-between sm:w-8/12 w-full bg-white rounder-lg" >
                             <div class="flex flex-col gap-5 h-full">
 
                                 <div class="flex flex-col justify-evenly h-full">
-                                    <div class="sg-container flex flex-col h-full justify-between py-8 gap-2" >
+                                    <div class="  flex flex-col h-full justify-between py-8 gap-2" >
                                         <div class="flex sm:flex-row  flex-col justify-evenly sm:gap-4 gap-6 px-2 ">
-                                            <div class="flex sm:flex-row flex-col-reverse sm:p-2 rounded-lg gap-2 sm:border sm:border-[#38b6ff] items-center">
-                                                <h1 class="text-center lg:text-2xl md:text-1xl sm:text-1xl  text-base  font-bold">
+                                            <div class="  flex sm:flex-row flex-col-reverse sm:p-2 rounded-lg gap-2 items-center">
+                                                <h1 class=" text-center lg:text-2xl md:text-1xl sm:text-1xl  text-base  font-bold">
                                                     {{ matchup.starting_goalies.home.team.name ? matchup.starting_goalies.home.team.name  : '' }}
                                                 </h1>
 
@@ -122,7 +245,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="flex  sm:flex-row flex-col-reverse sm:p-2 rounded-lg gap-2 sm:border sm:border-[#38b6ff] items-center">
+                                            <div class="flex  sm:flex-row flex-col-reverse sm:p-2 rounded-lg gap-2 items-center">
 
                                                 <div class="flex items-center w-10 sm:w-10">
                                                     <img class="w-auto" :src="matchup.starting_goalies.away.team.logo.src ? matchup.starting_goalies.away.team.logo.src  : ''" alt="">
@@ -137,12 +260,12 @@
                                         <div class="flex sm:flex-row flex-col justify-between px-6 py-4 flex-wrap">
                                             <div class="flex flex-row justify-evenly gap-4 text-center">
                                                 <div class="p-2 gap-2 sm:w-auto w-6/12 ">
-                                                    <div class="text-black text-sm  cards-dm-black">GOALS</div>
-                                                    <div class="bg-[#F4F5F7] p-6 rounded-lg  font-bold cards-dm-black" v-if="matchup.home_team.odds && matchup.home_team.odds.team_goal">
+                                                    <div class="text-black text-sm  ">GOALS</div>
+                                                    <div class="card-wd-1 bg-[#F4F5F7] p-6 rounded-lg  font-bold " v-if="matchup.home_team.odds && matchup.home_team.odds.team_goal">
                                                         {{ matchup.home_team.odds.team_goal }}
 
                                                     </div>
-                                                    <div v-else class="bg-[#F4F5F7] p-6 rounded-lg  font-bold cards-dm-black" >
+                                                    <div v-else class="card-wd-1 bg-[#F4F5F7] p-6 rounded-lg  font-bold " >
                                                         0
 
                                                     </div>
@@ -150,11 +273,11 @@
 
                                                 </div>
                                                 <div class="p-2 gap-2  sm:w-auto w-6/12">
-                                                    <div class="text-black text-sm  cards-dm-black">WIN %</div>
-                                                    <div class="bg-[#F4F5F7]  p-6 rounded-lg  font-bold cards-dm-black" v-if="matchup.home_team.odds && matchup.home_team.odds.win_percentage">
+                                                    <div class="text-black text-sm  ">WIN %</div>
+                                                    <div class="card-wd-1 bg-[#F4F5F7]  p-6 rounded-lg  font-bold " v-if="matchup.home_team.odds && matchup.home_team.odds.win_percentage">
                                                         {{ matchup.home_team.odds.win_percentage  }}
                                                     </div>
-                                                    <div v-else class="bg-[#F4F5F7]  p-6 rounded-lg  font-bold cards-dm-black">
+                                                    <div v-else class="card-wd-1 bg-[#F4F5F7]  p-6 rounded-lg  font-bold ">
                                                         0
                                                     </div>
                                                 </div>
@@ -162,11 +285,11 @@
 
                                             <div class="flex flex-row justify-evenly text-center">
                                                 <div class="p-2 gap-2 sm:w-auto w-full ">
-                                                    <div class="text-black text-sm cards-dm-black">0/U</div>
-                                                    <div class="bg-[#F4F5F7]  p-6 rounded-lg  font-bold cards-dm-black" v-if="matchup.home_team.odds && matchup.home_team.odds.over_under">
+                                                    <div class="text-black text-sm ">0/U</div>
+                                                    <div class="card-wd-1 bg-[#F4F5F7]  p-6 rounded-lg  font-bold " v-if="matchup.home_team.odds && matchup.home_team.odds.over_under">
                                                         {{ matchup.home_team.odds.over_under  }}
                                                     </div>
-                                                    <div v-else class="bg-[#F4F5F7] p-6 rounded-lg  font-bold cards-dm-black">
+                                                    <div v-else class="card-wd-1 bg-[#F4F5F7] p-6 rounded-lg  font-bold ">
                                                         0
                                                     </div>
 
@@ -175,20 +298,20 @@
 
                                             <div class="flex flex-row justify-evenly gap-4 text-center" >
                                                 <div class="p-2 gap-2 sm:w-auto w-6/12 ">
-                                                    <div class="text-black text-sm cards-dm-black">WIN %</div>
-                                                    <div class="bg-[#F4F5F7] p-6 rounded-lg  font-bold cards-dm-black" v-if="matchup.away_team.odds && matchup.away_team.odds.win_percentage">
+                                                    <div class="text-black text-sm ">WIN %</div>
+                                                    <div class="card-wd-1 bg-[#F4F5F7] p-6 rounded-lg  font-bold " v-if="matchup.away_team.odds && matchup.away_team.odds.win_percentage">
                                                         {{ matchup.away_team.odds.win_percentage }}
                                                     </div>
-                                                    <div v-else class="bg-[#F4F5F7] p-6 rounded-lg  font-bold cards-dm-black">
+                                                    <div v-else class="card-wd-1 bg-[#F4F5F7] p-6 rounded-lg  font-bold ">
                                                         0
                                                     </div>
                                                 </div>
                                                 <div class="p-2 gap-2 sm:w-auto w-6/12 ">
-                                                    <div class="text-black text-sm cards-dm-black">GOALS</div>
-                                                    <div class="bg-[#F4F5F7]  p-6 rounded-lg  font-bold cards-dm-black" v-if="matchup.away_team.odds && matchup.away_team.odds.team_goal">
+                                                    <div class="text-black text-sm ">GOALS</div>
+                                                    <div class="card-wd-1 bg-[#F4F5F7]  p-6 rounded-lg  font-bold " v-if="matchup.away_team.odds && matchup.away_team.odds.team_goal">
                                                         {{ matchup.away_team.odds.team_goal }}
                                                     </div>
-                                                    <div v-else class="bg-[#F4F5F7]  p-6 rounded-lg  font-bold cards-dm-black">
+                                                    <div v-else class="card-wd-1 bg-[#F4F5F7]  p-6 rounded-lg  font-bold ">
                                                         0
                                                     </div>
                                                 </div>
@@ -233,7 +356,7 @@
 
 
                         <div class="flex flex-col items-center justify-between sm:w-2/12  w-full">
-                            <div class="flex flex-col gap-4 bg-white w-full justify-center text-center items-center w-34 rounded-lg">
+                            <div class=" card-wd flex flex-col gap-4 bg-white w-full justify-center text-center items-center w-34 rounded-lg">
                                 <div class="p-4 " v-if="matchup.starting_goalies.away.player">
                                     <img :src="matchup.starting_goalies.away.player.images.uniform ? matchup.starting_goalies.away.player.images.uniform : ''" class="w-44" alt="...">
                                 </div>
@@ -255,11 +378,11 @@
 
 
 
-                            <div class="flex flex-row flex-wrap items-center justify-center gap-2 text-sm font-bold bg-white  border border-black rounded-lg w-full p-2 text-center starting-goalies-view-card cursor-pointer view-news" :rel="'sg-view-card' + getMatchupSingleData.starting_goalies.away.id" >
+                            <div @click="openSgModal(matchup.starting_goalies.away.id, 'away')" class=" card-wd  border border-[#d9d9d9] flex flex-row flex-wrap items-center justify-center gap-2 text-sm font-bold bg-white  border border-black rounded-lg w-full p-2 text-center cursor-pointer " :rel="'sg-view-card' + getMatchupSingleData.starting_goalies.away.id" >
                                 <img class="w-5 h-5" :src="assetUrl + 'images/home-page/plus.png'"   />
-                                <span class="text-black">
-                                    view card
-                                </span>
+                                <h1 class="text-base ">
+                                    view news
+                                </h1>
 
                             </div>
 
@@ -271,6 +394,12 @@
             <div class="flex flex-row justify-center" v-else>
                 Loading page...
             </div>
+
+            <div v-if="showModalAwayHome" class="z-20">
+                <modal-away-home @close="closeAwayHomeModal" :startingGoalies="startingGoalies" />
+            </div>
+
+
         </div>
 
 
@@ -279,16 +408,17 @@
                 <div class="flex flex-row justify-between items-center w-full">
                     <div class="flex flex-row gap-4">
                         <div class="bg-[#38B6FF] w-1 pt-4 pb-4"></div>
-                        <h1 class="text-xl xl:text-lg lg:text-base md:text-sm  font-bold">NHL Player News</h1>
+                        <h1 class="text-xl xl:text-lg lg:text-base md:text-sm font-bold ">NHL Player News</h1>
                     </div>
                     <div class=" flex justify-center my-5 hidden">
                         <a href="/nhl/player-news" class="text-[#1d9bf0] font-bold text-sm">View All NHL Player News</a>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col w-full xl:gap-5 lg:gap-3 md:gap-2 mt-3 ">
+            <div class="flex flex-col w-full xl:gap-5 lg:gap-3 md:gap-2 mt-3 nhl-player-news">
+
                 <!--<div class=" w-full   mb-3 "  v-if="!isLoading && !isLoadingLogo">-->
-                    <div v-if="shuffleTwoTeamPlayerCard.length > 0" class="nhl-matchup-container-header container-header">
+                    <!--<div v-if="getShuffleTwoTeamPlayerCard.length > 0" class="nhl-matchup-container-header container-header">-->
                         <div class="nhl-matchup-container-slider container-slider">
                             <div class="nhl-matchup-slider-wrapper slider-wrapper">
                                 <!-- Slider controls -->
@@ -309,9 +439,11 @@
                                     </span>
                                 </button>
 
-                                <div  class="nhl-matchup-image-list image-list" ref="parentDiv">
-                                    <div class="nhl-matchup-image-item image-item" v-for="dataTwoTeam in getShuffleTwoTeamPlayerCard" v-key="dataTwoTeam.id">
-                                        <div class="  bg-white border rounded-[13px] border border-[#d9d9d9]">
+                                <div  class="nhl-matchup-image-list image-list " >
+
+                                    <div class="nhl-matchup-image-item image-item " v-for="dataTwoTeam in getShuffleTwoTeamPlayerCard" v-key="dataTwoTeam.id">
+                                        <!--{{ getShuffleTwoTeamPlayerCard.length  }}-->
+                                        <div class=" card-wd bg-white  rounded-[13px] ">
                                             <div class="flex flex-col gap-4 items-center justify-center relative">
                                                 <div class=" px-3 pt-5">
                                                     <div v-if="dataTwoTeam.type.slug && dataTwoTeam.type.slug == 'lineup-update'">
@@ -360,7 +492,7 @@
                                             </div>
                                         </div>
                                         <div class="">
-                                            <div class="flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer nhl-view-news view-news" rel="modalNhl-id" >
+                                            <div @click="openModal(dataTwoTeam.id)" class="card-wd  border border-[#d9d9d9] flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px]  bg-white cursor-pointer  " rel="modalNhl-id" >
                                                 <img class="w-[15px] h-[15px]" :src="assetUrl + 'images/home-page/plus.png'"  alt="home-page/plus.png">
                                                 <h1 class="text-base ">
                                                     view news
@@ -390,17 +522,26 @@
                             </div>
 
                         </div>
-                    </div>
+                    <!--</div>-->
 
-                    <div class="nhl-matchup-container-header container-header" v-else >
-                        No Data Available...
-                    </div>
+                    <!--<div class="nhl-matchup-container-header container-header" v-else >-->
+                        <!--No Data Available...-->
+                    <!--</div>-->
+
+
                 <!--</div>-->
 
                 <!--<div class="flex flex-row justify-center" v-else>-->
                     <!--Loading page...-->
                 <!--</div>-->
+                <div v-if="showConfirmModal" class="z-20">
 
+                    <modal-info @close="closeModal" :dataTwoTeam="dataTwoTeam" />
+                            <!--@close="closeModal"-->
+                            <!--@confirm="confirmModal"-->
+                            <!--:basis="basis"-->
+
+                </div>
             </div>
 
         </div>
@@ -411,20 +552,32 @@
 
     import { mapGetters, mapMutations, mapActions, mapState } from 'vuex';
     import moment from 'moment'
+    // import ModalInfo from "./Modal";
+    import ModalInfo from './Modal/index.vue';
+    import ModalAwayHome from './Modal/AwayHome.vue';
     import $ from 'jquery'
-
 
     export default {
         name: 'NhlMatchup',
+        components: {
+            ModalInfo,
+            ModalAwayHome
+        },
         data() {
             return {
                 assetUrl: window.assetUrl,
+                showConfirmModal: false,
+                showModalAwayHome: false,
+                dataTwoTeam: null,
+                startingGoalies: null
             };
         },
         created(){
-             this.getCurrentDate();
-            // this.$forceUpdate();
-            // this.fetchNhlSeason();
+            this.$nextTick(() => {
+                this.getCurrentDate();
+                this.updateGridTemplateColumns();
+            });
+
         },
         computed: {
             ...mapState(['isHighlighted', 'matchup', 'shuffleTwoTeamPlayerCard']),
@@ -476,27 +629,106 @@
                 // var nhlMatch = $('.nhl-matchup-image-list > .nhl-matchup-image-item').length;
 
             },
+
             shuffleTwoTeamPlayer(){
-                return this.shuffleTwoTeamPlayerCard();
+                return this.getShuffleTwoTeamPlayerCard;
             },
             updateGridTemplateColumns() {
                 if (this.$refs.parentDiv) {
                     this.$nextTick(() => {
                         const itemDataElements = this.$refs.parentDiv.querySelectorAll('.nhl-matchup-image-item');
-                        //
                         // console.log('items data ', itemDataElements);
+                        const nhlMatchupImageItemCount = itemDataElements.length;
 
-                          const nhlMatchupImageItemCount = itemDataElements.length;
-                        // console.log('items data ', nhlMatchupImageItemCount);
+                        const imageList = this.$refs.parentDiv.querySelector(".nhl-matchup-slider-wrapper .nhl-matchup-image-list");
+                        const slideButtons = this.$refs.parentDiv.querySelectorAll(".nhl-matchup-slider-wrapper .nhl-matchup-slide-button");
+                        const sliderScrollbar = this.$refs.parentDiv.querySelector(".nhl-matchup-container-slider .nhl-matchup-slider-scrollbar");
+                        const scrollbarThumb = sliderScrollbar.querySelector(".nhl-matchup-scrollbar-thumb");
 
+
+
+
+                        const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+
+                        slideButtons.forEach(button => {
+                            // console.log("Click me one time ");
+                            // console.log("Hello world ", button.id);
+                            button.addEventListener("click", () => {
+
+                                // console.log('max button List  ', button);
+
+                                const direction = button.id === "prev-slide" ? -1 : 1;
+                                const scrollAmount = imageList.clientWidth * direction;
+
+                                imageList.scrollBy({left: scrollAmount, behavior: "smooth"});
+                            });
+                        });
+
+                        // Show or hide slide buttons based on scroll position
+                        const handleSlideButtons = () => {
+                            slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+                            slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+                        }
+
+                        // Update scrollbar thumb position based on image scroll
+                        const updateScrollThumbPosition = () => {
+                            const scrollPosition = imageList.scrollLeft;
+                            const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+                            scrollbarThumb.style.left = `${thumbPosition}px`;
+                        }
+                        // Call these two functions when image list scrolls
+                        imageList.addEventListener("scroll", () => {
+                            updateScrollThumbPosition();
+                            handleSlideButtons();
+                        });
                         // this.$refs.parentDiv.style.color = 'red';
                         this.$refs.parentDiv.style.gridTemplateColumns = `repeat(${nhlMatchupImageItemCount}, 1fr)`;
 
                         // this.shuffleTwoTeamPlayer();
                     });
                 }
-            }
+            },
+            closeModal() {
+                this.showConfirmModal = false;
+            },
+            confirmModal(item) {
+                this.showConfirmModal = false;
+            },
+            openModal(id){
+                this.dataTwoTeam = this.getShuffleTwoTeamPlayerCard.find(item => item.id === id);
+                this.showConfirmModal = true;
+            },
+            openSgModal(id, status){
 
+                // Check if this.getMatchupSingleData is an array
+                // if (Array.isArray(this.getMatchupSingleData)) {
+                //     // Use the find function
+                //     this.startingGoalies = this.getMatchupSingleData.find(item => item.starting_goalies.away.id === id);
+                // } else {
+                //     // Handle the case where this.getMatchupSingleData is not an array
+                //     console.error('getMatchupSingleData is not an array');
+                // }
+
+                // console.log('id ', id)
+                // console.log('away id ', this.getMatchupSingleData.starting_goalies.away.id)
+                // console.log('matchup away', this.matchup.starting_goalies.away)
+                // console.log('matchup starting_goalies ', this.matchup.starting_goalies)
+                // console.log('matchup ', this.matchup)
+                if(status == 'away'){
+
+                    // console.log(this.matchup)
+                     this.startingGoalies = this.matchup.starting_goalies.away
+                    // this.getMatchupSingleData.find(item => item.starting_goalies.away.id === id);
+                }
+                if(status == 'home'){
+                    // this.startingGoalies = this.matchup.starting_goalies.home.find(item => item.id === id);
+                    this.startingGoalies = this.matchup.starting_goalies.home;
+                }
+                this.showModalAwayHome = true
+            },
+            closeAwayHomeModal(){
+                this.showModalAwayHome = false;
+            }
             // async initMatchupitemlistGrid(){
             //     var nhlMatchupImageItemCount = $('.nhl-matchup-image-list > .nhl-matchup-image-item').length;
             //     $('.nhl-matchup-slider-wrapper .nhl-matchup-image-list').css({'grid-template-columns': 'repeat(' + nhlMatchupImageItemCount + ', 1fr)'});
@@ -508,8 +740,6 @@
             },
             shuffleTwoTeamPlayerCard(newValue){
                 this.updateGridTemplateColumns();
-
-
 
                 // this.$nextTick(() => {
                 //
@@ -562,7 +792,18 @@
         },
         mounted() {
             // Apply initial highlight based on Vuex state
-            this.updateGridTemplateColumns();
+            // this.updateGridTemplateColumns();
+
+            this.$nextTick(() => {
+                this.getCurrentDate();
+                // this.shuffleTwoTeamPlayer();
+                // this.shuffleTwoTeamPlayerCard;
+                this.updateGridTemplateColumns();
+                // console.log('this area this shuffleTwoTeamPlayer 1', this.shuffleTwoTeamPlayer());
+                // // console.log(this.$refs.parentDiv); // Should not be undefined here
+            });
+
+
             // this.updateGridTemplateColumns();
             // if(this.matchup){
             //
@@ -574,8 +815,10 @@
             //     this.applyHighlight();
             // }
         },
-
     }
+
+
+
 </script>
 
 <style>

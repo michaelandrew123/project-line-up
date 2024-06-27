@@ -11,12 +11,157 @@
     body{
         max-width: 1280px;
         margin: auto;
-        /*font-family:  'Maven Pro', sans-serif */
         font-family: 'Roboto', sans-serif;
-
         background-color: #F4F5F7 !important;
-
     }
+    .marquee__part {
+        flex-shrink: 0;
+        padding: 0 4px;
+        font-smooth: always;
+    }
+    .marquee {
+        background: transparent;
+        /*text-transform: uppercase;*/
+        font-weight: 600;
+        font-size: 1.667vw;
+        padding: 10px 0;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .marquee__inner {
+        -webkit-font-smoothing: antialiased;
+        width: fit-content;
+        display: flex;
+        flex: auto;
+        flex-direction: row;
+    }
+
+    .spacer {
+        height: 150px;
+    }
+    /*.marquee-parent:before,*/
+    /*.marquee-parent:after {*/
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*width: 150px;*/
+        /*height: 100%;*/
+        /*content: "";*/
+        /*z-index: 2;*/
+    /*}*/
+    /*.marquee-parent:before {*/
+        /*left: 0;*/
+        /*background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff3d);*/
+    /*}*/
+    /*.marquee-parent:after {*/
+        /*right: 0;*/
+        /*background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff3d);*/
+    /*}*/
+    /*.marquee-parent{*/
+        /*white-space:nowrap;*/
+    /*}*/
+    /*.marquee-parent:hover > .marquee {*/
+        /*animation-play-state: paused;*/
+    /*}*/
+    /*.marquee {*/
+        /*!*display: inline-block;*!*/
+        /*display: flex;*/
+        /*justify-content: flex-start;*/
+        /*position: relative;*/
+        /*width: auto;*/
+        /*!*max-width: 100%;*!*/
+        /*height: auto;*/
+        /*!*overflow: hidden;*!*/
+        /*white-space: nowrap;*/
+        /*!*animation: move-rtl 10000ms linear infinite;*!*/
+    /*}*/
+
+
+    /*@keyframes marquee {*/
+        /*from { transform: translateX(0); }*/
+    /*!*calc(50% + #{$test * 2});*!*/
+        /*to { transform: translateX(calc( -120% * 5)); }*/
+    /*}*/
+
+
+    /*.text-wrapper{*/
+        /*display: flex;*/
+        /*justify-content: flex-start;*/
+        /*background-color: #2d3748;*/
+    /*}*/
+    /*.text-wrapper > h1{*/
+        /*font-size: 48px;*/
+        /*text-transform: uppercase;*/
+        /*color: transparent;*/
+        /*-webkit-text-stroke-width: 0.1px;*/
+        /*-webkit-text-stroke-color: #fff;*/
+        /*white-space: nowrap;*/
+        /*padding: 0 6rem;*/
+        /*letter-spacing: 1px;*/
+        /*animation: move-rtl 6000ms linear infinite;*/
+    /*}*/
+
+    /*@keyframes move-rtl {*/
+        /*0% { transform: translateX(100%); }*/
+        /*!*calc(50% + #{$test * 2});*!*/
+        /*100% { transform: translateX(calc(-120% + 50px)); }*/
+    /*}*/
+
+    /*.slider-wrapper .nhl-trending-image-list {*/
+        /*animation: move-rtl 10s linear infinite;*/
+        /*!*animation: move-rtl 6000ms linear infinite;*!*/
+    /*}*/
+
+
+
+
+
+
+
+
+
+
+
+    /*#maindiv{*/
+        /*border: 2px solid black;*/
+        /*overflow: hidden;*/
+        /*width: 100%;*/
+        /*white-space: nowrap;*/
+    /*}*/
+
+    /*#div1 {*/
+        /*!*display: inline-block;*!*/
+        /*width: 100%;*/
+        /*animation: marquee 10s linear infinite;*/
+    /*}*/
+
+    /*#div2 {*/
+        /*!*display: inline-block;*!*/
+        /*width: 100%;*/
+        /*animation: marquee2 10s linear infinite;*/
+        /*animation-delay: 5s;*/
+    /*}*/
+
+
+    /*@keyframes marquee {*/
+        /*from {*/
+            /*transform: translateX(100%);*/
+        /*}*/
+        /*to {*/
+            /*transform: translateX(-100%);*/
+        /*}*/
+    /*}*/
+
+    /*@keyframes marquee2 {*/
+        /*from {*/
+            /*transform: translateX(0%);*/
+        /*}*/
+        /*to {*/
+            /*transform: translateX(-200%);*/
+        /*}*/
+    /*}*/
+
     li.lc-team-logo > a > img:hover{
         width: 50px;
     }
@@ -39,6 +184,9 @@
         color: #38b6ff;
     }
     .pn-sub-active {
+        color: #38b6ff !important;
+    }
+    .line-change-active{
         color: #38b6ff !important;
     }
     /* .skeleton {   
@@ -294,7 +442,6 @@
     @screen lg {
         font-size: 26px;
     }
-    }
 
 
 
@@ -333,7 +480,7 @@
 
     .slider-wrapper .slide-button {
         position: absolute;
-        top: 50%;
+        top: 35%;
         outline: none;
         border: none;
         height: 50px;
@@ -387,6 +534,7 @@
         margin-bottom: 30px;
         overflow-x: auto;
         scrollbar-width: none;
+
     }
 
     .slider-wrapper .image-list::-webkit-scrollbar {
@@ -398,12 +546,15 @@
     .slider-wrapper .image-list .nfl-image-item,
     .slider-wrapper .image-list .nhl-lc-image-item,
     .slider-wrapper .image-list .nhl-sg-image-item,
-    .slider-wrapper .image-list .nhl-pn-image-item ,
-    .slider-wrapper .image-list .nhl-matchup-image-item {
+    .slider-wrapper .image-list .nhl-pn-image-item,
+    .slider-wrapper .image-list .nhl-matchup-image-item,
+    .slider-wrapper .image-list .mlb-image-item,
+    .slider-wrapper .image-list .epl-image-item {
         width: 210px !important;
         object-fit: cover;
+
     }
-    .nhl-image-item {
+    .nhl-image-item, .mlb-image-item, .epl-image-item {
         height: 344px;
     }
     .nba-image-item {
@@ -565,6 +716,8 @@
         }
 
         .slider-wrapper .image-list .nhl-image-item,
+        .slider-wrapper .image-list .mlb-image-item,
+        .slider-wrapper .image-list .epl-image-item,
         .slider-wrapper .image-list .nba-image-item {
             width: 280px;
             height: 380px;
@@ -581,21 +734,26 @@
         }
 
         .slider-wrapper .image-list {
-            gap: 10px;
+            gap: 30px;
             margin-bottom: 15px;
             scroll-snap-type: x mandatory;
         }
 
         .slider-wrapper .image-list .nhl-image-item,
+        .slider-wrapper .image-list .mlb-image-item,
+        .slider-wrapper .image-list .epl-image-item,
         .slider-wrapper .image-list .nba-image-item {
             width: 280px;
-            height: 380px !important;
+            /*364px !important*/
+            height: 370px !important;
         }
 
         .slider-scrollbar .scrollbar-thumb {
             width: 20% ;
         }
-        .nhl-image-item {
+        .nhl-image-item,
+        .epl-image-item,
+        .mlb-image-item {
             height: 344px !important;
         }
 
@@ -624,7 +782,9 @@
         }
     }
     @media (min-width: 640px) {
-        .nhl-image-item {
+        .nhl-image-item,
+        .epl-image-item,
+        .mlb-image-item {
             height: 300px;
         }
         .nba-image-item {
@@ -647,73 +807,82 @@
         }
 
         .slider-wrapper .image-list .nhl-image-item,
+        .slider-wrapper .image-list .mlb-image-item,
+        .slider-wrapper .image-list .epl-image-item,
         .slider-wrapper .image-list .nba-image-item {
             /*width: 280px;*/
             /*height: 300px;*/
         }
-
+        /*.modal-center{*/
+            /*left: 50%;*/
+            /*top: 50%;*/
+            /*transform: translate(-50%, -50% );*/
+        /*}*/
     }
 
     @media (max-width: 639px) {
+        .slider-wrapper .image-list{
+            margin-bottom: 0px;
+        }
+        /* width */
+        /*::-webkit-scrollbar {*/
+            /*width: 10px;*/
+        /*}*/
 
-        .marquee-parent:before,
-        .marquee-parent:after {
-            position: absolute;
-            top: 0;
-            width: 150px;
-            height: 100%;
-            content: "";
-            z-index: 2;
-        }
-        .marquee-parent:before {
-            left: 0;
-            background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-        }
-        .marquee-parent:after {
-            right: 0;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-        }
-        .marquee-parent{
-            white-space:nowrap;
-        }
-        .marquee-parent:hover > .marquee {
-            animation-play-state: paused;
-        }
-        .marquee {
-            /*display: inline-block;*/
-            /*position: relative;*/
-            /*width: 100vw;*/
-            /*max-width: 100%;*/
-            /*height: auto;*/
-            overflow: hidden;
-            animation: marquee 10s linear infinite;
-        }
-        @keyframes marquee {
-            from { transform: translateX(0); }
-            to { transform: translateX(-100%); }
-        }
+        /*!* Track *!*/
+        /*::-webkit-scrollbar-track {*/
+            /*background: #292c35;*/
+        /*}*/
+
+        /*!* Handle *!*/
+        /*::-webkit-scrollbar-thumb {*/
+            /*background: #888;*/
+            /*border-radius: 5px;*/
+        /*}*/
+
+        /*!* Handle on hover *!*/
+        /*::-webkit-scrollbar-thumb:hover {*/
+            /*background: #555;*/
+        /*}*/
 
         .modal-center{
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -90% );
+            position: absolute !important;
+            /*left: 50% !important;*/
+            /*top: 50% !important;*/
+            /*transform: translate(-50%, -20% ) !important;*/
+            width: 90%;
         }
+
+
         .slider-wrapper .image-list .nhl-image-item,
+        .slider-wrapper .image-list .mlb-image-item,
+        .slider-wrapper .image-list .epl-image-item,
         .slider-wrapper .image-list .nba-image-item,
         .slider-wrapper .image-list .nfl-image-item,
-        .slider-wrapper .image-list .nhl-lc-image-item, .slider-wrapper .image-list .nhl-sg-image-item, .slider-wrapper .image-list .nhl-pn-image-item, .slider-wrapper .image-list .nhl-matchup-image-item{
+        .slider-wrapper .image-list .nhl-lc-image-item,
+        .slider-wrapper .image-list .nhl-sg-image-item,
+        .slider-wrapper .image-list .nhl-pn-image-item,
+        .slider-wrapper .image-list .nhl-matchup-image-item{
 
             width: 150px !important;
             object-fit: cover;
         }
-        .nhl-image-item {
+
+        /*.slider-wrapper .image-list .nfl-image-item,*/
+        /*.slider-wrapper .image-list .nhl-image-item{*/
+
+            /*height: 298px;*/
+        /*}*/
+        .nhl-image-item,
+        .epl-image-item,
+        .mlb-image-item {
             height: 270px;
         }
         .nba-image-item {
             height: 270px;
         }
         .nfl-image-item {
-            height: 270px;
+            height: 277px;
         }
         .nhl-lc-image-item {
             height: 270px;
@@ -728,19 +897,26 @@
             height: 270px;
         }
 
-        .slider-wrapper .image-list .nhl-image-item,
-        .slider-wrapper .image-list .nba-image-item {
-            width: 150px;
+        .slider-wrapper .image-list .mlb-image-item,
+        .slider-wrapper .image-list .epl-image-item,
+        .slider-wrapper .image-list .nhl-image-item {
             height: 270px;
+        }
+
+        .slider-wrapper .image-list .nba-image-item{
+            height: 286px;
         }
         .nhl-images {
             position: absolute;
-            height: 100%;
-            width: 100%;
+            height: 90%;
+            width: 90%;
             inset: 0px;
             object-fit: cover;
             object-position: center top;
             color: transparent;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         ul#mobile-2nd-mnav li:first-child {

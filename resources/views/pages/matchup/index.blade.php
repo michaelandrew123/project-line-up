@@ -295,9 +295,9 @@
 
             @foreach($shuffle_two_team_player_card as $key=>$dataTwoTeams)
 
-                dddd
+
                 @foreach($dataTwoTeams as $key1=>$val)
-aaaa
+
                     <div class="nhl-matchup-image-item image-item hidden"  >
                         <div class="  bg-white border rounded-[13px] border border-[#d9d9d9]">
                             <div class="flex flex-col gap-4 items-center justify-center relative">

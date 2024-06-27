@@ -1,15 +1,19 @@
 <div class="flex flex-col w-full">
-    <div class="flex flex-row gap-3 w-full">
+    <div class="flex flex-row gap-3 w-full mb-[10px] sm:mb-0">
         <div class="flex flex-row justify-between w-full sm:gap-4 gap-2 items-center">
 
-            <div class="flex flex-row  sm:gap-4 gap-2 items-center w-6/12">
+            <div class="flex flex-row  sm:gap-4 gap-2 items-center">
                 {{--<img class="w-9 h-9" src="{{ asset('/images/menu-icon/hockey_logo.png') }}">--}}
 
                 <div class="bg-[#38B6FF] w-1 pt-4 pb-4"></div>
-                <h1 class="text-base xl:text-lg lg:text-base md:text-sm  font-bold">NHL Starting Goalies</h1>
+                {{--<h1 class="text-base xl:text-lg lg:text-base md:text-sm  font-bold font-blue">{{ request()->segment(1) }} Starting Goalies</h1>--}}
+                <div class="text-xl xl:text-lg lg:text-base md:text-sm  font-bold  font-blue flex flex-row gap-2" >
+                    <div class="uppercase">{{ request()->segment(1) }} </div>
+                    <div> Starting Goalies </div>
+                </div>
             </div>
-            <div class=" flex justify-end my-5 w-6/12">
-                <a href="/nhl/starting-goalies" class="text-[#1d9bf0] font-bold text-sm">View All</a>
+            <div class=" flex justify-end ">
+                <a href="/nhl/starting-goalies" class="font-blue font-bold text-sm">View All</a>
             </div>
 
         </div>
@@ -17,8 +21,8 @@
 
 
 
-    <div class="flex flex-col w-full xl:gap-5 lg:gap-3 md:gap-2 mt-3 "> 
-        <div class=" w-full   mb-3 ">
+    <div class="flex flex-col w-full xl:gap-5 lg:gap-3 md:gap-2  ">
+        <div class=" w-full ">
             <div class="nhl-sg-container-header container-header">
 
                 <div class="nhl-sg-container-slider container-slider">
@@ -42,9 +46,6 @@
                             @foreach($starting_goalies->data as $key=>$sg_val)
 
 
-
-
-
                                 @php
                                     $sg_count++
                                 @endphp
@@ -53,7 +54,7 @@
                                 <div class="nhl-sg-image-item image-item " >
                                     {{--<div class="flex flex-col   -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">--}}
 
-                                    <div class=" card-wd bg-white border rounded-[13px] border border-[#d9d9d9]">
+                                    <div class=" card-wd bg-white rounded-[13px] ">
                                         <div class="flex flex-col gap-4 items-center justify-center relative">
 
 
@@ -171,18 +172,29 @@
                                                     <img class="w-5" src="{{ $team->logo->src }}">
                                                 @endif
                                             @endforeach
-                                            <h1 class="sm:text-base text-sm">
-                                                {{  ( !empty($sg_val->player->full_name) ? $sg_val->player->full_name : '')     }}
-                                            </h1>
+                                            {{--<h1 class="sm:text-base text-sm">--}}
+                                                {{--{{  ( !empty($sg_val->player->full_name) ? $sg_val->player->full_name : '')     }}--}}
+                                            {{--</h1>--}}
+                                                <h1 class="sm:text-base text-sm sm:block hidden">
+                                                    {{  ( !empty($sg_val->player->full_name) ? $sg_val->player->full_name : '')     }}
+                                                </h1>
+
+                                                <div class="flex flex-col sm:flex-row sm:hidden block">
+
+                                                    <div class="sm:text-base text-sm">
+                                                        {{  ( !empty($sg_val->player->first_name) ? $sg_val->player->first_name : '')     }}
+                                                    </div>
+                                                    <div class="sm:text-base text-sm">
+                                                        {{  ( !empty($sg_val->player->last_name) ? $sg_val->player->last_name : '')     }}
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
                                     <div class="">
-                                        <div class="card-wd flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer nhlsg-view-news view-news" rel="modalNhlSg-{{$sg_val->id}}" >
+                                        <div class="card-wd flex flex-row items-center gap-2 justify-center  p-2 rounded-[13px] border border-[#d9d9d9] bg-white cursor-pointer nhlsg-view-news " rel="modalNhlSg-{{$sg_val->id}}" >
                                             <img class="w-[15px] h-[15px]" src="{{ asset('/images/home-page/plus.png') }}">
                                             <h1 class="text-base ">
                                                 view news
-
-
                                             </h1>
                                         </div>
                                         <div class="h-full sg-view-news-desc  hidden" id="sg-{{$sg_val->id}}">
@@ -198,7 +210,6 @@
                                                         </a>
                                                         <p> {{$sg_val->source->name}}</p>
                                                     </div>
-
 
                                                     <div class="flex flex-row gap-2 text-xs">
                                                         <div>
@@ -222,11 +233,11 @@
 
                                         <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
                                             <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                                                <div class="modal-center relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                                                <div class="modal-center relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
 
                                                     <div class="close-modal cursor-pointer" rel="modalNhlSg-{{$sg_val->id}}"></div>
-                                                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                                                        <div class="flex flex-col gap-4 w-full h-full relative rounded-xl bg-white  ">
+                                                    <div class="px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                                                        <div class="flex flex-col gap-4 w-full h-full relative rounded-xl ">
                                                             <div class="flex m-3 mt-5 gap-5">
                                                                 <img class="w-[150px] " src="{{  ( !empty($sg_val->player->images->uniform) ? $sg_val->player->images->uniform : '')     }}">
                                                                 <div class="flex flex-col gap-3">
